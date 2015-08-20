@@ -1,86 +1,12 @@
 <!--
-Author: W3layouts
+Author: W3layouts, Isaac Campos, Roger Villalobos,  Jeffry Alvarado
 Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 -->
-<!DOCTYPE html>
-<html>
-<head>
-<title>Ask UI Kit a Flat bootstrap Responsive website Template | Home :: w3layouts</title>
-<link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
-<link href="css/style.css" type="text/css" rel="stylesheet" media="all">
-<!-- Custom Theme files -->
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Ask UI Kit Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
-	Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-<!-- //Custom Theme files -->
-<!-- js -->
-<script src="js/jquery-1.11.1.min.js"></script> 
-<script src="js/modernizr.custom.js"></script>
-<!----Calender -------->
-  <link rel="stylesheet" href="css/clndr.css" type="text/css" />
-  <script src="js/underscore-min.js"></script>
-  <script src= "js/moment-2.2.1.js"></script>
-  <script src="js/clndr.js"></script>
-  <script src="js/site.js"></script>
-<!----End Calender -------->
+	<?php require_once("header.php") ?>
 	<script src="js/Chart.js"></script>
-<link href="css/jquery.nouislider.css" rel="stylesheet">
-<script src="js/jquery.nouislider.js"></script>
-<link rel="stylesheet" type="text/css" href="css/fd-slider.css">	
-	<script type="text/javascript" src="js/fd-slider.js"></script>
-<!----video -------->	
-<link href="css/jplayer.blue.monday.min.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
-<script type="text/javascript">
-//<![CDATA[
-$(document).ready(function(){
-
-	$("#jquery_jplayer_1").jPlayer({
-		ready: function () {
-			$(this).jPlayer("setMedia", {
-				title: "Big Buck Bunny",
-				m4v: "http://www.jplayer.org/video/m4v/Big_Buck_Bunny_Trailer.m4v",
-				poster: "http://www.jplayer.org/video/poster/Big_Buck_Bunny_Trailer_480x270.png"
-			});
-		},
-		swfPath: "../../dist/jplayer",
-		supplied: "m4v",
-		size: {
-			width: "379px",
-			height: "250px",
-			cssClass: "jp-video-360p"
-		},
-		useStateClassSkin: true,
-		autoBlur: false,
-		smoothPlayBar: true,
-		keyEnabled: true,
-		remainingDuration: true,
-		toggleDuration: true
-	});
-});
-//]]>
-</script>
-<!----//video -------->
-<!-- //js -->
-<!-- start-smoth-scrolling-->
-<script type="text/javascript" src="js/move-top.js"></script>
-<script type="text/javascript" src="js/easing.js"></script>	
-<script type="text/javascript">
-		jQuery(document).ready(function($) {
-			$(".scroll").click(function(event){		
-				event.preventDefault();
-				$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-			});
-		});
-</script>
-<!--//end-smoth-scrolling-->
-
-</head>
-<body>
+	<script src="js/jquery.circlechart.js"></script>
 	<!-- content -->
 	<div class="content">
 		<div class="container">
@@ -99,15 +25,6 @@ $(document).ready(function(){
 						<li><a href="#" data-hover="Typo">Typo</a></li>
 						<li><a href="#" data-hover="Contact">Contact</a></li>
 					</ul>				
-					<!-- script-for-menu -->
-					 <script>
-					   $( "span.menu" ).click(function() {
-						 $( "ul.nav1" ).slideToggle( 300, function() {
-						 // Animation complete.
-						  });
-						 });
-					</script>
-					<!-- /script-for-menu -->
 				</div>
 				<div class="search">
 					<form>
@@ -132,8 +49,21 @@ $(document).ready(function(){
 								<div class="search-btm">
 									<div class="temp">
 										<div class="temp-right">
-											<p class="date">FRI, 30/06</p>
-											<h5>25°C</h5>
+											<p class="date">
+												<?php echo date("D, m/y"); ?>
+											</p>
+											<h5>
+												<?php
+													$jsonurl = "http://api.openweathermap.org/data/2.5/weather?id=3621841"; // 3621841 = SJ, CR
+													$json = file_get_contents($jsonurl);
+													
+													$weather = json_decode($json);
+													$kelvin = $weather->main->temp;
+													$celcius = $kelvin - 273.15;
+													
+													echo round($celcius)."°C";
+												?>
+											</h5>
 										</div>
 										<div class="temp-left">
 											<img src="images/cloud.png" alt="">
@@ -183,55 +113,20 @@ $(document).ready(function(){
 							</div>
 							<div class="clearfix"></div>
 						</div>	
-								<script src="js/jquery.circlechart.js"></script>
-							<script>
-							$('.demo-1').percentcircle({
-							animate : false,
-							diameter : 100,
-							guage: 3,
-							coverBg: '#fff',
-							bgColor: '#d9d9d9',
-							fillColor: '#1da1f4',
-							percentSize: '15px',
-							percentWeight: 'normal'
-							});
+						<script type="text/javascript">
 
-							$('.demo-2').percentcircle({
-							animate : false,
-							diameter : 100,
-							guage: 3,
-							coverBg: '#fff',
-							bgColor: '#d9d9d9',
-							fillColor: '#562b1a',
-							percentSize: '15px',
-							percentWeight: 'normal'
-							});
+						  var _gaq = _gaq || [];
+						  _gaq.push(['_setAccount', 'UA-36251023-1']);
+						  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+						  _gaq.push(['_trackPageview']);
 
-							$('.demo-3').percentcircle({
-							animate : false,
-							diameter : 100,
-							guage: 3,
-							coverBg: '#fff',
-							bgColor: '#a6192e',
-							fillColor: '#E64608',
-							percentSize: '18px',
-							percentWeight: 'normal'
-							});		
-										
-								</script><script type="text/javascript">
+						  (function() {
+							var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+							ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+							var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+						  })();
 
-								  var _gaq = _gaq || [];
-								  _gaq.push(['_setAccount', 'UA-36251023-1']);
-								  _gaq.push(['_setDomainName', 'jqueryscript.net']);
-								  _gaq.push(['_trackPageview']);
-
-								  (function() {
-									var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-									ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-									var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-								  })();
-
-								</script>
+						</script>
 					</div>			
 					<div class="col-md-6 result">
 						<h3>RESULTS</h3>
@@ -433,15 +328,6 @@ $(document).ready(function(){
 							<li><a href="#">Account Settings</a></li>  
 							<li><a href="#">Statistics</a></li>
 						</ul>
-							<!-- script-for-menu -->
-							<script>
-							   $( "span.menu2" ).click(function() {
-							   $( "ul.effct1" ).slideToggle( 300, function() {
-							 // Animation complete.
-							  });
-							 });
-							</script>
-							<!-- /script-for-menu -->
 					</div>
 					<div class="top-nav3 top-nav2">
 						<span class="menu3"><img src="images/menu.png" alt=""></span>
@@ -452,15 +338,7 @@ $(document).ready(function(){
 							<li><a href="#"></a></li>  
 							<li><a href="#"></a></li>
 						</ul>
-							<!-- script-for-menu -->
-							<script>
-							   $( "span.menu3" ).click(function() {
-							   $( "ul.effct2" ).slideToggle( 300, function() {
-							 // Animation complete.
-							  });
-							 });
-							</script>
-							<!-- /script-for-menu -->
+							
 					</div>	
 					<div class="pages">
 						<nav>
@@ -492,16 +370,6 @@ $(document).ready(function(){
 						</form>
 						<div class="scrolling">
 							<div id="slider"></div>
-								<script>
-									$("#slider").noUiSlider({
-										start: [20, 80],
-										connect: true,
-										range: {
-											'min': 0,
-											'max': 100
-										}
-									});
-								</script>
 						</div>																					
 						<div class="progress prgs1">
 							<div class="progress-bar bar1" style="width:45%"></div>	
@@ -678,121 +546,9 @@ $(document).ready(function(){
 				</div>
 				<div class="col-md-4 line-graph">
 					<div class="statistics-info">
-							
-								<!--graph-->
-								<link rel="stylesheet" href="css/graph.css">
-								<script src="js/jquery.flot.min.js"></script>
-								<!--//graph-->
-										<script>
-										$(document).ready(function () {
-										
-											// Graph Data ##############################################
-											var graphData = [{
-													// Returning Visits
-													data: [ [6, 4500], [7,3500], [8, 6550], [9, 7600], ],
-													color: '#59676B',
-													points: { radius: 4, fillColor: '#59676B' }
-												}
-											];
-										
-											// Lines Graph #############################################
-											$.plot($('#graph-lines'), graphData, {
-												series: {
-													points: {
-														show: true,
-														radius: 1
-													},
-													lines: {
-														show: true
-													},
-													shadowSize: 0
-												},
-												grid: {
-													color: '#59676B',
-													borderColor: 'transparent',
-													borderWidth: 10,
-													hoverable: true
-												},
-												xaxis: {
-													tickColor: 'transparent',
-													tickDecimals: false
-												},
-												yaxis: {
-													tickSize: 1200
-												}
-											});
-										
-											// Bars Graph ##############################################
-											$.plot($('#graph-bars'), graphData, {
-												series: {
-													bars: {
-														show: true,
-														barWidth: .9,
-														align: 'center'
-													},
-													shadowSize: 0
-												},
-												grid: {
-													color: '#fff',
-													borderColor: 'transparent',
-													borderWidth: 20,
-													hoverable: true
-												},
-												xaxis: {
-													tickColor: 'transparent',
-													tickDecimals: 2
-												},
-												yaxis: {
-													tickSize: 1000
-												}
-											});
-										
-											// Graph Toggle ############################################
-											$('#graph-bars').hide();
-										
-											$('#lines').on('click', function (e) {
-												$('#bars').removeClass('active');
-												$('#graph-bars').fadeOut();
-												$(this).addClass('active');
-												$('#graph-lines').fadeIn();
-												e.preventDefault();
-											});
-										
-											$('#bars').on('click', function (e) {
-												$('#lines').removeClass('active');
-												$('#graph-lines').fadeOut();
-												$(this).addClass('active');
-												$('#graph-bars').fadeIn().removeClass('hidden');
-												e.preventDefault();
-											});
-										
-											// Tooltip #################################################
-											function showTooltip(x, y, contents) {
-												$('<div id="tooltip">' + contents + '</div>').css({
-													top: y - 16,
-													left: x + 20
-												}).appendTo('body').fadeIn();
-											}
-										
-											var previousPoint = null;
-										
-											$('#graph-lines, #graph-bars').bind('plothover', function (event, pos, item) {
-												if (item) {
-													if (previousPoint != item.dataIndex) {
-														previousPoint = item.dataIndex;
-														$('#tooltip').remove();
-														var x = item.datapoint[0],
-															y = item.datapoint[1];
-															showTooltip(item.pageX, item.pageY, y+ x );
-													}
-												} else {
-													$('#tooltip').remove();
-													previousPoint = null;
-												}
-											});
-										
-										});
-										</script>
+						
+						<!--//graph-->
+								
 								<!-- Graph HTML -->
 								<div id="graph-wrapper">
 									<div class="graph-container">
@@ -806,15 +562,7 @@ $(document).ready(function(){
 				</div>
 				<div class="clearfix"> </div>
 			</div>
-			<div class="footer">
-				<p>© 2015 Ask UI Kit . All Rights Reserved | Template by  <a href="http://w3layouts.com/">  W3layouts</a></p>
-			</div>
 		</div>
 	</div>
-	<!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/bootstrap.js"> </script>
-
-</body>
-</html>
+	
+	<?php require_once("footer.php") ?>
