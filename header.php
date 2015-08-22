@@ -27,6 +27,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<link href="css/jplayer.blue.monday.min.css" rel="stylesheet" type="text/css" />
 	
 </head>
+
 <body>
 	<div class="content">
 		<div class="container">
