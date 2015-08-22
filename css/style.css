@@ -489,6 +489,7 @@ background: url('../images/into.png') no-repeat 0px 0px;
 /*--login--*/
 .login-form {
   margin: 0;
+  margin-bottom: 30px;
   background: #ffffff;
   padding: 0;
 }
