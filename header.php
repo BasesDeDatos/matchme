@@ -28,8 +28,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	
 </head>
 <body>
-	
-	<!--navigation-->
+	<div class="content">
+		<div class="container">
+			<!--navigation-->
 			<div class="header">
 				<div class="logo">
 					<a href="#"><img src="images/logo.png" alt=""/></a>

@@ -5,36 +5,11 @@ License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 -->
 	<?php require_once("header.php") ?>
+	
 	<script src="js/Chart.js"></script>
 	<script src="js/jquery.circlechart.js"></script>
 	<!-- content -->
-	<div class="content">
-		<div class="container">
-			<!--navigation-->
-			<div class="header">
-				<div class="logo">
-					<a href="#"><img src="images/logo.png" alt=""/></a>
-				</div>
-				<div class="top-nav">
-					<span class="menu">Menu</span>		
-					<ul class="nav1">
-						<li><a href="#" class="active" data-hover="Home">Home</a></li>
-						<li><a href="#" data-hover="About">About</a></li>					
-						<li><a href="#" data-hover="Gallery">Gallery</a></li>
-						<li><a href="#" data-hover="Blog">Blog</a></li>
-						<li><a href="#" data-hover="Typo">Typo</a></li>
-						<li><a href="#" data-hover="Contact">Contact</a></li>
-					</ul>				
-				</div>
-				<div class="search">
-					<form>
-						<input type="search" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}" required="">
-						<input type="submit" value=" ">
-					</form>
-				</div>
-				<div class="clearfix"></div>
-			</div>
-			<!--//navigation-->
+
 			<div class="content-btm">
 				<div class="col-md-8 content-grids">
 					<div class="content-grids-info">
