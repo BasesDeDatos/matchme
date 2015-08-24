@@ -1,5 +1,5 @@
 <!--
-Author: W3layouts, Isaac Campos, Roger Villalobos,  Jeffry Alvarado
+Author: W3layouts, Isaac Campos, Roger Villalobos,  Jeffrey Alvarado
 Template name: Login User
 Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
