@@ -9,7 +9,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	</div> <!--content -->
 	
 	<div class="footer">
-		<p>© 2015 Ask UI Kit . All Rights Reserved | Template by  <a href="http://w3layouts.com/">  W3layouts</a></p>
+		<!--p>© 2015 Ask UI Kit . All Rights Reserved | Template by  <a href="http://w3layouts.com/">  W3layouts</a></p-->
+		<p>© 2015 MatchMe.com</a></p>
 	</div>
 
 	<script src="js/jquery-1.11.1.min.js"></script>

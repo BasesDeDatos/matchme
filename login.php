@@ -1,21 +1,21 @@
 <!--
-Author: W3layouts, Isaac Campos, Roger Villalobos,  Jeffry Alvarado
+Author: W3layouts, Isaac Campos, Roger Villalobos,  Jeffrey Alvarado
 Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 -->
-	<?php require_once("header.php") ?>
+	<?php require_once("header2.php") ?>
 			<div class="row">
 				<div class="col-md-4 col-md-push-4 login-form" >
 					<div class="login-pad">
-						<h3>Account Login</h3>
+						<h3>Ingreso</h3>
 						<form>
-							<input type="text" value="Username" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Username';}" required="">
-							<input type="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" required="">							
+							<input type="text" value="Nombre de usuario o correo electronico" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Nombre de usuario o correo electronico';}" required="">
+							<input type="password" value="Contrasena" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Contrasena';}" required="">							
 							<input type="submit" value="SIGN IN">
 						</form>
-						<a href="#">Forgot Password?</a>
-						<p>OR LOGIN WITH</p>
+						<a href="#">Olvido la contrasena?</a>
+						<p>O</p>
 					</div>
 					<div class="new-here">					
 						<div class="new-grids">	
