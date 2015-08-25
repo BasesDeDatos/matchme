@@ -39,17 +39,17 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<div class="top-nav">
 					<span class="menu">Menu</span>		
 					<ul class="nav1">
-						<li><a href="#" class="active" data-hover="Home">Home</a></li>
-						<li><a href="#" data-hover="About">About</a></li>					
-						<li><a href="#" data-hover="Gallery">Gallery</a></li>
-						<li><a href="#" data-hover="Blog">Blog</a></li>
-						<li><a href="#" data-hover="Typo">Typo</a></li>
-						<li><a href="#" data-hover="Contact">Contact</a></li>
+						<li><a href="#" class="active" data-hover="Inicio">Inicio</a></li>
+						<li><a href="#" data-hover="Match">Match</a></li>					
+						<!--li><a href="#" data-hover="Match">Match</a></li-->
+						<li><a href="#" data-hover="Perfil">Perfil</a></li>
+						<li><a href="#" data-hover="Sobre nosotros">Sobre nosotros</a></li>
+						<li><a href="#" data-hover="Contacto">Contacto</a></li>
 					</ul>				
 				</div>
 				<div class="search">
 					<form>
-						<input type="search" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}" required="">
+						<input type="search" value="Buscar" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Buscar';}" required="">
 						<input type="submit" value=" ">
 					</form>
 				</div>
