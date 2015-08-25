@@ -7,7 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<title>Ask UI Kit a Flat bootstrap Responsive website Template | Home :: w3layouts</title>
+	<title>MatchMe.com</title>
 	<link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
 	<link href="css/style.css" type="text/css" rel="stylesheet" media="all">
 	<!-- Custom Theme files -->
