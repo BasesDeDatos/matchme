@@ -11,6 +11,48 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<!-- content -->
 
 			<div class="content-btm">
+				<div class="col-md-4">
+					
+					<div class="top-nav2">
+						<span class="menu2"><img src="images/menu.png" alt=""> <lable> MENU BOX</lable></span>
+						<ul class="effct1" style="display: none;">
+							<li><a href="#">Messages<span>30</span></a></li>                                             
+							<li><a href="#">Invite<span>5</span></a></li>
+							<li><a href="#">Events<span>10</span></a></li>  
+							<li><a href="#">Account Settings</a></li>  
+							<li><a href="#">Statistics</a></li>
+						</ul>
+					</div>
+					
+					<div class="content-right">
+						<div class="cntnt-img">
+						</div>
+						<div class="bnr-img">
+							<img src="images/img2.jpg" alt=""/>
+						</div>
+						<div class="bnr-text">
+							<h1>Lorem Ipsum</h1>
+							<h5>www.design has.com</h5>
+							<p>A wonderful designs has takenpossession of dummy text quis nostrum dummy text</p>
+						</div>
+						<div class="btm-num">
+							<ul>
+								<li>
+									<h4>420</h4>
+									<h5>Following</h5>
+								</li>
+								<li>
+									<h4>100</h4>
+									<h5>Likes</h5>
+								</li>
+								<li>
+									<h4>60</h4>
+									<h5>Shares</h5>
+								</li>
+							</ul>
+						</div>				
+					</div>				
+				</div>
 				<div class="col-md-8 content-grids">
 					<div class="content-grids-info">
 						<div class="col-md-6 content-left">
@@ -138,34 +180,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					</div>
 					<div class="clearfix"> </div>
 				</div>					
-				<div class="col-md-4 content-right">
-					<div class="cntnt-img">
-					</div>
-					<div class="bnr-img">
-						<img src="images/img2.jpg" alt=""/>
-					</div>
-					<div class="bnr-text">
-						<h1>Lorem Ipsum</h1>
-						<h5>www.design has.com</h5>
-						<p>A wonderful designs has takenpossession of dummy text quis nostrum dummy text</p>
-					</div>
-					<div class="btm-num">
-						<ul>
-							<li>
-								<h4>420</h4>
-								<h5>Following</h5>
-							</li>
-							<li>
-								<h4>100</h4>
-								<h5>Likes</h5>
-							</li>
-							<li>
-								<h4>60</h4>
-								<h5>Shares</h5>
-							</li>
-						</ul>
-					</div>				
-				</div>
 				<div class="clearfix"></div>
 			</div>
 			<div class="center-grids">
@@ -294,16 +308,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			</div>
 			<div class="work-grids">
 				<div class="col-md-5 menu-list">
-					<div class="top-nav2">
-						<span class="menu2"><img src="images/menu.png" alt=""> <lable> MENU BOX</lable></span>
-						<ul class="effct1">
-							<li><a href="#">Messages<span>30</span></a></li>                                             
-							<li><a href="#">Invite<span>5</span></a></li>
-							<li><a href="#">Events<span>10</span></a></li>  
-							<li><a href="#">Account Settings</a></li>  
-							<li><a href="#">Statistics</a></li>
-						</ul>
-					</div>
 					<div class="top-nav3 top-nav2">
 						<span class="menu3"><img src="images/menu.png" alt=""></span>
 						<ul class="effct2">

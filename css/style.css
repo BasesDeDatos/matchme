@@ -268,7 +268,8 @@ span.menu {
 .content-right {
   padding: 0;
   position:relative;
-    background-color: #fff;
+  background-color: #fff;
+  margin-top: 5.5em;
 }
 .cntnt-img{
 	content:'';
@@ -709,7 +710,7 @@ background: url('../images/into.png') no-repeat 0px 0px;
 
 span.menu2 {
   display: block;
-  padding: 1em 1.5em;
+  padding: 0.5em 1.5em;
   cursor: pointer;
   color: #FFFFFF;
   font-size: 1.5em;
@@ -737,17 +738,17 @@ span.menu3 lable {
 
 .top-nav2 {
   float: left;
-  width: 80%;
+  width: 100%;
 }
 
 .top-nav2 ul {
-	padding: 0;
-	margin: 0;
-	z-index: 999;
-	position: absolute;
-	width: 80%;
-	left:0;
-	display: block;
+  padding: 0px;
+  margin: 0px;
+  z-index: 999;
+  position: absolute;
+  width: calc(100% - 30px);
+  left: 0px;
+  display: block;
 }
 
 .top-nav2 ul li {
