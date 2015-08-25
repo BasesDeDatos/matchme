@@ -274,7 +274,7 @@ span.menu {
 .cntnt-img{
 	content:'';
 	background:url(../images/img1.jpg)no-repeat 0px 0px;
-	min-height:200px;
+  min-height: 165px;
 	background-size:cover;
 }
 
@@ -287,7 +287,7 @@ span.menu {
 .bnr-img {
   display: inline-block;
   position: absolute;
-  top: 16%;
+  top: 10%;
   left: 26%;
   border: 12px solid rgba(255, 255, 255, 0.53);
   border-radius: 50%;
