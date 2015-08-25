@@ -13,9 +13,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<form id="msform">
 			<!-- progressbar -->
 			<ul id="progressbar">
-				<li class="active">Datos Personale</li>
-				<li>Personal Details</li>
-				<li>Aspecto Fisicos</li>
+				<li class="active">Registro</li>
+				<li>Datos personales</li>
+				<li>Aspecto fisicos</li>
 				<li>Intereses</li>
 			</ul>
 			<!-- fieldsets -->
@@ -43,16 +43,31 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			
 			<fieldset>
 				<h2 class="fs-title">Aspecto Físico</h2>
-				<div class="col-md-12"><input type="text" name="color_piel" placeholder="Color Piel" /></div>
+				<!--div class="col-md-12"><input type="text" name="color_piel" placeholder="Color Piel" /></div>
 				<div class="col-md-12"><input type="text" name="color_ojos" placeholder="Color Ojos" /></div>
-				<div class="col-md-12"><input type="text" name="color_pelo" placeholder="Color Pelo" /></div>
+				<div class="col-md-12"><input type="text" name="color_pelo" placeholder="Color Pelo" /></div-->
+				
+				<div class="col-md-4"><h3 class="fs-subtitle">Color de pelo:</h3></div>
+				
+				<select name="color_pelo_select">
+				</select>
+				
+				<div class="col-md-4"><h3 class="fs-subtitle">Color de piel:</h3></div>
+				
+				<select name="color_piel_select">
+				</select>
+				
+				<div class="col-md-4"><h3 class="fs-subtitle">Color de ojos:</h3></div>
+				
+				<select name="color_ojos_select">
+				</select>
 				
 				<input type="button" name="previous" class="previous action-button" value="Previous" />
 				<input type="button" name="next" class="next action-button" value="Next" />
 			</fieldset>
 			
 			<fieldset>
-				<h2 class="fs-title">Aspecto Físico</h2>
+				<h2 class="fs-title">Intereses</h2>
 				
 				<div class="col-md-4">
 					<input type="checkbox" name="checkbox" id="checkbox" />
