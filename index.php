@@ -283,27 +283,23 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							new Chart(document.getElementById("line").getContext("2d")).Line(lineChartData);
 						</script>		
 					</div-->
-				</div>
-				<!--div class="col-md-4 login-form">
-					<div class="login-pad">
-						<h3>Account Login</h3>
-						<form>
-							<input type="text" value="Username" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Username';}" required="">
-							<input type="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" required="">							
-							<input type="submit" value="SIGN IN">
+					<div class="col-md-4 middle-grids">					
+					<div class="line-grids">
+						<div class="progress">
+							<div class="progress-bar" style="width:75%"></div>	
+							<p class="percentage">75%</p> 
+						</div>
+						<form id="opts">
+							<input type="text" name="lines" min="5" max="16" step="2" value="12"><br>
 						</form>
-						<a href="#">Forgot Password?</a>
-						<p>OR LOGIN WITH</p>
-					</div>
-					<div class="new-here">					
-						<div class="new-grids">	
-							<a href="#">FACEBOOK</a>
-						</div>
-						<div class="new-grids twit-grid">	
-							<a href="#">TWITTER</a>
-						</div>
-					</div>
-				</div-->
+						<div class="scrolling">
+							<div id="slider"></div>
+						</div>																					
+						<div class="progress prgs1">
+							<div class="progress-bar bar1" style="width:45%"></div>	
+							<p class="percentage prsntg1">45%</p> 
+						</div>	
+				</div>
 				<div class="clearfix"></div>
 			</div>
 			<div class="work-grids">
@@ -338,22 +334,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						</nav>
 					</div>
 				</div>
-				<div class="col-md-4 middle-grids">					
-					<div class="line-grids">
-						<div class="progress">
-							<div class="progress-bar" style="width:75%"></div>	
-							<p class="percentage">75%</p> 
-						</div>
-						<form id="opts">
-							<input type="text" name="lines" min="5" max="16" step="2" value="12"><br>
-						</form>
-						<div class="scrolling">
-							<div id="slider"></div>
-						</div>																					
-						<div class="progress prgs1">
-							<div class="progress-bar bar1" style="width:45%"></div>	
-							<p class="percentage prsntg1">45%</p> 
-						</div>	
+				
 						<!--div class="designer">
 							<h3>Ask Designer</h3>
 							<h5>ZX/MY Designer</h5>

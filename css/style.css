@@ -503,7 +503,7 @@ span.perc {
 }
 /*--calender--*/
 .calnder {
-  padding: 0;
+  padding: 10;
 }
 .cal1 .clndr .clndr-table tr .day.today.event .day-contents {
   color: #fff !important;
@@ -2634,3 +2634,5 @@ canvas#bar {
 	background: #E64608;
 	color: white;
 }
+
+
