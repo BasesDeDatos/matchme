@@ -32,6 +32,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<div class="content">
 		<div class="container">
 			<!--navigation-->
+			<div class="logo-top">
+				<a href="#"><img src="images/logo-top.png" alt=""/></a>
+			</div>
 			<div class="header">
 				<div class="logo">
 					<a href="#"><img src="images/logo.png" alt=""/></a>
