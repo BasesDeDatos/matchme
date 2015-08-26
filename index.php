@@ -13,7 +13,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<div class="content-btm">
 				<div class="col-md-4">
 					
-					<div class="top-nav2">
+					<!--div class="top-nav2">
 						<span class="menu2"><img src="images/menu.png" alt=""> <lable> MENU BOX</lable></span>
 						<ul class="effct1" style="display: none;">
 							<li><a href="#">Messages<span>30</span></a></li>                                             
@@ -22,7 +22,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							<li><a href="#">Account Settings</a></li>  
 							<li><a href="#">Statistics</a></li>
 						</ul>
-					</div>
+					</div-->
 					
 					<div class="content-right">
 						<div class="cntnt-img">
@@ -283,7 +283,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							new Chart(document.getElementById("line").getContext("2d")).Line(lineChartData);
 						</script>		
 					</div-->
-					<div class="col-md-4 middle-grids">					
+					<!--div class="col-md-4 middle-grids">					
 					<div class="line-grids">
 						<div class="progress">
 							<div class="progress-bar" style="width:75%"></div>	
@@ -301,10 +301,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						</div>	
 				</div>
 				<div class="clearfix"></div>
-			</div>
+			</div-->
 			<div class="work-grids">
 				<div class="col-md-5 menu-list">
-					<div class="top-nav3 top-nav2">
+					<!--div class="top-nav3 top-nav2">
 						<span class="menu3"><img src="images/menu.png" alt=""></span>
 						<ul class="effct2">
 							<li><a href="#"></a></li>                                             
@@ -314,8 +314,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							<li><a href="#"></a></li>
 						</ul>
 							
-					</div>	
-					<div class="pages">
+					</div-->	
+					<!--div class="pages">
 						<nav>
 							<ul class="pagination">
 								<li class="prvs"><a href="#"aria-label="Previous"><span aria-hidden="true"><</span></a></li>
@@ -332,7 +332,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								<li class="prvs active1"><a href="#" aria-label="Previous"><span aria-hidden="true">></span></a></li>
 							</ul>
 						</nav>
-					</div>
+					</div-->
 				</div>
 				
 						<!--div class="designer">
@@ -360,7 +360,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					</div-->
 					<div class="clearfix"></div>
 				</div>
-				<div class="col-md-3 menu-list">
+				<!--div class="col-md-3 menu-list">
 					<div class="buttons">				
 							<a href="#">Button Face </a>
 							<a class="hover" href="#"> Button Hover</a>						
@@ -432,7 +432,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							<li><a href="#">Dropdown link</a></li>
 						</ul>
 					</div>			
-				</div>
+				</div-->
 				<div class="clearfix"> </div>
 			</div>
 			<div class="bottom-grids">
