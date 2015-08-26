@@ -57,12 +57,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<div class="content-grids-info">
 						<div class="col-md-6 content-left">
 							<div class="drop-dwn">
-								<div class="search2 ">
+								<!--div class="search2 ">
 									<form>
 										<input type="search" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}" required="">
 										<input type="submit" value=" ">
 									</form>
-								</div>
+								</-->
 								<div class="search-btm">
 									<div class="temp">
 										<div class="temp-right">
@@ -284,7 +284,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						</script>		
 					</div>
 				</div>
-				<div class="col-md-4 login-form">
+				<!--div class="col-md-4 login-form">
 					<div class="login-pad">
 						<h3>Account Login</h3>
 						<form>
@@ -303,7 +303,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							<a href="#">TWITTER</a>
 						</div>
 					</div>
-				</div>
+				</div-->
 				<div class="clearfix"></div>
 			</div>
 			<div class="work-grids">
