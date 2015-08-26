@@ -39,15 +39,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							<ul>
 								<li>
 									<h4>420</h4>
-									<h5>Following</h5>
+									<h5>Seguidores</h5>
 								</li>
 								<li>
 									<h4>100</h4>
-									<h5>Likes</h5>
+									<h5>Winks</h5>
 								</li>
 								<li>
 									<h4>60</h4>
-									<h5>Shares</h5>
+									<h5>Matches nuevos</h5>
 								</li>
 							</ul>
 						</div>				
@@ -97,14 +97,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								</div>
 							</div>					
 						</div>				
-						<div class="col-md-6 menu">
+						<!--div class="col-md-6 menu">
 							<ul>
 								<li><a href="#">Menu 1</a></li>
 								<li><a href="#">Menu 2</a></li>
 								<li><a href="#" class="active">Menu 3</a></li>
 								<li><a href="#">Menu 4</a></li>
 							</ul>
-						</div>
+						</div-->
 						<div class="clearfix"> </div>
 					</div>
 					<div class="col-md-6 circles">
@@ -186,7 +186,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<div class="col-md-4 calnder">
 					<div class="calender-right">
 						<div class="clndr-top">							
-							<h3>CALENDAR</h3>
+							<h3>CALENDARIO</h3>
 							<div class="bottom-border"> </div>
 						</div>
 						<div class="column_right_grid calender">
@@ -204,12 +204,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								<table class="clndr-table" border="0" cellspacing="0" cellpadding="0">
 								  <thead>
 								   <tr class="header-days">
-								    <td class="header-day">S</td>
+								    <td class="header-day">D</td>
+									<td class="header-day">L</td>
 									<td class="header-day">M</td>
-									<td class="header-day">T</td>
-									<td class="header-day">W</td>
-									<td class="header-day">T</td>
-									<td class="header-day">F</td>
+									<td class="header-day">X</td>
+									<td class="header-day">J</td>
+									<td class="header-day">V</td>
 									<td class="header-day">S</td>
 								  </tr>
 								 </thead>
@@ -227,7 +227,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						</div>
 					</div>
 				</div>			
-				<div class="col-md-4 pie-charts">
+				<!--div class="col-md-4 pie-charts">
 					<div class="pie-chrt">
 						<canvas id="doughnut" height="200" width="200"></canvas>
 						<script>
@@ -257,8 +257,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 							new Chart(document.getElementById("doughnut").getContext("2d")).Doughnut(doughnutData);						
 						</script>
-					</div>
-					<div class="line-chrt">
+					</div-->
+					<!--div class="line-chrt">
 						<canvas id="line" height="210" width="353"></canvas>
 						<script>
 							var lineChartData = {
@@ -282,7 +282,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							}
 							new Chart(document.getElementById("line").getContext("2d")).Line(lineChartData);
 						</script>		
-					</div>
+					</div-->
 				</div>
 				<!--div class="col-md-4 login-form">
 					<div class="login-pad">
@@ -354,7 +354,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							<div class="progress-bar bar1" style="width:45%"></div>	
 							<p class="percentage prsntg1">45%</p> 
 						</div>	
-						<div class="designer">
+						<!--div class="designer">
 							<h3>Ask Designer</h3>
 							<h5>ZX/MY Designer</h5>
 							<p>Follow</p>
@@ -367,16 +367,16 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 									<div class="clearfix"></div>
 								</ul>
 							</div>
-						</div>
+						</div-->
 					</div>
-					<div class="clouds">
+					<!--div class="clouds">
 						<ul>
 							<li><a href="#"> </a></li>
 							<li><a class="cld1" href="#"> </a></li>
 							<li><a class="cld2" href="#"> </a></li>
 							<li><a class="cld3" href="#"> </a></li>
 						</ul>
-					</div>
+					</div-->
 					<div class="clearfix"></div>
 				</div>
 				<div class="col-md-3 menu-list">
@@ -455,7 +455,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<div class="clearfix"> </div>
 			</div>
 			<div class="bottom-grids">
-				<div class="col-md-4 video-grid">
+				<!--div class="col-md-4 video-grid">
 					<div id="jp_container_1" class="jp-video jp-video-360p" role="application" aria-label="media player">
 						<div class="jp-type-single">
 							<div id="jquery_jplayer_1" class="jp-jplayer"></div>
@@ -526,19 +526,16 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<div class="col-md-4 line-graph">
 					<div class="statistics-info">
 						
-						<!--//graph-->
 								
-								<!-- Graph HTML -->
 								<div id="graph-wrapper">
 									<div class="graph-container">
 										<div id="graph-lines"> </div>
 										<div id="graph-bars"> </div>
 									</div>
 								</div>
-								<!-- end Graph HTML -->
-								<!---//End-chart---->
+								
 						</div>
-				</div>
+				</div-->
 				<div class="clearfix"> </div>
 			</div>
 	
