@@ -5,9 +5,9 @@ License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 -->
 	<?php require_once("header.php")?>
-			<div class="row">
-				<div class="col-md-10 col-md-push-1" > 
-					<div class ="contenedor" >
+			<div class ="container-fluid" id = "contenedor" >
+				<div class="row">
+					<div class="col-md-10 col-md-push-1" > 
 						<div class = "tituloPerfil">
 							<h2>Ver perfil</h2>
 						</div>
@@ -30,7 +30,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							</form>							
 						</div>
 			
-						<div class = "columnatres">
+						<div>
 						<div id="contenedor">
 							<input id="tab-1" type="radio" name="radio-set" class="tab-selector-1" checked="checked" />
 							<label for="tab-1" class="tab-label-1">Background</label>
