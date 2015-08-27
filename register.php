@@ -24,7 +24,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<fieldset>
 				<h2 class="fs-title">Crear Cuenta</h2>
 				<!--h3 class="fs-subtitle">Datos De la Cuenta</h3-->
-				<div class="col-md-12"><input type="text" name="email" placeholder="Email" /></div>
+				<div class="col-md-12"><input type="text" name="email" placeholder="Email: someone@something.com" /></div>
 				<div class="col-md-12"><input type="password" name="pass" placeholder="Contraseña" /></div>
 				<div class="col-md-12"><input type="password" name="cpass" placeholder="Confirmar Contraseña" /></div>
 				<input type="button" name="next" class="next action-button" value="Siguiente" />

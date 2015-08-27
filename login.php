@@ -12,10 +12,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<form>
 							<input type="text" value="Nombre de usuario o correo electronico" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Nombre de usuario o correo electronico';}" required="">
 							<input type="password" value="Contrasena" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Contrasena';}" required="">							
-							<input type="submit" value="SIGN IN">
+							<input type="submit" value="ENTRAR">
 						</form>
 						<a href="#">Olvido la contrasena?</a>
-						<p>O</p>
+						<p>No estas registrado?</p>
+						<a href="register.php">Crea una nueva cuenta</a>
 					</div>
 					<div class="new-here">					
 						<div class="new-grids">	

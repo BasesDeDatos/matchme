@@ -32,9 +32,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<div class="content">
 		<div class="container">
 			<!--navigation-->
-			<div class="header">
-				<div class="logo">
-					<img src="images/logo.png" alt=""/>
-				</div>
-				<div class="clearfix"></div>
+			<div class="logo-top">
+				<a href="login.php"><img src="images/logo-top.png" alt=""/></a>
 			</div>
