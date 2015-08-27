@@ -25,6 +25,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			</ul>
 			<!-- fieldsets -->
 			<fieldset>
+<<<<<<< HEAD
 				<div class="row"><div class="col-md-12">
 					<h2 class="fs-title">Crear Cuenta</h2>
 					<!--h3 class="fs-subtitle">Datos De la Cuenta</h3-->
@@ -32,6 +33,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<div class="col-md-12"><input type="password" name="pass" placeholder="Contraseña" /></div>
 					<div class="col-md-12"><input type="password" name="cpass" placeholder="Confirmar Contraseña" /></div>
 				</div></div>
+=======
+				<h2 class="fs-title">Crear Cuenta</h2>
+				<!--h3 class="fs-subtitle">Datos De la Cuenta</h3-->
+				<div class="col-md-12"><input type="text" name="email" placeholder="Email: someone@something.com" /></div>
+				<div class="col-md-12"><input type="password" name="pass" placeholder="Contraseña" /></div>
+				<div class="col-md-12"><input type="password" name="cpass" placeholder="Confirmar Contraseña" /></div>
+>>>>>>> a9a8142d7766a442e1075b872d4cc0b2c94c34ad
 				<input type="button" name="next" class="next action-button" value="Siguiente" />
 			</fieldset>
 			
@@ -49,6 +57,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			</fieldset>
 			
 			<fieldset>
+<<<<<<< HEAD
 				<div class="row"><div class="col-md-12">
 					<h2 class="fs-title">Aspecto Físico</h2>
 					
@@ -69,6 +78,25 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<div class="col-md-8"><select name="color_ojos_select"></select></div>
 					
 				</div></div>
+=======
+				<h2 class="fs-title">Aspecto Físico</h2>
+				
+				<div class="col-md-4"><h3 class="fs-subtitle">Color de pelo:</h3></div>
+				
+				<select name="color_pelo_select">
+				</select>
+				
+				<div class="col-md-4"><h3 class="fs-subtitle">Color de piel:</h3></div>
+				
+				<select name="color_piel_select">
+				</select>
+				
+				<div class="col-md-4"><h3 class="fs-subtitle">Color de ojos:</h3></div>
+				
+				<select name="color_ojos_select">
+				</select>
+				
+>>>>>>> a9a8142d7766a442e1075b872d4cc0b2c94c34ad
 				<input type="button" name="previous" class="previous action-button" value="Anterior" />
 				<input type="button" name="next" class="next action-button" value="Siguente" />
 			</fieldset>
