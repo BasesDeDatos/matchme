@@ -10,19 +10,12 @@ clear:both;
 .tituloPerfil{
 border: 1px solid #88BDD7;
 background: #88BDD7;
-margin: 10px;
-
-}
-
-.tituloPerfil{
-border: 1 solid #AAAAAA;
-margin: 10px;
-padding:10px	
+    margin: 15px 0px;
 }
 
 .columnaUno{
-margin: 10px 0px 0px 10px;
-padding: 0px;
+margin-left: 15px;
+padding: 30px;
 border: 1px solid #D3E7FC;
 background: #D3E7FC;
 float: left;
@@ -52,11 +45,11 @@ clear:both;
 
 
 #tap {
-margin: 0px auto;
-width: 100%;  /* Ancho del contenedor */
-box-sizing: border-box;
--moz-box-sizing: border-box;
-float: left;
+	margin: 0px auto;
+    width: 100%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    float: left;
 }
 
 #tap input {
@@ -97,13 +90,13 @@ top: -5px;
 }
 
 #tap .content {
- background: #92D8F1; 
-position: relative;
-width: 70%;
-height: 100%; 
-padding: 10px;
-z-index: 5;
-border-radius: 0 5px 5px 0px;
+	background: #92D8F1;
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    z-index: 5;
+    border-radius: 0 5px 5px 0px;
 }
 
 #tap .content div {

@@ -124,7 +124,6 @@ box-shadow: inset 0px 0px 25px 20px rgba(231,76,60,1);
 }
 /*-- //menu --*/
 .content-grids {
-  padding-left: 0;
 }
 .top-nav ul{
 	padding:0;
@@ -505,7 +504,6 @@ span.perc {
 .result {
   background: #FFF;
   padding: 2em 0 1.6em 2em;
-  margin: 0 0 0 1em;
 }
 
 .result h3{

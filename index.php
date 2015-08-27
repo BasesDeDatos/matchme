@@ -53,135 +53,140 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					</div>				
 				</div>
 				<div class="col-md-4 content-grids">
-					<div class="content-grids-info">
-						<div class="col-md-12">
-							<div class="content-left">
-								<div class="drop-dwn">
-									<!--div class="search2 ">
-										<form>
-											<input type="search" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}" required="">
-											<input type="submit" value=" ">
-										</form>
-									</-->
-									<div class="search-btm">
-										<div class="temp">
-											<div class="temp-right">
-												<p class="date">
-													<?php echo date("D, m/y"); ?>
-												</p>
-												<h5>
-													<?php
-														$jsonurl = "http://api.openweathermap.org/data/2.5/weather?id=3621841"; // 3621841 = SJ, CR
-														$json = file_get_contents($jsonurl);
-														
-														$weather = json_decode($json);
-														$kelvin = $weather->main->temp;
-														$celcius = $kelvin - 273.15;
-														
-														echo round($celcius)."°C";
-													?>
-												</h5>
+					<div class="row">
+						<div class="content-grids-info">
+	
+							<div class="col-md-12">
+								<div class="content-left">
+									<div class="drop-dwn">
+										<!--div class="search2 ">
+											<form>
+												<input type="search" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}" required="">
+												<input type="submit" value=" ">
+											</form>
+										</-->
+										<div class="search-btm">
+											<div class="temp">
+												<div class="temp-right">
+													<p class="date">
+														<?php echo date("D, m/y"); ?>
+													</p>
+													<h5>
+														<?php
+															$jsonurl = "http://api.openweathermap.org/data/2.5/weather?id=3621841"; // 3621841 = SJ, CR
+															$json = file_get_contents($jsonurl);
+															
+															$weather = json_decode($json);
+															$kelvin = $weather->main->temp;
+															$celcius = $kelvin - 273.15;
+															
+															echo round($celcius)."°C";
+														?>
+													</h5>
+												</div>
+												<div class="temp-left">
+													<img src="images/cloud.png" alt="">
+												</div>															
 											</div>
-											<div class="temp-left">
-												<img src="images/cloud.png" alt="">
-											</div>															
+											<div class="jobs">
+												<ul>
+													<li><a href="#">Jobs</a></li>
+													<li><a href="#" class="cmny">Company</a></li>
+													<li><a href="#" class="usr">User</a></li>
+												</ul>
+											</div>
+											<div class="clearfix"> </div>
 										</div>
-										<div class="jobs">
-											<ul>
-												<li><a href="#">Jobs</a></li>
-												<li><a href="#" class="cmny">Company</a></li>
-												<li><a href="#" class="usr">User</a></li>
-											</ul>
+									</div>	
+								</div>				
+							</div>				
+							<!--div class="col-md-6 menu">
+								<ul>
+									<li><a href="#">Menu 1</a></li>
+									<li><a href="#">Menu 2</a></li>
+									<li><a href="#" class="active">Menu 3</a></li>
+									<li><a href="#">Menu 4</a></li>
+								</ul>
+							</div-->
+							<!--div class="clearfix"> </div-->
+						</div>
+						<div class="col-md-12 ">
+							<div class="circles">
+								<h3>STATUS RECENT PROJECTS</h3>
+								<div class="demo">
+									<div class="demo-1" data-percent="65">
+										<div class="title">
+											<h4>Meier</h4>
+											<p>Stairs</p>
+										</div>
+									</div>
+									<div class="demo-2" data-percent="78">
+										<div class="title2">
+											<h4>Johnson</h4>
+											<p>Exterior wall</p>
+										</div>
+									</div>
+									<div class="demo-3" data-percent="95">
+										<div class="title1">
+											<h4>Junns</h4>
+											<p>Teriorwall </p>
+										</div>
+									</div>
+									<div class="clearfix"></div>
+								</div>	
+								<script type="text/javascript">
+		
+								  var _gaq = _gaq || [];
+								  _gaq.push(['_setAccount', 'UA-36251023-1']);
+								  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+								  _gaq.push(['_trackPageview']);
+		
+								  (function() {
+									var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+									ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+									var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+								  })();
+		
+								</script>
+							</div>			
+						</div>			
+						<div class="col-md-12">
+							<div class="result">
+								<h3>RESULTADOS</h3>
+								<div class="skills-top">
+									<h5>Usuarios con pareja</h5>
+									<div class="skills">
+										<div class="skill1" style="width:52%"></div>
+										<div class="skills-right">
+											<p>52%</p>
 										</div>
 										<div class="clearfix"> </div>
 									</div>
-								</div>	
-							</div>				
-						</div>				
-						<!--div class="col-md-6 menu">
-							<ul>
-								<li><a href="#">Menu 1</a></li>
-								<li><a href="#">Menu 2</a></li>
-								<li><a href="#" class="active">Menu 3</a></li>
-								<li><a href="#">Menu 4</a></li>
-							</ul>
-						</div-->
-						<!--div class="clearfix"> </div-->
-					</div>
-					<div class="col-md-12 ">
-						<div class="circles">
-							<h3>STATUS RECENT PROJECTS</h3>
-							<div class="demo">
-								<div class="demo-1" data-percent="65">
-									<div class="title">
-										<h4>Meier</h4>
-										<p>Stairs</p>
+								</div>
+								<div class="skills-top">
+									<h5>Usuarios casados</h5>
+									<div class="skills">
+										<div class="skill1" style="width:35%"></div>
+										<div class="skills-right">
+											<p>35%</p>
+										</div>
+										<div class="clearfix"> </div>
 									</div>
 								</div>
-								<div class="demo-2" data-percent="78">
-									<div class="title2">
-										<h4>Johnson</h4>
-										<p>Exterior wall</p>
+								<div class="skills-top">
+									<h5>Usuarios solteros</h5>
+									<div class="skills">
+										<div class="skill1" style="width:11%"></div>
+										<div class="skills-right">
+											<p>11%</p>
+										</div>
+										<div class="clearfix"> </div>
 									</div>
-								</div>
-								<div class="demo-3" data-percent="95">
-									<div class="title1">
-										<h4>Junns</h4>
-										<p>Teriorwall </p>
-									</div>
-								</div>
-								<div class="clearfix"></div>
-							</div>	
-							<script type="text/javascript">
-	
-							  var _gaq = _gaq || [];
-							  _gaq.push(['_setAccount', 'UA-36251023-1']);
-							  _gaq.push(['_setDomainName', 'jqueryscript.net']);
-							  _gaq.push(['_trackPageview']);
-	
-							  (function() {
-								var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-								ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-								var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-							  })();
-	
-							</script>
-						</div>			
-					</div>			
-					<div class="col-md-12 result">
-						<h3>RESULTADOS</h3>
-						<div class="skills-top">
-							<h5>Usuarios con pareja</h5>
-							<div class="skills">
-								<div class="skill1" style="width:52%"></div>
-								<div class="skills-right">
-									<p>52%</p>
-								</div>
-								<div class="clearfix"> </div>
+								</div>											
 							</div>
 						</div>
-						<div class="skills-top">
-							<h5>Usuarios casados</h5>
-							<div class="skills">
-								<div class="skill1" style="width:35%"></div>
-								<div class="skills-right">
-									<p>35%</p>
-								</div>
-								<div class="clearfix"> </div>
-							</div>
-						</div>
-						<div class="skills-top">
-							<h5>Usuarios solteros</h5>
-							<div class="skills">
-								<div class="skill1" style="width:11%"></div>
-								<div class="skills-right">
-									<p>11%</p>
-								</div>
-								<div class="clearfix"> </div>
-							</div>
-						</div>											
+						<div class="clearfix"> </div>
 					</div>
-					<div class="clearfix"> </div>
 				</div>
 				
 				<div class="col-md-4 calnder">
