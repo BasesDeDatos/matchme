@@ -5,7 +5,7 @@ Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 -->
-	<?php require_once("header2.php") ?>
+	<?php require_once("header.php") ?>
 	
 	<div class="row">
 		<div class="col-md-12 register-form">
@@ -18,17 +18,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<li>Aspecto fisicos</li>
 				<li>Intereses</li>
 				<li>Intereses</li>
-				<li>Intereses</li>
 			</ul>
-			<!-- fieldsets -->
-			<fieldset>
-				<h2 class="fs-title">Crear Cuenta</h2>
-				<!--h3 class="fs-subtitle">Datos De la Cuenta</h3-->
-				<div class="col-md-12"><input type="text" name="email" placeholder="Email" /></div>
-				<div class="col-md-12"><input type="password" name="pass" placeholder="Contraseña" /></div>
-				<div class="col-md-12"><input type="password" name="cpass" placeholder="Confirmar Contraseña" /></div>
-				<input type="button" name="next" class="next action-button" value="Siguiente" />
-			</fieldset>
 			
 			<fieldset>
 				<h2 class="fs-title">Datos personales</h2>
