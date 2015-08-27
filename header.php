@@ -10,6 +10,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<title>MatchMe.com</title>
 	<link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
 	<link href="css/style.css" type="text/css" rel="stylesheet" media="all">
+	<link href="css/profile.css" type="text/css" rel="stylesheet" media="all">
 	<!-- Custom Theme files -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
