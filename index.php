@@ -14,13 +14,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<div class="col-md-4">
 					
 					<div class="top-nav2">
-						<span class="menu2"><img src="images/menu.png" alt=""> <lable> MENU BOX</lable></span>
+						<span class="menu2"><img src="images/menu.png" alt=""> <lable> MENU</lable></span>
 						<ul class="effct1" style="display: none;">
-							<li><a href="#">Messages<span>30</span></a></li>                                             
-							<li><a href="#">Invite<span>5</span></a></li>
-							<li><a href="#">Events<span>10</span></a></li>  
-							<li><a href="#">Account Settings</a></li>  
-							<li><a href="#">Statistics</a></li>
+							<li><a href="#">Mensajes<span>30</span></a></li>                                             
+							<li><a href="#">Invitaciones<span>5</span></a></li>
+							<li><a href="#">Eventos<span>10</span></a></li>  
+							<li><a href="profile_settings.php">Configuracion</a></li>  
 						</ul>
 					</div>
 					
