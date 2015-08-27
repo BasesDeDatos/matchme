@@ -150,9 +150,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						</div>			
 					</div>			
 					<div class="col-md-12 result">
-						<h3>RESULTS</h3>
+						<h3>RESULTADOS</h3>
 						<div class="skills-top">
-							<h5>Rock</h5>
+							<h5>Usuarios con pareja</h5>
 							<div class="skills">
 								<div class="skill1" style="width:52%"></div>
 								<div class="skills-right">
@@ -162,7 +162,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							</div>
 						</div>
 						<div class="skills-top">
-							<h5>Punk</h5>
+							<h5>Usuarios casados</h5>
 							<div class="skills">
 								<div class="skill1" style="width:35%"></div>
 								<div class="skills-right">
@@ -172,7 +172,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							</div>
 						</div>
 						<div class="skills-top">
-							<h5>Pop</h5>
+							<h5>Usuarios solteros</h5>
 							<div class="skills">
 								<div class="skill1" style="width:11%"></div>
 								<div class="skills-right">
@@ -183,10 +183,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						</div>											
 					</div>
 					<div class="clearfix"> </div>
-				</div>					
-				<div class="clearfix"></div>
-			</div>
-			<div class="center-grids">
+				</div>
+				
 				<div class="col-md-4 calnder">
 					<div class="calender-right">
 						<div class="clndr-top">							
@@ -230,7 +228,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								  </td><td class="day past calendar-day-2015-05-01"><div class="day-contents">1</div></td><td class="day past calendar-day-2015-05-02"><div class="day-contents">2</div></td></tr><tr><td class="day past calendar-day-2015-05-03"><div class="day-contents">3</div></td><td class="day past calendar-day-2015-05-04"><div class="day-contents">4</div></td><td class="day past calendar-day-2015-05-05"><div class="day-contents">5</div></td><td class="day past calendar-day-2015-05-06"><div class="day-contents">6</div></td><td class="day past calendar-day-2015-05-07"><div class="day-contents">7</div></td><td class="day past calendar-day-2015-05-08"><div class="day-contents">8</div></td><td class="day past calendar-day-2015-05-09"><div class="day-contents">9</div></td></tr><tr><td class="day past event calendar-day-2015-05-10"><div class="day-contents">10</div></td><td class="day past event calendar-day-2015-05-11"><div class="day-contents">11</div></td><td class="day past event calendar-day-2015-05-12"><div class="day-contents">12</div></td><td class="day past event calendar-day-2015-05-13"><div class="day-contents">13</div></td><td class="day today event calendar-day-2015-05-14"><div class="day-contents">14</div></td><td class="day calendar-day-2015-05-15"><div class="day-contents">15</div></td><td class="day calendar-day-2015-05-16"><div class="day-contents">16</div></td></tr><tr><td class="day calendar-day-2015-05-17"><div class="day-contents">17</div></td><td class="day calendar-day-2015-05-18"><div class="day-contents">18</div></td><td class="day calendar-day-2015-05-19"><div class="day-contents">19</div></td><td class="day calendar-day-2015-05-20"><div class="day-contents">20</div></td><td class="day event calendar-day-2015-05-21"><div class="day-contents">21</div></td><td class="day event calendar-day-2015-05-22"><div class="day-contents">22</div></td><td class="day event calendar-day-2015-05-23"><div class="day-contents">23</div></td></tr><tr><td class="day calendar-day-2015-05-24"><div class="day-contents">24</div></td><td class="day calendar-day-2015-05-25"><div class="day-contents">25</div></td><td class="day calendar-day-2015-05-26"><div class="day-contents">26</div></td><td class="day calendar-day-2015-05-27"><div class="day-contents">27</div></td><td class="day calendar-day-2015-05-28"><div class="day-contents">28</div></td><td class="day calendar-day-2015-05-29"><div class="day-contents">29</div></td><td class="day calendar-day-2015-05-30"><div class="day-contents">30</div></td></tr><tr><td class="day calendar-day-2015-05-31"><div class="day-contents">31</div></td><td class="day adjacent-month next-month calendar-day-2015-06-01"><div class="day-contents">1</div></td><td class="day adjacent-month next-month calendar-day-2015-06-02"><div class="day-contents">2</div></td><td class="day adjacent-month next-month calendar-day-2015-06-03"><div class="day-contents">3</div></td><td class="day adjacent-month next-month calendar-day-2015-06-04"><div class="day-contents">4</div></td><td class="day adjacent-month next-month calendar-day-2015-06-05"><div class="day-contents">5</div></td><td class="day adjacent-month next-month calendar-day-2015-06-06"><div class="day-contents">6</div></td></tr></tbody></table></div></div>
 						</div>
 					</div>
-				</div>			
+				</div>
+				
+				<div class="clearfix"></div>
+				
+			</div>
+			<div class="center-grids">
+							
 				<!--div class="col-md-4 pie-charts">
 					<div class="pie-chrt">
 						<canvas id="doughnut" height="200" width="200"></canvas>

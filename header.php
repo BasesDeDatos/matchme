@@ -42,12 +42,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<div class="top-nav">
 					<span class="menu">Menu</span>		
 					<ul class="nav1">
-						<li><a href="#" class="active" data-hover="Inicio">Inicio</a></li>
+						<li><a href="index.php" data-hover="Inicio">Inicio</a></li>
 						<li><a href="#" data-hover="Match">Match</a></li>					
-						<!--li><a href="#" data-hover="Match">Match</a></li-->
-						<li><a href="#" data-hover="Perfil">Perfil</a></li>
-						<li><a href="#" data-hover="Sobre nosotros">Sobre nosotros</a></li>
-						<li><a href="#" data-hover="Contacto">Contacto</a></li>
+						<li><a href="profile.php" data-hover="Perfil">Perfil</a></li>
+						<li><a href="aboutus.php" data-hover="Sobre nosotros">Sobre nosotros</a></li>
+						<li><a href="contactus.php" data-hover="Contacto">Contacto</a></li>
 					</ul>				
 				</div>
 				<div class="search">
