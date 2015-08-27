@@ -46,10 +46,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<fieldset>
 				<h2 class="fs-title">Aspecto Físico</h2>
 				
-				<!--div class="col-md-12"><input type="text" name="color_piel" placeholder="Color Piel" /></div>
-				<div class="col-md-12"><input type="text" name="color_ojos" placeholder="Color Ojos" /></div>
-				<div class="col-md-12"><input type="text" name="color_pelo" placeholder="Color Pelo" /></div-->
-				
 				<div class="col-md-4"><h3 class="fs-subtitle">Color de pelo:</h3></div>
 				
 				<select name="color_pelo_select">
