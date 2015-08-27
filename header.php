@@ -36,7 +36,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<div class="container">
 			<!--navigation-->
 			<div class="logo-top">
-				<a href="#"><img src="images/logo-top.png" alt=""/></a>
+				<a href="index.php"><img src="images/logo-top.png" alt=""/></a>
 			</div>
 			<div class="header">
 				<div class="logo">
@@ -46,7 +46,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<span class="menu">Menu</span>		
 					<ul class="nav1">
 						<li><a href="index.php" data-hover="Inicio">Inicio</a></li>
-						<li><a href="#" data-hover="Match">Match</a></li>					
+						<li><a href="match.php" data-hover="Match">Match</a></li>					
 						<li><a href="profile.php" data-hover="Perfil">Perfil</a></li>
 						<li><a href="aboutus.php" data-hover="Sobre nosotros">Sobre nosotros</a></li>
 						<li><a href="contactus.php" data-hover="Contacto">Contacto</a></li>
