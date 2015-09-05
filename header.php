@@ -40,12 +40,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			</div>
 			<div class="header">
 				<div class="logo">
-					<a href="#"><img src="images/logo.png" alt=""/></a>
+					<a href="index.php"><img src="images/logo.png" alt=""/></a>
 				</div>
 				<div class="top-nav">
 					<span class="menu">Menu</span>		
 					<ul class="nav1">
-						<li><a href="index.php" data-hover="Inicio">Inicio</a></li>
 						<li><a href="match.php" data-hover="Match">Match</a></li>					
 						<li><a href="profile.php" data-hover="Perfil">Perfil</a></li>
 						<li><a href="aboutus.php" data-hover="Sobre nosotros">Sobre nosotros</a></li>
