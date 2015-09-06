@@ -22,7 +22,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							<li><a href="profile_settings.php">Configuracion</a></li>  
 						</ul>
 					</div>
-					
+					<!-- FICHA PERFIL -->
 					<div class="content-right">
 						<div class="cntnt-img">
 						</div>

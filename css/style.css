@@ -323,8 +323,8 @@ span.menu {
   padding: 0;
   position:relative;
   background-color: #fff;
-  margin-top: 5.5em;
 }
+
 .cntnt-img{
 	content:'';
 	background:url(../images/img1.jpg)no-repeat 0px 0px;
@@ -790,8 +790,8 @@ span.menu3 lable {
 }
 
 .top-nav2 {
-  float: left;
   width: 100%;
+  margin-bottom: 1.5em;
 }
 
 .top-nav2 ul {
