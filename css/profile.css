@@ -1,130 +1,130 @@
 .contenedor {
-border: 1px solid #000000;
-background: #E5F4FB;
-margin: 10px;
-padding: 10px;
-clear:both;
-
+    border: 1px solid #000000;
+    background: #E5F4FB;
+    margin: 10px;
+    padding: 10px;
+    clear: both;
 }
 
-.tituloPerfil{
-border: 1px solid #88BDD7;
-background: #88BDD7;
+.tituloPerfil {
+    border: 1px solid #88BDD7;
+    background: #88BDD7;
     margin: 15px 0px;
 }
 
-.columnaUno{
-margin-left: 15px;
-padding: 30px;
-border: 1px solid #D3E7FC;
-background: #D3E7FC;
-float: left;
-width: 30%;
-height: 100%;
+.columnaUno {
+    border-radius: 5px 5px 0px 5px;
 }
 
-
-.fotoPerfil img{
-margin: 20px 10px 10px 10px;
-position: center;
-border-radius:30%;
+.fotoPerfil img {
+    margin: 0 auto 15px auto;
+    position: center;
+    border-radius: 30%;
 }
 
-
-
-
-div label{
-display: block;
-text-align:center;
-font-size: 15px;
-
-}
-.clear{
-clear:both;
+div label {
+    display: block;
+    text-align: center;
+    font-size: 15px;
 }
 
+.clear {
+    clear: both;
+}
 
 #tap {
-	margin: 0px auto;
+    margin: 0px auto;
     width: 100%;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     float: left;
+    height: 100%;
 }
 
 #tap input {
-height: 25px;
-visibility: hidden;
+    height: 25px;
+    visibility: hidden;
 }
 
-#tap label {
-float: left;
-cursor: pointer;
-font-size: 15px;  /* Tamaño del texto de las pestañas */
-line-height: 40px;
-height: 40px;
-padding: 0 10px;
-display: block;
-color: #000000;  /* Color del texto de las pestañas */
-text-align: center;
-border-radius: 5px 5px 0 0;
-background: #7EB6CA;  /* Fondo de las pestañas */
-margin-right: 5px;
+#tap > label {
+    float: left;
+    cursor: pointer;
+    font-size: 15px;
+    /* Tamaño del texto de las pestañas */
+    line-height: 40px;
+    height: 40px;
+    padding: 0 10px;
+    display: block;
+    color: #000000;
+    /* Color del texto de las pestañas */
+    text-align: center;
+    border-radius: 5px 5px 0 0;
+    background: #7EB6CA;
+    /* Fondo de las pestañas */
+    margin-right: 5px;
 }
 
 #tap input:hover + label {
-background: #88C9E1;  /* Fondo de las pestañas al pasar el cursor por encima */
-color: #666;  /* Color del texto de las pestañas al pasar el cursor por encima */
+    background: #88C9E1;
+    /* Fondo de las pestañas al pasar el cursor por encima */
+    color: #666;
+    /* Color del texto de las pestañas al pasar el cursor por encima */
+
 }
 
 #tap input:checked + label {
-background: #92D8F1;  /* Fondo de las pestañas al presionar */
-color: #444; /* Color de las pestañas al presionar */
-z-index: 6;
-line-height: 45px;
-height: 45px;
-position: relative;
-top: -5px;
--webkit-transition: .1s;
--moz-transition: .1s;
+    background: #92D8F1;
+    /* Fondo de las pestañas al presionar */
+    color: #fff;
+    /* Color de las pestañas al presionar */
+    z-index: 6;
+    line-height: 45px;
+    height: 45px;
+    position: relative;
+    top: -5px;
 }
 
 #tap .content {
-	background: #92D8F1;
+    background: #92D8F1;
     position: relative;
     width: 100%;
     height: auto;
-    padding: 10px;
+    padding: 15px;
     z-index: 5;
-    border-radius: 0 5px 5px 0px;
+    border-radius: 0 5px 0px 0px;
+    min-height: 100%;
 }
 
-#tap .content div {
-position: relative;
-z-index: -100;
-opacity: 0;
-transition: all linear 0.1s;
+#tap .content > div {
+    position: absolute;
+    z-index: -100;
+    opacity: 0;
+    transition: all linear 0.1s;
+    -webkit-transition: all ease-out 0.2s 0s;
+    -moz-transition: all ease-out 0.2s 0s;
+    transition: all ease-out 0.2s 0s;
 }
 
 #tap input.tab-selector-1:checked ~ .content .content-1,
 #tap input.tab-selector-2:checked ~ .content .content-2,
 #tap input.tab-selector-3:checked ~ .content .content-3,
 #tap input.tab-selector-4:checked ~ .content .content-4,
-#tap input.tab-selector-5:checked ~ .content .content-5{
-z-index: 100;
-opacity: 1;
--webkit-transition: all ease-out 0.2s 0.1s;
--moz-transition: all ease-out 0.2s 0.1s;
+#tap input.tab-selector-5:checked ~ .content .content-5 {
+    z-index: 100;
+    opacity: 1;
+    -webkit-transition: all ease-out 0.2s 0.1s;
+    -moz-transition: all ease-out 0.2s 0.1s;
+    transition: all ease-out 0.2s 0.1s;
+    position: relative;
 }
 
-#tap .content .texto{
-	background: none;
-	color: #000000;
-	cursor: auto;
-	border-radius:0px ;
-	float: none;
-	text-align: left;
-	height: auto;
-	line-height: normal;
-	opacity: 1;
+#tap .content .texto {
+    background: none;
+    color: #000000;
+    cursor: auto;
+    border-radius: 0px;
+    text-align: left;
+    height: auto;
+    line-height: normal;
+    opacity: 1;
 }
