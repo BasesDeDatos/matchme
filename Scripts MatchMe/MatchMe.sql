@@ -49,7 +49,7 @@ CREATE TABLE Educacion
 
 CREATE TABLE Idioma
 (
-  ID_Idioma NUMBER(4),ID_Educacion NUMBER(2),
+  ID_Idioma NUMBER(4),
   Nombre VARCHAR2(30), CONSTRAINT Idioma_Nombre_nn NOT NULL,
   CONSTRAINT Idioma_Nombre_uk UNIQUE(Nombre),
   CONSTRAINT pk_ID_Idioma PRIMARY KEY (ID_Idioma)
@@ -58,9 +58,9 @@ CREATE TABLE Idioma
 CREATE TABLE Estado_Civil
 (
   ID_EstadoCi NUMBER(2),
-  Nombre VARCHAR2(30), CONSTRAINT Pais_Nombre_nn NOT NULL,
-  CONSTRAINT EstadoCi_Nombre_uk UNIQUE(Nombre),
-  CONSTRAINT pk_ID_EstadoCi PRIMARY KEY (ID_EstadoCi)
+  Nombre VARCHAR2(30), CONSTRAINT Estado_Civil_Nombre_nn NOT NULL,
+  CONSTRAINT Estado_Civil_Nombre_uk UNIQUE(Nombre),
+  CONSTRAINT pk_ID_EstadoCivil PRIMARY KEY (ID_EstadoCi)
 ); 
 
 CREATE TABLE Religion
@@ -83,7 +83,6 @@ CREATE TABLE Estado
 (
   ID_Estado NUMBER(5),
   Nombre VARCHAR2(30), CONSTRAINT Estado_Nombre_nn NOT NULL,
-  CONSTRAINT Estado_Nombre_uk UNIQUE(Nombre),
   ID_Pais NUMBER(3), CONSTRAINT Estado_ID_Pais_nn NOT NULL,
   CONSTRAINT pk_ID_Estado PRIMARY KEY (ID_Estado),
   CONSTRAINT fk_ID_Pais FOREIGN KEY (ID_Pais) REFERENCES Pais(ID_Pais)
@@ -93,7 +92,6 @@ CREATE TABLE Ciudad
 (
   ID_Ciudad NUMBER(7),
   Nombre VARCHAR2(30), CONSTRAINT Ciudad_Nombre_nn NOT NULL,
-  CONSTRAINT Ciudad_Nombre_uk UNIQUE(Nombre),
   ID_Estado NUMBER(5), CONSTRAINT Ciudad_ID_Estado_nn NOT NULL,
   CONSTRAINT pk_ID_Ciudad PRIMARY KEY (ID_Ciudad),
   CONSTRAINT fk_ID_Estado FOREIGN KEY (ID_Estado) REFERENCES Estado(ID_Estado)
@@ -111,15 +109,15 @@ CREATE TABLE Evento
 
 CREATE TABLE Color_Ojos
 (
-  ID_ColorOjos Number(10),
-  Nombre VARCHAR2(20), CONSTRAINT ColorO_Nombre_nn NOT NULL,
+  ID_ColorOjos Number(5),
+  Nombre VARCHAR2(20), CONSTRAINT ColorOjos_Nombre_nn NOT NULL,
   CONSTRAINT ColorOjos_Nombre_uk UNIQUE(Nombre),
   CONSTRAINT pk_ID_ColorOjos PRIMARY KEY (ID_ColorOjos)
 );
 
 CREATE TABLE Color_Piel
 (
-  ID_ColorPiel Number(10),
+  ID_ColorPiel Number(5),
   Nombre VARCHAR2(20), CONSTRAINT ColorPiel_Nombre_nn NOT NULL,
   CONSTRAINT ColorPiel_Nombre_uk UNIQUE(Nombre),
   CONSTRAINT pk_ID_ColorPiel PRIMARY KEY (ID_ColorPiel)
@@ -127,7 +125,7 @@ CREATE TABLE Color_Piel
 
 CREATE TABLE Color_Pelo
 (
-  ID_ColorPelo Number(10),
+  ID_ColorPelo Number(5),
   Nombre VARCHAR2(20), CONSTRAINT ColorPelo_Nombre_nn NOT NULL,
   CONSTRAINT ColorPelo_Nombre_uk UNIQUE(Nombre),
   CONSTRAINT pk_ID_ColorPelo PRIMARY KEY (ID_ColorPelo)
@@ -135,7 +133,7 @@ CREATE TABLE Color_Pelo
 
 CREATE TABLE Contextura
 (
-  ID_Contextura Number(10),
+  ID_Contextura Number(5),
   Nombre VARCHAR2(20), CONSTRAINT Contextura_Nombre_nn NOT NULL,
   CONSTRAINT Contextura_Nombre_uk UNIQUE(Nombre),
   CONSTRAINT pk_ID_Contextura PRIMARY KEY (ID_Contextura)
@@ -144,14 +142,14 @@ CREATE TABLE Contextura
 CREATE TABLE Aspecto_Fisico
 (
   ID_AspectoF Number(10),
-  Altura Number(10),CONSTRAINT AspectoF_Altura_nn NOT NULL,
+  Altura Number(5),CONSTRAINT AspectoF_Altura_nn NOT NULL,
   CONSTRAINT AspectoF_Altura_min CHECK (Altura>40),
-  Peso Number(10),CONSTRAINT AspectoF_Peso_nn NOT NULL,
+  Peso Number(6),CONSTRAINT AspectoF_Peso_nn NOT NULL,
   CONSTRAINT AspectoF_Peso_min CHECK (Peso>40),
-  ID_ColorOjos Number(10), CONSTRAINT AspectoF_ID_ColorOjos_nn NOT NULL,
-  ID_ColorPiel Number(10),CONSTRAINT AspectoF_ID_Piel_nn NOT NULL,
-  ID_ColorPelo Number(10),CONSTRAINT AspectoF_ID_Pelo_nn NOT NULL,
-  ID_Contextura Number(10),CONSTRAINT AspectoF_ID_Contextura_nn NOT NULL,
+  ID_ColorOjos Number(5), CONSTRAINT AspectoF_ID_ColorOjos_nn NOT NULL,
+  ID_ColorPiel Number(5),CONSTRAINT AspectoF_ID_Piel_nn NOT NULL,
+  ID_ColorPelo Number(5),CONSTRAINT AspectoF_ID_Pelo_nn NOT NULL,
+  ID_Contextura Number(5),CONSTRAINT AspectoF_ID_Contextura_nn NOT NULL,
   CONSTRAINT pk_ID_AspectoFi PRIMARY KEY (ID_AspectoFi),
   CONSTRAINT fk_ID_ColorOjos FOREIGN KEY (ID_ColorOjos) REFERENCES Color_Ojos(ID_ColorOjos),
   CONSTRAINT fk_ID_ColorPiel FOREIGN KEY (ID_ColorPiel) REFERENCES Color_Piel(ID_ColorPiel),
@@ -182,8 +180,8 @@ CREATE TABLE Interes_Gusto
 CREATE TABLE ActividadAL
 (
   ID_ActividadAL Number(10),
-  Nombre VARCHAR2(20), CONSTRAINT ActividadA_Nombre_nn NOT NULL,
-  CONSTRAINT ActividadA_Nombre_uk UNIQUE(Nombre),
+  Nombre VARCHAR2(20), CONSTRAINT ActividadAL_Nombre_nn NOT NULL,
+  CONSTRAINT ActividadAL_Nombre_uk UNIQUE(Nombre),
   CONSTRAINT pk_ID_ActividadAL PRIMARY KEY (ID_ActividadAL)
 );
 
@@ -199,7 +197,7 @@ CREATE TABLE InteresXActividad
 
 CREATE TABLE Hobby
 (
-  ID_Hobby Number(10),
+  ID_Hobby Number(5),
   Nombre VARCHAR2(20), CONSTRAINT Hobby_Nombre_nn NOT NULL,
   CONSTRAINT Hobby_Nombre_uk UNIQUE(Nombre),
   CONSTRAINT pk_ID_Hobby PRIMARY KEY (ID_Hobby)
@@ -209,7 +207,7 @@ CREATE TABLE InteresXHobby
 (
   ID_InteresXHobby Number(10),
   ID_InteresG Number(10), CONSTRAINT InteresXHobby_ID_InteresG_nn NOT NULL,
-  ID_Hobby Number(10), CONSTRAINT InteresXHobby_ID_Hobby_nn NOT NULL,
+  ID_Hobby Number(5), CONSTRAINT InteresXHobby_ID_Hobby_nn NOT NULL,
   CONSTRAINT pk_ID_InteresXHobby PRIMARY KEY (ID_InteresXHobby),
   CONSTRAINT fk_ID_InteresG FOREIGN KEY (ID_InteresG ) REFERENCES Interes_Gustos(ID_InteresG),
   CONSTRAINT fk_ID_Hobby FOREIGN KEY (ID_Hobby ) REFERENCES Hobby(ID_Hobby)
@@ -227,14 +225,14 @@ CREATE TABLE Info_Mascota
 CREATE TABLE Tipo_Bebedor
 (
   ID_TipoBebedor Number(2),
-  Clase VARCHAR2(2), CONSTRAINT Tipo_Bebedor_Clase_nn NOT NULL,
+  Clase VARCHAR2(10), CONSTRAINT Tipo_Bebedor_Clase_nn NOT NULL,
   CONSTRAINT pk_ID_InfoMascota PRIMARY KEY (ID_InfoMascota)
 );
 
 CREATE TABLE Ocupacion
 (
   ID_Ocupacion Number(2),
-  Nombre VARCHAR2(2), CONSTRAINT Ocupacion_Nombre_nn NOT NULL,
+  Nombre VARCHAR2(20), CONSTRAINT Ocupacion_Nombre_nn NOT NULL,
   CONSTRAINT pk_ID_Ocupacion PRIMARY KEY (ID_Ocupacion)
 );
 
@@ -246,8 +244,8 @@ CREATE TABLE Estilo_Vida
   CantidadHijos NUMBER(2), CONSTRAINT Estilo_Vida_CantidadHijos_nn NOT NULL,
   CONSTRAINT prod_CantidadHijos_min CHECK (CantidadHijos>=0),
   QuiereHIjos VARCHAR2(2), CONSTRAINT Estilo_Vida_QuiereHijos_nn NOT NULL,
-  SalarioPromedio NUMBER(6),
-  Slogan VARCHAR2(200), CONSTRAINT Estilo_Vida_Slogan_nn NOT NULL,  
+  SalarioPromedio NUMBER(8),
+  Slogan VARCHAR2(400), CONSTRAINT Estilo_Vida_Slogan_nn NOT NULL,  
   ID_InfoMascota Number(10),CONSTRAINT Estilo_Vida_InfoMascota_nn NOT NULL,
   ID_TipoBebedor Number(2),CONSTRAINT Estilo_Vida_TipoBebedor_nn NOT NULL,
   ID_Ocupacion Number(2),CONSTRAINT Estilo_Vida_Ocupacion_nn NOT NULL,
@@ -255,6 +253,48 @@ CREATE TABLE Estilo_Vida
   CONSTRAINT fk_ID_InfoMascota FOREIGN KEY (ID_InfoMascota ) REFERENCES Info_Mascota(ID_InfoMascota),
   CONSTRAINT fk_ID_TipoBebedor FOREIGN KEY (ID_TipoBebedor ) REFERENCES Tipo_Bebedor(ID_TipoBebedor),
   CONSTRAINT fk_ID_Ocupacion FOREIGN KEY (ID_Ocupacion ) REFERENCES Ocupacion(ID_Ocupacion) 
+);
+
+CREATE TABLE Bitacora_Visita
+(
+  ID_Visita Number(2),
+  Fecha DATE DEFAULT SYSDATE CONSTRAINT BitacoraVisita_Fecha_nn NOT NULL,
+  ID_Visitante NUMBER(10) CONSTRAINT BitacoraVisita_ID_Visitante_nn NOT NULL,
+  ID_Visitado NUMBER(10) CONSTRAINT BitacoraVisita_ID_Visitado_nn NOT NULL,
+  CONSTRAINT pk_ID_Visita PRIMARY KEY (ID_Visita),
+  CONSTRAINT fk_Visitante FOREIGN KEY (ID_Visitante) REFERENCES Usuario(ID_Usuario),
+  CONSTRAINT fk_ID_Visitado FOREIGN KEY (ID_Visitado) REFERENCES Usuario(ID_Usuario)
+);
+
+CREATE TABLE Bitacora_Conocido
+(
+  ID_Conocido Number(2),
+  Fecha DATE DEFAULT SYSDATE CONSTRAINT BitacoraConocido_Fecha_nn NOT NULL,
+  ID_Propio NUMBER(10) CONSTRAINT BitacoraConocido_ID_Visitante_nn NOT NULL,
+  ID_Conocido NUMBER(10) CONSTRAINT BitacoraConocido_ID_Visitado_nn NOT NULL,
+  CONSTRAINT pk_ID_Conocido PRIMARY KEY (ID_Conocido),
+  CONSTRAINT fk_Propio FOREIGN KEY (ID_Propio) REFERENCES Usuario(ID_Usuario),
+  CONSTRAINT fk_ID_Conocido FOREIGN KEY (ID_Conocido) REFERENCES Usuario(ID_Usuario)
+);
+
+CREATE TABLE Estado_Match
+(
+  ID_Estado Number(2),
+  Nombre VARCHAR2(20), CONSTRAINT Estado_Match_Nombre_nn NOT NULL,
+  CONSTRAINT pk_ID_Estado PRIMARY KEY (ID_Estado)
+);
+
+CREATE TABLE Match
+(
+  ID_Match Number(2),
+  Fecha DATE DEFAULT SYSDATE CONSTRAINT Match_Fecha_nn NOT NULL,
+  ID_Estado NUMBER(2), CONSTRAINT Match_ID_Estado_nn NOT NULL,
+  ID_Propio NUMBER(10) CONSTRAINT Match_ID_propio_nn NOT NULL,
+  ID_Recomendacion NUMBER(10) CONSTRAINT Match_ID_Recomendado_nn NOT NULL,
+  CONSTRAINT pk_ID_Conocido PRIMARY KEY (ID_Conocido),
+  CONSTRAINT fk_Estado FOREIGN KEY (ID_Estado) REFERENCES Estado_Match(ID_Estado),
+  CONSTRAINT fk_Propio FOREIGN KEY (ID_Propio) REFERENCES Usuario(ID_Usuario),
+  CONSTRAINT fk_ID_Recomendacion FOREIGN KEY (ID_Recomendacion) REFERENCES Usuario(ID_Usuario)
 );
 
 CREATE TABLE Usuario
@@ -268,7 +308,7 @@ CREATE TABLE Usuario
   Foto VARCHAR2(200),-- CONSTRAINT Usuario_Foto_nn NOT NULL,
   Genero VARCHAR2(10), CONSTRAINT Usuario_Genero_nn NOT NULL,
   Clave VARCHAR2(20), CONSTRAINT Usuario_Clave_nn NOT NULL,
-  Signo VARCHAR2(11), CONSTRAINT Usuario_Signo_nn NOT NULL,
+--  Signo VARCHAR2(11), CONSTRAINT Usuario_Signo_nn NOT NULL,
   Rol VARCHAR2(10), CONSTRAINT Usuario_Rol_nn NOT NULL,
   ID_Religion NUMBER(4),CONSTRAINT Usuario_ID_Religion_nn NOT NULL,
   ID_EstadoCi NUMBER(2),CONSTRAINT Usuario_ID_EstadoCi_nn NOT NULL,
@@ -294,7 +334,7 @@ CREATE TABLE Usuario
 CREATE TABLE Wink
 (
   ID_Wink NUMBER(10),
-  Fecha DATE DEFAULT SYSDATE CONSTRAINT Evento_Fecha_nn NOT NULL,
+  Fecha DATE DEFAULT SYSDATE CONSTRAINT Wink_Fecha_nn NOT NULL,
   ID_Enviado NUMBER(10), CONSTRAINT Wink_ID_Enviado_nn NOT NULL,
   ID_Recibido NUMBER(10), CONSTRAINT Wink_ID_Recibido_nn NOT NULL,
   CONSTRAINT pk_ID_Wink PRIMARY KEY (ID_Wink),
