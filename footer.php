@@ -44,10 +44,16 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<script type="text/javascript" src="js/easing.js"></script>	
 	<!-- script-for-menu -->
 	
-	<script src="js/jquery.flot.min.js"></script>
+	<script src="js/jquery.flot.min.js"></script>	
+	<script src="js/jquery-ui.js"></script>
 	
 	<script type="text/javascript">
 		jQuery(document).ready(function(){
+			
+			$( ".acordion" ).accordion({
+				  heightStyle: "content",
+				  collapsible: true,
+			});
 			
 			$( "span.menu" ).click(function() {
 				$( "ul.nav1" ).slideToggle( 300, function() {
@@ -55,11 +61,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				});
 			});
 			
-			 $( "span.menu2" ).click(function() {
-			 	$( "ul.effct1" ).slideToggle( 300, function() {
-			 	// Animation complete.
-			 	});
-			 });
+			$( "span.menu2" ).click(function() {
+				$( "ul.effct1" ).slideToggle( 300, function() {
+				// Animation complete.
+				});
+			});
 			
 			$('.demo-1').percentcircle({
 				animate : false,

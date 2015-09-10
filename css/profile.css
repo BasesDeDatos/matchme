@@ -8,8 +8,11 @@
 
 .tituloPerfil {
     border: 1px solid #88BDD7;
-    background: #88BDD7;
+    background: #88BDD7 none repeat scroll 0% 0%;
     margin: 15px 0px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px;
 }
 
 .columnaUno {
@@ -32,6 +35,14 @@ div label {
     clear: both;
 }
 
+.ui-accordion-content .bnr-img {
+    position: relative !important;
+    top: 0px;
+    left: 0px;
+    height: 150px;
+    width: 150px;
+}
+
 #tap {
     margin: 0px auto;
     width: 100%;
@@ -50,18 +61,14 @@ div label {
     float: left;
     cursor: pointer;
     font-size: 15px;
-    /* Tamaño del texto de las pestañas */
-    line-height: 40px;
-    height: 40px;
-    padding: 0 10px;
+    padding: 10px;
     display: block;
-    color: #000000;
-    /* Color del texto de las pestañas */
+    color: #000;
     text-align: center;
-    border-radius: 5px 5px 0 0;
-    background: #7EB6CA;
-    /* Fondo de las pestañas */
-    margin-right: 5px;
+    border-radius: 5px;
+    background: #E74C3C none repeat scroll 0% 0%;
+    margin: 5px;
+    margin-right: 0;
 }
 
 #tap input:hover + label {
@@ -73,26 +80,25 @@ div label {
 }
 
 #tap input:checked + label {
-    background: #92D8F1;
-    /* Fondo de las pestañas al presionar */
-    color: #fff;
-    /* Color de las pestañas al presionar */
-    z-index: 6;
-    line-height: 45px;
-    height: 45px;
-    position: relative;
-    top: -5px;
+    background: #92D8F1 none repeat scroll 0% 0%;
+    color: #FFF;
+    padding-top: 12px;
+    margin-top: 3px;
 }
 
 #tap .content {
-    background: #92D8F1;
+    background: #fff;
     position: relative;
     width: 100%;
     height: auto;
-    padding: 15px;
+    padding: 30px;
     z-index: 5;
-    border-radius: 0 5px 0px 0px;
+    border-radius: 5px;
     min-height: 100%;
+    
+    margin-top: 5px;
+    
+    float: left;
 }
 
 #tap .content > div {
@@ -109,7 +115,9 @@ div label {
 #tap input.tab-selector-2:checked ~ .content .content-2,
 #tap input.tab-selector-3:checked ~ .content .content-3,
 #tap input.tab-selector-4:checked ~ .content .content-4,
-#tap input.tab-selector-5:checked ~ .content .content-5 {
+#tap input.tab-selector-5:checked ~ .content .content-5,
+#tap input.tab-selector-6:checked ~ .content .content-6,
+#tap input.tab-selector-7:checked ~ .content .content-7 {
     z-index: 100;
     opacity: 1;
     -webkit-transition: all ease-out 0.2s 0.1s;

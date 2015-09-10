@@ -80,7 +80,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					
 					<input id="tab-5" type="radio" name="radio-set" class="tab-selector-5" />
 					<label for="tab-5" class="tab-label-5">Sobre la persona que busca</label>
-										   
+					
+					<input id="tab-6" type="radio" name="radio-set" class="tab-selector-6" />
+					<label for="tab-6" class="tab-label-6">Winks</label>
+					
+					<input id="tab-7" type="radio" name="radio-set" class="tab-selector-7" />
+					<label for="tab-7" class="tab-label-7">Visitas</label>
+
+
 					<div class="content">
 						<div class="content-1">
 							<!--div class = "Background"-->
@@ -138,6 +145,148 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								<label class ="texto">Ejercicios fisicos: Algunas veces</label>
 							<!--/div-->
 						</div>
+						
+						<div class="content-7">
+							<div class = "acordion">
+								<h1 class ="texto">2/4/15</h1>
+								<div>
+									<div class="bnr-img">
+										<img src="images/img1.jpg" alt="">
+									</div>
+									<div class="bnr-img">
+										<img src="images/img2.jpg" alt="">
+									</div>
+									<div class="bnr-img">
+										<img src="images/img3.jpg" alt="">
+									</div>
+								</div>	
+								
+								<h1 class ="texto">3/8/15</h1>
+								<div>
+									<div class="bnr-img">
+										<img src="images/img1.jpg" alt="">
+									</div>
+									<div class="bnr-img">
+										<img src="images/img2.jpg" alt="">
+									</div>
+									<div class="bnr-img">
+										<img src="images/img3.jpg" alt="">
+									</div>
+								</div>
+								
+								<h1 class ="texto">3/6/15</h1>
+								<div>
+									<div class="bnr-img">
+										<img src="images/img1.jpg" alt="">
+									</div>
+									<div class="bnr-img">
+										<img src="images/img2.jpg" alt="">
+									</div>
+									<div class="bnr-img">
+										<img src="images/img3.jpg" alt="">
+									</div>
+								</div>	
+								
+								<h1 class ="texto">9/1/14</h1>
+								<div>
+									<div class="bnr-img">
+										<img src="images/img1.jpg" alt="">
+									</div>
+									<div class="bnr-img">
+										<img src="images/img2.jpg" alt="">
+									</div>
+									<div class="bnr-img">
+										<img src="images/img3.jpg" alt="">
+									</div>
+								</div>	
+								
+								<h1 class ="texto">2/1/14</h1>
+								<div>
+									<div class="bnr-img">
+										<img src="images/img1.jpg" alt="">
+									</div>
+									<div class="bnr-img">
+										<img src="images/img2.jpg" alt="">
+									</div>
+									<div class="bnr-img">
+										<img src="images/img3.jpg" alt="">
+									</div>
+								</div>	
+							</div>
+							
+							
+							
+						</div>
+						
+							<div class="content-6">
+							<div class = "acordion">
+								<h1 class ="texto">2/4/15</h1>
+								<div>
+									<div class="bnr-img">
+										<img src="images/img1.jpg" alt="">
+									</div>
+									<div class="bnr-img">
+										<img src="images/img2.jpg" alt="">
+									</div>
+									<div class="bnr-img">
+										<img src="images/img3.jpg" alt="">
+									</div>
+								</div>	
+								
+								<h1 class ="texto">3/8/15</h1>
+								<div>
+									<div class="bnr-img">
+										<img src="images/img1.jpg" alt="">
+									</div>
+									<div class="bnr-img">
+										<img src="images/img2.jpg" alt="">
+									</div>
+									<div class="bnr-img">
+										<img src="images/img3.jpg" alt="">
+									</div>
+								</div>
+								
+								<h1 class ="texto">3/6/15</h1>
+								<div>
+									<div class="bnr-img">
+										<img src="images/img1.jpg" alt="">
+									</div>
+									<div class="bnr-img">
+										<img src="images/img2.jpg" alt="">
+									</div>
+									<div class="bnr-img">
+										<img src="images/img3.jpg" alt="">
+									</div>
+								</div>	
+								
+								<h1 class ="texto">9/1/14</h1>
+								<div>
+									<div class="bnr-img">
+										<img src="images/img1.jpg" alt="">
+									</div>
+									<div class="bnr-img">
+										<img src="images/img2.jpg" alt="">
+									</div>
+									<div class="bnr-img">
+										<img src="images/img3.jpg" alt="">
+									</div>
+								</div>	
+								
+								<h1 class ="texto">2/1/14</h1>
+								<div>
+									<div class="bnr-img">
+										<img src="images/img1.jpg" alt="">
+									</div>
+									<div class="bnr-img">
+										<img src="images/img2.jpg" alt="">
+									</div>
+									<div class="bnr-img">
+										<img src="images/img3.jpg" alt="">
+									</div>
+								</div>	
+							</div>
+						</div>
+
 					</div>
 				</div>
 			</div>

@@ -27,7 +27,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<link rel="stylesheet" type="text/css" href="css/fd-slider.css">	
 	<link rel="stylesheet" href="css/graph.css">
 
-	<link href="css/jplayer.blue.monday.min.css" rel="stylesheet" type="text/css" />
+	<link href="css/jplayer.blue.monday.min.css" rel="stylesheet" type="text/css" />	
+	<link href="css/jquery-ui.css" rel="stylesheet" type="text/css" />
 	
 </head>
 

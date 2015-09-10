@@ -349,16 +349,14 @@ span.menu {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
+  
+  overflow: hidden;
 }
 
 
 .bnr-img img {
-  border-radius: 50%;
-  -ms-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  width: initial;
+  width: auto;
+  max-height: 100%;
 }
 
 
