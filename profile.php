@@ -11,13 +11,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	$active_user_id = $_SESSION["active_user_id"];
 ?>
 <div class ="container-fluid" id = "contenedor" >
-	<div class="row">
+	<!--div class="row">
 		<div class="col-md-12" > 
 			<div class = "tituloPerfil">
 				<h2>Ver perfil</h2>
 			</div>
 		</div>
-	</div>
+	</div-->
 		<div class="row" > 
 			<div class= "col-md-4 columnaUno">
 				<div class="content-right">
@@ -70,16 +70,16 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<label for="tab-1" class="tab-label-1">Background</label>
 				   
 					<input id="tab-2" type="radio" name="radio-set" class="tab-selector-2" />
-					<label for="tab-2" class="tab-label-2">EstiloVida</label>
+					<label for="tab-2" class="tab-label-2">Estilo de Vida</label>
 				   
 					<input id="tab-3" type="radio" name="radio-set" class="tab-selector-3" />
-					<label for="tab-3" class="tab-label-3">presentacion personal</label>
+					<label for="tab-3" class="tab-label-3">Descripcion personal</label>
 				   
 					<input id="tab-4" type="radio" name="radio-set" class="tab-selector-4" />
-					<label for="tab-4" class="tab-label-4">intereses y gustos</label>
+					<label for="tab-4" class="tab-label-4">Intereses y gustos</label>
 					
 					<input id="tab-5" type="radio" name="radio-set" class="tab-selector-5" />
-					<label for="tab-5" class="tab-label-5">Sobre la persona que busca</label>
+					<label for="tab-5" class="tab-label-5">Que busco</label>
 					
 					<input id="tab-6" type="radio" name="radio-set" class="tab-selector-6" />
 					<label for="tab-6" class="tab-label-6">Winks</label>

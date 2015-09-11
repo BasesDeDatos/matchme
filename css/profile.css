@@ -53,7 +53,7 @@ div label {
 }
 
 #tap input {
-    height: 25px;
+    height: 0px;
     visibility: hidden;
 }
 
@@ -63,7 +63,7 @@ div label {
     font-size: 15px;
     padding: 10px;
     display: block;
-    color: #000;
+    color: #FFFFFF;
     text-align: center;
     border-radius: 5px;
     background: #E74C3C none repeat scroll 0% 0%;
@@ -72,16 +72,16 @@ div label {
 }
 
 #tap input:hover + label {
-    background: #88C9E1;
+    background: #BB3D31;
     /* Fondo de las pestañas al pasar el cursor por encima */
-    color: #666;
+    color: #000;
     /* Color del texto de las pestañas al pasar el cursor por encima */
 
 }
 
 #tap input:checked + label {
-    background: #92D8F1 none repeat scroll 0% 0%;
-    color: #FFF;
+    background: #BB3D31 none repeat scroll 0% 0%;
+    color: #FFFFFF;
     padding-top: 12px;
     margin-top: 3px;
 }
@@ -120,9 +120,9 @@ div label {
 #tap input.tab-selector-7:checked ~ .content .content-7 {
     z-index: 100;
     opacity: 1;
-    -webkit-transition: all ease-out 0.2s 0.1s;
-    -moz-transition: all ease-out 0.2s 0.1s;
-    transition: all ease-out 0.2s 0.1s;
+    -webkit-transition: all ease-out 0.5s 0.5s;
+    -moz-transition: all ease-out 0.5s 0.5s;
+    transition: all ease-out 0.5s 0.5s;
     position: relative;
 }
 
