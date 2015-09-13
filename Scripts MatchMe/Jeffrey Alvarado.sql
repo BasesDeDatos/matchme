@@ -38,7 +38,7 @@ WHERE id_ocupacion = 1;
 --------------------------------
 
 INSERT INTO evento(id_evento, nombre, descripcion, fecha, cuidad)
-VALUES(secu_evento.NextVal, 'Cumpleaños de Roger', 'Vamos a celebrar cumpleaños de Roger', TO_DATE('20032015 20:00:00', 'DDMMYYYY hh24:mi:ss'), 1);
+VALUES(secu_evento.NextVal, 'Cumpleanos de Roger', 'Vamos a celebrar cumpleaños de Roger', TO_DATE('20032015 20:00:00', 'DDMMYYYY hh24:mi:ss'), 1);
 
 Update evento
 set nombre = 'Cumpleaños de Roger',
@@ -56,10 +56,10 @@ VALUES(secu_color_piel.NextVal, 'Amarillo');
 
 Update color_piel
 set nombre = 'Blanco'
-WHERE id_color_piel = 1;
+WHERE id_colorpiel = 1;
 
 delete from color_piel
-WHERE id_color_piel = 1;
+WHERE id_colorpiel = 1;
 
 --------------------------------
 
@@ -121,3 +121,110 @@ WHERE ID_UsuarioXOcupacion = 1;
 
 delete from UsuarioXOcupacion
 WHERE ID_UsuarioXOcupacion = 1;
+
+--------------------------------
+
+INSERT INTO Usuario(ID_Usuario, 
+					nombre, 
+					primer_apellido, 
+					segundo_apellido, 
+					fecha_nac, 
+					email, 
+					foto, 
+					genero, 
+					clave, 
+					gustan_mascota, 
+					tiene_mascota, 
+					tendria_mascota, 
+					id_religion, 
+					id_estadoCi, 
+					id_educacion, 
+					id_cuidad, 
+					id_aspectoFi, 
+					id_hobby, 
+					id_actividadAL, 
+					id_estidlovida, 
+					id_ocupacion, 
+					id_rol, 
+					id_signo_zodiacal)
+VALUES(secu_Usuario.NextVal, 
+	   'Annabella', 
+	   'Harper', 
+	   null, 
+	   TO_DATE('20031990', 'DDMMYYYY'), 
+	   'a.harper@randatmail.com', 
+	   null, 
+	   '123456789', 
+	   'si', 
+	   'si', 
+	   'si', 
+	   1, 
+	   1, 
+	   1, 
+	   1, 
+	   1, 
+	   1, 
+	   1, 
+	   1, 
+	   1, 
+	   1, 
+	   1, 
+	   1);
+
+INSERT INTO Usuario(ID_Usuario, 
+					nombre, 
+					primer_apellido, 
+					segundo_apellido, 
+					fecha_nac, 
+					email, 
+					foto, 
+					genero, 
+					clave, 
+					gustan_mascota, 
+					tiene_mascota, 
+					tendria_mascota, 
+					id_religion, 
+					id_estadoCi, 
+					id_educacion, 
+					id_cuidad, 
+					id_aspectoFi, 
+					id_hobby, 
+					id_actividadAL, 
+					id_estidlovida, 
+					id_ocupacion, 
+					id_rol, 
+					id_signo_zodiacal)
+VALUES(secu_Usuario.NextVal, 
+	   'Rolland', 
+	   'Payne', 
+	   'Elliot', 
+	   TO_DATE('10091995', 'DDMMYYYY'), 
+	   'rp_elliott@randatmail.com', 
+	   null, 
+	   '123456789', 
+	   'no', 
+	   'no', 
+	   'no', 
+	   1, 
+	   1, 
+	   1, 
+	   1, 
+	   1, 
+	   1, 
+	   1, 
+	   1, 
+	   1, 
+	   1, 
+	   1, 
+	   1);
+
+Update Usuario
+set nombre = 'Annie',
+	segundo_apellido = 'Higgins',
+	tendria_mascota = 'no',
+	tiene_mascota = 'no',
+	gustan_mascota = 'no'
+WHERE ID_Usuario = 1;
+
+delete from Usuario
+WHERE ID_Usuario = 1;
