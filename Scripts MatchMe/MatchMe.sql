@@ -363,7 +363,7 @@ CREATE TABLE UsuarioXIdioma
 
 CREATE TABLE UsuarioXOcupacion
 (
-  UsuarioXOcupacion NUMBER(10),
+  ID_UsuarioXOcupacion NUMBER(10),
   ID_Ocupacion NUMBER(5), CONSTRAINT UsuarioXOcupacion_ID_Ocupacion_nn NOT NULL,
   ID_Usuario NUMBER(10),CONSTRAINT UsuarioXOcupacion_ID_Usuario_nn NOT NULL
   CONSTRAINT pk_ID_UsuarioXOcupacion PRIMARY KEY (ID_UsuarioXOcupacion),
