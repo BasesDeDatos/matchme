@@ -260,19 +260,19 @@ CREATE TABLE Bitacora_Conocido
 
 CREATE TABLE Estado_Match
 (
-  ID_Estado Number(2),
+  ID_Estado_Match Number(2),
   Nombre VARCHAR2(20), CONSTRAINT Estado_Match_Nombre_nn NOT NULL,
   CONSTRAINT pk_ID_Estado PRIMARY KEY (ID_Estado)
 );
 
 CREATE TABLE Match
 (
-  ID_Match Number(2),
+  ID_Match Number(10),
   Fecha DATE DEFAULT SYSDATE CONSTRAINT Match_Fecha_nn NOT NULL,
-  ID_Estado NUMBER(2), CONSTRAINT Match_ID_Estado_nn NOT NULL,
+  ID_Estado_Match NUMBER(2), CONSTRAINT Match_ID_Estado_Match_nn NOT NULL,
   ID_Propio NUMBER(10) CONSTRAINT Match_ID_propio_nn NOT NULL,
   ID_Recomendacion NUMBER(10) CONSTRAINT Match_ID_Recomendado_nn NOT NULL,
-  CONSTRAINT pk_ID_Conocido PRIMARY KEY (ID_Conocido),
+  CONSTRAINT pk_ID_Match PRIMARY KEY (ID_Match),
   CONSTRAINT fk_Estado FOREIGN KEY (ID_Estado) REFERENCES Estado_Match(ID_Estado),
   CONSTRAINT fk_Propio FOREIGN KEY (ID_Propio) REFERENCES Usuario(ID_Usuario),
   CONSTRAINT fk_ID_Recomendacion FOREIGN KEY (ID_Recomendacion) REFERENCES Usuario(ID_Usuario)
@@ -281,7 +281,7 @@ CREATE TABLE Match
 CREATE TABLE Signo_Zodiacal
 (
   ID_Signo_Zodiacal NUMBER(2),
-  Nombre VARCHAR2(20), CONSTRAINT Educacion_Nombre_nn NOT NULL,
+  Nombre VARCHAR2(20), CONSTRAINT Signo_Zodiacal_Nombre_nn NOT NULL,
   CONSTRAINT Signo_Zodiacal_Nombre_uk UNIQUE(Nombre),
   CONSTRAINT pk_Signo_Zodiacal PRIMARY KEY (ID_Signo_Zodiacal)
 ); 
@@ -359,6 +359,16 @@ CREATE TABLE UsuarioXIdioma
   CONSTRAINT pk_ID_UsuarioXIdioma PRIMARY KEY (ID_UsuarioXIdioma),
   CONSTRAINT fk_ID_Usuario FOREIGN KEY (ID_Usuario) REFERENCES Ciudad(ID_Usuario),
   CONSTRAINT fk_ID_Idioma FOREIGN KEY (ID_Idioma) REFERENCES Idioma(ID_Idioma)
+);
+
+CREATE TABLE UsuarioXOcupacion
+(
+  UsuarioXOcupacion NUMBER(10),
+  ID_Ocupacion NUMBER(5), CONSTRAINT UsuarioXOcupacion_ID_Ocupacion_nn NOT NULL,
+  ID_Usuario NUMBER(10),CONSTRAINT UsuarioXOcupacion_ID_Usuario_nn NOT NULL
+  CONSTRAINT pk_ID_UsuarioXOcupacion PRIMARY KEY (ID_UsuarioXOcupacion),
+  CONSTRAINT fk_ID_Ocupacion FOREIGN KEY (ID_Ocupacion) REFERENCES Ocupacion(ID_Ocupacion),
+  CONSTRAINT fk_ID_Usuario FOREIGN KEY (ID_Usuario) REFERENCES Ciudad(ID_Usuario)
 ); 
 
 CREATE TABLE Wink
