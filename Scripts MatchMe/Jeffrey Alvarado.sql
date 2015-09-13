@@ -37,7 +37,7 @@ WHERE id_ocupacion = 1;
 
 --------------------------------
 
-INSERT INTO evento(id_evento, nombre, descripcion, fecha, cuidad)
+INSERT INTO evento(id_evento, nombre, descripcion, fecha, id_cuidad)
 VALUES(secu_evento.NextVal, 'Cumpleanos de Roger', 'Vamos a celebrar cumpleaños de Roger', TO_DATE('20032015 20:00:00', 'DDMMYYYY hh24:mi:ss'), 1);
 
 Update evento
