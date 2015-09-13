@@ -293,6 +293,13 @@ CREATE TABLE Ocupacion
   CONSTRAINT pk_ID_Ocupacion PRIMARY KEY (ID_Ocupacion)
 );
 
+CREATE TABLE Rol
+(
+  ID_Rol NUMBER(2),
+  Nombre VARCHAR2(30), CONSTRAINT Rol_Nombre_nn NOT NULL,
+  CONSTRAINT Rol_Nombre_uk UNIQUE(Nombre),
+  CONSTRAINT pk_ID_Rol PRIMARY KEY (ID_Rol)
+); 
 
 CREATE TABLE Usuario
 (
@@ -306,7 +313,6 @@ CREATE TABLE Usuario
   Foto VARCHAR2(200),-- CONSTRAINT Usuario_Foto_nn NOT NULL,
   Genero VARCHAR2(10), CONSTRAINT Usuario_Genero_nn NOT NULL,
   Clave VARCHAR2(20), CONSTRAINT Usuario_Clave_nn NOT NULL,
-  Rol VARCHAR2(10), CONSTRAINT Usuario_Rol_nn NOT NULL,
   Gustan_Mascota VARCHAR2(2), CONSTRAINT Info_Mascota_Gustan_nn NOT NULL,
   Tiene_Mascota  VARCHAR2(2), CONSTRAINT Info_Mascota_Tiene_nn NOT NULL,
   Tendria_Mascota  VARCHAR2(2), CONSTRAINT Info_Mascota_Tendria_nn NOT NULL,
@@ -319,6 +325,7 @@ CREATE TABLE Usuario
   ID_ActividadAL Number(10), CONSTRAINT Usuario_ID_ActividadAL_nn NOT NULL,
   ID_EstiloVida Number(10), CONSTRAINT Usuario_ID_EstiloVida_nn NOT NULL,
   ID_Ocupacion Number(2), CONSTRAINT Usuario_Ocupacion_nn NOT NULL,
+  ID_Rol VARCHAR2(2), CONSTRAINT Usuario_Rol_nn NOT NULL,
   ID_Signo_Zodiacal NUMBER(2), CONSTRAINT Usuario_Signo_Zodiacal_nn NOT NULL,
   CONSTRAINT pk_ID_Usuario PRIMARY KEY (ID_Usuario),
   CONSTRAINT fk_ID_Religion FOREIGN KEY (ID_Religion) REFERENCES Religion(ID_Religion),
@@ -330,6 +337,7 @@ CREATE TABLE Usuario
   CONSTRAINT fk_ID_ActividadAL FOREIGN KEY (ID_ActividadAL ) REFERENCES ActividadAL(ID_ActividadAL),
   CONSTRAINT fk_ID_EstiloVida FOREIGN KEY (ID_EstiloVida ) REFERENCES Estilo_Vida(ID_EstiloVida),
   CONSTRAINT fk_ID_Ocupacion FOREIGN KEY (ID_Ocupacion ) REFERENCES Ocupacion(ID_Ocupacion),
+  CONSTRAINT fk_ID_Rol FOREIGN KEY (ID_Rol ) REFERENCES Rol(ID_Rol),
   CONSTRAINT fk_ID_Signo_Zodiacal FOREIGN KEY (ID_Signo_Zodiacal) REFERENCES Signo_Zodiacal(ID_Signo_Zodiacal)
 ); 
 
