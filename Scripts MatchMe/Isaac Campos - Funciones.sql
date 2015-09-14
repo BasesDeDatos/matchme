@@ -33,8 +33,8 @@ CREATE OR REPLACE PROCEDURE REGISTRAR_Bitacora_Conocido(
 	pID_Propio IN NUMBER, 
 	pID_Conocido IN NUMBER) AS
 BEGIN
-	INSERT INTO Bitacora_Conocido(ID_Bitacora, Fecha, ID_Propio, ID_Conocido)
-    VALUES(secu_Bitacora.NextVal, pFecha, pID_Propio, pID_Conocido);
+	INSERT INTO Bitacora_Conocido(ID_Bitacora_Conocido, Fecha, ID_Propio, ID_Conocido)
+    VALUES(secu_Bitacora_Conocido.NextVal, pFecha, pID_Propio, pID_Conocido);
 END REGISTRAR_Bitacora_Conocido;
 
 CREATE OR REPLACE PROCEDURE EDITAR_Bitacora_Conocido( 
@@ -351,30 +351,3 @@ BEGIN
 	delete from ActividadXUsuario
 	WHERE ID_ActividadXUsuario = pID;
 END BORRAR_ActividadXUsuario;
-
-
---################ EventoXUsuario ################--
-
-CREATE OR REPLACE PROCEDURE REGISTRAR_EventoXUsuario(
-	pID_Usuario IN NUMBER,
-	pID_Evento IN NUMBER) AS
-BEGIN
-	INSERT INTO EventoXUsuario(ID_EventoXUsuario, ID_Usuario, ID_Evento)
-		VALUES(secu_EventoXUsuario.NextVal, pID_Usuario, pID_Evento);
-END REGISTRAR_EventoXUsuario;
-
-CREATE OR REPLACE PROCEDURE EDITAR_EventoXUsuario( 
-	pID IN NUMBER, 	
-	pID_Usuario IN NUMBER,
-	pID_Evento IN NUMBER) AS
-BEGIN
-	Update EventoXUsuario
-		set (ID_Usuario := pID_Usuario, ID_Evento := pID_Evento)
-	    WHERE ID_EventoXUsuario = pID;
-END EDITAR_EventoXUsuario;
-
-CREATE OR REPLACE PROCEDURE BORRAR_EventoXUsuario( pID IN NUMBER ) AS
-BEGIN
-	delete from EventoXUsuario
-	WHERE ID_EventoXUsuario = pID;
-END BORRAR_EventoXUsuario;

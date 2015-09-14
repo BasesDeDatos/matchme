@@ -51,15 +51,15 @@ delete from Signo_Zodiacal
 
 --################ Bitacora_Conocido ################--
 
-INSERT INTO Bitacora_Conocido(ID_Bitacora, Fecha, ID_Propio, ID_Conocido)
-    VALUES(secu_Bitacora.NextVal, null, 1, 2);
+INSERT INTO Bitacora_Conocido(ID_Bitacora_Conocido, Fecha, ID_Propio, ID_Conocido)
+    VALUES(secu_Bitacora_Conocido.NextVal, null, 1, 2);
 
 Update Bitacora_Conocido
     set (Fecha = TO_DATE('18022015', 'DDMMYYYY'), ID_Propio = 1, ID_Conocido = 1)
-    WHERE ID_Bitacora = 1;
+    WHERE ID_Bitacora_Conocido = 1;
 
 delete from Bitacora_Conocido
-    WHERE ID_Bitacora = 1;
+    WHERE ID_Bitacora_Conocido = 1;
 
 --################ Estado_Match ################--
 INSERT INTO Estado_Match(ID_Estado, Nombre)
