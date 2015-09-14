@@ -54,26 +54,26 @@ BEGIN
 	WHERE ID_Bitacora_Conocido = pID;
 END BORRAR_Bitacora_Conocido;
 
---################ estadoCi ################--
+--################ estado ################--
 
-CREATE OR REPLACE PROCEDURE REGISTRAR_estadoCi( pNombre IN VARCHAR2 ) AS
+CREATE OR REPLACE PROCEDURE REGISTRAR_estado( pNombre IN VARCHAR2, pPais In Number ) AS
 BEGIN
-	INSERT INTO estadoCi(ID_estadoCi, Nombre)
-    	VALUES(secu_estadoCi.NextVal, pNombre);
-END REGISTRAR_estadoCi;
+	INSERT INTO estado(ID_estado, Nombre, pais)
+    	VALUES(secu_estado.NextVal, pNombre, pPais);
+END REGISTRAR_estado;
 
-CREATE OR REPLACE PROCEDURE EDITAR_estadoCi(pNombre IN VARCHAR2) AS
+CREATE OR REPLACE PROCEDURE EDITAR_estado(pID In Number, pNombre IN VARCHAR2, pPais In Number) AS
 BEGIN
-	Update estadoCi
-		set (nombre := pNombre)
-	    WHERE ID_estadoCido = pID;
-END EDITAR_estadoCi;
+	Update estado
+		set (nombre := pNombre, Pais := pPais)
+	    WHERE ID_estadodo = pID;
+END EDITAR_estado;
 
-CREATE OR REPLACE PROCEDURE BORRAR_estadoCi( pID IN NUMBER ) AS
+CREATE OR REPLACE PROCEDURE BORRAR_estado( pID IN NUMBER ) AS
 BEGIN
-	delete from estadoCi
-	WHERE ID_estadoCido = pID;
-END BORRAR_estadoCi;
+	delete from estado
+	WHERE ID_estadodo = pID;
+END BORRAR_estado;
 
 
 --################ Wink ################--
