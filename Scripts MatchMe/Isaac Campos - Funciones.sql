@@ -54,26 +54,26 @@ BEGIN
 	WHERE ID_Bitacora_Conocido = pID;
 END BORRAR_Bitacora_Conocido;
 
---################ Estado_Match ################--
+--################ estadoCi ################--
 
-CREATE OR REPLACE PROCEDURE REGISTRAR_Estado_Match( pNombre IN VARCHAR2 ) AS
+CREATE OR REPLACE PROCEDURE REGISTRAR_estadoCi( pNombre IN VARCHAR2 ) AS
 BEGIN
-	INSERT INTO Estado_Match(ID_Estado, Nombre)
-    	VALUES(secu_estado_Match.NextVal, pNombre);
-END REGISTRAR_Estado_Match;
+	INSERT INTO estadoCi(ID_estadoCi, Nombre)
+    	VALUES(secu_estadoCi.NextVal, pNombre);
+END REGISTRAR_estadoCi;
 
-CREATE OR REPLACE PROCEDURE EDITAR_Estado_Match(pNombre IN VARCHAR2) AS
+CREATE OR REPLACE PROCEDURE EDITAR_estadoCi(pNombre IN VARCHAR2) AS
 BEGIN
-	Update Estado_Match
+	Update estadoCi
 		set (nombre := pNombre)
-	    WHERE ID_Estado_Matchdo = pID;
-END EDITAR_Estado_Match;
+	    WHERE ID_estadoCido = pID;
+END EDITAR_estadoCi;
 
-CREATE OR REPLACE PROCEDURE BORRAR_Estado_Match( pID IN NUMBER ) AS
+CREATE OR REPLACE PROCEDURE BORRAR_estadoCi( pID IN NUMBER ) AS
 BEGIN
-	delete from Estado_Match
-	WHERE ID_Estado_Matchdo = pID;
-END BORRAR_Estado_Match;
+	delete from estadoCi
+	WHERE ID_estadoCido = pID;
+END BORRAR_estadoCi;
 
 
 --################ Wink ################--

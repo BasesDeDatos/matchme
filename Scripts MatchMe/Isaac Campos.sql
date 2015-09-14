@@ -63,7 +63,7 @@ delete from Bitacora_Conocido
 
 --################ Estado_Match ################--
 INSERT INTO Estado_Match(ID_Estado, Nombre)
-    VALUES(secu_estado_Match.NextVal, Nombre = "Aceptado");
+    VALUES(secu_estado_Match.NextVal, 'Aceptado');
 
 Update Estado_Match
     set nombre = 'Aceptado'
