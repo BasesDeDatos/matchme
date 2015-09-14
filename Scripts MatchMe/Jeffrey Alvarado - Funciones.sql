@@ -1,4 +1,4 @@
--- Funciones
+-- Funciones---------------------------------------
 
 CREATE OR REPLACE PROCEDURE REGISTRARACTIVIDADAL
 ( pNombre IN VARCHAR2
@@ -28,13 +28,31 @@ BEGIN
 --NULL;
 END BORRARACTIVIDADAL;
 
---Prueba
+--Prueba-------------------------------------------
 
+declare
+  vNombre varchar2(30) := 'Escalar';
+begin
+  registraractividadal(vNombre);
+end;
 
+declare
+  vNombre varchar2(30) := 'Correr';
+  vID Number := 1;
+begin
+  editaractividadal(vID, vNombre);
+end;
+
+declare
+  vID Number := 1;
+begin
+  borraractividadal(vID);
+end;
 
 ----------------------------------------------------
+----------------------------------------------------
 
--- Funciones
+-- Funciones----------------------------------------
 
 CREATE OR REPLACE PROCEDURE REGISTRARPAIS
 ( pNombre IN VARCHAR2
@@ -64,10 +82,28 @@ BEGIN
 --NULL;
 END BORRARPAIS;
 
---Prueba
+--Prueba-------------------------------------------
 
+declare
+  vNombre varchar2(30) := 'Cota Rica';
+begin
+  registrarpais(vNombre);
+end;
 
+declare
+  vNombre varchar2(30) := 'Costa Rica';
+  vID Number := 1;
+begin
+  editarpais(vID, vNombre);
+end;
 
+declare
+  vID Number := 1;
+begin
+  borrarpais(vID);
+end;
+
+----------------------------------------------------
 ----------------------------------------------------
 
 -- Funciones
@@ -99,10 +135,28 @@ BEGIN
 --NULL;
 END BORRAROCUPACION;
 
---Prueba
+--Prueba-------------------------------------------
 
+declare
+  vNombre varchar2(30) := 'Programador';
+begin
+  registrarocupacion(vNombre);
+end;
 
+declare
+  vNombre varchar2(30) := 'Profesor';
+  vID Number := 1;
+begin
+  editarocupacion(vID, vNombre);
+end;
 
+declare
+  vID Number := 1;
+begin
+  borrarocupacion(vID);
+end;
+
+----------------------------------------------------
 ----------------------------------------------------
 
 -- Funciones
@@ -137,10 +191,34 @@ BEGIN
 --NULL;
 END BORRAREVENTO;
 
---Prueba
+--Prueba-------------------------------------------
 
+declare
+  vNombre varchar2(30) := 'Cuampleanos Roger';
+  vDescripcion varchar2(400) := 'Celebrar el cumpleanos de Roger';
+  vFecha varchar2(30) := '20032015 18:00:00';
+  vCiudad Number := 1;
+begin
+  registrarevento(vNombre, vDescripcion, vFecha, vCiudad);
+end;
 
+declare
+  vNombre varchar2(30) := 'Cuampleanos Rogercito';
+  vDescripcion varchar2(400) := 'Celebrar el cumpleanos de Rogercito';
+  vFecha varchar2(30) := '20032015 20:00:00';
+  vCiudad Number := 1;
+  vID Number := 1;
+begin
+  editarevento(vID, vNombre, vDescripcion, vFecha, vCiudad);
+end;
 
+declare
+  vID Number := 1;
+begin
+  borrarevento(vID);
+end;
+
+----------------------------------------------------
 ----------------------------------------------------
 
 -- Funciones
@@ -173,10 +251,28 @@ BEGIN
 --NULL;
 END BORRARCOLORPIEL;
 
---Prueba
+--Prueba-------------------------------------------
 
+declare
+  vNombre varchar2(30) := 'Amarillo';
+begin
+  registrarcolorpiel(vNombre);
+end;
 
+declare
+  vNombre varchar2(30) := 'Blanco';
+  vID Number := 1;
+begin
+  editarcolorpiel(vID, vNombre);
+end;
 
+declare
+  vID Number := 1;
+begin
+  borrarcolorpiel(vID);
+end;
+
+----------------------------------------------------
 ----------------------------------------------------
 
 -- Funciones
@@ -209,10 +305,28 @@ BEGIN
 --NULL;
 END BORRARESTADOMATCH;
 
---Prueba
+--Prueba-------------------------------------------
 
+declare
+  vNombre varchar2(30) := 'Casado';
+begin
+  registrarestadomatch(vNombre);
+end;
 
+declare
+  vNombre varchar2(30) := 'Soltero';
+  vID Number := 1;
+begin
+  editarestadomatch(vID, vNombre);
+end;
 
+declare
+  vID Number := 1;
+begin
+  borrarestadomatch(vID);
+end;
+
+----------------------------------------------------
 ----------------------------------------------------
 
 -- Funciones
@@ -247,10 +361,32 @@ BEGIN
 --NULL;
 END BORRARINTERES;
 
---Prueba
+--Prueba-------------------------------------------
 
+declare
+  vRango_edadi Number := 15;
+  vRango_edadf Number := 30;
+  vTipo_pareja Number := 1;
+begin
+  registrarinteres(vRango_edadi, vRango_edadf, vTipo_pareja);
+end;
 
+declare
+  vRango_edadi Number := 17;
+  vRango_edadf Number := 35;
+  vTipo_pareja Number := 1;
+  vID Number := 1;
+begin
+  editarinteres(vID, vRango_edadi, vRango_edadf, vTipo_pareja);
+end;
 
+declare
+  vID Number := 1;
+begin
+  borrarinteres(vID);
+end;
+
+----------------------------------------------------
 ----------------------------------------------------
 
 -- Funciones
@@ -286,10 +422,34 @@ BEGIN
 --NULL;
 END BORRARMATCH;
 
---Prueba
+--Prueba-------------------------------------------
 
+declare
+  vFecha varchar2 (30) := 20032015;
+  vEstado_match Number := 1;
+  vId_propio Number := 1;
+  vId_recomendacion Number := 2;
+begin
+  registrarmatch(vFecha, vEstado_match, vId_propio, vId_recomendacion);
+end;
 
+declare
+  vFecha varchar2 (30) := 20062015;
+  vEstado_match Number := 1;
+  vId_propio Number := 1;
+  vId_recomendacion Number := 2;
+  vID Number := 1;
+begin
+  editarmatch(vID, vFecha, vEstado_match, vId_propio, vId_recomendacion);
+end;
 
+declare
+  vID Number := 1;
+begin
+  borrarmatch(vID);
+end;
+
+----------------------------------------------------
 ----------------------------------------------------
 
 -- Funciones
@@ -323,10 +483,30 @@ BEGIN
 --NULL;
 END BORRARUSUARIOXIDIOMA;
 
---Prueba
+--Prueba-------------------------------------------
 
+declare
+  vId_Usuario Number := 1;
+  vId_idioma Number := 1;
+begin
+  registrarusuarioxidioma(vId_Usuario, vId_idioma);
+end;
 
+declare
+  vId_Usuario Number := 2;
+  vId_idioma Number := 1;
+  vID Number := 1;
+begin
+  editarusuarioxidioma(vID, vId_Usuario, vId_idioma);
+end;
 
+declare
+  vID Number := 1;
+begin
+  borrarusuarioxidioma(vID);
+end;
+
+----------------------------------------------------
 ----------------------------------------------------
 
 -- Funciones
@@ -362,8 +542,28 @@ END BORRARUSUARIOXOCUPACION;
 
 --Prueba
 
+declare
+  vId_Usuario Number := 1;
+  vId_ocupacion Number := 1;
+begin
+  registrarusuarioxocupacion(vId_Usuario, vId_ocupacion);
+end;
 
+declare
+  vId_Usuario Number := 2;
+  vId_ocupacion Number := 1;
+  vID Number := 1;
+begin
+  editarusuarioxocupacion(vID, vId_Usuario, vId_ocupacion);
+end;
 
+declare
+  vID Number := 1;
+begin
+  borrarusuarioxocupacion(vID);
+end;
+
+----------------------------------------------------
 ----------------------------------------------------
 
 -- Funciones
@@ -506,6 +706,65 @@ END BORRARUSUARIO;
 
 --Prueba
 
+declare
+	vnombre := 'Rolland';
+	vprimer_apellido := 'Payne';
+	vsegundo_apellido := 'Elliot';
+	vfecha_nac := TO_DATE('10091995', 'DDMMYYYY');
+	vemail := 'rp90elliott@randatmail.com';
+	vfoto := null;
+	vgenero := 'Hombre';
+	vclave  := '123456789'
+	vgustan_mascota := 'no';
+	vtiene_mascota  := 'no';
+	vtendria_mascota := 'no'
+	vid_religion := 1;
+	vid_estadoCi  := 1;
+	vid_educacion := 1;
+	vid_ciudad := 1;
+	vid_aspectoF := 1;
+	vid_estilovida := 1;
+	vid_rol := 1;
+	vid_signo_zodiacal := 1;
+begin
+  registrarusuario(vnombre, vprimer_apellido, vsegundo_apellido, vfecha_nac
+  vemail, vfoto, vgenero, vclave, vgustan_mascota, vtiene_mascota, vtendria_mascota,
+  vid_religion, vid_estadoCi, vid_educacion, vid_ciudad, vid_aspectoF, vid_estilovida,
+  vid_rol, vid_signo_zodiacal);
+end;
 
+declare
+	vnombre := 'Roland';
+	vprimer_apellido := 'Peine';
+	vsegundo_apellido := 'Elliot';
+	vfecha_nac := TO_DATE('10091995', 'DDMMYYYY');
+	vemail := 'rp90ellitto@randatmail.com';
+	vfoto := null;
+	vgenero := 'Hombre';
+	vclave  := '123456789'
+	vgustan_mascota := 'no';
+	vtiene_mascota  := 'no';
+	vtendria_mascota := 'no'
+	vid_religion := 1;
+	vid_estadoCi  := 1;
+	vid_educacion := 1;
+	vid_ciudad := 1;
+	vid_aspectoF := 1;
+	vid_estilovida := 1;
+	vid_rol := 1;
+	vid_signo_zodiacal := 1;
+	vID Number := 1;
+begin
+  editarusuario(vID, vnombre, vprimer_apellido, vsegundo_apellido, vfecha_nac
+  vemail, vfoto, vgenero, vclave, vgustan_mascota, vtiene_mascota, vtendria_mascota,
+  vid_religion, vid_estadoCi, vid_educacion, vid_ciudad, vid_aspectoF, vid_estilovida,
+  vid_rol, vid_signo_zodiacal);
+end;
+
+declare
+  vID Number := 1;
+begin
+  borrarusuario(vID);
+end;
 
 ----------------------------------------------------
