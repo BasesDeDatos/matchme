@@ -14,7 +14,7 @@ CREATE OR REPLACE PROCEDURE EDITAR_Signo_Zodiacal(
 	pfecha_inicio IN DATE, 
 	pfecha_final IN DATE ) AS
 BEGIN
-	Update actividadAL
+	Update Signo_Zodiacal
 	set (Nombre := pNombre, fecha_inicio := pfecha_inicio, fecha_final := pfecha_final)
 	WHERE ID_Signo_Zodiacal = pID;
 END EDITAR_Signo_Zodiacal;
@@ -351,3 +351,30 @@ BEGIN
 	delete from ActividadXUsuario
 	WHERE ID_ActividadXUsuario = pID;
 END BORRAR_ActividadXUsuario;
+
+
+--################ EventoXUsuario ################--
+
+CREATE OR REPLACE PROCEDURE REGISTRAR_EventoXUsuario(
+	pID_Usuario IN NUMBER,
+	pID_Evento IN NUMBER) AS
+BEGIN
+	INSERT INTO EventoXUsuario(ID_EventoXUsuario, ID_Usuario, ID_Evento)
+		VALUES(secu_EventoXUsuario.NextVal, pID_Usuario, pID_Evento);
+END REGISTRAR_EventoXUsuario;
+
+CREATE OR REPLACE PROCEDURE EDITAR_EventoXUsuario( 
+	pID IN NUMBER, 	
+	pID_Usuario IN NUMBER,
+	pID_Evento IN NUMBER) AS
+BEGIN
+	Update EventoXUsuario
+		set (ID_Usuario := pID_Usuario, ID_Evento := pID_Evento)
+	    WHERE ID_EventoXUsuario = pID;
+END EDITAR_EventoXUsuario;
+
+CREATE OR REPLACE PROCEDURE BORRAR_EventoXUsuario( pID IN NUMBER ) AS
+BEGIN
+	delete from EventoXUsuario
+	WHERE ID_EventoXUsuario = pID;
+END BORRAR_EventoXUsuario;
