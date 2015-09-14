@@ -61,16 +61,16 @@ Update Bitacora_Conocido
 delete from Bitacora_Conocido
     WHERE ID_Bitacora = 1;
 
---################ Estado_Match ################--
+--################ Estado_UsuariosXMatch ################--
 
-INSERT INTO Estado_Match(ID_Estado, Nombre)
-    VALUES(secu_estado_match.NextVal, Nombre = "Aceptado");
+INSERT INTO Estado_UsuariosXMatch(ID_Estado, Nombre)
+    VALUES(secu_estado_UsuariosXMatch.NextVal, Nombre = "Aceptado");
 
-Update Estado_Match
+Update Estado_UsuariosXMatch
     set nombre = 'Aceptado'
     WHERE employee_id = 1;
 
-delete from Estado_Match
+delete from Estado_UsuariosXMatch
     WHERE id = 1;
 
 
@@ -166,29 +166,48 @@ delete from Aspecto_Fisico
 --################ Color_Pelo ################--
 
 INSERT INTO Color_Pelo(ID_ColorPelo, Nombre)
-    VALUES(secu_Tipo_Pareja.NextVal, "Masculino");
+    VALUES(secu_Color_Pelo.NextVal, "Cafe");
 
 Update Color_Pelo
-    set Genero = 'Hombres'
-    WHERE ID_TipoPareja = 1;
+    set Genero = 'Castaño'
+    WHERE ID_ColorPelo = 1;
 
 delete from Color_Pelo
-    WHERE ID_TipoPareja = 1;
+    WHERE ID_ColorPelo = 1;
     
---################ DEMO ################--
-
-INSERT INTO demo(nombre)
-    VALUES('Escalar');
-
-Update demo
-    set nombre = 'Escalar montañas'
-    WHERE employee_id = 1;
-
-delete from demo
-    WHERE id = 1;
     
+--################ UsuariosXMatch ################--
 
+INSERT INTO UsuariosXMatch(ID_UsuariosXMatch, Fecha, ID_Estado_match, ID_Propio, ID_Recomendacion)
+VALUES(secu_UsuariosXMatch, null, 1, 1, 2);
 
-MatchXUsuario
-InteresXHobby
-Estado_Civil
+Update UsuariosXMatch
+    set (ID_Estado_UsuariosXMatch = 1)
+    WHERE ID_UsuariosXMatch = 1;
+
+delete from UsuariosXMatch
+    WHERE ID_UsuariosXMatch = 1;
+    
+--################ HobbyXUsuario ################--
+
+INSERT INTO HobbyXUsuario(ID_HobbyXUsuario, ID_Usuario, ID_hobby)
+VALUES(secu_HobbyXUsuario, 1, 1);
+
+Update HobbyXUsuario
+    set (ID_hobby = 1)
+    WHERE ID_HobbyXUsuario = 1;
+
+delete from HobbyXUsuario
+    WHERE ID_HobbyXUsuario = 1;
+    
+    --################ ActividadXUsuario ################--
+
+INSERT INTO ActividadXUsuario(ID_ActividadXUsuario, ID_Usuario, ID_actividadAl)
+VALUES(secu_UsuariosXMatch, 1, 1);
+
+Update ActividadXUsuario
+    set (ID_actividadAl = 1)
+    WHERE ID_ActividadXUsuario = 1;
+
+delete from ActividadXUsuario
+    WHERE ID_ActividadXUsuario = 1;
