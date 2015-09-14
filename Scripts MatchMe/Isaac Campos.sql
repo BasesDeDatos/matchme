@@ -61,12 +61,11 @@ Update Bitacora_Conocido
 delete from Bitacora_Conocido
     WHERE ID_Bitacora = 1;
 
---################ Estado_UsuariosXMatch ################--
+--################ Estado_Match ################--
+INSERT INTO Estado_Match(ID_Estado, Nombre)
+    VALUES(secu_estado_Match.NextVal, Nombre = "Aceptado");
 
-INSERT INTO Estado_UsuariosXMatch(ID_Estado, Nombre)
-    VALUES(secu_estado_UsuariosXMatch.NextVal, Nombre = "Aceptado");
-
-Update Estado_UsuariosXMatch
+Update Estado_Match
     set nombre = 'Aceptado'
     WHERE employee_id = 1;
 
@@ -74,17 +73,32 @@ delete from Estado_UsuariosXMatch
     WHERE id = 1;
 
 
---################ Wink ################--
+--################ Color_Pelo ################--
 
-INSERT INTO Wink(ID_Wink, Fecha, ID_Enviado, ID_Recibido)
-    VALUES(secu_wink.NextVal, null, 1, 2);
+INSERT INTO Color_Pelo(ID_Color_Pelo, Fecha, ID_Enviado, ID_Recibido)
+    VALUES(secu_Color_Pelo.NextVal, null, 1, 2);
 
-Update Wink
+Update Color_Pelo
     set (Fecha = TO_DATE('18022015', 'DDMMYYYY'), ID_Enviado = 1, ID_Recibido = 2)
-    WHERE ID_Wink = 1;
+    WHERE ID_Color_Pelo = 1;
 
-delete from Wink
-    WHERE ID_Wink = 1;
+delete from Color_Pelo
+    WHERE ID_Color_Pelo = 1;
+    
+    
+    
+--################ Color_Pelo ################--
+
+INSERT INTO Color_Pelo(ID_Color_Pelo, Nombre)
+    VALUES(secu_Color_Pelo.NextVal, 'Espanol');
+
+Update Color_Pelo
+    set (Nombre = "Español")
+    WHERE ID_Color_Pelo = 1;
+
+delete from Color_Pelo
+    WHERE ID_Color_Pelo = 1;
+    
     
 --################ Estilo_Vida ################--
 
@@ -203,7 +217,7 @@ delete from HobbyXUsuario
     --################ ActividadXUsuario ################--
 
 INSERT INTO ActividadXUsuario(ID_ActividadXUsuario, ID_Usuario, ID_actividadAl)
-VALUES(secu_UsuariosXMatch, 1, 1);
+VALUES(secu_ActividadXUsuario, 1, 1);
 
 Update ActividadXUsuario
     set (ID_actividadAl = 1)
