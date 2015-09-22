@@ -16,10 +16,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<div class="top-nav2">
 						<span class="menu2"><img src="images/menu.png" alt=""> <lable> MENU</lable></span>
 						<ul class="effct1" style="display: none;">
-							<li><a href="#">Mensajes<span>30</span></a></li>                                             
-							<li><a href="#">Invitaciones<span>5</span></a></li>
+							<li><a href="profile_settings.php">Editar Perfil</a></li>  
 							<li><a href="#">Eventos<span>10</span></a></li>  
-							<li><a href="profile_settings.php">Configuracion</a></li>  
+							<li><a href="#">Winks<span>30</span></a></li>                                             
+							<li><a href="#">Visitas<span>28</span></a></li>   
 						</ul>
 					</div>
 					<!-- FICHA PERFIL -->

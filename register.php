@@ -25,21 +25,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			</ul>
 			<!-- fieldsets -->
 			<fieldset>
-<<<<<<< HEAD
-				<div class="row"><div class="col-md-12">
-					<h2 class="fs-title">Crear Cuenta</h2>
-					<!--h3 class="fs-subtitle">Datos De la Cuenta</h3-->
-					<div class="col-md-12"><input type="text" name="email" placeholder="Email" /></div>
-					<div class="col-md-12"><input type="password" name="pass" placeholder="Contraseña" /></div>
-					<div class="col-md-12"><input type="password" name="cpass" placeholder="Confirmar Contraseña" /></div>
-				</div></div>
-=======
+
 				<h2 class="fs-title">Crear Cuenta</h2>
 				<!--h3 class="fs-subtitle">Datos De la Cuenta</h3-->
 				<div class="col-md-12"><input type="text" name="email" placeholder="Email: someone@something.com" /></div>
 				<div class="col-md-12"><input type="password" name="pass" placeholder="Contraseña" /></div>
 				<div class="col-md-12"><input type="password" name="cpass" placeholder="Confirmar Contraseña" /></div>
->>>>>>> a9a8142d7766a442e1075b872d4cc0b2c94c34ad
+
 				<input type="button" name="next" class="next action-button" value="Siguiente" />
 			</fieldset>
 			
@@ -57,46 +49,24 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			</fieldset>
 			
 			<fieldset>
-<<<<<<< HEAD
-				<div class="row"><div class="col-md-12">
-					<h2 class="fs-title">Aspecto Físico</h2>
-					
-					<!--div class="col-md-12"><input type="text" name="color_piel" placeholder="Color Piel" /></div>
-					<div class="col-md-12"><input type="text" name="color_ojos" placeholder="Color Ojos" /></div>
-					<div class="col-md-12"><input type="text" name="color_pelo" placeholder="Color Pelo" /></div-->
-					
-					<div class="col-md-4"><h3 class="fs-subtitle">Color de pelo:</h3></div>
-					
-					<div class="col-md-8"><select name="color_pelo_select"></select></div>
-					
-					<div class="col-md-4"><h3 class="fs-subtitle">Color de piel:</h3></div>
-					
-					<div class="col-md-8"><select name="color_piel_select"></select></div>
-					
-					<div class="col-md-4"><h3 class="fs-subtitle">Color de ojos:</h3></div>
-					
-					<div class="col-md-8"><select name="color_ojos_select"></select></div>
-					
-				</div></div>
-=======
+				
 				<h2 class="fs-title">Aspecto Físico</h2>
 				
-				<div class="col-md-4"><h3 class="fs-subtitle">Color de pelo:</h3></div>
+				<div class="col-md-12"><h3 class="fs-subtitle">Color de pelo:</h3></div>
 				
 				<select name="color_pelo_select">
 				</select>
 				
-				<div class="col-md-4"><h3 class="fs-subtitle">Color de piel:</h3></div>
+				<div class="col-md-12"><h3 class="fs-subtitle">Color de piel:</h3></div>
 				
 				<select name="color_piel_select">
 				</select>
 				
-				<div class="col-md-4"><h3 class="fs-subtitle">Color de ojos:</h3></div>
+				<div class="col-md-12"><h3 class="fs-subtitle">Color de ojos:</h3></div>
 				
 				<select name="color_ojos_select">
 				</select>
 				
->>>>>>> a9a8142d7766a442e1075b872d4cc0b2c94c34ad
 				<input type="button" name="previous" class="previous action-button" value="Anterior" />
 				<input type="button" name="next" class="next action-button" value="Siguente" />
 			</fieldset>
@@ -105,12 +75,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<h2 class="fs-title">Intereses</h2>
 				
 				<div class="col-md-4">
-					<input id="1" class="css-checkbox1" type="checkbox">
-					<label for="1" name="demo_lbl_1" class="css-label1">Value 1</label>
-												
-					<input type="checkbox" name="chk_group[]" value="value1" />Value 1<br />
-					<input type="checkbox" name="chk_group[]" value="value2" />Value 2<br />
-					<input type="checkbox" name="chk_group[]" value="value3" />Value 3<br />
+					<input type="checkbox" name="checkbox" id="checkbox" />
+					<label for="checkbox">Checkbox:</label>
+				</div>
+				
+				<div class="col-md-4">
+					<input type="checkbox" name="checkbox" id="checkbox" />
 					<label for="checkbox">Checkbox:</label>
 				</div>
 				
@@ -140,43 +110,153 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			</fieldset>
 		
 			<fieldset>
-				<h2 class="fs-title">Aspecto Físico</h2>
+				<h2 class="fs-title">Hobbies</h2>
 				
-				<!--div class="col-md-12"><input type="text" name="color_piel" placeholder="Color Piel" /></div>
-				<div class="col-md-12"><input type="text" name="color_ojos" placeholder="Color Ojos" /></div>
-				<div class="col-md-12"><input type="text" name="color_pelo" placeholder="Color Pelo" /></div-->
+				<div class="col-md-4">
+					<input type="checkbox" name="checkbox" id="checkbox" />
+					<label for="checkbox">Checkbox:</label>
+				</div>
 				
-				<div class="col-md-4"><h3 class="fs-subtitle">Color de pelo:</h3></div>
+				<div class="col-md-4">
+					<input type="checkbox" name="checkbox" id="checkbox" />
+					<label for="checkbox">Checkbox:</label>
+				</div>
 				
-				<select name="color_pelo_select">
-				</select>
+				<div class="col-md-4">
+					<input type="checkbox" name="checkbox" id="checkbox" />
+					<label for="checkbox">Checkbox:</label>
+				</div>
 				
-				<div class="col-md-4"><h3 class="fs-subtitle">Color de piel:</h3></div>
+				<div class="col-md-4">
+					<input type="checkbox" name="checkbox" id="checkbox" />
+					<label for="checkbox">Checkbox:</label>
+				</div>
 				
-				<select name="color_piel_select">
-				</select>
+				<div class="col-md-4">
+					<input type="checkbox" name="checkbox" id="checkbox" />
+					<label for="checkbox">Checkbox:</label>
+				</div>
 				
-				<div class="col-md-4"><h3 class="fs-subtitle">Color de ojos:</h3></div>
+				<div class="col-md-4">
+					<input type="checkbox" name="checkbox" id="checkbox" />
+					<label for="checkbox">Checkbox:</label>
+				</div>
 				
-				<select name="color_ojos_select">
-				</select>
 				
 				<input type="button" name="previous" class="previous action-button" value="Anterior" />
 				<input type="button" name="next" class="next action-button" value="Siguente" />
 			</fieldset>
 			
 			<fieldset>
-				<h2 class="fs-title">Aspecto Físico</h2>
+				<h2 class="fs-title">Estilo de Vida</h2>
+					
+				<div class="col-md-4">
+					<input type="checkbox" name="checkbox" id="checkbox" />
+					<label for="checkbox">Checkbox:</label>
+				</div>
+				
+				<div class="col-md-4">
+					<input type="checkbox" name="checkbox" id="checkbox" />
+					<label for="checkbox">Checkbox:</label>
+				</div>
+				
+				<div class="col-md-4">
+					<input type="checkbox" name="checkbox" id="checkbox" />
+					<label for="checkbox">Checkbox:</label>
+				</div>
+				
+				<div class="col-md-4">
+					<input type="checkbox" name="checkbox" id="checkbox" />
+					<label for="checkbox">Checkbox:</label>
+				</div>
+				
+				<div class="col-md-4">
+					<input type="checkbox" name="checkbox" id="checkbox" />
+					<label for="checkbox">Checkbox:</label>
+				</div>
+				
+				<div class="col-md-4">
+					<input type="checkbox" name="checkbox" id="checkbox" />
+					<label for="checkbox">Checkbox:</label>
+				</div>
+				
 				
 				<input type="button" name="previous" class="previous action-button" value="Anterior" />
 				<input type="button" name="next" class="next action-button" value="Siguente" />
 			</fieldset>
 			
 			<fieldset>
-				<h2 class="fs-title">Aspecto Físico</h2>
+					<h2 class="fs-title">Mascotas</h2>
+				
+					
+			<div class="col-md-4">
+					<input type="checkbox" name="checkbox" id="checkbox" />
+					<label for="checkbox">Checkbox:</label>
+				</div>
+				
+				<div class="col-md-4">
+					<input type="checkbox" name="checkbox" id="checkbox" />
+					<label for="checkbox">Checkbox:</label>
+				</div>
+				
+				<div class="col-md-4">
+					<input type="checkbox" name="checkbox" id="checkbox" />
+					<label for="checkbox">Checkbox:</label>
+				</div>
+				
+				<div class="col-md-4">
+					<input type="checkbox" name="checkbox" id="checkbox" />
+					<label for="checkbox">Checkbox:</label>
+				</div>
+				
+				
+				<div class="col-md-4">
+					<input type="checkbox" name="checkbox" id="checkbox" />
+					<label for="checkbox">Checkbox:</label>
+				</div>
+				
+				<div class="col-md-4">
+					<input type="checkbox" name="checkbox" id="checkbox" />
+					<label for="checkbox">Checkbox:</label>
+				</div>
 				
 				<input type="button" name="previous" class="previous action-button" value="Anterior" />
 				<input type="button" name="next" class="next action-button" value="Siguente" />
+			</fieldset>
+			
+			<fieldset>
+				
+				<h2 class="fs-title">¿Qué Busco?</h2>
+				
+				<div class="col-md-4">
+					<select name="color_ojos_select">
+					</select>
+				</div>
+				
+				<div class="col-md-4">
+					<select name="color_ojos_select">
+					</select>
+				</div>
+				<div class="col-md-4">
+					<select name="color_ojos_select">
+					</select>
+				</div>
+				<div class="col-md-4">
+					<select name="color_ojos_select">
+					</select>
+				</div>
+				<div class="col-md-4">
+					<select name="color_ojos_select">
+					</select>
+				</div>
+				<div class="col-md-4">
+					<select name="color_ojos_select">
+					</select>
+				</div>
+				
+				<input type="button" name="previous" class="previous action-button" value="Anterior" />
+				<input type="submit" name="submit" class="submit action-button" value="Submit" />
+
 			</fieldset>
 		
 		</form>
