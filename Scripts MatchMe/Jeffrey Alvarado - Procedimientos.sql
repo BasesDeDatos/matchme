@@ -1,4 +1,4 @@
--- Funciones---------------------------------------
+-- Funciones
 
 CREATE OR REPLACE PROCEDURE REGISTRARACTIVIDADAL
 ( pNombre IN VARCHAR2
@@ -28,7 +28,7 @@ BEGIN
 --NULL;
 END BORRARACTIVIDADAL;
 
---Prueba-------------------------------------------
+--Prueba
 
 declare
   vNombre varchar2(30) := 'Escalar';
