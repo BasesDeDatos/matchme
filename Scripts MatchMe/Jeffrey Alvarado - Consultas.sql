@@ -1,200 +1,363 @@
 --Pais--
-CREATE OR REPLACE FUNCTION GET_Pais( 
-	pID IN NUMBER
-	) RETURN VARCHAR2 is
-vReturn VARCHAR2;
-BEGIN
+create or replace
+PROCEDURE get_pais (pID IN pais.ID_pais%TYPE,
+p_recordset OUT SYS_REFCURSOR) AS 
+BEGIN 
+	OPEN p_recordset FOR
 	SELECT nombre
-  	INTO vReturn 
 	FROM pais
-	WHERE ID_pais = pID;
-	RETURN (vReturn);
-END GET_Pais;
-
---ActividadAL--
-CREATE OR REPLACE FUNCTION GET_ActividadAL( 
-	pID IN NUMBER
-	) RETURN VARCHAR2 is
-vReturn VARCHAR2;
+	WHERE ID_pais = nvl(pID, ID_pais)
+	ORDER BY nombre;
+END get_pais;
+--Prueba--
+SET SERVEROUTPUT ON SIZE 1000000
+DECLARE
+	vCursor	SYS_REFCURSOR;
+	vNombre	pais.nombre%TYPE;
 BEGIN
+	get_pais(null, p_recordset => vCursor);        
+	LOOP 
+		FETCH vCursor
+		INTO  vNombre;
+		EXIT WHEN vCursor%NOTFOUND;
+		DBMS_OUTPUT.PUT_LINE(vNombre);
+	END LOOP;
+	CLOSE vCursor;
+END;
+
+--actividadAL--
+create or replace
+PROCEDURE get_actividadAL (pID IN actividadAL.ID_actividadAL%TYPE,
+p_recordset OUT SYS_REFCURSOR) AS 
+BEGIN 
+	OPEN p_recordset FOR
 	SELECT nombre
-  	INTO vReturn 
 	FROM actividadAL
-	WHERE ID_actividadAL = pID;
-	RETURN (vReturn);
-END GET_ActividadAL;
-
---Ocupacion--
-CREATE OR REPLACE FUNCTION GET_ocupacion( 
-	pID IN NUMBER
-	) RETURN VARCHAR2 is
-vReturn VARCHAR2;
+	WHERE ID_actividadAL = nvl(pID, ID_actividadAL)
+	ORDER BY nombre;
+END get_actividadAL;
+--Prueba--
+SET SERVEROUTPUT ON SIZE 1000000
+DECLARE
+	vCursor	SYS_REFCURSOR;
+	vNombre	actividadAL.nombre%TYPE;
 BEGIN
+	get_actividadAL(null, p_recordset => vCursor);        
+	LOOP 
+		FETCH vCursor
+		INTO  vNombre;
+		EXIT WHEN vCursor%NOTFOUND;
+		DBMS_OUTPUT.PUT_LINE(vNombre);
+	END LOOP;
+	CLOSE vCursor;
+END;
+
+--ocupacion--
+create or replace
+PROCEDURE get_ocupacion (pID IN ocupacion.ID_ocupacion%TYPE,
+p_recordset OUT SYS_REFCURSOR) AS 
+BEGIN 
+	OPEN p_recordset FOR
 	SELECT nombre
-  	INTO vReturn 
 	FROM ocupacion
-	WHERE ID_ocupacion = pID;
-	RETURN (vReturn);
-END GET_ocupacion;
-
---Color Piel--
-CREATE OR REPLACE FUNCTION GET_color_piel( 
-	pID IN NUMBER
-	) RETURN VARCHAR2 is
-vReturn VARCHAR2;
+	WHERE ID_ocupacion = nvl(pID, ID_ocupacion)
+	ORDER BY nombre;
+END get_ocupacion;
+--Prueba--
+SET SERVEROUTPUT ON SIZE 1000000
+DECLARE
+	vCursor	SYS_REFCURSOR;
+	vNombre	ocupacion.nombre%TYPE;
 BEGIN
+	get_ocupacion(null, p_recordset => vCursor);        
+	LOOP 
+		FETCH vCursor
+		INTO  vNombre;
+		EXIT WHEN vCursor%NOTFOUND;
+		DBMS_OUTPUT.PUT_LINE(vNombre);
+	END LOOP;
+	CLOSE vCursor;
+END;
+
+--color_piel--
+create or replace
+PROCEDURE get_color_piel (pID IN color_piel.ID_colorpiel%TYPE,
+p_recordset OUT SYS_REFCURSOR) AS 
+BEGIN 
+	OPEN p_recordset FOR
 	SELECT nombre
-  	INTO vReturn 
 	FROM color_piel
-	WHERE ID_colorpiel = pID;
-	RETURN (vReturn);
-END GET_color_piel;
-
---Estado Match--
-CREATE OR REPLACE FUNCTION GET_estado_match( 
-	pID IN NUMBER
-	) RETURN VARCHAR2 is
-vReturn VARCHAR2;
+	WHERE ID_colorpiel = nvl(pID, ID_colorpiel)
+	ORDER BY nombre;
+END get_color_piel;
+--Prueba--
+SET SERVEROUTPUT ON SIZE 1000000
+DECLARE
+	vCursor	SYS_REFCURSOR;
+	vNombre	color_piel.nombre%TYPE;
 BEGIN
+	get_color_piel(null, p_recordset => vCursor);        
+	LOOP 
+		FETCH vCursor
+		INTO  vNombre;
+		EXIT WHEN vCursor%NOTFOUND;
+		DBMS_OUTPUT.PUT_LINE(vNombre);
+	END LOOP;
+	CLOSE vCursor;
+END;
+
+--estado_match--
+create or replace
+PROCEDURE get_estado_match (pID IN estado_match.ID_estado_match%TYPE,
+p_recordset OUT SYS_REFCURSOR) AS 
+BEGIN 
+	OPEN p_recordset FOR
 	SELECT nombre
-  	INTO vReturn 
 	FROM estado_match
-	WHERE ID_estado_match = pID;
-	RETURN (vReturn);
-END GET_estado_match;
-
---Estado Match--
-CREATE OR REPLACE FUNCTION GET_estado_match( 
-	pID IN NUMBER
-	) RETURN VARCHAR2 is
-vReturn VARCHAR2;
+	WHERE ID_estado_match = nvl(pID, ID_estado_match)
+	ORDER BY nombre;
+END get_estado_match;
+--Prueba--
+SET SERVEROUTPUT ON SIZE 1000000
+DECLARE
+	vCursor	SYS_REFCURSOR;
+	vNombre	estado_match.nombre%TYPE;
 BEGIN
-	SELECT nombre
-  	INTO vReturn 
-	FROM estado_match
-	WHERE ID_estado_match = pID;
-	RETURN (vReturn);
-END GET_estado_match;
+	get_estado_match(null, p_recordset => vCursor);        
+	LOOP 
+		FETCH vCursor
+		INTO  vNombre;
+		EXIT WHEN vCursor%NOTFOUND;
+		DBMS_OUTPUT.PUT_LINE(vNombre);
+	END LOOP;
+	CLOSE vCursor;
+END;
 
---IdiomaXUsuario--
-
-CREATE OR REPLACE FUNCTION GET_IdiomaXUsuario( 
-	pID IN NUMBER, 	
-	pID_Usuario IN NUMBER,
-	pID_Idioma IN NUMBER) RETURN NUMBER is
-vReturn NUMBER;
-BEGIN
-	SELECT 
-  	INTO vReturn 
-	FROM IdiomaXUsuario
-		set (ID_Usuario := pID_Usuario, ID_Idioma := pID_Idioma)
-	WHERE ID_IdiomaXUsuario= pID;
-	RETURN (vReturn);
-END GET_IdiomaXUsuario;
-
---OcupacionXUsuario--
-
-CREATE OR REPLACE FUNCTION GET_OcupacionXUsuario( 
-	pID IN NUMBER, 	
-	pID_Usuario IN NUMBER,
-	pID_Ocupacion IN NUMBER) RETURN NUMBER is
-vReturn NUMBER;
-BEGIN
-	SELECT 
-  	INTO vReturn 
-	FROM OcupacionXUsuario
-		set (ID_Usuario := pID_Usuario, ID_Ocupacion := pID_Ocupacion)
-	WHERE ID_OcupacionXUsuario= pID;
-	RETURN (vReturn);
-END GET_OcupacionXUsuario;
-
---Nombre Evento--
-CREATE OR REPLACE FUNCTION GET_nombre_evento( 
-	pID IN NUMBER
-	) RETURN VARCHAR2 is
-vReturn VARCHAR2;
-BEGIN
-	SELECT nombre
-  	INTO vReturn 
+--Evento--
+create or replace
+PROCEDURE get_evento (pID IN evento.ID_evento%TYPE,
+p_recordset OUT SYS_REFCURSOR) AS 
+BEGIN 
+	OPEN p_recordset FOR
+	SELECT nombre,
+		   descripcion,
+		   fecha, 
+		   id_ciudad
 	FROM evento
-	WHERE ID_evento = pID;
-	RETURN (vReturn);
-END GET_nombre_evento;
-
---Descripcion evento--
-CREATE OR REPLACE FUNCTION GET_descripcion_evento( 
-	pID IN NUMBER
-	) RETURN VARCHAR2 is
-vReturn VARCHAR2;
+	WHERE ID_evento = nvl(pID, ID_evento)
+	ORDER BY nombre;
+END get_evento;
+--Prueba--
+SET SERVEROUTPUT ON SIZE 1000000
+DECLARE
+	vCursor	SYS_REFCURSOR;
+	vNombre	evento.nombre%TYPE;
+	vDescripcion	evento.descripcion%TYPE;
+	vFecha	evento.fecha%TYPE;
+	vCiudad	evento.id_ciudad%TYPE;
 BEGIN
-	SELECT descripcion
-  	INTO vReturn 
-	FROM evento
-	WHERE ID_evento = pID;
-	RETURN (vReturn);
-END GET_descripcion_evento;
+	get_evento(null, p_recordset => vCursor);        
+	LOOP 
+		FETCH vCursor
+		INTO  vNombre, 
+			  vDescripcion, 
+			  vFecha, 
+			  vCiudad;
+		EXIT WHEN vCursor%NOTFOUND;
+		DBMS_OUTPUT.PUT_LINE(vNombre || ' | ' || vDescripcion || ' | ' || vFecha || ' | ' || vCiudad);
+	END LOOP;
+	CLOSE vCursor;
+END;
 
---Fecha Evento--
-CREATE OR REPLACE FUNCTION GET_fecha_evento( 
-	pID IN NUMBER
-	) RETURN VARCHAR2 is
-vReturn VARCHAR2;
-BEGIN
-	SELECT fecha
-  	INTO vReturn 
-	FROM evento
-	WHERE ID_evento = pID;
-	RETURN (TO_DATE(vReturn, 'DDMMYYYY hh24:mi:ss'));
-END GET_fecha_evento;
-
---Direccion Evento--
-CREATE OR REPLACE FUNCTION GET_lugar_evento( 
-	pID IN NUMBER
-	) RETURN NUMBER is
-vReturn NUMBER;
-BEGIN
-	SELECT lugar
-  	INTO vReturn 
-	FROM evento
-	WHERE ID_evento = pID;
-	RETURN (vReturn);
-END GET_lugar_evento;
-
---Rango edad inicial Interes--
-CREATE OR REPLACE FUNCTION GET_rango_edadi_interes( 
-	pID IN NUMBER
-	) RETURN NUMBER is
-vReturn NUMBER;
-BEGIN
-	SELECT rango_edadi
-  	INTO vReturn 
+--interes_gusto--
+create or replace
+PROCEDURE get_interes_gusto (pID IN interes_gusto.ID_interesg%TYPE,
+p_recordset OUT SYS_REFCURSOR) AS 
+BEGIN 
+	OPEN p_recordset FOR
+	SELECT rango_edadi,
+		   rango_edadf,
+		   id_tipopareja
 	FROM interes_gusto
-	WHERE id_interesg = pID;
-	RETURN (vReturn);
-END GET_rango_edadi_interes;
-
---Rango edad final Interes--
-CREATE OR REPLACE FUNCTION GET_rango_edadf_interes( 
-	pID IN NUMBER
-	) RETURN NUMBER is
-vReturn NUMBER;
+	WHERE ID_interesg = nvl(pID, ID_interesg)
+	ORDER BY nombre;
+END get_interes_gusto;
+--Prueba--
+SET SERVEROUTPUT ON SIZE 1000000
+DECLARE
+	vCursor	SYS_REFCURSOR;
+	vRango_edadi	interes_gusto.rango_edadi%TYPE;
+	vRango_edadf	interes_gusto.rango_edadf%TYPE;
+	vTipopareja	interes_gusto.id_tipopareja%TYPE;
 BEGIN
-	SELECT rango_edadf
-  	INTO vReturn 
-	FROM interes_gusto
-	WHERE id_interesg = pID;
-	RETURN (vReturn);
-END GET_rango_edadf_interes;
+	get_interes_gusto(null, p_recordset => vCursor);        
+	LOOP 
+		FETCH vCursor
+		INTO  vRango_edadi,
+			  vRango_edadf,
+			  vTipopareja;
+		EXIT WHEN vCursor%NOTFOUND;
+		DBMS_OUTPUT.PUT_LINE(vRango_edadi || ' | ' || vRango_edadF || ' | ' || vTipopareja);
+	END LOOP;
+	CLOSE vCursor;
+END;
 
---Rango edad inicial Interes--
-CREATE OR REPLACE FUNCTION GET_tipopareja_interes( 
-	pID IN NUMBER
-	) RETURN NUMBER is
-vReturn NUMBER;
+--UsuarioXIdioma--
+create or replace
+PROCEDURE get_UsuarioXIdioma (pID IN UsuarioXIdioma.ID_UsuarioXIdioma%TYPE,
+p_recordset OUT SYS_REFCURSOR) AS 
+BEGIN 
+	OPEN p_recordset FOR
+	SELECT id_usuario, 
+		   id_idioma
+	FROM UsuarioXIdioma
+	WHERE ID_UsuarioXIdioma = nvl(pID, ID_UsuarioXIdioma)
+	ORDER BY nombre;
+END get_UsuarioXIdioma;
+--Prueba--
+SET SERVEROUTPUT ON SIZE 1000000
+DECLARE
+	vCursor	SYS_REFCURSOR;
+	vUsuario	UsuarioXIdioma.id_usuario%TYPE;
+	vIdioma	UsuarioXIdioma.id_idioma%TYPE;
 BEGIN
-	SELECT id_tipopareja
-  	INTO vReturn 
-	FROM interes_gusto
-	WHERE id_interesg = pID;
-	RETURN (vReturn);
-END GET_rango_edad_i_interes;
+	get_UsuarioXIdioma(null, p_recordset => vCursor);        
+	LOOP 
+		FETCH vCursor
+		INTO  vUsuario,
+			  vIdioma;
+		EXIT WHEN vCursor%NOTFOUND;
+		DBMS_OUTPUT.PUT_LINE(vUsuario || ' | ' || vIdioma);
+	END LOOP;
+	CLOSE vCursor;
+END;
+
+--UsuarioXOcupacion--
+create or replace
+PROCEDURE get_UsuarioXOcupacion (pID IN UsuarioXOcupacion.ID_UsuarioXOcupacion%TYPE,
+p_recordset OUT SYS_REFCURSOR) AS 
+BEGIN 
+	OPEN p_recordset FOR
+	SELECT id_usuario, 
+		   id_Ocupacion
+	FROM UsuarioXOcupacion
+	WHERE ID_UsuarioXOcupacion = nvl(pID, ID_UsuarioXOcupacion)
+	ORDER BY nombre;
+END get_UsuarioXOcupacion;
+--Prueba--
+SET SERVEROUTPUT ON SIZE 1000000
+DECLARE
+	vCursor	SYS_REFCURSOR;
+	vUsuario	UsuarioXOcupacion.id_usuario%TYPE;
+	vOcupacion	UsuarioXOcupacion.id_Ocupacion%TYPE;
+BEGIN
+	get_UsuarioXOcupacion(null, p_recordset => vCursor);        
+	LOOP 
+		FETCH vCursor
+		INTO  vUsuario,
+			  vOcupacion;
+		EXIT WHEN vCursor%NOTFOUND;
+		DBMS_OUTPUT.PUT_LINE(vUsuario || ' | ' || vOcupacion);
+	END LOOP;
+	CLOSE vCursor;
+END;
+
+--Usuario--
+create or replace
+PROCEDURE get_Usuario (pID IN Usuario.ID_Usuario%TYPE,
+p_recordset OUT SYS_REFCURSOR) AS 
+BEGIN 
+	OPEN p_recordset FOR
+	SELECT nombre, 
+		primer_apellido, 
+		segundo_apellido, 
+		fecha_nac, 
+		email, 
+		foto, 
+		genero, 
+		clave, 
+		gustan_mascota, 
+		tiene_mascota, 
+		tendria_mascota, 
+		id_religion, 
+		id_estadoCi, 
+		id_educacion, 
+		id_cuidad, 
+		id_aspectoF, 
+		id_estilovida, 
+		id_rol, 
+		id_signo_zodiacal
+	FROM Usuario
+	WHERE ID_Usuario = nvl(pID, ID_Usuario)
+	ORDER BY nombre;
+END get_Usuario;
+--Prueba--
+SET SERVEROUTPUT ON SIZE 1000000
+DECLARE
+	vCursor	SYS_REFCURSOR;
+	vNombre Usuario.nombre%TYPE;
+   vPrimer_apellido Usuario.primer_apellido%TYPE; 
+   vSegundo_apellido Usuario.segundo_apellido%TYPE;
+   vFecha_nac Usuario.fecha_nac%TYPE; 
+   vEmail Usuario.email%TYPE;
+   vFoto Usuario.foto%TYPE;
+   vGenero Usuario.genero%TYPE;
+   vClave Usuario.clave%TYPE;
+   vGustan_mascota Usuario.gustan_mascota%TYPE;
+   vTiene_mascota Usuario.tiene_mascota%TYPE;
+   vTendria_mascota Usuario.tendria_mascota%TYPE;
+   vid_religion Usuario.id_religion%TYPE;
+   vid_estadoCi Usuario.id_estadoCi%TYPE;
+   vid_educacion Usuario.id_educacion%TYPE;
+   vid_cuidad Usuario.id_ciudad%TYPE;
+   vid_aspectoF Usuario.id_aspectoF%TYPE;
+   vid_estilovida Usuario.id_estilovida%TYPE;
+   vid_rol Usuario.id_rol%TYPE;
+   vid_signo_zodiacal Usuario.id_signo_zodiacal%TYPE;
+BEGIN
+	get_Usuario(null, p_recordset => vCursor);        
+	LOOP 
+		FETCH vCursor
+		INTO  vNombre, 
+		   vPrimer_apellido, 
+		   vSegundo_apellido, 
+		   vFecha_nac, 
+		   vEmail, 
+		   vFoto,
+		   vGenero,  
+		   vClave, 
+		   vGustan_mascota, 
+		   vTiene_mascota, 
+		   vTendria_mascota, 
+		   vid_religion, 
+		   vid_estadoCi, 
+		   vid_educacion, 
+		   vid_cuidad, 
+		   vid_aspectoF, 
+		   vid_estilovida, 
+		   vid_rol, 
+		   vid_signo_zodiacal;
+		EXIT WHEN vCursor%NOTFOUND;
+		DBMS_OUTPUT.PUT_LINE(vNombre || ' | ' ||  
+							   vPrimer_apellido || ' | ' ||  
+							   vSegundo_apellido || ' | ' ||  
+							   vFecha_nac || ' | ' ||  
+							   vEmail || ' | ' ||  
+							   vFoto || ' | ' || 
+							   vGenero || ' | ' ||   
+							   vClave || ' | ' ||  
+							   vGustan_mascota || ' | ' ||  
+							   vTiene_mascota || ' | ' ||  
+							   vTendria_mascota || ' | ' ||  
+							   vid_religion || ' | ' ||  
+							   vid_estadoCi || ' | ' ||  
+							   vid_educacion || ' | ' ||  
+							   vid_cuidad || ' | ' ||  
+							   vid_aspectoF || ' | ' ||  
+							   vid_estilovida || ' | ' ||  
+							   vid_rol || ' | ' ||  
+							   vid_signo_zodiacal
+							   );
+	END LOOP;
+	CLOSE vCursor;
+END;
