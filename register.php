@@ -255,7 +255,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				</div>
 				
 				<input type="button" name="previous" class="previous action-button" value="Anterior" />
-				<input type="submit" name="submit" class="submit action-button" value="Submit" />
+				<input type="submit" name="submit" class="submit action-button" value="Registro" />
 
 			</fieldset>
 		
