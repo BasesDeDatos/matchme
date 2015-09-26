@@ -282,7 +282,7 @@ BEGIN
 		id_religion, 
 		id_estadoCi, 
 		id_educacion, 
-		id_cuidad, 
+		id_ciudad, 
 		id_aspectoF, 
 		id_estilovida, 
 		id_rol, 
@@ -309,7 +309,7 @@ DECLARE
    vid_religion Usuario.id_religion%TYPE;
    vid_estadoCi Usuario.id_estadoCi%TYPE;
    vid_educacion Usuario.id_educacion%TYPE;
-   vid_cuidad Usuario.id_ciudad%TYPE;
+   vid_ciudad Usuario.id_ciudad%TYPE;
    vid_aspectoF Usuario.id_aspectoF%TYPE;
    vid_estilovida Usuario.id_estilovida%TYPE;
    vid_rol Usuario.id_rol%TYPE;
@@ -332,7 +332,7 @@ BEGIN
 		   vid_religion, 
 		   vid_estadoCi, 
 		   vid_educacion, 
-		   vid_cuidad, 
+		   vid_ciudad, 
 		   vid_aspectoF, 
 		   vid_estilovida, 
 		   vid_rol, 
@@ -352,7 +352,7 @@ BEGIN
 							   vid_religion || ' | ' ||  
 							   vid_estadoCi || ' | ' ||  
 							   vid_educacion || ' | ' ||  
-							   vid_cuidad || ' | ' ||  
+							   vid_ciudad || ' | ' ||  
 							   vid_aspectoF || ' | ' ||  
 							   vid_estilovida || ' | ' ||  
 							   vid_rol || ' | ' ||  
