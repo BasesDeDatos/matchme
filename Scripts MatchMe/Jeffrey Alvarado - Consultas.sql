@@ -180,7 +180,7 @@ BEGIN
 		   id_tipopareja
 	FROM interes_gusto
 	WHERE ID_interesg = nvl(pID, ID_interesg)
-	ORDER BY nombre;
+	ORDER BY id_tipopareja;
 END get_interes_gusto;
 --Prueba--
 SET SERVEROUTPUT ON SIZE 1000000
@@ -212,7 +212,7 @@ BEGIN
 		   id_idioma
 	FROM UsuarioXIdioma
 	WHERE ID_UsuarioXIdioma = nvl(pID, ID_UsuarioXIdioma)
-	ORDER BY nombre;
+	ORDER BY id_usuario;
 END get_UsuarioXIdioma;
 --Prueba--
 SET SERVEROUTPUT ON SIZE 1000000
@@ -242,7 +242,7 @@ BEGIN
 		   id_Ocupacion
 	FROM UsuarioXOcupacion
 	WHERE ID_UsuarioXOcupacion = nvl(pID, ID_UsuarioXOcupacion)
-	ORDER BY nombre;
+	ORDER BY id_usuario;
 END get_UsuarioXOcupacion;
 --Prueba--
 SET SERVEROUTPUT ON SIZE 1000000
