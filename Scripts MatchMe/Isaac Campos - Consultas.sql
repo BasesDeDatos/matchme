@@ -66,6 +66,35 @@ END;
 --   CLOSE l_cursor;
 -- END;
 
+-################ estado_Civil ################--
+CREATE OR REPLACE PROCEDURE GET_estado_Civil(pID IN NUMBER,
+	p_recordset OUT SYS_REFCURSOR) RETURN VARCHAR2 is
+vReturn VARCHAR2;
+BEGIN
+	OPEN p_recordset FOR
+		SELECT ID_Estado_Civil, nombre
+		FROM estado_Civil
+		WHERE ID_estadoCi = nvl(pID, ID_estadoCi);
+END GET_estado_Civil;
+
+--### test ###--
+SET SERVEROUTPUT ON SIZE 1000000
+DECLARE
+  l_cursor  SYS_REFCURSOR;
+  l_ID_Estado_Civil   estado_Civil.ID_Estado_Civil%TYPE;
+  l_nombre    estado_Civil.nombre%TYPE;
+BEGIN
+  GET_estado_Civil(null, p_recordset => l_cursor);        
+  LOOP 
+    FETCH l_cursor
+    INTO  l_ID, l_nombre;
+    EXIT WHEN l_cursor%NOTFOUND;
+    DBMS_OUTPUT.PUT_LINE(l_ID_Estado_Civil || ' | ' || l_nombre);
+  END LOOP;
+  CLOSE l_cursor;
+END;
+
+
 --################ estado ################--
 CREATE OR REPLACE PROCEDURE GET_estado(pID IN NUMBER,
 	p_recordset OUT SYS_REFCURSOR) RETURN VARCHAR2 is
@@ -359,7 +388,7 @@ END;
 --################ ActividadXUsuario ################--
 CREATE OR REPLACE PROCEDURE GET_ActividadXUsuario( 
 	pID IN NUMBER,
-	p_recordset OUT SYS_REFCURSOR) AS
+	p_recordset OUT SYS_REFCURSOR ) AS
 BEGIN
 	OPEN p_recordset FOR
 		SELECT ID_actividadA

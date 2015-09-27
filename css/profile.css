@@ -1,3 +1,7 @@
+input {
+    width: 100%;
+}
+
 .contenedor {
     border: 1px solid #000000;
     background: #E5F4FB;
@@ -55,10 +59,11 @@ div label {
 #tap input {
     height: 0px;
     visibility: hidden;
+    display: none;
 }
 
 #tap > label {
-    float: left;
+    float: right;
     cursor: pointer;
     font-size: 15px;
     padding: 10px;
@@ -111,13 +116,13 @@ div label {
     transition: all ease-out 0.2s 0s;
 }
 
-#tap input.tab-selector-1:checked ~ .content .content-1,
-#tap input.tab-selector-2:checked ~ .content .content-2,
-#tap input.tab-selector-3:checked ~ .content .content-3,
-#tap input.tab-selector-4:checked ~ .content .content-4,
-#tap input.tab-selector-5:checked ~ .content .content-5,
-#tap input.tab-selector-6:checked ~ .content .content-6,
-#tap input.tab-selector-7:checked ~ .content .content-7 {
+#tap .tab-selector-1:checked ~ .content .content-1,
+#tap .tab-selector-2:checked ~ .content .content-2,
+#tap .tab-selector-3:checked ~ .content .content-3,
+#tap .tab-selector-4:checked ~ .content .content-4,
+#tap .tab-selector-5:checked ~ .content .content-5,
+#tap .tab-selector-6:checked ~ .content .content-6,
+#tap .tab-selector-7:checked ~ .content .content-7 {
     z-index: 100;
     opacity: 1;
     -webkit-transition: all ease-out 0.5s 0.5s;
