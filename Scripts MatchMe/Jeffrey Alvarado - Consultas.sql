@@ -202,64 +202,62 @@ BEGIN
 	CLOSE vCursor;
 END;
 
---UsuarioXIdioma--
+--UsuarioXIdioma
 create or replace
-PROCEDURE get_UsuarioXIdioma (pID IN UsuarioXIdioma.ID_UsuarioXIdioma%TYPE,
-p_recordset OUT SYS_REFCURSOR) AS 
-BEGIN 
-	OPEN p_recordset FOR
-	SELECT id_usuario, 
-		   id_idioma
-	FROM UsuarioXIdioma
-	WHERE ID_UsuarioXIdioma = nvl(pID, ID_UsuarioXIdioma)
-	ORDER BY id_usuario;
-END get_UsuarioXIdioma;
+PROCEDURE GET_UsuarioXIdioma( 
+ pID IN NUMBER,
+ p_recordset OUT SYS_REFCURSOR) AS
+BEGIN
+ OPEN p_recordset FOR
+  SELECT  idioma.nombre
+ FROM  UsuarioXIdioma inner  join idioma
+ on UsuarioXIdioma.ID_idioma = idioma.id_idioma
+  and UsuarioXIdioma.ID_Usuario = pid;
+END GET_UsuarioXIdioma;
 --Prueba--
 SET SERVEROUTPUT ON SIZE 1000000
 DECLARE
-	vCursor	SYS_REFCURSOR;
-	vUsuario	UsuarioXIdioma.id_usuario%TYPE;
-	vIdioma	UsuarioXIdioma.id_idioma%TYPE;
+  l_cursor  SYS_REFCURSOR;
+  l_NombreIdioma  idioma.Nombre%TYPE;
 BEGIN
-	get_UsuarioXIdioma(null, p_recordset => vCursor);        
-	LOOP 
-		FETCH vCursor
-		INTO  vUsuario,
-			  vIdioma;
-		EXIT WHEN vCursor%NOTFOUND;
-		DBMS_OUTPUT.PUT_LINE(vUsuario || ' | ' || vIdioma);
-	END LOOP;
-	CLOSE vCursor;
+  GET_UsuarioXIdioma(0, p_recordset => l_cursor);        
+  
+  LOOP 
+    FETCH l_cursor
+    INTO  l_NombreIdioma;
+    EXIT WHEN l_cursor%NOTFOUND;
+    DBMS_OUTPUT.PUT_LINE(l_NombreIdioma);
+  END LOOP;
+  CLOSE l_cursor;
 END;
 
---UsuarioXOcupacion--
+--UsuarioXOcupacion
 create or replace
-PROCEDURE get_UsuarioXOcupacion (pID IN UsuarioXOcupacion.ID_UsuarioXOcupacion%TYPE,
-p_recordset OUT SYS_REFCURSOR) AS 
-BEGIN 
-	OPEN p_recordset FOR
-	SELECT id_usuario, 
-		   id_Ocupacion
-	FROM UsuarioXOcupacion
-	WHERE ID_UsuarioXOcupacion = nvl(pID, ID_UsuarioXOcupacion)
-	ORDER BY id_usuario;
-END get_UsuarioXOcupacion;
+PROCEDURE GET_UsuarioXOcupacion( 
+ pID IN NUMBER,
+ p_recordset OUT SYS_REFCURSOR) AS
+BEGIN
+ OPEN p_recordset FOR
+  SELECT  Ocupacion.nombre
+ FROM  UsuarioXOcupacion inner  join Ocupacion
+ on UsuarioXOcupacion.ID_Ocupacion = Ocupacion.id_Ocupacion
+  and UsuarioXOcupacion.ID_Usuario = pid;
+END GET_UsuarioXOcupacion;
 --Prueba--
 SET SERVEROUTPUT ON SIZE 1000000
 DECLARE
-	vCursor	SYS_REFCURSOR;
-	vUsuario	UsuarioXOcupacion.id_usuario%TYPE;
-	vOcupacion	UsuarioXOcupacion.id_Ocupacion%TYPE;
+  l_cursor  SYS_REFCURSOR;
+  l_NombreOcupacion  Ocupacion.Nombre%TYPE;
 BEGIN
-	get_UsuarioXOcupacion(null, p_recordset => vCursor);        
-	LOOP 
-		FETCH vCursor
-		INTO  vUsuario,
-			  vOcupacion;
-		EXIT WHEN vCursor%NOTFOUND;
-		DBMS_OUTPUT.PUT_LINE(vUsuario || ' | ' || vOcupacion);
-	END LOOP;
-	CLOSE vCursor;
+  GET_UsuarioXOcupacion(0, p_recordset => l_cursor);        
+  
+  LOOP 
+    FETCH l_cursor
+    INTO  l_NombreOcupacion;
+    EXIT WHEN l_cursor%NOTFOUND;
+    DBMS_OUTPUT.PUT_LINE(l_NombreOcupacion);
+  END LOOP;
+  CLOSE l_cursor;
 END;
 
 --Usuario--
@@ -282,7 +280,7 @@ BEGIN
 		id_religion, 
 		id_estadoCi, 
 		id_educacion, 
-		id_ciudad, 
+		id_cuidad, 
 		id_aspectoF, 
 		id_estilovida, 
 		id_rol, 
@@ -309,7 +307,7 @@ DECLARE
    vid_religion Usuario.id_religion%TYPE;
    vid_estadoCi Usuario.id_estadoCi%TYPE;
    vid_educacion Usuario.id_educacion%TYPE;
-   vid_ciudad Usuario.id_ciudad%TYPE;
+   vid_cuidad Usuario.id_ciudad%TYPE;
    vid_aspectoF Usuario.id_aspectoF%TYPE;
    vid_estilovida Usuario.id_estilovida%TYPE;
    vid_rol Usuario.id_rol%TYPE;
@@ -332,7 +330,7 @@ BEGIN
 		   vid_religion, 
 		   vid_estadoCi, 
 		   vid_educacion, 
-		   vid_ciudad, 
+		   vid_cuidad, 
 		   vid_aspectoF, 
 		   vid_estilovida, 
 		   vid_rol, 
@@ -352,7 +350,7 @@ BEGIN
 							   vid_religion || ' | ' ||  
 							   vid_estadoCi || ' | ' ||  
 							   vid_educacion || ' | ' ||  
-							   vid_ciudad || ' | ' ||  
+							   vid_cuidad || ' | ' ||  
 							   vid_aspectoF || ' | ' ||  
 							   vid_estilovida || ' | ' ||  
 							   vid_rol || ' | ' ||  
