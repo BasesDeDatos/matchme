@@ -360,3 +360,50 @@ BEGIN
   END LOOP;
   CLOSE l_cursor;
 END;
+
+--Get_Match--
+create or replace
+PROCEDURE get_Match (pID Usuario.ID_usuario%TYPE, p_recordset OUT SYS_REFCURSOR) AS 
+BEGIN 
+ OPEN p_recordset FOR
+ SELECT Usuario.ID_usuario, Nombre 
+ FROM Usuario
+ where get_edad( fecha_nac ) 
+ 	BETWEEN 
+		( SELECT Interes_Gusto.Rango_EdadI
+			FROM Usuario inner join Interes_Gusto
+			on Usuario.ID_interes_gusto = Interes_Gusto.ID_InteresG
+		 	and Usuario.ID_usuario = pID
+		) and	
+		( SELECT Interes_Gusto.Rango_EdadF
+			FROM Usuario inner join Interes_Gusto
+			on Usuario.ID_interes_gusto = Interes_Gusto.ID_InteresG
+		 	and Usuario.ID_usuario = pID
+		)
+	and genero = (
+		SELECT Interes_Gusto.tipo_pareja
+			FROM Usuario inner join Interes_Gusto
+			on Usuario.ID_interes_gusto = Interes_Gusto.ID_InteresG
+		 	and Usuario.ID_usuario = pID
+		)
+	and Usuario.ID_usuario != pID
+  	and ROWNUM <= 10
+END get_Match;
+
+
+--Prueba--
+SET SERVEROUTPUT ON SIZE 1000000
+DECLARE
+  l_cursor  SYS_REFCURSOR;
+  l_ID_usuario  Usuario.ID_usuario%TYPE;
+  l_Nombre Usuario.Nombre%TYPE;
+BEGIN
+  get_Match(1, p_recordset => l_cursor);        
+  LOOP 
+    FETCH l_cursor
+    INTO  l_ID_usuario, l_Nombre;
+    EXIT WHEN l_cursor%NOTFOUND;
+    DBMS_OUTPUT.PUT_LINE(l_ID_usuario || ' | ' || l_Nombre);
+  END LOOP;
+  CLOSE l_cursor;
+END;
