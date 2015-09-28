@@ -302,41 +302,47 @@ END;
 
 
 --personas por pais
-create or replace PROCEDURE get_UsuarioXPais (pID IN Pais.ID_Pais%TYPE,
+create or replace
+PROCEDURE get_UsuarioXPais (pID IN Pais.ID_Pais%TYPE,
 p_recordset OUT SYS_REFCURSOR) AS 
 BEGIN 
  OPEN p_recordset FOR
- SELECT Pais.nombre, COUNT(*)
- FROM  Usuario inner  join Pais
- on Usuario.id_Pais = Pais.ID_Pais
- and Pais.ID_Pais = nvl(pid, Pais.ID_Pais)
+ SELECT Pais.nombre,  COUNT(*)
+ FROM  Usuario inner  join ciudad
+ on Usuario.id_ciudad = ciudad.ID_ciudad
+   inner join Estado
+   on Ciudad.ID_Estado = Estado.ID_Estado
+      inner join pais
+        on Estado.Id_pais = pais.ID_pais
+        and pais.ID_Pais = nvl(pID, pais.ID_Pais)
  GROUP by Pais.nombre;
 END get_UsuarioXPais;
+
 
 --Prueba
 SET SERVEROUTPUT ON SIZE 1000000
 DECLARE
   l_cursor  SYS_REFCURSOR;
-  l_NombrePais  Pais.Nombre%TYPE;
-  l_Cantidad Number;
+  l_NombrePais Pais.nombre%TYPE;
+  Cantidad  number;
+
 BEGIN
   get_UsuarioXPais(null, p_recordset => l_cursor);        
   LOOP 
     FETCH l_cursor
-    INTO  l_NombrePais, l_Cantidad;
+    INTO  l_NombrePais, Cantidad;
     EXIT WHEN l_cursor%NOTFOUND;
-    DBMS_OUTPUT.PUT_LINE(l_NombrePais || ' | ' || l_Cantidad);
+    DBMS_OUTPUT.PUT_LINE(l_NombrePais || ' | ' || Cantidad );
   END LOOP;
   CLOSE l_cursor;
 END;
-
 --Top_EdadesBuscadas--
 create or replace
 PROCEDURE get_Top_EdadesBuscadas (p_recordset OUT SYS_REFCURSOR) AS 
 BEGIN 
  OPEN p_recordset FOR
  SELECT avg(Interes_Gusto.Rango_EdadI), avg(Interes_Gusto.Rango_EdadF)
- FROM Interes_Gusto
+ FROM Interes_Gusto;
 END get_Top_EdadesBuscadas;
 --Prueba--todo
 SET SERVEROUTPUT ON SIZE 1000000
