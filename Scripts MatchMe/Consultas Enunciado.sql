@@ -111,7 +111,7 @@ END;
 
 --EstadoMatch Usuarios--
 
-ID_Estado_Match Number(2) CONSTRAINT Usuario_Estado_Match_nn NOT NULL
+ID_Estado_Match Number(2) CONSTRAINT Usuario_Estado_Match_nn NOT
 CONSTRAINT fk_ID_Estado_Match FOREIGN KEY (ID_Estado_Match) REFERENCES Estado_Match(ID_Estado_Match)
 
 create or replace
