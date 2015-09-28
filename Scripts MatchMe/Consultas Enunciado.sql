@@ -237,7 +237,7 @@ END;
 
 
 
--- Personas Hobby-- // DEVUELVE NA LISTA DE USUARIOS DE UN HOBBY
+-- Personas Hobby-- // DEVUELVE UNA LISTA DE USUARIOS DE UN HOBBY
 create or replace
 PROCEDURE get_UsuarioXHobby (pID IN Hobby.ID_Hobby%TYPE,
 p_recordset OUT SYS_REFCURSOR) AS 
@@ -249,7 +249,7 @@ BEGIN
  and HobbyXUsuario.ID_Hobby = pid;
 END get_UsuarioXHobby;
 
---Prueba--todo
+--Prueba--
 SET SERVEROUTPUT ON SIZE 1000000
 DECLARE
   l_cursor  SYS_REFCURSOR;
@@ -258,10 +258,10 @@ DECLARE
   l_NombreUsuario usuario.nombre%TYPE;
 
 BEGIN
-  get_UsuarioXHobby(null, p_recordset => l_cursor);        
+  get_UsuarioXHobby("//ID hobby", p_recordset => l_cursor);        
   LOOP 
     FETCH l_cursor
-    INTO  l_NombreEstado_Match, l_Cantidad;
+    INTO  l_NombreHobby, l_ID_Usuario, l_NombreUsuario;
     EXIT WHEN l_cursor%NOTFOUND;
     DBMS_OUTPUT.PUT_LINE(l_NombreHobby || ' | ' || l_ID_Usuario || ' | ' || l_NombreUsuario);
   END LOOP;
