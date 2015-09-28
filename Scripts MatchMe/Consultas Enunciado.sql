@@ -143,7 +143,7 @@ create or replace
 PROCEDURE get_TopusuarIosxwink (p_recordset OUT SYS_REFCURSOR) AS 
 BEGIN 
  OPEN p_recordset FOR
-<<<<<<< HEAD
+
  SELECT Ciudad.nombre, COUNT(*)
  FROM  Usuario inner  join Ciudad
  on Usuario.id_ciudad = Ciudad.ID_Ciudad
@@ -151,7 +151,7 @@ BEGIN
  GROUP by Ciudad.nombre;
 END get_UsuarioXCiudad;
 
-=======
+
  SELECT Usuario.ID_Usuario, Usuario.Nombre, COUNT(*) AS WINKS
  FROM   Usuario inner join UsuariosXWink
  on UsuariosXWink.ID_Recibido = Usuario.ID_Usuario
@@ -159,7 +159,7 @@ END get_UsuarioXCiudad;
  GROUP by Usuario.ID_Usuario, Usuario.Nombre
  ORDER by WINKS desc;
 END get_TopusuarIosxwink;
->>>>>>> af5e60d1ccb4f4a2ef1615852860e896cd7a97fe
+
 --Prueba--todo
 SET SERVEROUTPUT ON SIZE 1000000
 DECLARE
@@ -206,7 +206,7 @@ BEGIN
   END LOOP;
   CLOSE l_cursor;
 END;
-<<<<<<< HEAD
+
 
 
 --TOP 10 WINK usuario--
@@ -249,11 +249,14 @@ PROCEDURE get_UsuarioXHobby (pID IN Hobby.ID_Hobby%TYPE,
 p_recordset OUT SYS_REFCURSOR) AS 
 BEGIN 
  OPEN p_recordset FOR
- SELECT  Hobby.nombre, usuario.ID_Usuario, usuario.nombre, 
+ SELECT  Hobby.nombre, usuario.ID_Usuario, usuario.nombre
  FROM  HobbyXUsuario inner join Hobby
  on HobbyXUsuario.ID_Hobby = Hobby.ID_Hobby
- and HobbyXUsuario.ID_Hobby = pid;
+  inner join usuario
+   on  HobbyXUsuario.ID_Usuario = Usuario.ID_Usuario
+   and HobbyXUsuario.ID_Hobby = pid;
 END get_UsuarioXHobby;
+
 
 --Prueba--
 SET SERVEROUTPUT ON SIZE 1000000
@@ -264,7 +267,7 @@ DECLARE
   l_NombreUsuario usuario.nombre%TYPE;
 
 BEGIN
-  get_UsuarioXHobby("//ID hobby", p_recordset => l_cursor);        
+  get_UsuarioXHobby(1, p_recordset => l_cursor);        
   LOOP 
     FETCH l_cursor
     INTO  l_NombreHobby, l_ID_Usuario, l_NombreUsuario;
@@ -273,5 +276,4 @@ BEGIN
   END LOOP;
   CLOSE l_cursor;
 END;
-=======
->>>>>>> af5e60d1ccb4f4a2ef1615852860e896cd7a97fe
+
