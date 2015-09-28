@@ -20,59 +20,24 @@ DECLARE
   l_fecha_inicio   Signo_Zodiacal.fecha_inicio%TYPE;
   l_fecha_final  Signo_Zodiacal.fecha_final%TYPE;
 BEGIN
-  GET_Signo_Zodiacal(null, p_recordset => l_cursor);        
+  get_signo_zodiacal(null,
+              p_recordset => l_cursor);        
   LOOP 
     FETCH l_cursor
-    INTO  l_ID, l_nombre, l_fecha_inicio, l_fecha_final;
+    INTO   l_ID, l_nombre, l_fecha_inicio, l_fecha_final;
     EXIT WHEN l_cursor%NOTFOUND;
     DBMS_OUTPUT.PUT_LINE(l_ID || ' | ' || l_nombre || ' | '  || l_fecha_inicio || ' | ' || l_fecha_final);
   END LOOP;
   CLOSE l_cursor;
 END;
 
---################ Bitacora_Conocido ################-- TODO
--- CREATE OR REPLACE PROCEDURE GET_Bitacora_Conocido( 
--- 	pID IN NUMBER,
--- 	p_recordset OUT SYS_REFCURSOR, 	
--- 	pFecha IN DATE, 
--- 	pID_Propio IN NUMBER, 
--- 	pID_Conocido IN NUMBER) AS
--- BEGIN
--- 	OPEN p_recordset FOR
--- 		SELECT Fecha, nombre, fecha_inicio, fecha_final
--- 	  	INTO vReturn 
--- 		FROM Bitacora_Conocido
--- 		set (Fecha := pFecha, ID_Propio = pID_Propio, ID_Conocido = pID_Conocido)
---     	WHERE ID_Propio = pID;
--- END GET_Bitacora_Conocido;
-
--- --### test ###--
--- SET SERVEROUTPUT ON SIZE 1000000
--- DECLARE
---   l_cursor  SYS_REFCURSOR;
---   l_ID    Signo_Zodiacal.ID_Signo_Zodiacal%TYPE;
---   l_nombre    Signo_Zodiacal.nombre%TYPE;
---   l_fecha_inicio   Signo_Zodiacal.fecha_inicio%TYPE;
---   l_fecha_final  Signo_Zodiacal.fecha_final%TYPE;
--- BEGIN
---   GET_Bitacora_Conocido(null,
---               p_recordset => l_cursor);        
---   LOOP 
---     FETCH l_cursor
---     INTO  l_ID, l_nombre;
---     EXIT WHEN l_cursor%NOTFOUND;
---     DBMS_OUTPUT.PUT_LINE(l_ID || ' | ' || l_nombre || ' | '  || l_fecha_inicio || ' | ' || l_fecha_final);
---   END LOOP;
---   CLOSE l_cursor;
--- END;
-
--################ estado_Civil ################--
+--################ estado_Civil ################--
 CREATE OR REPLACE PROCEDURE GET_estado_Civil(pID IN NUMBER,
 	p_recordset OUT SYS_REFCURSOR) RETURN VARCHAR2 is
 vReturn VARCHAR2;
 BEGIN
 	OPEN p_recordset FOR
-		SELECT ID_Estado_Civil, nombre
+		SELECT ID_Estado_Ci, nombre
 		FROM estado_Civil
 		WHERE ID_estadoCi = nvl(pID, ID_estadoCi);
 END GET_estado_Civil;
@@ -81,13 +46,13 @@ END GET_estado_Civil;
 SET SERVEROUTPUT ON SIZE 1000000
 DECLARE
   l_cursor  SYS_REFCURSOR;
-  l_ID_Estado_Civil   estado_Civil.ID_Estado_Civil%TYPE;
+  l_ID_Estado_Civil   estado_Civil.ID_Estado_Ci%TYPE;
   l_nombre    estado_Civil.nombre%TYPE;
 BEGIN
   GET_estado_Civil(null, p_recordset => l_cursor);        
   LOOP 
     FETCH l_cursor
-    INTO  l_ID, l_nombre;
+    INTO  l_ID_Estado_Civil, l_nombre;
     EXIT WHEN l_cursor%NOTFOUND;
     DBMS_OUTPUT.PUT_LINE(l_ID_Estado_Civil || ' | ' || l_nombre);
   END LOOP;
@@ -109,15 +74,15 @@ END GET_estado;
 --### test ###--
 SET SERVEROUTPUT ON SIZE 1000000
 DECLARE
-  l_cursor  SYS_REFCURSOR;
-  l_ID_Estado   estado.ID_Estado%TYPE;
-  l_nombre    estado.nombre%TYPE;
-  l_ID_pais   estado.ID_pais%TYPE;
+  l_cursor SYS_REFCURSOR;
+  l_ID_Estado Estado.ID_Estado%TYPE;
+  l_nombre Estado.nombre%TYPE;
+  l_ID_pais Estado.ID_pais%TYPE;
 BEGIN
-  GET_estado(null, p_recordset => l_cursor);        
+  GET_Estado(null, p_recordset => l_cursor);        
   LOOP 
     FETCH l_cursor
-    INTO  l_ID, l_nombre;
+    INTO  l_id_estado, l_nombre, l_id_pais;
     EXIT WHEN l_cursor%NOTFOUND;
     DBMS_OUTPUT.PUT_LINE(l_ID_Estado || ' | ' || l_nombre || ' | '  || l_ID_pais);
   END LOOP;
@@ -143,7 +108,7 @@ DECLARE
   l_Fecha   UsuariosXWink.Fecha%TYPE;
   l_ID_Enviado   UsuariosXWink.ID_Enviado%TYPE;
 BEGIN
-  GET_UsuariosXWink(null, p_recordset => l_cursor);        
+  GET_Winks(null, p_recordset => l_cursor);        
   LOOP 
     FETCH l_cursor
     INTO  l_Fecha, l_ID_Enviado;
@@ -202,26 +167,24 @@ END GET_Estilo_Vida;
 SET SERVEROUTPUT ON SIZE 1000000
 DECLARE
   l_cursor  SYS_REFCURSOR;
-  l_Fuma  VARCHAR2; 
-  l_FrecEjercicios  VARCHAR2;
-  l_CantidadHijos  NUMBER;
-  l_QuiereHIjos  VARCHAR2;
-  l_SalarioPromedio  NUMBER;
-  l_Slogan  VARCHAR2;
-  l_ID_TipoBebedor  Number;
+  l_Fuma  Estilo_vida.Fuma%TYPE; 
+  l_FrecEjercicios Estilo_Vida.FrecEjercicios%TYPE;
+  l_CantidadHijos Estilo_vida.CantidadHijos%TYPE;
+  l_QuiereHIjos  Estilo_vida.QuiereHijos%TYPE;
+  l_SalarioPromedio  Estilo_vida.SalarioPromedio%TYPE;
+  l_Slogan  Estilo_vida.Slogan%TYPE;
+  l_ID_TipoBebedor  Estilo_vida.ID_TipoBebedor%TYPE;
     
 BEGIN
   GET_Estilo_Vida(null, p_recordset => l_cursor);        
   LOOP 
     FETCH l_cursor
-    INTO  l_ID, l_nombre;
+    INTO  l_Fuma, l_FrecEjercicios, l_CantidadHijos, 
+    l_QuiereHIjos, l_SalarioPromedio,l_Slogan, l_ID_TipoBebedor ;
     EXIT WHEN l_cursor%NOTFOUND;
-    DBMS_OUTPUT.PUT_LINE( l_Fuma 
-      || ' | ' || l_FrecEjercicios 
-      || ' | ' || l_CantidadHijos 
-      || ' | ' || l_QuiereHIjos 
-      || ' | ' || l_SalarioPromedio 
-      || ' | ' || l_Slogan
+    DBMS_OUTPUT.PUT_LINE( l_Fuma || ' | ' || l_FrecEjercicios 
+      || ' | ' || l_CantidadHijos || ' | ' || l_QuiereHIjos 
+      || ' | ' || l_SalarioPromedio || ' | ' || l_Slogan
       || ' | ' || l_ID_TipoBebedor);
   END LOOP;
   CLOSE l_cursor;
@@ -249,7 +212,7 @@ BEGIN
   GET_Tipo_Pareja(null, p_recordset => l_cursor);        
   LOOP 
     FETCH l_cursor
-    INTO  l_ID, l_nombre;
+    INTO  l_ID, l_Genero;
     EXIT WHEN l_cursor%NOTFOUND;
     DBMS_OUTPUT.PUT_LINE(l_ID || ' | ' || l_Genero);
   END LOOP;
@@ -272,12 +235,12 @@ END GET_Aspecto_Fisico;
 SET SERVEROUTPUT ON SIZE 1000000
 DECLARE
   l_cursor  SYS_REFCURSOR;
-  l_Altura Number;
-  l_Peso Number;
-  l_ID_ColorOjos Number;
-  l_ID_ColorPiel Number;
-  l_ID_ColorPelo Number;
-  l_ID_Contextura Number;
+  l_Altura aspecto_fisico.Altura%TYPE;
+  l_Peso aspecto_fisico.Peso%TYPE;
+  l_ID_ColorOjos aspecto_fisico.ID_ColorOjos%TYPE;
+  l_ID_ColorPiel aspecto_fisico.ID_ColorPiel%TYPE;
+  l_ID_ColorPelo aspecto_fisico.ID_ColorPelo%TYPE;
+  l_ID_Contextura aspecto_fisico.ID_Contextura%TYPE;
   
 BEGIN
   GET_Aspecto_Fisico(null, p_recordset => l_cursor);        
@@ -285,12 +248,9 @@ BEGIN
     FETCH l_cursor
     INTO  l_Altura, l_Peso, l_ID_ColorOjos, l_ID_ColorPiel, l_ID_ColorPelo, l_ID_Contextura;
     EXIT WHEN l_cursor%NOTFOUND;
-    DBMS_OUTPUT.PUT_LINE(l_Altura 
-      || ' | ' || l_Peso 
-      || ' | ' || l_ID_ColorOjos 
-      || ' | ' || l_ID_ColorPiel,
-      || ' | ' || l_ID_ColorPelo 
-      || ' | ' || l_ID_Contextura );
+    DBMS_OUTPUT.PUT_LINE(l_Altura || ' | ' || l_Peso
+      || ' | ' || l_ID_ColorOjos || ' | ' || l_ID_ColorPiel
+      || ' | ' || l_ID_ColorPelo || ' | ' || l_ID_Contextura );
   END LOOP;
   CLOSE l_cursor;
 END;
@@ -373,14 +333,15 @@ END GET_HobbyXUsuario;
 SET SERVEROUTPUT ON SIZE 1000000
 DECLARE
   l_cursor  SYS_REFCURSOR;
-  l_ID_Hobby   HobbyXUsuario.ID_Hobby%TYPE;
+  l_NombreHobby  Hobby.Nombre%TYPE;
 BEGIN
-  get_empleados(null, p_recordset => l_cursor);        
+  GET_HobbyXUsuario(0, p_recordset => l_cursor);        
+  
   LOOP 
     FETCH l_cursor
-    INTO  l_ID_Usuario, l_ID_Hobby;
+    INTO  l_NombreHobby;
     EXIT WHEN l_cursor%NOTFOUND;
-    DBMS_OUTPUT.PUT_LINE(l_ID_Usuario || ' | ' || l_ID_Hobby);
+    DBMS_OUTPUT.PUT_LINE(l_NombreHobby);
   END LOOP;
   CLOSE l_cursor;
 END;
@@ -400,14 +361,15 @@ END GET_ActividadXUsuario;
 SET SERVEROUTPUT ON SIZE 1000000
 DECLARE
   l_cursor  SYS_REFCURSOR;
-  ID_actividadA    ActividadXUsuario.ID_actividadA%TYPE;
+  l_NombreActividad  ActividadAL.Nombre%TYPE;
 BEGIN
-  GET_ActividadXUsuario(null, p_recordset => l_cursor);        
+  GET_ActividadXUsuario(0, p_recordset => l_cursor);        
+  
   LOOP 
     FETCH l_cursor
-    INTO  l_ID, l_nombre;
+    INTO  l_NombreActividad;
     EXIT WHEN l_cursor%NOTFOUND;
-    DBMS_OUTPUT.PUT_LINE(l_cursor || ' | ' || ID_actividadA);
+    DBMS_OUTPUT.PUT_LINE(l_NombreActividad);
   END LOOP;
   CLOSE l_cursor;
 END;
