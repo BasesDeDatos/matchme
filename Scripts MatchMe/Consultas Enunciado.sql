@@ -210,12 +210,13 @@ PROCEDURE get_TopusuarIosxwink (p_recordset OUT SYS_REFCURSOR) AS
 BEGIN 
  OPEN p_recordset FOR
  SELECT Usuario.ID_Usuario, Usuario.Nombre, COUNT(*) AS WINKS
- FROM  UsuariosXWink inner join Usuario
+ FROM   Usuario inner join UsuariosXWink
  on UsuariosXWink.ID_Recibido = Usuario.ID_Usuario
- where ROWNUM <= 10
- ORDER by WINKS
- GROUP by UsuariosXWink.ID_Recibido;
+  where  ROWNUM <= 10
+ GROUP by Usuario.ID_Usuario, Usuario.Nombre
+ ORDER by WINKS desc;
 END get_TopusuarIosxwink;
+
 
 --Prueba--todo
 SET SERVEROUTPUT ON SIZE 1000000
@@ -223,9 +224,9 @@ DECLARE
   l_cursor  SYS_REFCURSOR;
   l_ID_Usuario Usuario.ID_Usuario%TYPE;
   l_NombreUsuario  Usuario.Nombre%TYPE;
-  l_Cantidad Number;
-BEGIN
-  get_TopusuarIosxwink(null, p_recordset => l_cursor);        
+  l_Cantidad Number; 
+BEGIN  
+  get_TopusuarIosxwink(p_recordset => l_cursor);        
   LOOP 
     FETCH l_cursor
     INTO l_ID_Usuario, l_NombreUsuario, l_Cantidad;
@@ -234,3 +235,5 @@ BEGIN
   END LOOP;
   CLOSE l_cursor;
 END;
+
+--
