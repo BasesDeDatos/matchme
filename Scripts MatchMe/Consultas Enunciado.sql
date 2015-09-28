@@ -256,8 +256,6 @@ BEGIN
    on  HobbyXUsuario.ID_Usuario = Usuario.ID_Usuario
    and HobbyXUsuario.ID_Hobby = pid;
 END get_UsuarioXHobby;
-
-
 --Prueba--
 SET SERVEROUTPUT ON SIZE 1000000
 DECLARE
@@ -277,3 +275,35 @@ BEGIN
   CLOSE l_cursor;
 END;
 
+
+-- Personas ActividadAL-- // DEVUELVE UNA LISTA DE USUARIOS DE UN ActividadAL
+create or replace
+PROCEDURE get_UsuarioXActividadAL (pID IN ActividadAL.ID_ActividadAL%TYPE,
+p_recordset OUT SYS_REFCURSOR) AS 
+BEGIN 
+ OPEN p_recordset FOR
+ SELECT  ActividadAL.nombre, usuario.ID_Usuario, usuario.nombre
+ FROM  ActividadXUsuario inner join ActividadAL
+ on ActividadXUsuario.ID_ActividadAL = ActividadAL.ID_ActividadAL
+  inner join usuario
+   on  ActividadXUsuario.ID_Usuario = Usuario.ID_Usuario
+   and ActividadXUsuario.ID_ActividadAL = pid;
+END get_UsuarioXActividadAL;
+--Prueba--
+SET SERVEROUTPUT ON SIZE 1000000
+DECLARE
+  l_cursor  SYS_REFCURSOR;
+  l_NombreActividadAL ActividadAL.nombre%TYPE;
+  l_ID_Usuario usuario.ID_Usuario%TYPE;
+  l_NombreUsuario usuario.nombre%TYPE;
+
+BEGIN
+  get_UsuarioXActividadAL(1, p_recordset => l_cursor);        
+  LOOP 
+    FETCH l_cursor
+    INTO  l_NombreActividadAL, l_ID_Usuario, l_NombreUsuario;
+    EXIT WHEN l_cursor%NOTFOUND;
+    DBMS_OUTPUT.PUT_LINE(l_NombreActividadAL || ' | ' || l_ID_Usuario || ' | ' || l_NombreUsuario);
+  END LOOP;
+  CLOSE l_cursor;
+END;
