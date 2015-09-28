@@ -154,6 +154,8 @@ BEGIN
  and Ciudad.ID_Ciudad = nvl(pid, Ciudad.ID_Ciudad)
  GROUP by Ciudad.nombre;
 END get_UsuarioXCiudad;
+
+
 --Prueba--todo
 SET SERVEROUTPUT ON SIZE 1000000
 DECLARE
@@ -167,6 +169,68 @@ BEGIN
     INTO  l_NombreCiudad, l_Cantidad;
     EXIT WHEN l_cursor%NOTFOUND;
     DBMS_OUTPUT.PUT_LINE(l_NombreCiudad || ' | ' || l_Cantidad);
+  END LOOP;
+  CLOSE l_cursor;
+END;
+
+--Estado Match usuario--
+create or replace
+PROCEDURE get_UsuarioXEstadoMatch (pID IN Estado_Match.ID_Estado_Match%TYPE,
+p_recordset OUT SYS_REFCURSOR) AS 
+BEGIN 
+ OPEN p_recordset FOR
+ SELECT Estado_Match.nombre, COUNT(*)
+ FROM  UsuariosXMatch inner join Estado_Match
+ on UsuariosXMatch.ID_Estado_match = Estado_Match.ID_Estado_Match
+ and UsuariosXMatch.ID_Estado_Match = nvl(pid, Estado_Match.ID_Estado_Match)
+ GROUP by Estado_Match.nombre;
+END get_UsuarioXEstadoMatch;
+
+--Prueba--todo
+SET SERVEROUTPUT ON SIZE 1000000
+DECLARE
+  l_cursor  SYS_REFCURSOR;
+  l_NombreEstado_Match Estado_Match.Nombre%TYPE;
+  l_Cantidad Number;
+BEGIN
+  get_UsuarioXEstadoMatch(null, p_recordset => l_cursor);        
+  LOOP 
+    FETCH l_cursor
+    INTO  l_NombreEstado_Match, l_Cantidad;
+    EXIT WHEN l_cursor%NOTFOUND;
+    DBMS_OUTPUT.PUT_LINE(l_NombreEstado_Match || ' | ' || l_Cantidad);
+  END LOOP;
+  CLOSE l_cursor;
+END;
+
+
+--TOP 10 WINK usuario--
+create or replace
+PROCEDURE get_TopusuarIosxwink (p_recordset OUT SYS_REFCURSOR) AS 
+BEGIN 
+ OPEN p_recordset FOR
+ SELECT Usuario.ID_Usuario, Usuario.Nombre, COUNT(*) AS WINKS
+ FROM  UsuariosXWink inner join Usuario
+ on UsuariosXWink.ID_Recibido = Usuario.ID_Usuario
+ where ROWNUM <= 10
+ ORDER by WINKS
+ GROUP by UsuariosXWink.ID_Recibido;
+END get_TopusuarIosxwink;
+
+--Prueba--todo
+SET SERVEROUTPUT ON SIZE 1000000
+DECLARE
+  l_cursor  SYS_REFCURSOR;
+  l_ID_Usuario Usuario.ID_Usuario%TYPE;
+  l_NombreUsuario  Usuario.Nombre%TYPE;
+  l_Cantidad Number;
+BEGIN
+  get_TopusuarIosxwink(null, p_recordset => l_cursor);        
+  LOOP 
+    FETCH l_cursor
+    INTO l_ID_Usuario, l_NombreUsuario, l_Cantidad;
+    EXIT WHEN l_cursor%NOTFOUND;
+    DBMS_OUTPUT.PUT_LINE(l_ID_Usuario || ' | ' || l_NombreUsuario || ' | ' || l_Cantidad);
   END LOOP;
   CLOSE l_cursor;
 END;

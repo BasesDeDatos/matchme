@@ -124,26 +124,26 @@ BEGIN
   CLOSE l_cursor;
 END;
 
---################ Wink ################-- TODO
-CREATE OR REPLACE PROCEDURE GET_Wink( 
+--################ UsuariosXWink ################-- TODO
+CREATE OR REPLACE PROCEDURE GET_UsuariosXWink( 
 	pID IN NUMBER,
 	p_recordset OUT SYS_REFCURSOR) AS
 BEGIN
 	OPEN p_recordset FOR
 		SELECT Fecha, ID_Enviado
-		FROM Wink
+		FROM UsuariosXWink
 		WHERE ID_Recibido = nvl(pID, ID_Recibido)
 		GROUP BY Fecha;
-END GET_Wink;
+END GET_UsuariosXWink;
 
 --### test ###--
 SET SERVEROUTPUT ON SIZE 1000000
 DECLARE
   l_cursor  SYS_REFCURSOR;
-  l_Fecha   Wink.Fecha%TYPE;
-  l_ID_Enviado   Wink.ID_Enviado%TYPE;
+  l_Fecha   UsuariosXWink.Fecha%TYPE;
+  l_ID_Enviado   UsuariosXWink.ID_Enviado%TYPE;
 BEGIN
-  GET_Wink(null, p_recordset => l_cursor);        
+  GET_UsuariosXWink(null, p_recordset => l_cursor);        
   LOOP 
     FETCH l_cursor
     INTO  l_Fecha, l_ID_Enviado;

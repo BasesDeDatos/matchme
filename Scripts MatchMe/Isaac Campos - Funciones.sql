@@ -76,33 +76,33 @@ BEGIN
 END BORRAR_estado;
 
 
---################ Wink ################--
+--################ UsuariosXWink ################--
 
-CREATE OR REPLACE PROCEDURE REGISTRAR_Wink(
+CREATE OR REPLACE PROCEDURE REGISTRAR_UsuariosXWink(
 	pFecha IN DATE, 
 	pID_Enviado IN NUMBER, 
 	pID_Recibido IN NUMBER) AS
 BEGIN
-	INSERT INTO Wink(ID_Wink, Fecha, ID_Enviado, ID_Recibido)
-		VALUES(secu_wink.NextVal, pFecha, pID_Enviado, pID_Recibido);
-END REGISTRAR_Wink;
+	INSERT INTO UsuariosXWink(ID_UsuariosXWink, Fecha, ID_Enviado, ID_Recibido)
+		VALUES(secu_usuariosXWink.NextVal, pFecha, pID_Enviado, pID_Recibido);
+END REGISTRAR_UsuariosXWink;
 
-CREATE OR REPLACE PROCEDURE EDITAR_Wink( 
+CREATE OR REPLACE PROCEDURE EDITAR_UsuariosXWink( 
 	pID IN NUMBER, 	
 	pFecha IN DATE, 
 	pID_Enviado IN NUMBER, 
 	pID_Recibido IN NUMBER) AS
 BEGIN
-	Update Wink
+	Update UsuariosXWink
 		set (Fecha := pFecha, ID_Enviado := pID_Enviado, ID_Recibido := pID_Recibido)
-	    WHERE ID_Wink = pID;
-END EDITAR_Wink;
+	    WHERE ID_UsuariosXWink = pID;
+END EDITAR_UsuariosXWink;
 
-CREATE OR REPLACE PROCEDURE BORRAR_Wink( pID IN NUMBER ) AS
+CREATE OR REPLACE PROCEDURE BORRAR_UsuariosXWink( pID IN NUMBER ) AS
 BEGIN
-	delete from Wink
-	WHERE ID_Wink = pID;
-END BORRAR_Wink;
+	delete from UsuariosXWink
+	WHERE ID_UsuariosXWink = pID;
+END BORRAR_UsuariosXWink;
 
 --################ Idioma ################--
 
