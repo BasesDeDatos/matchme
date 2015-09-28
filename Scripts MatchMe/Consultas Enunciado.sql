@@ -329,3 +329,28 @@ BEGIN
   END LOOP;
   CLOSE l_cursor;
 END;
+
+--Top_EdadesBuscadas--
+create or replace
+PROCEDURE get_Top_EdadesBuscadas (p_recordset OUT SYS_REFCURSOR) AS 
+BEGIN 
+ OPEN p_recordset FOR
+ SELECT avg(Interes_Gusto.Rango_EdadI), avg(Interes_Gusto.Rango_EdadF)
+ FROM Interes_Gusto
+END get_Top_EdadesBuscadas;
+--Prueba--todo
+SET SERVEROUTPUT ON SIZE 1000000
+DECLARE
+  l_cursor  SYS_REFCURSOR;
+  l_Edad_min  Interes_Gusto.Rango_EdadI%TYPE;
+  l_Edad_max Interes_Gusto.Rango_EdadF%TYPE;
+BEGIN
+  get_Top_EdadesBuscadas(p_recordset => l_cursor);        
+  LOOP 
+    FETCH l_cursor
+    INTO  l_Edad_min, l_Edad_max;
+    EXIT WHEN l_cursor%NOTFOUND;
+    DBMS_OUTPUT.PUT_LINE(l_Edad_min || ' | ' || l_Edad_max);
+  END LOOP;
+  CLOSE l_cursor;
+END;
