@@ -155,7 +155,6 @@ BEGIN
  GROUP by Ciudad.nombre;
 END get_UsuarioXCiudad;
 
-
 --Prueba--todo
 SET SERVEROUTPUT ON SIZE 1000000
 DECLARE
@@ -173,7 +172,7 @@ BEGIN
   CLOSE l_cursor;
 END;
 
---Estado Match usuario--
+--Estado Match usuario-- /// LOS QUE ENCONTRARON PAREJA, PASARLE EL ID DE PAREJA.
 create or replace
 PROCEDURE get_UsuarioXEstadoMatch (pID IN Estado_Match.ID_Estado_Match%TYPE,
 p_recordset OUT SYS_REFCURSOR) AS 
@@ -213,11 +212,12 @@ BEGIN
  FROM  UsuariosXWink inner join Usuario
  on UsuariosXWink.ID_Recibido = Usuario.ID_Usuario
  where ROWNUM <= 10
- ORDER by WINKS
- GROUP by UsuariosXWink.ID_Recibido;
+ GROUP by UsuariosXWink.ID_Recibido
+ ORDER by WINKS;
+ 
 END get_TopusuarIosxwink;
 
---Prueba--todo
+--Prueba--
 SET SERVEROUTPUT ON SIZE 1000000
 DECLARE
   l_cursor  SYS_REFCURSOR;
@@ -225,12 +225,45 @@ DECLARE
   l_NombreUsuario  Usuario.Nombre%TYPE;
   l_Cantidad Number;
 BEGIN
-  get_TopusuarIosxwink(null, p_recordset => l_cursor);        
+  get_TopusuarIosxwink(p_recordset => l_cursor);        
   LOOP 
     FETCH l_cursor
     INTO l_ID_Usuario, l_NombreUsuario, l_Cantidad;
     EXIT WHEN l_cursor%NOTFOUND;
     DBMS_OUTPUT.PUT_LINE(l_ID_Usuario || ' | ' || l_NombreUsuario || ' | ' || l_Cantidad);
+  END LOOP;
+  CLOSE l_cursor;
+END;
+
+
+
+-- Personas Hobby-- // DEVUELVE NA LISTA DE USUARIOS DE UN HOBBY
+create or replace
+PROCEDURE get_UsuarioXHobby (pID IN Hobby.ID_Hobby%TYPE,
+p_recordset OUT SYS_REFCURSOR) AS 
+BEGIN 
+ OPEN p_recordset FOR
+ SELECT  Hobby.nombre, usuario.ID_Usuario, usuario.nombre, 
+ FROM  HobbyXUsuario inner join Hobby
+ on HobbyXUsuario.ID_Hobby = Hobby.ID_Hobby
+ and HobbyXUsuario.ID_Hobby = pid;
+END get_UsuarioXHobby;
+
+--Prueba--todo
+SET SERVEROUTPUT ON SIZE 1000000
+DECLARE
+  l_cursor  SYS_REFCURSOR;
+  l_NombreHobby Hobby.nombre%TYPE;
+  l_ID_Usuario usuario.ID_Usuario%TYPE;
+  l_NombreUsuario usuario.nombre%TYPE;
+
+BEGIN
+  get_UsuarioXHobby(null, p_recordset => l_cursor);        
+  LOOP 
+    FETCH l_cursor
+    INTO  l_NombreEstado_Match, l_Cantidad;
+    EXIT WHEN l_cursor%NOTFOUND;
+    DBMS_OUTPUT.PUT_LINE(l_NombreHobby || ' | ' || l_ID_Usuario || ' | ' || l_NombreUsuario);
   END LOOP;
   CLOSE l_cursor;
 END;

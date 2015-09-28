@@ -317,106 +317,112 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <script>
 
 
-	jQuery("input").keyup(function(){
+	jQuery("input").keypress(function(){
 		if($(this).val() == ""){
 			$(this).val( $(this).attr("default") );
 		}
 	});
 	
 	jQuery("input").change(function(){
+		if($(this).val() == ""){
+			$(this).val( $(this).attr("default") );
+		}
+		
+		
 		if($(this).val() != ""){
 
-			<?php
-			$conexión = oci_connect('hr', 'welcome', 'localhost/');
+			// <?php
+			// $conexión = oci_connect('hr', 'welcome', 'localhost/');
 			
-			if (!$conexión) {
-			    $e = oci_error();
-			    trigger_error(htmlentities($e['message'], ENT_QUOTES), E_USER_ERROR);
-			}
+			// if (!$conexión) {
+			//     $e = oci_error();
+			//     trigger_error(htmlentities($e['message'], ENT_QUOTES), E_USER_ERROR);
+			// }
 			
-			$ID_Usuario = $active_user_id;
-			$Nombre = "<script> document.write($('#Nombre').val() ) </script>";
-			$Primer_apellido = "<script> document.write($('#Primer_apellido').val() ) </script>";
-			$Segundo_apellido = "<script> document.write($('#Segundo_apellido').val() ) </script>";
-			$Fecha_nac = "<script> document.write($('#Fecha_nac').val() ) </script>";
-			$Email = "<script> document.write($('#Email').val() ) </script>";
-			$Foto = "<script> document.write($('#Foto').val() ) </script>";
-			$Genero = "<script> document.write($('#Genero').val() ) </script>";
-			$Clave = "<script> document.write($('#Clave').val() ) </script>";
-			$Gustan_mascota = "<script> document.write($('#Gustan_mascota').val() ) </script>";
-			$Tiene_mascota = "<script> document.write($('#Tiene_mascota').val() ) </script>";
-			$Tendria_mascota = "<script> document.write($('#Tendria_mascota').val() ) </script>";
-			$id_religion = "<script> document.write($('#id_religion').val() ) </script>";
-			$id_estadoCi = "<script> document.write($('#id_estadoCi').val() ) </script>";
-			$id_educacion = "<script> document.write($('#id_educacion').val() ) </script>";
-			$id_cuidad = "<script> document.write($('#id_cuidad').val() ) </script>";
-			$id_aspectoFi = "<script> document.write($('#id_aspectoFi').val() ) </script>";
-			$id_hobby = "<script> document.write($('#id_hobby').val() ) </script>";
-			$id_actividadAL = "<script> document.write($('#id_actividadAL').val() ) </script>";
-			$id_estilovida = "<script> document.write($('#id_estilovida').val() ) </script>";
-			$id_ocupacion = "<script> document.write($('#id_ocupacion').val() ) </script>";
-			$id_rol = "<script> document.write($('#id_rol').val() ) </script>";
-			$id_signo_zodiacal = "<script> document.write($('#id_signo_zodiacal').val() ) </script>";
+			// $ID_Usuario = $active_user_id;
+			// $Nombre = "<script> document.write($('#Nombre').val() ) </script>";
+			// $Primer_apellido = "<script> document.write($('#Primer_apellido').val() ) </script>";
+			// $Segundo_apellido = "<script> document.write($('#Segundo_apellido').val() ) </script>";
+			// $Fecha_nac = "<script> document.write($('#Fecha_nac').val() ) </script>";
+			// $Email = "<script> document.write($('#Email').val() ) </script>";
+			// $Foto = "<script> document.write($('#Foto').val() ) </script>";
+			// $Genero = "<script> document.write($('#Genero').val() ) </script>";
+			// $Clave = "<script> document.write($('#Clave').val() ) </script>";
+			// $Gustan_mascota = "<script> document.write($('#Gustan_mascota').val() ) </script>";
+			// $Tiene_mascota = "<script> document.write($('#Tiene_mascota').val() ) </script>";
+			// $Tendria_mascota = "<script> document.write($('#Tendria_mascota').val() ) </script>";
+			// $id_religion = "<script> document.write($('#id_religion').val() ) </script>";
+			// $id_estadoCi = "<script> document.write($('#id_estadoCi').val() ) </script>";
+			// $id_educacion = "<script> document.write($('#id_educacion').val() ) </script>";
+			// $id_cuidad = "<script> document.write($('#id_cuidad').val() ) </script>";
+			// $id_aspectoFi = "<script> document.write($('#id_aspectoFi').val() ) </script>";
+			// $id_hobby = "<script> document.write($('#id_hobby').val() ) </script>";
+			// $id_actividadAL = "<script> document.write($('#id_actividadAL').val() ) </script>";
+			// $id_estilovida = "<script> document.write($('#id_estilovida').val() ) </script>";
+			// $id_ocupacion = "<script> document.write($('#id_ocupacion').val() ) </script>";
+			// $id_rol = "<script> document.write($('#id_rol').val() ) </script>";
+			// $id_signo_zodiacal = "<script> document.write($('#id_signo_zodiacal').val() ) </script>";
 			
-			$stid = oci_parse($conexión, 
-				'begin\
-					EDITARUSUARIO(\
-						:ID_Usuario,\
-						:Nombre,\
-						:Primer_apellido,\
-						:Segundo_apellido,\
-						:Fecha_nac,\
-						:Email,\
-						:Foto,\
-						:Genero,\ 
-						:Clave,\
-						:Gustan_mascota,\
-						:Tiene_mascota,\
-						:Tendria_mascota,\
-						:id_religion,\ 
-						:id_estadoCi,\ 
-						:id_educacion,\ 
-						:id_cuidad,\ 
-						:id_aspectoFi,\ 
-						:id_hobby,\ 
-						:id_actividadAL,\ 
-						:id_estilovida,\ 
-						:id_ocupacion,\ 
-						:id_rol,\ 
-						:id_signo_zodiacal\
-					);\
-				end;');
+			// $stid = oci_parse($conexión, 
+			// 	'begin\
+			// 		EDITARUSUARIO(\
+			// 			:ID_Usuario,\
+			// 			:Nombre,\
+			// 			:Primer_apellido,\
+			// 			:Segundo_apellido,\
+			// 			:Fecha_nac,\
+			// 			:Email,\
+			// 			:Foto,\
+			// 			:Genero,\ 
+			// 			:Clave,\
+			// 			:Gustan_mascota,\
+			// 			:Tiene_mascota,\
+			// 			:Tendria_mascota,\
+			// 			:id_religion,\ 
+			// 			:id_estadoCi,\ 
+			// 			:id_educacion,\ 
+			// 			:id_cuidad,\ 
+			// 			:id_aspectoFi,\ 
+			// 			:id_hobby,\ 
+			// 			:id_actividadAL,\ 
+			// 			:id_estilovida,\ 
+			// 			:id_ocupacion,\ 
+			// 			:id_rol,\ 
+			// 			:id_signo_zodiacal\
+			// 		);\
+			// 	end;');
 
-			oci_bind_by_name($stid, ':ID_Usuario', $ID_Usuario);
-			oci_bind_by_name($stid, ':Nombre', $Nombre);
-			oci_bind_by_name($stid, ':Primer_apellido', $Primer_apellido);
-			oci_bind_by_name($stid, ':Segundo_apellido', $Segundo_apellido);
-			oci_bind_by_name($stid, ':Fecha_nac', $Fecha_nac);
-			oci_bind_by_name($stid, ':Email', $Email);
-			oci_bind_by_name($stid, ':Foto', $Foto);
-			oci_bind_by_name($stid, ':Genero', $Genero);
-			oci_bind_by_name($stid, ':Clave', $Clave);
-			oci_bind_by_name($stid, ':Gustan_mascota', $Gustan_mascota);
-			oci_bind_by_name($stid, ':Tiene_mascota', $Tiene_mascota);
-			oci_bind_by_name($stid, ':Tendria_mascota', $Tendria_mascota);
-			oci_bind_by_name($stid, ':id_religion', $id_religion);
-			oci_bind_by_name($stid, ':id_estadoCi', $id_estadoCi);
-			oci_bind_by_name($stid, ':id_educacion', $id_educacion);
-			oci_bind_by_name($stid, ':id_cuidad', $id_cuidad);
-			oci_bind_by_name($stid, ':id_aspectoFi', $id_aspectoFi);
-			oci_bind_by_name($stid, ':id_hobby', $id_hobby);
-			oci_bind_by_name($stid, ':id_actividadAL', $id_actividadAL);
-			oci_bind_by_name($stid, ':id_estilovida', $id_estilovida);
-			oci_bind_by_name($stid, ':id_ocupacion', $id_ocupacion);
-			oci_bind_by_name($stid, ':id_rol', $id_rol);
-			oci_bind_by_name($stid, ':id_signo_zodiacal', $id_signo_zodiacal);
+			// oci_bind_by_name($stid, ':ID_Usuario', $ID_Usuario);
+			// oci_bind_by_name($stid, ':Nombre', $Nombre);
+			// oci_bind_by_name($stid, ':Primer_apellido', $Primer_apellido);
+			// oci_bind_by_name($stid, ':Segundo_apellido', $Segundo_apellido);
+			// oci_bind_by_name($stid, ':Fecha_nac', $Fecha_nac);
+			// oci_bind_by_name($stid, ':Email', $Email);
+			// oci_bind_by_name($stid, ':Foto', $Foto);
+			// oci_bind_by_name($stid, ':Genero', $Genero);
+			// oci_bind_by_name($stid, ':Clave', $Clave);
+			// oci_bind_by_name($stid, ':Gustan_mascota', $Gustan_mascota);
+			// oci_bind_by_name($stid, ':Tiene_mascota', $Tiene_mascota);
+			// oci_bind_by_name($stid, ':Tendria_mascota', $Tendria_mascota);
+			// oci_bind_by_name($stid, ':id_religion', $id_religion);
+			// oci_bind_by_name($stid, ':id_estadoCi', $id_estadoCi);
+			// oci_bind_by_name($stid, ':id_educacion', $id_educacion);
+			// oci_bind_by_name($stid, ':id_cuidad', $id_cuidad);
+			// oci_bind_by_name($stid, ':id_aspectoFi', $id_aspectoFi);
+			// oci_bind_by_name($stid, ':id_hobby', $id_hobby);
+			// oci_bind_by_name($stid, ':id_actividadAL', $id_actividadAL);
+			// oci_bind_by_name($stid, ':id_estilovida', $id_estilovida);
+			// oci_bind_by_name($stid, ':id_ocupacion', $id_ocupacion);
+			// oci_bind_by_name($stid, ':id_rol', $id_rol);
+			// oci_bind_by_name($stid, ':id_signo_zodiacal', $id_signo_zodiacal);
 			
-			oci_execute($stid);
+			// oci_execute($stid);
 			
-			oci_free_statement($stid);
-			oci_close($conexión);
+			// oci_free_statement($stid);
+			// oci_close($conexión);
 			
-			?>
+			// ?>
+			}
 			
 		}
 		
