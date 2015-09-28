@@ -392,7 +392,7 @@ BEGIN
 			FROM Usuario inner join UsuariosXMatch
 			on Usuario.ID_usuario = UsuariosXMatch.ID_Propio
 		)
-  	and ROWNUM <= 10
+  	and ROWNUM <= 10;
 END get_Match;
 
 
