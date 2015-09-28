@@ -260,3 +260,63 @@ BEGIN
   END LOOP;
   CLOSE l_cursor;
 END;
+
+-------------GET_Bitacora_visita---------------
+
+create or replace PROCEDURE GET_Bitacora_Visita( 
+	pID IN NUMBER,
+	p_recordset OUT SYS_REFCURSOR) AS
+BEGIN
+	OPEN p_recordset FOR
+		SELECT Fecha, ID_Visitante
+  	FROM bitacora_visita
+  	WHERE ID_Visitado = nvl(pID, ID_Visitado);
+END GET_Bitacora_Visita;
+
+
+------------Test_GET_Bitacora_Visita------------
+SET SERVEROUTPUT ON SIZE 1000000
+DECLARE
+  l_cursor  SYS_REFCURSOR;
+  l_Fecha    Bitacora_Visita.Fecha%TYPE;
+  l_ID_Visitante    Bitacora_Visita.ID_Visitante%TYPE;
+BEGIN
+  GET_Bitacora_Visita(null, p_recordset => l_cursor);        
+  LOOP 
+    FETCH l_cursor
+    INTO  l_Fecha, l_ID_Visitante;
+    EXIT WHEN l_cursor%NOTFOUND;
+    DBMS_OUTPUT.PUT_LINE(l_Fecha || ' | ' || l_ID_Visitante);
+  END LOOP;
+  CLOSE l_cursor;
+END;
+
+---------------EventoXUsuario------------------
+create or replace PROCEDURE GET_EventoXUsuario( 
+	pID IN NUMBER,
+	p_recordset OUT SYS_REFCURSOR) AS
+BEGIN
+	OPEN p_recordset FOR
+		SELECT  Evento.Nombre, Evento.fecha
+	FROM  Usuarioxevento inner  join evento
+	on Usuarioxevento.ID_Evento = Evento.id_Evento
+  and Usuarioxevento.ID_Usuario = pid;
+END GET_EventoXUsuario;
+
+---------------Test_Evento por usuario-------------
+SET SERVEROUTPUT ON SIZE 1000000
+DECLARE
+  l_cursor  SYS_REFCURSOR;
+  l_NombreEvento  Evento.Nombre%TYPE;
+  l_FechaEvento Evento.Fecha%TYPE;
+BEGIN
+  get_eventoxusuario(1, p_recordset => l_cursor);        
+  
+  LOOP 
+    FETCH l_cursor
+    INTO  l_NombreEvento, l_FechaEvento;
+    EXIT WHEN l_cursor%NOTFOUND;
+    DBMS_OUTPUT.PUT_LINE(l_NombreEvento || ' | ' || l_FechaEvento);
+  END LOOP;
+  CLOSE l_cursor;
+END;
