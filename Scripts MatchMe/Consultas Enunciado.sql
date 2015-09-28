@@ -143,15 +143,6 @@ create or replace
 PROCEDURE get_TopusuarIosxwink (p_recordset OUT SYS_REFCURSOR) AS 
 BEGIN 
  OPEN p_recordset FOR
-
- SELECT Ciudad.nombre, COUNT(*)
- FROM  Usuario inner  join Ciudad
- on Usuario.id_ciudad = Ciudad.ID_Ciudad
- and Ciudad.ID_Ciudad = nvl(pid, Ciudad.ID_Ciudad)
- GROUP by Ciudad.nombre;
-END get_UsuarioXCiudad;
-
-
  SELECT Usuario.ID_Usuario, Usuario.Nombre, COUNT(*) AS WINKS
  FROM   Usuario inner join UsuariosXWink
  on UsuariosXWink.ID_Recibido = Usuario.ID_Usuario
@@ -304,6 +295,37 @@ BEGIN
     INTO  l_NombreActividadAL, l_ID_Usuario, l_NombreUsuario;
     EXIT WHEN l_cursor%NOTFOUND;
     DBMS_OUTPUT.PUT_LINE(l_NombreActividadAL || ' | ' || l_ID_Usuario || ' | ' || l_NombreUsuario);
+  END LOOP;
+  CLOSE l_cursor;
+END;
+
+
+
+--personas por pais
+create or replace PROCEDURE get_UsuarioXPais (pID IN Pais.ID_Pais%TYPE,
+p_recordset OUT SYS_REFCURSOR) AS 
+BEGIN 
+ OPEN p_recordset FOR
+ SELECT Pais.nombre, COUNT(*)
+ FROM  Usuario inner  join Pais
+ on Usuario.id_Pais = Pais.ID_Pais
+ and Pais.ID_Pais = nvl(pid, Pais.ID_Pais)
+ GROUP by Pais.nombre;
+END get_UsuarioXPais;
+
+--Prueba
+SET SERVEROUTPUT ON SIZE 1000000
+DECLARE
+  l_cursor  SYS_REFCURSOR;
+  l_NombrePais  Pais.Nombre%TYPE;
+  l_Cantidad Number;
+BEGIN
+  get_UsuarioXPais(null, p_recordset => l_cursor);        
+  LOOP 
+    FETCH l_cursor
+    INTO  l_NombrePais, l_Cantidad;
+    EXIT WHEN l_cursor%NOTFOUND;
+    DBMS_OUTPUT.PUT_LINE(l_NombrePais || ' | ' || l_Cantidad);
   END LOOP;
   CLOSE l_cursor;
 END;
