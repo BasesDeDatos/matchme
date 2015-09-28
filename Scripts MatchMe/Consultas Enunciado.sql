@@ -109,39 +109,6 @@ BEGIN
   CLOSE l_cursor;
 END;
 
---EstadoMatch Usuarios--
-
-ID_Estado_Match Number(2) CONSTRAINT Usuario_Estado_Match_nn NOT NULL
-CONSTRAINT fk_ID_Estado_Match FOREIGN KEY (ID_Estado_Match) REFERENCES Estado_Match(ID_Estado_Match)
-
-create or replace
-PROCEDURE get_UsuarioXEstadoMatch (pID IN Estado_Match.ID_estado_match%TYPE,
-p_recordset OUT SYS_REFCURSOR) AS 
-BEGIN 
- OPEN p_recordset FOR
- SELECT Estado_Match.nombre, COUNT(*)
- FROM  Usuario inner  join Estado_Match
- on Usuario.ID_estado_match = Estado_Match.ID_estado_match
- and Estado_Match.ID_estado_match = nvl(pid, Estado_Match.ID_estado_match)
- GROUP by Estado_Match.nombre;
-END get_UsuarioXEstadoMatch;
---Prueba--todo
-SET SERVEROUTPUT ON SIZE 1000000
-DECLARE
-  l_cursor  SYS_REFCURSOR;
-  l_NombreEstadoMatch  estado_match.Nombre%TYPE;
-  l_Cantidad Number;
-BEGIN
-  GET_UsuarioXEstadoMatch(null, p_recordset => l_cursor);        
-  LOOP 
-    FETCH l_cursor
-    INTO  l_NombreEstadoMatch, l_Cantidad;
-    EXIT WHEN l_cursor%NOTFOUND;
-    DBMS_OUTPUT.PUT_LINE(l_NombreEstadoMatch || ' | ' || l_Cantidad);
-  END LOOP;
-  CLOSE l_cursor;
-END;
-
 --Ciudad Usuarios--
 create or replace
 PROCEDURE get_UsuarioXCiudad (pID IN Ciudad.ID_Ciudad%TYPE,
@@ -154,8 +121,7 @@ BEGIN
  and Ciudad.ID_Ciudad = nvl(pid, Ciudad.ID_Ciudad)
  GROUP by Ciudad.nombre;
 END get_UsuarioXCiudad;
-
---Prueba--todo
+--Prueba--
 SET SERVEROUTPUT ON SIZE 1000000
 DECLARE
   l_cursor  SYS_REFCURSOR;
@@ -172,6 +138,46 @@ BEGIN
   CLOSE l_cursor;
 END;
 
+--TOP 10 WINK usuario--
+create or replace
+PROCEDURE get_TopusuarIosxwink (p_recordset OUT SYS_REFCURSOR) AS 
+BEGIN 
+ OPEN p_recordset FOR
+<<<<<<< HEAD
+ SELECT Ciudad.nombre, COUNT(*)
+ FROM  Usuario inner  join Ciudad
+ on Usuario.id_ciudad = Ciudad.ID_Ciudad
+ and Ciudad.ID_Ciudad = nvl(pid, Ciudad.ID_Ciudad)
+ GROUP by Ciudad.nombre;
+END get_UsuarioXCiudad;
+
+=======
+ SELECT Usuario.ID_Usuario, Usuario.Nombre, COUNT(*) AS WINKS
+ FROM   Usuario inner join UsuariosXWink
+ on UsuariosXWink.ID_Recibido = Usuario.ID_Usuario
+  where  ROWNUM <= 10
+ GROUP by Usuario.ID_Usuario, Usuario.Nombre
+ ORDER by WINKS desc;
+END get_TopusuarIosxwink;
+>>>>>>> af5e60d1ccb4f4a2ef1615852860e896cd7a97fe
+--Prueba--todo
+SET SERVEROUTPUT ON SIZE 1000000
+DECLARE
+  l_cursor  SYS_REFCURSOR;
+  l_ID_Usuario Usuario.ID_Usuario%TYPE;
+  l_NombreUsuario  Usuario.Nombre%TYPE;
+  l_Cantidad Number; 
+BEGIN  
+  get_TopusuarIosxwink(p_recordset => l_cursor);        
+  LOOP 
+    FETCH l_cursor
+    INTO l_ID_Usuario, l_NombreUsuario, l_Cantidad;
+    EXIT WHEN l_cursor%NOTFOUND;
+    DBMS_OUTPUT.PUT_LINE(l_ID_Usuario || ' | ' || l_NombreUsuario || ' | ' || l_Cantidad);
+  END LOOP;
+  CLOSE l_cursor;
+END;
+
 --Estado Match usuario-- /// LOS QUE ENCONTRARON PAREJA, PASARLE EL ID DE PAREJA.
 create or replace
 PROCEDURE get_UsuarioXEstadoMatch (pID IN Estado_Match.ID_Estado_Match%TYPE,
@@ -184,8 +190,7 @@ BEGIN
  and UsuariosXMatch.ID_Estado_Match = nvl(pid, Estado_Match.ID_Estado_Match)
  GROUP by Estado_Match.nombre;
 END get_UsuarioXEstadoMatch;
-
---Prueba--todo
+--Prueba--
 SET SERVEROUTPUT ON SIZE 1000000
 DECLARE
   l_cursor  SYS_REFCURSOR;
@@ -201,6 +206,7 @@ BEGIN
   END LOOP;
   CLOSE l_cursor;
 END;
+<<<<<<< HEAD
 
 
 --TOP 10 WINK usuario--
@@ -267,3 +273,5 @@ BEGIN
   END LOOP;
   CLOSE l_cursor;
 END;
+=======
+>>>>>>> af5e60d1ccb4f4a2ef1615852860e896cd7a97fe
