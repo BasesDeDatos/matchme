@@ -412,3 +412,35 @@ BEGIN
   END LOOP;
   CLOSE l_cursor;
 END;
+
+--GET PORCENTAJE DE MATCH--
+create or replace FUNCTION GET_PorcentajeMatch(pID1 number, pID2 number) RETURN NUMBER is
+cantidadHobbys1 NUMBER;
+cantidadHobbysComun NUMBER;
+BEGIN
+    SELECT COUNT(*) 
+    Into cantidadHobbys1
+    FROM hobbyXUsuario
+    where hobbyXUsuario.ID_Usuario = pID1; --OBTENGO LA CANTIDAD DE HOBBYS DEL 1--
+    
+    SELECT COUNT(*) as COMUN
+    Into cantidadHobbysComun
+    FROM hobbyXUsuario
+    where (hobbyXUsuario.ID_Usuario = pID1 
+        OR hobbyXUsuario.ID_Usuario = pID2)
+    GROUP BY hobbyXUsuario.ID_Hobby
+    having COUNT(*) = 2; -- si los 2 usuarios tienen en comun el gusto--
+    
+    RETURN (100*cantidadHobbys1/cantidadHobbysComun); --Saco un porcentaje de gustos en común con respecto al ID1--
+END GET_PorcentajeMatch;
+
+
+--Prueba--
+DECLARE
+	vID1 number;
+	vID2 number;
+	vPorcentaje number;
+BEGIN
+	vPorcentaje := GET_PorcentajeMatch(vID1, vID2);
+	DBMS_OUTPUT.PUT_LINE(vCantidad);
+END;
