@@ -6,10 +6,21 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 -->
 <?php 
 	require_once("header.php");
-	$edit = $_GET["edit"]? 1 : 0;
-	$user_id = $_GET["user_id"];
+	
 	$active_user_id = $_SESSION["active_user_id"];
-?>
+
+	$edit = $_GET["edit"]? 1 : 0;
+	$user_id = $edit? $active_user_id : $_GET["user_id"];
+
+	$prueba = 1;
+	// /include("funcionesOracle.php");
+if ($edit){ ?>
+	<form id="form_data">
+		<input type="hidden" name="edit" value="1"/>
+	<?php 
+} ?>
+
+<div id="debug"></div>
 
 <div class ="container-fluid" id = "contenedor" >
 	<!--div class="row">
@@ -30,20 +41,34 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<div class="bnr-text">
 							<h1>
 								<?php if ($edit){ ?>
+									Nombre:
 									<input type = "text" 
-										id = "nombre" 
-										value = "Sirius Black"
-										default = "Sirius Black"/>
+										name = "nombre" 
+										value = "Sirius"
+										default = "Sirius"/>
+									Primer Apellido:
+									<input type = "text" 
+										name = "Primer_apellido" 
+										value = "Black"
+										default = "Black"/>
+									Segundo Apellido:
+									<input type = "text" 
+										name = "Segundo_apellido" 
+										value = "Canuto"
+										default = "Canuto"/>
 								<?php } else { ?> 
-									Sirius Black
+									Sirius Black Canuto
 								<?php }	?>
 							</h1>
 							
 							<h5>
 								<?php if ($edit){ ?>
-									<input type="text" name="nombre" placeholder="www.design has.com" />
+									<input type="email"
+										value = "sirius@designhas.com"
+										default = "sirius@designhas.com"
+										name="Email" />
 								<?php } else { ?> 
-									<h5>www.design has.com
+									sirius@designhas.com
 								<?php }	?>
 							</h5>
 							
@@ -51,13 +76,27 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							
 							<hr/>
 							<div class="resumen">
-								<p>Nombre: Sirius Black</p>
-								<p>Apodo: Blacky</p>
 								<p>Genero: Hombre</p>
 								<!--10/07/1990-->
-								<p>Edad: 25</p>
 								
-								<p>Ubicacion: San Rafael, San jose, Costa Rica</p>
+								
+								<p><?php if ($edit){ ?>
+										<input type = "date" 
+										name = "Fecha_Nac" 
+										value = "10/07/1990"
+										default = "10/07/1990"/>
+								<?php } else { ?> 
+									Edad: 25
+								<?php }	?>
+								</p>
+								
+								<p><?php if ($edit){ ?>
+										<select type = "date" 
+										name = "Fecha_Nac"></select>
+								<?php } else { ?> 
+									Ubicacion: San Rafael, San jose, Costa Rica
+								<?php }	?>
+								</p>
 								<p>Altura y peso: 1.60m, 65Kg</p>
 								<p>Busco: Mujer</p>
 								<p>email: blacky@gmail.com</p>
@@ -104,7 +143,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					
 					<input id="tab-7" type="radio" name="radio-set" class="tab-selector-7" />
 					<label for="tab-7" class="tab-label-7">Visitas</label>
-
 
 					<div class="content">
 						<div class="content-1">
@@ -312,6 +350,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		</div>
 </div>
 
+
+<?php
+if ($edit){ ?>
+	</form>
+	<?php 
+} ?>
+
 <?php require_once("footer.php") ?>
 
 <script>
@@ -330,100 +375,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		
 		
 		if($(this).val() != ""){
-
-			// <?php
-			// $conexión = oci_connect('hr', 'welcome', 'localhost/');
-			
-			// if (!$conexión) {
-			//     $e = oci_error();
-			//     trigger_error(htmlentities($e['message'], ENT_QUOTES), E_USER_ERROR);
-			// }
-			
-			// $ID_Usuario = $active_user_id;
-			// $Nombre = "<script> document.write($('#Nombre').val() ) </script>";
-			// $Primer_apellido = "<script> document.write($('#Primer_apellido').val() ) </script>";
-			// $Segundo_apellido = "<script> document.write($('#Segundo_apellido').val() ) </script>";
-			// $Fecha_nac = "<script> document.write($('#Fecha_nac').val() ) </script>";
-			// $Email = "<script> document.write($('#Email').val() ) </script>";
-			// $Foto = "<script> document.write($('#Foto').val() ) </script>";
-			// $Genero = "<script> document.write($('#Genero').val() ) </script>";
-			// $Clave = "<script> document.write($('#Clave').val() ) </script>";
-			// $Gustan_mascota = "<script> document.write($('#Gustan_mascota').val() ) </script>";
-			// $Tiene_mascota = "<script> document.write($('#Tiene_mascota').val() ) </script>";
-			// $Tendria_mascota = "<script> document.write($('#Tendria_mascota').val() ) </script>";
-			// $id_religion = "<script> document.write($('#id_religion').val() ) </script>";
-			// $id_estadoCi = "<script> document.write($('#id_estadoCi').val() ) </script>";
-			// $id_educacion = "<script> document.write($('#id_educacion').val() ) </script>";
-			// $id_cuidad = "<script> document.write($('#id_cuidad').val() ) </script>";
-			// $id_aspectoFi = "<script> document.write($('#id_aspectoFi').val() ) </script>";
-			// $id_hobby = "<script> document.write($('#id_hobby').val() ) </script>";
-			// $id_actividadAL = "<script> document.write($('#id_actividadAL').val() ) </script>";
-			// $id_estilovida = "<script> document.write($('#id_estilovida').val() ) </script>";
-			// $id_ocupacion = "<script> document.write($('#id_ocupacion').val() ) </script>";
-			// $id_rol = "<script> document.write($('#id_rol').val() ) </script>";
-			// $id_signo_zodiacal = "<script> document.write($('#id_signo_zodiacal').val() ) </script>";
-			
-			// $stid = oci_parse($conexión, 
-			// 	'begin\
-			// 		EDITARUSUARIO(\
-			// 			:ID_Usuario,\
-			// 			:Nombre,\
-			// 			:Primer_apellido,\
-			// 			:Segundo_apellido,\
-			// 			:Fecha_nac,\
-			// 			:Email,\
-			// 			:Foto,\
-			// 			:Genero,\ 
-			// 			:Clave,\
-			// 			:Gustan_mascota,\
-			// 			:Tiene_mascota,\
-			// 			:Tendria_mascota,\
-			// 			:id_religion,\ 
-			// 			:id_estadoCi,\ 
-			// 			:id_educacion,\ 
-			// 			:id_cuidad,\ 
-			// 			:id_aspectoFi,\ 
-			// 			:id_hobby,\ 
-			// 			:id_actividadAL,\ 
-			// 			:id_estilovida,\ 
-			// 			:id_ocupacion,\ 
-			// 			:id_rol,\ 
-			// 			:id_signo_zodiacal\
-			// 		);\
-			// 	end;');
-
-			// oci_bind_by_name($stid, ':ID_Usuario', $ID_Usuario);
-			// oci_bind_by_name($stid, ':Nombre', $Nombre);
-			// oci_bind_by_name($stid, ':Primer_apellido', $Primer_apellido);
-			// oci_bind_by_name($stid, ':Segundo_apellido', $Segundo_apellido);
-			// oci_bind_by_name($stid, ':Fecha_nac', $Fecha_nac);
-			// oci_bind_by_name($stid, ':Email', $Email);
-			// oci_bind_by_name($stid, ':Foto', $Foto);
-			// oci_bind_by_name($stid, ':Genero', $Genero);
-			// oci_bind_by_name($stid, ':Clave', $Clave);
-			// oci_bind_by_name($stid, ':Gustan_mascota', $Gustan_mascota);
-			// oci_bind_by_name($stid, ':Tiene_mascota', $Tiene_mascota);
-			// oci_bind_by_name($stid, ':Tendria_mascota', $Tendria_mascota);
-			// oci_bind_by_name($stid, ':id_religion', $id_religion);
-			// oci_bind_by_name($stid, ':id_estadoCi', $id_estadoCi);
-			// oci_bind_by_name($stid, ':id_educacion', $id_educacion);
-			// oci_bind_by_name($stid, ':id_cuidad', $id_cuidad);
-			// oci_bind_by_name($stid, ':id_aspectoFi', $id_aspectoFi);
-			// oci_bind_by_name($stid, ':id_hobby', $id_hobby);
-			// oci_bind_by_name($stid, ':id_actividadAL', $id_actividadAL);
-			// oci_bind_by_name($stid, ':id_estilovida', $id_estilovida);
-			// oci_bind_by_name($stid, ':id_ocupacion', $id_ocupacion);
-			// oci_bind_by_name($stid, ':id_rol', $id_rol);
-			// oci_bind_by_name($stid, ':id_signo_zodiacal', $id_signo_zodiacal);
-			
-			// oci_execute($stid);
-			
-			// oci_free_statement($stid);
-			// oci_close($conexión);
-			
-			// ?>
-			}
-			
+			var data = $("#form_data").serialize();
+			$.post("funcionesOracle.php", data, function(data){
+				$("#debug").html(data);
+			}); 
 		}
 		
 	});
