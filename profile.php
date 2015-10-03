@@ -12,8 +12,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	$edit = $_GET["edit"]? 1 : 0;
 	$user_id = $edit? $active_user_id : $_GET["user_id"];
 
+	$prueba = 1;
+	// /include("funcionesOracle.php");
 if ($edit){ ?>
 	<form id="form_data">
+		<input type="hidden" name="edit" value="1"/>
 	<?php 
 } ?>
 
@@ -375,7 +378,6 @@ if ($edit){ ?>
 			var data = $("#form_data").serialize();
 			$.post("funcionesOracle.php", data, function(data){
 				$("#debug").html(data);
-				
 			}); 
 		}
 		

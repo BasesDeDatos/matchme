@@ -661,7 +661,7 @@ background: url('../images/into.png') no-repeat 0px 0px;
   border: 1px solid #ec6e3c;
 }
 
-.login-form input[type="submit"] {
+.login-form input[type="submit"], .submit {
   background: #E64608;
   width: 51%;
   font-size: 1.2em;
@@ -678,7 +678,7 @@ background: url('../images/into.png') no-repeat 0px 0px;
   outline:none;
 }
 
-.login-form input[type="submit"]:hover {
+.login-form input[type="submit"]:hover, .submit:hover {
   color: rgb(230, 70, 8);
   background-color: #fff;
 }
