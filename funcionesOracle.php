@@ -7,37 +7,43 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 <?php
 
-    echo "\n#########\n";
+   $user = 'MatchMe';
+$clave = 'MatchMe';
+$db = '(DESCRIPTION = (ADDRESS_LIST =
+  (ADDRESS = (PROTOCOL = TCP)(HOST = localhost)(PORT = 1521))
+ )
+ (CONNECT_DATA =
+  (SID = dbprojets)
+  (SERVER = DEDICATED)
+ )
+)';
 
-    if ($prueba){
-       ?> <script>alert("OK");</script> <?php
-    }
-    var_dump($_POST);
-    
-    	
-	if (!empty($_POST) && $_POST["mode"] == "loggin"){
-		echo "PRUEBA LOGGIN";
-	}
-    echo "\n#########\n";
-    
+$c = OCILogon($user, $clave, $db);
+if (!$c) {
+ echo "Error de conexion: ".var_dump(OCIError());
+ die();
+}
 
-	$conexión = oci_connect('MatchMe', '', 'localhost/');
-	
-	if (!$conexión) {
-	    $e = oci_error();
-	    trigger_error(htmlentities($e['message'], ENT_QUOTES), E_USER_ERROR);
-	}
-	
-	if (!empty($_POST) && $_POST["mode"] == "loggin"){
-		session_start();
-		$stid = oci_parse($conn, 'begin :ID_User := get_user_ID( :Clave, :Email ); end;');
-		oci_bind_by_name($stid, ':Email', $Email);
-		oci_bind_by_name($stid, ':Clave', $Clave);
-		oci_bind_by_name($stid, ':ID_User', $_SESSION["active_user_id"]);
-	}
-	
+oracle2txt($c, "select * from hobby", "archivo.txt");
+
+OCILogoff($c);
+
+function oracle2txt($c, $sql, $archivo) {
+ $s = OCIParse($c, $sql);
+ OCIExecute($s, OCI_DEFAULT);
+ $fp = fopen("./out/".$archivo, "a");
+ while ($row = oci_fetch_array($s, OCI_RETURN_NULLS + OCI_ASSOC)) {
+  foreach($row as $item) {
+   fwrite($fp, ($item !== null ? htmlentities($item, ENT_QUOTES) : ' ').
+    "\t");
+  }
+  fwrite($fp, PHP_EOL);
+ }
+ fclose($fp);
+}
 	//*** EDITAR UN PERFIL *///
-	$edit = $_POST["edit"]? 1 : 0;
+	$edit = 0;
+//	$edit = $_POST["edit"]? 1 : 0;
 	if (!empty($_POST) && $edit){
 		
 		
@@ -67,7 +73,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     	$id_rol = $_POST["id_rol"];
     	$id_signo_zodiacal = $_POST["id_signo_zodiacal"];
     	
-    	$stid = oci_parse($conexión, 
+    	$stid = oci_parse($conexion, 
     		'begin\
     			EDITARUSUARIO(\
     				:ID_Usuario,\
@@ -121,12 +127,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     	oci_bind_by_name($stid, ':id_signo_zodiacal', $id_signo_zodiacal);
 	}
 	
-	if ($conexión) {
+	if ($conexion) {
 
-    	oci_execute($stid);
+//    	oci_execute($stid);
     	
     	oci_free_statement($stid);
-    	oci_close($conexión);
+    	oci_close($conexion);
 	}
 	
 	echo "\n"."USER: ".$_SESSION["active_user_id"];
