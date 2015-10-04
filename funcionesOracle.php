@@ -6,49 +6,46 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 -->
 
 <?php
+	//** DEBUG ***//
+    echo "\n#########\n";
 
-   $user = 'MatchMe';
-$clave = 'MatchMe';
-$db = '(DESCRIPTION = (ADDRESS_LIST =
-  (ADDRESS = (PROTOCOL = TCP)(HOST = localhost)(PORT = 1521))
- )
- (CONNECT_DATA =
-  (SID = dbprojets)
-  (SERVER = DEDICATED)
- )
-)';
+    var_dump($_POST);
 
-$c = OCILogon($user, $clave, $db);
-if (!$c) {
- echo "Error de conexion: ".var_dump(OCIError());
- die();
-}
+    echo "\n#########\n";
+    
+	//** /DEBUG ***//s
 
-oracle2txt($c, "select * from hobby", "archivo.txt");
+	$user = 'MatchMe';
+	$clave = 'MatchMe';
+	$db = '(DESCRIPTION = (ADDRESS_LIST =
+	  (ADDRESS = (PROTOCOL = TCP)(HOST = localhost)(PORT = 1521))
+	 )
+	 (CONNECT_DATA =
+	  (SID = dbproject)
+	  (SERVER = DEDICATED)
+	 )
+	)';
 
-OCILogoff($c);
+	global $conexion = OCILogon($user, $clave, $db);
 
-function oracle2txt($c, $sql, $archivo) {
- $s = OCIParse($c, $sql);
- OCIExecute($s, OCI_DEFAULT);
- $fp = fopen("./out/".$archivo, "a");
- while ($row = oci_fetch_array($s, OCI_RETURN_NULLS + OCI_ASSOC)) {
-  foreach($row as $item) {
-   fwrite($fp, ($item !== null ? htmlentities($item, ENT_QUOTES) : ' ').
-    "\t");
-  }
-  fwrite($fp, PHP_EOL);
- }
- fclose($fp);
-}
-	//*** EDITAR UN PERFIL *///
-	$edit = 0;
-//	$edit = $_POST["edit"]? 1 : 0;
-	if (!empty($_POST) && $edit){
-		
-		
-		$active_user_id = $_SESSION["active_user_id"];
+	if (!$conexion) {
+		echo "Error de conexion: ".var_dump(OCIError());
+		trigger_error(htmlentities($e['message'], ENT_QUOTES), E_USER_ERROR);
+		die();
+	}
 	
+	if (!empty($_POST) && $_POST["mode"] == "loggin"){
+		session_start();
+		$Email = $_POST["Email"];
+		$Clave = $_POST["Clave"];
+		$query = query('begin get_user_ID( {$Email}, {$Clave}); end;');
+		$_SESSION["active_user_id"] = $query[0][0];
+	}
+	
+	//*** EDITAR UN PERFIL *///
+	$edit = $_POST["mode"]? 1 : 0;
+	if (!empty($_POST) && $edit){
+		$active_user_id = $_SESSION["active_user_id"];
     	$ID_Usuario = $active_user_id;
     	$Nombre = $_POST["Nombre"];
     	$Primer_apellido = $_POST["Primer_apellido"];
@@ -128,13 +125,36 @@ function oracle2txt($c, $sql, $archivo) {
 	}
 	
 	if ($conexion) {
-
-//    	oci_execute($stid);
-    	
     	oci_free_statement($stid);
     	oci_close($conexion);
+		OCILogoff($conexion);
 	}
 	
 	echo "\n"."USER: ".$_SESSION["active_user_id"];
 
+	function query($sql) {
+		$s = OCIParse($conexion, $sql);
+		OCIExecute($s, OCI_DEFAULT);
+		$fp = fopen("./log/log.log", "a");
+		while ($row = oci_fetch_array($s, OCI_RETURN_NULLS + OCI_ASSOC)) {
+			foreach($row as $item) {
+				fwrite($fp, ($item !== null ? htmlentities($item, ENT_QUOTES) : ' ')."\t");
+				$arrayResult[$row] = $item;
+			} 
+			fwrite($fp, PHP_EOL);
+			fwrite($fp, "################{$_SESSION["active_user_id"]}################");
+			fwrite($fp, PHP_EOL);
+		}
+		fclose($fp);
+		return $arrayResult;
+	}
+
+	function get_var_$_POST(){
+		if (!empty($_POST)){
+			foreach($_POST as $var => $value){
+				global $.$var = $value;
+				echo "${$var} = {$value}\n<br>";
+			}
+		}
+	}
 ?>
