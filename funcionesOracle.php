@@ -21,16 +21,17 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	  (ADDRESS = (PROTOCOL = TCP)(HOST = localhost)(PORT = 1521))
 	 )
 	 (CONNECT_DATA =
-	  (SID = dbproject)
+	  (SID = dbprojets)
 	  (SERVER = DEDICATED)
 	 )
 	)';
 
-	global $conexion = OCILogon($user, $clave, $db);
+	global $conexion;
+	$conexion = OCILogon($user, $clave, $db);
 
 	if (!$conexion) {
 		echo "Error de conexion: ".var_dump(OCIError());
-		trigger_error(htmlentities($e['message'], ENT_QUOTES), E_USER_ERROR);
+	//	trigger_error(htmlentities($e['message'], ENT_QUOTES), E_USER_ERROR);
 		die();
 	}
 	
@@ -38,13 +39,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		session_start();
 		$Email = $_POST["Email"];
 		$Clave = $_POST["Clave"];
-		$query = query('begin get_user_ID( {$Email}, {$Clave}); end;');
-		$_SESSION["active_user_id"] = $query[0][0];
+		$valueFunction = queryFunction($conexion, "begin :value := get_userID('{$Clave}','{$Email}'); end;");
+		$_SESSION["active_user_id"] = $valueFunction;
 	}
 	
 	//*** EDITAR UN PERFIL *///
-	$edit = $_POST["mode"]? 1 : 0;
-	if (!empty($_POST) && $edit){
+	if (!empty($_POST) && $_POST["mode"] == "editar"){
 		$active_user_id = $_SESSION["active_user_id"];
     	$ID_Usuario = $active_user_id;
     	$Nombre = $_POST["Nombre"];
@@ -125,34 +125,60 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	}
 	
 	if ($conexion) {
-    	oci_free_statement($stid);
     	oci_close($conexion);
 		OCILogoff($conexion);
 	}
 	
 	echo "\n"."USER: ".$_SESSION["active_user_id"];
 
-	function query($sql) {
-		$s = OCIParse($conexion, $sql);
-		OCIExecute($s, OCI_DEFAULT);
+	function query($conexion, $sql) {
+		$s = oci_parse($conexion, $sql);
+		oci_execute($s, OCI_DEFAULT);
 		$fp = fopen("./log/log.log", "a");
+		fwrite($fp, DATE("d/M/y")." ".$sql);
+		fwrite($fp, PHP_EOL);
 		while ($row = oci_fetch_array($s, OCI_RETURN_NULLS + OCI_ASSOC)) {
 			foreach($row as $item) {
 				fwrite($fp, ($item !== null ? htmlentities($item, ENT_QUOTES) : ' ')."\t");
 				$arrayResult[$row] = $item;
 			} 
 			fwrite($fp, PHP_EOL);
-			fwrite($fp, "################{$_SESSION["active_user_id"]}################");
-			fwrite($fp, PHP_EOL);
 		}
+		fwrite($fp, "################{$_SESSION["active_user_id"]}################");
+		fwrite($fp, PHP_EOL);
 		fclose($fp);
 		return $arrayResult;
 	}
 
-	function get_var_$_POST(){
+	
+	function queryFunction($conexion,$sql) {
+		$s = oci_parse($conexion, $sql);
+		oci_bind_by_name($s, ':value', $value);
+		$r = oci_execute($s, OCI_DEFAULT);
+		
+		if (!$r) {
+			return -1;
+		}
+		
+
+
+		$fp = fopen("./log/log.log", "a");
+		fwrite($fp, DATE("d/M/y")." ".$sql);
+		fwrite($fp, $value);
+		fwrite($fp, PHP_EOL);
+		fwrite($fp, "################{$_SESSION["active_user_id"]}################");
+		fwrite($fp, PHP_EOL);
+		fclose($fp);
+		oci_free_statement($s);
+		return $value;
+	}
+	
+
+	function get_var_POST(){
 		if (!empty($_POST)){
 			foreach($_POST as $var => $value){
-				global $.$var = $value;
+//				global $.$var;
+//				$.$var = $value;
 				echo "${$var} = {$value}\n<br>";
 			}
 		}

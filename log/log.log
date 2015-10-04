@@ -1,0 +1,57 @@
+﻿0	Annabella	Harper	 	20/03/90	a.harper@randatmail.com	 	Femenino	1234	si	si	si	1	1	1	1	1	1	1	1	 	 	 	 	 	
+################################
+1	Rolland	Payne	Elliot	10/09/95	rp_elliott@randatmail.com	 	Masculino	12345	no	no	no	1	1	1	1	1	1	1	1	1	 	 	 	 	
+################################
+0404/OctOct/15
+0	Annabella	Harper	 	20/03/90	a.harper@randatmail.com	 	Femenino	1234	si	si	si	1	1	1	1	1	1	1	1	 	 	 	 	 	
+1	Rolland	Payne	Elliot	10/09/95	rp_elliott@randatmail.com	 	Masculino	12345	no	no	no	1	1	1	1	1	1	1	1	1	 	 	 	 	
+################################
+04/Oct/15
+################################
+04/Oct/15
+################################
+04/Oct/15 begin get_userID(MatchMe, caco); end;
+################################
+04/Oct/15 begin get_userID('MatchMe', 'caco'); end;
+################################
+04/Oct/15 select * from dual
+X	
+################################
+04/Oct/15 select * from dual
+X	
+################################
+04/Oct/15 select * from dual
+X	
+################################
+04/Oct/15 Resource id #2
+################################
+04/Oct/15 begin :value := get_userID('1234','a.harpr@randatmail.com'); end;
+################################
+04/Oct/15 begin :value := get_userID('1234','a.harpr@randatmail.com'); end;
+################################
+04/Oct/15 begin :value := get_userID('1234','a.harper@randatmail.com'); end;0
+################################
+04/Oct/15 begin :value := get_userID('1234','a.harper@randatmail.com'); end;0
+################################
+04/Oct/15 begin :value := get_userID('123451','a.harper@randatmail.com'); end;
+################################
+04/Oct/15 begin :value := get_userID('12345','rp_elliott@randatmail.com'); end;1
+################################
+04/Oct/15 begin :value := get_userID('12345','rp_elliott@randatmail.com'); end;1
+################################
+04/Oct/15 begin :value := get_userID('12345','rp_elliott@randatmail.com'); end;1
+################1################
+04/Oct/15 begin :value := get_userID('12345','rp_elliott@randatmail.com'); end;1
+################1################
+04/Oct/15 begin :value := get_userID('12345','rp_elliott@randatmail.com'); end;1
+################1################
+04/Oct/15 begin :value := get_userID('12345','ASDF'); end;
+################1################
+04/Oct/15 begin :value := get_userID('12345','ASDF'); end;
+################################
+04/Oct/15 begin :value := get_userID('12345','ASDF'); end;
+################################
+04/Oct/15 begin :value := get_userID('12345','rp_elliott@randatmail.com'); end;1
+################################
+04/Oct/15 begin :value := get_userID('12345','rp_elliott@randatmail.com'); end;1
+################1################
