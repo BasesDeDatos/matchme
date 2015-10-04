@@ -21,8 +21,17 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<fieldset>
 
 				<h2 class="fs-title">Mensaje de invitaciones</h2>
-				<div class="col-md-12"><input type="text-field" name="subject" placeholder="Sujeto" /></div>
-				<div class="col-md-12"><input type="text-field" name="mensaje_invitacion" placeholder="Nuevo mensaje de invitación" /></div>
+				<input class="col-md-6" type="text" name="subject" placeholder="Subject" />
+				<input class="col-md-6" type="textarea" name="mensaje_invitacion" placeholder="Nuevo mensaje de invitación" />
+
+				<label class="col-md-6" for="Pais">Pais</label>
+				<select class="col-md-6" name="Pais" id="Pais"></select>
+				
+				<label class="col-md-6" for="Estado">Estado</label>
+				<select class="col-md-6" name="Estado" id="Estado"></select>
+				
+				<label class="col-md-6" for="Ciudad">Ciudad</label>
+				<select class="col-md-6" name="Ciudad" id="Ciudad"></select>
 
 				<input type="button" name="next" class="next action-button" value="Enviar" />
 			</fieldset>
@@ -31,132 +40,112 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				
 				<h2 class="fs-title">Catalogos</h2>
 				
-				<div class="col-md-4">
-					<label for="signo_zodiacal">Signo Zodiacal </label>
-					<select name="signo_zodiacal" id="signo_zodiacal"></select>
-				</div>
-				<div class="col-md-8"><input type="text-field" name="signo_zodiacal_input" placeholder="Nuevo" /></div>
+				<label class="col-md-4" for="signo_zodiacal">Signo Zodiacal </label>
+				<select class="col-md-4" name="signo_zodiacal" id="signo_zodiacal"></select>
+
+				<div class="col-md-4"><input class="col-md-6" type="text" name="signo_zodiacal_input" placeholder="Nuevo" /></div>
 
 
-				<div class="col-md-4">
-					<label for="rol">Rol </label>
-					<select name="rol" id="rol"></select>
-				</div>
-				<div class="col-md-8"><input type="text-field" name="rol_input" placeholder="Nuevo" /></div>
+				<label class="col-md-4" for="rol">Rol </label>
+				<select class="col-md-4" name="rol" id="rol"></select>
+
+				<div class="col-md-4"><input class="col-md-6" type="text" name="rol_input" placeholder="Nuevo" /></div>
 
 
-				<div class="col-md-4">
-					<label for="pais">Pais </label>
-					<select name="pais" id="pais"></select>
-				</div>
-				<div class="col-md-8"><input type="text-field" name="pais_input" placeholder="Nuevo" /></div>
+				<label class="col-md-4" for="pais">Pais </label>
+				<select class="col-md-4" name="pais" id="pais"></select>
+
+				<div class="col-md-4"><input class="col-md-6" type="text" name="pais_input" placeholder="Nuevo" /></div>
 
 
-				<div class="col-md-4">
-					<label for="estado">Estado </label>
-					<select name="estado" id="estado"></select>
-				</div>
-				<div class="col-md-8"><input type="text-field" name="estado_input" placeholder="Nuevo" /></div>
+				<label class="col-md-4" for="estado">Estado </label>
+				<select class="col-md-4" name="estado" id="estado"></select>
+
+				<div class="col-md-4"><input class="col-md-6" type="text" name="estado_input" placeholder="Nuevo" /></div>
 
 
-				<div class="col-md-4">
-					<label for="ciudad">Ciudad </label>
-					<select name="ciudad" id="ciudad"></select>
-				</div>
-				<div class="col-md-8"><input type="text-field" name="ciudad_input" placeholder="Nuevo" /></div>
+				<label class="col-md-4" for="ciudad">Ciudad </label>
+				<select class="col-md-4" name="ciudad" id="ciudad"></select>
+
+				<div class="col-md-4"><input class="col-md-6" type="text" name="ciudad_input" placeholder="Nuevo" /></div>
 
 
-				<div class="col-md-4">
-					<label for="religion">Religion </label>
-					<select name="religion" id="religion"></select>
-				</div>
-				<div class="col-md-8"><input type="text-field" name="religion_input" placeholder="Nuevo" /></div>
+				<label class="col-md-4" for="religion">Religion </label>
+				<select class="col-md-4" name="religion" id="religion"></select>
 
-				<div class="col-md-4">
-					<label for="idioma">Idioma </label>
-					<select name="idioma" id="idioma"></select>
-				</div>
-				<div class="col-md-8"><input type="text-field" name="idioma_input" placeholder="Nuevo" /></div>
+				<div class="col-md-4"><input class="col-md-6" type="text" name="religion_input" placeholder="Nuevo" /></div>
+
+				<label class="col-md-4" for="idioma">Idioma </label>
+				<select class="col-md-4" name="idioma" id="idioma"></select>
+
+				<div class="col-md-4"><input class="col-md-6" type="text" name="idioma_input" placeholder="Nuevo" /></div>
 
 
-				<div class="col-md-4">
-					<label for="educacion">Educacion </label>
-					<select name="educacion" id="educacion"></select>
-				</div>
-				<div class="col-md-8"><input type="text-field" name="educacion_input" placeholder="Nuevo" /></div>
+				<label class="col-md-4" for="educacion">Educacion </label>
+				<select class="col-md-4" name="educacion" id="educacion"></select>
+
+				<div class="col-md-4"><input class="col-md-6" type="text" name="educacion_input" placeholder="Nuevo" /></div>
 
 
-				<div class="col-md-4">
-					<label for="hobby">Hobby </label>
-					<select name="hobby" id="hobby"></select>
-				</div>
-				<div class="col-md-8"><input type="text-field" name="hobby_input" placeholder="Nuevo" /></div>
+				<label class="col-md-4" for="hobby">Hobby </label>
+				<select class="col-md-4" name="hobby" id="hobby"></select>
 
-				<div class="col-md-4">
-					<label for="actividadal">Actividades al aire libre </label>
-					<select name="actividadal" id="actividadal"></select>
-				</div>
-				<div class="col-md-8"><input type="text-field" name="actividadal_input" placeholder="Nuevo" /></div>
+				<div class="col-md-4"><input class="col-md-6" type="text" name="hobby_input" placeholder="Nuevo" /></div>
+
+				<label class="col-md-4" for="actividadal">Actividades al aire libre </label>
+				<select class="col-md-4" name="actividadal" id="actividadal"></select>
+
+				<div class="col-md-4"><input class="col-md-6" type="text" name="actividadal_input" placeholder="Nuevo" /></div>
 
 
-				<div class="col-md-4">
-					<label for="tipo_bebedor">Tipo de bebedor </label>
-					<select name="tipo_bebedor" id="tipo_bebedor"></select>
-				</div>
-				<div class="col-md-8"><input type="text-field" name="tipo_bebedor_input" placeholder="Nuevo" /></div>
+				<label class="col-md-4" for="tipo_bebedor">Tipo de bebedor </label>
+				<select class="col-md-4" name="tipo_bebedor" id="tipo_bebedor"></select>
+
+				<div class="col-md-4"><input class="col-md-6" type="text" name="tipo_bebedor_input" placeholder="Nuevo" /></div>
 
 
-				<div class="col-md-4">
-					<label for="ocupacion">Ocupacion </label>
-					<select name="ocupacion" id="ocupacion"></select>
-				</div>
-				<div class="col-md-8"><input type="text-field" name="ocupacion_input" placeholder="Nuevo" /></div>
+				<label class="col-md-4" for="ocupacion">Ocupacion </label>
+				<select class="col-md-4" name="ocupacion" id="ocupacion"></select>
 
-				<div class="col-md-4">
-					<label for="aspecto_fisico">Aspecto fisico </label>
-					<select name="aspecto_fisico" id="aspecto_fisico"></select>
-				</div>
-				<div class="col-md-8"><input type="text-field" name="aspecto_fisico_input" placeholder="Nuevo" /></div>
+				<div class="col-md-4"><input class="col-md-6" type="text" name="ocupacion_input" placeholder="Nuevo" /></div>
+
+				<label class="col-md-4" for="aspecto_fisico">Aspecto fisico </label>
+				<select class="col-md-4" name="aspecto_fisico" id="aspecto_fisico"></select>
+
+				<div class="col-md-4"><input class="col-md-6" type="text" name="aspecto_fisico_input" placeholder="Nuevo" /></div>
 
 
-				<div class="col-md-4">
-					<label for="color_ojos">Color Ojos </label>
-					<select name="color_ojos" id="color_ojos"></select>
-				</div>
-				<div class="col-md-8"><input type="text-field" name="color_ojos_input" placeholder="Nuevo" /></div>
+				<label class="col-md-4" for="color_ojos">Color Ojos </label>
+				<select class="col-md-4" name="color_ojos" id="color_ojos"></select>
+
+				<div class="col-md-4"><input class="col-md-6" type="text" name="color_ojos_input" placeholder="Nuevo" /></div>
 
 
-				<div class="col-md-4">
-					<label for="color_piel">Color piel </label>
-					<select name="color_piel" id="color_piel"></select>
-				</div>
-				<div class="col-md-8"><input type="text-field" name="color_piel_input" placeholder="Nuevo" /></div>
+				<label class="col-md-4" for="color_piel">Color piel </label>
+				<select class="col-md-4" name="color_piel" id="color_piel"></select>
 
-				<div class="col-md-4">
-					<label for="color_pelo">Color Ojos </label>
-					<select name="color_pelo" id="color_pelo"></select>
-				</div>
-				<div class="col-md-8"><input type="text-field" name="color_pelo_input" placeholder="Nuevo" /></div>
+				<div class="col-md-4"><input class="col-md-6" type="text" name="color_piel_input" placeholder="Nuevo" /></div>
+
+				<label class="col-md-4" for="color_pelo">Color Ojos </label>
+				<select class="col-md-4" name="color_pelo" id="color_pelo"></select>
+
+				<div class="col-md-4"><input class="col-md-6" type="text" name="color_pelo_input" placeholder="Nuevo" /></div>
 
 
-				<div class="col-md-4">
-					<label for="contextura">Contextura </label>
-					<select name="contextura" id="contextura"></select>
-				</div>
-				<div class="col-md-8"><input type="text-field" name="contextura_input" placeholder="Nuevo" /></div>
+				<label class="col-md-4" for="contextura">Contextura </label>
+				<select class="col-md-4" name="contextura" id="contextura"></select>
+
+				<div class="col-md-4"><input class="col-md-6" type="text" name="contextura_input" placeholder="Nuevo" /></div>
 
 
-				<div class="col-md-4">
-					<label for="estado_match">Estado Match </label>
-					<select name="estado_match" id="estado_match"></select>
-				</div>
-				<div class="col-md-8"><input type="text-field" name="estado_match_input" placeholder="Nuevo" /></div>
+				<label class="col-md-4" for="estado_match">Estado Match </label>
+				<select class="col-md-4" name="estado_match" id="estado_match"></select>
+
+				<div class="col-md-4"><input class="col-md-6" type="text" name="estado_match_input" placeholder="Nuevo" /></div>
 				
-				<div class="col-md-4">
-					<label for="estado_civil">Estado Civil </label>
-					<select name="estado_civil" id="estado_civil"></select>
-				</div>
-				<div class="col-md-8"><input type="text-field" name="estado_civil_input" placeholder="Nuevo" /></div>
+				<label class="col-md-4" for="estado_civil">Estado Civil </label>
+				<select class="col-md-4" name="estado_civil" id="estado_civil"></select>
+				<div class="col-md-4"><input class="col-md-6" type="text" name="estado_civil_input" placeholder="Nuevo" /></div>
 				
 				<div class="col-md-12">
 					<input type="button" name="previous" class="previous action-button" value="Anterior" />

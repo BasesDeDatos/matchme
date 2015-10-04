@@ -85,6 +85,10 @@ transform-origin: 50% 50% 0px;
   padding: 1em;
 }
 
+.label{
+  color: #666;
+}
+
 .logo-top {
     margin: 1.5em auto;
     text-align: center;
@@ -1088,6 +1092,7 @@ line-grids {
 
 label {
   margin: 0;
+  color: #333;
 }
 /*--buttons--*/
 .pages {
@@ -2571,6 +2576,10 @@ canvas#bar {
     margin: 0 auto !important;
 }
 
+.file-drop-zone-title {
+    padding: 10px !important;
+}
+
 .btn-file {
     margin-bottom: 15px;
 }
@@ -2604,18 +2613,22 @@ canvas#bar {
 	display: none;
 }
 /*inputs*/
-#msform input, #msform textarea {
-  height: 50px;
-	padding: 15px;
-	border: 1px solid #ccc;
-	border-radius: 3px;
-	margin-bottom: 10px;
-	width: 100%;
-	box-sizing: border-box;
-	font-family: montserrat;
-	color: #2C3E50;
-	font-size: 13px;
+#msform input, #msform textarea{
+  width: 100%;
 }
+
+#msform input, #msform textarea, #msform select {
+  height: 35px;
+  padding: 15px 0;
+  border: 1px solid #CCC;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  font-family: montserrat;
+  color: #2C3E50;
+  font-size: 13px;
+}
+
 /*buttons*/
 #msform .action-button {
 	width: 100px;
