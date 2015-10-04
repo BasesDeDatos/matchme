@@ -28,6 +28,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 				<h2 class="fs-title">Crear Cuenta</h2>
 				<!--h3 class="fs-subtitle">Datos De la Cuenta</h3-->
+				<div class="col-md-12">
+					<input type="file" name="archivo" id="input-foto"/>
+					<input type="hidden" name="Foto" id="Foto"/>
+				</div>
 				<div class="col-md-12"><input type="text" name="email" placeholder="Email: someone@something.com" /></div>
 				<div class="col-md-12"><input type="password" name="pass" placeholder="Contraseña" /></div>
 				<div class="col-md-12"><input type="password" name="cpass" placeholder="Confirmar Contraseña" /></div>
@@ -344,5 +348,54 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		$(".submit").click(function(){
 			return false;
 		})
+
+	</script>
+	
+	
+	
+	<script type="text/javascript">
+		jQuery(document).ready(function($) {	
+	 		$("#input-foto").fileinput({
+				maxFileCount: 1,
+				maxFileSize: "4000",
+				
+				uploadUrl: "uploadFoto.php", // server upload action
+	    		uploadAsync: false,
+				
+				previewFileType: "image",
+				
+				browseLabel: "Cargar Foto",
+				dropZoneTitle: "Arrastre su foto hasta aquí",
+	
+				showUpload: false,
+				showCaption: false,
+				showRemove: false,
+	
+				layoutTemplates: {
+					main1: 
+					'{preview}\n' +
+					'<div class="kv-upload-progress"></div>\n' +
+					'<div class="input-group {class}">\n' +
+					'   {caption}\n' +
+					'   <div class="input-group-btn">\n' +
+					'       {remove}\n' +
+					'       {cancel}\n' +
+					'       {upload}\n' +
+					'       {browse}\n' +
+					'   </div>\n' +
+					'</div>',
+				}
+				
+			}).on("filebatchselected", function(event, files) {
+				
+				// trigger upload method immediately after files are selected
+				$(this).fileinput("upload");
+				console.dir(files);// debug
+			
+				var nombreImagen = files[0]["name"];
+				var rutaImagenCargada = nombreImagen;
+				$("#Foto").val(rutaImagenCargada);
+			})
+		});
 
 	</script>
