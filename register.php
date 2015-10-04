@@ -10,7 +10,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<div class="row">
 		<div class="col-md-12 register-form">
 		<!-- multistep form -->
-		<form id="msform">
+		<form id="msform" class="form_data">
 			<!-- progressbar -->
 			<ul id="progressbar">
 				<li class="active">Registro</li>
@@ -29,7 +29,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<h2 class="fs-title">Crear Cuenta</h2>
 				<!--h3 class="fs-subtitle">Datos De la Cuenta</h3-->
 				<div class="col-md-12">
-					<input type="file" name="archivo" id="input-foto"/>
+					<input type="file" name="archivo" id="input-foto" accept="image/*"/>
 					<input type="hidden" name="Foto" id="Foto"/>
 				</div>
 				<div class="col-md-12"><input type="text" name="email" placeholder="Email: someone@something.com" /></div>
@@ -269,6 +269,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	
 	<?php require_once("footer.php") ?>
 
+ 	<script type="text/javascript" src="js/fileinput.min.js"></script>
+
 	<script type="text/javascript">
 		//jQuery time
 		var current_fs, next_fs, previous_fs; //fieldsets
@@ -346,56 +348,56 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		});
 		
 		$(".submit").click(function(){
+			var data = $(".form_data").serialize();
+
+			$.post("funcionesOracle.php", data, function(data){
+				$("body").append("<div id='debug'></div>");
+				$("#debug").html(data);
+			});
+			
 			return false;
 		})
-
-	</script>
-	
-	
-	
-	<script type="text/javascript">
-		jQuery(document).ready(function($) {	
-	 		$("#input-foto").fileinput({
-				maxFileCount: 1,
-				maxFileSize: "4000",
-				
-				uploadUrl: "uploadFoto.php", // server upload action
-	    		uploadAsync: false,
-				
-				previewFileType: "image",
-				
-				browseLabel: "Cargar Foto",
-				dropZoneTitle: "Arrastre su foto hasta aquí",
-	
-				showUpload: false,
-				showCaption: false,
-				showRemove: false,
-	
-				layoutTemplates: {
-					main1: 
-					'{preview}\n' +
-					'<div class="kv-upload-progress"></div>\n' +
-					'<div class="input-group {class}">\n' +
-					'   {caption}\n' +
-					'   <div class="input-group-btn">\n' +
-					'       {remove}\n' +
-					'       {cancel}\n' +
-					'       {upload}\n' +
-					'       {browse}\n' +
-					'   </div>\n' +
-					'</div>',
-				}
-				
-			}).on("filebatchselected", function(event, files) {
-				
-				// trigger upload method immediately after files are selected
-				$(this).fileinput("upload");
-				console.dir(files);// debug
+		
+		$("#input-foto").fileinput({
+			maxFileCount: 1,
+			maxFileSize: "4000",
 			
-				var nombreImagen = files[0]["name"];
-				var rutaImagenCargada = nombreImagen;
-				$("#Foto").val(rutaImagenCargada);
-			})
-		});
+			uploadUrl: "uploadFoto.php", // server upload action
+    		uploadAsync: false,
+			
+			previewFileType: "image",
+			
+			allowedFileExtensions: ["jpg", "png", "gif"],
+			    
+			browseLabel: "Cargar Foto",
+			dropZoneTitle: "Arrastre su foto hasta aquí",
+
+			showUpload: false,
+			showCaption: false,
+			showRemove: false,
+
+			layoutTemplates: {
+				main1: 
+				'{preview}\n' +
+				'<div class="kv-upload-progress"></div>\n' +
+				'<div class="input-group {class}">\n' +
+				'   {caption}\n' +
+				'   <div class="input-group-btn">\n' +
+				'       {remove}\n' +
+				'       {cancel}\n' +
+				'       {upload}\n' +
+				'       {browse}\n' +
+				'   </div>\n' +
+				'</div>',
+			}
+		}).on("filebatchselected", function(event, files) {
+			// trigger upload method immediately after files are selected
+			$(this).fileinput("upload");
+			console.dir(files);// debug
+		
+			var nombreImagen = files[0]["name"];
+			var rutaImagenCargada = nombreImagen;
+			$("#Foto").val(rutaImagenCargada);
+		})
 
 	</script>
