@@ -55,3 +55,15 @@ X
 ################################
 04/Oct/15 begin :value := get_userID('12345','rp_elliott@randatmail.com'); end;1
 ################1################
+04/Oct/15 begin :value := get_userID('1234','a.harper@randatmail.com'); end;0
+################-1################
+04/Oct/15 begin :value := get_userID('1234','a.harper@randatmail.com'); end;0
+################0################
+04/Oct/15 begin :value := get_userID('1234','a.harper@randatmail.com'); end;0
+################0################
+04/Oct/15 begin :value := get_userID('1234','a.harper@randatmail.com'); end;0
+################-1################
+04/Oct/15 begin :value := get_userID('1234','a.harper@randatmail.com'); end;0
+################0################
+04/Oct/15 begin :value := get_userID('1234','a.harper@randatmail.com'); end;0
+################0################
