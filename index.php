@@ -27,12 +27,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<div class="cntnt-img">
 						</div>
 						<div class="bnr-img">
-							<img src="images/img2.jpg" <img src=<?php $Foto_perfil ?> alt=""/>alt=""/>
+							<img src="images/img2.jpg" <img src=<?php $arrayQuery["Foto_perfil"] ?> alt=""/>alt=""/>
 						</div>
 						<div class="bnr-text">
-							<h1>Lorem Ipsum<?php echo $Nombre." ".$Primer_apellido." ".$Segundo_apellido ?></h1>
-							<h5>www.design has.com<?php echo $Email ?></h5>
-							<p>A wonderful designs has takenpossession of dummy text quis nostrum dummy text<?php echo $Slogan ?></p>
+							<h1>Lorem Ipsum<?php echo $arrayQuery["Nombre"]." ".$arrayQuery["Primer_apellido"]." ".$arrayQuery["Segundo_apellido"] ?></h1>
+							<h5>www.design has.com<?php echo $arrayQuery["Email"] ?></h5>
+							<p>A wonderful designs has takenpossession of dummy text quis nostrum dummy text<?php echo $arrayQuery["Slogan"] ?></p>
 						</div>
 						<div class="btm-num">
 							<ul>

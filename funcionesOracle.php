@@ -173,6 +173,26 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		return $value;
 	}
 	
+	function queryCursor($conexion, $sql) {
+		$curs = oci_new_cursor($conn);
+		$s = oci_parse($conexion, $sql);
+		oci_bind_by_name($s, ":cursbv", $curs, -1, OCI_B_CURSOR);
+		oci_execute($s, OCI_DEFAULT);
+		$fp = fopen("./log/log.log", "a");
+		while ($row = oci_fetch_array($curs, OCI_RETURN_NULLS + OCI_ASSOC)) {
+			foreach($row as $item) {
+				fwrite($fp, ($item !== null ? htmlentities($item, ENT_QUOTES) : ' ')."\t");
+				$arrayResult[$row] = $item;
+			} 
+			fwrite($fp, PHP_EOL);
+			fwrite($fp, "################{$_SESSION["active_user_id"]}################");
+			fwrite($fp, PHP_EOL);
+		}
+		fclose($fp);
+		oci_free_statement($s);
+		oci_free_statement($curs);
+		return $arrayResult;
+	}
 
 	function get_var_POST(){
 		if (!empty($_POST)){
