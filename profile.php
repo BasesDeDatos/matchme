@@ -36,7 +36,7 @@ if ($edit){ ?>
 						<div class="cntnt-img">
 						</div>
 						<div class="bnr-img">
-							<img src="images/img2.jpg" alt=""/>
+							<img src="images/img2.jpg" <img src=<?php $Foto_perfil ?> alt=""/> alt=""/>
 						</div>
 						<div class="bnr-text">
 							<h1>
@@ -44,49 +44,49 @@ if ($edit){ ?>
 									Nombre:
 									<input type = "text" 
 										name = "nombre" 
-										value = "Sirius"
+										value = <?php $Nombre ?>
 										default = "Sirius"/>
 									Primer Apellido:
 									<input type = "text" 
 										name = "Primer_apellido" 
-										value = "Black"
+										value = <?php $Primer_apellido ?>
 										default = "Black"/>
 									Segundo Apellido:
 									<input type = "text" 
 										name = "Segundo_apellido" 
-										value = "Canuto"
+										value = <?php $Segundo_apellido ?>
 										default = "Canuto"/>
 								<?php } else { ?> 
-									Sirius Black Canuto
+									Sirius Black Canuto <?php echo $Nombre." ".$Primer_apellido." ".$Segundo_apellido ?>
 								<?php }	?>
 							</h1>
 							
 							<h5>
 								<?php if ($edit){ ?>
 									<input type="email"
-										value = "sirius@designhas.com"
+										value = <?php $Email ?>
 										default = "sirius@designhas.com"
 										name="Email" />
 								<?php } else { ?> 
-									sirius@designhas.com
+									sirius@designhas.com <?php echo $Email ?>
 								<?php }	?>
 							</h5>
 							
-							<p>A wonderful designs has takenpossession of dummy text quis nostrum dummy text</p>
+							<p><?php echo $Slogan ?></p>
 							
 							<hr/>
 							<div class="resumen">
-								<p>Genero: Hombre</p>
+								<p>Genero: <?php echo $Sexo ?></p>
 								<!--10/07/1990-->
 								
 								
 								<p><?php if ($edit){ ?>
 										<input type = "date" 
 										name = "Fecha_Nac" 
-										value = "10/07/1990"
+										value = <?php $Fecha_nac ?>
 										default = "10/07/1990"/>
 								<?php } else { ?> 
-									Edad: 25
+									Edad: 20<?php $Edad ?>
 								<?php }	?>
 								</p>
 								
@@ -94,12 +94,12 @@ if ($edit){ ?>
 										<select type = "date" 
 										name = "Fecha_Nac"></select>
 								<?php } else { ?> 
-									Ubicacion: San Rafael, San jose, Costa Rica
+									Ubicacion: San Jose <?php $Ciudad.", ".$Provincia.", ".$Pais ?>
 								<?php }	?>
 								</p>
-								<p>Altura y peso: 1.60m, 65Kg</p>
-								<p>Busco: Mujer</p>
-								<p>email: blacky@gmail.com</p>
+								<p>Altura y peso: 1.60m, 65Kg <?php $Altura.", ".$Peso ?> </p>
+								<p>Busco: <?php $Interes ?></p>
+								<p>email: blacky@gmail.com <?php echo $Email ?> </p>
 							</div>
 						</div>
 						<div class="btm-num">
@@ -147,58 +147,53 @@ if ($edit){ ?>
 					<div class="content">
 						<div class="content-1">
 							<!--div class = "Background"-->
-								<label class ="texto">Nivel de educacion: Bachillerato</label>
-								<label class ="texto">Idiomas: Checoslovaco</label>
-								<label class ="texto">Estado civil: Soltero</label>
-								<label class ="texto">Religion: Agnostico</label>
+								<label class ="texto">Nivel de educacion: Bachillerato <?php echo $Educacion ?></label>
+								<label class ="texto">Idiomas: Checoslovaco <?php echo $Idiomas ?></label>
+								<label class ="texto">Estado civil: Soltero <?php echo $Estado_Civil ?> </label>
+								<label class ="texto">Religion: Agnostico <?php echo $Religion ?> </label>
 							<!--/div-->
 						</div>
 						<div class="content-2">
 							<!--div class= "EstiloVida"-->
-								<label class ="texto">Bebes?: No</label>
-								<label class ="texto">Fumas?: No</label>
-								<label class ="texto">Frecuencia de ejercicios: Diario</label>
-								<label class ="texto">Cantidad de hijos: no tengo</label>
-								<label class ="texto">Quiere hijos?:No quiero</label>
-								<label class ="texto">Ocupacion: Educador</label>
-								<label class ="texto">Rango de salario:prefiero no ponerlo</label>
-								<label class ="texto">Signo zodiacal: cancer</label>
-								<label class ="texto">Le gustan las mascotas?: Si</label>
-								<label class ="texto">Tiene mascotas?: Si</label>
-								<label class ="texto">Frecuencia de ejercicios: Diario</label>
+								<label class ="texto">Bebes?: No <?php echo $Bebedor ?> </label>
+								<label class ="texto">Fumas?: No<?php echo $Fumador ?> </label>
+								<label class ="texto">Frecuencia de ejercicios: Diario <?php echo $Frecuencia_Ejercicios ?> </label>
+								<label class ="texto">Cantidad de hijos: no tengo <?php echo $Hijos ?> </label>
+								<label class ="texto">Quiere hijos?:No quiero <?php echo $Hijos ?> </label>
+								<label class ="texto">Ocupacion: Educador <?php echo $Ocupacion ?> </label>
+								<label class ="texto">Rango de salario:prefiero no ponerlo <?php echo $Salario ?> </label>
+								<label class ="texto">Signo zodiacal: cancer <?php echo $Signo_Zodiacal ?></label>
+								<label class ="texto">Le gustan las mascotas?: <?php echo $Gustan_mascotas ?></label>
+								<label class ="texto">Tiene mascotas?: <?php echo $Tiene_mascotas ?></label>
+								<label class ="texto">Tendria mascotas?: No <?php echo $Tendria_mascotas ?> </label>
 							<!--/div-->	
 						</div>
 						<div class="content-3">
 							<!--div class = "presentacion personal"-->
-								<label class ="texto">Descripcion propia: Me gusta bailar, hacer actividades al aire libre, pasar tiempo con seres queridos.</label>
+								<label class ="texto">Descripcion propia: Me gusta bailar, hacer actividades al aire libre, pasar tiempo con seres queridos. <?php echo $Slogan ?></label>
 							<!--/div-->
 						</div>
 						<div class="content-4">
 							<!--div class = "intereses y gustos"-->
-								<label class ="texto">ejercicios,aire libre entre otros: caminar, nadar</label>
-								<label class ="texto">Hobbies: caceria</label>
+								<label class ="texto">Ejercicios,aire libre entre otros: caminar, nadar <?php echo $ActividadAL ?></label>
+								<label class ="texto">Hobbies: <?php echo $Hobby ?></label>
 							<!--/div-->
 						</div>
 						<div class="content-5">
 							<!--div class = "sobre la persona que busca"-->
-								<label class ="texto">Sexo: Mujer</label>
-								<label class ="texto">Edad: 23 a 28</label>
-								<label class ="texto">Distancia: Del pais</label>
-								<label class ="texto">Busco una persona con altura entre: 1.50m y 1.70m</label>
-								<label class ="texto">Peso ideal de mi pareja: 45Kg y 70Kg</label>
-								<label class ="texto">El cuerpo de mi pareja debe ser: En forma </label>
-								<label class ="texto">Color de piel de mi pareja: Me da igual</label>
-								<label class ="texto">Ojos de mi pareja: Me da igual</label>
-								<label class ="texto">Bebe?: No Beba</label>
-								<label class ="texto">Fuma?: No fume</label>
-								<label class ="texto">Referente a hijos, mi pareja: No tenga </label>
-								<label class ="texto">Hijos en el futuro, quiero alguien que: Me da igual</label>
-								<label class ="texto">Religion de mi pareja : Me da igual</label>
-								<label class ="texto">Estado civil de mi pareja: Soltero(a)</label>
-								<label class ="texto">Nivel minimo de estudios de mi Pareja: secundaria</label>
-								<label class ="texto">Pelo de mi pareja: Me da igual</label>
-								<label class ="texto">Color: Me da igual</label>
-								<label class ="texto">Ejercicios fisicos: Algunas veces</label>
+								<label class ="texto">Sexo: Mujer <?php echo $Sexo ?></label>
+								<label class ="texto">Edad: 23 a 28<?php echo $Rango_edadi." - ".$Rango_edadf ?></label>
+								<label class ="texto">El cuerpo de mi pareja debe ser: En forma<?php echo $Contextura ?> </label>
+								<label class ="texto">Color de piel de mi pareja: Me da igual <?php echo $Color_piel ?></label>
+								<label class ="texto">Ojos de mi pareja: Me da igual <?php echo $Color_ojos ?></label>
+								<label class ="texto">Bebe?: No Beba <?php echo $Bebedor ?></label>
+								<label class ="texto">Fuma?: No fume <?php echo $Fumador ?></label>
+								<label class ="texto">Referente a hijos, mi pareja: No tenga <?php echo $Hijos ?> </label>
+								<label class ="texto">Hijos en el futuro, quiero alguien que: Me da igual <?php echo $tendria_Hijos ?> </label>
+								<label class ="texto">Religion de mi pareja : Me da igual <?php echo $Religion ?></label>
+								<label class ="texto">Estado civil de mi pareja: Soltero(a) <?php echo $Estado_Civil ?></label>
+								<label class ="texto">Nivel minimo de estudios de mi Pareja: secundaria<?php echo $Escolaridad ?></label>
+								<label class ="texto">Pelo de mi pareja: Me da igual <?php echo $Color_pelo ?></label>
 							<!--/div-->
 						</div>
 						
@@ -383,4 +378,3 @@ if ($edit){ ?>
 		
 	});
 </script>
-

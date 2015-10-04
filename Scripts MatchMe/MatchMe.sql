@@ -355,8 +355,7 @@ CREATE TABLE Bitacora_Visita
   Fecha DATE DEFAULT SYSDATE CONSTRAINT BitacoraVisita_Fecha_nn NOT NULL,
   ID_Visitante NUMBER(10) CONSTRAINT BitacoraVisita_ID_Visitante_nn NOT NULL,
   CONSTRAINT Bitacora_Visita_Visitante_val CHECK (ID_Visitante != ID_Visitado),
-  ID_Visitado NUMBER(10) CONSTRAINT BitacoraVisita_ID_Visitado_nn NOT NULL,
-  CONSTRAINT Bitacora_Visita_Visitado_val CHECK (ID_Visitante != ID_Visitado),
+  ID_Visitado NUMBER(10) CONSTRAINT BitacoraVisita_ID_Visitado_nn NOT NULL,s
   CONSTRAINT pk_ID_Visita PRIMARY KEY (ID_Visita),
   CONSTRAINT fk_ID_Visitante FOREIGN KEY (ID_Visitante) REFERENCES Usuario(ID_Usuario),
   CONSTRAINT fk_ID_Visitado FOREIGN KEY (ID_Visitado) REFERENCES Usuario(ID_Usuario)

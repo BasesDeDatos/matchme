@@ -10,12 +10,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<div class="cntnt-img">
 				</div>
 				<div class="bnr-img">
-					<img src="images/img2.jpg" alt=""/>
+					<img src=<?php $Foto_perfil ?> alt=""/>
 				</div>
 				<div class="bnr-text">
-					<h1>Lorem Ipsum</h1>
-					<h5>www.design has.com</h5>
-					<p>A wonderful designs has takenpossession of dummy text quis nostrum dummy text</p>
+					<h1>Lorem Ipsum<?php echo $Nombre." ".$Primer_apellido." ".$Segundo_apellido ?></h1>
+					<h5>www.design has.com<?php echo $Email ?></h5>
+					<p>A wonderful designs has takenpossession of dummy text quis nostrum dummy text<?php echo $Slogan ?></p>
 				</div>
 			</div>
 		</div>
@@ -64,12 +64,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<div class="cntnt-img">
 				</div>
 				<div class="bnr-img">
-					<img src="images/img2.jpg" alt=""/>
+					<img src=<?php $Foto_perfil ?> alt=""/>
 				</div>
 				<div class="bnr-text">
-					<h1>Lorem Ipsum</h1>
-					<h5>www.design has.com</h5>
-					<p>A wonderful designs has takenpossession of dummy text quis nostrum dummy text</p>
+					<h1>Lorem Ipsum<?php echo $Nombre." ".$Primer_apellido." ".$Segundo_apellido ?></h1>
+					<h5>www.design has.com<?php echo $Email ?></h5>
+					<p>A wonderful designs has takenpossession of dummy text quis nostrum dummy text<?php echo $Slogan ?></p>
 				</div>
 			</div>
 		</div>
