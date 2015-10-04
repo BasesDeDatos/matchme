@@ -33,6 +33,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 </head>
 
 <body>
+	
+	<?php 
+	if  ($_SESSION["active_user_id"] == "" || $_SESSION["active_user_id"] == -1) {
+		header('Location: login.php');
+	}
+	?>
 	<div class="content">
 		<div class="container">
 			<!--navigation-->
