@@ -36,11 +36,19 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	}
 	
 	if (!empty($_POST) && $_POST["mode"] == "loggin"){
-		session_start();
+/*		session_start();
 		$Email = $_POST["Email"];
 		$Clave = $_POST["Clave"];
 		$valueFunction = queryFunction($conexion, "begin :value := get_userID('{$Clave}','{$Email}'); end;");
 		$_SESSION["active_user_id"] = $valueFunction;
+		if ($valueFunction != -1 ){?>
+			<script>window.location="index.php";</script>	
+		<?php }
+		else{?>
+			<script>alert("Email o contraseña incorrecta");</script>
+		<?php }*/
+		$valueFunction = queryCursor($conexion, "begin get_usuario('', :cursbv); end;");
+		var_dump($valueFunction);
 	}
 	
 	//*** EDITAR UN PERFIL *///
@@ -174,15 +182,16 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	}
 	
 	function queryCursor($conexion, $sql) {
-		$curs = oci_new_cursor($conn);
+		$curs = oci_new_cursor($conexion);
 		$s = oci_parse($conexion, $sql);
 		oci_bind_by_name($s, ":cursbv", $curs, -1, OCI_B_CURSOR);
 		oci_execute($s, OCI_DEFAULT);
 		$fp = fopen("./log/log.log", "a");
-		while ($row = oci_fetch_array($curs, OCI_RETURN_NULLS + OCI_ASSOC)) {
-			foreach($row as $item) {
+		$arrayResult = array();
+		while ($row = oci_fetch_array($curs, OCI_ASSOC + OCI_RETURN_NULLS)) {
+			foreach($row as $key => $item) {
 				fwrite($fp, ($item !== null ? htmlentities($item, ENT_QUOTES) : ' ')."\t");
-				$arrayResult[$row] = $item;
+				$arrayResult[$key] = $item;
 			} 
 			fwrite($fp, PHP_EOL);
 			fwrite($fp, "################{$_SESSION["active_user_id"]}################");
