@@ -5,6 +5,34 @@ License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 -->
 
+
+<?php
+/*    include('Mail.php');
+
+    $recipients = 'kakoo26i@gmail.com';
+
+    $headers['From']    = 'MatchMeTEC@gmail.com';
+    $headers['To']      = 'kakoo26i@gmail.com';
+    $headers['Subject'] = 'prueba2';
+
+    $body = 'Nada2';
+
+    $smtpinfo["host"] = "smtp.gmail.com";
+    $smtpinfo["port"] = "587";
+    $smtpinfo["auth"] = true;
+    $smtpinfo["username"] = "MatchMeTEC@gmail.com";
+    $smtpinfo["password"] = "Basesdatos";
+
+
+    // Create the mail object using the Mail::factory method
+    $mail_object =& Mail::factory("smtp", $smtpinfo); 
+
+    $mail_object->send($recipients, $headers, $body);
+*/
+	?> 
+
+
+
 <?php
 	//** DEBUG ***//
     echo "\n#########\n";
@@ -36,7 +64,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	}
 	
 	if (!empty($_POST) && $_POST["mode"] == "loggin"){
-/*		session_start();
+		session_start();
 		$Email = $_POST["Email"];
 		$Clave = $_POST["Clave"];
 		$valueFunction = queryFunction($conexion, "begin :value := get_userID('{$Clave}','{$Email}'); end;");
@@ -46,9 +74,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<?php }
 		else{?>
 			<script>alert("Email o contraseña incorrecta");</script>
-		<?php }*/
-		$valueFunction = queryCursor($conexion, "begin get_usuario('', :cursbv); end;");
-		var_dump($valueFunction);
+		<?php }
+	}
+	
+	if (!empty($_POST) && $_POST["mode"] == "get_home"){
+		$arrayQuery = queryCursor($conexion, "begin GET_Usuario({$_SESSION["active_user_id"] }, :cursbv); end;");
 	}
 	
 	//*** EDITAR UN PERFIL *///
@@ -181,17 +211,18 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		return $value;
 	}
 	
-	function queryCursor($conexion, $sql) {
+	function queryCursor(&$conexion, $sql) {
 		$curs = oci_new_cursor($conexion);
 		$s = oci_parse($conexion, $sql);
 		oci_bind_by_name($s, ":cursbv", $curs, -1, OCI_B_CURSOR);
 		oci_execute($s, OCI_DEFAULT);
+		oci_execute($curs, OCI_DEFAULT);
 		$fp = fopen("./log/log.log", "a");
 		$arrayResult = array();
 		while ($row = oci_fetch_array($curs, OCI_ASSOC + OCI_RETURN_NULLS)) {
 			foreach($row as $key => $item) {
 				fwrite($fp, ($item !== null ? htmlentities($item, ENT_QUOTES) : ' ')."\t");
-				$arrayResult[$key] = $item;
+				$arrayResult[$key][] = $item;
 			} 
 			fwrite($fp, PHP_EOL);
 			fwrite($fp, "################{$_SESSION["active_user_id"]}################");
@@ -201,15 +232,5 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		oci_free_statement($s);
 		oci_free_statement($curs);
 		return $arrayResult;
-	}
-
-	function get_var_POST(){
-		if (!empty($_POST)){
-			foreach($_POST as $var => $value){
-//				global $.$var;
-//				$.$var = $value;
-				echo "${$var} = {$value}\n<br>";
-			}
-		}
 	}
 ?>

@@ -4,7 +4,11 @@ Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 -->
-	<?php require_once("header.php") ?>
+	<?php require_once("header.php"); 
+	$arrayQuery = array(); 
+	$_POST["mode"] = "get_home"; 
+	include ("funcionesOracle.php");
+	?>
 	
 	<script src="js/Chart.js"></script>
 	<script src="js/jquery.circlechart.js"></script>
@@ -27,12 +31,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<div class="cntnt-img">
 						</div>
 						<div class="bnr-img">
-							<img src="images/img2.jpg" <img src=<?php $arrayQuery["Foto_perfil"] ?> alt=""/>alt=""/>
+							<img src= <?php echo "profile_pics/".$arrayQuery["FOTO"][0] ?> alt=""/>
 						</div>
 						<div class="bnr-text">
-							<h1>Lorem Ipsum<?php echo $arrayQuery["Nombre"]." ".$arrayQuery["Primer_apellido"]." ".$arrayQuery["Segundo_apellido"] ?></h1>
-							<h5>www.design has.com<?php echo $arrayQuery["Email"] ?></h5>
-							<p>A wonderful designs has takenpossession of dummy text quis nostrum dummy text<?php echo $arrayQuery["Slogan"] ?></p>
+							<h1><?php echo $arrayQuery["NOMBRE" ][0]." ".$arrayQuery["PRIMER_APELLIDO"][0]." ".$arrayQuery["SEGUNDO_APELLIDO"][0] ?></h1>
+							<h5><?php echo $arrayQuery["EMAIL"][0] ?></h5>
+							<p><?php echo $arrayQuery["SLOGAN"][0] ?></p>
 						</div>
 						<div class="btm-num">
 							<ul>
