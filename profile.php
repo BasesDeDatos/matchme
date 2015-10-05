@@ -38,7 +38,7 @@ if ($edit){ ?>
 						<div class="cntnt-img">
 						</div>
 						<div class="bnr-img">
-							<img src="images/img2.jpg" <img src=<?php $Foto_perfil ?> alt=""/> alt=""/>
+							<img src= <?php echo "profile_pics/".$arrayQuery["FOTO"][0] ?> alt=""/>
 						</div>
 						<div class="bnr-text">
 							<h1>
@@ -76,11 +76,11 @@ if ($edit){ ?>
 							<p>
 								<?php if ($edit){ ?>
 									<input type="textarea"
-										value = <?php echo $arrayQuery["ID_EstiloVida"]["SLOGAN"][0] ?>
-										default = <?php echo $arrayQuery["ID_EstiloVida"]["SLOGAN"][0] ?>
+										value = <?php echo $arrayQuery["ID_ESTILOVIDA"]["SLOGAN"][0] ?>
+										default = <?php echo $arrayQuery["ID_ESTILOVIDA"]["SLOGAN"][0] ?>
 										name="ID_EstiloVida" />
 								<?php } else { ?> 
-									<?php echo $arrayQuery["ID_EstiloVida"]["SLOGAN"][0] ?>
+									<?php echo $arrayQuery["ID_ESTILOVIDA"]["SLOGAN"][0] ?>
 								<?php }	?>
 							</p>
 							
@@ -111,10 +111,10 @@ if ($edit){ ?>
 										Fecha Nacimiento: 
 										<input type = "date" 
 											name = "Fecha_Nac" 
-											value = <?php echo $arrayQuery["FECHA_NAC"] ?>
-											default = <?php echo $arrayQuery["FECHA_NAC"] ?> />
+											value = <?php echo $arrayQuery["FECHA_NAC"][0] ?>
+											default = <?php echo $arrayQuery["FECHA_NAC"][0] ?> />
 									<?php } else { ?> 
-										Edad: <?php echo $arrayQuery["EDAD"] ?>
+									Edad: <?php echo $arrayQuery["EDAD"][0] ?>
 									<?php }	?>
 								</p>
 								
@@ -122,12 +122,13 @@ if ($edit){ ?>
 										<select type = "date" 
 										name = "Fecha_Nac"></select>
 								<?php } else { ?> 
-									Ubicacion: San Jose <?php echo $arrayQuery["CIUDAD"][0].", ".$arrayQuery["ESTADO"][0].", ".$arrayQuery["PAIS"][0] ?>
+									Ubicación: <?php echo $arrayQuery["ID_CIUDAD"]["NOMBRE"][0].", ".$arrayQuery["ID_CIUDAD"]["ID_ESTADO"]["NOMBRE"][0].", ".$arrayQuery["ID_CIUDAD"]["ID_ESTADO"]["ID_PAIS"]["NOMBRE"][0]?>
 								<?php }	?>
 								</p>
-								<p>Altura: <?php echo $arrayQuery["ASPECTO_FISICO"]["ALTURA"][0] ?> </p>
-								<p>Peso: <?php echo $arrayQuery["ASPECTO_FISICO"]["PESO"][0] ?> </p>
-								<p>Busco: <?php echo "####Entre ".$arrayQuery["INTERES_GUSTO"]["RANGO_EDADI"][0]." y ".$arrayQuery["INTERES_GUSTO"]["RANGO_EDADF"][0] ?></p>
+								<p>Altura: <?php echo $arrayQuery["ID_ASPECTOF"]["ALTURA"][0] ?> </p>
+								<p>Peso: <?php echo $arrayQuery["ID_ASPECTOF"]["PESO"][0] ?> </p>
+								<p>Busco: <?php echo $arrayQuery["ID_INTERES_GUSTO"]["TIPO_PAREJA"][0]."s"?> </p>
+								<p> Entre: <?php echo $arrayQuery["ID_INTERES_GUSTO"]["RANGO_EDADI"][0]." y ".$arrayQuery["ID_INTERES_GUSTO"]["RANGO_EDADF"][0] ?></p>
 							</div>
 						</div>
 						<div class="btm-num">
@@ -176,9 +177,9 @@ if ($edit){ ?>
 						<div class="content-1">
 							<!--div class = "Background"-->
 								<label class ="texto">Nivel de educacion: <?php echo $arrayQuery["ID_EDUCACION"]["NOMBRE"][0] ?></label>
-								<label class ="texto">Idiomas: <?php echo explode(", ", $arrayQuery["IDIOMAS"]["NOMBRE"] ) ?></label>
-								<label class ="texto">Estado civil: Soltero <?php echo $Estado_Civil ?> </label>
-								<label class ="texto">Religion: <?php echo $arrayQuery["ID_EDUCACION"]["NOMBRE"][0] ?></label>
+								<label class ="texto">Idiomas: <?php echo implode(", ", $arrayQuery["IDIOMAS"]["NOMBRE"] ) ?></label>
+								<label class ="texto">Estado civil: <?php echo $arrayQuery["ID_ESTADOCI"]["NOMBRE"][0] ?> </label>
+								<label class ="texto">Religion: <?php echo $arrayQuery["ID_RELIGION"]["NOMBRE"][0] ?></label>
 							<!--/div-->
 						</div>
 						<div class="content-2">

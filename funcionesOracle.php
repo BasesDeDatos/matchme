@@ -83,10 +83,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	
 		
 	if (!empty($_POST) && $_POST["mode"] == "get_profile"){
+		echo $user_id;
 		$arrayQuery = queryCursor($conexion, "begin GET_Usuario({$user_id}, :cursbv); end;");
-		$arrayQuery["EDAD"] = 
-			queryFunction($conexion, 
-				"begin :value := GET_Edad( to_date({$arrayQuery["FECHA_NAC"]}, 'dd/mm/yyyy') ); end;");
+		
 		
 		$arrayQuery["ID_RELIGION"] = queryCursor($conexion, "begin GET_Religion({$arrayQuery["ID_RELIGION"][0]}, :cursbv); end;");
 		$arrayQuery["ID_ESTADOCI"] = queryCursor($conexion, "begin GET_estado_Civil({$arrayQuery["ID_ESTADOCI"][0]}, :cursbv); end;");
@@ -96,7 +95,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		$arrayQuery["ID_CIUDAD"]["ID_ESTADO"] = 
 			queryCursor($conexion, 
 				"begin GET_Estado({$arrayQuery["ID_CIUDAD"]["ID_ESTADO"][0]}, :cursbv); end;");
-		$arrayQuery["ID_CIUDAD"]["ID_Estado"]["ID_PAIS"] =
+		$arrayQuery["ID_CIUDAD"]["ID_ESTADO"]["ID_PAIS"] =
 			queryCursor($conexion, 
 				"begin GET_Pais({$arrayQuery["ID_CIUDAD"]["ID_ESTADO"]["ID_PAIS"][0]}, :cursbv); end;");
 				
@@ -120,9 +119,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 		$arrayQuery["ID_SIGNO_ZODIACAL"] = queryCursor($conexion, "begin GET_Signo_Zodiacal({$arrayQuery["ID_SIGNO_ZODIACAL"][0]}, :cursbv); end;");
 
-		$arrayQuery["IDIOMAS"] = queryCursor($conexion, "begin GET_UsuarioXIdioma({$arrayQuery["ID_SIGNO_ZODIACAL"][0]}, :cursbv); end;");
-
+		$arrayQuery["ID_INTERES_GUSTO"] = queryCursor($conexion, "begin GET_INTERES_GUSTO({$arrayQuery["ID_INTERES_GUSTO"][0]}, :cursbv); end;");
 		
+		$arrayQuery["IDIOMAS"] = queryCursor($conexion, "begin GET_UsuarioXIdioma({$user_id}, :cursbv); end;");
+
 	}
 
 	//*** EDITAR UN PERFIL *///
@@ -255,7 +255,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		return $value;
 	}
 	
-	function queryCursor(&$conexion, $sql) {
+	function queryCursor($conexion, $sql) {
 		$curs = oci_new_cursor($conexion);
 		$s = oci_parse($conexion, $sql);
 		oci_bind_by_name($s, ":cursbv", $curs, -1, OCI_B_CURSOR);
