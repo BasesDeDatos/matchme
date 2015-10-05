@@ -9,9 +9,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	
 	$active_user_id = $_SESSION["active_user_id"];
 
-	$edit = $_GET["edit"]? 1 : 0;
-	$user_id = $_GET["user_id"] != ""? $_GET["user_id"] : $active_user_id;
-	$user_id = $edit? $active_user_id : $_GET["user_id"];
+	$edit = array_key_exists('edit', $_GET) ? ($_GET["edit"]? 1 : 0) : 0;
+
+	$_GET["user_id"] = array_key_exists('user_id', $_GET) ? $_GET["user_id"] : $active_user_id;
+
+	$user_id = $edit ? $active_user_id : $_GET["user_id"];
+	
 	$arrayQuery = array(); 
 	$_POST["mode"] = "get_profile"; 
 	include ("funcionesOracle.php");
@@ -185,17 +188,21 @@ if ($edit){ ?>
 						</div>
 						<div class="content-2">
 							<!--div class= "EstiloVida"-->
-								<label class ="texto">Bebe: <?php echo $Bebedor ?> </label>
-								<label class ="texto">Fuma: No<?php echo $Fumador ?> </label>
-								<label class ="texto">Frecuencia de ejercicios: Diario <?php echo $Frecuencia_Ejercicios ?> </label>
-								<label class ="texto">Cantidad de hijos: no tengo <?php echo $Hijos ?> </label>
-								<label class ="texto">Quiere hijos?:No quiero <?php echo $Hijos ?> </label>
-								<label class ="texto">Ocupacion: Educador <?php echo $Ocupacion ?> </label>
-								<label class ="texto">Rango de salario:prefiero no ponerlo <?php echo $Salario ?> </label>
-								<label class ="texto">Signo zodiacal: cancer <?php echo $Signo_Zodiacal ?></label>
-								<label class ="texto">Le gustan las mascotas?: <?php echo $Gustan_mascotas ?></label>
-								<label class ="texto">Tiene mascotas?: <?php echo $Tiene_mascotas ?></label>
-								<label class ="texto">Tendria mascotas?: No <?php echo $Tendria_mascotas ?> </label>
+								<label class ="texto">Bebe: <?php echo $arrayQuery["ID_ESTILOVIDA"]["ID_TIPOBEBEDOR"]["NOMBRE"][0]?> </label>
+								<label class ="texto">Fuma: <?php echo $arrayQuery["ID_ESTILOVIDA"]["FUMA"][0]?> </label>
+								<label class ="texto">Frecuencia de ejercicios: <?php echo $arrayQuery["ID_ESTILOVIDA"]["FRECEJERCICIOS"][0]?> </label>
+								<label class ="texto">Cantidad de hijos: <?php echo $arrayQuery["ID_ESTILOVIDA"]["CANTIDADHIJOS"][0]?> </label>
+								<label class ="texto">Quiere más hijos: <?php echo $arrayQuery["ID_ESTILOVIDA"]["QUIEREHIJOS"][0]?> </label>
+								<label class ="texto">Salario: <?php 
+																	echo $arrayQuery["ID_ESTILOVIDA"]["SALARIOPROMEDIO"][0] != "NULL"? 
+																		$arrayQuery["ID_ESTILOVIDA"]["SALARIOPROMEDIO"][0] :
+																		"Prefiero no especificarlo."
+																?> 
+								</label>
+								<label class ="texto">Signo zodiacal: cancer <?php echo $arrayQuery["ID_ESTILOVIDA"]["FUMA"][0]?></label>
+								<label class ="texto">Le gustan las mascotas: <?php echo $arrayQuery["GUSTAN_MASCOTA"][0]?></label>
+								<label class ="texto">Tiene mascotas: <?php echo $arrayQuery["TIENE_MASCOTA"][0]?></label>
+								<label class ="texto">Tendría mascotas:<?php echo $arrayQuery["TENDRIA_MASCOTA"][0]?> </label>
 							<!--/div-->	
 						</div>
 						<div class="content-3">
@@ -216,8 +223,8 @@ if ($edit){ ?>
 								<label class ="texto">El cuerpo de mi pareja debe ser: En forma<?php echo $Contextura ?> </label>
 								<label class ="texto">Color de piel de mi pareja: Me da igual <?php echo $Color_piel ?></label>
 								<label class ="texto">Ojos de mi pareja: Me da igual <?php echo $Color_ojos ?></label>
-								<label class ="texto">Bebe?: No Beba <?php echo $Bebedor ?></label>
-								<label class ="texto">Fuma?: No fume <?php echo $Fumador ?></label>
+								<label class ="texto">Bebe: No Beba <?php echo $Bebedor ?></label>
+								<label class ="texto">Fuma: No fume <?php echo $Fumador ?></label>
 								<label class ="texto">Referente a hijos, mi pareja: No tenga <?php echo $Hijos ?> </label>
 								<label class ="texto">Hijos en el futuro, quiero alguien que: Me da igual <?php echo $tendria_Hijos ?> </label>
 								<label class ="texto">Religion de mi pareja : Me da igual <?php echo $Religion ?></label>

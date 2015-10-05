@@ -83,10 +83,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	
 		
 	if (!empty($_POST) && $_POST["mode"] == "get_profile"){
-		echo $user_id;
 		$arrayQuery = queryCursor($conexion, "begin GET_Usuario({$user_id}, :cursbv); end;");
-		
-		
+
 		$arrayQuery["ID_RELIGION"] = queryCursor($conexion, "begin GET_Religion({$arrayQuery["ID_RELIGION"][0]}, :cursbv); end;");
 		$arrayQuery["ID_ESTADOCI"] = queryCursor($conexion, "begin GET_estado_Civil({$arrayQuery["ID_ESTADOCI"][0]}, :cursbv); end;");
 		$arrayQuery["ID_EDUCACION"] = queryCursor($conexion, "begin GET_Educacion({$arrayQuery["ID_EDUCACION"][0]}, :cursbv); end;");
@@ -124,6 +122,43 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		$arrayQuery["IDIOMAS"] = queryCursor($conexion, "begin GET_UsuarioXIdioma({$user_id}, :cursbv); end;");
 		$arrayQuery["ACTIVIDADES"] = queryCursor($conexion, "begin GET_ActividadXUsuario({$user_id}, :cursbv); end;");
 		$arrayQuery["HOBBIES"] = queryCursor($conexion, "begin GET_HobbyXUsuario({$user_id}, :cursbv); end;");
+	}
+	
+	
+	if (!empty($_POST) && $_POST["mode"] == "get_catalogos"){
+		$arrayQuery["PAIS"] 	= queryCursor($conexion, "begin GET_Pais(null, :cursbv); end;");
+		$arrayQuery["ESTADO"] 	= queryCursor($conexion, "begin GET_Estado(null, :cursbv); end;");
+		$arrayQuery["CIUDAD"] 	= queryCursor($conexion, "begin GET_Ciudad(null, :cursbv); end;");
+		
+		$arrayQuery["SIGNO_ZODIACAL"] = queryCursor($conexion, "begin GET_Signo_Zodiacal(null, :cursbv); end;");
+		
+		$arrayQuery["ROL"] = queryCursor($conexion, "begin GET_Rol(null, :cursbv); end;");
+		
+		$arrayQuery["RELIGION"] = queryCursor($conexion, "begin GET_Religion(null, :cursbv); end;");
+		
+		$arrayQuery["IDIOMA"] = queryCursor($conexion, "begin GET_Idioma(null, :cursbv); end;");
+		
+		$arrayQuery["EDUCACION"] = queryCursor($conexion, "begin GET_Educacion(null, :cursbv); end;");
+
+		$arrayQuery["HOBBY"] = queryCursor($conexion, "begin GET_Hobby(null, :cursbv); end;");
+		
+		$arrayQuery["ACTIVIDAD"] = queryCursor($conexion, "begin GET_Actividades(null, :cursbv); end;");
+		
+		$arrayQuery["TIPO_BEBEDOR"] = queryCursor($conexion, "begin GET_Tipo_Bebedor(null, :cursbv); end;");
+		
+		$arrayQuery["OCUPACION"] = queryCursor($conexion, "begin GET_Ocupacion(null, :cursbv); end;");
+
+		$arrayQuery["COLOR_OJOS"] = queryCursor($conexion, "begin GET_Color_Ojos(null, :cursbv); end;");
+
+		$arrayQuery["COLOR_PIEL"] = queryCursor($conexion, "begin GET_Color_Piel(null, :cursbv); end;");
+
+		$arrayQuery["COLOR_PELO"] = queryCursor($conexion, "begin GET_Color_Pelo(null, :cursbv); end;");
+		
+		$arrayQuery["CONTEXTURA"] = queryCursor($conexion, "begin GET_Contextura(null, :cursbv); end;");
+		
+		$arrayQuery["ESTADO_MATCH"] = queryCursor($conexion, "begin GET_Estado_Match(null, :cursbv); end;");
+		
+		$arrayQuery["ESTADO_CIVIL"] = queryCursor($conexion, "begin GET_Estado_Civil(null, :cursbv); end;");
 	}
 
 	//*** EDITAR UN PERFIL *///

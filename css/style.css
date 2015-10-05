@@ -2619,7 +2619,7 @@ canvas#bar {
 
 #msform input, #msform textarea, #msform select {
   height: 35px;
-  padding: 15px 0;
+  padding: 0 15px;
   border: 1px solid #CCC;
   border-radius: 3px;
   margin-bottom: 10px;
