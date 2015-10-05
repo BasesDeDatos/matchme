@@ -32,6 +32,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<label class="col-md-6" for="Pais0">País</label>
 				<select class="col-md-6 selector" name="Pais" id="Pais0" >
 					<option value="">Seleccione un país</option>
+					<option value="">Agregar nuevo</option>
 					<?php for($i = 0; $i < count($arrayQuery["PAIS"]["NOMBRE"]); $i++){ ?>
 						<option class="<?php echo $arrayQuery["PAIS"]["ID_PAIS"][$i] ?>"
 								value="<?php echo $arrayQuery["PAIS"]["ID_PAIS"][$i] ?>">
@@ -43,6 +44,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<label class="col-md-6" for="Estado0">Estado</label>
 				<select class="col-md-6 selector" name="Estado" id="Estado0">
 					<option value="">Seleccione un estado</option>
+					<option value="">Agregar nuevo</option>
 					<?php for($i = 0; $i < count($arrayQuery["ESTADO"]["NOMBRE"]); $i++){ ?>
 						<option class="<?php echo $arrayQuery["ESTADO"]["ID_PAIS"][$i] ?>"
 								value="<?php echo $arrayQuery["ESTADO"]["ID_ESTADO"][$i] ?>">
@@ -65,12 +67,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<input type="button" name="next" class="next action-button" value="Enviar" />
 			</fieldset>
 			
-			<fieldset>
+			<fieldset id="catalogos">
 				
 				<h2 class="fs-title">Catalogos</h2>
 				
 				<label class="col-md-4" for="signo_zodiacal">Signo Zodiacal</label>
 				<select class="col-md-4" name="signo_zodiacal" id="signo_zodiacal">
+					<option value="">Agregar nuevo</option>
 					<?php for($i = 0; $i < count($arrayQuery["SIGNO_ZODIACAL"]["NOMBRE"]); $i++){ ?>
 						<option value="<?php echo $arrayQuery["SIGNO_ZODIACAL"]["ID_SIGNO_ZODIACAL"][$i] ?>">
 							<?php echo $arrayQuery["SIGNO_ZODIACAL"]["NOMBRE"][$i] ?>
@@ -82,6 +85,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 				<label class="col-md-4" for="rol">Rol</label>
 				<select class="col-md-4" name="rol" id="rol">
+					<option value="">Agregar nuevo</option>
 					<?php for($i = 0; $i < count($arrayQuery["ROL"]["NOMBRE"]); $i++){ ?>
 						<option value="<?php echo $arrayQuery["ROL"]["ID_ROL"][$i] ?>">
 							<?php echo $arrayQuery["ROL"]["NOMBRE"][$i] ?>
@@ -93,6 +97,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 				<label class="col-md-4" for="pais">Pais</label>
 				<select class="col-md-4" name="pais" id="pais">
+					<option value="">Agregar nuevo</option>
 					<?php for($i = 0; $i < count($arrayQuery["PAIS"]["NOMBRE"]); $i++){ ?>
 						<option class="<?php echo $arrayQuery["PAIS"]["ID_PAIS"][$i] ?>"
 								value="<?php echo $arrayQuery["PAIS"]["ID_PAIS"][$i] ?>">
@@ -105,6 +110,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 				<label class="col-md-4" for="estado">Estado</label>
 				<select class="col-md-4" name="estado" id="estado">
+					<option value="">Agregar nuevo</option>
 					<?php for($i = 0; $i < count($arrayQuery["ESTADO"]["NOMBRE"]); $i++){ ?>
 						<option class="<?php echo $arrayQuery["ESTADO"]["ID_PAIS"][$i] ?>"
 								value="<?php echo $arrayQuery["ESTADO"]["ID_ESTADO"][$i] ?>">
@@ -117,6 +123,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 				<label class="col-md-4" for="ciudad">Ciudad</label>
 				<select class="col-md-4" name="ciudad" id="ciudad">
+					<option value="">Agregar nuevo</option>
 					<?php for($i = 0; $i < count($arrayQuery["CIUDAD"]["NOMBRE"]); $i++){ ?>
 						<option class="<?php echo $arrayQuery["CIUDAD"]["ID_ESTADO"][$i] ?>"
 								value="<?php echo $arrayQuery["CIUDAD"]["ID_CIUDAD"][$i] ?>">
@@ -129,6 +136,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 				<label class="col-md-4" for="religion">Religion</label>
 				<select class="col-md-4" name="religion" id="religion">
+					<option value="">Agregar nuevo</option>
 					<?php for($i = 0; $i < count($arrayQuery["RELIGION"]["NOMBRE"]); $i++){ ?>
 						<option value="<?php echo $arrayQuery["RELIGION"]["ID_RELIGION"][$i] ?>">
 							<?php echo $arrayQuery["RELIGION"]["NOMBRE"][$i] ?>
@@ -139,6 +147,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 				<label class="col-md-4" for="idioma">Idioma</label>
 				<select class="col-md-4" name="idioma" id="idioma">
+					<option value="">Agregar nuevo</option>
 					<?php for($i = 0; $i < count($arrayQuery["IDIOMA"]["NOMBRE"]); $i++){ ?>
 						<option value="<?php echo $arrayQuery["IDIOMA"]["ID_IDIOMA"][$i] ?>">
 							<?php echo $arrayQuery["IDIOMA"]["NOMBRE"][$i] ?>
@@ -149,6 +158,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 				<label class="col-md-4" for="educacion">Educacion</label>
 				<select class="col-md-4" name="educacion" id="educacion">
+					<option value="">Agregar nuevo</option>
 					<?php for($i = 0; $i < count($arrayQuery["EDUCACION"]["NOMBRE"]); $i++){ ?>
 						<option value="<?php echo $arrayQuery["EDUCACION"]["ID_EDUCACION"][$i] ?>">
 							<?php echo $arrayQuery["EDUCACION"]["NOMBRE"][$i] ?>
@@ -159,6 +169,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 				<label class="col-md-4" for="hobby">Hobby</label>
 				<select class="col-md-4" name="hobby" id="hobby">
+					<option value="">Agregar nuevo</option>
 					<?php for($i = 0; $i < count($arrayQuery["HOBBY"]["NOMBRE"]); $i++){ ?>
 						<option value="<?php echo $arrayQuery["HOBBY"]["ID_HOBBY"][$i] ?>">
 							<?php echo $arrayQuery["HOBBY"]["NOMBRE"][$i] ?>
@@ -169,6 +180,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 				<label class="col-md-4" for="actividadal">Actividades al aire libre</label>
 				<select class="col-md-4" name="actividadal" id="actividadal">
+					<option value="">Agregar nuevo</option>
 					<?php for($i = 0; $i < count($arrayQuery["ACTIVIDAD"]["NOMBRE"]); $i++){ ?>
 						<option value="<?php echo $arrayQuery["ACTIVIDAD"]["ID_ACTIVIDADAL"][$i] ?>">
 							<?php echo $arrayQuery["ACTIVIDAD"]["NOMBRE"][$i] ?>
@@ -179,6 +191,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 				<label class="col-md-4" for="tipo_bebedor">Tipo de bebedor</label>
 				<select class="col-md-4" name="tipo_bebedor" id="tipo_bebedor">
+					<option value="">Agregar nuevo</option>
 					<?php for($i = 0; $i < count($arrayQuery["TIPO_BEBEDOR"]["NOMBRE"]); $i++){ ?>
 						<option value="<?php echo $arrayQuery["TIPO_BEBEDOR"]["ID_TIPO_BEBEDOR"][$i] ?>">
 							<?php echo $arrayQuery["TIPO_BEBEDOR"]["NOMBRE"][$i] ?>
@@ -189,6 +202,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 				<label class="col-md-4" for="ocupacion">Ocupaciópn</label>
 				<select class="col-md-4" name="ocupacion" id="ocupacion">
+					<option value="">Agregar nuevo</option>
 					<?php for($i = 0; $i < count($arrayQuery["OCUPACION"]["NOMBRE"]); $i++){ ?>
 						<option value="<?php echo $arrayQuery["OCUPACION"]["ID_OCUPACION"][$i] ?>">
 							<?php echo $arrayQuery["OCUPACION"]["NOMBRE"][$i] ?>
@@ -199,6 +213,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 				<label class="col-md-4" for="color_ojos">Color Ojos</label>
 				<select class="col-md-4" name="color_ojos" id="color_ojos">
+					<option value="">Agregar nuevo</option>
 					<?php for($i = 0; $i < count($arrayQuery["COLOR_OJOS"]["NOMBRE"]); $i++){ ?>
 						<option value="<?php echo $arrayQuery["COLOR_OJOS"]["ID_COLOR_OJOS"][$i] ?>">
 							<?php echo $arrayQuery["COLOR_OJOS"]["NOMBRE"][$i] ?>
@@ -208,6 +223,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 				<label class="col-md-4" for="color_piel">Color piel</label>
 				<select class="col-md-4" name="color_piel" id="color_piel">
+					<option value="">Agregar nuevo</option>
 					<?php for($i = 0; $i < count($arrayQuery["COLOR_PIEL"]["NOMBRE"]); $i++){ ?>
 						<option value="<?php echo $arrayQuery["COLOR_PIEL"]["ID_COLOR_PIEL"][$i] ?>">
 							<?php echo $arrayQuery["COLOR_PIEL"]["NOMBRE"][$i] ?>
@@ -218,6 +234,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 				<label class="col-md-4" for="color_pelo">Color Pelo</label>
 				<select class="col-md-4" name="color_pelo" id="color_pelo">
+					<option value="">Agregar nuevo</option>
 					<?php for($i = 0; $i < count($arrayQuery["COLOR_PELO"]["NOMBRE"]); $i++){ ?>
 						<option value="<?php echo $arrayQuery["COLOR_PELO"]["ID_COLOR_PELO"][$i] ?>">
 							<?php echo $arrayQuery["COLOR_PELO"]["NOMBRE"][$i] ?>
@@ -228,6 +245,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 				<label class="col-md-4" for="contextura">Contextura</label>
 				<select class="col-md-4" name="contextura" id="contextura">
+					<option value="">Agregar nuevo</option>
 					<?php for($i = 0; $i < count($arrayQuery["CONTEXTURA"]["NOMBRE"]); $i++){ ?>
 						<option value="<?php echo $arrayQuery["CONTEXTURA"]["ID_CONTEXTURA"][$i] ?>">
 							<?php echo $arrayQuery["CONTEXTURA"]["NOMBRE"][$i] ?>
@@ -238,6 +256,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 				<label class="col-md-4" for="estado_match">Estado Match</label>
 				<select class="col-md-4" name="estado_match" id="estado_match">
+					<option value="">Agregar nuevo</option>
 					<?php for($i = 0; $i < count($arrayQuery["ESTADO_MATCH"]["NOMBRE"]); $i++){ ?>
 						<option value="<?php echo $arrayQuery["ESTADO_MATCH"]["ID_ESTADO_MATCH"][$i] ?>">
 							<?php echo $arrayQuery["ESTADO_MATCH"]["NOMBRE"][$i] ?>
@@ -248,6 +267,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				
 				<label class="col-md-4" for="estado_civil">Estado Civil</label>
 				<select class="col-md-4" name="estado_civil" id="estado_civil">
+					<option value="">Agregar nuevo</option>
+					<option value="">Agregar nuevo</option>
 					<?php for($i = 0; $i < count($arrayQuery["ESTADO_CIVIL"]["NOMBRE"]); $i++){ ?>
 						<option value="<?php echo $arrayQuery["ESTADO_CIVIL"]["ID_ESTADOCI"][$i] ?>">
 							<?php echo $arrayQuery["ESTADO_CIVIL"]["NOMBRE"][$i] ?>
@@ -347,31 +368,35 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		
 		$(".submit").click(function(){
 			return false;
-		})
+		});
 		
 		$("#Pais0").change(function(){
 			$("#Estado0").val("");
 			$("#Estado0 option:not(:first)").hide();
 			$("#Estado0 ."+$(this).val()).show();
-		})
+		});
 		
 		$("#Pais").change(function(){
 			$("#Estado").val("");
 			$("#Estado option:not(:first)").hide();
 			$("#Estado ."+$(this).val()).show();
-		})
+		});
 		
 		$("#Estado0").change(function(){
 			$("#Ciudad0").val("");
 			$("#Ciudad0 option:not(:first)").hide();
 			$("#Ciudad0 ."+$(this).val()).show();
-		})
+		});
 		
 		$("#Estado").change(function(){
 			$("#Ciudad").val("");
 			$("#Ciudad option:not(:first)").hide();
 			$("#Ciudad ."+$(this).val()).show();
-		})
+		});
+
+		$("#catalogos select").change(function(){
+			$("input[name='"+$(this).attr("name")+"_input']").val($(this).text());
+		});
 		
 		
 
