@@ -81,6 +81,50 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		$arrayQuery = queryCursor($conexion, "begin GET_Usuario({$_SESSION["active_user_id"] }, :cursbv); end;");
 	}
 	
+		
+	if (!empty($_POST) && $_POST["mode"] == "get_profile"){
+		$arrayQuery = queryCursor($conexion, "begin GET_Usuario({$user_id}, :cursbv); end;");
+		$arrayQuery["EDAD"] = 
+			queryFunction($conexion, 
+				"begin :value := GET_Edad( to_date({$arrayQuery["FECHA_NAC"]}, 'dd/mm/yyyy') ); end;");
+		
+		$arrayQuery["ID_RELIGION"] = queryCursor($conexion, "begin GET_Religion({$arrayQuery["ID_RELIGION"][0]}, :cursbv); end;");
+		$arrayQuery["ID_ESTADOCI"] = queryCursor($conexion, "begin GET_estado_Civil({$arrayQuery["ID_ESTADOCI"][0]}, :cursbv); end;");
+		$arrayQuery["ID_EDUCACION"] = queryCursor($conexion, "begin GET_Educacion({$arrayQuery["ID_EDUCACION"][0]}, :cursbv); end;");
+		
+		$arrayQuery["ID_CIUDAD"] = queryCursor($conexion, "begin GET_Ciudad({$arrayQuery["ID_CIUDAD"][0]}, :cursbv); end;");
+		$arrayQuery["ID_CIUDAD"]["ID_ESTADO"] = 
+			queryCursor($conexion, 
+				"begin GET_Estado({$arrayQuery["ID_CIUDAD"]["ID_ESTADO"][0]}, :cursbv); end;");
+		$arrayQuery["ID_CIUDAD"]["ID_Estado"]["ID_PAIS"] =
+			queryCursor($conexion, 
+				"begin GET_Pais({$arrayQuery["ID_CIUDAD"]["ID_ESTADO"]["ID_PAIS"][0]}, :cursbv); end;");
+				
+		$arrayQuery["ID_ASPECTOF"] = queryCursor($conexion, "begin GET_Aspecto_Fisico({$arrayQuery["ID_ASPECTOF"][0]}, :cursbv); end;");
+		$arrayQuery["ID_ASPECTOF"]["ID_COLOROJOS"] = 
+			queryCursor($conexion, 
+				"begin GET_Color_Ojos({$arrayQuery["ID_ASPECTOF"]["ID_COLOROJOS"][0]}, :cursbv); end;");
+		$arrayQuery["ID_ASPECTOF"]["ID_COLORPIEL"] = 
+			queryCursor($conexion, 
+				"begin GET_Color_Piel({$arrayQuery["ID_ASPECTOF"]["ID_COLORPIEL"][0]}, :cursbv); end;");
+		$arrayQuery["ID_ASPECTOF"]["ID_COLORPELO"] = 
+			queryCursor($conexion, 
+				"begin GET_Color_Pelo({$arrayQuery["ID_ASPECTOF"]["ID_COLORPELO"][0]}, :cursbv); end;");
+		$arrayQuery["ID_ASPECTOF"]["ID_CONTEXTURA"] = 
+			queryCursor($conexion, 
+				"begin GET_Contextura({$arrayQuery["ID_ASPECTOF"]["ID_CONTEXTURA"][0]}, :cursbv); end;");
+				
+		$arrayQuery["ID_ESTILOVIDA"] = queryCursor($conexion, "begin GET_Estilo_Vida({$arrayQuery["ID_ESTILOVIDA"][0]}, :cursbv); end;");
+		$arrayQuery["ID_ESTILOVIDA"]["ID_TIPOBEBEDOR"] = 
+			queryCursor($conexion, "begin GET_Tipo_Bebedor({$arrayQuery["ID_ESTILOVIDA"]["ID_TIPOBEBEDOR"][0]}, :cursbv); end;");
+
+		$arrayQuery["ID_SIGNO_ZODIACAL"] = queryCursor($conexion, "begin GET_Signo_Zodiacal({$arrayQuery["ID_SIGNO_ZODIACAL"][0]}, :cursbv); end;");
+
+		$arrayQuery["IDIOMAS"] = queryCursor($conexion, "begin GET_UsuarioXIdioma({$arrayQuery["ID_SIGNO_ZODIACAL"][0]}, :cursbv); end;");
+
+		
+	}
+
 	//*** EDITAR UN PERFIL *///
 	if (!empty($_POST) && $_POST["mode"] == "editar"){
 		$active_user_id = $_SESSION["active_user_id"];

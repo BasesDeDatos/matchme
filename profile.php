@@ -10,10 +10,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	$active_user_id = $_SESSION["active_user_id"];
 
 	$edit = $_GET["edit"]? 1 : 0;
+	$user_id = $_GET["user_id"] != ""? $_GET["user_id"] : $active_user_id;
 	$user_id = $edit? $active_user_id : $_GET["user_id"];
-
-	$prueba = 1;
-	// /include("funcionesOracle.php");
+	$arrayQuery = array(); 
+	$_POST["mode"] = "get_profile"; 
+	include ("funcionesOracle.php");
+	
 if ($edit){ ?>
 	<form id="form_data">
 		<input type="hidden" name="edit" value="1"/>
@@ -44,62 +46,88 @@ if ($edit){ ?>
 									Nombre:
 									<input type = "text" 
 										name = "nombre" 
-										value = <?php $Nombre ?>
-										default = "Sirius"/>
+										value = <?php echo $arrayQuery["NOMBRE"][0] ?>
+										default = <?php echo $arrayQuery["NOMBRE"][0] ?>/>
 									Primer Apellido:
 									<input type = "text" 
 										name = "Primer_apellido" 
-										value = <?php $Primer_apellido ?>
-										default = "Black"/>
+										value = <?php echo $arrayQuery["PRIMER_APELLIDO"][0] ?>
+										default = <?php echo $arrayQuery["PRIMER_APELLIDO"][0] ?>/>
 									Segundo Apellido:
 									<input type = "text" 
 										name = "Segundo_apellido" 
-										value = <?php $Segundo_apellido ?>
-										default = "Canuto"/>
+										value = <?php echo $arrayQuery["SEGUNDO_APELLIDO"][0] ?>
+										default = <?php echo $arrayQuery["PRIMER_APELLIDO"][0] ?>/>
 								<?php } else { ?> 
-									Sirius Black Canuto <?php echo $Nombre." ".$Primer_apellido." ".$Segundo_apellido ?>
-								<?php }	?>
+								<?php echo $arrayQuery["NOMBRE"][0]." ".$arrayQuery["PRIMER_APELLIDO"][0]." ".$arrayQuery["SEGUNDO_APELLIDO"][0] ?>								<?php }	?>
 							</h1>
 							
 							<h5>
 								<?php if ($edit){ ?>
 									<input type="email"
-										value = <?php $Email ?>
-										default = "sirius@designhas.com"
+										value = <?php echo $arrayQuery["EMAIL"][0] ?>
+										default = <?php echo $arrayQuery["EMAIL"][0] ?>
 										name="Email" />
 								<?php } else { ?> 
-									sirius@designhas.com <?php echo $Email ?>
+									<?php echo $arrayQuery["EMAIL"][0] ?>
 								<?php }	?>
 							</h5>
 							
-							<p><?php echo $Slogan ?></p>
+							<p>
+								<?php if ($edit){ ?>
+									<input type="textarea"
+										value = <?php echo $arrayQuery["ID_EstiloVida"]["SLOGAN"][0] ?>
+										default = <?php echo $arrayQuery["ID_EstiloVida"]["SLOGAN"][0] ?>
+										name="ID_EstiloVida" />
+								<?php } else { ?> 
+									<?php echo $arrayQuery["ID_EstiloVida"]["SLOGAN"][0] ?>
+								<?php }	?>
+							</p>
 							
 							<hr/>
 							<div class="resumen">
-								<p>Genero: <?php echo $Sexo ?></p>
-								<!--10/07/1990-->
+								<p>
+									Genero: <?php if ($edit){ ?>
+									<select type="textarea"
+										value = <?php echo $arrayQuery["GENERO"][0] ?>
+										name="GENERO"> 
+										<option value="Masculino" 
+											<?php echo $arrayQuery["GENERO"][0] == "Masculino"? "selected" : "" ?> >
+											Masculino
+										</option>
+										<option value="Femenino"
+											<?php echo $arrayQuery["GENERO"][0] == "Femenino"? "selected" : "" ?> >
+											Femenino
+										</option>
+									</select>
+									<?php } else { ?> 
+										<?php echo $arrayQuery["GENERO"][0] ?>
+									<?php }	?>
+								</p>
+
 								
-								
-								<p><?php if ($edit){ ?>
+								<p>
+									<?php if ($edit){ ?>
+										Fecha Nacimiento: 
 										<input type = "date" 
-										name = "Fecha_Nac" 
-										value = <?php $Fecha_nac ?>
-										default = "10/07/1990"/>
-								<?php } else { ?> 
-									Edad: 20<?php $Edad ?>
-								<?php }	?>
+											name = "Fecha_Nac" 
+											value = <?php echo $arrayQuery["FECHA_NAC"] ?>
+											default = <?php echo $arrayQuery["FECHA_NAC"] ?> />
+									<?php } else { ?> 
+										Edad: <?php echo $arrayQuery["EDAD"] ?>
+									<?php }	?>
 								</p>
 								
 								<p><?php if ($edit){ ?>
 										<select type = "date" 
 										name = "Fecha_Nac"></select>
 								<?php } else { ?> 
-									Ubicacion: San Jose <?php $Ciudad.", ".$Provincia.", ".$Pais ?>
+									Ubicacion: San Jose <?php echo $arrayQuery["CIUDAD"][0].", ".$arrayQuery["ESTADO"][0].", ".$arrayQuery["PAIS"][0] ?>
 								<?php }	?>
 								</p>
-								<p>Altura y peso: 1.60m, 65Kg <?php $Altura.", ".$Peso ?> </p>
-								<p>Busco: <?php $Interes ?></p>
-								<p>email: blacky@gmail.com <?php echo $Email ?> </p>
+								<p>Altura: <?php echo $arrayQuery["ASPECTO_FISICO"]["ALTURA"][0] ?> </p>
+								<p>Peso: <?php echo $arrayQuery["ASPECTO_FISICO"]["PESO"][0] ?> </p>
+								<p>Busco: <?php echo "####Entre ".$arrayQuery["INTERES_GUSTO"]["RANGO_EDADI"][0]." y ".$arrayQuery["INTERES_GUSTO"]["RANGO_EDADF"][0] ?></p>
 							</div>
 						</div>
 						<div class="btm-num">
@@ -147,16 +175,16 @@ if ($edit){ ?>
 					<div class="content">
 						<div class="content-1">
 							<!--div class = "Background"-->
-								<label class ="texto">Nivel de educacion: Bachillerato <?php echo $Educacion ?></label>
-								<label class ="texto">Idiomas: Checoslovaco <?php echo $Idiomas ?></label>
+								<label class ="texto">Nivel de educacion: <?php echo $arrayQuery["ID_EDUCACION"]["NOMBRE"][0] ?></label>
+								<label class ="texto">Idiomas: <?php echo explode(", ", $arrayQuery["IDIOMAS"]["NOMBRE"] ) ?></label>
 								<label class ="texto">Estado civil: Soltero <?php echo $Estado_Civil ?> </label>
-								<label class ="texto">Religion: Agnostico <?php echo $Religion ?> </label>
+								<label class ="texto">Religion: <?php echo $arrayQuery["ID_EDUCACION"]["NOMBRE"][0] ?></label>
 							<!--/div-->
 						</div>
 						<div class="content-2">
 							<!--div class= "EstiloVida"-->
-								<label class ="texto">Bebes?: No <?php echo $Bebedor ?> </label>
-								<label class ="texto">Fumas?: No<?php echo $Fumador ?> </label>
+								<label class ="texto">Bebe: <?php echo $Bebedor ?> </label>
+								<label class ="texto">Fuma: No<?php echo $Fumador ?> </label>
 								<label class ="texto">Frecuencia de ejercicios: Diario <?php echo $Frecuencia_Ejercicios ?> </label>
 								<label class ="texto">Cantidad de hijos: no tengo <?php echo $Hijos ?> </label>
 								<label class ="texto">Quiere hijos?:No quiero <?php echo $Hijos ?> </label>
