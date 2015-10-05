@@ -178,6 +178,7 @@ if ($edit){ ?>
 							<!--div class = "Background"-->
 								<label class ="texto">Nivel de educacion: <?php echo $arrayQuery["ID_EDUCACION"]["NOMBRE"][0] ?></label>
 								<label class ="texto">Idiomas: <?php echo implode(", ", $arrayQuery["IDIOMAS"]["NOMBRE"] ) ?></label>
+								
 								<label class ="texto">Estado civil: <?php echo $arrayQuery["ID_ESTADOCI"]["NOMBRE"][0] ?> </label>
 								<label class ="texto">Religion: <?php echo $arrayQuery["ID_RELIGION"]["NOMBRE"][0] ?></label>
 							<!--/div-->
@@ -204,8 +205,8 @@ if ($edit){ ?>
 						</div>
 						<div class="content-4">
 							<!--div class = "intereses y gustos"-->
-								<label class ="texto">Ejercicios,aire libre entre otros: caminar, nadar <?php echo $ActividadAL ?></label>
-								<label class ="texto">Hobbies: <?php echo $Hobby ?></label>
+								<label class ="texto">Actividades:  <?php echo implode(", ", $arrayQuery["ACTIVIDADES"]["NOMBRE"] ) ?></label>
+								<label class ="texto">Hobbies:  <?php echo implode(", ", $arrayQuery["HOBBIES"]["NOMBRE"] ) ?></label>
 							<!--/div-->
 						</div>
 						<div class="content-5">
