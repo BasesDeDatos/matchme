@@ -268,7 +268,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<label class="col-md-4" for="estado_civil">Estado Civil</label>
 				<select class="col-md-4" name="estado_civil" id="estado_civil">
 					<option value="">Agregar nuevo</option>
-					<option value="">Agregar nuevo</option>
+					<option value="1">valor demo</option>
 					<?php for($i = 0; $i < count($arrayQuery["ESTADO_CIVIL"]["NOMBRE"]); $i++){ ?>
 						<option value="<?php echo $arrayQuery["ESTADO_CIVIL"]["ID_ESTADOCI"][$i] ?>">
 							<?php echo $arrayQuery["ESTADO_CIVIL"]["NOMBRE"][$i] ?>
@@ -395,7 +395,47 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		});
 
 		$("#catalogos select").change(function(){
-			$("input[name='"+$(this).attr("name")+"_input']").val($(this).text());
+			var input = $("input[name='"+$(this).attr("name")+"_input']");
+			if ($(this).val() == ""){ input.val(""); } 
+			else { input.val( $(this).find("option:selected").text() );}
+		});
+		
+		$("#catalogos input").change(function(){
+			var value = $(this).val();
+			var input = $(this).attr("name");
+			var nameSelect = input.substring(0, input.length-6) //se borra la palabra "_input" para obtener el select;
+			var row_id = $("select[name='"+nameSelect+"'] option:selected").val();
+			if ($("select[name='"+nameSelect+"']").val() == ""){ // ADD
+				var data = "mode=registrar_catalogo&procedure=REGISTRAR"+nameSelect+"&value="+value;
+				$.ajax({  
+				    type: "POST",
+				    url: "funcionesOracle.php",
+				    data: data,
+				    success: function(data){
+				    	$("#debug").html(data);
+				        var data = $.parseJSON(data);
+				        alert(data.Content);
+				    }
+				});
+				$("select[name='"+nameSelect+"']").append(
+					"<option value='meter ID'>"+value+"</option>"
+				)
+				$("select[name='"+nameSelect+"'] option").last().attr("selected", "selected");
+			}
+			else{ //EDIT
+				var data = "mode=editar_catalogo&procedure=EDITAR"+nameSelect+"&row_id="+row_id+"&value="+value;
+				$.ajax({  
+				    type: "POST",
+				    url: "funcionesOracle.php",
+				    data: data,
+				    success: function(data){
+				    	$("#debug").html(data);
+				        var data = $.parseJSON(data);
+				        alert(data.Content);
+				    }
+				});
+				$("select[name='"+nameSelect+"'] option:selected").html(value);
+			}
 		});
 		
 		

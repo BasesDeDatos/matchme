@@ -160,6 +160,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		
 		$arrayQuery["ESTADO_CIVIL"] = queryCursor($conexion, "begin GET_Estado_Civil(null, :cursbv); end;");
 	}
+	
+	if (!empty($_POST) && $_POST["mode"] == "registrar_catalogo"){
+		queryPrecedure($conexion, "begin {$_POST["procedure"]}({$_POST["value"]}); end;");
+	}
+	
+	if (!empty($_POST) && $_POST["mode"] == "editar_catalogo"){
+		queryPrecedure($conexion, "begin {$_POST["procedure"]}({$_POST["row_id"]}, {$_POST["row_id"]}); end;");
+	}
+
 
 	//*** EDITAR UN PERFIL *///
 	if (!empty($_POST) && $_POST["mode"] == "editar"){
@@ -244,10 +253,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	
 	if ($conexion) {
     	oci_close($conexion);
-		OCILogoff($conexion);
 	}
-	
-	echo "\n"."USER: ".$_SESSION["active_user_id"];
 
 	function query($conexion, $sql) {
 		$s = oci_parse($conexion, $sql);
@@ -268,21 +274,42 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		return $arrayResult;
 	}
 
-	
-	function queryFunction($conexion,$sql) {
+	function queryFunction($conexion, $sql) {
 		$s = oci_parse($conexion, $sql);
 		oci_bind_by_name($s, ':value', $value);
 		$r = oci_execute($s, OCI_DEFAULT);
 		
 		if (!$r) {
+			$e = oci_error($s);
+			fwrite($fp, "return error ".$e['message']);
 			return -1;
 		}
 		
-
+		$fp = fopen("./log/log.log", "a");
+		fwrite($fp, DATE("d/M/y")." ".$sql);
+		fwrite($fp, " ".$value);
+		fwrite($fp, PHP_EOL);
+		fwrite($fp, "################{$_SESSION["active_user_id"]}################");
+		fwrite($fp, PHP_EOL);
+		fclose($fp);
+		oci_free_statement($s);
+		return $value;
+	}
+	
+	function queryPrecedure($conexion, $sql) {
+		$s = oci_parse($conexion, $sql);
+		$r = oci_execute($s, OCI_DEFAULT);
 
 		$fp = fopen("./log/log.log", "a");
 		fwrite($fp, DATE("d/M/y")." ".$sql);
-		fwrite($fp, $value);
+		
+		if (!$r) {
+			$e = oci_error($s);
+			fwrite($fp, "return error ".$e['message']);
+			return -1;
+		} 
+		
+		fwrite($fp, " ".$value);
 		fwrite($fp, PHP_EOL);
 		fwrite($fp, "################{$_SESSION["active_user_id"]}################");
 		fwrite($fp, PHP_EOL);
@@ -298,6 +325,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		oci_execute($s, OCI_DEFAULT);
 		oci_execute($curs, OCI_DEFAULT);
 		$fp = fopen("./log/log.log", "a");
+		fwrite($fp, DATE("d/M/y")." ".$sql);
 		$arrayResult = array();
 		while ($row = oci_fetch_array($curs, OCI_ASSOC + OCI_RETURN_NULLS)) {
 			foreach($row as $key => $item) {
@@ -305,9 +333,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				$arrayResult[$key][] = $item;
 			} 
 			fwrite($fp, PHP_EOL);
-			fwrite($fp, "################{$_SESSION["active_user_id"]}################");
-			fwrite($fp, PHP_EOL);
 		}
+		fwrite($fp, "################{$_SESSION["active_user_id"]}################");
+		fwrite($fp, PHP_EOL);
 		fclose($fp);
 		oci_free_statement($s);
 		oci_free_statement($curs);
