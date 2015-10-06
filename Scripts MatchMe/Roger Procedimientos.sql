@@ -2,7 +2,8 @@ CREATE OR REPLACE FUNCTION REGISTRAR_Rol(
 	pNombre IN VARCHAR2) AS
 BEGIN
 	INSERT INTO Rol(ID_Rol, Nombre)
-		VALUES(secu_Rol.NextVal, pNombre);
+	VALUES(secu_Rol.NextVal, pNombre);
+	RETURN secu_Rol.CurrVal;
 END REGISTRAR_Rol;
 
 CREATE OR REPLACE PROCEDURE EDITAR_Rol( 
@@ -28,6 +29,7 @@ CREATE OR REPLACE FUNCTION REGISTRAR_Bitacora_Visita(
 BEGIN
 	INSERT INTO Bitacora_Conocido(ID_Visita, Fecha, ID_Visitante, ID_visitado)
     VALUES(secu_Bitacora_Visita.NextVal, pFecha, pID_Visitante, pID_viditado);
+    	RETURN secu_Bitacora_Visita.CurrVal;
 END REGISTRAR_Bitacora_Visita;
 
 CREATE OR REPLACE PROCEDURE EDITAR_Bitacora_Visita( 
@@ -52,6 +54,7 @@ CREATE OR REPLACE FUNCTION REGISTRAR_Ciudad( pNombre IN VARCHAR2 ) AS
 BEGIN
 	INSERT INTO Ciudad(ID_Ciudad, Nombre, ID_estado)
     	VALUES(secu_Ciudad.NextVal, pNombre, pID_estado);
+    	RETURN secu_Ciudad.CurrVal;
 END REGISTRAR_Ciudad;
 
 CREATE OR REPLACE PROCEDURE EDITAR_Ciudad(pNombre IN VARCHAR2) AS
@@ -74,6 +77,7 @@ CREATE OR REPLACE FUNCTION REGISTRAR_Religion(
 BEGIN
 	INSERT INTO Religion(ID_Religion, Nombre)
 		VALUES(secu_Religion.NextVal, pNombre);
+		RETURN secu_Religion.CurrVal;
 END REGISTRAR_Religion;
 
 CREATE OR REPLACE PROCEDURE EDITAR_Religion( 
@@ -98,6 +102,7 @@ CREATE OR REPLACE FUNCTION REGISTRAR_Educacion(
 BEGIN
 	INSERT INTO Educacion(ID_Educacion, Nombre)
 		VALUES(secu_Educacion.NextVal, pNombre);
+		RETURN secu_Educacion.CurrVal;
 END REGISTRAR_Educacion;
 
 CREATE OR REPLACE PROCEDURE EDITAR_Educacion( 
@@ -120,6 +125,7 @@ CREATE OR REPLACE FUNCTION REGISTRAR_Hobby(
 BEGIN
  INSERT INTO Hobby(ID_Hobby, Genero)
   VALUES(secu_Hobby.NextVal, pGenero);
+  RETURN secu_Hobby.CurrVal;
 END REGISTRAR_Hobby;
 
 CREATE OR REPLACE PROCEDURE EDITAR_Hobby( 
@@ -143,7 +149,8 @@ CREATE OR REPLACE FUNCTION REGISTRAR_Tipo_Bebedor(
  Genero IN VARCHAR2) AS
 BEGIN
  INSERT INTO Tipo_Bebedor(ID_Tipo_Bebedor, Genero)
-  VALUES(secu_TTipo_Bebedor.NextVal, pGenero);
+  VALUES(secu_Tipo_Bebedor.NextVal, pGenero);
+  RETURN secu_Tipo_Bebedor.CurrVal;
 END REGISTRAR_Tipo_Bebedor;
 
 CREATE OR REPLACE PROCEDURE EDITAR_Tipo_Bebedor( 
@@ -166,6 +173,7 @@ CREATE OR REPLACE FUNCTION REGISTRAR_Color_Ojos(
 BEGIN
  INSERT INTO Color_Ojos(ID_ColorOjos, Nombre)
   VALUES(secu_Color_Ojos.NextVal, pNombre);
+  RETURN secu_Color_Ojos.CurrVal;
 END REGISTRAR_Color_Ojos;
 
 CREATE OR REPLACE PROCEDURE EDITAR_Color_Ojos( 
@@ -189,6 +197,7 @@ CREATE OR REPLACE FUNCTION REGISTRAR_Contextura(
 BEGIN
  INSERT INTO Contextura(ID_Contextura, Nombre)
   VALUES(secu_Contextura.NextVal, pNombre);
+  RETURN secu_Contextura.CurrVal;
 END REGISTRAR_Contextura;
 
 CREATE OR REPLACE PROCEDURE EDITAR_Contextura( 
@@ -213,6 +222,7 @@ CREATE OR REPLACE FUNCTION REGISTRAR_EventoXUsuario(
 BEGIN
  INSERT INTO EventoXUsuario(ID_EventoXUsuario, ID_Usuario, ID_Evento)
   VALUES(secu_EventoXUsuario.NextVal, pID_Usuario, pID_Evento);
+  RETURN secu_EventoXUsuario.CurrVal;
 END REGISTRAR_EventoXUsuario;
 
 CREATE OR REPLACE PROCEDURE EDITAR_EventoXUsuario( 
