@@ -131,14 +131,14 @@ if ($edit){ ?>
 								<p>Altura: <?php echo $arrayQuery["ID_ASPECTOF"]["ALTURA"][0] ?> </p>
 								<p>Peso: <?php echo $arrayQuery["ID_ASPECTOF"]["PESO"][0] ?> </p>
 								<p>Busco: <?php echo $arrayQuery["ID_INTERES_GUSTO"]["TIPO_PAREJA"][0]."s"?> </p>
-								<p> Entre: <?php echo $arrayQuery["ID_INTERES_GUSTO"]["RANGO_EDADI"][0]." y ".$arrayQuery["ID_INTERES_GUSTO"]["RANGO_EDADF"][0] ?></p>
+								<p>Entre: <?php echo $arrayQuery["ID_INTERES_GUSTO"]["RANGO_EDADI"][0]." y ".$arrayQuery["ID_INTERES_GUSTO"]["RANGO_EDADF"][0] ?></p>
 							</div>
 						</div>
 						<div class="btm-num">
 							<ul>
 								<li>
 									<h4>420</h4>
-									<h5>Seguidores</h5>
+									<h5>Visitas</h5>
 								</li>
 								<li>
 									<h4>100</h4>
@@ -160,9 +160,6 @@ if ($edit){ ?>
 				   
 					<input id="tab-2" type="radio" name="radio-set" class="tab-selector-2" />
 					<label for="tab-2" class="tab-label-2">Estilo de Vida</label>
-				   
-					<input id="tab-3" type="radio" name="radio-set" class="tab-selector-3" />
-					<label for="tab-3" class="tab-label-3">Descripcion personal</label>
 				   
 					<input id="tab-4" type="radio" name="radio-set" class="tab-selector-4" />
 					<label for="tab-4" class="tab-label-4">Intereses y gustos</label>
@@ -188,7 +185,7 @@ if ($edit){ ?>
 						</div>
 						<div class="content-2">
 							<!--div class= "EstiloVida"-->
-								<label class ="texto">Bebe: <?php echo $arrayQuery["ID_ESTILOVIDA"]["ID_TIPOBEBEDOR"]["NOMBRE"][0]?> </label>
+								<label class ="texto">Bebe: <?php echo $arrayQuery["ID_ESTILOVIDA"]["ID_TIPOBEBEDOR"]["CLASE"][0]?> </label>
 								<label class ="texto">Fuma: <?php echo $arrayQuery["ID_ESTILOVIDA"]["FUMA"][0]?> </label>
 								<label class ="texto">Frecuencia de ejercicios: <?php echo $arrayQuery["ID_ESTILOVIDA"]["FRECEJERCICIOS"][0]?> </label>
 								<label class ="texto">Cantidad de hijos: <?php echo $arrayQuery["ID_ESTILOVIDA"]["CANTIDADHIJOS"][0]?> </label>
@@ -205,11 +202,6 @@ if ($edit){ ?>
 								<label class ="texto">Tendría mascotas:<?php echo $arrayQuery["TENDRIA_MASCOTA"][0]?> </label>
 							<!--/div-->	
 						</div>
-						<div class="content-3">
-							<!--div class = "presentacion personal"-->
-								<label class ="texto">Descripcion propia: Me gusta bailar, hacer actividades al aire libre, pasar tiempo con seres queridos. <?php echo $Slogan ?></label>
-							<!--/div-->
-						</div>
 						<div class="content-4">
 							<!--div class = "intereses y gustos"-->
 								<label class ="texto">Actividades:  <?php echo implode(", ", $arrayQuery["ACTIVIDADES"]["NOMBRE"] ) ?></label>
@@ -218,19 +210,8 @@ if ($edit){ ?>
 						</div>
 						<div class="content-5">
 							<!--div class = "sobre la persona que busca"-->
-								<label class ="texto">Sexo: Mujer <?php echo $Sexo ?></label>
-								<label class ="texto">Edad: 23 a 28<?php echo $Rango_edadi." - ".$Rango_edadf ?></label>
-								<label class ="texto">El cuerpo de mi pareja debe ser: En forma<?php echo $Contextura ?> </label>
-								<label class ="texto">Color de piel de mi pareja: Me da igual <?php echo $Color_piel ?></label>
-								<label class ="texto">Ojos de mi pareja: Me da igual <?php echo $Color_ojos ?></label>
-								<label class ="texto">Bebe: No Beba <?php echo $Bebedor ?></label>
-								<label class ="texto">Fuma: No fume <?php echo $Fumador ?></label>
-								<label class ="texto">Referente a hijos, mi pareja: No tenga <?php echo $Hijos ?> </label>
-								<label class ="texto">Hijos en el futuro, quiero alguien que: Me da igual <?php echo $tendria_Hijos ?> </label>
-								<label class ="texto">Religion de mi pareja : Me da igual <?php echo $Religion ?></label>
-								<label class ="texto">Estado civil de mi pareja: Soltero(a) <?php echo $Estado_Civil ?></label>
-								<label class ="texto">Nivel minimo de estudios de mi Pareja: secundaria<?php echo $Escolaridad ?></label>
-								<label class ="texto">Pelo de mi pareja: Me da igual <?php echo $Color_pelo ?></label>
+								<label class ="texto">Busco: <?php echo $arrayQuery["ID_INTERES_GUSTO"]["TIPO_PAREJA"][0]."s"?> </label>
+								<label class ="texto">Entre: <?php echo $arrayQuery["ID_INTERES_GUSTO"]["RANGO_EDADI"][0]." y ".$arrayQuery["ID_INTERES_GUSTO"]["RANGO_EDADF"][0] ?></label>
 							<!--/div-->
 						</div>
 						

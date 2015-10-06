@@ -58,7 +58,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 	if (!$conexion) {
 		echo "Error de conexion: ".var_dump(OCIError());
-	//	trigger_error(htmlentities($e['message'], ENT_QUOTES), E_USER_ERROR);
+		trigger_error(htmlentities($e['message'], ENT_QUOTES), E_USER_ERROR);
 		die();
 	}
 	
@@ -141,7 +141,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 		$arrayQuery["HOBBY"] = queryCursor($conexion, "begin GET_Hobby(null, :cursbv); end;");
 		
-		$arrayQuery["ACTIVIDAD"] = queryCursor($conexion, "begin GET_Actividades(null, :cursbv); end;");
+		$arrayQuery["ACTIVIDAD"] = queryCursor($conexion, "begin GET_ActividadAL(null, :cursbv); end;");
 		
 		$arrayQuery["TIPO_BEBEDOR"] = queryCursor($conexion, "begin GET_Tipo_Bebedor(null, :cursbv); end;");
 		
@@ -161,11 +161,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	}
 	
 	if (!empty($_POST) && $_POST["mode"] == "registrar_catalogo"){
-		queryPrecedure($conexion, "begin {$_POST["procedure"]}({$_POST["value"]}); end;");
+		queryPrecedure($conexion, "begin {$_POST["procedure"]}('{$_POST["value"]}'); end;");
 	}
 	
 	if (!empty($_POST) && $_POST["mode"] == "editar_catalogo"){
-		queryPrecedure($conexion, "begin {$_POST["procedure"]}({$_POST["row_id"]}, {$_POST["row_id"]}); end;");
+		queryPrecedure($conexion, "begin {$_POST["procedure"]}({$_POST["row_id"]}, '{$_POST["value"]}'); end;");
 	}
 
 
@@ -297,18 +297,16 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	
 	function queryPrecedure($conexion, $sql) {
 		$s = oci_parse($conexion, $sql);
-		$r = oci_execute($s, OCI_DEFAULT);
+		$r = oci_execute($s, OCI_COMMIT_ON_SUCCESS);
 
 		$fp = fopen("./log/log.log", "a");
 		fwrite($fp, DATE("d/M/y")." ".$sql);
+		fwrite($fp, PHP_EOL);
 		
 		if (!$r) {
 			$e = oci_error($s);
 			fwrite($fp, "return error ".$e['message']);
-			return -1;
-		} 
-		
-		fwrite($fp, " ".$value);
+		} 	
 		fwrite($fp, PHP_EOL);
 		fwrite($fp, "################{$_SESSION["active_user_id"]}################");
 		fwrite($fp, PHP_EOL);
@@ -324,6 +322,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		oci_execute($curs, OCI_DEFAULT);
 		$fp = fopen("./log/log.log", "a");
 		fwrite($fp, DATE("d/M/y")." ".$sql);
+		fwrite($fp, PHP_EOL);
 		$arrayResult = array();
 		while ($row = oci_fetch_array($curs, OCI_ASSOC + OCI_RETURN_NULLS)) {
 			foreach($row as $key => $item) {
