@@ -6,7 +6,7 @@ CREATE OR REPLACE FUNCTION REGISTRAR_ACTIVIDADAL
 BEGIN
 	INSERT INTO actividadAL(id_actividadAL, nombre)
 	VALUES(secu_actividadAL.NextVal, pNombre);
-	RETURN secu_actividadAL.CurrentVal;
+	RETURN secu_actividadAL.CurrVal;
 END REGISTRAR_ACTIVIDADAL;
 
 CREATE OR REPLACE PROCEDURE EDITAR_ACTIVIDADAL
@@ -60,7 +60,7 @@ CREATE OR REPLACE FUNCTION REGISTRAR_PAIS
 BEGIN
 	INSERT INTO pais(id_pais, nombre)
 	VALUES(secu_pais.NextVal, pNombre);
-	RETURN secu_pais.CurrentVal;
+	RETURN secu_pais.CurrVal;
 END REGISTRAR_PAIS;
 
 CREATE OR REPLACE PROCEDURE EDITAR_PAIS
@@ -114,7 +114,7 @@ CREATE OR REPLACE FUNCTION REGISTRAR_OCUPACION
 BEGIN
 	INSERT INTO ocupacion(id_ocupacion, nombre)
 	VALUES(secu_ocupacion.NextVal, pNombre);
-	RETURN secu_ocupacion.CurrentVal;
+	RETURN secu_ocupacion.CurrVal;
 END REGISTRAR_OCUPACION;
 
 CREATE OR REPLACE PROCEDURE EDITAR_OCUPACION
@@ -167,7 +167,7 @@ CREATE OR REPLACE FUNCTION REGISTRAR_EVENTO
 BEGIN
 	INSERT INTO evento(id_evento, nombre, descripcion, fecha, id_cuidad)
 	VALUES(secu_evento.NextVal, pNombre, pDescripcion, TO_DATE(pFecha, 'DDMMYYYY hh24:mi:ss'), pId_Ciudad);
-	RETURN secu_evento.CurrentVal;
+	RETURN secu_evento.CurrVal;
 END REGISTRAR_EVENTO;
 
 CREATE OR REPLACE PROCEDURE EDITAR_EVENTO
@@ -223,13 +223,13 @@ end;
 
 -- Funciones
 
-CREATE OR REPLACE FUNCTION REGISTRAR_COLORPIEL
+CREATE OR REPLACE FUNCTION REGISTRAR_COLOR_PIEL
 ( pNombre IN VARCHAR2
 ) RETURN NUMBER AS
 BEGIN
 	INSERT INTO color_piel(id_colorpiel, nombre)
 	VALUES(secu_color_piel.NextVal, pNombre);
-	RETURN secu_color_piel.CurrentVal;
+	RETURN secu_color_piel.CurrVal;
 END REGISTRAR_COLORPIEL;
 
 CREATE OR REPLACE PROCEDURE EDITAR_COLORPIEL
@@ -283,7 +283,7 @@ CREATE OR REPLACE FUNCTION REGISTRAR_ESTADO_MATCH
 BEGIN
 	INSERT INTO estado_match(id_estado_match, nombre)
 	VALUES(secu_estado_match.NextVal, pNombre);
-	RETURN secu_estado_match.NextVal;
+	RETURN secu_estado_match.CurrVal;
 END REGISTRAR_ESTADOMATCH;
 
 CREATE OR REPLACE PROCEDURE EDITAR_ESTADOMATCH
@@ -337,7 +337,7 @@ CREATE OR REPLACE FUNCTION REGISTRAR_INTERES
 BEGIN
 	INSERT INTO interes_gusto(id_interesg, rango_edadi, rango_edadf, id_tipopareja)
 	VALUES(secu_interes_gusto.NextVal, pRango_edadi, pRango_edadf, pId_tipopareja);
-	RETURN secu_interes_gusto.NextVal;
+	RETURN secu_interes_gusto.CurrVal;
 END REGISTRAR_INTERES;
 
 CREATE OR REPLACE PROCEDURE EDITAR_INTERES
@@ -397,7 +397,7 @@ CREATE OR REPLACE FUNCTION REGISTRAR_USUARIOXIDIOMA
 BEGIN
 	INSERT INTO UsuarioXIdioma(ID_UsuarioXIdioma, id_usuario, id_idioma)
 	VALUES(secu_UsuarioXIdioma.NextVal, pId_usuario, pId_idioma);
-	RETURN secu_UsuarioXIdioma.NextVal;
+	RETURN secu_UsuarioXIdioma.CurrVal;
 END REGISTRAR_USUARIOXIDIOMA;
 
 CREATE OR REPLACE PROCEDURE EDITAR_USUARIOXIDIOMA
@@ -454,7 +454,7 @@ CREATE OR REPLACE FUNCTION REGISTRAR_USUARIOXOCUPACION
 BEGIN
 	INSERT INTO UsuarioXOcupacion(ID_UsuarioXOcupacion, id_usuario, id_ocupacion)
 	VALUES(secu_UsuarioXOcupacion.NextVal, pId_usuario, pId_ocupacion);
-	RETURN secu_UsuarioXOcupacion.NextVal;
+	RETURN secu_UsuarioXOcupacion.CurrVal;
 END REGISTRAR_USUARIOXOCUPACION;
 
 CREATE OR REPLACE PROCEDURE EDITAR_USUARIOXOCUPACION
@@ -512,7 +512,6 @@ CREATE OR REPLACE FUNCTION REGISTRAR_USUARIO
 	pFecha_nac IN VARCHAR2, 
 	pEmail IN VARCHAR2, 
 	pFoto IN VARCHAR2, 
-	pGenero IN NUMBER, 
 	pClave IN VARCHAR2, 
 	pGustan_mascota IN VARCHAR2, 
 	pTiene_mascota IN VARCHAR2, 
@@ -527,7 +526,9 @@ CREATE OR REPLACE FUNCTION REGISTRAR_USUARIO
 	pid_estilovida IN NUMBER, 
 	pid_ocupacion IN NUMBER, 
 	pid_rol IN NUMBER, 
-	pid_signo_zodiacal IN NUMBER
+	pid_signo_zodiacal IN NUMBER,
+	pid_interes_gusto IN NUMBER,
+	pid_Genero IN NUMBER
 ) RETURN NUMBER AS
 BEGIN
 	INSERT INTO Usuario(ID_Usuario, 
@@ -552,7 +553,9 @@ BEGIN
 					id_estilovida, 
 					id_ocupacion, 
 					id_rol, 
-					id_signo_zodiacal)
+					id_signo_zodiacal
+					id_interes_gusto,
+					id_genero)
 	VALUES(secu_Usuario.NextVal, 
 		   pNombre, 
 		   pPrimer_apellido, 
@@ -575,8 +578,10 @@ BEGIN
 		   pid_estilovida, 
 		   pid_ocupacion, 
 		   pid_rol, 
-		   pid_signo_zodiacal);
-	RETURN secu_Usuario.NextVal;
+		   pid_signo_zodiacal,
+		   pid_interes_gusto,
+			 pid_Genero);
+	RETURN secu_Usuario.CurrVal;
 END REGISTRAR_USUARIO;
 
 CREATE OR REPLACE PROCEDURE EDITAR_USUARIO
@@ -602,7 +607,9 @@ CREATE OR REPLACE PROCEDURE EDITAR_USUARIO
 	pid_estilovida IN NUMBER, 
 	pid_ocupacion IN NUMBER, 
 	pid_rol IN NUMBER, 
-	pid_signo_zodiacal IN NUMBER
+	pid_signo_zodiacal IN NUMBER,
+	pid_interes_gusto IN NUMBER,
+	pid_Genero IN NUMBER
 ) AS
 BEGIN
 	Update Usuario
@@ -627,7 +634,9 @@ BEGIN
 	   id_estilovida := pid_estilovida, 
 	   id_ocupacion := pid_ocupacion, 
 	   id_rol := pid_rol, 
-	   id_signo_zodiacal := pid_signo_zodiacal
+	   id_signo_zodiacal := pid_signo_zodiacal,
+	   id_interes_gusto := pid_interes_gusto,
+	   id_genero := pid_Genero
 	WHERE ID_Usuario = pID_Usuario;
 --NULL;
 END EDITAR_USUARIO;

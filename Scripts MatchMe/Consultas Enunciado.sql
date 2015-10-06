@@ -444,3 +444,30 @@ BEGIN
 	vPorcentaje := GET_PorcentajeMatch(vID1, vID2);
 	DBMS_OUTPUT.PUT_LINE(vCantidad);
 END;
+
+--EmailXPais--
+create or replace
+PROCEDURE get_EmailXPais (pID IN Usuario.ID_Ciudad%TYPE,
+p_recordset OUT SYS_REFCURSOR) AS 
+BEGIN 
+ OPEN p_recordset FOR
+ SELECT  Usuario.email
+ FROM  Usuario
+ WHERE pID := Usuario.id_ciudad;
+END get_EmailXPais;
+--Prueba--
+SET SERVEROUTPUT ON SIZE 1000000
+DECLARE
+  l_cursor  SYS_REFCURSOR;
+  l_Email usuario.Email%TYPE;
+
+BEGIN
+  get_EmailXPais(1, p_recordset => l_cursor);        
+  LOOP 
+    FETCH l_cursor
+    INTO  l_Email;
+    EXIT WHEN l_cursor%NOTFOUND;
+    DBMS_OUTPUT.PUT_LINE(l_Email);
+  END LOOP;
+  CLOSE l_cursor;
+END;
