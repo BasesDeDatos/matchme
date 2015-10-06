@@ -166,30 +166,30 @@ BEGIN
 END BORRAR_Estilo_Vida;
 
 
---################ Tipo_Pareja ################--
+--################ genero ################--
 
-CREATE OR REPLACE FUNCTION REGISTRAR_Tipo_Pareja(
-	Genero IN VARCHAR2) 	RETURN NUMBER AS
+CREATE OR REPLACE FUNCTION REGISTRAR_genero(
+	Nombre IN VARCHAR2) 	RETURN NUMBER AS
 BEGIN
-	INSERT INTO Tipo_Pareja(ID_TipoPareja, Genero)
-		VALUES(secu_Tipo_Pareja.NextVal, pGenero);
+	INSERT INTO genero(ID_genero, Nombre)
+		VALUES(secu_genero.NextVal, pNombre);
 	RETURN secu_Hobby.currval;
-END Registrar_Tipo_Pareja;
+END Registrar_genero;
 
-CREATE OR REPLACE PROCEDURE EDITAR_Tipo_Pareja( 
+CREATE OR REPLACE PROCEDURE EDITAR_genero( 
 	pID IN NUMBER, 	
 	pGenero IN VARCHAR2) AS
 BEGIN
-	Update Tipo_Pareja
-		set (Genero := pGenero)
-	    WHERE ID_TipoPareja = pID;
-END EDITAR_Tipo_Pareja;
+	Update genero
+		set (Nombre := pNombre)
+	    WHERE ID_genero = pID;
+END EDITAR_genero;
 
-CREATE OR REPLACE PROCEDURE BORRAR_Tipo_Pareja( pID IN NUMBER ) AS
+CREATE OR REPLACE PROCEDURE BORRAR_genero( pID IN NUMBER ) AS
 BEGIN
-	delete from Tipo_Pareja
-	WHERE ID_Tipo_Pareja = pID;
-END BORRAR_Tipo_Pareja;
+	delete from genero
+	WHERE ID_genero = pID;
+END BORRAR_genero;
 
 
 --################ Aspecto_Fisico ################--
@@ -202,7 +202,7 @@ CREATE OR REPLACE FUNCTION REGISTRAR_Aspecto_Fisico(
     ID_ColorPelo,
     ID_Contextura) 	RETURN NUMBER AS
 BEGIN
-	INSERT INTO Aspecto_Fisico(ID_TipoPareja, Genero)
+	INSERT INTO Aspecto_Fisico(ID_genero, Genero)
 		VALUES(secu_Aspecto_Fisico.NextVal, pGenero);
 	RETURN secu_Hobby.currval;
 END Registrar_Aspecto_Fisico;
@@ -213,7 +213,7 @@ CREATE OR REPLACE PROCEDURE EDITAR_Aspecto_Fisico(
 BEGIN
 	Update Aspecto_Fisico
 		set (Genero := pGenero)
-	    WHERE ID_TipoPareja = pID;
+	    WHERE ID_genero = pID;
 END EDITAR_Aspecto_Fisico;
 
 CREATE OR REPLACE PROCEDURE BORRAR_Aspecto_Fisico( pID IN NUMBER ) AS
