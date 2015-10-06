@@ -373,12 +373,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		});
 		
 		$("#Pais0").change(function(){
+			$("#Ciudad0").val("");
 			$("#Estado0").val("");
 			$("#Estado0 option:not(:first)").hide();
 			$("#Estado0 ."+$(this).val()).show();
 		});
 		
 		$("#Pais").change(function(){
+			$("#Ciudad").val("");
 			$("#Estado").val("");
 			$("#Estado option:not(:first)").hide();
 			$("#Estado ."+$(this).val()).show();
@@ -423,8 +425,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				$("select[name='"+nameSelect+"'] option").last().attr("selected", "selected");
 			}
 			else{ //EDIT
-				var data = "mode=editar_catalogo&procedure=EDITAR_"+nameSelect+"&row_id="+row_id+ "&value="+value;
-//				var data = "mode=editar_catalogo&procedure=EDITAR_"+nameSelect+"&value="+value+ "&row_id="+row_id;
+				var data = "mode=editar_catalogo&procedure=EDITAR_"+nameSelect+"&value="+value+ "&row_id="+row_id;
 				$.ajax({  
 				    type: "POST",
 				    url: "funcionesOracle.php",
