@@ -1,12 +1,13 @@
 --################ Signo_Zodiacal ################--
-CREATE OR REPLACE PROCEDURE REGISTRAR_Signo_Zodiacal(
+CREATE OR REPLACE FUNCTION REGISTRAR_Signo_Zodiacal(
 	pNombre IN VARCHAR2, 
 	pfecha_inicio IN DATE, 
-	pfecha_final IN DATE) AS
+	pfecha_final IN DATE) 	RETURN NUMBER AS
 BEGIN
 	INSERT INTO Signo_Zodiacal (ID_Signo_Zodiacal, Nombre, fecha_inicio, fecha_final)
     VALUES(secu_signo_zodiacal.NextVal, pNombre, pfecha_inicio, pfecha_final);
-END REGISTRAR_Signo_Zodiacal;
+	RETURN secu_signo_zodiacal.currval;
+END Registrar_Signo_Zodiacal;
 
 CREATE OR REPLACE PROCEDURE EDITAR_Signo_Zodiacal( 
 	pID IN NUMBER, 	
@@ -26,41 +27,14 @@ BEGIN
 END BORRAR_Signo_Zodiacal;
 
 
---################ Bitacora_Conocido ################--
-
-CREATE OR REPLACE PROCEDURE REGISTRAR_Bitacora_Conocido(
-	pFecha IN DATE, 
-	pID_Propio IN NUMBER, 
-	pID_Conocido IN NUMBER) AS
-BEGIN
-	INSERT INTO Bitacora_Conocido(ID_Bitacora_Conocido, Fecha, ID_Propio, ID_Conocido)
-    VALUES(secu_Bitacora_Conocido.NextVal, pFecha, pID_Propio, pID_Conocido);
-END REGISTRAR_Bitacora_Conocido;
-
-CREATE OR REPLACE PROCEDURE EDITAR_Bitacora_Conocido( 
-	pID IN NUMBER, 	
-	pFecha IN DATE, 
-	pID_Propio IN NUMBER, 
-	pID_Conocido IN NUMBER) AS
-BEGIN
-	Update Bitacora_Conocido
-	set (Fecha := pFecha, ID_Propio = pID_Propio, ID_Conocido = pID_Conocido)
-    	WHERE ID_Bitacora_Conocido = pID;
-END EDITAR_Bitacora_Conocido;
-
-CREATE OR REPLACE PROCEDURE BORRAR_Bitacora_Conocido( pID IN NUMBER ) AS
-BEGIN
-	delete from Bitacora_Conocido
-	WHERE ID_Bitacora_Conocido = pID;
-END BORRAR_Bitacora_Conocido;
-
 --################ estado ################--
 
-CREATE OR REPLACE PROCEDURE REGISTRAR_estado( pNombre IN VARCHAR2, pPais In Number ) AS
+CREATE OR REPLACE FUNCTION REGISTRAR_estado( pNombre IN VARCHAR2, pPais In Number ) 	RETURN NUMBER AS
 BEGIN
 	INSERT INTO estado(ID_estado, Nombre, pais)
     	VALUES(secu_estado.NextVal, pNombre, pPais);
-END REGISTRAR_estado;
+	RETURN secu_Hobby.currval;
+END Registrar_estado;
 
 CREATE OR REPLACE PROCEDURE EDITAR_estado(pID In Number, pNombre IN VARCHAR2, pPais In Number) AS
 BEGIN
@@ -78,14 +52,15 @@ END BORRAR_estado;
 
 --################ UsuariosXWink ################--
 
-CREATE OR REPLACE PROCEDURE REGISTRAR_UsuariosXWink(
+CREATE OR REPLACE FUNCTION REGISTRAR_UsuariosXWink(
 	pFecha IN DATE, 
 	pID_Enviado IN NUMBER, 
-	pID_Recibido IN NUMBER) AS
+	pID_Recibido IN NUMBER) 	RETURN NUMBER AS
 BEGIN
 	INSERT INTO UsuariosXWink(ID_UsuariosXWink, Fecha, ID_Enviado, ID_Recibido)
 		VALUES(secu_usuariosXWink.NextVal, pFecha, pID_Enviado, pID_Recibido);
-END REGISTRAR_UsuariosXWink;
+	RETURN secu_Hobby.currval;
+END Registrar_UsuariosXWink;
 
 CREATE OR REPLACE PROCEDURE EDITAR_UsuariosXWink( 
 	pID IN NUMBER, 	
@@ -106,12 +81,13 @@ END BORRAR_UsuariosXWink;
 
 --################ Idioma ################--
 
-CREATE OR REPLACE PROCEDURE REGISTRAR_Idioma(
-	pNombre IN VARCHAR2) AS
+CREATE OR REPLACE FUNCTION REGISTRAR_Idioma(
+	pNombre IN VARCHAR2) 	RETURN NUMBER AS
 BEGIN
 	INSERT INTO Idioma(ID_Idioma, Nombre)
 		VALUES(secu_Idioma.NextVal, pNombre);
-END REGISTRAR_Idioma;
+	RETURN secu_Hobby.currval;
+END Registrar_Idioma;
 
 CREATE OR REPLACE PROCEDURE EDITAR_Idioma( 
 	pID IN NUMBER, 	
@@ -130,14 +106,14 @@ END BORRAR_Idioma;
 
 --################ Estilo_Vida ################--
 
-CREATE OR REPLACE PROCEDURE REGISTRAR_Estilo_Vida(
+CREATE OR REPLACE FUNCTION REGISTRAR_Estilo_Vida(
 	pFuma IN VARCHAR2, 
     pFrecEjercicios IN VARCHAR2, 
     pCantidadHijos IN NUMBER, 
     pQuiereHIjos IN VARCHAR2, 
     pSalarioPromedio IN NUMBER, 
     pSlogan IN VARCHAR2, 
-    pID_TipoBebedor IN Number) AS
+    pID_TipoBebedor IN Number) 	RETURN NUMBER AS
 BEGIN
 	INSERT INTO Estilo_Vida(
 		ID_Estilo_Vida,
@@ -157,7 +133,8 @@ BEGIN
         pSalarioPromedio, 
         pSlogan, 
         pSlogan);
-END REGISTRAR_Estilo_Vida;
+	RETURN secu_Hobby.currval;
+END Registrar_Estilo_Vida;
 
 CREATE OR REPLACE PROCEDURE EDITAR_Estilo_Vida( 
 	pID IN NUMBER, 	
@@ -191,12 +168,13 @@ END BORRAR_Estilo_Vida;
 
 --################ Tipo_Pareja ################--
 
-CREATE OR REPLACE PROCEDURE REGISTRAR_Tipo_Pareja(
-	Genero IN VARCHAR2) AS
+CREATE OR REPLACE FUNCTION REGISTRAR_Tipo_Pareja(
+	Genero IN VARCHAR2) 	RETURN NUMBER AS
 BEGIN
 	INSERT INTO Tipo_Pareja(ID_TipoPareja, Genero)
 		VALUES(secu_Tipo_Pareja.NextVal, pGenero);
-END REGISTRAR_Tipo_Pareja;
+	RETURN secu_Hobby.currval;
+END Registrar_Tipo_Pareja;
 
 CREATE OR REPLACE PROCEDURE EDITAR_Tipo_Pareja( 
 	pID IN NUMBER, 	
@@ -216,17 +194,18 @@ END BORRAR_Tipo_Pareja;
 
 --################ Aspecto_Fisico ################--
 
-CREATE OR REPLACE PROCEDURE REGISTRAR_Aspecto_Fisico(
+CREATE OR REPLACE FUNCTION REGISTRAR_Aspecto_Fisico(
     Altura IN NUMBER,
     Peso,
     ID_ColorOjos,
     ID_ColorPiel,
     ID_ColorPelo,
-    ID_Contextura) AS
+    ID_Contextura) 	RETURN NUMBER AS
 BEGIN
 	INSERT INTO Aspecto_Fisico(ID_TipoPareja, Genero)
 		VALUES(secu_Aspecto_Fisico.NextVal, pGenero);
-END REGISTRAR_Aspecto_Fisico;
+	RETURN secu_Hobby.currval;
+END Registrar_Aspecto_Fisico;
 
 CREATE OR REPLACE PROCEDURE EDITAR_Aspecto_Fisico( 
 	pID IN NUMBER, 	
@@ -246,12 +225,13 @@ END BORRAR_Aspecto_Fisico;
 
 --################ Color_Pelo ################--
 
-CREATE OR REPLACE PROCEDURE REGISTRAR_Color_Pelo(
-	pNombre IN VARCHAR2) AS
+CREATE OR REPLACE FUNCTION REGISTRAR_Color_Pelo(
+	pNombre IN VARCHAR2) 	RETURN NUMBER AS
 BEGIN
 	INSERT INTO Color_Pelo(ID_ColorPelo, Nombre)
 		VALUES(secu_Color_Pelo.NextVal, pNombre);
-END REGISTRAR_Color_Pelo;
+	RETURN secu_Hobby.currval;
+END Registrar_Color_Pelo;
 
 CREATE OR REPLACE PROCEDURE EDITAR_Color_Pelo( 
 	pID IN NUMBER, 	
@@ -270,15 +250,16 @@ END BORRAR_Color_Pelo;
 
 --################ UsuariosXMatch ################--
 
-CREATE OR REPLACE PROCEDURE REGISTRAR_UsuariosXMatch(
+CREATE OR REPLACE FUNCTION REGISTRAR_UsuariosXMatch(
 	pFecha IN DATE,
 	pID_Estado_match IN NUMBER,
 	pID_Propio IN NUMBER, 
-	pID_Recomendacion IN NUMBER) AS
+	pID_Recomendacion IN NUMBER) 	RETURN NUMBER AS
 BEGIN
 	INSERT INTO UsuariosXMatch(ID_UsuariosXMatch, Fecha, ID_Estado_match, ID_Propio, ID_Recomendacion)
 		VALUES(secu_UsuariosXMatch.NextVal, pFecha, pID_Estado_match, pID_Propio, pID_Recomendacion);
-END REGISTRAR_UsuariosXMatch;
+	RETURN secu_Hobby.currval;
+END Registrar_UsuariosXMatch;
 
 CREATE OR REPLACE PROCEDURE EDITAR_UsuariosXMatch( 
 	pID IN NUMBER, 	
@@ -300,13 +281,14 @@ END BORRAR_UsuariosXMatch;
 
 --################ HobbyXUsuario ################--
 
-CREATE OR REPLACE PROCEDURE REGISTRAR_HobbyXUsuario(
+CREATE OR REPLACE FUNCTION REGISTRAR_HobbyXUsuario(
 	pID_Usuario IN NUMBER,
-	pID_Hobby IN NUMBER) AS
+	pID_Hobby IN NUMBER) 	RETURN NUMBER AS
 BEGIN
 	INSERT INTO HobbyXUsuario(ID_HobbyXUsuario, ID_Usuario, ID_Hobby)
 		VALUES(secu_HobbyXUsuario.NextVal, pID_Usuario, pID_Hobby);
-END REGISTRAR_HobbyXUsuario;
+	RETURN secu_Hobby.currval;
+END Registrar_HobbyXUsuario;
 
 CREATE OR REPLACE PROCEDURE EDITAR_HobbyXUsuario( 
 	pID IN NUMBER, 	
@@ -328,13 +310,14 @@ END BORRAR_HobbyXUsuario;
 
 --################ ActividadXUsuario ################--
 
-CREATE OR REPLACE PROCEDURE REGISTRAR_ActividadXUsuario(
+CREATE OR REPLACE FUNCTION REGISTRAR_ActividadXUsuario(
 	pID_Usuario IN NUMBER,
-	pID_actividadA IN NUMBER) AS
+	pID_actividadA IN NUMBER) 	RETURN NUMBER AS
 BEGIN
 	INSERT INTO ActividadXUsuario(ID_ActividadXUsuario, ID_Usuario, ID_actividadA)
 		VALUES(secu_ActividadXUsuario.NextVal, pID_Usuario, pID_actividadA);
-END REGISTRAR_ActividadXUsuario;
+	RETURN secu_Hobby.currval;
+END Registrar_ActividadXUsuario;
 
 CREATE OR REPLACE PROCEDURE EDITAR_ActividadXUsuario( 
 	pID IN NUMBER, 	
