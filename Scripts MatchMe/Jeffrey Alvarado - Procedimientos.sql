@@ -1,15 +1,15 @@
 -- Funciones
 
-CREATE OR REPLACE PROCEDURE REGISTRARACTIVIDADAL
+CREATE OR REPLACE FUNCTION REGISTRAR_ACTIVIDADAL
 ( pNombre IN VARCHAR2
-) AS
+) RETURN NUMBER AS
 BEGIN
 	INSERT INTO actividadAL(id_actividadAL, nombre)
 	VALUES(secu_actividadAL.NextVal, pNombre);
 --NULL;
-END REGISTRARACTIVIDADAL;
+END REGISTRAR_ACTIVIDADAL;
 
-CREATE OR REPLACE PROCEDURE EDITARACTIVIDADAL
+CREATE OR REPLACE PROCEDURE EDITAR_ACTIVIDADAL
 ( pID_ActividadAL IN NUMBER, pNombre IN VARCHAR2
 ) AS
 BEGIN
@@ -17,36 +17,36 @@ BEGIN
 	set nombre := pNombre
 	WHERE id_actividadAL = pID_ActividadAL;
 --NULL;
-END EDITARACTIVIDADAL;
+END EDITAR_ACTIVIDADAL;
 
-CREATE OR REPLACE PROCEDURE BORRARACTIVIDADAL
+CREATE OR REPLACE PROCEDURE BORRAR_ACTIVIDADAL
 ( pID_ActividadAL IN NUMBER
 ) AS
 BEGIN
 	delete from actividadAL
 	WHERE id_actividadAL = pID_ActividadAL;
 --NULL;
-END BORRARACTIVIDADAL;
+END BORRAR_ACTIVIDADAL;
 
 --Prueba
 
 declare
   vNombre varchar2(30) := 'Escalar';
 begin
-  registraractividadal(vNombre);
+  REGISTRAR_actividadal(vNombre);
 end;
 
 declare
   vNombre varchar2(30) := 'Correr';
   vID Number := 1;
 begin
-  editaractividadal(vID, vNombre);
+  EDITAR_actividadal(vID, vNombre);
 end;
 
 declare
   vID Number := 1;
 begin
-  borraractividadal(vID);
+  BORRAR_actividadal(vID);
 end;
 
 ----------------------------------------------------
@@ -54,16 +54,16 @@ end;
 
 -- Funciones----------------------------------------
 
-CREATE OR REPLACE PROCEDURE REGISTRARPAIS
+CREATE OR REPLACE FUNCTION REGISTRAR_PAIS
 ( pNombre IN VARCHAR2
-) AS
+) RETURN NUMBER AS
 BEGIN
 	INSERT INTO pais(id_pais, nombre)
 	VALUES(secu_pais.NextVal, pNombre);
 --NULL;
-END REGISTRARPAIS;
+END REGISTRAR_PAIS;
 
-CREATE OR REPLACE PROCEDURE EDITARPAIS
+CREATE OR REPLACE PROCEDURE EDITAR_PAIS
 ( pID_pais IN NUMBER, pNombre IN VARCHAR2
 ) AS
 BEGIN
@@ -71,36 +71,36 @@ BEGIN
 	set nombre := pNombre
 	WHERE id_pais = pID_pais;
 --NULL;
-END EDITARPAIS;
+END EDITAR_PAIS;
 
-CREATE OR REPLACE PROCEDURE BORRARPAIS
+CREATE OR REPLACE PROCEDURE BORRAR_PAIS
 ( pID_pais IN NUMBER
 ) AS
 BEGIN
 	delete from pais
 	WHERE id_pais = pID_pais;
 --NULL;
-END BORRARPAIS;
+END BORRAR_PAIS;
 
 --Prueba-------------------------------------------
 
 declare
   vNombre varchar2(30) := 'Cota Rica';
 begin
-  registrarpais(vNombre);
+  REGISTRAR_pais(vNombre);
 end;
 
 declare
   vNombre varchar2(30) := 'Costa Rica';
   vID Number := 1;
 begin
-  editarpais(vID, vNombre);
+  EDITAR_pais(vID, vNombre);
 end;
 
 declare
   vID Number := 1;
 begin
-  borrarpais(vID);
+  BORRAR_pais(vID);
 end;
 
 ----------------------------------------------------
@@ -108,52 +108,52 @@ end;
 
 -- Funciones
 
-CREATE OR REPLACE PROCEDURE REGISTRAROCUPACION
+CREATE OR REPLACE FUNCTION REGISTRAR_OCUPACION
 ( pNombre IN VARCHAR2
-) AS
+) RETURN NUMBER AS
 BEGIN
 	INSERT INTO ocupacion(id_ocupacion, nombre)
 	VALUES(secu_ocupacion.NextVal, pNombre);
 --NULL;
-END REGISTRAROCUPACION;
+END REGISTRAR_OCUPACION;
 
-CREATE OR REPLACE PROCEDURE EDITAROCUPACION
+CREATE OR REPLACE PROCEDURE EDITAR_OCUPACION
 ( pID_ocupacion IN NUMBER, pNombre IN VARCHAR2
 ) AS
 BEGIN
 	Update ocupacion
 	set nombre := pNombre
 	WHERE id_ocupacion = pID_ocupacion;
-END EDITAROCUPACION;
+END EDITAR_OCUPACION;
 
-CREATE OR REPLACE PROCEDURE BORRAROCUPACION
+CREATE OR REPLACE PROCEDURE BORRAR_OCUPACION
 ( pID_ocupacion IN NUMBER
 ) AS
 BEGIN
 	delete from ocupacion
 	WHERE id_ocupacion = pID_ocupacion;
 --NULL;
-END BORRAROCUPACION;
+END BORRAR_OCUPACION;
 
 --Prueba-------------------------------------------
 
 declare
   vNombre varchar2(30) := 'Programador';
 begin
-  registrarocupacion(vNombre);
+  REGISTRAR_ocupacion(vNombre);
 end;
 
 declare
   vNombre varchar2(30) := 'Profesor';
   vID Number := 1;
 begin
-  editarocupacion(vID, vNombre);
+  EDITAR_ocupacion(vID, vNombre);
 end;
 
 declare
   vID Number := 1;
 begin
-  borrarocupacion(vID);
+  BORRAR_ocupacion(vID);
 end;
 
 ----------------------------------------------------
@@ -161,16 +161,16 @@ end;
 
 -- Funciones
 
-CREATE OR REPLACE PROCEDURE REGISTRAREVENTO
+CREATE OR REPLACE FUNCTION REGISTRAR_EVENTO
 ( pNombre IN VARCHAR2, pDescripcion IN VARCHAR2, pFecha IN VARCHAR2, pId_Ciudad IN NUMBER
-) AS
+) RETURN NUMBER AS
 BEGIN
 	INSERT INTO evento(id_evento, nombre, descripcion, fecha, id_cuidad)
 	VALUES(secu_evento.NextVal, pNombre, pDescripcion, TO_DATE(pFecha, 'DDMMYYYY hh24:mi:ss'), pId_Ciudad);
 --NULL;
-END REGISTRAREVENTO;
+END REGISTRAR_EVENTO;
 
-CREATE OR REPLACE PROCEDURE EDITAREVENTO
+CREATE OR REPLACE PROCEDURE EDITAR_EVENTO
 ( pID_evento IN NUMBER, pNombre IN VARCHAR2, pDescripcion IN VARCHAR2, pFecha IN VARCHAR2, pId_Ciudad IN NUMBER
 ) AS
 BEGIN
@@ -180,16 +180,16 @@ BEGIN
 		fecha := TO_DATE(pFecha, 'DDMMYYYY hh24:mi:ss')
 		id_cuidad := pId_Ciudad
 	WHERE id_evento = pID_evento;
-END EDITAREVENTO;
+END EDITAR_EVENTO;
 
-CREATE OR REPLACE PROCEDURE BORRAREVENTO
+CREATE OR REPLACE PROCEDURE BORRAR_EVENTO
 ( pID_evento IN NUMBER
 ) AS
 BEGIN
 	delete from evento
 	WHERE id_evento = pID_evento;
 --NULL;
-END BORRAREVENTO;
+END BORRAR_EVENTO;
 
 --Prueba-------------------------------------------
 
@@ -199,7 +199,7 @@ declare
   vFecha varchar2(30) := '20032015 18:00:00';
   vCiudad Number := 1;
 begin
-  registrarevento(vNombre, vDescripcion, vFecha, vCiudad);
+  REGISTRAR_evento(vNombre, vDescripcion, vFecha, vCiudad);
 end;
 
 declare
@@ -209,13 +209,13 @@ declare
   vCiudad Number := 1;
   vID Number := 1;
 begin
-  editarevento(vID, vNombre, vDescripcion, vFecha, vCiudad);
+  EDITAR_evento(vID, vNombre, vDescripcion, vFecha, vCiudad);
 end;
 
 declare
   vID Number := 1;
 begin
-  borrarevento(vID);
+  BORRAR_evento(vID);
 end;
 
 ----------------------------------------------------
@@ -223,16 +223,16 @@ end;
 
 -- Funciones
 
-CREATE OR REPLACE PROCEDURE REGISTRARCOLORPIEL
+CREATE OR REPLACE FUNCTION REGISTRAR_COLORPIEL
 ( pNombre IN VARCHAR2
-) AS
+) RETURN NUMBER AS
 BEGIN
 	INSERT INTO color_piel(id_colorpiel, nombre)
 	VALUES(secu_color_piel.NextVal, pNombre);
 --NULL;
-END REGISTRARCOLORPIEL;
+END REGISTRAR_COLORPIEL;
 
-CREATE OR REPLACE PROCEDURE EDITARCOLORPIEL
+CREATE OR REPLACE PROCEDURE EDITAR_COLORPIEL
 ( pid_colorpiel IN NUMBER, pNombre IN VARCHAR2
 ) AS
 BEGIN
@@ -240,36 +240,36 @@ BEGIN
 	set nombre := pNombre
 	WHERE id_colorpiel = pid_colorpiel;
 --NULL;
-END EDITARCOLORPIEL;
+END EDITAR_COLORPIEL;
 
-CREATE OR REPLACE PROCEDURE BORRARCOLORPIEL
+CREATE OR REPLACE PROCEDURE BORRAR_COLORPIEL
 ( pid_colorpiel IN NUMBER
 ) AS
 BEGIN
 	delete from color_piel
 	WHERE id_colorpiel = pid_colorpiel;
 --NULL;
-END BORRARCOLORPIEL;
+END BORRAR_COLORPIEL;
 
 --Prueba-------------------------------------------
 
 declare
   vNombre varchar2(30) := 'Amarillo';
 begin
-  registrarcolorpiel(vNombre);
+  REGISTRAR_colorpiel(vNombre);
 end;
 
 declare
   vNombre varchar2(30) := 'Blanco';
   vID Number := 1;
 begin
-  editarcolorpiel(vID, vNombre);
+  EDITAR_colorpiel(vID, vNombre);
 end;
 
 declare
   vID Number := 1;
 begin
-  borrarcolorpiel(vID);
+  BORRAR_colorpiel(vID);
 end;
 
 ----------------------------------------------------
@@ -277,16 +277,16 @@ end;
 
 -- Funciones
 
-CREATE OR REPLACE PROCEDURE REGISTRARESTADOMATCH
+CREATE OR REPLACE FUNCTION REGISTRAR_ESTADOMATCH
 ( pNombre IN VARCHAR2
-) AS
+) RETURN NUMBER AS
 BEGIN
 	INSERT INTO estado_match(id_estado_match, nombre)
 	VALUES(secu_estado_match.NextVal, pNombre);
 --NULL;
-END REGISTRARESTADOMATCH;
+END REGISTRAR_ESTADOMATCH;
 
-CREATE OR REPLACE PROCEDURE EDITARESTADOMATCH
+CREATE OR REPLACE PROCEDURE EDITAR_ESTADOMATCH
 ( pid_estado_match IN NUMBER, pNombre IN VARCHAR2
 ) AS
 BEGIN
@@ -294,36 +294,36 @@ BEGIN
 	set nombre := pNombre
 	WHERE id_estado_match = pid_estado_match;
 --NULL;
-END EDITARESTADOMATCH;
+END EDITAR_ESTADOMATCH;
 
-CREATE OR REPLACE PROCEDURE BORRARESTADOMATCH
+CREATE OR REPLACE PROCEDURE BORRAR_ESTADOMATCH
 ( pid_estado_match IN NUMBER
 ) AS
 BEGIN
 	delete from estado_match
 	WHERE id_estado_match = pid_estado_match;
 --NULL;
-END BORRARESTADOMATCH;
+END BORRAR_ESTADOMATCH;
 
 --Prueba-------------------------------------------
 
 declare
   vNombre varchar2(30) := 'Casado';
 begin
-  registrarestadomatch(vNombre);
+  REGISTRAR_estadomatch(vNombre);
 end;
 
 declare
   vNombre varchar2(30) := 'Soltero';
   vID Number := 1;
 begin
-  editarestadomatch(vID, vNombre);
+  EDITAR_estadomatch(vID, vNombre);
 end;
 
 declare
   vID Number := 1;
 begin
-  borrarestadomatch(vID);
+  BORRAR_estadomatch(vID);
 end;
 
 ----------------------------------------------------
@@ -331,16 +331,16 @@ end;
 
 -- Funciones
 
-CREATE OR REPLACE PROCEDURE REGISTRARINTERES
+CREATE OR REPLACE FUNCTION REGISTRAR_INTERES
 ( pRango_edadi IN NUMBER, pRango_edadf IN NUMBER, pId_tipopareja IN NUMBER
-) AS
+) RETURN NUMBER AS
 BEGIN
 	INSERT INTO interes_gusto(id_interesg, rango_edadi, rango_edadf, id_tipopareja)
 	VALUES(secu_interes_gusto.NextVal, pRango_edadi, pRango_edadf, pId_tipopareja);
 --NULL;
-END REGISTRARINTERES;
+END REGISTRAR_INTERES;
 
-CREATE OR REPLACE PROCEDURE EDITARINTERES
+CREATE OR REPLACE PROCEDURE EDITAR_INTERES
 ( pid_interesg IN NUMBER, pRango_edadi IN NUMBER, pRango_edadf IN NUMBER, pId_tipopareja IN NUMBER
 ) AS
 BEGIN
@@ -350,16 +350,16 @@ Update interes_gusto
 		id_tipopareja := pId_tipopareja
 	WHERE id_interesg = pid_interesg;
 --NULL;
-END EDITARINTERES;
+END EDITAR_INTERES;
 
-CREATE OR REPLACE PROCEDURE BORRARINTERES
+CREATE OR REPLACE PROCEDURE BORRAR_INTERES
 ( pid_interesg IN NUMBER
 ) AS
 BEGIN
 	delete from interes_gusto
 	WHERE id_interesg = pid_interesg;
 --NULL;
-END BORRARINTERES;
+END BORRAR_INTERES;
 
 --Prueba-------------------------------------------
 
@@ -368,7 +368,7 @@ declare
   vRango_edadf Number := 30;
   vTipo_pareja Number := 1;
 begin
-  registrarinteres(vRango_edadi, vRango_edadf, vTipo_pareja);
+  REGISTRAR_interes(vRango_edadi, vRango_edadf, vTipo_pareja);
 end;
 
 declare
@@ -377,13 +377,13 @@ declare
   vTipo_pareja Number := 1;
   vID Number := 1;
 begin
-  editarinteres(vID, vRango_edadi, vRango_edadf, vTipo_pareja);
+  EDITAR_interes(vID, vRango_edadi, vRango_edadf, vTipo_pareja);
 end;
 
 declare
   vID Number := 1;
 begin
-  borrarinteres(vID);
+  BORRAR_interes(vID);
 end;
 
 ----------------------------------------------------
@@ -391,16 +391,16 @@ end;
 
 -- Funciones
 
-CREATE OR REPLACE PROCEDURE REGISTRARMATCH
+CREATE OR REPLACE FUNCTION REGISTRAR_MATCH
 ( pFecha IN VARCHAR2, pId_estado_match IN NUMBER, pId_propio IN NUMBER, pId_recomendacion IN NUMBER
-) AS
+) RETURN NUMBER AS
 BEGIN
 	INSERT INTO match(id_match, fecha, id_estado_match, id_propio, id_recomendacion)
 	VALUES(secu_match.NextVal, TO_DATE(pFecha, 'DDMMYYYY'), pId_estado_match, pId_propio, pId_recomendacion);
 --NULL;
-END REGISTRARMATCH;
+END REGISTRAR_MATCH;
 
-CREATE OR REPLACE PROCEDURE EDITARMATCH
+CREATE OR REPLACE PROCEDURE EDITAR_MATCH
 ( pid_match IN NUMBER, pFecha IN VARCHAR2, pId_estado_match IN NUMBER, pId_propio IN NUMBER, pId_recomendacion IN NUMBER
 ) AS
 BEGIN
@@ -411,16 +411,16 @@ BEGIN
 		id_recomendacion := pId_recomendacion
 	WHERE id_match = pid_match;
 --NULL;
-END EDITARMATCH;
+END EDITAR_MATCH;
 
-CREATE OR REPLACE PROCEDURE BORRARMATCH
+CREATE OR REPLACE PROCEDURE BORRAR_MATCH
 ( pid_match IN NUMBER
 ) AS
 BEGIN
 	delete from match
 	WHERE id_match = pid_match;
 --NULL;
-END BORRARMATCH;
+END BORRAR_MATCH;
 
 --Prueba-------------------------------------------
 
@@ -430,7 +430,7 @@ declare
   vId_propio Number := 1;
   vId_recomendacion Number := 2;
 begin
-  registrarmatch(vFecha, vEstado_match, vId_propio, vId_recomendacion);
+  REGISTRAR_match(vFecha, vEstado_match, vId_propio, vId_recomendacion);
 end;
 
 declare
@@ -440,13 +440,13 @@ declare
   vId_recomendacion Number := 2;
   vID Number := 1;
 begin
-  editarmatch(vID, vFecha, vEstado_match, vId_propio, vId_recomendacion);
+  EDITAR_match(vID, vFecha, vEstado_match, vId_propio, vId_recomendacion);
 end;
 
 declare
   vID Number := 1;
 begin
-  borrarmatch(vID);
+  BORRAR_match(vID);
 end;
 
 ----------------------------------------------------
@@ -454,16 +454,16 @@ end;
 
 -- Funciones
 
-CREATE OR REPLACE PROCEDURE REGISTRARUSUARIOXIDIOMA
+CREATE OR REPLACE FUNCTION REGISTRAR_USUARIOXIDIOMA
 ( pId_usuario IN NUMBER, pId_idioma IN NUMBER
-) AS
+) RETURN NUMBER AS
 BEGIN
 	INSERT INTO UsuarioXIdioma(ID_UsuarioXIdioma, id_usuario, id_idioma)
 	VALUES(secu_UsuarioXIdioma.NextVal, pId_usuario, pId_idioma);
 --NULL;
-END REGISTRARUSUARIOXIDIOMA;
+END REGISTRAR_USUARIOXIDIOMA;
 
-CREATE OR REPLACE PROCEDURE EDITARUSUARIOXIDIOMA
+CREATE OR REPLACE PROCEDURE EDITAR_USUARIOXIDIOMA
 ( pId_UsuarioXIdioma IN NUMBER, pId_usuario IN NUMBER, pId_idioma IN NUMBER
 ) AS
 BEGIN
@@ -472,16 +472,16 @@ BEGIN
 		id_usuario := pId_usuario
 	WHERE ID_UsuarioXIdioma = pId_UsuarioXIdioma;
 --NULL;
-END EDITARUSUARIOXIDIOMA;
+END EDITAR_USUARIOXIDIOMA;
 
-CREATE OR REPLACE PROCEDURE BORRARUSUARIOXIDIOMA
+CREATE OR REPLACE PROCEDURE BORRAR_USUARIOXIDIOMA
 ( pId_UsuarioXIdioma IN NUMBER
 ) AS
 BEGIN
 	delete from UsuarioXIdioma
 	WHERE ID_UsuarioXIdioma = pId_UsuarioXIdioma;
 --NULL;
-END BORRARUSUARIOXIDIOMA;
+END BORRAR_USUARIOXIDIOMA;
 
 --Prueba-------------------------------------------
 
@@ -489,7 +489,7 @@ declare
   vId_Usuario Number := 1;
   vId_idioma Number := 1;
 begin
-  registrarusuarioxidioma(vId_Usuario, vId_idioma);
+  REGISTRAR_usuarioxidioma(vId_Usuario, vId_idioma);
 end;
 
 declare
@@ -497,13 +497,13 @@ declare
   vId_idioma Number := 1;
   vID Number := 1;
 begin
-  editarusuarioxidioma(vID, vId_Usuario, vId_idioma);
+  EDITAR_usuarioxidioma(vID, vId_Usuario, vId_idioma);
 end;
 
 declare
   vID Number := 1;
 begin
-  borrarusuarioxidioma(vID);
+  BORRAR_usuarioxidioma(vID);
 end;
 
 ----------------------------------------------------
@@ -511,16 +511,16 @@ end;
 
 -- Funciones
 
-CREATE OR REPLACE PROCEDURE REGISTRARUSUARIOXOCUPACION
+CREATE OR REPLACE FUNCTION REGISTRAR_USUARIOXOCUPACION
 ( pId_usuario IN NUMBER, pId_ocupacion IN NUMBER
-) AS
+) RETURN NUMBER AS
 BEGIN
 	INSERT INTO UsuarioXOcupacion(ID_UsuarioXOcupacion, id_usuario, id_ocupacion)
 	VALUES(secu_UsuarioXOcupacion.NextVal, pId_usuario, pId_ocupacion);
 --NULL;
-END REGISTRARUSUARIOXOCUPACION;
+END REGISTRAR_USUARIOXOCUPACION;
 
-CREATE OR REPLACE PROCEDURE EDITARUSUARIOXOCUPACION
+CREATE OR REPLACE PROCEDURE EDITAR_USUARIOXOCUPACION
 ( pID_UsuarioXOcupacion IN NUMBER, pId_usuario IN NUMBER, pId_ocupacion IN NUMBER
 ) AS
 BEGIN
@@ -529,16 +529,16 @@ BEGIN
 		id_usuario := pId_usuario
 	WHERE ID_UsuarioXOcupacion = pID_UsuarioXOcupacion;
 --NULL;
-END EDITARUSUARIOXOCUPACION;
+END EDITAR_USUARIOXOCUPACION;
 
-CREATE OR REPLACE PROCEDURE BORRARUSUARIOXOCUPACION
+CREATE OR REPLACE PROCEDURE BORRAR_USUARIOXOCUPACION
 ( pID_UsuarioXOcupacion IN NUMBER
 ) AS
 BEGIN
 	delete from UsuarioXOcupacion
 	WHERE ID_UsuarioXOcupacion = pID_UsuarioXOcupacion;
 --NULL;
-END BORRARUSUARIOXOCUPACION;
+END BORRAR_USUARIOXOCUPACION;
 
 --Prueba
 
@@ -546,7 +546,7 @@ declare
   vId_Usuario Number := 1;
   vId_ocupacion Number := 1;
 begin
-  registrarusuarioxocupacion(vId_Usuario, vId_ocupacion);
+  REGISTRAR_usuarioxocupacion(vId_Usuario, vId_ocupacion);
 end;
 
 declare
@@ -554,13 +554,13 @@ declare
   vId_ocupacion Number := 1;
   vID Number := 1;
 begin
-  editarusuarioxocupacion(vID, vId_Usuario, vId_ocupacion);
+  EDITAR_usuarioxocupacion(vID, vId_Usuario, vId_ocupacion);
 end;
 
 declare
   vID Number := 1;
 begin
-  borrarusuarioxocupacion(vID);
+  BORRAR_usuarioxocupacion(vID);
 end;
 
 ----------------------------------------------------
@@ -568,7 +568,7 @@ end;
 
 -- Funciones
 
-CREATE OR REPLACE PROCEDURE REGISTRARUSUARIO
+CREATE OR REPLACE FUNCTION REGISTRAR_USUARIO
 ( pNombre IN VARCHAR2, 
 	pPrimer_apellido IN VARCHAR2, 
 	pSegundo_apellido IN VARCHAR2, 
@@ -591,7 +591,7 @@ CREATE OR REPLACE PROCEDURE REGISTRARUSUARIO
 	pid_ocupacion IN NUMBER, 
 	pid_rol IN NUMBER, 
 	pid_signo_zodiacal IN NUMBER
-) AS
+) RETURN NUMBER AS
 BEGIN
 	INSERT INTO Usuario(ID_Usuario, 
 					nombre, 
@@ -640,9 +640,9 @@ BEGIN
 		   pid_rol, 
 		   pid_signo_zodiacal);
 --NULL;
-END REGISTRARUSUARIO;
+END REGISTRAR_USUARIO;
 
-CREATE OR REPLACE PROCEDURE EDITARUSUARIO
+CREATE OR REPLACE PROCEDURE EDITAR_USUARIO
 ( pID_Usuario IN NUMBER,
 	pNombre IN VARCHAR2, 
 	pPrimer_apellido IN VARCHAR2, 
@@ -693,16 +693,16 @@ BEGIN
 	   id_signo_zodiacal := pid_signo_zodiacal
 	WHERE ID_Usuario = pID_Usuario;
 --NULL;
-END EDITARUSUARIO;
+END EDITAR_USUARIO;
 
-CREATE OR REPLACE PROCEDURE BORRARUSUARIO
+CREATE OR REPLACE PROCEDURE BORRAR_USUARIO
 ( pID_Usuario IN NUMBER
 ) AS
 BEGIN
 	delete from Usuario
 	WHERE ID_Usuario = pID_Usuario;
 --NULL;
-END BORRARUSUARIO;
+END BORRAR_USUARIO;
 
 --Prueba
 
@@ -727,7 +727,7 @@ declare
 	vid_rol := 1;
 	vid_signo_zodiacal := 1;
 begin
-  registrarusuario(vnombre, vprimer_apellido, vsegundo_apellido, vfecha_nac
+  REGISTRAR_usuario(vnombre, vprimer_apellido, vsegundo_apellido, vfecha_nac
   vemail, vfoto, vgenero, vclave, vgustan_mascota, vtiene_mascota, vtendria_mascota,
   vid_religion, vid_estadoCi, vid_educacion, vid_ciudad, vid_aspectoF, vid_estilovida,
   vid_rol, vid_signo_zodiacal);
@@ -755,7 +755,7 @@ declare
 	vid_signo_zodiacal := 1;
 	vID Number := 1;
 begin
-  editarusuario(vID, vnombre, vprimer_apellido, vsegundo_apellido, vfecha_nac
+  EDITAR_usuario(vID, vnombre, vprimer_apellido, vsegundo_apellido, vfecha_nac
   vemail, vfoto, vgenero, vclave, vgustan_mascota, vtiene_mascota, vtendria_mascota,
   vid_religion, vid_estadoCi, vid_educacion, vid_ciudad, vid_aspectoF, vid_estilovida,
   vid_rol, vid_signo_zodiacal);
@@ -764,7 +764,7 @@ end;
 declare
   vID Number := 1;
 begin
-  borrarusuario(vID);
+  BORRAR_usuario(vID);
 end;
 
 ----------------------------------------------------

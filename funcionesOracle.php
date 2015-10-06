@@ -54,7 +54,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	 )
 	)';
 
-	global $conexion;
 	$conexion = OCILogon($user, $clave, $db);
 
 	if (!$conexion) {
@@ -315,7 +314,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		fwrite($fp, PHP_EOL);
 		fclose($fp);
 		oci_free_statement($s);
-		return $value;
 	}
 	
 	function queryCursor($conexion, $sql) {

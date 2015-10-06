@@ -1,4 +1,4 @@
-CREATE OR REPLACE PROCEDURE REGISTRAR_Rol(
+CREATE OR REPLACE FUNCTION REGISTRAR_Rol(
 	pNombre IN VARCHAR2) AS
 BEGIN
 	INSERT INTO Rol(ID_Rol, Nombre)
@@ -21,7 +21,7 @@ BEGIN
 END BORRAR_Rol;
 
 --------------------------------------------------
-CREATE OR REPLACE PROCEDURE REGISTRAR_Bitacora_Visita(
+CREATE OR REPLACE FUNCTION REGISTRAR_Bitacora_Visita(
 	pFecha IN DATE, 
 	pID_Visita IN NUMBER, 
 	pID_Conocido IN NUMBER) AS
@@ -48,7 +48,7 @@ BEGIN
 END BORRAR_Bitacora_Visita;
 
 ---------------------------------------------------------------------
-CREATE OR REPLACE PROCEDURE REGISTRAR_Ciudad( pNombre IN VARCHAR2 ) AS
+CREATE OR REPLACE FUNCTION REGISTRAR_Ciudad( pNombre IN VARCHAR2 ) AS
 BEGIN
 	INSERT INTO Ciudad(ID_Ciudad, Nombre, ID_estado)
     	VALUES(secu_Ciudad.NextVal, pNombre, pID_estado);
@@ -69,7 +69,7 @@ END BORRAR_Ciudad;
 
 
 ---------------------------------------------------------------------
-CREATE OR REPLACE PROCEDURE REGISTRAR_Religion(
+CREATE OR REPLACE FUNCTION REGISTRAR_Religion(
 	pNombre IN VARCHAR2) AS
 BEGIN
 	INSERT INTO Religion(ID_Religion, Nombre)
@@ -93,7 +93,7 @@ END BORRAR_Religion;
 
 
 ------------------------------------------------------------------
-CREATE OR REPLACE PROCEDURE REGISTRAR_Educacion(
+CREATE OR REPLACE FUNCTION REGISTRAR_Educacion(
 	pNombre IN VARCHAR2) AS
 BEGIN
 	INSERT INTO Educacion(ID_Educacion, Nombre)
@@ -115,7 +115,7 @@ BEGIN
 	WHERE ID_Educacion = pID;
 END BORRAR_Educacion;
 ---------------------------------------------------------------------
-CREATE OR REPLACE PROCEDURE REGISTRAR_Hobby(
+CREATE OR REPLACE FUNCTION REGISTRAR_Hobby(
  Genero IN VARCHAR2) AS
 BEGIN
  INSERT INTO Hobby(ID_Hobby, Genero)
@@ -139,7 +139,7 @@ END BORRAR_Hobby;
 
 
 ------------------------------------------------
-CREATE OR REPLACE PROCEDURE REGISTRAR_Tipo_Bebedor(
+CREATE OR REPLACE FUNCTION REGISTRAR_Tipo_Bebedor(
  Genero IN VARCHAR2) AS
 BEGIN
  INSERT INTO Tipo_Bebedor(ID_Tipo_Bebedor, Genero)
@@ -161,7 +161,7 @@ BEGIN
  WHERE ID_Tipo_Bebedor = pID;
 END BORRAR_Tipo_Bebedor;
 -------------------------------------------------
-CREATE OR REPLACE PROCEDURE REGISTRAR_Color_Ojos(
+CREATE OR REPLACE FUNCTION REGISTRAR_Color_Ojos(
  pNombre IN VARCHAR2) AS
 BEGIN
  INSERT INTO Color_Ojos(ID_ColorOjos, Nombre)
@@ -184,7 +184,7 @@ BEGIN
 END BORRAR_Color_Ojos;
 
 -----------------------------------------------------
-CREATE OR REPLACE PROCEDURE REGISTRAR_Contextura(
+CREATE OR REPLACE FUNCTION REGISTRAR_Contextura(
  pNombre IN VARCHAR2) AS
 BEGIN
  INSERT INTO Contextura(ID_Contextura, Nombre)
@@ -207,7 +207,7 @@ BEGIN
 END BORRAR_Contextura;
 
 ---------------------------------------------------------------
-CREATE OR REPLACE PROCEDURE REGISTRAR_EventoXUsuario(
+CREATE OR REPLACE FUNCTION REGISTRAR_EventoXUsuario(
  pID_Usuario IN NUMBER,
  pID_Evento IN NUMBER) AS
 BEGIN
