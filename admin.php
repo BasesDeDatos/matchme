@@ -5,12 +5,14 @@ License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 -->
 	<?php require_once("header2.php");
-	
-	// $arrayQuery = array(); 
-	// $_POST["mode"] = "get_catalogos"; 
-	// include ("funcionesOracle.php");
+		$arrayQuery = array(); 
+		$_POST["mode"] = "get_catalogos"; 
+		include ("funcionesOracle.php");
 	
 	?>
+	
+	<pre id= "debug">
+	</pre>
 	
 	<div class="row">
 		<div class="col-md-12 register-form">
@@ -397,7 +399,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		$("#catalogos select").change(function(){
 			var input = $("input[name='"+$(this).attr("name")+"_input']");
 			if ($(this).val() == ""){ input.val(""); } 
-			else { input.val( $(this).find("option:selected").text() );}
+			else { input.val( $(this).find("option:selected").text().trim());}
 		});
 		
 		$("#catalogos input").change(function(){
@@ -406,15 +408,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			var nameSelect = input.substring(0, input.length-6) //se borra la palabra "_input" para obtener el select;
 			var row_id = $("select[name='"+nameSelect+"'] option:selected").val();
 			if ($("select[name='"+nameSelect+"']").val() == ""){ // ADD
-				var data = "mode=registrar_catalogo&procedure=REGISTRAR"+nameSelect+"&value="+value;
+				var data = "mode=registrar_catalogo&procedure=REGISTRAR_"+nameSelect+"&value="+value;
 				$.ajax({  
 				    type: "POST",
 				    url: "funcionesOracle.php",
 				    data: data,
 				    success: function(data){
 				    	$("#debug").html(data);
-				        var data = $.parseJSON(data);
-				        alert(data.Content);
 				    }
 				});
 				$("select[name='"+nameSelect+"']").append(
@@ -423,21 +423,18 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				$("select[name='"+nameSelect+"'] option").last().attr("selected", "selected");
 			}
 			else{ //EDIT
-				var data = "mode=editar_catalogo&procedure=EDITAR"+nameSelect+"&row_id="+row_id+"&value="+value;
+				var data = "mode=editar_catalogo&procedure=EDITAR_"+nameSelect+"&row_id="+row_id+ "&value="+value;
+//				var data = "mode=editar_catalogo&procedure=EDITAR_"+nameSelect+"&value="+value+ "&row_id="+row_id;
 				$.ajax({  
 				    type: "POST",
 				    url: "funcionesOracle.php",
 				    data: data,
 				    success: function(data){
 				    	$("#debug").html(data);
-				        var data = $.parseJSON(data);
-				        alert(data.Content);
 				    }
 				});
 				$("select[name='"+nameSelect+"'] option:selected").html(value);
 			}
 		});
 		
-		
-
 	</script>
