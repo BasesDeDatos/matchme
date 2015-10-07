@@ -5,34 +5,6 @@ License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 -->
 
-
-<?php
-/*    include('Mail.php');
-
-    $recipients = 'kakoo26i@gmail.com';
-
-    $headers['From']    = 'MatchMeTEC@gmail.com';
-    $headers['To']      = 'kakoo26i@gmail.com';
-    $headers['Subject'] = 'prueba2';
-
-    $body = 'Nada2';
-
-    $smtpinfo["host"] = "smtp.gmail.com";
-    $smtpinfo["port"] = "587";
-    $smtpinfo["auth"] = true;
-    $smtpinfo["username"] = "MatchMeTEC@gmail.com";
-    $smtpinfo["password"] = "Basesdatos";
-
-
-    // Create the mail object using the Mail::factory method
-    $mail_object =& Mail::factory("smtp", $smtpinfo); 
-
-    $mail_object->send($recipients, $headers, $body);
-*/
-	?> 
-
-
-
 <?php
 	//** DEBUG ***//
     echo "\n#########\n";
@@ -60,6 +32,31 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		echo "Error de conexion: ".var_dump(OCIError());
 		trigger_error(htmlentities($e['message'], ENT_QUOTES), E_USER_ERROR);
 		die();
+	}
+	
+	if (!empty($_POST) && $_POST["mode"] == "enviar_mail"){
+		include('Mail.php');
+		
+		$usuarios = queryCursor($conexion, "begin get_EmailXPais({$_POST["ciudad"]}, :cursbv); end;");
+		    
+		for($i = 0; $i < count($usuarios["EMAIL"]); $i++){
+		    //$recipients = 'kakoo26i@gmail.com';
+		    $headers['From']    = 'MatchMeTEC@gmail.com';
+		    $headers['To']      = $usuarios["EMAIL"][$i];
+		    $headers['Subject'] = $_POST["subject"];
+		
+		    $body = 'Hola estimado '.$usuarios["NOMBRE"][$i].".\n".$_POST["mensaje"];
+		
+		    $smtpinfo["host"] = "smtp.gmail.com";
+		    $smtpinfo["port"] = "587";
+		    $smtpinfo["auth"] = true;
+		    $smtpinfo["username"] = "MatchMeTEC@gmail.com";
+		    $smtpinfo["password"] = "Basesdatos";
+		
+		    // Create the mail object using the Mail::factory method
+		    $mail_object =& Mail::factory("smtp", $smtpinfo); 
+		    $mail_object->send($recipients, $headers, $body);
+		}
 	}
 	
 	if (!empty($_POST) && $_POST["mode"] == "loggin"){
@@ -129,7 +126,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		$arrayQuery["MATCH"] =  queryCursor($conexion, "begin GET_Bitacora_visita({$user_id}, :cursbv); end;");
 		for($i = 0; $i < count($arrayQuery["MATCH"]["ID_RECOMENDACION"]); $i++){
 			$arrayQuery["MATCH"]["ID_RECOMENDACION"][$i] = 
-				queryCursor($conexion, "begin GET_Usuario({$arrayQuery["MATCH"]["ID_RECOMENDACION"][0]}, :cursbv); end;");
+				queryCursor($conexion, "begin GET_Usuario({$arrayQuery["MATCH"]["ID_RECOMENDACION"][$i]}, :cursbv); end;");
 		}
 	}
 	

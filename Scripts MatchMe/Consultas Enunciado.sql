@@ -451,7 +451,7 @@ PROCEDURE get_EmailXPais (pID IN Usuario.ID_Ciudad%TYPE,
 p_recordset OUT SYS_REFCURSOR) AS 
 BEGIN 
  OPEN p_recordset FOR
- SELECT  Usuario.email
+ SELECT  Usuario.email, Usuario.nombre
  FROM  Usuario
  WHERE pID := Usuario.id_ciudad;
 END get_EmailXPais;
