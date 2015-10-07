@@ -203,25 +203,45 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<div class="col-md-6"><h3 class="fs-subtitle">Color de pelo:</h3></div>
 				
 			    <select class="col-md-6 selector" name="colorpelo" id="colorpelo">
-			    	<option value="">Seleccione un color</option>
+			    	<option value="">Color de pelo</option>
+					<?php for($i = 0; $i < count($arrayQuery["COLOR_PELO"]["NOMBRE"]); $i++){ ?>
+						<option value="<?php echo $arrayQuery["COLOR_PELO"]["NOMBRE"][$i]?>">
+							<?php echo $arrayQuery["COLOR_PELO"]["NOMBRE"][$i] ?>
+						</option>
+					<?php } ?>
 			    </select>
 				
 				<div class="col-md-6"><h3 class="fs-subtitle">Color de piel:</h3></div>
 				
 				<select class="col-md-6 selector" name="colorpiel" id="colorpiel">
-			    	<option value="">Seleccione un color</option>
+			    	<option value="">Color de piel</option>
+					<?php for($i = 0; $i < count($arrayQuery["COLOR_PIEL"]["NOMBRE"]); $i++){ ?>
+						<option value="<?php echo $arrayQuery["COLOR_PIEL"]["NOMBRE"][$i]?>">
+							<?php echo $arrayQuery["COLOR_PIEL"]["NOMBRE"][$i] ?>
+						</option>
+					<?php } ?>
 			    </select>
 				
 				<div class="col-md-6"><h3 class="fs-subtitle">Color de ojos:</h3></div>
 				
 				<select class="col-md-6 selector" name="colorojos" id="colorojos">
-			    	<option value="">Seleccione un color</option>
+			    	<option value="">Color de ojos</option>
+					<?php for($i = 0; $i < count($arrayQuery["COLOR_OJOS"]["NOMBRE"]); $i++){ ?>
+						<option value="<?php echo $arrayQuery["COLOR_OJOS"]["NOMBRE"][$i]?>">
+							<?php echo $arrayQuery["COLOR_OJOS"]["NOMBRE"][$i] ?>
+						</option>
+					<?php } ?>
 			    </select>
 			    
 			    <div class="col-md-6"><h3 class="fs-subtitle">Contextura:</h3></div>
 				
 				<select class="col-md-6 selector" name="contextura" id="contextura">
-			    	<option value="">Seleccione una contextura</option>
+			    	<option value="">Contextura</option>
+					<?php for($i = 0; $i < count($arrayQuery["CONTEXTURA"]["NOMBRE"]); $i++){ ?>
+						<option value="<?php echo $arrayQuery["CONTEXTURA"]["NOMBRE"][$i]?>">
+							<?php echo $arrayQuery["CONTEXTURA"]["NOMBRE"][$i] ?>
+						</option>
+					<?php } ?>
 			    </select>
 			    
 			    <div class="col-md-6"><h3 class="fs-subtitle">Peso (kg):</h3></div>
