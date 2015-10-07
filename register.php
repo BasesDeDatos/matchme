@@ -18,6 +18,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<li>Aspecto fisicos</li>
 				<li>Intereses</li>
 				<li>Hobbies</li>
+				<li>Actividades al aire libre</li>
 				<li>Estilo Vida</li>
 				<li>Mascotas</li>
 				<li>¿Qué Busco?</li>
@@ -42,10 +43,83 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<fieldset>
 				<h2 class="fs-title">Datos personales</h2>
 				<!--h3 class="fs-subtitle">We will never sell it</h3-->
-				<div class="col-md-4"><input type="text" name="nombre" placeholder="Nombre" /></div>
-				<div class="col-md-8"><input type="text" name="apellidos" placeholder="Apellidos" /></div>
-				<div class="col-md-4"><h3 class="fs-subtitle">Fecha De Nacimiento:</h3></div>
-				<div class="col-md-8"><input type="date" name="fecha_nacimiento" placeholder="fecha" /></div>
+				<div class="col-md-6"><input type="text" name="nombre" placeholder="Nombre" /></div>
+				<div class="col-md-6"><input type="text" name="apellidos" placeholder="Apellidos" /></div>
+				<div class="col-md-6"><h3 class="fs-subtitle">Fecha De Nacimiento:</h3></div>
+				<div class="col-md-6"><input type="date" name="fecha_nacimiento" placeholder="fecha" /></div>
+				
+				<div class="col-md-6"><h3 class="fs-subtitle">Educacion: </h3></div>
+				<select class="col-md-6" name="educacion" id="educacion">
+					<option value="">Educacion</option>
+					<?php for($i = 0; $i < count($arrayQuery["EDUCACION"]["NOMBRE"]); $i++){ ?>
+						<option value="<?php echo $i ?>">
+							<?php echo $i ?>
+						</option>
+					<?php } ?>
+				</select>
+				
+				<div class="col-md-6"><h3 class="fs-subtitle">Estado civil: </h3></div>
+				<select class="col-md-6" name="estado_civil" id="estado_civil">
+					<option value="">Estado Civil</option>
+					<?php for($i = 0; $i < count($arrayQuery["ESTADO_CIVIL"]["NOMBRE"]); $i++){ ?>
+						<option value="<?php echo $i ?>">
+							<?php echo $i ?>
+						</option>
+					<?php } ?>
+				</select>
+				
+				<div class="col-md-6"><h3 class="fs-subtitle">Religion: </h3></div>
+				<select class="col-md-6" name="religion" id="religion">
+					<option value="">Religion</option>
+					<?php for($i = 0; $i < count($arrayQuery["Religion"]["NOMBRE"]); $i++){ ?>
+						<option value="<?php echo $i ?>">
+							<?php echo $i ?>
+						</option>
+					<?php } ?>
+				</select>
+				
+				<div class="col-md-6"><h3 class="fs-subtitle">Genero: </h3></div>
+				<select class="col-md-6" name="genero" id="genero">
+					<option value="">Genero</option>
+					<?php for($i = 0; $i < count($arrayQuery["GENERO"]["NOMBRE"]); $i++){ ?>
+						<option value="<?php echo $i ?>">
+							<?php echo $i ?>
+						</option>
+					<?php } ?>
+				</select>
+				
+				<div class="col-md-6"><h3 class="fs-subtitle">Pais: </h3></div>
+				<select class="col-md-6 selector" name="Pais" id="Pais0" >
+					<option value="">Seleccione un país</option>
+					<?php for($i = 0; $i < count($arrayQuery["PAIS"]["NOMBRE"]); $i++){ ?>
+						<option class="<?php echo $arrayQuery["PAIS"]["ID_PAIS"][$i] ?>"
+								value="<?php echo $arrayQuery["PAIS"]["ID_PAIS"][$i] ?>">
+							<?php echo $arrayQuery["PAIS"]["NOMBRE"][$i] ?>
+						</option>
+					<?php } ?>
+				</select>
+				
+				<div class="col-md-6"><h3 class="fs-subtitle">Estado: </h3></div>
+				<select class="col-md-6 selector" name="Estado" id="Estado0">
+					<option value="">Seleccione un estado</option>
+					<?php for($i = 0; $i < count($arrayQuery["ESTADO"]["NOMBRE"]); $i++){ ?>
+						<option class="<?php echo $arrayQuery["ESTADO"]["ID_PAIS"][$i] ?>"
+								value="<?php echo $arrayQuery["ESTADO"]["ID_ESTADO"][$i] ?>">
+							<?php echo $arrayQuery["ESTADO"]["NOMBRE"][$i] ?>
+						</option>
+					<?php } ?>
+				</select>
+				
+				<div class="col-md-6"><h3 class="fs-subtitle">Ciudad: </h3></div>
+				<select class="col-md-6 selector" name="Ciudad" id="Ciudad0">
+					<option value="">Seleccione una ciudad</option>
+					<?php for($i = 0; $i < count($arrayQuery["CIUDAD"]["NOMBRE"]); $i++){ ?>
+						<option class="<?php echo $arrayQuery["CIUDAD"]["ID_ESTADO"][$i] ?>"
+								value="<?php echo $arrayQuery["CIUDAD"]["ID_CIUDAD"][$i] ?>">
+							<?php echo $arrayQuery["CIUDAD"]["NOMBRE"][$i] ?>
+						</option>
+					<?php } ?>
+				</select>
 				
 				<input type="button" name="previous" class="previous action-button" value="Anterior" />
 				<input type="button" name="next" class="next action-button" value="Siguiente" />
@@ -56,20 +130,35 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				
 				<h2 class="fs-title">Aspecto Físico</h2>
 				
-				<div class="col-md-12"><h3 class="fs-subtitle">Color de pelo:</h3></div>
+				<div class="col-md-6"><h3 class="fs-subtitle">Color de pelo:</h3></div>
 				
-				<select name="color_pelo_select">
-				</select>
+			    <select class="col-md-6 selector" name="colorpelo" id="colorpelo">
+			    	<option value="">Seleccione un color</option>
+			    </select>
 				
-				<div class="col-md-12"><h3 class="fs-subtitle">Color de piel:</h3></div>
+				<div class="col-md-6"><h3 class="fs-subtitle">Color de piel:</h3></div>
 				
-				<select name="color_piel_select">
-				</select>
+				<select class="col-md-6 selector" name="colorpiel" id="colorpiel">
+			    	<option value="">Seleccione un color</option>
+			    </select>
 				
-				<div class="col-md-12"><h3 class="fs-subtitle">Color de ojos:</h3></div>
+				<div class="col-md-6"><h3 class="fs-subtitle">Color de ojos:</h3></div>
 				
-				<select name="color_ojos_select">
-				</select>
+				<select class="col-md-6 selector" name="colorojos" id="colorojos">
+			    	<option value="">Seleccione un color</option>
+			    </select>
+			    
+			    <div class="col-md-6"><h3 class="fs-subtitle">Contextura:</h3></div>
+				
+				<select class="col-md-6 selector" name="contextura" id="contextura">
+			    	<option value="">Seleccione una contextura</option>
+			    </select>
+			    
+			    <div class="col-md-6"><h3 class="fs-subtitle">Peso (kg):</h3></div>
+			    <div class="col-md-6"><input type="text" name="peso" name="peso" placeholder="Peso" /></div>
+				
+				<div class="col-md-6"><h3 class="fs-subtitle">Altura (cm):</h3></div>
+				<div class="col-md-6"><input type="text" name="altura" id="altura" placeholder="Altura" /></div>
 				
 				<input type="button" name="previous" class="previous action-button" value="Anterior" />
 				<input type="button" name="next" class="next action-button" value="Siguente" />
@@ -78,6 +167,43 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<fieldset>
 				<h2 class="fs-title">Intereses</h2>
 				
+				<div class="col-md-6"><h3 class="fs-subtitle">Rango de edad inicial: </h3></div>
+				<select class="col-md-6" name="rango_edadi" id="rango_edadi">
+					<option value="">Rango de edad inicial</option>
+					<?php for($i = 13; $i < 90; $i++){ ?>
+						<option value="<?php echo $i ?>">
+							<?php echo $i ?>
+						</option>
+					<?php } ?>
+				</select>
+				<div class="col-md-6"><h3 class="fs-subtitle">Rango de edad final: </h3></div>
+				<select class="col-md-6" name="rango_edadf" id="rango_edadf">
+					<option value="">Rango de edad Final</option>
+					<?php $selectOption = $_POST['rango_edadi'];?>
+					<?php for($i = $selectOption; $i < 90; $i++){ ?>
+						<option value="<?php echo $i ?>">
+							<?php echo $i ?>
+						</option>
+					<?php } ?>
+				</select>
+				
+				<div class="col-md-6"><h3 class="fs-subtitle">Me interesan: </h3></div>
+				<select class="col-md-6 selector" name="genero" id="genero">
+			    	<option value="">Seleccione un genero</option>
+			    	<?php for($i = 0; $i < count($arrayQuery["GENERO"]["NOMBRE"]); $i++){ ?>
+						<option value="<?php echo $i ?>">
+							<?php echo $i ?>
+						</option>
+					<?php } ?>
+			    </select>
+				
+				<input type="button" name="previous" class="previous action-button" value="Anterior" />
+				<input type="button" name="next" class="next action-button" value="Siguiente" />
+			</fieldset>
+		
+			<fieldset>
+				<h2 class="fs-title">Hobbies</h2>
+				
 				<div class="col-md-4">
 					<input type="checkbox" name="checkbox" id="checkbox" />
 					<label for="checkbox">Checkbox:</label>
@@ -110,9 +236,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				
 				
 				<input type="button" name="previous" class="previous action-button" value="Anterior" />
-				<input type="button" name="next" class="next action-button" value="Siguiente" />
+				<input type="button" name="next" class="next action-button" value="Siguente" />
 			</fieldset>
-		
+			
 			<fieldset>
 				<h2 class="fs-title">Hobbies</h2>
 				

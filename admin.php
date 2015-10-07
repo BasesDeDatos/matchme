@@ -5,9 +5,9 @@ License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 -->
 	<?php require_once("header2.php");
-		 $arrayQuery = array(); 
-		 $_POST["mode"] = "get_catalogos"; 
-		 include ("funcionesOracle.php");
+		 //$arrayQuery = array(); 
+		 //$_POST["mode"] = "get_catalogos"; 
+		 //include ("funcionesOracle.php");
 	
 	?>
 	
@@ -20,7 +20,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<form id="msform">
 			<!-- progressbar -->
 			<ul id="progressbar">
-				<li class="active">Eventos</li>
+				<li class="active">Mensaje de eventos</li>
+				<li>Eventos</li>
 				<li>Catalogos</li>
 				<li>Catalogos</li>
 				<li>Catalogos</li>
@@ -32,6 +33,60 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<h2 class="fs-title">Mensaje de invitaciones</h2>
 				<input class="col-md-6" type="text" name="subject" id="subject" placeholder="Asunto" />
 				<input class="col-md-6" type="textarea" name="mensaje" id="mensaje" placeholder="Nuevo mensaje de invitación" />
+
+				<!--label class="col-md-6" for="Pais0">País</label>
+				<select class="col-md-6 selector" name="Pais" id="Pais0" >
+					<option value="">Seleccione un país</option>
+					<?php for($i = 0; $i < count($arrayQuery["PAIS"]["NOMBRE"]); $i++){ ?>
+						<option class="<?php echo $arrayQuery["PAIS"]["ID_PAIS"][$i] ?>"
+								value="<?php echo $arrayQuery["PAIS"]["ID_PAIS"][$i] ?>">
+							<?php echo $arrayQuery["PAIS"]["NOMBRE"][$i] ?>
+						</option>
+					<?php } ?>
+				</select>
+				
+				<label class="col-md-6" for="Estado0">Estado</label>
+				<select class="col-md-6 selector" name="Estado" id="Estado0">
+					<option value="">Seleccione un estado</option>
+					<?php for($i = 0; $i < count($arrayQuery["ESTADO"]["NOMBRE"]); $i++){ ?>
+						<option class="<?php echo $arrayQuery["ESTADO"]["ID_PAIS"][$i] ?>"
+								value="<?php echo $arrayQuery["ESTADO"]["ID_ESTADO"][$i] ?>">
+							<?php echo $arrayQuery["ESTADO"]["NOMBRE"][$i] ?>
+						</option>
+					<?php } ?>
+				</select>
+				
+				<label class="col-md-6" for="Ciudad0">Ciudad</label>
+				<select class="col-md-6 selector" name="Ciudad" id="Ciudad0">
+					<option value="">Seleccione una ciudad</option>
+					<?php for($i = 0; $i < count($arrayQuery["CIUDAD"]["NOMBRE"]); $i++){ ?>
+						<option class="<?php echo $arrayQuery["CIUDAD"]["ID_ESTADO"][$i] ?>"
+								value="<?php echo $arrayQuery["CIUDAD"]["ID_CIUDAD"][$i] ?>">
+							<?php echo $arrayQuery["CIUDAD"]["NOMBRE"][$i] ?>
+						</option>
+					<?php } ?>
+				</select-->
+				
+				<label class="col-md-6" for="Evento">Evento</label>
+				<select class="col-md-6 selector" name="Evento" id="Evento">
+					<option value="">Seleccione un evento</option>
+					<?php for($i = 0; $i < count($arrayQuery["EVENTO"]["NOMBRE"]); $i++){ ?>
+						<option class="<?php echo $arrayQuery["EVENTO"]["ID_ESTADO"][$i] ?>"
+								value="<?php echo $arrayQuery["EVENTO"]["ID_CIUDAD"][$i] ?>">
+							<?php echo $arrayQuery["EVENTO"]["NOMBRE"][$i] ?>
+						</option>
+					<?php } ?>
+				</select>
+				
+				<input type="button" name="send" class="submit action-button" value="Enviar" onclick="enviar_mensaje()"/>
+				<input type="button" name="next" class="next action-button" value="Siguiente"/>
+			</fieldset>
+			
+			<fieldset>
+
+				<h2 class="fs-title">Eventos</h2>
+				<input class="col-md-6" type="text" name="nombre_eventos" id="nombre_eventos" placeholder="Nombre del evento" />
+				<input class="col-md-6" type="textarea" name="descripcion_eventos" id="descripcion_eventos" placeholder="Descripcion del evento" />
 
 				<label class="col-md-6" for="Pais0">País</label>
 				<select class="col-md-6 selector" name="Pais" id="Pais0" >
@@ -65,8 +120,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						</option>
 					<?php } ?>
 				</select>
-				<input type="button" name="send" class="submit action-button" value="Enviar" onclick="enviar_mensaje()"/>
 				
+				<label class="col-md-6" id = fecha_evento>Fecha del evento</label>
+				<div class="col-md-6"><input type="date" name="fecha_evento_input" id="fecha_evento_input" placeholder="fecha" /></div>
+				
+				<input type="button" name="previous" class="previous action-button" value="Anterior" />
 				<input type="button" name="next" class="next action-button" value="Siguiente"/>
 			</fieldset>
 			
