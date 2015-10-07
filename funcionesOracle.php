@@ -5,34 +5,6 @@ License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 -->
 
-
-<?php
-/*    include('Mail.php');
-
-    $recipients = 'kakoo26i@gmail.com';
-
-    $headers['From']    = 'MatchMeTEC@gmail.com';
-    $headers['To']      = 'kakoo26i@gmail.com';
-    $headers['Subject'] = 'prueba2';
-
-    $body = 'Nada2';
-
-    $smtpinfo["host"] = "smtp.gmail.com";
-    $smtpinfo["port"] = "587";
-    $smtpinfo["auth"] = true;
-    $smtpinfo["username"] = "MatchMeTEC@gmail.com";
-    $smtpinfo["password"] = "Basesdatos";
-
-
-    // Create the mail object using the Mail::factory method
-    $mail_object =& Mail::factory("smtp", $smtpinfo); 
-
-    $mail_object->send($recipients, $headers, $body);
-*/
-	?> 
-
-
-
 <?php
 	//** DEBUG ***//
     echo "\n#########\n";
@@ -60,6 +32,31 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		echo "Error de conexion: ".var_dump(OCIError());
 		trigger_error(htmlentities($e['message'], ENT_QUOTES), E_USER_ERROR);
 		die();
+	}
+	
+	if (!empty($_POST) && $_POST["mode"] == "enviar_mail"){
+		include('Mail.php');
+		
+		$usuarios = queryCursor($conexion, "begin get_EmailXPais({$_POST["ciudad"]}, :cursbv); end;");
+		    
+		for($i = 0; $i < count($usuarios["EMAIL"]); $i++){
+		    //$recipients = 'kakoo26i@gmail.com';
+		    $headers['From']    = 'MatchMeTEC@gmail.com';
+		    $headers['To']      = $usuarios["EMAIL"][$i];
+		    $headers['Subject'] = $_POST["subject"];
+		
+		    $body = 'Hola estimado '.$usuarios["NOMBRE"][$i].".\n".$_POST["mensaje"];
+		
+		    $smtpinfo["host"] = "smtp.gmail.com";
+		    $smtpinfo["port"] = "587";
+		    $smtpinfo["auth"] = true;
+		    $smtpinfo["username"] = "MatchMeTEC@gmail.com";
+		    $smtpinfo["password"] = "Basesdatos";
+		
+		    // Create the mail object using the Mail::factory method
+		    $mail_object =& Mail::factory("smtp", $smtpinfo); 
+		    $mail_object->send($recipients, $headers, $body);
+		}
 	}
 	
 	if (!empty($_POST) && $_POST["mode"] == "loggin"){
@@ -123,11 +120,20 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		$arrayQuery["HOBBIES"] = queryCursor($conexion, "begin GET_HobbyXUsuario({$user_id}, :cursbv); end;");
 	}
 	
+	if (!empty($_POST) && ($_POST["mode"] == "get_home" || $_POST["mode"] == "get_profile") ){
+		$arrayQuery["WINK"] = queryCursor($conexion, "begin GET_Winks({$user_id}, :cursbv); end;");
+		$arrayQuery["VISITAS"] =  queryCursor($conexion, "begin GET_Bitacora_visita({$user_id}, :cursbv); end;");
+		$arrayQuery["MATCH"] =  queryCursor($conexion, "begin GET_Bitacora_visita({$user_id}, :cursbv); end;");
+		for($i = 0; $i < count($arrayQuery["MATCH"]["ID_RECOMENDACION"]); $i++){
+			$arrayQuery["MATCH"]["ID_RECOMENDACION"][$i] = 
+				queryCursor($conexion, "begin GET_Usuario({$arrayQuery["MATCH"]["ID_RECOMENDACION"][$i]}, :cursbv); end;");
+		}
+	}
 	
 	if (!empty($_POST) && $_POST["mode"] == "get_catalogos"){
 		$arrayQuery["PAIS"] 	= queryCursor($conexion, "begin GET_Pais(null, :cursbv); end;");
 		$arrayQuery["ESTADO"] 	= queryCursor($conexion, "begin GET_Estado(null, :cursbv); end;");
-		$arrayQuery["CIUDAD"] 	= queryCursor($conexion, "begin GET_Ciudad(null, :cursbv); end;");
+		$arrayQuery["MATCH"] 	= queryCursor($conexion, "begin GET_UsuariosXMatch(null, :cursbv); end;");
 		
 		$arrayQuery["SIGNO_ZODIACAL"] = queryCursor($conexion, "begin GET_Signo_Zodiacal(null, :cursbv); end;");
 		
@@ -249,7 +255,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     	oci_bind_by_name($stid, ':id_rol', $id_rol);
     	oci_bind_by_name($stid, ':id_signo_zodiacal', $id_signo_zodiacal);
 	}
-	
+
 	if ($conexion) {
     	oci_close($conexion);
 	}
@@ -306,7 +312,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		if (!$r) {
 			$e = oci_error($s);
 			fwrite($fp, "return error ".$e['message']);
-		} 	
+		}
+		
 		fwrite($fp, PHP_EOL);
 		fwrite($fp, "################{$_SESSION["active_user_id"]}################");
 		fwrite($fp, PHP_EOL);

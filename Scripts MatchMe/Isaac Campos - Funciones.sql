@@ -191,8 +191,7 @@ CREATE OR REPLACE PROCEDURE BORRAR_Genero( pID IN NUMBER ) AS
 BEGIN
 	delete from Genero
 	WHERE ID_Genero = pID;
-END BORRAR_Generoa;
-
+END BORRAR_Genero;
 
 --################ Aspecto_Fisico ################--
 
@@ -213,7 +212,7 @@ CREATE OR REPLACE PROCEDURE EDITAR_Aspecto_Fisico(
 BEGIN
 	Update Aspecto_Fisico
 		set (Genero := pGenero)
-	    WHERE ID_TipoPareja = pID;
+	    WHERE ID_genero = pID;
 END EDITAR_Aspecto_Fisico;
 
 CREATE OR REPLACE PROCEDURE BORRAR_Aspecto_Fisico( pID IN NUMBER ) AS
