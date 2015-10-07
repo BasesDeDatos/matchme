@@ -123,11 +123,20 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		$arrayQuery["HOBBIES"] = queryCursor($conexion, "begin GET_HobbyXUsuario({$user_id}, :cursbv); end;");
 	}
 	
+	if (!empty($_POST) && ($_POST["mode"] == "get_home" || $_POST["mode"] == "get_profile") ){
+		$arrayQuery["WINK"] = queryCursor($conexion, "begin GET_Winks({$user_id}, :cursbv); end;");
+		$arrayQuery["VISITAS"] =  queryCursor($conexion, "begin GET_Bitacora_visita({$user_id}, :cursbv); end;");
+		$arrayQuery["MATCH"] =  queryCursor($conexion, "begin GET_Bitacora_visita({$user_id}, :cursbv); end;");
+		for($i = 0; $i < count($arrayQuery["MATCH"]["ID_RECOMENDACION"]); $i++){
+			$arrayQuery["MATCH"]["ID_RECOMENDACION"] = 
+				queryCursor($conexion, "begin GET_Usuario({$arrayQuery["MATCH"]["ID_RECOMENDACION"][0]}, :cursbv); end;");
+		}
+	}
 	
 	if (!empty($_POST) && $_POST["mode"] == "get_catalogos"){
 		$arrayQuery["PAIS"] 	= queryCursor($conexion, "begin GET_Pais(null, :cursbv); end;");
 		$arrayQuery["ESTADO"] 	= queryCursor($conexion, "begin GET_Estado(null, :cursbv); end;");
-		$arrayQuery["CIUDAD"] 	= queryCursor($conexion, "begin GET_Ciudad(null, :cursbv); end;");
+		$arrayQuery["MATCH"] 	= queryCursor($conexion, "begin GET_UsuariosXMatch(null, :cursbv); end;");
 		
 		$arrayQuery["SIGNO_ZODIACAL"] = queryCursor($conexion, "begin GET_Signo_Zodiacal(null, :cursbv); end;");
 		
@@ -249,7 +258,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     	oci_bind_by_name($stid, ':id_rol', $id_rol);
     	oci_bind_by_name($stid, ':id_signo_zodiacal', $id_signo_zodiacal);
 	}
-	
+
 	if ($conexion) {
     	oci_close($conexion);
 	}
@@ -306,7 +315,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		if (!$r) {
 			$e = oci_error($s);
 			fwrite($fp, "return error ".$e['message']);
-		} 	
+		}
+		
 		fwrite($fp, PHP_EOL);
 		fwrite($fp, "################{$_SESSION["active_user_id"]}################");
 		fwrite($fp, PHP_EOL);
