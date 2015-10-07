@@ -28,8 +28,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<fieldset>
 
 				<h2 class="fs-title">Mensaje de invitaciones</h2>
-				<input class="col-md-6" type="text" name="subject" placeholder="Subject" />
-				<input class="col-md-6" type="textarea" name="mensaje_invitacion" placeholder="Nuevo mensaje de invitación" />
+				<input class="col-md-6" type="text" id="subject" placeholder="Asunto" />
+				<input class="col-md-6" type="textarea" id="mensaje" placeholder="Nuevo mensaje de invitación" />
 
 				<label class="col-md-6" for="Pais0">País</label>
 				<select class="col-md-6 selector" name="Pais" id="Pais0" >
@@ -66,7 +66,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						</option>
 					<?php } ?>
 				</select>
-				<input type="button" name="next" class="next action-button" value="Enviar" />
+				<input type="button" name="send" class="submit action-button" value="Enviar" onclick = "enviar_mensaje()"/>
+				
+				<input type="button" name="next" class="next action-button" value="Siguiente" />
 			</fieldset>
 			
 			<fieldset id="catalogos">
@@ -437,5 +439,21 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				$("select[name='"+nameSelect+"'] option:selected").html(value);
 			}
 		});
+		
+		function enviar_mensaje(){
+			alert("hola");
+			var subject = $("#subject").val();
+			var mensaje = $("#mensaje").val();
+			var ciudad = $("#ciudad0").val();
+			var data = "mode=enviar_mail&subject="+subject+"&mensaje="+mensaje+"&ciudad="+ciudad;
+			$.ajax({  
+				    type: "POST",
+				    url: "funcionesOracle.php",
+				    data: data,
+				    success: function(data){
+				    	$("#debug").html(data);
+				    }
+			});
+		}
 		
 	</script>
