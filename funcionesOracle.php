@@ -164,6 +164,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		$arrayQuery["ESTADO_MATCH"] = queryCursor($conexion, "begin GET_Estado_Match(null, :cursbv); end;");
 		
 		$arrayQuery["ESTADO_CIVIL"] = queryCursor($conexion, "begin GET_Estado_Civil(null, :cursbv); end;");
+		
+		$arrayQuery["GENERO"] = queryCursor($conexion, "begin GET_Genero(null, :cursbv); end;");
 	}
 	
 	if (!empty($_POST) && $_POST["mode"] == "registrar_catalogo"){
