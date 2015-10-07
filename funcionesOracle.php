@@ -128,7 +128,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		$arrayQuery["VISITAS"] =  queryCursor($conexion, "begin GET_Bitacora_visita({$user_id}, :cursbv); end;");
 		$arrayQuery["MATCH"] =  queryCursor($conexion, "begin GET_Bitacora_visita({$user_id}, :cursbv); end;");
 		for($i = 0; $i < count($arrayQuery["MATCH"]["ID_RECOMENDACION"]); $i++){
-			$arrayQuery["MATCH"]["ID_RECOMENDACION"] = 
+			$arrayQuery["MATCH"]["ID_RECOMENDACION"][$i] = 
 				queryCursor($conexion, "begin GET_Usuario({$arrayQuery["MATCH"]["ID_RECOMENDACION"][0]}, :cursbv); end;");
 		}
 	}
