@@ -15,13 +15,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<ul id="progressbar">
 				<li class="active">Registro</li>
 				<li>Datos personales</li>
+				<li>Estilo Vida</li>
 				<li>Aspecto fisicos</li>
 				<li>Intereses</li>
 				<li>Hobbies</li>
 				<li>Actividades al aire libre</li>
-				<li>Estilo Vida</li>
-				<li>Mascotas</li>
-				<li>¿Qué Busco?</li>
+				<!--li>¿Qué Busco?</li-->
 
 			</ul>
 			<!-- fieldsets -->
@@ -52,8 +51,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<select class="col-md-6" name="educacion" id="educacion">
 					<option value="">Educacion</option>
 					<?php for($i = 0; $i < count($arrayQuery["EDUCACION"]["NOMBRE"]); $i++){ ?>
-						<option value="<?php echo $i ?>">
-							<?php echo $i ?>
+						<option value="<?php echo $arrayQuery["EDUCACION"]["NOMBRE"][$i]?>">
+							<?php echo $arrayQuery["EDUCACION"]["NOMBRE"][$i] ?>
 						</option>
 					<?php } ?>
 				</select>
@@ -62,8 +61,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<select class="col-md-6" name="estado_civil" id="estado_civil">
 					<option value="">Estado Civil</option>
 					<?php for($i = 0; $i < count($arrayQuery["ESTADO_CIVIL"]["NOMBRE"]); $i++){ ?>
-						<option value="<?php echo $i ?>">
-							<?php echo $i ?>
+						<option value="<?php echo $arrayQuery["ESTADO_CIVIL"]["NOMBRE"][$i] ?>">
+							<?php echo $arrayQuery["ESTADO_CIVIL"]["NOMBRE"][$i] ?>
 						</option>
 					<?php } ?>
 				</select>
@@ -71,9 +70,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<div class="col-md-6"><h3 class="fs-subtitle">Religion: </h3></div>
 				<select class="col-md-6" name="religion" id="religion">
 					<option value="">Religion</option>
-					<?php for($i = 0; $i < count($arrayQuery["Religion"]["NOMBRE"]); $i++){ ?>
-						<option value="<?php echo $i ?>">
-							<?php echo $i ?>
+					<?php for($i = 0; $i < count($arrayQuery["RELIGION"]["NOMBRE"]); $i++){ ?>
+						<option value="<?php echo $arrayQuery["RELIGION"]["NOMBRE"][$i] ?>">
+							<?php echo $arrayQuery["RELIGION"]["NOMBRE"][$i] ?>
 						</option>
 					<?php } ?>
 				</select>
@@ -82,8 +81,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<select class="col-md-6" name="genero" id="genero">
 					<option value="">Genero</option>
 					<?php for($i = 0; $i < count($arrayQuery["GENERO"]["NOMBRE"]); $i++){ ?>
-						<option value="<?php echo $i ?>">
-							<?php echo $i ?>
+						<option value="<?php echo $arrayQuery["GENERO"]["NOMBRE"][$i] ?>">
+							<?php echo $arrayQuery["GENERO"]["NOMBRE"][$i] ?>
 						</option>
 					<?php } ?>
 				</select>
@@ -120,6 +119,77 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						</option>
 					<?php } ?>
 				</select>
+				
+				<input type="button" name="previous" class="previous action-button" value="Anterior" />
+				<input type="button" name="next" class="next action-button" value="Siguiente" />
+				<!--<input type="submit" name="submit" class="submit action-button" value="Submit" />-->
+			</fieldset>
+				
+			<fieldset>
+				<h2 class="fs-title">Estilo de vida</h2>
+				<!--h3 class="fs-subtitle">We will never sell it</h3-->
+				
+				<div class="col-md-12"><input type="text" id="slogan" placeholder="Slogan" /></div>
+				
+				<div class="col-md-6"><h3 class="fs-subtitle">Tipo de bebedor: </h3></div>
+				<select class="col-md-6" name="tipo_bebedor" id="tipo_bebedor">
+					<option value="">Tipo de bebedor</option>
+					<?php for($i = 0; $i < count($arrayQuery["TIPO_BEBEDOR"]["NOMBRE"]); $i++){ ?>
+						<option value="<?php echo $arrayQuery["TIPO_BEBEDOR"]["NOMBRE"][$i] ?>">
+							<?php echo $arrayQuery["TIPO_BEBEDOR"]["NOMBRE"][$i] ?>
+						</option>
+					<?php } ?>
+				</select>
+				
+				<div class="col-md-6"><h3 class="fs-subtitle">Fumador: </h3></div>
+				<select class="col-md-6" name="fumador" id="fumador">
+					<option value="">Fumador</option>
+					<option value="si">Si</option>
+      				<option value="no">No</option>
+				</select>
+				
+				<div class="col-md-6"><h3 class="fs-subtitle">Quiere hijos?: </h3></div>
+				<select class="col-md-6" name="quiere_hijos" id="quiere_hijos">
+					<option value="">Fumador</option>
+					<option value="si">Si</option>
+      				<option value="no">No</option>
+				</select>
+				
+				<div class="col-md-12"><input type="text" id="cantidad_de_hijos" placeholder="Cantidad de hijos" /></div>
+				
+				<div class="col-md-6"><h3 class="fs-subtitle">Quiere mascotas?: </h3></div>
+				<select class="col-md-6" name="quiere_mascotas" id="quiere_mascotas">
+					<option value="">Quiere mascotas?:</option>
+					<option value="si">Si</option>
+      				<option value="no">No</option>
+				</select>
+				
+				<div class="col-md-6"><h3 class="fs-subtitle">Tiene mascotas?: </h3></div>
+				<select class="col-md-6" name="tiene_mascotas" id="tiene_mascotas">
+					<option value="">Tiene mascotas?:</option>
+					<option value="si">Si</option>
+      				<option value="no">No</option>
+				</select>
+				
+				<div class="col-md-6"><h3 class="fs-subtitle">Tendria mascotas?: </h3></div>
+				<select class="col-md-6" name="tendria_mascotas" id="tendria_mascotas">
+					<option value="">Tendria mascotas?:</option>
+					<option value="si">Si</option>
+      				<option value="no">No</option>
+				</select>
+				
+				<div class="col-md-6"><h3 class="fs-subtitle">Frecuencia de ejercicios (dias por semana): </h3></div>
+				<select class="col-md-6" name="tipo_bebedor" id="tipo_bebedor">
+					<option value="">Frecuencia de ejercicios</option>
+					<?php for($i = 0; $i < 8; $i++){ ?>
+						<option value="<?php echo $i ?>">
+							<?php echo $i ?>
+						</option>
+					<?php } ?>
+				</select>
+				
+				<div class="col-md-12"><input type="text" id="salario" placeholder="Salario" /></div>
+				
 				
 				<input type="button" name="previous" class="previous action-button" value="Anterior" />
 				<input type="button" name="next" class="next action-button" value="Siguiente" />
@@ -277,84 +347,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<input type="button" name="next" class="next action-button" value="Siguente" />
 			</fieldset>
 			
-			<fieldset>
-				<h2 class="fs-title">Estilo de Vida</h2>
-					
-				<div class="col-md-4">
-					<input type="checkbox" name="checkbox" id="checkbox" />
-					<label for="checkbox">Checkbox:</label>
-				</div>
-				
-				<div class="col-md-4">
-					<input type="checkbox" name="checkbox" id="checkbox" />
-					<label for="checkbox">Checkbox:</label>
-				</div>
-				
-				<div class="col-md-4">
-					<input type="checkbox" name="checkbox" id="checkbox" />
-					<label for="checkbox">Checkbox:</label>
-				</div>
-				
-				<div class="col-md-4">
-					<input type="checkbox" name="checkbox" id="checkbox" />
-					<label for="checkbox">Checkbox:</label>
-				</div>
-				
-				<div class="col-md-4">
-					<input type="checkbox" name="checkbox" id="checkbox" />
-					<label for="checkbox">Checkbox:</label>
-				</div>
-				
-				<div class="col-md-4">
-					<input type="checkbox" name="checkbox" id="checkbox" />
-					<label for="checkbox">Checkbox:</label>
-				</div>
-				
-				
-				<input type="button" name="previous" class="previous action-button" value="Anterior" />
-				<input type="button" name="next" class="next action-button" value="Siguente" />
-			</fieldset>
-			
-			<fieldset>
-					<h2 class="fs-title">Mascotas</h2>
-				
-					
-			<div class="col-md-4">
-					<input type="checkbox" name="checkbox" id="checkbox" />
-					<label for="checkbox">Checkbox:</label>
-				</div>
-				
-				<div class="col-md-4">
-					<input type="checkbox" name="checkbox" id="checkbox" />
-					<label for="checkbox">Checkbox:</label>
-				</div>
-				
-				<div class="col-md-4">
-					<input type="checkbox" name="checkbox" id="checkbox" />
-					<label for="checkbox">Checkbox:</label>
-				</div>
-				
-				<div class="col-md-4">
-					<input type="checkbox" name="checkbox" id="checkbox" />
-					<label for="checkbox">Checkbox:</label>
-				</div>
-				
-				
-				<div class="col-md-4">
-					<input type="checkbox" name="checkbox" id="checkbox" />
-					<label for="checkbox">Checkbox:</label>
-				</div>
-				
-				<div class="col-md-4">
-					<input type="checkbox" name="checkbox" id="checkbox" />
-					<label for="checkbox">Checkbox:</label>
-				</div>
-				
-				<input type="button" name="previous" class="previous action-button" value="Anterior" />
-				<input type="button" name="next" class="next action-button" value="Siguente" />
-			</fieldset>
-			
-			<fieldset>
+			<!--fieldset>
 				
 				<h2 class="fs-title">¿Qué Busco?</h2>
 				
@@ -387,7 +380,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<input type="button" name="previous" class="previous action-button" value="Anterior" />
 				<input type="submit" name="submit" class="submit action-button" value="Registro" />
 
-			</fieldset>
+			</fieldset-->
 		
 		</form>
 	</div>
