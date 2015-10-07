@@ -36,9 +36,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	
 	if (!empty($_POST) && $_POST["mode"] == "enviar_mail"){
 		include('Mail.php');
-		
+
 		$usuarios = queryCursor($conexion, "begin get_EmailXPais({$_POST["ciudad"]}, :cursbv); end;");
-		    
+
 		for($i = 0; $i < count($usuarios["EMAIL"]); $i++){
 		    //$recipients = 'kakoo26i@gmail.com';
 		    $headers['From']    = 'MatchMeTEC@gmail.com';
@@ -52,7 +52,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		    $smtpinfo["auth"] = true;
 		    $smtpinfo["username"] = "MatchMeTEC@gmail.com";
 		    $smtpinfo["password"] = "Basesdatos";
-		
+
 		    // Create the mail object using the Mail::factory method
 		    $mail_object =& Mail::factory("smtp", $smtpinfo); 
 		    $mail_object->send($recipients, $headers, $body);
