@@ -78,7 +78,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				</select>
 				
 				<div class="col-md-6"><h3 class="fs-subtitle">Genero: </h3></div>
-				<select class="col-md-6" name="genero" id="genero">
+				<select class="col-md-6" name="genero0" id="genero0">
 					<option value="">Genero</option>
 					<?php for($i = 0; $i < count($arrayQuery["GENERO"]["NOMBRE"]); $i++){ ?>
 						<option value="<?php echo $arrayQuery["GENERO"]["NOMBRE"][$i] ?>">
@@ -179,7 +179,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				</select>
 				
 				<div class="col-md-6"><h3 class="fs-subtitle">Frecuencia de ejercicios (dias por semana): </h3></div>
-				<select class="col-md-6" name="tipo_bebedor" id="tipo_bebedor">
+				<select class="col-md-6" name="frecuencia_ejercicios" id="frecuencia_ejercicios">
 					<option value="">Frecuencia de ejercicios</option>
 					<?php for($i = 0; $i < 8; $i++){ ?>
 						<option value="<?php echo $i ?>">
@@ -261,8 +261,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<select class="col-md-6 selector" name="genero" id="genero">
 			    	<option value="">Seleccione un genero</option>
 			    	<?php for($i = 0; $i < count($arrayQuery["GENERO"]["NOMBRE"]); $i++){ ?>
-						<option value="<?php echo $i ?>">
-							<?php echo $i ?>
+						<option value="<?php echo $arrayQuery["GENERO"]["NOMBRE"][$i] ?>">
+							<?php echo $arrayQuery["GENERO"]["NOMBRE"][$i] ?>
 						</option>
 					<?php } ?>
 			    </select>
@@ -274,36 +274,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<fieldset>
 				<h2 class="fs-title">Hobbies</h2>
 				
-				<div class="col-md-4">
-					<input type="checkbox" name="checkbox" id="checkbox" />
-					<label for="checkbox">Checkbox:</label>
+				<div class="col-md-8 scroll-container">
+					<?php for($i = 0; $i < count($arrayQuery["HOBBY"]["NOMBRE"]); $i++){ ?>
+						<input type="checkbox" id="<?php $arrayQuery["HOBBY"]["NOMBRE"][$i] ?>" value = "<?php echo $arrayQuery["HOBBY"]["ID_HOBBY"][$i] ?>" />
+						<label for="<?php $arrayQuery["HOBBY"]["NOMBRE"][$i] ?>"><?php echo $arrayQuery["HOBBY"]["NOMBRE"][$i] ?>:</label>
+					<?php } ?>	
 				</div>
-				
-				<div class="col-md-4">
-					<input type="checkbox" name="checkbox" id="checkbox" />
-					<label for="checkbox">Checkbox:</label>
-				</div>
-				
-				<div class="col-md-4">
-					<input type="checkbox" name="checkbox" id="checkbox" />
-					<label for="checkbox">Checkbox:</label>
-				</div>
-				
-				<div class="col-md-4">
-					<input type="checkbox" name="checkbox" id="checkbox" />
-					<label for="checkbox">Checkbox:</label>
-				</div>
-				
-				<div class="col-md-4">
-					<input type="checkbox" name="checkbox" id="checkbox" />
-					<label for="checkbox">Checkbox:</label>
-				</div>
-				
-				<div class="col-md-4">
-					<input type="checkbox" name="checkbox" id="checkbox" />
-					<label for="checkbox">Checkbox:</label>
-				</div>
-				
 				
 				<input type="button" name="previous" class="previous action-button" value="Anterior" />
 				<input type="button" name="next" class="next action-button" value="Siguente" />
@@ -312,7 +288,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<fieldset>
 				<h2 class="fs-title">Hobbies</h2>
 				
-				<div class="col-md-4">
+				<!--div class="col-md-4">
 					<input type="checkbox" name="checkbox" id="checkbox" />
 					<label for="checkbox">Checkbox:</label>
 				</div>
@@ -340,8 +316,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<div class="col-md-4">
 					<input type="checkbox" name="checkbox" id="checkbox" />
 					<label for="checkbox">Checkbox:</label>
-				</div>
+				</div-->
 				
+				<div class="col-md-8 scroll-container">
+					<?php for($i = 0; $i < count($arrayQuery["HOBBY"]["NOMBRE"]); $i++){ ?>
+						<input type="checkbox" id="<?php $arrayQuery["HOBBY"]["NOMBRE"][$i] ?>" value = "<?php echo $arrayQuery["HOBBY"]["ID_HOBBY"][$i] ?>" />
+						<label for="<?php $arrayQuery["HOBBY"]["NOMBRE"][$i] ?>"><?php echo $arrayQuery["HOBBY"]["NOMBRE"][$i] ?>:</label>
+					<?php } ?>	
+				</div>
 				
 				<input type="button" name="previous" class="previous action-button" value="Anterior" />
 				<input type="button" name="next" class="next action-button" value="Siguente" />
