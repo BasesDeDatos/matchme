@@ -5,9 +5,9 @@ License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 -->
 	<?php require_once("header2.php");
-		// $arrayQuery = array(); 
-		// $_POST["mode"] = "get_catalogos"; 
-		// include ("funcionesOracle.php");
+		 $arrayQuery = array(); 
+		 $_POST["mode"] = "get_catalogos"; 
+		 include ("funcionesOracle.php");
 	
 	?>
 	
@@ -36,7 +36,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<label class="col-md-6" for="Pais0">País</label>
 				<select class="col-md-6 selector" name="Pais" id="Pais0" >
 					<option value="">Seleccione un país</option>
-					<option value="">Agregar nuevo</option>
 					<?php for($i = 0; $i < count($arrayQuery["PAIS"]["NOMBRE"]); $i++){ ?>
 						<option class="<?php echo $arrayQuery["PAIS"]["ID_PAIS"][$i] ?>"
 								value="<?php echo $arrayQuery["PAIS"]["ID_PAIS"][$i] ?>">
@@ -48,7 +47,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<label class="col-md-6" for="Estado0">Estado</label>
 				<select class="col-md-6 selector" name="Estado" id="Estado0">
 					<option value="">Seleccione un estado</option>
-					<option value="">Agregar nuevo</option>
 					<?php for($i = 0; $i < count($arrayQuery["ESTADO"]["NOMBRE"]); $i++){ ?>
 						<option class="<?php echo $arrayQuery["ESTADO"]["ID_PAIS"][$i] ?>"
 								value="<?php echo $arrayQuery["ESTADO"]["ID_ESTADO"][$i] ?>">
@@ -60,7 +58,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<label class="col-md-6" for="Ciudad0">Ciudad</label>
 				<select class="col-md-6 selector" name="Ciudad" id="Ciudad0">
 					<option value="">Seleccione una ciudad</option>
-
 					<?php for($i = 0; $i < count($arrayQuery["CIUDAD"]["NOMBRE"]); $i++){ ?>
 						<option class="<?php echo $arrayQuery["CIUDAD"]["ID_ESTADO"][$i] ?>"
 								value="<?php echo $arrayQuery["CIUDAD"]["ID_CIUDAD"][$i] ?>">
@@ -73,7 +70,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<input type="button" name="next" class="next action-button" value="Siguiente"/>
 			</fieldset>
 			
-			<fieldset id = "catalogos">
+			<fieldset class = "catalogos">
 				
 				<h2 class="fs-title">Catalogos</h2>
 				<label class="col-md-4" for="signo_zodiacal">Signo Zodiacal</label>
@@ -178,7 +175,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				
 			</fieldset>
 				
-			<fieldset id = "catalogos2">
+			<fieldset class = "catalogos">
 				
 				<h2 class="fs-title">Catalogos</h2>
 				
@@ -207,9 +204,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<label class="col-md-4" for="tipo_bebedor">Tipo de bebedor</label>
 				<select class="col-md-4" name="tipo_bebedor" id="tipo_bebedor">
 					<option value="">Agregar nuevo</option>
-					<?php for($i = 0; $i < count($arrayQuery["TIPO_BEBEDOR"]["NOMBRE"]); $i++){ ?>
-						<option value="<?php echo $arrayQuery["TIPO_BEBEDOR"]["ID_TIPO_BEBEDOR"][$i] ?>">
-							<?php echo $arrayQuery["TIPO_BEBEDOR"]["NOMBRE"][$i] ?>
+					<?php for($i = 0; $i < count($arrayQuery["TIPO_BEBEDOR"]["CLASE"]); $i++){ ?>
+						<option value="<?php echo $arrayQuery["TIPO_BEBEDOR"]["ID_TIPOBEBEDOR"][$i] ?>">
+							<?php echo $arrayQuery["TIPO_BEBEDOR"]["CLASE"][$i] ?>
 						</option>
 					<?php } ?>
 				</select>
@@ -230,7 +227,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<select class="col-md-4" name="color_ojos" id="color_ojos">
 					<option value="">Agregar nuevo</option>
 					<?php for($i = 0; $i < count($arrayQuery["COLOR_OJOS"]["NOMBRE"]); $i++){ ?>
-						<option value="<?php echo $arrayQuery["COLOR_OJOS"]["ID_COLOR_OJOS"][$i] ?>">
+						<option value="<?php echo $arrayQuery["COLOR_OJOS"]["ID_COLOROJOS"][$i] ?>">
 							<?php echo $arrayQuery["COLOR_OJOS"]["NOMBRE"][$i] ?>
 						</option>
 					<?php } ?>				</select>
@@ -275,7 +272,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 			</fieldset>
 			
-			<fieldset id = "catalogos3">
+			<fieldset class = "catalogos">
 				
 				<h2 class="fs-title">Catalogos</h2>
 				
@@ -406,6 +403,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		
 		$("#Pais0").change(function(){
 			$("#Ciudad0").val("");
+			$("#Ciudad0 option:not(:first)").hide();
 			$("#Estado0").val("");
 			$("#Estado0 option:not(:first)").hide();
 			$("#Estado0 ."+$(this).val()).show();
@@ -414,6 +412,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		$("#Pais").change(function(){
 			$("#Ciudad").val("");
 			$("#Estado").val("");
+			$("#Ciudad option:not(:first)").hide();
 			$("#Estado option:not(:first)").hide();
 			$("#Estado ."+$(this).val()).show();
 		});
@@ -430,13 +429,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			$("#Ciudad ."+$(this).val()).show();
 		});
 
-		$("#catalogos select").change(function(){
+		$(".catalogos select").change(function(){
 			var input = $("input[name='"+$(this).attr("name")+"_input']");
 			if ($(this).val() == ""){ input.val(""); } 
 			else { input.val( $(this).find("option:selected").text().trim());}
 		});
 		
-		$("#catalogos input").change(function(){
+		$(".catalogos input").change(function(){
 			var value = $(this).val();
 			var input = $(this).attr("name");
 			var nameSelect = input.substring(0, input.length-6) //se borra la palabra "_input" para obtener el select;
@@ -445,16 +444,17 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				var data = "mode=registrar_catalogo&procedure=REGISTRAR_"+nameSelect+"&value="+value;
 				$.ajax({  
 				    type: "POST",
+					data: data,
 				    url: "funcionesOracle.php",
-				    data: data,
 				    success: function(data){
 				    	$("#debug").html(data);
-				    }
+					},
+					
 				});
-				$("select[name='"+nameSelect+"']").append(
-					"<option value='meter ID'>"+value+"</option>"
-				)
+				var id = $("select[name='"+nameSelect+"'] option").length;
+				$("select[name='"+nameSelect+"']").append("<option value='"+id+"'>"+value+"</option>");
 				$("select[name='"+nameSelect+"'] option").last().attr("selected", "selected");
+				
 			}
 			else{ //EDIT
 				var data = "mode=editar_catalogo&procedure=EDITAR_"+nameSelect+"&value="+value+ "&row_id="+row_id;

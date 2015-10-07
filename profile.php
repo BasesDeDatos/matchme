@@ -137,12 +137,12 @@ if ($edit){ ?>
 						<div class="btm-num">
 							<ul>
 								<li>
-									<h4>420<?php echo count($arrayQuery["WINK"][0])?></h4>
-									<h5>Visitas</h5>
+									<h4><?php echo count($arrayQuery["WINK"]["ID_ENVIADO"])?></h4>
+									<h5>Winks</h5>
 								</li>
 								<li>
-									<h4>100<?php echo count($arrayQuery["VISITAS"][0])?></h4>
-									<h5>Winks</h5>
+									<h4><?php echo count($arrayQuery["VISITAS"]["ID_VISITANTE"])?></h4>
+									<h5>Visitas</h5>
 								</li>
 								<li>
 									<h4>60</h4>
