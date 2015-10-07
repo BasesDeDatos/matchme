@@ -471,10 +471,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		});
 		
 		function enviar_mensaje(){
-			alert("hola");
+//			alert($("#Ciudad0").val());
 			var subject = $("#subject").val();
 			var mensaje = $("#mensaje").val();
-			var ciudad = $("#ciudad0").val();
+			var ciudad = $("#Ciudad0").val();
+
 			var data = "mode=enviar_mail&subject="+subject+"&mensaje="+mensaje+"&ciudad="+ciudad;
 			$.ajax({  
 				    type: "POST",

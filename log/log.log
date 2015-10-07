@@ -5570,3 +5570,1368 @@ VideoGames
 07/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
 14/10/15	1	
 ################0################
+07/Oct/15 begin GET_Pais(null, :cursbv); end;
+1	Cota Rica	
+2	Mongolia	
+################0################
+07/Oct/15 begin GET_Estado(null, :cursbv); end;
+1	SanJose	1	
+################0################
+07/Oct/15 begin GET_CIUDAD(null, :cursbv); end;
+1	SanJose	1	
+################0################
+07/Oct/15 begin GET_UsuariosXMatch(null, :cursbv); end;
+26/09/15	1	
+26/09/15	1	
+################0################
+07/Oct/15 begin GET_Signo_Zodiacal(null, :cursbv); end;
+11	Acuario	20/01/15	17/02/15	
+1	Aries	20/03/15	19/04/15	
+4		21/06/15	22/07/15	
+10	Capricornio	22/12/15	19/01/15	
+8	Escorpio	23/10/15	21/11/15	
+3		21/05/15	20/06/15	
+5	Leo	23/07/15	22/08/15	
+7	Libra	23/09/15	22/10/15	
+12	Piscis	18/02/15	19/03/15	
+9	Sagitario	22/11/15	21/12/15	
+2	Tauro	20/04/15	20/05/15	
+6	Virgo	23/08/15	22/09/15	
+################0################
+07/Oct/15 begin GET_Rol(null, :cursbv); end;
+1	Admin	
+################0################
+07/Oct/15 begin GET_Religion(null, :cursbv); end;
+3	Catolica	
+1	Pastafar	
+################0################
+07/Oct/15 begin GET_Idioma(null, :cursbv); end;
+3	arabe	
+2		
+################0################
+07/Oct/15 begin GET_Educacion(null, :cursbv); end;
+1	Bachiller	
+################0################
+07/Oct/15 begin GET_Hobby(null, :cursbv); end;
+25	Cantar	
+27	Cromos	
+26	Pintar	
+1	VideoGames	
+################0################
+07/Oct/15 begin GET_ActividadAL(null, :cursbv); end;
+Escalar	
+################0################
+07/Oct/15 begin GET_Tipo_Bebedor(null, :cursbv); end;
+1	Social	
+################0################
+07/Oct/15 begin GET_Ocupacion(null, :cursbv); end;
+Programador	
+################0################
+07/Oct/15 begin GET_Color_Ojos(null, :cursbv); end;
+1		
+4	Verdes	
+################0################
+07/Oct/15 begin GET_Color_Piel(null, :cursbv); end;
+Amarillo	
+Blanca	
+################0################
+07/Oct/15 begin GET_Color_Pelo(null, :cursbv); end;
+1	Cafe	
+################0################
+07/Oct/15 begin GET_Contextura(null, :cursbv); end;
+1	Delgado	
+################0################
+07/Oct/15 begin GET_Estado_Match(null, :cursbv); end;
+Encontro pareja	
+################0################
+07/Oct/15 begin GET_Estado_Civil(null, :cursbv); end;
+1	Solo	
+################0################
+07/Oct/15 begin GET_Genero(null, :cursbv); end;
+2	Femenino	
+1	Masculino	
+################0################
+07/Oct/15 begin :value := REGISTRAR_contextura('Gruesa'); end; 2
+################################
+07/Oct/15 begin :value := REGISTRAR_hobby('ver tele'); end; 28
+################################
+07/Oct/15 begin EDITAR_hobby(5, 'Ver tele'); end;
+
+################################
+07/Oct/15 begin get_EmailXPais(undefined, :cursbv); end;
+################################
+07/Oct/15 begin GET_Pais(null, :cursbv); end;
+1	Cota Rica	
+2	Mongolia	
+################0################
+07/Oct/15 begin GET_Estado(null, :cursbv); end;
+1	SanJose	1	
+################0################
+07/Oct/15 begin GET_CIUDAD(null, :cursbv); end;
+1	SanJose	1	
+################0################
+07/Oct/15 begin GET_UsuariosXMatch(null, :cursbv); end;
+26/09/15	1	
+26/09/15	1	
+################0################
+07/Oct/15 begin GET_Signo_Zodiacal(null, :cursbv); end;
+11	Acuario	20/01/15	17/02/15	
+1	Aries	20/03/15	19/04/15	
+4		21/06/15	22/07/15	
+10	Capricornio	22/12/15	19/01/15	
+8	Escorpio	23/10/15	21/11/15	
+3		21/05/15	20/06/15	
+5	Leo	23/07/15	22/08/15	
+7	Libra	23/09/15	22/10/15	
+12	Piscis	18/02/15	19/03/15	
+9	Sagitario	22/11/15	21/12/15	
+2	Tauro	20/04/15	20/05/15	
+6	Virgo	23/08/15	22/09/15	
+################0################
+07/Oct/15 begin GET_Rol(null, :cursbv); end;
+1	Admin	
+################0################
+07/Oct/15 begin GET_Religion(null, :cursbv); end;
+3	Catolica	
+1	Pastafar	
+################0################
+07/Oct/15 begin GET_Idioma(null, :cursbv); end;
+3	arabe	
+2		
+################0################
+07/Oct/15 begin GET_Educacion(null, :cursbv); end;
+1	Bachiller	
+################0################
+07/Oct/15 begin GET_Hobby(null, :cursbv); end;
+25	Cantar	
+27	Cromos	
+26	Pintar	
+28	ver tele	
+1	VideoGames	
+################0################
+07/Oct/15 begin GET_ActividadAL(null, :cursbv); end;
+Escalar	
+################0################
+07/Oct/15 begin GET_Tipo_Bebedor(null, :cursbv); end;
+1	Social	
+################0################
+07/Oct/15 begin GET_Ocupacion(null, :cursbv); end;
+Programador	
+################0################
+07/Oct/15 begin GET_Color_Ojos(null, :cursbv); end;
+1		
+4	Verdes	
+################0################
+07/Oct/15 begin GET_Color_Piel(null, :cursbv); end;
+Amarillo	
+Blanca	
+################0################
+07/Oct/15 begin GET_Color_Pelo(null, :cursbv); end;
+1	Cafe	
+################0################
+07/Oct/15 begin GET_Contextura(null, :cursbv); end;
+1	Delgado	
+2	Gruesa	
+################0################
+07/Oct/15 begin GET_Estado_Match(null, :cursbv); end;
+Encontro pareja	
+################0################
+07/Oct/15 begin GET_Estado_Civil(null, :cursbv); end;
+1	Solo	
+################0################
+07/Oct/15 begin GET_Genero(null, :cursbv); end;
+2	Femenino	
+1	Masculino	
+################0################
+07/Oct/15 begin get_EmailXPais(undefined, :cursbv); end;
+################################
+07/Oct/15 begin GET_Pais(null, :cursbv); end;
+1	Cota Rica	
+2	Mongolia	
+################0################
+07/Oct/15 begin GET_Estado(null, :cursbv); end;
+1	SanJose	1	
+################0################
+07/Oct/15 begin GET_CIUDAD(null, :cursbv); end;
+1	SanJose	1	
+################0################
+07/Oct/15 begin GET_UsuariosXMatch(null, :cursbv); end;
+26/09/15	1	
+26/09/15	1	
+################0################
+07/Oct/15 begin GET_Signo_Zodiacal(null, :cursbv); end;
+11	Acuario	20/01/15	17/02/15	
+1	Aries	20/03/15	19/04/15	
+4		21/06/15	22/07/15	
+10	Capricornio	22/12/15	19/01/15	
+8	Escorpio	23/10/15	21/11/15	
+3		21/05/15	20/06/15	
+5	Leo	23/07/15	22/08/15	
+7	Libra	23/09/15	22/10/15	
+12	Piscis	18/02/15	19/03/15	
+9	Sagitario	22/11/15	21/12/15	
+2	Tauro	20/04/15	20/05/15	
+6	Virgo	23/08/15	22/09/15	
+################0################
+07/Oct/15 begin GET_Rol(null, :cursbv); end;
+1	Admin	
+################0################
+07/Oct/15 begin GET_Religion(null, :cursbv); end;
+3	Catolica	
+1	Pastafar	
+################0################
+07/Oct/15 begin GET_Idioma(null, :cursbv); end;
+3	arabe	
+2		
+################0################
+07/Oct/15 begin GET_Educacion(null, :cursbv); end;
+1	Bachiller	
+################0################
+07/Oct/15 begin GET_Hobby(null, :cursbv); end;
+25	Cantar	
+27	Cromos	
+26	Pintar	
+28	ver tele	
+1	VideoGames	
+################0################
+07/Oct/15 begin GET_ActividadAL(null, :cursbv); end;
+Escalar	
+################0################
+07/Oct/15 begin GET_Tipo_Bebedor(null, :cursbv); end;
+1	Social	
+################0################
+07/Oct/15 begin GET_Ocupacion(null, :cursbv); end;
+Programador	
+################0################
+07/Oct/15 begin GET_Color_Ojos(null, :cursbv); end;
+1		
+4	Verdes	
+################0################
+07/Oct/15 begin GET_Color_Piel(null, :cursbv); end;
+Amarillo	
+Blanca	
+################0################
+07/Oct/15 begin GET_Color_Pelo(null, :cursbv); end;
+1	Cafe	
+################0################
+07/Oct/15 begin GET_Contextura(null, :cursbv); end;
+1	Delgado	
+2	Gruesa	
+################0################
+07/Oct/15 begin GET_Estado_Match(null, :cursbv); end;
+Encontro pareja	
+################0################
+07/Oct/15 begin GET_Estado_Civil(null, :cursbv); end;
+1	Solo	
+################0################
+07/Oct/15 begin GET_Genero(null, :cursbv); end;
+2	Femenino	
+1	Masculino	
+################0################
+07/Oct/15 begin get_EmailXPais(undefined, :cursbv); end;
+################################
+07/Oct/15 begin GET_Pais(null, :cursbv); end;
+1	Cota Rica	
+2	Mongolia	
+################0################
+07/Oct/15 begin GET_Estado(null, :cursbv); end;
+1	SanJose	1	
+################0################
+07/Oct/15 begin GET_CIUDAD(null, :cursbv); end;
+1	SanJose	1	
+################0################
+07/Oct/15 begin GET_UsuariosXMatch(null, :cursbv); end;
+26/09/15	1	
+26/09/15	1	
+################0################
+07/Oct/15 begin GET_Signo_Zodiacal(null, :cursbv); end;
+11	Acuario	20/01/15	17/02/15	
+1	Aries	20/03/15	19/04/15	
+4		21/06/15	22/07/15	
+10	Capricornio	22/12/15	19/01/15	
+8	Escorpio	23/10/15	21/11/15	
+3		21/05/15	20/06/15	
+5	Leo	23/07/15	22/08/15	
+7	Libra	23/09/15	22/10/15	
+12	Piscis	18/02/15	19/03/15	
+9	Sagitario	22/11/15	21/12/15	
+2	Tauro	20/04/15	20/05/15	
+6	Virgo	23/08/15	22/09/15	
+################0################
+07/Oct/15 begin GET_Rol(null, :cursbv); end;
+1	Admin	
+################0################
+07/Oct/15 begin GET_Religion(null, :cursbv); end;
+3	Catolica	
+1	Pastafar	
+################0################
+07/Oct/15 begin GET_Idioma(null, :cursbv); end;
+3	arabe	
+2		
+################0################
+07/Oct/15 begin GET_Educacion(null, :cursbv); end;
+1	Bachiller	
+################0################
+07/Oct/15 begin GET_Hobby(null, :cursbv); end;
+25	Cantar	
+27	Cromos	
+26	Pintar	
+28	ver tele	
+1	VideoGames	
+################0################
+07/Oct/15 begin GET_ActividadAL(null, :cursbv); end;
+Escalar	
+################0################
+07/Oct/15 begin GET_Tipo_Bebedor(null, :cursbv); end;
+1	Social	
+################0################
+07/Oct/15 begin GET_Ocupacion(null, :cursbv); end;
+Programador	
+################0################
+07/Oct/15 begin GET_Color_Ojos(null, :cursbv); end;
+1		
+4	Verdes	
+################0################
+07/Oct/15 begin GET_Color_Piel(null, :cursbv); end;
+Amarillo	
+Blanca	
+################0################
+07/Oct/15 begin GET_Color_Pelo(null, :cursbv); end;
+1	Cafe	
+################0################
+07/Oct/15 begin GET_Contextura(null, :cursbv); end;
+1	Delgado	
+2	Gruesa	
+################0################
+07/Oct/15 begin GET_Estado_Match(null, :cursbv); end;
+Encontro pareja	
+################0################
+07/Oct/15 begin GET_Estado_Civil(null, :cursbv); end;
+1	Solo	
+################0################
+07/Oct/15 begin GET_Genero(null, :cursbv); end;
+2	Femenino	
+1	Masculino	
+################0################
+07/Oct/15 begin get_EmailXPais(undefined, :cursbv); end;
+################################
+07/Oct/15 begin GET_Pais(null, :cursbv); end;
+1	Cota Rica	
+2	Mongolia	
+################0################
+07/Oct/15 begin GET_Estado(null, :cursbv); end;
+1	SanJose	1	
+################0################
+07/Oct/15 begin GET_CIUDAD(null, :cursbv); end;
+1	SanJose	1	
+################0################
+07/Oct/15 begin GET_UsuariosXMatch(null, :cursbv); end;
+26/09/15	1	
+26/09/15	1	
+################0################
+07/Oct/15 begin GET_Signo_Zodiacal(null, :cursbv); end;
+11	Acuario	20/01/15	17/02/15	
+1	Aries	20/03/15	19/04/15	
+4		21/06/15	22/07/15	
+10	Capricornio	22/12/15	19/01/15	
+8	Escorpio	23/10/15	21/11/15	
+3		21/05/15	20/06/15	
+5	Leo	23/07/15	22/08/15	
+7	Libra	23/09/15	22/10/15	
+12	Piscis	18/02/15	19/03/15	
+9	Sagitario	22/11/15	21/12/15	
+2	Tauro	20/04/15	20/05/15	
+6	Virgo	23/08/15	22/09/15	
+################0################
+07/Oct/15 begin GET_Rol(null, :cursbv); end;
+1	Admin	
+################0################
+07/Oct/15 begin GET_Religion(null, :cursbv); end;
+3	Catolica	
+1	Pastafar	
+################0################
+07/Oct/15 begin GET_Idioma(null, :cursbv); end;
+3	arabe	
+2		
+################0################
+07/Oct/15 begin GET_Educacion(null, :cursbv); end;
+1	Bachiller	
+################0################
+07/Oct/15 begin GET_Hobby(null, :cursbv); end;
+25	Cantar	
+27	Cromos	
+26	Pintar	
+28	ver tele	
+1	VideoGames	
+################0################
+07/Oct/15 begin GET_ActividadAL(null, :cursbv); end;
+Escalar	
+################0################
+07/Oct/15 begin GET_Tipo_Bebedor(null, :cursbv); end;
+1	Social	
+################0################
+07/Oct/15 begin GET_Ocupacion(null, :cursbv); end;
+Programador	
+################0################
+07/Oct/15 begin GET_Color_Ojos(null, :cursbv); end;
+1		
+4	Verdes	
+################0################
+07/Oct/15 begin GET_Color_Piel(null, :cursbv); end;
+Amarillo	
+Blanca	
+################0################
+07/Oct/15 begin GET_Color_Pelo(null, :cursbv); end;
+1	Cafe	
+################0################
+07/Oct/15 begin GET_Contextura(null, :cursbv); end;
+1	Delgado	
+2	Gruesa	
+################0################
+07/Oct/15 begin GET_Estado_Match(null, :cursbv); end;
+Encontro pareja	
+################0################
+07/Oct/15 begin GET_Estado_Civil(null, :cursbv); end;
+1	Solo	
+################0################
+07/Oct/15 begin GET_Genero(null, :cursbv); end;
+2	Femenino	
+1	Masculino	
+################0################
+07/Oct/15 begin get_EmailXPais(undefined, :cursbv); end;
+################################
+07/Oct/15 begin GET_Pais(null, :cursbv); end;
+1	Cota Rica	
+2	Mongolia	
+################0################
+07/Oct/15 begin GET_Estado(null, :cursbv); end;
+1	SanJose	1	
+################0################
+07/Oct/15 begin GET_CIUDAD(null, :cursbv); end;
+1	SanJose	1	
+################0################
+07/Oct/15 begin GET_UsuariosXMatch(null, :cursbv); end;
+26/09/15	1	
+26/09/15	1	
+################0################
+07/Oct/15 begin GET_Signo_Zodiacal(null, :cursbv); end;
+11	Acuario	20/01/15	17/02/15	
+1	Aries	20/03/15	19/04/15	
+4		21/06/15	22/07/15	
+10	Capricornio	22/12/15	19/01/15	
+8	Escorpio	23/10/15	21/11/15	
+3		21/05/15	20/06/15	
+5	Leo	23/07/15	22/08/15	
+7	Libra	23/09/15	22/10/15	
+12	Piscis	18/02/15	19/03/15	
+9	Sagitario	22/11/15	21/12/15	
+2	Tauro	20/04/15	20/05/15	
+6	Virgo	23/08/15	22/09/15	
+################0################
+07/Oct/15 begin GET_Rol(null, :cursbv); end;
+1	Admin	
+################0################
+07/Oct/15 begin GET_Religion(null, :cursbv); end;
+3	Catolica	
+1	Pastafar	
+################0################
+07/Oct/15 begin GET_Idioma(null, :cursbv); end;
+3	arabe	
+2		
+################0################
+07/Oct/15 begin GET_Educacion(null, :cursbv); end;
+1	Bachiller	
+################0################
+07/Oct/15 begin GET_Hobby(null, :cursbv); end;
+25	Cantar	
+27	Cromos	
+26	Pintar	
+28	ver tele	
+1	VideoGames	
+################0################
+07/Oct/15 begin GET_ActividadAL(null, :cursbv); end;
+Escalar	
+################0################
+07/Oct/15 begin GET_Tipo_Bebedor(null, :cursbv); end;
+1	Social	
+################0################
+07/Oct/15 begin GET_Ocupacion(null, :cursbv); end;
+Programador	
+################0################
+07/Oct/15 begin GET_Color_Ojos(null, :cursbv); end;
+1		
+4	Verdes	
+################0################
+07/Oct/15 begin GET_Color_Piel(null, :cursbv); end;
+Amarillo	
+Blanca	
+################0################
+07/Oct/15 begin GET_Color_Pelo(null, :cursbv); end;
+1	Cafe	
+################0################
+07/Oct/15 begin GET_Contextura(null, :cursbv); end;
+1	Delgado	
+2	Gruesa	
+################0################
+07/Oct/15 begin GET_Estado_Match(null, :cursbv); end;
+Encontro pareja	
+################0################
+07/Oct/15 begin GET_Estado_Civil(null, :cursbv); end;
+1	Solo	
+################0################
+07/Oct/15 begin GET_Genero(null, :cursbv); end;
+2	Femenino	
+1	Masculino	
+################0################
+07/Oct/15 begin get_EmailXPais(undefined, :cursbv); end;
+################################
+07/Oct/15 begin GET_Pais(null, :cursbv); end;
+1	Cota Rica	
+2	Mongolia	
+################0################
+07/Oct/15 begin GET_Estado(null, :cursbv); end;
+1	SanJose	1	
+################0################
+07/Oct/15 begin GET_CIUDAD(null, :cursbv); end;
+1	SanJose	1	
+################0################
+07/Oct/15 begin GET_UsuariosXMatch(null, :cursbv); end;
+26/09/15	1	
+26/09/15	1	
+################0################
+07/Oct/15 begin GET_Signo_Zodiacal(null, :cursbv); end;
+11	Acuario	20/01/15	17/02/15	
+1	Aries	20/03/15	19/04/15	
+4		21/06/15	22/07/15	
+10	Capricornio	22/12/15	19/01/15	
+8	Escorpio	23/10/15	21/11/15	
+3		21/05/15	20/06/15	
+5	Leo	23/07/15	22/08/15	
+7	Libra	23/09/15	22/10/15	
+12	Piscis	18/02/15	19/03/15	
+9	Sagitario	22/11/15	21/12/15	
+2	Tauro	20/04/15	20/05/15	
+6	Virgo	23/08/15	22/09/15	
+################0################
+07/Oct/15 begin GET_Rol(null, :cursbv); end;
+1	Admin	
+################0################
+07/Oct/15 begin GET_Religion(null, :cursbv); end;
+3	Catolica	
+1	Pastafar	
+################0################
+07/Oct/15 begin GET_Idioma(null, :cursbv); end;
+3	arabe	
+2		
+################0################
+07/Oct/15 begin GET_Educacion(null, :cursbv); end;
+1	Bachiller	
+################0################
+07/Oct/15 begin GET_Hobby(null, :cursbv); end;
+25	Cantar	
+27	Cromos	
+26	Pintar	
+28	ver tele	
+1	VideoGames	
+################0################
+07/Oct/15 begin GET_ActividadAL(null, :cursbv); end;
+Escalar	
+################0################
+07/Oct/15 begin GET_Tipo_Bebedor(null, :cursbv); end;
+1	Social	
+################0################
+07/Oct/15 begin GET_Ocupacion(null, :cursbv); end;
+Programador	
+################0################
+07/Oct/15 begin GET_Color_Ojos(null, :cursbv); end;
+1		
+4	Verdes	
+################0################
+07/Oct/15 begin GET_Color_Piel(null, :cursbv); end;
+Amarillo	
+Blanca	
+################0################
+07/Oct/15 begin GET_Color_Pelo(null, :cursbv); end;
+1	Cafe	
+################0################
+07/Oct/15 begin GET_Contextura(null, :cursbv); end;
+1	Delgado	
+2	Gruesa	
+################0################
+07/Oct/15 begin GET_Estado_Match(null, :cursbv); end;
+Encontro pareja	
+################0################
+07/Oct/15 begin GET_Estado_Civil(null, :cursbv); end;
+1	Solo	
+################0################
+07/Oct/15 begin GET_Genero(null, :cursbv); end;
+2	Femenino	
+1	Masculino	
+################0################
+07/Oct/15 begin get_EmailXPais(undefined, :cursbv); end;
+################################
+07/Oct/15 begin GET_Pais(null, :cursbv); end;
+1	Cota Rica	
+2	Mongolia	
+################0################
+07/Oct/15 begin GET_Estado(null, :cursbv); end;
+1	SanJose	1	
+################0################
+07/Oct/15 begin GET_CIUDAD(null, :cursbv); end;
+1	SanJose	1	
+################0################
+07/Oct/15 begin GET_UsuariosXMatch(null, :cursbv); end;
+26/09/15	1	
+26/09/15	1	
+################0################
+07/Oct/15 begin GET_Signo_Zodiacal(null, :cursbv); end;
+11	Acuario	20/01/15	17/02/15	
+1	Aries	20/03/15	19/04/15	
+4		21/06/15	22/07/15	
+10	Capricornio	22/12/15	19/01/15	
+8	Escorpio	23/10/15	21/11/15	
+3		21/05/15	20/06/15	
+5	Leo	23/07/15	22/08/15	
+7	Libra	23/09/15	22/10/15	
+12	Piscis	18/02/15	19/03/15	
+9	Sagitario	22/11/15	21/12/15	
+2	Tauro	20/04/15	20/05/15	
+6	Virgo	23/08/15	22/09/15	
+################0################
+07/Oct/15 begin GET_Rol(null, :cursbv); end;
+1	Admin	
+################0################
+07/Oct/15 begin GET_Religion(null, :cursbv); end;
+3	Catolica	
+1	Pastafar	
+################0################
+07/Oct/15 begin GET_Idioma(null, :cursbv); end;
+3	arabe	
+2		
+################0################
+07/Oct/15 begin GET_Educacion(null, :cursbv); end;
+1	Bachiller	
+################0################
+07/Oct/15 begin GET_Hobby(null, :cursbv); end;
+25	Cantar	
+27	Cromos	
+26	Pintar	
+28	ver tele	
+1	VideoGames	
+################0################
+07/Oct/15 begin GET_ActividadAL(null, :cursbv); end;
+Escalar	
+################0################
+07/Oct/15 begin GET_Tipo_Bebedor(null, :cursbv); end;
+1	Social	
+################0################
+07/Oct/15 begin GET_Ocupacion(null, :cursbv); end;
+Programador	
+################0################
+07/Oct/15 begin GET_Color_Ojos(null, :cursbv); end;
+1		
+4	Verdes	
+################0################
+07/Oct/15 begin GET_Color_Piel(null, :cursbv); end;
+Amarillo	
+Blanca	
+################0################
+07/Oct/15 begin GET_Color_Pelo(null, :cursbv); end;
+1	Cafe	
+################0################
+07/Oct/15 begin GET_Contextura(null, :cursbv); end;
+1	Delgado	
+2	Gruesa	
+################0################
+07/Oct/15 begin GET_Estado_Match(null, :cursbv); end;
+Encontro pareja	
+################0################
+07/Oct/15 begin GET_Estado_Civil(null, :cursbv); end;
+1	Solo	
+################0################
+07/Oct/15 begin GET_Genero(null, :cursbv); end;
+2	Femenino	
+1	Masculino	
+################0################
+07/Oct/15 begin get_EmailXPais(undefined, :cursbv); end;
+################################
+07/Oct/15 begin GET_Pais(null, :cursbv); end;
+1	Cota Rica	
+2	Mongolia	
+################0################
+07/Oct/15 begin GET_Estado(null, :cursbv); end;
+1	SanJose	1	
+################0################
+07/Oct/15 begin GET_CIUDAD(null, :cursbv); end;
+1	SanJose	1	
+################0################
+07/Oct/15 begin GET_UsuariosXMatch(null, :cursbv); end;
+26/09/15	1	
+26/09/15	1	
+################0################
+07/Oct/15 begin GET_Signo_Zodiacal(null, :cursbv); end;
+11	Acuario	20/01/15	17/02/15	
+1	Aries	20/03/15	19/04/15	
+4		21/06/15	22/07/15	
+10	Capricornio	22/12/15	19/01/15	
+8	Escorpio	23/10/15	21/11/15	
+3		21/05/15	20/06/15	
+5	Leo	23/07/15	22/08/15	
+7	Libra	23/09/15	22/10/15	
+12	Piscis	18/02/15	19/03/15	
+9	Sagitario	22/11/15	21/12/15	
+2	Tauro	20/04/15	20/05/15	
+6	Virgo	23/08/15	22/09/15	
+################0################
+07/Oct/15 begin GET_Rol(null, :cursbv); end;
+1	Admin	
+################0################
+07/Oct/15 begin GET_Religion(null, :cursbv); end;
+3	Catolica	
+1	Pastafar	
+################0################
+07/Oct/15 begin GET_Idioma(null, :cursbv); end;
+3	arabe	
+2		
+################0################
+07/Oct/15 begin GET_Educacion(null, :cursbv); end;
+1	Bachiller	
+################0################
+07/Oct/15 begin GET_Hobby(null, :cursbv); end;
+25	Cantar	
+27	Cromos	
+26	Pintar	
+28	ver tele	
+1	VideoGames	
+################0################
+07/Oct/15 begin GET_ActividadAL(null, :cursbv); end;
+Escalar	
+################0################
+07/Oct/15 begin GET_Tipo_Bebedor(null, :cursbv); end;
+1	Social	
+################0################
+07/Oct/15 begin GET_Ocupacion(null, :cursbv); end;
+Programador	
+################0################
+07/Oct/15 begin GET_Color_Ojos(null, :cursbv); end;
+1		
+4	Verdes	
+################0################
+07/Oct/15 begin GET_Color_Piel(null, :cursbv); end;
+Amarillo	
+Blanca	
+################0################
+07/Oct/15 begin GET_Color_Pelo(null, :cursbv); end;
+1	Cafe	
+################0################
+07/Oct/15 begin GET_Contextura(null, :cursbv); end;
+1	Delgado	
+2	Gruesa	
+################0################
+07/Oct/15 begin GET_Estado_Match(null, :cursbv); end;
+Encontro pareja	
+################0################
+07/Oct/15 begin GET_Estado_Civil(null, :cursbv); end;
+1	Solo	
+################0################
+07/Oct/15 begin GET_Genero(null, :cursbv); end;
+2	Femenino	
+1	Masculino	
+################0################
+07/Oct/15 begin get_EmailXPais(undefined, :cursbv); end;
+################################
+07/Oct/15 begin GET_Pais(null, :cursbv); end;
+1	Cota Rica	
+2	Mongolia	
+################0################
+07/Oct/15 begin GET_Estado(null, :cursbv); end;
+1	SanJose	1	
+################0################
+07/Oct/15 begin GET_CIUDAD(null, :cursbv); end;
+1	SanJose	1	
+################0################
+07/Oct/15 begin GET_UsuariosXMatch(null, :cursbv); end;
+26/09/15	1	
+26/09/15	1	
+################0################
+07/Oct/15 begin GET_Signo_Zodiacal(null, :cursbv); end;
+11	Acuario	20/01/15	17/02/15	
+1	Aries	20/03/15	19/04/15	
+4		21/06/15	22/07/15	
+10	Capricornio	22/12/15	19/01/15	
+8	Escorpio	23/10/15	21/11/15	
+3		21/05/15	20/06/15	
+5	Leo	23/07/15	22/08/15	
+7	Libra	23/09/15	22/10/15	
+12	Piscis	18/02/15	19/03/15	
+9	Sagitario	22/11/15	21/12/15	
+2	Tauro	20/04/15	20/05/15	
+6	Virgo	23/08/15	22/09/15	
+################0################
+07/Oct/15 begin GET_Rol(null, :cursbv); end;
+1	Admin	
+################0################
+07/Oct/15 begin GET_Religion(null, :cursbv); end;
+3	Catolica	
+1	Pastafar	
+################0################
+07/Oct/15 begin GET_Idioma(null, :cursbv); end;
+3	arabe	
+2		
+################0################
+07/Oct/15 begin GET_Educacion(null, :cursbv); end;
+1	Bachiller	
+################0################
+07/Oct/15 begin GET_Hobby(null, :cursbv); end;
+25	Cantar	
+27	Cromos	
+26	Pintar	
+28	ver tele	
+1	VideoGames	
+################0################
+07/Oct/15 begin GET_ActividadAL(null, :cursbv); end;
+Escalar	
+################0################
+07/Oct/15 begin GET_Tipo_Bebedor(null, :cursbv); end;
+1	Social	
+################0################
+07/Oct/15 begin GET_Ocupacion(null, :cursbv); end;
+Programador	
+################0################
+07/Oct/15 begin GET_Color_Ojos(null, :cursbv); end;
+1		
+4	Verdes	
+################0################
+07/Oct/15 begin GET_Color_Piel(null, :cursbv); end;
+Amarillo	
+Blanca	
+################0################
+07/Oct/15 begin GET_Color_Pelo(null, :cursbv); end;
+1	Cafe	
+################0################
+07/Oct/15 begin GET_Contextura(null, :cursbv); end;
+1	Delgado	
+2	Gruesa	
+################0################
+07/Oct/15 begin GET_Estado_Match(null, :cursbv); end;
+Encontro pareja	
+################0################
+07/Oct/15 begin GET_Estado_Civil(null, :cursbv); end;
+1	Solo	
+################0################
+07/Oct/15 begin GET_Genero(null, :cursbv); end;
+2	Femenino	
+1	Masculino	
+################0################
+07/Oct/15 begin get_EmailXPais(, :cursbv); end;
+################################
+07/Oct/15 begin GET_Pais(null, :cursbv); end;
+1	Cota Rica	
+2	Mongolia	
+################0################
+07/Oct/15 begin GET_Estado(null, :cursbv); end;
+1	SanJose	1	
+################0################
+07/Oct/15 begin GET_CIUDAD(null, :cursbv); end;
+1	SanJose	1	
+################0################
+07/Oct/15 begin GET_UsuariosXMatch(null, :cursbv); end;
+26/09/15	1	
+26/09/15	1	
+################0################
+07/Oct/15 begin GET_Signo_Zodiacal(null, :cursbv); end;
+11	Acuario	20/01/15	17/02/15	
+1	Aries	20/03/15	19/04/15	
+4		21/06/15	22/07/15	
+10	Capricornio	22/12/15	19/01/15	
+8	Escorpio	23/10/15	21/11/15	
+3		21/05/15	20/06/15	
+5	Leo	23/07/15	22/08/15	
+7	Libra	23/09/15	22/10/15	
+12	Piscis	18/02/15	19/03/15	
+9	Sagitario	22/11/15	21/12/15	
+2	Tauro	20/04/15	20/05/15	
+6	Virgo	23/08/15	22/09/15	
+################0################
+07/Oct/15 begin GET_Rol(null, :cursbv); end;
+1	Admin	
+################0################
+07/Oct/15 begin GET_Religion(null, :cursbv); end;
+3	Catolica	
+1	Pastafar	
+################0################
+07/Oct/15 begin GET_Idioma(null, :cursbv); end;
+3	arabe	
+2		
+################0################
+07/Oct/15 begin GET_Educacion(null, :cursbv); end;
+1	Bachiller	
+################0################
+07/Oct/15 begin GET_Hobby(null, :cursbv); end;
+25	Cantar	
+27	Cromos	
+26	Pintar	
+28	ver tele	
+1	VideoGames	
+################0################
+07/Oct/15 begin GET_ActividadAL(null, :cursbv); end;
+Escalar	
+################0################
+07/Oct/15 begin GET_Tipo_Bebedor(null, :cursbv); end;
+1	Social	
+################0################
+07/Oct/15 begin GET_Ocupacion(null, :cursbv); end;
+Programador	
+################0################
+07/Oct/15 begin GET_Color_Ojos(null, :cursbv); end;
+1		
+4	Verdes	
+################0################
+07/Oct/15 begin GET_Color_Piel(null, :cursbv); end;
+Amarillo	
+Blanca	
+################0################
+07/Oct/15 begin GET_Color_Pelo(null, :cursbv); end;
+1	Cafe	
+################0################
+07/Oct/15 begin GET_Contextura(null, :cursbv); end;
+1	Delgado	
+2	Gruesa	
+################0################
+07/Oct/15 begin GET_Estado_Match(null, :cursbv); end;
+Encontro pareja	
+################0################
+07/Oct/15 begin GET_Estado_Civil(null, :cursbv); end;
+1	Solo	
+################0################
+07/Oct/15 begin GET_Genero(null, :cursbv); end;
+2	Femenino	
+1	Masculino	
+################0################
+07/Oct/15 begin get_EmailXPais(, :cursbv); end;
+################################
+07/Oct/15 begin GET_Pais(null, :cursbv); end;
+1	Cota Rica	
+2	Mongolia	
+################0################
+07/Oct/15 begin GET_Estado(null, :cursbv); end;
+1	SanJose	1	
+################0################
+07/Oct/15 begin GET_CIUDAD(null, :cursbv); end;
+1	SanJose	1	
+################0################
+07/Oct/15 begin GET_UsuariosXMatch(null, :cursbv); end;
+26/09/15	1	
+26/09/15	1	
+################0################
+07/Oct/15 begin GET_Signo_Zodiacal(null, :cursbv); end;
+11	Acuario	20/01/15	17/02/15	
+1	Aries	20/03/15	19/04/15	
+4		21/06/15	22/07/15	
+10	Capricornio	22/12/15	19/01/15	
+8	Escorpio	23/10/15	21/11/15	
+3		21/05/15	20/06/15	
+5	Leo	23/07/15	22/08/15	
+7	Libra	23/09/15	22/10/15	
+12	Piscis	18/02/15	19/03/15	
+9	Sagitario	22/11/15	21/12/15	
+2	Tauro	20/04/15	20/05/15	
+6	Virgo	23/08/15	22/09/15	
+################0################
+07/Oct/15 begin GET_Rol(null, :cursbv); end;
+1	Admin	
+################0################
+07/Oct/15 begin GET_Religion(null, :cursbv); end;
+3	Catolica	
+1	Pastafar	
+################0################
+07/Oct/15 begin GET_Idioma(null, :cursbv); end;
+3	arabe	
+2		
+################0################
+07/Oct/15 begin GET_Educacion(null, :cursbv); end;
+1	Bachiller	
+################0################
+07/Oct/15 begin GET_Hobby(null, :cursbv); end;
+25	Cantar	
+27	Cromos	
+26	Pintar	
+28	ver tele	
+1	VideoGames	
+################0################
+07/Oct/15 begin GET_ActividadAL(null, :cursbv); end;
+Escalar	
+################0################
+07/Oct/15 begin GET_Tipo_Bebedor(null, :cursbv); end;
+1	Social	
+################0################
+07/Oct/15 begin GET_Ocupacion(null, :cursbv); end;
+Programador	
+################0################
+07/Oct/15 begin GET_Color_Ojos(null, :cursbv); end;
+1		
+4	Verdes	
+################0################
+07/Oct/15 begin GET_Color_Piel(null, :cursbv); end;
+Amarillo	
+Blanca	
+################0################
+07/Oct/15 begin GET_Color_Pelo(null, :cursbv); end;
+1	Cafe	
+################0################
+07/Oct/15 begin GET_Contextura(null, :cursbv); end;
+1	Delgado	
+2	Gruesa	
+################0################
+07/Oct/15 begin GET_Estado_Match(null, :cursbv); end;
+Encontro pareja	
+################0################
+07/Oct/15 begin GET_Estado_Civil(null, :cursbv); end;
+1	Solo	
+################0################
+07/Oct/15 begin GET_Genero(null, :cursbv); end;
+2	Femenino	
+1	Masculino	
+################0################
+07/Oct/15 begin get_EmailXPais(undefined, :cursbv); end;
+################################
+07/Oct/15 begin GET_Pais(null, :cursbv); end;
+1	Cota Rica	
+2	Mongolia	
+################0################
+07/Oct/15 begin GET_Estado(null, :cursbv); end;
+1	SanJose	1	
+################0################
+07/Oct/15 begin GET_CIUDAD(null, :cursbv); end;
+1	SanJose	1	
+################0################
+07/Oct/15 begin GET_UsuariosXMatch(null, :cursbv); end;
+26/09/15	1	
+26/09/15	1	
+################0################
+07/Oct/15 begin GET_Signo_Zodiacal(null, :cursbv); end;
+11	Acuario	20/01/15	17/02/15	
+1	Aries	20/03/15	19/04/15	
+4		21/06/15	22/07/15	
+10	Capricornio	22/12/15	19/01/15	
+8	Escorpio	23/10/15	21/11/15	
+3		21/05/15	20/06/15	
+5	Leo	23/07/15	22/08/15	
+7	Libra	23/09/15	22/10/15	
+12	Piscis	18/02/15	19/03/15	
+9	Sagitario	22/11/15	21/12/15	
+2	Tauro	20/04/15	20/05/15	
+6	Virgo	23/08/15	22/09/15	
+################0################
+07/Oct/15 begin GET_Rol(null, :cursbv); end;
+1	Admin	
+################0################
+07/Oct/15 begin GET_Religion(null, :cursbv); end;
+3	Catolica	
+1	Pastafar	
+################0################
+07/Oct/15 begin GET_Idioma(null, :cursbv); end;
+3	arabe	
+2		
+################0################
+07/Oct/15 begin GET_Educacion(null, :cursbv); end;
+1	Bachiller	
+################0################
+07/Oct/15 begin GET_Hobby(null, :cursbv); end;
+25	Cantar	
+27	Cromos	
+26	Pintar	
+28	ver tele	
+1	VideoGames	
+################0################
+07/Oct/15 begin GET_ActividadAL(null, :cursbv); end;
+Escalar	
+################0################
+07/Oct/15 begin GET_Tipo_Bebedor(null, :cursbv); end;
+1	Social	
+################0################
+07/Oct/15 begin GET_Ocupacion(null, :cursbv); end;
+Programador	
+################0################
+07/Oct/15 begin GET_Color_Ojos(null, :cursbv); end;
+1		
+4	Verdes	
+################0################
+07/Oct/15 begin GET_Color_Piel(null, :cursbv); end;
+Amarillo	
+Blanca	
+################0################
+07/Oct/15 begin GET_Color_Pelo(null, :cursbv); end;
+1	Cafe	
+################0################
+07/Oct/15 begin GET_Contextura(null, :cursbv); end;
+1	Delgado	
+2	Gruesa	
+################0################
+07/Oct/15 begin GET_Estado_Match(null, :cursbv); end;
+Encontro pareja	
+################0################
+07/Oct/15 begin GET_Estado_Civil(null, :cursbv); end;
+1	Solo	
+################0################
+07/Oct/15 begin GET_Genero(null, :cursbv); end;
+2	Femenino	
+1	Masculino	
+################0################
+07/Oct/15 begin get_EmailXPais(undefined, :cursbv); end;
+################################
+07/Oct/15 begin GET_Pais(null, :cursbv); end;
+1	Cota Rica	
+2	Mongolia	
+################0################
+07/Oct/15 begin GET_Estado(null, :cursbv); end;
+1	SanJose	1	
+################0################
+07/Oct/15 begin GET_CIUDAD(null, :cursbv); end;
+1	SanJose	1	
+################0################
+07/Oct/15 begin GET_UsuariosXMatch(null, :cursbv); end;
+26/09/15	1	
+26/09/15	1	
+################0################
+07/Oct/15 begin GET_Signo_Zodiacal(null, :cursbv); end;
+11	Acuario	20/01/15	17/02/15	
+1	Aries	20/03/15	19/04/15	
+4		21/06/15	22/07/15	
+10	Capricornio	22/12/15	19/01/15	
+8	Escorpio	23/10/15	21/11/15	
+3		21/05/15	20/06/15	
+5	Leo	23/07/15	22/08/15	
+7	Libra	23/09/15	22/10/15	
+12	Piscis	18/02/15	19/03/15	
+9	Sagitario	22/11/15	21/12/15	
+2	Tauro	20/04/15	20/05/15	
+6	Virgo	23/08/15	22/09/15	
+################0################
+07/Oct/15 begin GET_Rol(null, :cursbv); end;
+1	Admin	
+################0################
+07/Oct/15 begin GET_Religion(null, :cursbv); end;
+3	Catolica	
+1	Pastafar	
+################0################
+07/Oct/15 begin GET_Idioma(null, :cursbv); end;
+3	arabe	
+2		
+################0################
+07/Oct/15 begin GET_Educacion(null, :cursbv); end;
+1	Bachiller	
+################0################
+07/Oct/15 begin GET_Hobby(null, :cursbv); end;
+25	Cantar	
+27	Cromos	
+26	Pintar	
+28	ver tele	
+1	VideoGames	
+################0################
+07/Oct/15 begin GET_ActividadAL(null, :cursbv); end;
+Escalar	
+################0################
+07/Oct/15 begin GET_Tipo_Bebedor(null, :cursbv); end;
+1	Social	
+################0################
+07/Oct/15 begin GET_Ocupacion(null, :cursbv); end;
+Programador	
+################0################
+07/Oct/15 begin GET_Color_Ojos(null, :cursbv); end;
+1		
+4	Verdes	
+################0################
+07/Oct/15 begin GET_Color_Piel(null, :cursbv); end;
+Amarillo	
+Blanca	
+################0################
+07/Oct/15 begin GET_Color_Pelo(null, :cursbv); end;
+1	Cafe	
+################0################
+07/Oct/15 begin GET_Contextura(null, :cursbv); end;
+1	Delgado	
+2	Gruesa	
+################0################
+07/Oct/15 begin GET_Estado_Match(null, :cursbv); end;
+Encontro pareja	
+################0################
+07/Oct/15 begin GET_Estado_Civil(null, :cursbv); end;
+1	Solo	
+################0################
+07/Oct/15 begin GET_Genero(null, :cursbv); end;
+2	Femenino	
+1	Masculino	
+################0################
+07/Oct/15 begin get_EmailXPais(undefined, :cursbv); end;
+################################
+07/Oct/15 begin GET_Pais(null, :cursbv); end;
+1	Cota Rica	
+2	Mongolia	
+################0################
+07/Oct/15 begin GET_Estado(null, :cursbv); end;
+1	SanJose	1	
+################0################
+07/Oct/15 begin GET_CIUDAD(null, :cursbv); end;
+1	SanJose	1	
+################0################
+07/Oct/15 begin GET_UsuariosXMatch(null, :cursbv); end;
+26/09/15	1	
+26/09/15	1	
+################0################
+07/Oct/15 begin GET_Signo_Zodiacal(null, :cursbv); end;
+11	Acuario	20/01/15	17/02/15	
+1	Aries	20/03/15	19/04/15	
+4		21/06/15	22/07/15	
+10	Capricornio	22/12/15	19/01/15	
+8	Escorpio	23/10/15	21/11/15	
+3		21/05/15	20/06/15	
+5	Leo	23/07/15	22/08/15	
+7	Libra	23/09/15	22/10/15	
+12	Piscis	18/02/15	19/03/15	
+9	Sagitario	22/11/15	21/12/15	
+2	Tauro	20/04/15	20/05/15	
+6	Virgo	23/08/15	22/09/15	
+################0################
+07/Oct/15 begin GET_Rol(null, :cursbv); end;
+1	Admin	
+################0################
+07/Oct/15 begin GET_Religion(null, :cursbv); end;
+3	Catolica	
+1	Pastafar	
+################0################
+07/Oct/15 begin GET_Idioma(null, :cursbv); end;
+3	arabe	
+2		
+################0################
+07/Oct/15 begin GET_Educacion(null, :cursbv); end;
+1	Bachiller	
+################0################
+07/Oct/15 begin GET_Hobby(null, :cursbv); end;
+25	Cantar	
+27	Cromos	
+26	Pintar	
+28	ver tele	
+1	VideoGames	
+################0################
+07/Oct/15 begin GET_ActividadAL(null, :cursbv); end;
+Escalar	
+################0################
+07/Oct/15 begin GET_Tipo_Bebedor(null, :cursbv); end;
+1	Social	
+################0################
+07/Oct/15 begin GET_Ocupacion(null, :cursbv); end;
+Programador	
+################0################
+07/Oct/15 begin GET_Color_Ojos(null, :cursbv); end;
+1		
+4	Verdes	
+################0################
+07/Oct/15 begin GET_Color_Piel(null, :cursbv); end;
+Amarillo	
+Blanca	
+################0################
+07/Oct/15 begin GET_Color_Pelo(null, :cursbv); end;
+1	Cafe	
+################0################
+07/Oct/15 begin GET_Contextura(null, :cursbv); end;
+1	Delgado	
+2	Gruesa	
+################0################
+07/Oct/15 begin GET_Estado_Match(null, :cursbv); end;
+Encontro pareja	
+################0################
+07/Oct/15 begin GET_Estado_Civil(null, :cursbv); end;
+1	Solo	
+################0################
+07/Oct/15 begin GET_Genero(null, :cursbv); end;
+2	Femenino	
+1	Masculino	
+################0################
+07/Oct/15 begin get_EmailXPais(1, :cursbv); end;
+jefalva10296@gmail.com	Annabella	
+rgvillalobosr@gmail.com	Rolland	
+################################
+07/Oct/15 begin GET_Pais(null, :cursbv); end;
+1	Cota Rica	
+2	Mongolia	
+################################
+07/Oct/15 begin GET_Estado(null, :cursbv); end;
+1	SanJose	1	
+################################
+07/Oct/15 begin GET_CIUDAD(null, :cursbv); end;
+1	SanJose	1	
+################################
+07/Oct/15 begin GET_UsuariosXMatch(null, :cursbv); end;
+26/09/15	1	
+26/09/15	1	
+################################
+07/Oct/15 begin GET_Signo_Zodiacal(null, :cursbv); end;
+11	Acuario	20/01/15	17/02/15	
+1	Aries	20/03/15	19/04/15	
+4		21/06/15	22/07/15	
+10	Capricornio	22/12/15	19/01/15	
+8	Escorpio	23/10/15	21/11/15	
+3		21/05/15	20/06/15	
+5	Leo	23/07/15	22/08/15	
+7	Libra	23/09/15	22/10/15	
+12	Piscis	18/02/15	19/03/15	
+9	Sagitario	22/11/15	21/12/15	
+2	Tauro	20/04/15	20/05/15	
+6	Virgo	23/08/15	22/09/15	
+################################
+07/Oct/15 begin GET_Rol(null, :cursbv); end;
+1	Admin	
+################################
+07/Oct/15 begin GET_Religion(null, :cursbv); end;
+3	Catolica	
+1	Pastafar	
+################################
+07/Oct/15 begin GET_Idioma(null, :cursbv); end;
+3	arabe	
+2		
+################################
+07/Oct/15 begin GET_Educacion(null, :cursbv); end;
+1	Bachiller	
+################################
+07/Oct/15 begin GET_Hobby(null, :cursbv); end;
+25	Cantar	
+27	Cromos	
+26	Pintar	
+28	ver tele	
+1	VideoGames	
+################################
+07/Oct/15 begin GET_ActividadAL(null, :cursbv); end;
+Escalar	
+################################
+07/Oct/15 begin GET_Tipo_Bebedor(null, :cursbv); end;
+1	Social	
+################################
+07/Oct/15 begin GET_Ocupacion(null, :cursbv); end;
+Programador	
+################################
+07/Oct/15 begin GET_Color_Ojos(null, :cursbv); end;
+1		
+4	Verdes	
+################################
+07/Oct/15 begin GET_Color_Piel(null, :cursbv); end;
+Amarillo	
+Blanca	
+################################
+07/Oct/15 begin GET_Color_Pelo(null, :cursbv); end;
+1	Cafe	
+################################
+07/Oct/15 begin GET_Contextura(null, :cursbv); end;
+1	Delgado	
+2	Gruesa	
+################################
+07/Oct/15 begin GET_Estado_Match(null, :cursbv); end;
+Encontro pareja	
+################################
+07/Oct/15 begin GET_Estado_Civil(null, :cursbv); end;
+1	Solo	
+################################
+07/Oct/15 begin GET_Genero(null, :cursbv); end;
+2	Femenino	
+1	Masculino	
+################################

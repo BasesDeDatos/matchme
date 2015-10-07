@@ -28,11 +28,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	
 	if (!empty($_POST) && $_POST["mode"] == "enviar_mail"){
 		include('Mail.php');
-
 		$usuarios = queryCursor($conexion, "begin get_EmailXPais({$_POST["ciudad"]}, :cursbv); end;");
-
 		for($i = 0; $i < count($usuarios["EMAIL"]); $i++){
-		    //$recipients = 'kakoo26i@gmail.com';
+		   
+		    $recipients = $usuarios["EMAIL"][$i];
 		    $headers['From']    = 'MatchMeTEC@gmail.com';
 		    $headers['To']      = $usuarios["EMAIL"][$i];
 		    $headers['Subject'] = $_POST["subject"];
