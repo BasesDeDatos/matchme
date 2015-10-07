@@ -20,7 +20,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<form id="msform">
 			<!-- progressbar -->
 			<ul id="progressbar">
-				<li class="active">Mensaje de invitaciones</li>
+				<li class="active">Eventos</li>
+				<li>Catalogos</li>
+				<li>Catalogos</li>
 				<li>Catalogos</li>
 
 			</ul>
@@ -28,8 +30,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<fieldset>
 
 				<h2 class="fs-title">Mensaje de invitaciones</h2>
-				<input class="col-md-6" type="text" id="subject" placeholder="Asunto" />
-				<input class="col-md-6" type="textarea" id="mensaje" placeholder="Nuevo mensaje de invitación" />
+				<input class="col-md-6" type="text" name="subject" id="subject" placeholder="Asunto" />
+				<input class="col-md-6" type="textarea" name="mensaje" id="mensaje" placeholder="Nuevo mensaje de invitación" />
 
 				<label class="col-md-6" for="Pais0">País</label>
 				<select class="col-md-6 selector" name="Pais" id="Pais0" >
@@ -66,15 +68,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						</option>
 					<?php } ?>
 				</select>
-				<input type="button" name="send" class="submit action-button" value="Enviar" onclick = "enviar_mensaje()"/>
+				<input type="button" name="send" class="submit action-button" value="Enviar" onclick="enviar_mensaje()"/>
 				
-				<input type="button" name="next" class="next action-button" value="Siguiente" />
+				<input type="button" name="next" class="next action-button" value="Siguiente"/>
 			</fieldset>
 			
-			<fieldset id="catalogos">
+			<fieldset id = "catalogos">
 				
 				<h2 class="fs-title">Catalogos</h2>
-				
 				<label class="col-md-4" for="signo_zodiacal">Signo Zodiacal</label>
 				<select class="col-md-4" name="signo_zodiacal" id="signo_zodiacal">
 					<option value="">Agregar nuevo</option>
@@ -171,7 +172,17 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				</select>
 				<div class="col-md-4"><input class="col-md-6" type="text" name="educacion_input" placeholder="Nuevo" /></div>
 
-				<label class="col-md-4" for="hobby">Hobby</label>
+				
+				<input type="button" name="previous" class="previous action-button" value="Anterior" />
+				<input type="button" name="next" class="next action-button" value="Siguiente" />
+				
+			</fieldset>
+				
+			<fieldset id = "catalogos2">
+				
+				<h2 class="fs-title">Catalogos</h2>
+				
+				<label  class="col-md-4" for="hobby">Hobby</label>
 				<select class="col-md-4" name="hobby" id="hobby">
 					<option value="">Agregar nuevo</option>
 					<?php for($i = 0; $i < count($arrayQuery["HOBBY"]["NOMBRE"]); $i++){ ?>
@@ -192,7 +203,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<?php } ?>
 				</select>
 				<div class="col-md-4"><input class="col-md-6" type="text" name="actividadal_input" placeholder="Nuevo" /></div>
-
+				
 				<label class="col-md-4" for="tipo_bebedor">Tipo de bebedor</label>
 				<select class="col-md-4" name="tipo_bebedor" id="tipo_bebedor">
 					<option value="">Agregar nuevo</option>
@@ -257,7 +268,17 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<?php } ?>
 				</select>
 				<div class="col-md-4"><input class="col-md-6" type="text" name="contextura_input" placeholder="Nuevo" /></div>
+				
+				
+				<input type="button" name="previous" class="previous action-button" value="Anterior" />
+				<input type="button" name="next" class="next action-button" value="Siguiente" />
 
+			</fieldset>
+			
+			<fieldset id = "catalogos3">
+				
+				<h2 class="fs-title">Catalogos</h2>
+				
 				<label class="col-md-4" for="estado_match">Estado Match</label>
 				<select class="col-md-4" name="estado_match" id="estado_match">
 					<option value="">Agregar nuevo</option>
@@ -281,10 +302,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				</select>
 				<div class="col-md-4"><input class="col-md-6" type="text" name="estado_civil_input" placeholder="Nuevo" /></div>
 				
-				<div class="col-md-12">
-					<input type="button" name="previous" class="previous action-button" value="Anterior" />
-					<input type="submit" name="submit" class="submit action-button" value="Aplicar" />
-				</div>
+				<input type="button" name="previous" class="previous action-button" value="Anterior" />
+				<!--input type="submit" name="submit" class="submit action-button" value="Aplicar" /-->
 
 			</fieldset>
 		
