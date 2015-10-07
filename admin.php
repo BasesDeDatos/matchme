@@ -215,7 +215,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				</select>
 				<div class="col-md-4"><input class="col-md-6" type="text" name="tipo_bebedor_input" placeholder="Nuevo" /></div>
 
-				<label class="col-md-4" for="ocupacion">Ocupaciópn</label>
+				<label class="col-md-4" for="ocupacion">Ocupación</label>
 				<select class="col-md-4" name="ocupacion" id="ocupacion">
 					<option value="">Agregar nuevo</option>
 					<?php for($i = 0; $i < count($arrayQuery["OCUPACION"]["NOMBRE"]); $i++){ ?>
@@ -301,6 +301,17 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<?php } ?>
 				</select>
 				<div class="col-md-4"><input class="col-md-6" type="text" name="estado_civil_input" placeholder="Nuevo" /></div>
+				
+				<label class="col-md-4" for="genero">Genero</label>
+				<select class="col-md-4" name="genero" id="genero">
+					<option value="">Agregar nuevo</option>
+					<?php for($i = 0; $i < count($arrayQuery["GENERO"]["NOMBRE"]); $i++){ ?>
+						<option value="<?php echo $arrayQuery["GENERO"]["ID_GENERO"][$i] ?>">
+							<?php echo $arrayQuery["GENERO"]["NOMBRE"][$i] ?>
+						</option>
+					<?php } ?>
+				</select>
+				<div class="col-md-4"><input class="col-md-6" type="text" name="genero_input" placeholder="Nuevo" /></div>
 				
 				<input type="button" name="previous" class="previous action-button" value="Anterior" />
 				<!--input type="submit" name="submit" class="submit action-button" value="Aplicar" /-->
