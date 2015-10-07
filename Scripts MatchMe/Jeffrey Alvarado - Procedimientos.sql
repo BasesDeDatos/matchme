@@ -161,14 +161,16 @@ end;
 
 -- Funciones
 
-CREATE OR REPLACE FUNCTION REGISTRAR_EVENTO
+create or replace
+FUNCTION REGISTRAR_EVENTO
 ( pNombre IN VARCHAR2, pDescripcion IN VARCHAR2, pFecha IN VARCHAR2, pId_Ciudad IN NUMBER
 ) RETURN NUMBER AS
 BEGIN
-	INSERT INTO evento(id_evento, nombre, descripcion, fecha, id_cuidad)
+	INSERT INTO evento(id_evento, nombre, descripcion, fecha, id_ciudad)
 	VALUES(secu_evento.NextVal, pNombre, pDescripcion, TO_DATE(pFecha, 'DDMMYYYY hh24:mi:ss'), pId_Ciudad);
 	RETURN secu_evento.CurrVal;
 END REGISTRAR_EVENTO;
+
 
 CREATE OR REPLACE PROCEDURE EDITAR_EVENTO
 ( pID_evento IN NUMBER, pNombre IN VARCHAR2, pDescripcion IN VARCHAR2, pFecha IN VARCHAR2, pId_Ciudad IN NUMBER
@@ -223,14 +225,15 @@ end;
 
 -- Funciones
 
-CREATE OR REPLACE FUNCTION REGISTRAR_COLOR_PIEL
+create or replace
+FUNCTION REGISTRAR_COLOR_PIEL
 ( pNombre IN VARCHAR2
 ) RETURN NUMBER AS
 BEGIN
 	INSERT INTO color_piel(id_colorpiel, nombre)
 	VALUES(secu_color_piel.NextVal, pNombre);
 	RETURN secu_color_piel.CurrVal;
-END REGISTRAR_COLORPIEL;
+END REGISTRAR_COLOR_PIEL;
 
 CREATE OR REPLACE PROCEDURE EDITAR_COLORPIEL
 ( pid_colorpiel IN NUMBER, pNombre IN VARCHAR2
@@ -284,7 +287,7 @@ BEGIN
 	INSERT INTO estado_match(id_estado_match, nombre)
 	VALUES(secu_estado_match.NextVal, pNombre);
 	RETURN secu_estado_match.CurrVal;
-END REGISTRAR_ESTADOMATCH;
+END REGISTRAR_ESTADO_MATCH;
 
 CREATE OR REPLACE PROCEDURE EDITAR_ESTADOMATCH
 ( pid_estado_match IN NUMBER, pNombre IN VARCHAR2
@@ -505,81 +508,37 @@ end;
 
 -- Funciones
 
-CREATE OR REPLACE FUNCTION REGISTRAR_USUARIO
-( pNombre IN VARCHAR2, 
-	pPrimer_apellido IN VARCHAR2, 
-	pSegundo_apellido IN VARCHAR2, 
-	pFecha_nac IN VARCHAR2, 
-	pEmail IN VARCHAR2, 
-	pFoto IN VARCHAR2, 
-	pClave IN VARCHAR2, 
-	pGustan_mascota IN VARCHAR2, 
-	pTiene_mascota IN VARCHAR2, 
-	pTendria_mascota IN VARCHAR2, 
-	pid_religion IN NUMBER, 
-	pid_estadoCi IN NUMBER, 
-	pid_educacion IN NUMBER, 
-	pid_cuidad IN NUMBER, 
-	pid_aspectoFi IN NUMBER, 
-	pid_hobby IN NUMBER, 
-	pid_actividadAL IN NUMBER, 
-	pid_estilovida IN NUMBER, 
-	pid_ocupacion IN NUMBER, 
-	pid_rol IN NUMBER, 
-	pid_signo_zodiacal IN NUMBER,
-	pid_interes_gusto IN NUMBER,
-	pid_Genero IN NUMBER
+CREATE OR REPLACE FUNCTION REGISTRAR_USUARIO( pNombre IN VARCHAR2, 
+	pPrimer_apellido IN VARCHAR2, pSegundo_apellido IN VARCHAR2, 
+	pFecha_nac IN VARCHAR2, pEmail IN VARCHAR2, 
+	pFoto IN VARCHAR2, pClave IN VARCHAR2, 
+	pGustan_mascota IN VARCHAR2, pTiene_mascota IN VARCHAR2, 
+	pTendria_mascota IN VARCHAR2, pid_religion IN NUMBER, 
+	pid_estadoCi IN NUMBER, pid_educacion IN NUMBER, 
+	pid_cuidad IN NUMBER, pid_aspectoFi IN NUMBER, 
+	pid_hobby IN NUMBER, pid_actividadAL IN NUMBER, 
+	pid_estilovida IN NUMBER, pid_ocupacion IN NUMBER, 
+	pid_rol IN NUMBER, pid_signo_zodiacal IN NUMBER,
+	pid_interes_gusto IN NUMBER, pid_Genero IN NUMBER
 ) RETURN NUMBER AS
 BEGIN
-	INSERT INTO Usuario(ID_Usuario, 
-					nombre, 
-					primer_apellido, 
-					segundo_apellido, 
-					fecha_nac, 
-					email, 
-					foto, 
-					genero, 
-					clave, 
-					gustan_mascota, 
-					tiene_mascota, 
-					tendria_mascota, 
-					id_religion, 
-					id_estadoCi, 
-					id_educacion, 
-					id_cuidad, 
-					id_aspectoFi, 
-					id_hobby, 
-					id_actividadAL, 
-					id_estilovida, 
-					id_ocupacion, 
-					id_rol, 
-					id_signo_zodiacal
-					id_interes_gusto,
-					id_genero)
-	VALUES(secu_Usuario.NextVal, 
-		   pNombre, 
-		   pPrimer_apellido, 
-		   pSegundo_apellido, 
-		   TO_DATE(pFecha_nac, 'DDMMYYYY'), 
-		   pEmail, 
-		   pFoto,
-		   pGenero,  
-		   pClave, 
-		   pGustan_mascota, 
-		   pTiene_mascota, 
-		   pTendria_mascota, 
-		   pid_religion, 
-		   pid_estadoCi, 
-		   pid_educacion, 
-		   pid_cuidad, 
-		   pid_aspectoFi, 
-		   pid_hobby, 
-		   pid_actividadAL, 
-		   pid_estilovida, 
-		   pid_ocupacion, 
-		   pid_rol, 
-		   pid_signo_zodiacal,
-		   pid_interes_gusto,
+	INSERT INTO Usuario(ID_Usuario, nombre, primer_apellido, 
+					segundo_apellido, fecha_nac, email, foto, 
+					genero, clave, gustan_mascota, tiene_mascota, 
+					tendria_mascota, id_religion, id_estadoCi, 
+					id_educacion, id_cuidad, id_aspectoFi, 
+					id_hobby, id_actividadAL,	id_estilovida, 
+					id_ocupacion, id_rol, id_signo_zodiacal
+					id_interes_gusto,id_genero)
+          
+	VALUES(secu_Usuario.NextVal,  pNombre,  pPrimer_apellido, 
+		   pSegundo_apellido, TO_DATE(pFecha_nac, 'DDMMYYYY'), 
+		   pEmail,  pFoto, pGenero,   pClave,  pGustan_mascota, 
+		   pTiene_mascota, pTendria_mascota, pid_religion, 
+		   pid_estadoCi, pid_educacion, pid_cuidad, 
+		   pid_aspectoFi,  pid_hobby,  pid_actividadAL, 
+		   pid_estilovida,  pid_ocupacion,  pid_rol, 
+		   pid_signo_zodiacal, pid_interes_gusto,
 			 pid_Genero);
 	RETURN secu_Usuario.CurrVal;
 END REGISTRAR_USUARIO;

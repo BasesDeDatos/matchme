@@ -22,13 +22,14 @@ BEGIN
 END BORRAR_Rol;
 
 --------------------------------------------------
-CREATE OR REPLACE FUNCTION REGISTRAR_Bitacora_Visita(
+create or replace
+FUNCTION REGISTRAR_Bitacora_Visita(
 	pFecha IN DATE, 
-	pID_Visita IN NUMBER, 
-	pID_Conocido IN NUMBER) AS
+	pID_Visitante IN NUMBER, 
+	pID_Visitado IN NUMBER) RETURN NUMBER AS
 BEGIN
-	INSERT INTO Bitacora_Conocido(ID_Visita, Fecha, ID_Visitante, ID_visitado)
-    VALUES(secu_Bitacora_Visita.NextVal, pFecha, pID_Visitante, pID_viditado);
+	INSERT INTO Bitacora_Visita(ID_Visita, Fecha, ID_Visitante, ID_visitado)
+    VALUES(secu_Bitacora_Visita.NextVal, pFecha, pID_Visitante, pID_visitado);
     	RETURN secu_Bitacora_Visita.CurrVal;
 END REGISTRAR_Bitacora_Visita;
 
@@ -50,7 +51,9 @@ BEGIN
 END BORRAR_Bitacora_Visita;
 
 ---------------------------------------------------------------------
-CREATE OR REPLACE FUNCTION REGISTRAR_Ciudad( pNombre IN VARCHAR2 ) AS
+create or replace
+FUNCTION REGISTRAR_Ciudad( pNombre IN VARCHAR2, pID_estado IN NUMBER ) 
+RETURN NUMBER AS
 BEGIN
 	INSERT INTO Ciudad(ID_Ciudad, Nombre, ID_estado)
     	VALUES(secu_Ciudad.NextVal, pNombre, pID_estado);
@@ -73,7 +76,7 @@ END BORRAR_Ciudad;
 
 ---------------------------------------------------------------------
 CREATE OR REPLACE FUNCTION REGISTRAR_Religion(
-	pNombre IN VARCHAR2) AS
+	pNombre IN VARCHAR2)  RETURN NUMBER AS
 BEGIN
 	INSERT INTO Religion(ID_Religion, Nombre)
 		VALUES(secu_Religion.NextVal, pNombre);
@@ -98,7 +101,7 @@ END BORRAR_Religion;
 
 ------------------------------------------------------------------
 CREATE OR REPLACE FUNCTION REGISTRAR_Educacion(
-	pNombre IN VARCHAR2) AS
+	pNombre IN VARCHAR2)  RETURN NUMBER  AS
 BEGIN
 	INSERT INTO Educacion(ID_Educacion, Nombre)
 		VALUES(secu_Educacion.NextVal, pNombre);
@@ -120,13 +123,14 @@ BEGIN
 	WHERE ID_Educacion = pID;
 END BORRAR_Educacion;
 ---------------------------------------------------------------------
-CREATE OR REPLACE FUNCTION REGISTRAR_Hobby(
- Genero IN VARCHAR2) AS
+create or replace FUNCTION Registrar_Hobby
+( pNombre IN VARCHAR2
+) RETURN NUMBER AS
 BEGIN
- INSERT INTO Hobby(ID_Hobby, Genero)
-  VALUES(secu_Hobby.NextVal, pGenero);
-  RETURN secu_Hobby.CurrVal;
-END REGISTRAR_Hobby;
+	INSERT INTO Hobby(ID_Hobby, Nombre)
+		VALUES(secu_Hobby.NextVal, pNombre);
+  RETURN secu_Hobby.currval;
+END Registrar_Hobby;
 
 CREATE OR REPLACE PROCEDURE EDITAR_Hobby( 
  pID IN NUMBER,  
@@ -145,11 +149,12 @@ END BORRAR_Hobby;
 
 
 ------------------------------------------------
-CREATE OR REPLACE FUNCTION REGISTRAR_Tipo_Bebedor(
- Genero IN VARCHAR2) AS
+create or replace
+FUNCTION REGISTRAR_Tipo_Bebedor(
+ pClase IN VARCHAR2)  RETURN NUMBER  AS
 BEGIN
- INSERT INTO Tipo_Bebedor(ID_Tipo_Bebedor, Genero)
-  VALUES(secu_Tipo_Bebedor.NextVal, pGenero);
+ INSERT INTO Tipo_Bebedor(ID_TipoBebedor, clase)
+  VALUES(secu_Tipo_Bebedor.NextVal, pClase);
   RETURN secu_Tipo_Bebedor.CurrVal;
 END REGISTRAR_Tipo_Bebedor;
 
@@ -169,7 +174,7 @@ BEGIN
 END BORRAR_Tipo_Bebedor;
 -------------------------------------------------
 CREATE OR REPLACE FUNCTION REGISTRAR_Color_Ojos(
- pNombre IN VARCHAR2) AS
+ pNombre IN VARCHAR2)  RETURN NUMBER AS
 BEGIN
  INSERT INTO Color_Ojos(ID_ColorOjos, Nombre)
   VALUES(secu_Color_Ojos.NextVal, pNombre);
@@ -193,7 +198,7 @@ END BORRAR_Color_Ojos;
 
 -----------------------------------------------------
 CREATE OR REPLACE FUNCTION REGISTRAR_Contextura(
- pNombre IN VARCHAR2) AS
+ pNombre IN VARCHAR2)  RETURN NUMBER  AS
 BEGIN
  INSERT INTO Contextura(ID_Contextura, Nombre)
   VALUES(secu_Contextura.NextVal, pNombre);
@@ -216,13 +221,14 @@ BEGIN
 END BORRAR_Contextura;
 
 ---------------------------------------------------------------
-CREATE OR REPLACE FUNCTION REGISTRAR_EventoXUsuario(
+create or replace
+FUNCTION REGISTRAR_EventoXUsuario(
  pID_Usuario IN NUMBER,
- pID_Evento IN NUMBER) AS
+ pID_Evento IN NUMBER) RETURN NUMBER  AS
 BEGIN
- INSERT INTO EventoXUsuario(ID_EventoXUsuario, ID_Usuario, ID_Evento)
-  VALUES(secu_EventoXUsuario.NextVal, pID_Usuario, pID_Evento);
-  RETURN secu_EventoXUsuario.CurrVal;
+ INSERT INTO UsuarioXEvento(ID_UsuarioXEvento, ID_Usuario, ID_Evento)
+  VALUES(secu_UsuarioXEvento.NextVal, pID_Usuario, pID_Evento);
+  RETURN secu_UsuarioXEvento.CurrVal;
 END REGISTRAR_EventoXUsuario;
 
 CREATE OR REPLACE PROCEDURE EDITAR_EventoXUsuario( 
