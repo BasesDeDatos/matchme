@@ -306,7 +306,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			</fieldset>
 			
 			<fieldset>
-				<h2 class="fs-title">Hobbies</h2>
+				<h2 class="fs-title">Actividades al aire libre</h2>
 				
 				<!--div class="col-md-4">
 					<input type="checkbox" name="checkbox" id="checkbox" />
