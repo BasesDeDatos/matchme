@@ -429,7 +429,7 @@ BEGIN
     where (hobbyXUsuario.ID_Usuario = pID1 
         OR hobbyXUsuario.ID_Usuario = pID2)
     GROUP BY hobbyXUsuario.ID_Hobby
-    having COUNT(*) = 2; -- si los 2 usuarios tienen en comun el gusto--
+    having COUNT(hobbyXUsuario.ID_Usuario) = 2; -- si los 2 usuarios tienen en comun el gusto--
     
     RETURN (100*cantidadHobbys1/cantidadHobbysComun); --Saco un porcentaje de gustos en común con respecto al ID1--
 END GET_PorcentajeMatch;
