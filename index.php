@@ -7,6 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<?php require_once("header.php"); 
 	$arrayQuery = array(); 
 	$_POST["mode"] = "get_home"; 
+	$user_id = $_SESSION["active_user_id"];
 	include ("funcionesOracle.php");
 	?>
 	

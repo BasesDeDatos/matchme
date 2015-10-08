@@ -2596,6 +2596,10 @@ canvas#bar {
 .register-form{
   height: 600px;
 }
+
+.scroll-container { 
+  border:2px solid #ccc; width:600px; height: 300px; overflow-y: scroll; 
+}
 /*form styles*/
 #msform {
 	width: 900px;

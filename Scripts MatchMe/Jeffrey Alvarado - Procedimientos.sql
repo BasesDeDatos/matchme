@@ -14,9 +14,8 @@ CREATE OR REPLACE PROCEDURE EDITAR_ACTIVIDADAL
 ) AS
 BEGIN
 	Update actividadAL
-	set nombre := pNombre
+	set nombre = pNombre
 	WHERE id_actividadAL = pID_ActividadAL;
---NULL;
 END EDITAR_ACTIVIDADAL;
 
 CREATE OR REPLACE PROCEDURE BORRAR_ACTIVIDADAL
@@ -25,7 +24,6 @@ CREATE OR REPLACE PROCEDURE BORRAR_ACTIVIDADAL
 BEGIN
 	delete from actividadAL
 	WHERE id_actividadAL = pID_ActividadAL;
---NULL;
 END BORRAR_ACTIVIDADAL;
 
 --Prueba
@@ -63,15 +61,16 @@ BEGIN
 	RETURN secu_pais.CurrVal;
 END REGISTRAR_PAIS;
 
-CREATE OR REPLACE PROCEDURE EDITAR_PAIS
+create or replace
+PROCEDURE EDITAR_PAIS
 ( pID_pais IN NUMBER, pNombre IN VARCHAR2
 ) AS
 BEGIN
 	Update pais
-	set nombre := pNombre
+	set nombre = pNombre
 	WHERE id_pais = pID_pais;
---NULL;
 END EDITAR_PAIS;
+
 
 CREATE OR REPLACE PROCEDURE BORRAR_PAIS
 ( pID_pais IN NUMBER
@@ -79,7 +78,6 @@ CREATE OR REPLACE PROCEDURE BORRAR_PAIS
 BEGIN
 	delete from pais
 	WHERE id_pais = pID_pais;
---NULL;
 END BORRAR_PAIS;
 
 --Prueba-------------------------------------------
@@ -122,7 +120,7 @@ CREATE OR REPLACE PROCEDURE EDITAR_OCUPACION
 ) AS
 BEGIN
 	Update ocupacion
-	set nombre := pNombre
+	set nombre = pNombre
 	WHERE id_ocupacion = pID_ocupacion;
 END EDITAR_OCUPACION;
 
@@ -132,7 +130,7 @@ CREATE OR REPLACE PROCEDURE BORRAR_OCUPACION
 BEGIN
 	delete from ocupacion
 	WHERE id_ocupacion = pID_ocupacion;
---NULL;
+
 END BORRAR_OCUPACION;
 
 --Prueba-------------------------------------------
@@ -172,15 +170,14 @@ BEGIN
 END REGISTRAR_EVENTO;
 
 
-CREATE OR REPLACE PROCEDURE EDITAR_EVENTO
+create or replace
+PROCEDURE EDITAR_EVENTO
 ( pID_evento IN NUMBER, pNombre IN VARCHAR2, pDescripcion IN VARCHAR2, pFecha IN VARCHAR2, pId_Ciudad IN NUMBER
 ) AS
 BEGIN
 	Update evento
-	set nombre := pNombre,
-		descripcion := pDescripcion,
-		fecha := TO_DATE(pFecha, 'DDMMYYYY hh24:mi:ss')
-		id_cuidad := pId_Ciudad
+	set nombre = pNombre,	descripcion = pDescripcion,	
+  fecha = TO_DATE(pFecha, 'DDMMYYYY hh24:mi:ss'),	id_ciudad = pId_Ciudad
 	WHERE id_evento = pID_evento;
 END EDITAR_EVENTO;
 
@@ -190,7 +187,6 @@ CREATE OR REPLACE PROCEDURE BORRAR_EVENTO
 BEGIN
 	delete from evento
 	WHERE id_evento = pID_evento;
---NULL;
 END BORRAR_EVENTO;
 
 --Prueba-------------------------------------------
@@ -235,14 +231,14 @@ BEGIN
 	RETURN secu_color_piel.CurrVal;
 END REGISTRAR_COLOR_PIEL;
 
-CREATE OR REPLACE PROCEDURE EDITAR_COLORPIEL
+create or replace
+PROCEDURE EDITAR_COLORPIEL
 ( pid_colorpiel IN NUMBER, pNombre IN VARCHAR2
 ) AS
 BEGIN
 	Update color_piel
-	set nombre := pNombre
+	set nombre = pNombre
 	WHERE id_colorpiel = pid_colorpiel;
---NULL;
 END EDITAR_COLORPIEL;
 
 CREATE OR REPLACE PROCEDURE BORRAR_COLORPIEL
@@ -251,7 +247,6 @@ CREATE OR REPLACE PROCEDURE BORRAR_COLORPIEL
 BEGIN
 	delete from color_piel
 	WHERE id_colorpiel = pid_colorpiel;
---NULL;
 END BORRAR_COLORPIEL;
 
 --Prueba-------------------------------------------
@@ -294,9 +289,8 @@ CREATE OR REPLACE PROCEDURE EDITAR_ESTADOMATCH
 ) AS
 BEGIN
 	Update estado_match
-	set nombre := pNombre
+	set nombre = pNombre
 	WHERE id_estado_match = pid_estado_match;
---NULL;
 END EDITAR_ESTADOMATCH;
 
 CREATE OR REPLACE PROCEDURE BORRAR_ESTADOMATCH
@@ -305,7 +299,7 @@ CREATE OR REPLACE PROCEDURE BORRAR_ESTADOMATCH
 BEGIN
 	delete from estado_match
 	WHERE id_estado_match = pid_estado_match;
---NULL;
+
 END BORRAR_ESTADOMATCH;
 
 --Prueba-------------------------------------------
@@ -343,16 +337,16 @@ BEGIN
 	RETURN secu_interes_gusto.CurrVal;
 END REGISTRAR_INTERES;
 
-CREATE OR REPLACE PROCEDURE EDITAR_INTERES
-( pid_interesg IN NUMBER, pRango_edadi IN NUMBER, pRango_edadf IN NUMBER, pId_tipopareja IN NUMBER
+create or replace
+PROCEDURE EDITAR_INTERES
+( pid_interesg IN NUMBER, pRango_edadi IN NUMBER, pRango_edadf IN NUMBER, pId_genero IN NUMBER
 ) AS
 BEGIN
 Update interes_gusto
-	set rango_edadi := pRango_edadi,
-		rango_edadf := pRango_edadf,
-		id_tipopareja := pId_tipopareja
+	set rango_edadi = pRango_edadi,
+		rango_edadf = pRango_edadf,
+		Id_genero = pId_genero
 	WHERE id_interesg = pid_interesg;
---NULL;
 END EDITAR_INTERES;
 
 CREATE OR REPLACE PROCEDURE BORRAR_INTERES
@@ -361,7 +355,7 @@ CREATE OR REPLACE PROCEDURE BORRAR_INTERES
 BEGIN
 	delete from interes_gusto
 	WHERE id_interesg = pid_interesg;
---NULL;
+
 END BORRAR_INTERES;
 
 --Prueba-------------------------------------------
@@ -403,16 +397,17 @@ BEGIN
 	RETURN secu_UsuarioXIdioma.CurrVal;
 END REGISTRAR_USUARIOXIDIOMA;
 
-CREATE OR REPLACE PROCEDURE EDITAR_USUARIOXIDIOMA
+create or replace
+PROCEDURE EDITAR_USUARIOXIDIOMA
 ( pId_UsuarioXIdioma IN NUMBER, pId_usuario IN NUMBER, pId_idioma IN NUMBER
 ) AS
 BEGIN
 	Update UsuarioXIdioma
-	set id_idioma := pId_idioma,
-		id_usuario := pId_usuario
+	set id_idioma = pId_idioma,
+		id_usuario = pId_usuario
 	WHERE ID_UsuarioXIdioma = pId_UsuarioXIdioma;
---NULL;
 END EDITAR_USUARIOXIDIOMA;
+
 
 CREATE OR REPLACE PROCEDURE BORRAR_USUARIOXIDIOMA
 ( pId_UsuarioXIdioma IN NUMBER
@@ -420,7 +415,6 @@ CREATE OR REPLACE PROCEDURE BORRAR_USUARIOXIDIOMA
 BEGIN
 	delete from UsuarioXIdioma
 	WHERE ID_UsuarioXIdioma = pId_UsuarioXIdioma;
---NULL;
 END BORRAR_USUARIOXIDIOMA;
 
 --Prueba-------------------------------------------
@@ -465,10 +459,9 @@ CREATE OR REPLACE PROCEDURE EDITAR_USUARIOXOCUPACION
 ) AS
 BEGIN
 	Update UsuarioXOcupacion
-	set id_ocupacion := pId_ocupacion,
-		id_usuario := pId_usuario
+	set id_ocupacion = pId_ocupacion,
+		id_usuario = pId_usuario
 	WHERE ID_UsuarioXOcupacion = pID_UsuarioXOcupacion;
---NULL;
 END EDITAR_USUARIOXOCUPACION;
 
 CREATE OR REPLACE PROCEDURE BORRAR_USUARIOXOCUPACION
@@ -477,7 +470,6 @@ CREATE OR REPLACE PROCEDURE BORRAR_USUARIOXOCUPACION
 BEGIN
 	delete from UsuarioXOcupacion
 	WHERE ID_UsuarioXOcupacion = pID_UsuarioXOcupacion;
---NULL;
 END BORRAR_USUARIOXOCUPACION;
 
 --Prueba
@@ -572,32 +564,32 @@ CREATE OR REPLACE PROCEDURE EDITAR_USUARIO
 ) AS
 BEGIN
 	Update Usuario
-	set nombre := pNombre, 
-	   primer_apellido := pPrimer_apellido, 
-	   segundo_apellido := pSegundo_apellido, 
-	   fecha_nac := TO_DATE(pFecha_nac, 'DDMMYYYY'), 
-	   email := pEmail, 
-	   foto := pFoto,
-	   genero := pGenero,  
-	   clave := pClave, 
-	   gustan_mascota := pGustan_mascota, 
-	   tiene_mascota := pTiene_mascota, 
-	   tendria_mascota := pTendria_mascota, 
-	   id_religion := pid_religion, 
-	   id_estadoCi := pid_estadoCi, 
-	   id_educacion := pid_educacion, 
-	   id_cuidad := pid_cuidad, 
-	   id_aspectoFi := pid_aspectoFi, 
-	   id_hobby := pid_hobby, 
-	   id_actividadAL := pid_actividadAL, 
-	   id_estilovida := pid_estilovida, 
-	   id_ocupacion := pid_ocupacion, 
-	   id_rol := pid_rol, 
-	   id_signo_zodiacal := pid_signo_zodiacal,
-	   id_interes_gusto := pid_interes_gusto,
-	   id_genero := pid_Genero
+	set nombre = pNombre, 
+	   primer_apellido = pPrimer_apellido, 
+	   segundo_apellido = pSegundo_apellido, 
+	   fecha_nac = TO_DATE(pFecha_nac, 'DDMMYYYY'), 
+	   email = pEmail, 
+	   foto = pFoto,
+	   genero = pGenero,  
+	   clave = pClave, 
+	   gustan_mascota = pGustan_mascota, 
+	   tiene_mascota = pTiene_mascota, 
+	   tendria_mascota = pTendria_mascota, 
+	   id_religion = pid_religion, 
+	   id_estadoCi = pid_estadoCi, 
+	   id_educacion = pid_educacion, 
+	   id_cuidad = pid_cuidad, 
+	   id_aspectoFi = pid_aspectoFi, 
+	   id_hobby = pid_hobby, 
+	   id_actividadAL = pid_actividadAL, 
+	   id_estilovida = pid_estilovida, 
+	   id_ocupacion = pid_ocupacion, 
+	   id_rol = pid_rol, 
+	   id_signo_zodiacal = pid_signo_zodiacal,
+	   id_interes_gusto = pid_interes_gusto,
+	   id_genero = pid_Genero
 	WHERE ID_Usuario = pID_Usuario;
---NULL;
+
 END EDITAR_USUARIO;
 
 CREATE OR REPLACE PROCEDURE BORRAR_USUARIO
@@ -606,7 +598,7 @@ CREATE OR REPLACE PROCEDURE BORRAR_USUARIO
 BEGIN
 	delete from Usuario
 	WHERE ID_Usuario = pID_Usuario;
---NULL;
+
 END BORRAR_USUARIO;
 
 --Prueba

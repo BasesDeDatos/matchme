@@ -9,14 +9,15 @@ BEGIN
 	RETURN secu_signo_zodiacal.currval;
 END Registrar_Signo_Zodiacal;
 
-CREATE OR REPLACE PROCEDURE EDITAR_Signo_Zodiacal( 
+create or replace
+PROCEDURE EDITAR_Signo_Zodiacal( 
 	pID IN NUMBER, 	
 	pNombre IN VARCHAR2, 
 	pfecha_inicio IN DATE, 
 	pfecha_final IN DATE ) AS
 BEGIN
 	Update Signo_Zodiacal
-	set (Nombre := pNombre, fecha_inicio := pfecha_inicio, fecha_final := pfecha_final)
+	set Nombre = pNombre, fecha_inicio = pfecha_inicio, fecha_final = pfecha_final 
 	WHERE ID_Signo_Zodiacal = pID;
 END EDITAR_Signo_Zodiacal;
 
@@ -39,14 +40,14 @@ END Registrar_estado;
 CREATE OR REPLACE PROCEDURE EDITAR_estado(pID In Number, pNombre IN VARCHAR2, pPais In Number) AS
 BEGIN
 	Update estado
-		set (nombre := pNombre,  ID_pais := pPais)
-	    WHERE ID_estadodo = pID;
+		set nombre = pNombre,  ID_pais = pPais
+	    WHERE ID_estado = pID;
 END EDITAR_estado;
 
 CREATE OR REPLACE PROCEDURE BORRAR_estado( pID IN NUMBER ) AS
 BEGIN
 	delete from estado
-	WHERE ID_estadodo = pID;
+	WHERE ID_estado = pID;
 END BORRAR_estado;
 
 
@@ -71,13 +72,13 @@ CREATE OR REPLACE PROCEDURE EDITAR_UsuariosXWink(
 	pID_Recibido IN NUMBER) AS
 BEGIN
 	Update UsuariosXWink
-		set (Fecha := pFecha, ID_Enviado := pID_Enviado, ID_Recibido := pID_Recibido)
+		set Fecha = pFecha, ID_Enviado = pID_Enviado, ID_Recibido = pID_Recibido
 	    WHERE ID_UsuariosXWink = pID;
 END EDITAR_UsuariosXWink;
 
 CREATE OR REPLACE PROCEDURE BORRAR_UsuariosXWink( pID IN NUMBER ) AS
 BEGIN
-	delete from UsuariosXWink
+	delete from Wink
 	WHERE ID_UsuariosXWink = pID;
 END BORRAR_UsuariosXWink;
 
@@ -96,7 +97,7 @@ CREATE OR REPLACE PROCEDURE EDITAR_Idioma(
 	pNombre IN VARCHAR2) AS
 BEGIN
 	Update Idioma
-		set (Nombre := pNombre)
+		set Nombre = pNombre
 	    WHERE ID_Idioma = pID;
 END EDITAR_Idioma;
 
@@ -149,16 +150,16 @@ CREATE OR REPLACE PROCEDURE EDITAR_Estilo_Vida(
     pID_TipoBebedor IN Number) AS
 BEGIN
 	Update Estilo_Vida
-	set (
-        Fuma := pFuma, 
-        FrecEjercicios := pFrecEjercicios, 
-        CantidadHijos := pCantidadHijos, 
-        QuiereHIjos := pQuiereHIjos, 
-        SalarioPromedio := pSalarioPromedio, 
-        Slogan := pSlogan, 
-        ID_TipoBebedor := pSlogan
-    )
-    WHERE ID_Estilo_Vida = pID;
+	set 
+        Fuma = pFuma, 
+        FrecEjercicios = pFrecEjercicios, 
+        CantidadHijos = pCantidadHijos, 
+        QuiereHIjos = pQuiereHIjos, 
+        SalarioPromedio = pSalarioPromedio, 
+        Slogan = pSlogan, 
+        ID_TipoBebedor = pSlogan
+    
+    WHERE ID_EstiloVida = pID;
 END EDITAR_Estilo_Vida;
 
 CREATE OR REPLACE PROCEDURE BORRAR_Estilo_Vida( pID IN NUMBER ) AS
@@ -180,10 +181,10 @@ END Registrar_Genero;
 
 CREATE OR REPLACE PROCEDURE EDITAR_Genero( 
 	pID IN NUMBER, 	
-	pGenero IN VARCHAR2) AS
+	pNombre IN VARCHAR2) AS
 BEGIN
 	Update Genero
-		set (Nombre := pNombre)
+		set Nombre = pNombre
 	    WHERE ID_Genero = pID;
 END EDITAR_Genero;
 
@@ -211,14 +212,14 @@ CREATE OR REPLACE PROCEDURE EDITAR_Aspecto_Fisico(
 	pGenero IN VARCHAR2) AS
 BEGIN
 	Update Aspecto_Fisico
-		set (Genero := pGenero)
+		set Genero = pGenero
 	    WHERE ID_genero = pID;
 END EDITAR_Aspecto_Fisico;
 
 CREATE OR REPLACE PROCEDURE BORRAR_Aspecto_Fisico( pID IN NUMBER ) AS
 BEGIN
 	delete from Aspecto_Fisico
-	WHERE ID_Aspecto_Fisico = pID;
+	WHERE ID_AspectoF = pID;
 END BORRAR_Aspecto_Fisico;
 
 
@@ -237,7 +238,7 @@ CREATE OR REPLACE PROCEDURE EDITAR_Color_Pelo(
 	pNombre IN VARCHAR2) AS
 BEGIN
 	Update Color_Pelo
-		set (Nombre := pNombre)
+		set Nombre = pNombre
 	    WHERE ID_ColorPelo = pID;
 END EDITAR_Color_Pelo;
 
@@ -269,7 +270,7 @@ CREATE OR REPLACE PROCEDURE EDITAR_UsuariosXMatch(
 	pID_Recomendacion IN NUMBER) AS
 BEGIN
 	Update UsuariosXMatch
-		set (Fecha := pFecha, ID_Estado_match := pID_Estado_match, ID_Propio := pID_Propio, ID_Recomendacion := pID_Recomendacion)
+		set Fecha = pFecha, ID_Estado_match = pID_Estado_match, ID_Propio = pID_Propio, ID_Recomendacion = pID_Recomendacion
 	    WHERE ID_UsuariosXMatch = pID;
 END EDITAR_UsuariosXMatch;
 
@@ -296,7 +297,7 @@ CREATE OR REPLACE PROCEDURE EDITAR_HobbyXUsuario(
 	pID_Hobby IN NUMBER) AS
 BEGIN
 	Update HobbyXUsuario
-		set (ID_Usuario := pID_Usuario, ID_Hobby := pID_Hobby)
+		set ID_Usuario = pID_Usuario, ID_Hobby = pID_Hobby
 	    WHERE ID_HobbyXUsuario = pID;
 END EDITAR_HobbyXUsuario;
 
@@ -324,10 +325,10 @@ END Registrar_ActividadXUsuario;
 CREATE OR REPLACE PROCEDURE EDITAR_ActividadXUsuario( 
 	pID IN NUMBER, 	
 	pID_Usuario IN NUMBER,
-	pID_actividadA IN NUMBER) AS
+	pID_actividadAL IN NUMBER) AS
 BEGIN
 	Update ActividadXUsuario
-		set (ID_Usuario := pID_Usuario, ID_actividadA := pID_actividadA)
+		set ID_Usuario = pID_Usuario, ID_actividadAL = pID_actividadAL
 	    WHERE ID_ActividadXUsuario = pID;
 END EDITAR_ActividadXUsuario;
 

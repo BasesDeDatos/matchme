@@ -11,7 +11,7 @@ CREATE OR REPLACE PROCEDURE EDITAR_Rol(
 	pNombre IN VARCHAR2) AS
 BEGIN
 	Update Rol
-		set (Nombre := pNombre)
+		set Nombre = pNombre
 	    WHERE ID_Rol = pID;
 END EDITAR_Rol;
 
@@ -33,15 +33,16 @@ BEGIN
     	RETURN secu_Bitacora_Visita.CurrVal;
 END REGISTRAR_Bitacora_Visita;
 
-CREATE OR REPLACE PROCEDURE EDITAR_Bitacora_Visita( 
+create or replace
+PROCEDURE EDITAR_Bitacora_Visita( 
 	pID IN NUMBER, 	
 	pFecha IN DATE, 
 	pID_Visitante IN NUMBER, 
 	pID_Visitado IN NUMBER) AS
 BEGIN
 	Update Bitacora_Visita
-	set (Fecha := pFecha, ID_Visitante = pID_Visitante, ID_Visitado = pID_visitado)
-    	WHERE ID_Bitacora_Conocido = pID;
+	set Fecha = pFecha, ID_Visitante = pID_Visitante, ID_Visitado = pID_visitado
+    WHERE ID_visita = pID;
 END EDITAR_Bitacora_Visita;
 
 CREATE OR REPLACE PROCEDURE BORRAR_Bitacora_Visita( pID IN NUMBER ) AS
@@ -63,7 +64,7 @@ END REGISTRAR_Ciudad;
 CREATE OR REPLACE PROCEDURE EDITAR_Ciudad(pNombre IN VARCHAR2) AS
 BEGIN
 	Update Ciudad
-		set (nombre := pNombre)
+		set Nombre = pNombre
 	    WHERE ID_Ciudad = pID;
 END EDITAR_Ciudad;
 
@@ -83,14 +84,13 @@ BEGIN
 		RETURN secu_Religion.CurrVal;
 END REGISTRAR_Religion;
 
-CREATE OR REPLACE PROCEDURE EDITAR_Religion( 
-	pID IN NUMBER, 	
-	pNombre IN VARCHAR2) AS
+create or replace
+PROCEDURE EDITAR_Ciudad(pID In Number, pNombre IN VARCHAR2) AS
 BEGIN
-	Update Religion
-		set (Nombre := pNombre)
-	    WHERE ID_Religion = pID;
-END EDITAR_Religion;
+	Update Ciudad
+		set Nombre = pNombre
+	    WHERE ID_Ciudad = pID;
+END EDITAR_Ciudad;
 
 CREATE OR REPLACE PROCEDURE BORRAR_Religion( pID IN NUMBER ) AS
 BEGIN
@@ -113,7 +113,7 @@ CREATE OR REPLACE PROCEDURE EDITAR_Educacion(
 	pNombre IN VARCHAR2) AS
 BEGIN
 	Update Educacion
-		set (Nombre := pNombre)
+		set Nombre = pNombre
 	    WHERE ID_Educacion = pID;
 END EDITAR_Educacion;
 
@@ -137,7 +137,7 @@ CREATE OR REPLACE PROCEDURE EDITAR_Hobby(
  pGenero IN VARCHAR2) AS
 BEGIN
  Update Hobby
-  set (Genero := pGenero)
+  set (Genero = pGenero)
      WHERE ID_Hobby = pID;
 END EDITAR_Hobby;
 
@@ -158,19 +158,20 @@ BEGIN
   RETURN secu_Tipo_Bebedor.CurrVal;
 END REGISTRAR_Tipo_Bebedor;
 
-CREATE OR REPLACE PROCEDURE EDITAR_Tipo_Bebedor( 
+create or replace
+PROCEDURE EDITAR_Tipo_Bebedor( 
  pID IN NUMBER,  
- pGenero IN VARCHAR2) AS
+ pClase IN VARCHAR2) AS
 BEGIN
  Update Tipo_Bebedor
-  set (Genero := pGenero)
-     WHERE ID_Tipo_Bebedor = pID;
+  set Clase = pClase
+     WHERE ID_TipoBebedor = pID;
 END EDITAR_Tipo_Bebedor;
 
 CREATE OR REPLACE PROCEDURE BORRAR_Tipo_Bebedor( pID IN NUMBER ) AS
 BEGIN
  delete from Tipo_Bebedor
- WHERE ID_Tipo_Bebedor = pID;
+ WHERE ID_TipoBebedor = pID;
 END BORRAR_Tipo_Bebedor;
 -------------------------------------------------
 CREATE OR REPLACE FUNCTION REGISTRAR_Color_Ojos(
@@ -186,7 +187,7 @@ CREATE OR REPLACE PROCEDURE EDITAR_Color_Ojos(
  pNombre IN VARCHAR2) AS
 BEGIN
  Update Color_Ojos
-  set (Nombre := pNombre)
+  set Nombre = pNombre
      WHERE ID_ColorOjos = pID;
 END EDITAR_Color_Ojos;
 
@@ -210,7 +211,7 @@ CREATE OR REPLACE PROCEDURE EDITAR_Contextura(
  pNombre IN VARCHAR2) AS
 BEGIN
  Update Contextura
-  set (Nombre := pNombre)
+  set Nombre = pNombre
      WHERE ID_Contextura = pID;
 END EDITAR_Contextura;
 
@@ -231,19 +232,22 @@ BEGIN
   RETURN secu_UsuarioXEvento.CurrVal;
 END REGISTRAR_EventoXUsuario;
 
-CREATE OR REPLACE PROCEDURE EDITAR_EventoXUsuario( 
+create or replace
+PROCEDURE EDITAR_EventoXUsuario( 
  pID IN NUMBER,  
  pID_Usuario IN NUMBER,
  pID_Evento IN NUMBER) AS
 BEGIN
- Update EventoXUsuario
-  set (ID_Usuario := pID_Usuario, ID_Evento := pID_Evento)
-     WHERE ID_EventoXUsuario = pID;
+ Update UsuarioXEvento
+  set ID_Usuario = pID_Usuario, ID_Evento = pID_Evento
+     WHERE ID_UsuarioXEvento = pID;
 END EDITAR_EventoXUsuario;
 
-CREATE OR REPLACE PROCEDURE BORRAR_EventoXUsuario( pID IN NUMBER ) AS
+
+create or replace
+PROCEDURE BORRAR_EventoXUsuario( pID IN NUMBER ) AS
 BEGIN
- delete from EventoXUsuario
- WHERE ID_EventoXUsuario = pID;
+ delete from UsuarioXEvento
+ WHERE ID_UsuarioXEvento = pID;
 END BORRAR_EventoXUsuario;
 
