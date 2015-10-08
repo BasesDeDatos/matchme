@@ -6,7 +6,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 -->
 
 <?php
-	
+	header('Content-Type: text/html; charset=ISO-8859-1');
 	$user = 'MatchMe';
 	$clave = 'MatchMe';
 	$db = '(DESCRIPTION = (ADDRESS_LIST =
@@ -174,7 +174,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		queryProcedure($conexion, "begin {$_POST["procedure"]}({$_POST["row_id"]}, '{$_POST["value"]}'); end;");
 	}
 
-
+	if (!empty($_POST) && $_POST["mode"] == "registrar_ciudad"){
+		queryFunction($conexion, "begin :value := {$_POST["procedure"]}('{$_POST["value"]}', {$_POST["id_estado"]}); end;");
+	}
+	
+	if (!empty($_POST) && $_POST["mode"] == "registrar_estado"){
+		queryFunction($conexion, "begin :value := {$_POST["procedure"]}('{$_POST["value"]}', {$_POST["id_pais"]}); end;");
+	}
+	
 	//*** EDITAR UN PERFIL *///
 	if (!empty($_POST) && $_POST["mode"] == "editar"){
 		$active_user_id = $_SESSION["active_user_id"];
