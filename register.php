@@ -343,6 +343,46 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				
 				<input type="button" name="previous" class="previous action-button" value="Anterior" />
 				<input type="hidden" name= "mode" value ="registrar_usuario" >
+			</fieldset>
+			
+			<fieldset>
+				<h2 class="fs-title">Ocupaciones</h2>
+				
+				<div class="col-md-12 scroll-container">
+					<?php for($i = 0; $i < count($arrayQuery["OCUPACION"]["NOMBRE"]); $i++){ ?>
+						<div class="col-md-1">
+							<input  class="col-md-1" type="checkbox" id="<?php echo $arrayQuery["OCUPACION"]["NOMBRE"][$i] ?>" name = "ocupacion[]" value = "<?php echo $arrayQuery["OCUPACION"]["ID_OCUPACION"][$i] ?>" />
+						</div>						
+						<div class="col-md-5">
+							<label  class="col-md-5" for="<?php echo $arrayQuery["OCUPACION"]["NOMBRE"][$i] ?>">
+								<?php echo $arrayQuery["OCUPACION"]["NOMBRE"][$i] ?>
+							</label>
+						</div>
+					<?php } ?>	
+				</div>
+				
+				<input type="button" name="previous" class="previous action-button" value="Anterior" />
+				<input type="hidden" name= "mode" value ="registrar_usuario" >
+			</fieldset>
+			
+			<fieldset>
+				<h2 class="fs-title">Idiomas</h2>
+				
+				<div class="col-md-12 scroll-container">
+					<?php for($i = 0; $i < count($arrayQuery["IDIOMA"]["NOMBRE"]); $i++){ ?>
+						<div class="col-md-1">
+							<input  class="col-md-1" type="checkbox" id="<?php echo $arrayQuery["IDIOMA"]["NOMBRE"][$i] ?>" name = "idioma[]" value = "<?php echo $arrayQuery["IDIOMA"]["ID_ACTIVIDADAL"][$i] ?>" />
+						</div>						
+						<div class="col-md-5">
+							<label  class="col-md-5" for="<?php echo $arrayQuery["IDIOMA"]["NOMBRE"][$i] ?>">
+								<?php echo $arrayQuery["IDIOMA"]["NOMBRE"][$i] ?>
+							</label>
+						</div>
+					<?php } ?>	
+				</div>
+				
+				<input type="button" name="previous" class="previous action-button" value="Anterior" />
+				<input type="hidden" name= "mode" value ="registrar_usuario" >
 				<input type="submit" name="submit" class="submit action-button" value="Registro" />
 			</fieldset>
 		</form>
