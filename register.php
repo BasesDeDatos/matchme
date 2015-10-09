@@ -37,7 +37,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<input type="hidden" name="Foto" id="Foto"/>
 				</div>
 				<div class="col-md-6"><input type="text" name="email" placeholder="Email: someone@something.com" /></div>
-				<div class="col-md-6"><input type="password" name="pass" placeholder="Contraseña" /></div>
+				<div class="col-md-6"><input type="password" name="clave" placeholder="Contraseña" /></div>
 
 				<input type="button" name="next" class="next action-button" value="Siguiente" />
 			</fieldset>
@@ -46,9 +46,22 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<h2 class="fs-title">Datos personales</h2>
 				<!--h3 class="fs-subtitle">We will never sell it</h3-->
 				<div class="col-md-6"><input type="text" name="nombre" placeholder="Nombre" /></div>
-				<div class="col-md-6"><input type="text" name="apellidos" placeholder="Apellidos" /></div>
+				<div class="col-md-6"><input type="text" name="Primer_apellido" placeholder="Primer apellido" /></div>
+				<div class="col-md-6"><input type="text" name="Segundo_apellido" placeholder="Segundo apellido" /></div>
+				
 				<div class="col-md-6"><h3 class="fs-subtitle">Fecha De Nacimiento:</h3></div>
 				<div class="col-md-6"><input type="date" name="fecha_nacimiento" placeholder="fecha" /></div>
+				
+				<div class="col-md-6"><h3 class="fs-subtitle">Signo Zodiacal: </h3></div>
+				<select class="col-md-6" name="signo_zodiacal" id="signo_zodiacal">
+					<option value="">Agregar nuevo</option>
+					<?php for($i = 0; $i < count($arrayQuery["SIGNO_ZODIACAL"]["NOMBRE"]); $i++){ ?>
+						<option value="<?php echo $arrayQuery["SIGNO_ZODIACAL"]["ID_SIGNO_ZODIACAL"][$i] ?>">
+							<?php echo $arrayQuery["SIGNO_ZODIACAL"]["NOMBRE"][$i] ?>
+						</option>
+					<?php } ?>
+				</select>
+				
 				
 				<div class="col-md-6"><h3 class="fs-subtitle">Educacion: </h3></div>
 				<select class="col-md-6" name="educacion" id="educacion">
@@ -113,7 +126,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				</select>
 				
 				<div class="col-md-6"><h3 class="fs-subtitle">Ciudad: </h3></div>
-				<select class="col-md-6 selector" name="Ciudad" id="Ciudad0">
+				<select class="col-md-6 selector" name="ciudad" id="Ciudad0">
 					<option value="">Seleccione una ciudad</option>
 					<?php for($i = 0; $i < count($arrayQuery["CIUDAD"]["NOMBRE"]); $i++){ ?>
 						<option class="<?php echo $arrayQuery["CIUDAD"]["ID_ESTADO"][$i] ?>"
@@ -132,10 +145,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<h2 class="fs-title">Estilo de vida</h2>
 				<!--h3 class="fs-subtitle">We will never sell it</h3-->
 				
-				<div class="col-md-12"><input type="text" id="slogan" placeholder="Slogan" /></div>
+				<div class="col-md-12"><input type="text" name="slogan" placeholder="Slogan" /></div>
 				
 				<div class="col-md-6"><h3 class="fs-subtitle">Tipo de bebedor: </h3></div>
-				<select class="col-md-6" name="tipo_bebedor" id="tipo_bebedor">
+				<select class="col-md-6" name="tipobebedor" id="tipo_bebedor">
 					<option value="">Seleccione</option>
 					<?php for($i = 0; $i < count($arrayQuery["TIPO_BEBEDOR"]["CLASE"]); $i++){ ?>
 						<option value="<?php echo $arrayQuery["TIPO_BEBEDOR"]["CLASE"][$i] ?>">
@@ -191,7 +204,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<?php } ?>
 				</select>
 				
-				<div class="col-md-12"><input type="text" id="salario" placeholder="Salario" /></div>
+				<div class="col-md-12"><input type="text" name="salariopromedio" placeholder="Salario" /></div>
 				
 				
 				<input type="button" name="previous" class="previous action-button" value="Anterior" />
