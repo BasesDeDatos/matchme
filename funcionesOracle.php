@@ -171,6 +171,18 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		echo json_encode($Response);
 	}
 	
+	if (!empty($_POST) && $_POST["mode"] == "registrar_evento"){
+		$evento =
+    	queryFunction($conexion, 
+    		"begin :value := REGISTRAR_Evento(
+					{$_POST["nombre_eventos"]},
+					{$_POST["descripcion_eventos"]},
+					to_date('{$_POST["fecha_nacimiento"]}', 'yyyy-mm-dd'),
+    				{$_POST["ciudad_eventos"]}
+    			);
+    		end;");
+	}
+	
 	if (!empty($_POST) && $_POST["mode"] == "editar_catalogo"){
 		queryProcedure($conexion, "begin {$_POST["procedure"]}({$_POST["row_id"]}, '{$_POST["value"]}'); end;");
 	}

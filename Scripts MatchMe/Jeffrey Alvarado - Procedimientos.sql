@@ -580,13 +580,9 @@ BEGIN
 	   id_educacion = pid_educacion, 
 	   id_cuidad = pid_cuidad, 
 	   id_aspectoFi = pid_aspectoFi, 
-	   id_hobby = pid_hobby, 
-	   id_actividadAL = pid_actividadAL, 
 	   id_estilovida = pid_estilovida, 
-	   id_ocupacion = pid_ocupacion, 
 	   id_rol = pid_rol, 
 	   id_signo_zodiacal = pid_signo_zodiacal,
-	   id_interes_gusto = pid_interes_gusto,
 	   id_genero = pid_Genero
 	WHERE ID_Usuario = pID_Usuario;
 

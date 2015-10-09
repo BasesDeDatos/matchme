@@ -70,7 +70,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<select class="col-md-6 selector" name="Evento" id="Evento">
 					<option value="">Seleccione un evento</option>
 					<?php for($i = 0; $i < count($arrayQuery["EVENTO"]["NOMBRE"]); $i++){ ?>
-						<option class="<?php echo $arrayQuery["EVENTO"]["ID_ESTADO"][$i] ?>"
+						<option class="<?php echo $arrayQuery["EVENTO"]["ID_CIUDAD"][$i] ?>"
 								value="<?php echo $arrayQuery["EVENTO"]["ID_CIUDAD"][$i] ?>">
 							<?php echo $arrayQuery["EVENTO"]["NOMBRE"][$i] ?>
 						</option>
@@ -123,6 +123,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<label class="col-md-6" id = fecha_evento>Fecha del evento</label>
 				<div class="col-md-6"><input type="date" name="fecha_evento_input" id="fecha_evento_input" placeholder="fecha" /></div>
 				
+				<input type="submit" name="submit" class="submit action-button" value="Registrar evento" onclick="registrar_evento()"/>
 				<input type="button" name="previous" class="previous action-button" value="Anterior" />
 				<input type="button" name="next" class="next action-button" value="Siguiente"/>
 			</fieldset>
@@ -562,12 +563,29 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			else { input.val( $(this).find("option:selected").text().trim());}
 		})
 		
+		function registrar_evento(){
+//			alert($("#Ciudad0").val());
+			var nombre_eventos = $("#nombre_eventos").val();
+			var descripcion_eventos = $("#descripcion_eventos").val();
+			var fecha_eventos = $("#fecha_evento_input").val();
+			var ciudad_eventos = $("#Ciudad0").val();
+
+			var data = "mode=registrar_evento&nombre_eventos="+nombre_eventos+"&descripcion_eventos="+descripcion_eventos+"&fecha_eventos="+fecha_eventos+"&ciudad_eventos="+ciudad_eventos;
+			$.ajax({  
+				    type: "POST",
+				    url: "funcionesOracle.php",
+				    data: data,
+				    success: function(data){
+				    	$("#debug").html(data);
+				    }
+			});
+		}
 		
 		function enviar_mensaje(){
 //			alert($("#Ciudad0").val());
 			var subject = $("#subject").val();
 			var mensaje = $("#mensaje").val();
-			var ciudad = $("#Ciudad0").val();
+			var ciudad = $("#Evento").val();
 
 			var data = "mode=enviar_mail&subject="+subject+"&mensaje="+mensaje+"&ciudad="+ciudad;
 			$.ajax({  
