@@ -10473,4 +10473,543 @@ PLS-00103: Se ha encontrado el símbolo "\" cuando se esperaba uno de los siguien
 
    ( ) - + case mod new not null <an identifier>
    <a double-quoted delimited-identifier> <a bind variable>
-   table continue avg count current exists 
+   table continue avg count current exists 09/Oct/15 begin GET_Pais(null, :cursbv); end;
+1	Costa Rica	
+2	Mongolia	
+################0################
+09/Oct/15 begin GET_Estado(null, :cursbv); end;
+2	Alajuela	1	
+1	San Jose	1	
+################0################
+09/Oct/15 begin GET_CIUDAD(null, :cursbv); end;
+3	Aserri	1	
+2	San Carlos	2	
+1	San Jose	1	
+################0################
+09/Oct/15 begin GET_UsuariosXMatch(null, :cursbv); end;
+26/09/15	1	
+26/09/15	0	
+################0################
+09/Oct/15 begin GET_Signo_Zodiacal(null, :cursbv); end;
+11	Acuario	20/01/15	17/02/15	
+1	Aries	20/03/15	19/04/15	
+4		21/06/15	22/07/15	
+10	Capricornio	22/12/15	19/01/15	
+8	Escorpio	23/10/15	21/11/15	
+3		21/05/15	20/06/15	
+5	Leo	23/07/15	22/08/15	
+7	Libra	23/09/15	22/10/15	
+12	Piscis	18/02/15	19/03/15	
+9	Sagitario	22/11/15	21/12/15	
+2	Tauro	20/04/15	20/05/15	
+6	Virgo	23/08/15	22/09/15	
+################0################
+09/Oct/15 begin GET_Rol(null, :cursbv); end;
+1	Admin	
+################0################
+09/Oct/15 begin GET_Religion(null, :cursbv); end;
+2	Catolica	
+1	Pastafari	
+################0################
+09/Oct/15 begin GET_Idioma(null, :cursbv); end;
+2	arabe	
+1		
+################0################
+09/Oct/15 begin GET_Educacion(null, :cursbv); end;
+1	Bachiller	
+################0################
+09/Oct/15 begin GET_Hobby(null, :cursbv); end;
+1	VideoGames	
+################0################
+09/Oct/15 begin GET_ActividadAL(null, :cursbv); end;
+Correr	
+Escalar	
+################0################
+09/Oct/15 begin GET_Tipo_Bebedor(null, :cursbv); end;
+1	Social	
+################0################
+09/Oct/15 begin GET_Ocupacion(null, :cursbv); end;
+Programador	
+################0################
+09/Oct/15 begin GET_Color_Ojos(null, :cursbv); end;
+1	Azul	
+2	Verdes	
+################0################
+09/Oct/15 begin GET_Color_Piel(null, :cursbv); end;
+Amarillo	
+Blanca	
+################0################
+09/Oct/15 begin GET_Color_Pelo(null, :cursbv); end;
+1	Cafe	
+################0################
+09/Oct/15 begin GET_Contextura(null, :cursbv); end;
+1	Delgado	
+2	Gruesa	
+################0################
+09/Oct/15 begin GET_Estado_Match(null, :cursbv); end;
+Encontro pareja	
+################0################
+09/Oct/15 begin GET_Estado_Civil(null, :cursbv); end;
+1	Solo	
+################0################
+09/Oct/15 begin GET_Genero(null, :cursbv); end;
+2	Femenino	
+1	Masculino	
+################0################
+09/Oct/15 begin GET_Pais(null, :cursbv); end;
+1	Costa Rica	
+2	Mongolia	
+################-1################
+09/Oct/15 begin GET_Estado(null, :cursbv); end;
+2	Alajuela	1	
+1	San Jose	1	
+################-1################
+09/Oct/15 begin GET_CIUDAD(null, :cursbv); end;
+3	Aserri	1	
+2	San Carlos	2	
+1	San Jose	1	
+################-1################
+09/Oct/15 begin GET_UsuariosXMatch(null, :cursbv); end;
+26/09/15	1	
+26/09/15	0	
+################-1################
+09/Oct/15 begin GET_Signo_Zodiacal(null, :cursbv); end;
+11	Acuario	20/01/15	17/02/15	
+1	Aries	20/03/15	19/04/15	
+4		21/06/15	22/07/15	
+10	Capricornio	22/12/15	19/01/15	
+8	Escorpio	23/10/15	21/11/15	
+3		21/05/15	20/06/15	
+5	Leo	23/07/15	22/08/15	
+7	Libra	23/09/15	22/10/15	
+12	Piscis	18/02/15	19/03/15	
+9	Sagitario	22/11/15	21/12/15	
+2	Tauro	20/04/15	20/05/15	
+6	Virgo	23/08/15	22/09/15	
+################-1################
+09/Oct/15 begin GET_Rol(null, :cursbv); end;
+1	Admin	
+################-1################
+09/Oct/15 begin GET_Religion(null, :cursbv); end;
+2	Catolica	
+1	Pastafari	
+################-1################
+09/Oct/15 begin GET_Idioma(null, :cursbv); end;
+2	arabe	
+1		
+################-1################
+09/Oct/15 begin GET_Educacion(null, :cursbv); end;
+1	Bachiller	
+################-1################
+09/Oct/15 begin GET_Hobby(null, :cursbv); end;
+1	VideoGames	
+################-1################
+09/Oct/15 begin GET_ActividadAL(null, :cursbv); end;
+Correr	
+Escalar	
+################-1################
+09/Oct/15 begin GET_Tipo_Bebedor(null, :cursbv); end;
+1	Social	
+################-1################
+09/Oct/15 begin GET_Ocupacion(null, :cursbv); end;
+Programador	
+################-1################
+09/Oct/15 begin GET_Color_Ojos(null, :cursbv); end;
+1	Azul	
+2	Verdes	
+################-1################
+09/Oct/15 begin GET_Color_Piel(null, :cursbv); end;
+Amarillo	
+Blanca	
+################-1################
+09/Oct/15 begin GET_Color_Pelo(null, :cursbv); end;
+1	Cafe	
+################-1################
+09/Oct/15 begin GET_Contextura(null, :cursbv); end;
+1	Delgado	
+2	Gruesa	
+################-1################
+09/Oct/15 begin GET_Estado_Match(null, :cursbv); end;
+Encontro pareja	
+################-1################
+09/Oct/15 begin GET_Estado_Civil(null, :cursbv); end;
+1	Solo	
+################-1################
+09/Oct/15 begin GET_Genero(null, :cursbv); end;
+2	Femenino	
+1	Masculino	
+################-1################
+09/Oct/15 begin\
+    			:value := REGISTRAR_Interes(
+					'',\
+					'',\
+    				\
+    			);\
+    		end;return error ORA-06550: línea 1, columna 6:
+PLS-00103: Se ha encontrado el símbolo "\" cuando se esperaba uno de los siguientes:
+
+   ( begin case declare exit for goto if loop mod null pragma
+   raise return select update while with <an identifier>
+   <a double-quoted delimited-identifier> <a bind variable> <<
+   continue close current delete fetch lock insert open rollback
+   savepoint set sql execute commit forall merge pipe purge
+El símbolo "\" ha sido ignorado.
+ORA-06550: línea 3, columna 9:
+PLS-00103: Se ha encontrado el símbolo "\" cuando se esperaba uno de los siguientes:
+
+   ( - + case mod new not null <an identifier>
+   <a double-quoted delimited-identifier> <a bind variable>
+   continue avg count current exists max min p09/Oct/15 begin\
+    			:value := REGISTRAR_Aspecto_fisico(\
+					'',\
+					'',\
+					,\
+					,\
+    				,\
+    				\
+    			);\
+    		end;return error ORA-06550: línea 1, columna 6:
+PLS-00103: Se ha encontrado el símbolo "\" cuando se esperaba uno de los siguientes:
+
+   ( begin case declare exit for goto if loop mod null pragma
+   raise return select update while with <an identifier>
+   <a double-quoted delimited-identifier> <a bind variable> <<
+   continue close current delete fetch lock insert open rollback
+   savepoint set sql execute commit forall merge pipe purge
+El símbolo "begin insertado antes de "\" para continuar.
+ORA-06550: línea 2, columna 43:
+PLS-00103: Se ha encontrado el símbolo "\" cuando se esperaba uno de los siguientes:
+
+   ( ) - + case mod new not null <an identifier>
+   <a double-quoted delimited-identifier> <a bind variable>
+   table continue avg count current exists 09/Oct/15 begin\
+    			:value := REGISTRAR_estilo_vida(\
+					'',\
+					'',\
+					'',\
+					'',\
+					'',\
+					'',\
+					''\
+    			);\
+    		end;return error ORA-06550: línea 1, columna 6:
+PLS-00103: Se ha encontrado el símbolo "\" cuando se esperaba uno de los siguientes:
+
+   ( begin case declare exit for goto if loop mod null pragma
+   raise return select update while with <an identifier>
+   <a double-quoted delimited-identifier> <a bind variable> <<
+   continue close current delete fetch lock insert open rollback
+   savepoint set sql execute commit forall merge pipe purge
+El símbolo "begin insertado antes de "\" para continuar.
+ORA-06550: línea 2, columna 40:
+PLS-00103: Se ha encontrado el símbolo "\" cuando se esperaba uno de los siguientes:
+
+   ( ) - + case mod new not null <an identifier>
+   <a double-quoted delimited-identifier> <a bind variable>
+   table continue avg count current exists 09/Oct/15 begin\
+    			:value := REGISTRAR_USUARIO(\
+					'',\
+					'',\
+    				'',\
+    				'',\
+    				'otaku@hotmailcom',\
+    				'IMG-20150825-WA0104.jpg',\
+    				,\
+    				'',\
+    				'',\
+    				'',\
+    				'',\
+    				,\
+    				,\
+    				,\
+    				,\
+    				-1,\
+    				-1,\
+    				2,\
+    				\
+    				-1\
+    			);\
+    		end;return error ORA-06550: línea 1, columna 6:
+PLS-00103: Se ha encontrado el símbolo "\" cuando se esperaba uno de los siguientes:
+
+   ( begin case declare exit for goto if loop mod null pragma
+   raise return select update while with <an identifier>
+   <a double-quoted delimited-identifier> <a bind variable> <<
+   continue close current delete fetch lock insert open rollback
+   savepoint set sql execute commit forall merge pipe purge
+El símbolo "begin insertado antes de "\" para continuar.
+ORA-06550: línea 2, columna 36:
+PLS-00103: Se ha encontrado el símbolo "\" cuando se esperaba uno de los siguientes:
+
+   ( ) - + case mod new not null <an identifier>
+   <a double-quoted delimited-identifier> <a bind variable>
+   table continue avg count current exists 09/Oct/15 begin\
+    			:value := REGISTRAR_Interes(
+					'17',\
+					'25',\
+    				Femenino\
+    			);\
+    		end;return error ORA-06550: línea 1, columna 6:
+PLS-00103: Se ha encontrado el símbolo "\" cuando se esperaba uno de los siguientes:
+
+   ( begin case declare exit for goto if loop mod null pragma
+   raise return select update while with <an identifier>
+   <a double-quoted delimited-identifier> <a bind variable> <<
+   continue close current delete fetch lock insert open rollback
+   savepoint set sql execute commit forall merge pipe purge
+El símbolo "\" ha sido ignorado.
+ORA-06550: línea 3, columna 11:
+PLS-00103: Se ha encontrado el símbolo "\" cuando se esperaba uno de los siguientes:
+
+   ( - + case mod new not null <an identifier>
+   <a double-quoted delimited-identifier> <a bind variable>
+   continue avg count current exists max min 09/Oct/15 begin\
+    			:value := REGISTRAR_Aspecto_fisico(\
+					'168',\
+					'64',\
+					Verdes,\
+					Amarillo,\
+    				Cafe,\
+    				Delgado\
+    			);\
+    		end;return error ORA-06550: línea 1, columna 6:
+PLS-00103: Se ha encontrado el símbolo "\" cuando se esperaba uno de los siguientes:
+
+   ( begin case declare exit for goto if loop mod null pragma
+   raise return select update while with <an identifier>
+   <a double-quoted delimited-identifier> <a bind variable> <<
+   continue close current delete fetch lock insert open rollback
+   savepoint set sql execute commit forall merge pipe purge
+El símbolo "begin insertado antes de "\" para continuar.
+ORA-06550: línea 2, columna 43:
+PLS-00103: Se ha encontrado el símbolo "\" cuando se esperaba uno de los siguientes:
+
+   ( ) - + case mod new not null <an identifier>
+   <a double-quoted delimited-identifier> <a bind variable>
+   table continue avg count current exists 09/Oct/15 begin\
+    			:value := REGISTRAR_estilo_vida(\
+					'',\
+					'',\
+					'',\
+					'',\
+					'',\
+					'',\
+					''\
+    			);\
+    		end;return error ORA-06550: línea 1, columna 6:
+PLS-00103: Se ha encontrado el símbolo "\" cuando se esperaba uno de los siguientes:
+
+   ( begin case declare exit for goto if loop mod null pragma
+   raise return select update while with <an identifier>
+   <a double-quoted delimited-identifier> <a bind variable> <<
+   continue close current delete fetch lock insert open rollback
+   savepoint set sql execute commit forall merge pipe purge
+El símbolo "begin insertado antes de "\" para continuar.
+ORA-06550: línea 2, columna 40:
+PLS-00103: Se ha encontrado el símbolo "\" cuando se esperaba uno de los siguientes:
+
+   ( ) - + case mod new not null <an identifier>
+   <a double-quoted delimited-identifier> <a bind variable>
+   table continue avg count current exists 09/Oct/15 begin\
+    			:value := REGISTRAR_USUARIO(\
+					'isaac',\
+					'',\
+    				'',\
+    				'2013-03-04',\
+    				'otaku@hotmailcom',\
+    				'IMG-20150825-WA0104.jpg',\
+    				Femenino,\
+    				'',\
+    				'si',\
+    				'si',\
+    				'si',\
+    				Catolica,\
+    				Solo,\
+    				Bachiller,\
+    				,\
+    				-1,\
+    				-1,\
+    				2,\
+    				\
+    				-1\
+    			);\
+    		end;return error ORA-06550: línea 1, columna 6:
+PLS-00103: Se ha encontrado el símbolo "\" cuando se esperaba uno de los siguientes:
+
+   ( begin case declare exit for goto if loop mod null pragma
+   raise return select update while with <an identifier>
+   <a double-quoted delimited-identifier> <a bind variable> <<
+   continue close current delete fetch lock insert open rollback
+   savepoint set sql execute commit forall merge pipe purge
+El símbolo "begin insertado antes de "\" para continuar.
+ORA-06550: línea 2, columna 36:
+PLS-00103: Se ha encontrado el símbolo "\" cuando se esperaba uno de los siguientes:
+
+   ( ) - + case mod new not null <an identifier>
+   <a double-quoted delimited-identifier> <a bind variable>
+   table continue avg count current exists 09/Oct/15 begin GET_Pais(null, :cursbv); end;
+1	Costa Rica	
+2	Mongolia	
+################0################
+09/Oct/15 begin GET_Estado(null, :cursbv); end;
+2	Alajuela	1	
+1	San Jose	1	
+################0################
+09/Oct/15 begin GET_CIUDAD(null, :cursbv); end;
+3	Aserri	1	
+2	San Carlos	2	
+1	San Jose	1	
+################0################
+09/Oct/15 begin GET_UsuariosXMatch(null, :cursbv); end;
+26/09/15	1	
+26/09/15	0	
+################0################
+09/Oct/15 begin GET_Signo_Zodiacal(null, :cursbv); end;
+11	Acuario	20/01/15	17/02/15	
+1	Aries	20/03/15	19/04/15	
+4		21/06/15	22/07/15	
+10	Capricornio	22/12/15	19/01/15	
+8	Escorpio	23/10/15	21/11/15	
+3		21/05/15	20/06/15	
+5	Leo	23/07/15	22/08/15	
+7	Libra	23/09/15	22/10/15	
+12	Piscis	18/02/15	19/03/15	
+9	Sagitario	22/11/15	21/12/15	
+2	Tauro	20/04/15	20/05/15	
+6	Virgo	23/08/15	22/09/15	
+################0################
+09/Oct/15 begin GET_Rol(null, :cursbv); end;
+1	Admin	
+################0################
+09/Oct/15 begin GET_Religion(null, :cursbv); end;
+2	Catolica	
+1	Pastafari	
+################0################
+09/Oct/15 begin GET_Idioma(null, :cursbv); end;
+2	arabe	
+1		
+################0################
+09/Oct/15 begin GET_Educacion(null, :cursbv); end;
+1	Bachiller	
+################0################
+09/Oct/15 begin GET_Hobby(null, :cursbv); end;
+1	VideoGames	
+################0################
+09/Oct/15 begin GET_ActividadAL(null, :cursbv); end;
+Correr	
+Escalar	
+################0################
+09/Oct/15 begin GET_Tipo_Bebedor(null, :cursbv); end;
+1	Social	
+################0################
+09/Oct/15 begin GET_Ocupacion(null, :cursbv); end;
+Programador	
+################0################
+09/Oct/15 begin GET_Color_Ojos(null, :cursbv); end;
+1	Azul	
+2	Verdes	
+################0################
+09/Oct/15 begin GET_Color_Piel(null, :cursbv); end;
+Amarillo	
+Blanca	
+################0################
+09/Oct/15 begin GET_Color_Pelo(null, :cursbv); end;
+1	Cafe	
+################0################
+09/Oct/15 begin GET_Contextura(null, :cursbv); end;
+1	Delgado	
+2	Gruesa	
+################0################
+09/Oct/15 begin GET_Estado_Match(null, :cursbv); end;
+Encontro pareja	
+################0################
+09/Oct/15 begin GET_Estado_Civil(null, :cursbv); end;
+1	Solo	
+################0################
+09/Oct/15 begin GET_Genero(null, :cursbv); end;
+2	Femenino	
+1	Masculino	
+################0################
+09/Oct/15 begin GET_Pais(null, :cursbv); end;
+1	Costa Rica	
+2	Mongolia	
+################-1################
+09/Oct/15 begin GET_Estado(null, :cursbv); end;
+2	Alajuela	1	
+1	San Jose	1	
+################-1################
+09/Oct/15 begin GET_CIUDAD(null, :cursbv); end;
+3	Aserri	1	
+2	San Carlos	2	
+1	San Jose	1	
+################-1################
+09/Oct/15 begin GET_UsuariosXMatch(null, :cursbv); end;
+26/09/15	1	
+26/09/15	0	
+################-1################
+09/Oct/15 begin GET_Signo_Zodiacal(null, :cursbv); end;
+11	Acuario	20/01/15	17/02/15	
+1	Aries	20/03/15	19/04/15	
+4		21/06/15	22/07/15	
+10	Capricornio	22/12/15	19/01/15	
+8	Escorpio	23/10/15	21/11/15	
+3		21/05/15	20/06/15	
+5	Leo	23/07/15	22/08/15	
+7	Libra	23/09/15	22/10/15	
+12	Piscis	18/02/15	19/03/15	
+9	Sagitario	22/11/15	21/12/15	
+2	Tauro	20/04/15	20/05/15	
+6	Virgo	23/08/15	22/09/15	
+################-1################
+09/Oct/15 begin GET_Rol(null, :cursbv); end;
+1	Admin	
+################-1################
+09/Oct/15 begin GET_Religion(null, :cursbv); end;
+2	Catolica	
+1	Pastafari	
+################-1################
+09/Oct/15 begin GET_Idioma(null, :cursbv); end;
+2	arabe	
+1		
+################-1################
+09/Oct/15 begin GET_Educacion(null, :cursbv); end;
+1	Bachiller	
+################-1################
+09/Oct/15 begin GET_Hobby(null, :cursbv); end;
+1	VideoGames	
+################-1################
+09/Oct/15 begin GET_ActividadAL(null, :cursbv); end;
+Correr	
+Escalar	
+################-1################
+09/Oct/15 begin GET_Tipo_Bebedor(null, :cursbv); end;
+1	Social	
+################-1################
+09/Oct/15 begin GET_Ocupacion(null, :cursbv); end;
+Programador	
+################-1################
+09/Oct/15 begin GET_Color_Ojos(null, :cursbv); end;
+1	Azul	
+2	Verdes	
+################-1################
+09/Oct/15 begin GET_Color_Piel(null, :cursbv); end;
+Amarillo	
+Blanca	
+################-1################
+09/Oct/15 begin GET_Color_Pelo(null, :cursbv); end;
+1	Cafe	
+################-1################
+09/Oct/15 begin GET_Contextura(null, :cursbv); end;
+1	Delgado	
+2	Gruesa	
+################-1################
+09/Oct/15 begin GET_Estado_Match(null, :cursbv); end;
+Encontro pareja	
+################-1################
+09/Oct/15 begin GET_Estado_Civil(null, :cursbv); end;
+1	Solo	
+################-1################
+09/Oct/15 begin GET_Genero(null, :cursbv); end;
+2	Femenino	
+1	Masculino	
+################-1################
