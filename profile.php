@@ -149,7 +149,8 @@ if ($edit){ ?>
 									<h5>Matches</h5>
 								</li>
 							</ul>
-						</div>				
+						</div>
+						<input type="button" name="wink" class="next action-button" value="Dar un wink"/>
 					</div>
 			</div>
 
