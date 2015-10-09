@@ -32,10 +32,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<input type="file" name="archivo" id="input-foto" accept="image/*"/>
 					<input type="hidden" name="Foto" id="Foto"/>
 				</div>
-
 				<div class="col-md-6"><input type="text" name="email" placeholder="Email: someone@something.com" /></div>
 				<div class="col-md-6"><input type="password" name="pass" placeholder="Contraseña" /></div>
-				<div class="col-md-6"><input type="password" name="cpass" placeholder="Confirmar Contraseña" /></div>
+				<div class="col-md-12"><input type="password" name="cpass" placeholder="Confirmar Contraseña" /></div>
 
 				<input type="button" name="next" class="next action-button" value="Siguiente" />
 			</fieldset>
