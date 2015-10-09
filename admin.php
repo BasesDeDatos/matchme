@@ -5,10 +5,9 @@ License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 -->
 	<?php require_once("header2.php");
-		 //$arrayQuery = array(); 
-		 //$_POST["mode"] = "get_catalogos"; 
-		 //include ("funcionesOracle.php");
-	
+		$arrayQuery = array(); 
+		$_POST["mode"] = "get_catalogos"; 
+		include ("funcionesOracle.php");
 	?>
 	
 	<pre id= "debug">
@@ -493,22 +492,49 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			else { input.val( $(this).find("option:selected").text().trim());}
 		});
 		
+		
 		$(".catalogos input").change(function(){
 			var value = $(this).val();
 			var input = $(this).attr("name");
 			var nameSelect = input.substring(0, input.length-6) //se borra la palabra "_input" para obtener el select;
 			var row_id = $("select[name='"+nameSelect+"'] option:selected").val();
 			if ($("select[name='"+nameSelect+"']").val() == ""){ // ADD
-				var data = "mode=registrar_catalogo&procedure=REGISTRAR_"+nameSelect+"&value="+value;
-				$.ajax({  
-				    type: "POST",
-					data: data,
-				    url: "funcionesOracle.php",
-				    success: function(data){
-				    	$("#debug").html(data);
-					},
+				if(nameSelect != "ciudad" && nameSelect != "estado"){
+					var data = "mode=registrar_catalogo&procedure=REGISTRAR_"+nameSelect+"&value="+value;
+					$.ajax({  
+						type: "POST",
+						data: data,
+						url: "funcionesOracle.php",
+						success: function(data){
+							$("#debug").html(data);
+						},
+					});
+				}
+				else if (nameSelect == "ciudad"){
+					var estado = $("#estado").val()
+					var data = "mode=registrar_ciudad&procedure=REGISTRAR_"+nameSelect+"&value="+value+ "&id_estado="+estado;
+					$.ajax({  
+						type: "POST",
+						data: data,
+						url: "funcionesOracle.php",
+						success: function(data){
+							$("#debug").html(data);
+						},
+					});
+				}else if (nameSelect == "estado"){
+					var pais = $("#pais").val()
+					var data = "mode=registrar_estado&procedure=REGISTRAR_"+nameSelect+"&value="+value+ "&id_pais="+pais;
+					$.ajax({  
+						type: "POST",
+						data: data,
+						url: "funcionesOracle.php",
+						success: function(data){
+							$("#debug").html(data);
+						},
+					});
 					
-				});
+				}
+				
 				var id = $("select[name='"+nameSelect+"'] option").length;
 				$("select[name='"+nameSelect+"']").append("<option value='"+id+"'>"+value+"</option>");
 				$("select[name='"+nameSelect+"'] option").last().attr("selected", "selected");
@@ -517,16 +543,25 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			else{ //EDIT
 				var data = "mode=editar_catalogo&procedure=EDITAR_"+nameSelect+"&value="+value+ "&row_id="+row_id;
 				$.ajax({  
-				    type: "POST",
-				    url: "funcionesOracle.php",
-				    data: data,
-				    success: function(data){
-				    	$("#debug").html(data);
-				    }
+					type: "POST",
+					url: "funcionesOracle.php",
+					data: data,
+					success: function(data){
+						$("#debug").html(data);
+					}
 				});
 				$("select[name='"+nameSelect+"'] option:selected").html(value);
 			}
 		});
+		
+		
+		$("#ciudad").change(function(){
+			
+			var input = $("input[name='"+$(this).attr("name")+"_input']");
+			if ($(this).val() == ""){ input.val(""); } 
+			else { input.val( $(this).find("option:selected").text().trim());}
+		})
+		
 		
 		function enviar_mensaje(){
 //			alert($("#Ciudad0").val());
