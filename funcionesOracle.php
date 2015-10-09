@@ -188,65 +188,64 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		
 		$interes_gusto =
     	queryFunction($conexion, 
-    		"begin\
-    			:value := REGISTRAR_Interes(
-					'{$_POST["rango_edadi"]}',\
-					'{$_POST["rango_edadf"]}',\
-    				{$_POST["genero_gusto"]}\
-    			);\
+    		"begin :value := REGISTRAR_Interes(
+					{$_POST["rango_edadi"]},
+					{$_POST["rango_edadf"]},
+    				{$_POST["genero_gusto"]}
+    			);
     		end;");
     		
     	$aspecto_fisico =
     	queryFunction($conexion, 
-    		"begin\
-    			:value := REGISTRAR_Aspecto_fisico(\
-					'{$_POST["altura"]}',\
-					'{$_POST["peso"]}',\
-					{$_POST["colorojos"]},\
-					{$_POST["colorpiel"]},\
-    				{$_POST["colorpelo"]},\
-    				{$_POST["contextura"]}\
-    			);\
+    		"begin
+    			:value := REGISTRAR_Aspecto_fisico(
+					{$_POST["altura"]},
+					{$_POST["peso"]},
+					{$_POST["colorojos"]},
+					{$_POST["colorpiel"]},
+    				{$_POST["colorpelo"]},
+    				{$_POST["contextura"]}
+    			);
     		end;");  
     	
     	$estilo_vida =
     	queryFunction($conexion, 
-    		"begin\
-    			:value := REGISTRAR_estilo_vida(\
-					'{$_POST["fumador"]}',\
-					'{$_POST["frecuencia_ejercicios"]}',\
-					'{$_POST["cantidad_de_hijos"]}',\
-					'{$_POST["quiere_hijos"]}',\
-					'{$_POST["salariopromedio"]}',\
-					'{$_POST["slogan"]}',\
-					'{$_POST["tipobebedor"]}'\
-    			);\
+    		"begin
+    			:value := REGISTRAR_estilo_vida(
+					'{$_POST["fumador"]}',
+					'{$_POST["frecuencia_ejercicios"]}',
+					{$_POST["cantidad_de_hijos"]},
+					'{$_POST["quiere_hijos"]}',
+					{$_POST["salariopromedio"]},
+					'{$_POST["slogan"]}',
+					{$_POST["tipobebedor"]}
+    			);
     		end;");
 
     	queryFunction($conexion, 
-    		"begin\
-    			:value := REGISTRAR_USUARIO(\
-					'{$_POST["nombre"]}',\
-					'{$_POST["primer_apellido"]}',\
-    				'{$_POST["segundo_apellido"]}',\
-    				'{$_POST["fecha_nacimiento"]}',\
-    				'{$_POST["email"]}',\
-    				'{$_POST["Foto"]}',\
-    				{$_POST["genero"]},\
-    				'{$_POST["clave"]}',\
-    				'{$_POST["quiere_mascotas"]}',\
-    				'{$_POST["tiene_mascotas"]}',\
-    				'{$_POST["tendria_mascotas"]}',\
-    				{$_POST["religion"]},\
-    				{$_POST["estado_civil"]},\
-    				{$_POST["educacion"]},\
-    				{$_POST["cuidad"]},\
-    				{$aspecto_fisico},\
-    				{$estilo_vida},\
-    				2,\
-    				{$_POST["signo_zodiacal"]}\
-    				{$interes_gusto}\
-    			);\
+    		"begin
+    			:value := REGISTRAR_USUARIO(
+					'{$_POST["nombre"]}',
+					'{$_POST["primer_apellido"]}',
+    				'{$_POST["segundo_apellido"]}',
+    				 to_date('{$_POST["fecha_nacimiento"]}', 'yyyy-mm-dd'),
+    				'{$_POST["email"]}',
+    				'{$_POST["Foto"]}',
+    				{$_POST["genero"]},
+    				'{$_POST["clave"]}',
+    				'{$_POST["quiere_mascotas"]}',
+    				'{$_POST["tiene_mascotas"]}',
+    				'{$_POST["tendria_mascotas"]}',
+    				{$_POST["religion"]},
+    				{$_POST["estado_civil"]},
+    				{$_POST["educacion"]},
+    				{$_POST["ciudad"]},
+    				{$aspecto_fisico},
+    				{$estilo_vida},
+    				2,
+    				{$_POST["signo_zodiacal"]},
+    				{$interes_gusto}
+    			);
     		end;");
 	}
 
@@ -254,68 +253,68 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	if (!empty($_POST) && $_POST["mode"] == "editar"){
 
     	queryFunction($conexion, 
-    		"begin\
-    			EDITAR_Interes(\
-					'{$_POST["ID_interesg"]}',\
-					'{$_POST["rango_edadi"]}',\
-					'{$_POST["rango_edadf"]}',\
-    				{$_POST["genero_gusto"]}\
-    			);\
+    		"begin
+    			EDITAR_Interes(
+					{$_POST["ID_interesg"]},
+					{$_POST["rango_edadi"]},
+					{$_POST["rango_edadf"]},
+    				{$_POST["genero_gusto"]}
+    			);
     		end;");
     		
     	queryFunction($conexion, 
-    		"begin\
-    			EDITAR_Aspecto_fisico(\
-					'{$_POST["ID_aspectof"]}',\
-					'{$_POST["altura"]}',\
-					'{$_POST["peso"]}',\
-					{$_POST["colorojos"]},\
-					{$_POST["colorpiel"]},\
-    				{$_POST["colorpelo"]},\
-    				{$_POST["contextura"]}\
-    			);\
+    		"begin
+    			EDITAR_Aspecto_fisico(
+					{$_POST["ID_aspectof"]},
+					{$_POST["altura"]},
+					{$_POST["peso"]},
+					{$_POST["colorojos"]},
+					{$_POST["colorpiel"]},
+    				{$_POST["colorpelo"]},
+    				{$_POST["contextura"]}
+    			);
     		end;");  
     	
     	queryFunction($conexion, 
-    		"begin\
-    			EDITAR_estilo_vida(\
-    				'{$_POST["ID_estilo_vida"]}',\
-					'{$_POST["fumador"]}',\
-					'{$_POST["frecuencia_ejercicios"]}',\
-					'{$_POST["cantidad_de_hijos"]}',\
-					'{$_POST["quiere_hijos"]}',\
-					'{$_POST["salariopromedio"]}',\
-					'{$_POST["slogan"]}',\
-					'{$_POST["tipobebedor"]}'\
-    			);\
+    		"begin
+    			EDITAR_estilo_vida(
+    				{$_POST["ID_estilo_vida"]},
+					'{$_POST["fumador"]}',
+					'{$_POST["frecuencia_ejercicios"]}',
+					{$_POST["cantidad_de_hijos"]},
+					'{$_POST["quiere_hijos"]}',
+					{$_POST["salariopromedio"]},
+					'{$_POST["slogan"]}',
+					{$_POST["tipobebedor"]}
+    			);
     		end;");
     		
     	$ID_Usuario = $_SESSION["active_user_id"];
     	queryProcedure ($conexion, 
-    		"begin\
-    			EDITAR_USUARIO(\
-    				{$ID_Usuario},\
-					'{$_POST["nombre"]}',\
-					'{$_POST["primer_apellido"]}',\
-    				'{$_POST["segundo_apellido"]}',\
-    				to_date(''{$_POST["fecha_nacimiento"]}'', 'yyyy-mm-dd'),\
-    				'{$_POST["email"]}',\
-    				'{$_POST["Foto"]}',\
-    				{$_POST["genero"]},\
-    				'{$_POST["clave"]}',\
-    				'{$_POST["quiere_mascotas"]}',\
-    				'{$_POST["tiene_mascotas"]}',\
-    				'{$_POST["tendria_mascotas"]}',\
-    				{$_POST["religion"]},\
-    				{$_POST["estado_civil"]},\
-    				{$_POST["educacion"]},\
-    				{$_POST["cuidad"]},\
-    				{$aspecto_fisico},\
-    				{$estilo_vida},\
-    				2,\
-    				{$_POST["signo_zodiacal"]}\
-    				{$interes_gusto}\
-    			);\
+    		"begin
+    			EDITAR_USUARIO(
+    				{$ID_Usuario},
+					'{$_POST["nombre"]}',
+					'{$_POST["primer_apellido"]}',
+    				'{$_POST["segundo_apellido"]}',
+    				to_date(''{$_POST["fecha_nacimiento"]}'', 'yyyy-mm-dd'),
+    				'{$_POST["email"]}',
+    				'{$_POST["Foto"]}',
+    				{$_POST["genero"]},
+    				'{$_POST["clave"]}',
+    				'{$_POST["quiere_mascotas"]}',
+    				'{$_POST["tiene_mascotas"]}',
+    				'{$_POST["tendria_mascotas"]}',
+    				{$_POST["religion"]},
+    				{$_POST["estado_civil"]},
+    				{$_POST["educacion"]},
+    				{$_POST["ciudad"]},
+    				{$aspecto_fisico},
+    				{$estilo_vida},
+    				2,
+    				{$_POST["signo_zodiacal"]}
+    				{$interes_gusto}
+    			);
     		end;");
 	}
 

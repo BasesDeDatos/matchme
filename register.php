@@ -46,8 +46,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<h2 class="fs-title">Datos personales</h2>
 				<!--h3 class="fs-subtitle">We will never sell it</h3-->
 				<div class="col-md-6"><input type="text" name="nombre" placeholder="Nombre" /></div>
-				<div class="col-md-6"><input type="text" name="Primer_apellido" placeholder="Primer apellido" /></div>
-				<div class="col-md-6"><input type="text" name="Segundo_apellido" placeholder="Segundo apellido" /></div>
+				<div class="col-md-6"><input type="text" name="primer_apellido" placeholder="Primer apellido" /></div>
+				<div class="col-md-6"><input type="text" name="segundo_apellido" placeholder="Segundo apellido" /></div>
 				
 				<div class="col-md-6"><h3 class="fs-subtitle">Fecha De Nacimiento:</h3></div>
 				<div class="col-md-6"><input type="date" name="fecha_nacimiento" placeholder="fecha" /></div>
@@ -97,7 +97,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<select class="col-md-6" name="genero">
 					<option value="">Seleccione un genero</option>
 					<?php for($i = 0; $i < count($arrayQuery["GENERO"]["NOMBRE"]); $i++){ ?>
-						<option value="<?php echo $arrayQuery["GENERO"]["NOMBRE"][$i] ?>">
+						<option value="<?php echo $arrayQuery["GENERO"]["ID_GENERO"][$i] ?>">
 							<?php echo $arrayQuery["GENERO"]["NOMBRE"][$i] ?>
 						</option>
 					<?php } ?>
@@ -151,7 +151,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<select class="col-md-6" name="tipobebedor" id="tipo_bebedor">
 					<option value="">Seleccione</option>
 					<?php for($i = 0; $i < count($arrayQuery["TIPO_BEBEDOR"]["CLASE"]); $i++){ ?>
-						<option value="<?php echo $arrayQuery["TIPO_BEBEDOR"]["CLASE"][$i] ?>">
+						<option value="<?php echo $arrayQuery["TIPO_BEBEDOR"]["ID_TIPOBEBEDOR"][$i] ?>">
 							<?php echo $arrayQuery["TIPO_BEBEDOR"]["CLASE"][$i] ?>
 						</option>
 					<?php } ?>
@@ -221,7 +221,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			    <select class="col-md-6 selector" name="colorpelo" id="colorpelo">
 			    	<option value="">Seleccione un color de pelo</option>
 					<?php for($i = 0; $i < count($arrayQuery["COLOR_PELO"]["NOMBRE"]); $i++){ ?>
-						<option value="<?php echo $arrayQuery["COLOR_PELO"]["NOMBRE"][$i]?>">
+						<option value="<?php echo $arrayQuery["COLOR_PELO"]["ID_COLORPELO"][$i]?>">
 							<?php echo $arrayQuery["COLOR_PELO"]["NOMBRE"][$i] ?>
 						</option>
 					<?php } ?>
@@ -232,18 +232,18 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<select class="col-md-6 selector" name="colorpiel" id="colorpiel">
 			    	<option value="">Seleccione un color de piel</option>
 					<?php for($i = 0; $i < count($arrayQuery["COLOR_PIEL"]["NOMBRE"]); $i++){ ?>
-						<option value="<?php echo $arrayQuery["COLOR_PIEL"]["NOMBRE"][$i]?>">
+						<option value="<?php echo $arrayQuery["COLOR_PIEL"]["ID_COLORPIEL"][$i]?>">
 							<?php echo $arrayQuery["COLOR_PIEL"]["NOMBRE"][$i] ?>
 						</option>
 					<?php } ?>
 			    </select>
-				
+		
 				<div class="col-md-6"><h3 class="fs-subtitle">Color de ojos:</h3></div>
 				
 				<select class="col-md-6 selector" name="colorojos" id="colorojos">
 			    	<option value="">Seleccione un color de ojos</option>
 					<?php for($i = 0; $i < count($arrayQuery["COLOR_OJOS"]["NOMBRE"]); $i++){ ?>
-						<option value="<?php echo $arrayQuery["COLOR_OJOS"]["NOMBRE"][$i]?>">
+						<option value="<?php echo $arrayQuery["COLOR_OJOS"]["ID_COLOROJOS"][$i]?>">
 							<?php echo $arrayQuery["COLOR_OJOS"]["NOMBRE"][$i] ?>
 						</option>
 					<?php } ?>
@@ -254,7 +254,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<select class="col-md-6 selector" name="contextura" id="contextura">
 			    	<option value="">Seleccione una contextura</option>
 					<?php for($i = 0; $i < count($arrayQuery["CONTEXTURA"]["NOMBRE"]); $i++){ ?>
-						<option value="<?php echo $arrayQuery["CONTEXTURA"]["NOMBRE"][$i]?>">
+						<option value="<?php echo $arrayQuery["CONTEXTURA"]["ID_CONTEXTURA"][$i]?>">
 							<?php echo $arrayQuery["CONTEXTURA"]["NOMBRE"][$i] ?>
 						</option>
 					<?php } ?>
@@ -296,11 +296,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<select class="col-md-6 selector" name="genero_gusto">
 			    	<option value="">Seleccione un genero</option>
 			    	<?php for($i = 0; $i < count($arrayQuery["GENERO"]["NOMBRE"]); $i++){ ?>
-<<<<<<< HEAD
-						<option value="<?php echo $arrayQuery["GENERO"]["id_genero"][$i] ?>">
-=======
 						<option value="<?php echo $arrayQuery["GENERO"]["ID_GENERO"][$i] ?>">
->>>>>>> aad1624352d8efeb990be440730ba02093f3ce39
 							<?php echo $arrayQuery["GENERO"]["NOMBRE"][$i] ?>
 						</option>
 					<?php } ?>
