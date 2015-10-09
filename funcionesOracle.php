@@ -189,8 +189,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     	queryFunction($conexion, 
     		"begin\
     			:value := REGISTRAR_Interes(
-					'{$_POST["rango_edadI"]}',\
-					'{$_POST["rango_edadF"]}',\
+					'{$_POST["rango_edadi"]}',\
+					'{$_POST["rango_edadf"]}',\
     				{$_POST["genero_gusto"]}\
     			);\
     		end;");
@@ -201,9 +201,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     			:value := REGISTRAR_Aspecto_fisico(\
 					'{$_POST["altura"]}',\
 					'{$_POST["peso"]}',\
-					{$_POST["color_ojos"]},\
-					{$_POST["color_piel"]},\
-    				{$_POST["color_pelo"]},\
+					{$_POST["colorojos"]},\
+					{$_POST["colorpiel"]},\
+    				{$_POST["colorpelo"]},\
     				{$_POST["contextura"]}\
     			);\
     		end;");  
@@ -215,7 +215,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					'{$_POST["fuma"]}',\
 					'{$_POST["frecEjercicios"]}',\
 					'{$_POST["cantidadhijos"]}',\
-					'{$_POST["hijos"]}',\
+					'{$_POST["quierehijos"]}',\
 					'{$_POST["salariopromedio"]}',\
 					'{$_POST["slogan"]}',\
 					'{$_POST["tipobebedor"]}'\
@@ -225,25 +225,25 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     	queryFunction($conexion, 
     		"begin\
     			:value := REGISTRAR_USUARIO(\
-					'{$_POST["Nombre"]}',\
-					'{$_POST["Primer_apellido"]}',\
-    				'{$_POST["Segundo_apellido"]}',\
-    				'{$_POST["Fecha_nac"]}',\
-    				'{$_POST["Email"]}',\
+					'{$_POST["nombre"]}',\
+					'{$_POST["primer_apellido"]}',\
+    				'{$_POST["segundo_apellido"]}',\
+    				'{$_POST["fecha_nacimiento"]}',\
+    				'{$_POST["email"]}',\
     				'{$_POST["Foto"]}',\
-    				{$_POST["id_Genero"]},\
+    				{$_POST["genero"]},\
     				'{$_POST["Clave"]}',\
-    				'{$_POST["Gusta_mascota"]}',\
-    				'{$_POST["Tiene_mascota"]}',\
-    				'{$_POST["Tendria_mascota"]}',\
-    				{$_POST["id_religion"]},\
-    				{$_POST["id_estadoCi"]},\
-    				{$_POST["id_educacion"]},\
-    				{$_POST["id_cuidad"]},\
+    				'{$_POST["quiere_mascotas"]}',\
+    				'{$_POST["tiene_mascotas"]}',\
+    				'{$_POST["tendria_mascotas"]}',\
+    				{$_POST["religion"]},\
+    				{$_POST["estado_civil"]},\
+    				{$_POST["educacion"]},\
+    				{$_POST["cuidad"]},\
     				{$aspecto_fisico},\
     				{$estilo_vida},\
-    				{$_POST["id_rol"]},\
-    				{$_POST["id_signo_zodiacal"]}\
+    				1,\
+    				{$_POST["signo_zodiacal"]}\
     				{$interes_gusto}\
     			);\
     		end;");
@@ -256,8 +256,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     		"begin\
     			EDITAR_Interes(\
 					'{$_POST["ID_interesg"]}',\
-					'{$_POST["rango_edadI"]}',\
-					'{$_POST["rango_edadF"]}',\
+					'{$_POST["rango_edadi"]}',\
+					'{$_POST["rango_edadf"]}',\
     				{$_POST["genero_gusto"]}\
     			);\
     		end;");
