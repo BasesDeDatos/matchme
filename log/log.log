@@ -12134,4 +12134,6 @@ Encontro pareja
     			);
     		end;return error ORA-01858: se ha encontrado un carácter no numérico donde se esperaba uno numérico
 ORA-06512: en "MATCHME.REGISTRAR_USUARIO", línea 14
-ORA-06512: en línea 2
+ORA-06512: en línea 209/Oct/15 begin GET_Usuario(, :cursbv); end;
+09/Oct/15 begin GET_Usuario(-1, :cursbv); end;
+09/Oct/15 begin GET_Pais(null, :cursbv); end;
