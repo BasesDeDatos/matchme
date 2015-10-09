@@ -6,7 +6,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 -->
 
 <?php
-	header('Content-Type: text/html; charset=ISO-8859-1');
+//	header('Content-Type: text/html; charset=ISO-8859-1');
 	$user = 'MatchMe';
 	$clave = 'MatchMe';
 	$db = '(DESCRIPTION = (ADDRESS_LIST =
@@ -182,14 +182,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		queryFunction($conexion, "begin :value := {$_POST["procedure"]}('{$_POST["value"]}', {$_POST["id_pais"]}); end;");
 	}
 	
-	//*** EDITAR UN PERFIL *///
-	if (!empty($_POST) && $_POST["mode"] == "editar"){
+	//*** REGISTRAR UN PERFIL *///
+	if (!empty($_POST) && $_POST["mode"] == "registrar_usuario"){
 		
 		$interes_gusto =
     	queryFunction($conexion, 
     		"begin\
     			:value := REGISTRAR_Interes(
-					'{$_POST["rango_edadI"]}',\ 
+					'{$_POST["rango_edadI"]}',\
 					'{$_POST["rango_edadF"]}',\
     				{$_POST["genero_gusto"]}\
     			);\
@@ -198,21 +198,21 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     	$aspecto_fisico =
     	queryFunction($conexion, 
     		"begin\
-    			:value := REGISTRAR_Aspecto_fisico(
-					'{$_POST["altura"]}',\ 
+    			:value := REGISTRAR_Aspecto_fisico(\
+					'{$_POST["altura"]}',\
 					'{$_POST["peso"]}',\
 					{$_POST["color_ojos"]},\
 					{$_POST["color_piel"]},\
     				{$_POST["color_pelo"]},\
-    				{$_POST["color_pelo"]}
+    				{$_POST["contextura"]}\
     			);\
     		end;");  
     	
     	$estilo_vida =
     	queryFunction($conexion, 
     		"begin\
-    			:value := REGISTRAR_estilo_vida(
-					'{$_POST["fuma"]}',\ 
+    			:value := REGISTRAR_estilo_vida(\
+					'{$_POST["fuma"]}',\
 					'{$_POST["frecEjercicios"]}',\
 					'{$_POST["cantidadhijos"]}',\
 					'{$_POST["hijos"]}',\
@@ -224,25 +224,25 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
     	queryFunction($conexion, 
     		"begin\
-    			:value := REGISTRAR_USUARIO(
-					'{$_POST["Nombre"]}',\ 
+    			:value := REGISTRAR_USUARIO(\
+					'{$_POST["Nombre"]}',\
 					'{$_POST["Primer_apellido"]}',\
     				'{$_POST["Segundo_apellido"]}',\
     				'{$_POST["Fecha_nac"]}',\
     				'{$_POST["Email"]}',\
     				'{$_POST["Foto"]}',\
     				{$_POST["id_Genero"]},\
-    				'{$_POST["Clave"]}',\ 
+    				'{$_POST["Clave"]}',\
     				'{$_POST["Gusta_mascota"]}',\
     				'{$_POST["Tiene_mascota"]}',\
     				'{$_POST["Tendria_mascota"]}',\
     				{$_POST["id_religion"]},\
-    				{$_POST["id_estadoCi"]},\ 
-    				{$_POST["id_educacion"]},\ 
-    				{$_POST["id_cuidad"]},\ 
-    				{$aspecto_fisico},\ 
-    				{$estilo_vida},\ 
-    				{$_POST["id_rol"]},\ 
+    				{$_POST["id_estadoCi"]},\
+    				{$_POST["id_educacion"]},\
+    				{$_POST["id_cuidad"]},\
+    				{$aspecto_fisico},\
+    				{$estilo_vida},\
+    				{$_POST["id_rol"]},\
     				{$_POST["id_signo_zodiacal"]}\
     				{$interes_gusto}\
     			);\
@@ -254,9 +254,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
     	queryFunction($conexion, 
     		"begin\
-    			EDITAR_Interes(
-					'{$_POST["ID_interesg"]}',\ 
-					'{$_POST["rango_edadI"]}',\ 
+    			EDITAR_Interes(\
+					'{$_POST["ID_interesg"]}',\
+					'{$_POST["rango_edadI"]}',\
 					'{$_POST["rango_edadF"]}',\
     				{$_POST["genero_gusto"]}\
     			);\
@@ -264,22 +264,22 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     		
     	queryFunction($conexion, 
     		"begin\
-    			EDITAR_Aspecto_fisico(
-					'{$_POST["ID_aspectof"]}',\ 
-					'{$_POST["altura"]}',\ 
+    			EDITAR_Aspecto_fisico(\
+					'{$_POST["ID_aspectof"]}',\
+					'{$_POST["altura"]}',\
 					'{$_POST["peso"]}',\
 					{$_POST["color_ojos"]},\
 					{$_POST["color_piel"]},\
     				{$_POST["color_pelo"]},\
-    				{$_POST["color_pelo"]}
+    				{$_POST["color_pelo"]}\
     			);\
     		end;");  
     	
     	queryFunction($conexion, 
     		"begin\
-    			EDITAR_estilo_vida(
-    				'{$_POST["ID_estilo_vida"]}',\ 
-					'{$_POST["fuma"]}',\ 
+    			EDITAR_estilo_vida(\
+    				'{$_POST["ID_estilo_vida"]}',\
+					'{$_POST["fuma"]}',\
 					'{$_POST["frecEjercicios"]}',\
 					'{$_POST["cantidadhijos"]}',\
 					'{$_POST["hijos"]}',\
@@ -294,24 +294,24 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     		"begin\
     			EDITAR_USUARIO(\
     				{$ID_Usuario},\
-					'{$_POST["Nombre"]}',\ 
+					'{$_POST["Nombre"]}',\
 					'{$_POST["Primer_apellido"]}',\
     				'{$_POST["Segundo_apellido"]}',\
     				'{$_POST["Fecha_nac"]}',\
     				'{$_POST["Email"]}',\
     				'{$_POST["Foto"]}',\
     				{$_POST["id_Genero"]},\
-    				'{$_POST["Clave"]}',\ 
+    				'{$_POST["Clave"]}',\
     				'{$_POST["Gusta_mascota"]}',\
     				'{$_POST["Tiene_mascota"]}',\
     				'{$_POST["Tendria_mascota"]}',\
     				{$_POST["id_religion"]},\
-    				{$_POST["id_estadoCi"]},\ 
-    				{$_POST["id_educacion"]},\ 
-    				{$_POST["id_cuidad"]},\ 
-    				{$aspecto_fisico},\ 
-    				{$estilo_vida},\ 
-    				{$_POST["id_rol"]},\ 
+    				{$_POST["id_estadoCi"]},\
+    				{$_POST["id_educacion"]},\
+    				{$_POST["id_cuidad"]},\
+    				{$aspecto_fisico},\
+    				{$estilo_vida},\
+    				{$_POST["id_rol"]},\
     				{$_POST["id_signo_zodiacal"]}\
     				{$interes_gusto}\
     			);\
@@ -388,7 +388,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		oci_execute($s, OCI_DEFAULT);
 		oci_execute($curs, OCI_DEFAULT);
 		$arrayResult = array();
-		$arrayResult = 
 		while ($row = oci_fetch_array($curs, OCI_ASSOC + OCI_RETURN_NULLS)) {
 			foreach($row as $key => $item) {
 				fwrite($fp, ($item !== null ? htmlentities($item, ENT_QUOTES) : ' ')."\t");
