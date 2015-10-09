@@ -67,7 +67,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<select class="col-md-6" name="educacion" id="educacion">
 					<option value="">Selecciones un nivel de educacion</option>
 					<?php for($i = 0; $i < count($arrayQuery["EDUCACION"]["NOMBRE"]); $i++){ ?>
-						<option value="<?php echo $arrayQuery["EDUCACION"]["NOMBRE"][$i]?>">
+						<option value="<?php echo $arrayQuery["EDUCACION"]["ID_EDUCACION"][$i]?>">
 							<?php echo $arrayQuery["EDUCACION"]["NOMBRE"][$i] ?>
 						</option>
 					<?php } ?>
@@ -77,7 +77,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<select class="col-md-6" name="estado_civil" id="estado_civil">
 					<option value="">Selecciones un estado civil</option>
 					<?php for($i = 0; $i < count($arrayQuery["ESTADO_CIVIL"]["NOMBRE"]); $i++){ ?>
-						<option value="<?php echo $arrayQuery["ESTADO_CIVIL"]["NOMBRE"][$i] ?>">
+						<option value="<?php echo $arrayQuery["ESTADO_CIVIL"]["ID_ESTADOCI"][$i] ?>">
 							<?php echo $arrayQuery["ESTADO_CIVIL"]["NOMBRE"][$i] ?>
 						</option>
 					<?php } ?>
@@ -85,9 +85,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				
 				<div class="col-md-6"><h3 class="fs-subtitle">Religion: </h3></div>
 				<select class="col-md-6" name="religion" id="religion">
-					<option value="">Selecciones una religion</option>
+					<option value="">Seleccione una religion</option>
 					<?php for($i = 0; $i < count($arrayQuery["RELIGION"]["NOMBRE"]); $i++){ ?>
-						<option value="<?php echo $arrayQuery["RELIGION"]["NOMBRE"][$i] ?>">
+						<option value="<?php echo $arrayQuery["RELIGION"]["ID_RELIGION"][$i] ?>">
 							<?php echo $arrayQuery["RELIGION"]["NOMBRE"][$i] ?>
 						</option>
 					<?php } ?>
@@ -296,7 +296,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<select class="col-md-6 selector" name="genero_gusto">
 			    	<option value="">Seleccione un genero</option>
 			    	<?php for($i = 0; $i < count($arrayQuery["GENERO"]["NOMBRE"]); $i++){ ?>
+<<<<<<< HEAD
 						<option value="<?php echo $arrayQuery["GENERO"]["id_genero"][$i] ?>">
+=======
+						<option value="<?php echo $arrayQuery["GENERO"]["ID_GENERO"][$i] ?>">
+>>>>>>> aad1624352d8efeb990be440730ba02093f3ce39
 							<?php echo $arrayQuery["GENERO"]["NOMBRE"][$i] ?>
 						</option>
 					<?php } ?>
