@@ -298,7 +298,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					'{$_POST["nombre"]}',\
 					'{$_POST["primer_apellido"]}',\
     				'{$_POST["segundo_apellido"]}',\
-    				'{$_POST["fecha_nacimiento"]}',\
+    				to_date(''{$_POST["fecha_nacimiento"]}'', 'yyyy-mm-dd'),\
     				'{$_POST["email"]}',\
     				'{$_POST["Foto"]}',\
     				{$_POST["genero"]},\

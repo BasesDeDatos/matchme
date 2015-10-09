@@ -171,7 +171,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
       				<option value="no">No</option>
 				</select>
 				
-				<div class="col-md-12"><input type="text" id="cantidad_de_hijos" placeholder="Cantidad de hijos" /></div>
+				<div class="col-md-12"><input type="text" name="cantidad_de_hijos" placeholder="Cantidad de hijos" /></div>
 				
 				<div class="col-md-6"><h3 class="fs-subtitle">Quiere mascotas?: </h3></div>
 				<select class="col-md-6" name="quiere_mascotas" id="quiere_mascotas">
@@ -296,7 +296,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<select class="col-md-6 selector" name="genero_gusto">
 			    	<option value="">Seleccione un genero</option>
 			    	<?php for($i = 0; $i < count($arrayQuery["GENERO"]["NOMBRE"]); $i++){ ?>
-						<option value="<?php echo $arrayQuery["GENERO"]["NOMBRE"][$i] ?>">
+						<option value="<?php echo $arrayQuery["GENERO"]["id_genero"][$i] ?>">
 							<?php echo $arrayQuery["GENERO"]["NOMBRE"][$i] ?>
 						</option>
 					<?php } ?>
