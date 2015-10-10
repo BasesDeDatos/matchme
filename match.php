@@ -4,23 +4,80 @@ Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 -->
-	<?php require_once("header.php") ?>
+		<?php $conexion = ""; 
+		require_once("header.php"); 
+		$arrayQuery = array(); 
+		$_POST["mode"] = "get_home"; 
+		$user_id = $_SESSION["active_user_id"];
+		include ("funcionesOracle.php");
+		?>
 		<div class="col-md-4">
 			<div class="content-right">
-				<div class="cntnt-img">
-				</div>
-				<div class="bnr-img">
-					<img src=<?php $Foto_perfil ?> alt=""/>
-				</div>
-				<div class="bnr-text">
-					<h1>Lorem Ipsum<?php echo $Nombre." ".$Primer_apellido." ".$Segundo_apellido ?></h1>
-					<h5>www.design has.com<?php echo $Email ?></h5>
-					<p>A wonderful designs has takenpossession of dummy text quis nostrum dummy text<?php echo $Slogan ?></p>
-				</div>
+				<div class="content-right">
+						<div class="cntnt-img">
+						</div>
+						<div class="bnr-img">
+							<img src= <?php echo "profile_pics/".$arrayQuery["FOTO"][0] ?> alt=""/>
+						</div>
+						<div class="bnr-text">
+							<h1>
+								<?php echo $arrayQuery["NOMBRE"][0]." ".$arrayQuery["PRIMER_APELLIDO"][0]." ".$arrayQuery["SEGUNDO_APELLIDO"][0] ?>	
+							</h1>
+							
+							<h5>
+									<?php echo $arrayQuery["EMAIL"][0] ?>
+
+							</h5>
+							
+							<p>
+								 
+									<?php echo $arrayQuery["ID_ESTILOVIDA"]["SLOGAN"][0] ?>
+							</p>
+							
+							<hr/>
+							<div class="resumen">
+								<p>
+									Genero: <?php echo $arrayQuery["ID_GENERO"]["NOMBRE"][0]?>
+
+								</p>
+
+								
+								<p>
+									Edad: <?php echo $arrayQuery["EDAD"][0] ?>
+								</p>
+								
+								<p>
+									Ubicación: <?php echo $arrayQuery["ID_CIUDAD"]["NOMBRE"][0].", ".$arrayQuery["ID_CIUDAD"]["ID_ESTADO"]["NOMBRE"][0].", ".$arrayQuery["ID_CIUDAD"]["ID_ESTADO"]["ID_PAIS"]["NOMBRE"][0]?>
+								</p>
+								<p>Altura: <?php echo $arrayQuery["ID_ASPECTOF"]["ALTURA"][0] ?> </p>
+								<p>Peso: <?php echo $arrayQuery["ID_ASPECTOF"]["PESO"][0] ?> </p>
+								<p>Busco: <?php echo $arrayQuery["ID_INTERES_GUSTO"]["ID_GENERO"]["NOMBRE"][0]."s"?> </p>
+								<p>Entre: <?php echo $arrayQuery["ID_INTERES_GUSTO"]["RANGO_EDADI"][0]." y ".$arrayQuery["ID_INTERES_GUSTO"]["RANGO_EDADF"][0] ?></p>
+							</div>
+						</div>
+						<div class="btm-num">
+							<ul>
+								<li>
+									<h4><?php echo count($arrayQuery["WINK"]["ID_ENVIADO"])?></h4>
+									<h5>Winks</h5>
+								</li>
+								<li>
+									<h4><?php echo count($arrayQuery["VISITAS"]["ID_VISITANTE"])?></h4>
+									<h5>Visitas</h5>
+								</li>
+								<li>
+									<h4>60</h4>
+									<h5>Matches</h5>
+								</li>
+							</ul>
+						</div>
+						<input type="button" name="wink" class="next action-button" value="Dar un wink"/>
+				</div>	
 			</div>
+		</div>
 		<div class="col-md-4">
 			<div class="circles">
-					<h3>STATUS RECENT PROJECTS</h3>
+					<h3>Recomendaciones</h3>
 					<div class="demo">
 						<div class="demo-1" data-percent="65">
 							<div class="title">
@@ -60,16 +117,67 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		</div>
 		<div class="col-md-4">
 			<div class="content-right">
-				<div class="cntnt-img">
-				</div>
-				<div class="bnr-img">
-					<img src=<?php $Foto_perfil ?> alt=""/>
-				</div>
-				<div class="bnr-text">
-					<h1>Lorem Ipsum<?php echo $Nombre." ".$Primer_apellido." ".$Segundo_apellido ?></h1>
-					<h5>www.design has.com<?php echo $Email ?></h5>
-					<p>A wonderful designs has takenpossession of dummy text quis nostrum dummy text<?php echo $Slogan ?></p>
-				</div>
+				<div class="content-right">
+						<div class="cntnt-img">
+						</div>
+						<div class="bnr-img">
+							<img src= <?php echo "profile_pics/".$arrayQuery["FOTO"][0] ?> alt=""/>
+						</div>
+						<div class="bnr-text">
+							
+							<a href = "profile.php?user_id=29"><h1>
+								<?php echo $arrayQuery["NOMBRE"][0]." ".$arrayQuery["PRIMER_APELLIDO"][0]." ".$arrayQuery["SEGUNDO_APELLIDO"][0] ?>	
+							</h1></a>
+							
+							<h5>
+									<?php echo $arrayQuery["EMAIL"][0] ?>
+
+							</h5>
+							
+							<p>
+								 
+									<?php echo $arrayQuery["ID_ESTILOVIDA"]["SLOGAN"][0] ?>
+							</p>
+							
+							<hr/>
+							<div class="resumen">
+								<p>
+									Genero: <?php echo $arrayQuery["ID_GENERO"]["NOMBRE"][0]?>
+
+								</p>
+
+								
+								<p>
+									Edad: <?php echo $arrayQuery["EDAD"][0] ?>
+								</p>
+								
+								<p>
+									Ubicación: <?php echo $arrayQuery["ID_CIUDAD"]["NOMBRE"][0].", ".$arrayQuery["ID_CIUDAD"]["ID_ESTADO"]["NOMBRE"][0].", ".$arrayQuery["ID_CIUDAD"]["ID_ESTADO"]["ID_PAIS"]["NOMBRE"][0]?>
+								</p>
+								<p>Altura: <?php echo $arrayQuery["ID_ASPECTOF"]["ALTURA"][0] ?> </p>
+								<p>Peso: <?php echo $arrayQuery["ID_ASPECTOF"]["PESO"][0] ?> </p>
+								<p>Busco: <?php echo $arrayQuery["ID_INTERES_GUSTO"]["ID_GENERO"]["NOMBRE"][0]."s"?> </p>
+								<p>Entre: <?php echo $arrayQuery["ID_INTERES_GUSTO"]["RANGO_EDADI"][0]." y ".$arrayQuery["ID_INTERES_GUSTO"]["RANGO_EDADF"][0] ?></p>
+							</div>
+						</div>
+						<div class="btm-num">
+							<ul>
+								<li>
+									<h4><?php echo count($arrayQuery["WINK"]["ID_ENVIADO"])?></h4>
+									<h5>Winks</h5>
+								</li>
+								<li>
+									<h4><?php echo count($arrayQuery["VISITAS"]["ID_VISITANTE"])?></h4>
+									<h5>Visitas</h5>
+								</li>
+								<li>
+									<h4>60</h4>
+									<h5>Matches</h5>
+								</li>
+							</ul>
+						</div>
+						<input type="button" name="wink" class="next action-button" value="Dar un wink"/>
+				</div>	
 			</div>
 		</div>
 	<?php require_once("footer.php") ?>

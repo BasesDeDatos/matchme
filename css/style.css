@@ -5,6 +5,12 @@ Author URL: http://w3layouts.com
 License URL: http://creativecommons.org/licenses/by/3.0/
 --*/
 
+.bnr-img {
+  width: 200px;
+  height: 200px;
+}
+
+
 body{
 	margin:0;
 	font-family: 'Roboto-Regular';
@@ -354,8 +360,8 @@ span.menu {
 .bnr-img {
   display: inline-block;
   position: absolute;
-  top: 10%;
-  left: 26%;
+  top: 2%;
+  left: 16%;
   border: 12px solid rgba(255, 255, 255, 0.53);
   border-radius: 50%;
   -ms-border-radius: 50%;
@@ -370,6 +376,9 @@ span.menu {
 .bnr-img img {
   width: auto;
   max-height: 100%;
+  margin: 0 auto;
+  display: block;
+  width: 100%;
 }
 
 
@@ -1607,6 +1616,8 @@ canvas#bar {
 }
 .bnr-img {
   top: 17%;
+  width: 200px;
+  height: 200px;
 }
 .circles {
   padding: 2em 0em 5em 0em;
@@ -1773,6 +1784,8 @@ canvas#bar {
 }
 .bnr-img {
   left: 38%;
+  width: 200px;
+  height: 200px;
 }
 .calnder {
   float: left;

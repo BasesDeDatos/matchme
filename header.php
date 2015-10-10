@@ -53,11 +53,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<ul class="nav1">
 						<li><a href="match.php" data-hover="Match">Match</a></li>					
 						<li><a href="profile.php" data-hover="Perfil">Perfil</a></li>
-						<li><a href="aboutus.php" data-hover="Sobre nosotros">Sobre nosotros</a></li>
+						<li><a href="manual.php" data-hover="Manual">Manual</a></li>
 						<li><a href="contactus.php" data-hover="Contacto">Contacto</a></li>
-						<li><a href="manual.php" data-hover="Contacto">Contacto</a></li>
 
 					</ul>				
 				</div>
+				
 				<div class="clearfix"></div>
 			</div>

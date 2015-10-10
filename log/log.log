@@ -17361,3 +17361,1548 @@ Encontro pareja
 2	Femenino	
 1	Masculino	
 ################0################
+10/Oct/15 begin GET_Usuario(0, :cursbv); end;
+Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Ciudad(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Estado(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Pais(1, :cursbv); end;
+1	Costa Rica	
+################0################
+10/Oct/15 begin GET_Estilo_Vida(1, :cursbv); end;
+	3	2		2000		1	
+################0################
+10/Oct/15 begin GET_Aspecto_Fisico(1, :cursbv); end;
+140	50	1	1	1	1	
+################0################
+10/Oct/15 begin GET_INTERES_GUSTO(1, :cursbv); end;
+18	40	2	
+################0################
+10/Oct/15 begin GET_GENERO(2, :cursbv); end;
+2	Femenino	
+################0################
+10/Oct/15 begin GET_GENERO(1, :cursbv); end;
+1	Masculino	
+################0################
+10/Oct/15 begin GET_Winks(0, :cursbv); end;
+27/09/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Usuario(0, :cursbv); end;
+Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Ciudad(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Estado(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Pais(1, :cursbv); end;
+1	Costa Rica	
+################0################
+10/Oct/15 begin GET_Estilo_Vida(1, :cursbv); end;
+	3	2		2000		1	
+################0################
+10/Oct/15 begin GET_Aspecto_Fisico(1, :cursbv); end;
+140	50	1	1	1	1	
+################0################
+10/Oct/15 begin GET_INTERES_GUSTO(1, :cursbv); end;
+18	40	2	
+################0################
+10/Oct/15 begin GET_GENERO(2, :cursbv); end;
+2	Femenino	
+################0################
+10/Oct/15 begin GET_GENERO(1, :cursbv); end;
+1	Masculino	
+################0################
+10/Oct/15 begin GET_Winks(0, :cursbv); end;
+27/09/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Usuario(0, :cursbv); end;
+Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Ciudad(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Estado(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Pais(1, :cursbv); end;
+1	Costa Rica	
+################0################
+10/Oct/15 begin GET_Estilo_Vida(1, :cursbv); end;
+	3	2		2000		1	
+################0################
+10/Oct/15 begin GET_Aspecto_Fisico(1, :cursbv); end;
+140	50	1	1	1	1	
+################0################
+10/Oct/15 begin GET_INTERES_GUSTO(1, :cursbv); end;
+18	40	2	
+################0################
+10/Oct/15 begin GET_GENERO(2, :cursbv); end;
+2	Femenino	
+################0################
+10/Oct/15 begin GET_GENERO(1, :cursbv); end;
+1	Masculino	
+################0################
+10/Oct/15 begin GET_Winks(0, :cursbv); end;
+27/09/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Usuario(0, :cursbv); end;
+Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Ciudad(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Estado(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Pais(1, :cursbv); end;
+1	Costa Rica	
+################0################
+10/Oct/15 begin GET_Estilo_Vida(1, :cursbv); end;
+	3	2		2000		1	
+################0################
+10/Oct/15 begin GET_Aspecto_Fisico(1, :cursbv); end;
+140	50	1	1	1	1	
+################0################
+10/Oct/15 begin GET_INTERES_GUSTO(1, :cursbv); end;
+18	40	2	
+################0################
+10/Oct/15 begin GET_GENERO(2, :cursbv); end;
+2	Femenino	
+################0################
+10/Oct/15 begin GET_GENERO(1, :cursbv); end;
+1	Masculino	
+################0################
+10/Oct/15 begin GET_Winks(0, :cursbv); end;
+27/09/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Usuario(0, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Ciudad(, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Estado(, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Pais(, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Estilo_Vida(, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Aspecto_Fisico(, :cursbv); end;
+################0################
+10/Oct/15 begin GET_INTERES_GUSTO(, :cursbv); end;
+################0################
+10/Oct/15 begin GET_GENERO(, :cursbv); end;
+################0################
+10/Oct/15 begin GET_GENERO(, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Usuario(0, :cursbv); end;
+Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Ciudad(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Estado(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Pais(1, :cursbv); end;
+1	Costa Rica	
+################0################
+10/Oct/15 begin GET_Estilo_Vida(1, :cursbv); end;
+	3	2		2000		1	
+################0################
+10/Oct/15 begin GET_Aspecto_Fisico(1, :cursbv); end;
+140	50	1	1	1	1	
+################0################
+10/Oct/15 begin GET_INTERES_GUSTO(1, :cursbv); end;
+18	40	2	
+################0################
+10/Oct/15 begin GET_GENERO(2, :cursbv); end;
+2	Femenino	
+################0################
+10/Oct/15 begin GET_GENERO(1, :cursbv); end;
+1	Masculino	
+################0################
+10/Oct/15 begin GET_Winks(0, :cursbv); end;
+27/09/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Usuario(29, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Ciudad(, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Estado(, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Pais(, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Estilo_Vida(, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Aspecto_Fisico(, :cursbv); end;
+################0################
+10/Oct/15 begin GET_INTERES_GUSTO(, :cursbv); end;
+################0################
+10/Oct/15 begin GET_GENERO(, :cursbv); end;
+################0################
+10/Oct/15 begin GET_GENERO(, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Usuario(0, :cursbv); end;
+Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Ciudad(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Estado(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Pais(1, :cursbv); end;
+1	Costa Rica	
+################0################
+10/Oct/15 begin GET_Estilo_Vida(1, :cursbv); end;
+	3	2		2000		1	
+################0################
+10/Oct/15 begin GET_Aspecto_Fisico(1, :cursbv); end;
+140	50	1	1	1	1	
+################0################
+10/Oct/15 begin GET_INTERES_GUSTO(1, :cursbv); end;
+18	40	2	
+################0################
+10/Oct/15 begin GET_GENERO(2, :cursbv); end;
+2	Femenino	
+################0################
+10/Oct/15 begin GET_GENERO(1, :cursbv); end;
+1	Masculino	
+################0################
+10/Oct/15 begin GET_Winks(0, :cursbv); end;
+27/09/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Usuario(29, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Ciudad(, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Estado(, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Pais(, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Estilo_Vida(, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Aspecto_Fisico(, :cursbv); end;
+################0################
+10/Oct/15 begin GET_INTERES_GUSTO(, :cursbv); end;
+################0################
+10/Oct/15 begin GET_GENERO(, :cursbv); end;
+################0################
+10/Oct/15 begin GET_GENERO(, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Usuario(0, :cursbv); end;
+Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Ciudad(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Estado(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Pais(1, :cursbv); end;
+1	Costa Rica	
+################0################
+10/Oct/15 begin GET_Estilo_Vida(1, :cursbv); end;
+	3	2		2000		1	
+################0################
+10/Oct/15 begin GET_Aspecto_Fisico(1, :cursbv); end;
+140	50	1	1	1	1	
+################0################
+10/Oct/15 begin GET_INTERES_GUSTO(1, :cursbv); end;
+18	40	2	
+################0################
+10/Oct/15 begin GET_GENERO(2, :cursbv); end;
+2	Femenino	
+################0################
+10/Oct/15 begin GET_GENERO(1, :cursbv); end;
+1	Masculino	
+################0################
+10/Oct/15 begin GET_Winks(0, :cursbv); end;
+27/09/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Usuario(0, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Ciudad(, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Estado(, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Pais(, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Estilo_Vida(, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Aspecto_Fisico(, :cursbv); end;
+################0################
+10/Oct/15 begin GET_INTERES_GUSTO(, :cursbv); end;
+################0################
+10/Oct/15 begin GET_GENERO(, :cursbv); end;
+################0################
+10/Oct/15 begin GET_GENERO(, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Usuario(0, :cursbv); end;
+Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Ciudad(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Estado(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Pais(1, :cursbv); end;
+1	Costa Rica	
+################0################
+10/Oct/15 begin GET_Estilo_Vida(1, :cursbv); end;
+	3	2		2000		1	
+################0################
+10/Oct/15 begin GET_Aspecto_Fisico(1, :cursbv); end;
+140	50	1	1	1	1	
+################0################
+10/Oct/15 begin GET_INTERES_GUSTO(1, :cursbv); end;
+18	40	2	
+################0################
+10/Oct/15 begin GET_GENERO(2, :cursbv); end;
+2	Femenino	
+################0################
+10/Oct/15 begin GET_GENERO(1, :cursbv); end;
+1	Masculino	
+################0################
+10/Oct/15 begin GET_Winks(0, :cursbv); end;
+27/09/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Usuario(29, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Ciudad(, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Estado(, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Pais(, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Estilo_Vida(, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Aspecto_Fisico(, :cursbv); end;
+################0################
+10/Oct/15 begin GET_INTERES_GUSTO(, :cursbv); end;
+################0################
+10/Oct/15 begin GET_GENERO(, :cursbv); end;
+################0################
+10/Oct/15 begin GET_GENERO(, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Usuario(0, :cursbv); end;
+Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Ciudad(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Estado(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Pais(1, :cursbv); end;
+1	Costa Rica	
+################0################
+10/Oct/15 begin GET_Estilo_Vida(1, :cursbv); end;
+	3	2		2000		1	
+################0################
+10/Oct/15 begin GET_Aspecto_Fisico(1, :cursbv); end;
+140	50	1	1	1	1	
+################0################
+10/Oct/15 begin GET_INTERES_GUSTO(1, :cursbv); end;
+18	40	2	
+################0################
+10/Oct/15 begin GET_GENERO(2, :cursbv); end;
+2	Femenino	
+################0################
+10/Oct/15 begin GET_GENERO(1, :cursbv); end;
+1	Masculino	
+################0################
+10/Oct/15 begin GET_Winks(0, :cursbv); end;
+27/09/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Usuario(29, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Ciudad(, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Estado(, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Pais(, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Estilo_Vida(, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Aspecto_Fisico(, :cursbv); end;
+################0################
+10/Oct/15 begin GET_INTERES_GUSTO(, :cursbv); end;
+################0################
+10/Oct/15 begin GET_GENERO(, :cursbv); end;
+################0################
+10/Oct/15 begin GET_GENERO(, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Usuario(0, :cursbv); end;
+Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Ciudad(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Estado(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Pais(1, :cursbv); end;
+1	Costa Rica	
+################0################
+10/Oct/15 begin GET_Estilo_Vida(1, :cursbv); end;
+	3	2		2000		1	
+################0################
+10/Oct/15 begin GET_Aspecto_Fisico(1, :cursbv); end;
+140	50	1	1	1	1	
+################0################
+10/Oct/15 begin GET_INTERES_GUSTO(1, :cursbv); end;
+18	40	2	
+################0################
+10/Oct/15 begin GET_GENERO(2, :cursbv); end;
+2	Femenino	
+################0################
+10/Oct/15 begin GET_GENERO(1, :cursbv); end;
+1	Masculino	
+################0################
+10/Oct/15 begin GET_Winks(0, :cursbv); end;
+27/09/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Usuario(0, :cursbv); end;
+Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Ciudad(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Estado(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Pais(1, :cursbv); end;
+1	Costa Rica	
+################0################
+10/Oct/15 begin GET_Estilo_Vida(1, :cursbv); end;
+	3	2		2000		1	
+################0################
+10/Oct/15 begin GET_Aspecto_Fisico(1, :cursbv); end;
+140	50	1	1	1	1	
+################0################
+10/Oct/15 begin GET_INTERES_GUSTO(1, :cursbv); end;
+18	40	2	
+################0################
+10/Oct/15 begin GET_GENERO(2, :cursbv); end;
+2	Femenino	
+################0################
+10/Oct/15 begin GET_GENERO(1, :cursbv); end;
+1	Masculino	
+################0################
+10/Oct/15 begin GET_Winks(0, :cursbv); end;
+27/09/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Winks(0, :cursbv); end;
+27/09/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Usuario(0, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Ciudad(, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Estado(, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Pais(, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Estilo_Vida(, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Aspecto_Fisico(, :cursbv); end;
+################0################
+10/Oct/15 begin GET_INTERES_GUSTO(, :cursbv); end;
+################0################
+10/Oct/15 begin GET_GENERO(, :cursbv); end;
+################0################
+10/Oct/15 begin GET_GENERO(, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Usuario(29, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Ciudad(, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Estado(, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Pais(, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Estilo_Vida(, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Aspecto_Fisico(, :cursbv); end;
+################0################
+10/Oct/15 begin GET_INTERES_GUSTO(, :cursbv); end;
+################0################
+10/Oct/15 begin GET_GENERO(, :cursbv); end;
+################0################
+10/Oct/15 begin GET_GENERO(, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Winks(0, :cursbv); end;
+27/09/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Usuario(0, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Ciudad(, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Estado(, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Pais(, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Estilo_Vida(, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Aspecto_Fisico(, :cursbv); end;
+################0################
+10/Oct/15 begin GET_INTERES_GUSTO(, :cursbv); end;
+################0################
+10/Oct/15 begin GET_GENERO(, :cursbv); end;
+################0################
+10/Oct/15 begin GET_GENERO(, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Usuario(29, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Ciudad(, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Estado(, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Pais(, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Estilo_Vida(, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Aspecto_Fisico(, :cursbv); end;
+################0################
+10/Oct/15 begin GET_INTERES_GUSTO(, :cursbv); end;
+################0################
+10/Oct/15 begin GET_GENERO(, :cursbv); end;
+################0################
+10/Oct/15 begin GET_GENERO(, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Winks(0, :cursbv); end;
+27/09/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Usuario(0, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Ciudad(, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Estado(, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Pais(, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Estilo_Vida(, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Aspecto_Fisico(, :cursbv); end;
+################0################
+10/Oct/15 begin GET_INTERES_GUSTO(, :cursbv); end;
+################0################
+10/Oct/15 begin GET_GENERO(, :cursbv); end;
+################0################
+10/Oct/15 begin GET_GENERO(, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Usuario(29, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Ciudad(, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Estado(, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Pais(, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Estilo_Vida(, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Aspecto_Fisico(, :cursbv); end;
+################0################
+10/Oct/15 begin GET_INTERES_GUSTO(, :cursbv); end;
+################0################
+10/Oct/15 begin GET_GENERO(, :cursbv); end;
+################0################
+10/Oct/15 begin GET_GENERO(, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Usuario(0, :cursbv); end;
+Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Ciudad(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Estado(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Pais(1, :cursbv); end;
+1	Costa Rica	
+################0################
+10/Oct/15 begin GET_Estilo_Vida(1, :cursbv); end;
+	3	2		2000		1	
+################0################
+10/Oct/15 begin GET_Aspecto_Fisico(1, :cursbv); end;
+140	50	1	1	1	1	
+################0################
+10/Oct/15 begin GET_INTERES_GUSTO(1, :cursbv); end;
+18	40	2	
+################0################
+10/Oct/15 begin GET_GENERO(2, :cursbv); end;
+2	Femenino	
+################0################
+10/Oct/15 begin GET_GENERO(1, :cursbv); end;
+1	Masculino	
+################0################
+10/Oct/15 begin GET_Winks(0, :cursbv); end;
+27/09/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Usuario(0, :cursbv); end;
+Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Ciudad(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Estado(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Pais(1, :cursbv); end;
+1	Costa Rica	
+################0################
+10/Oct/15 begin GET_Estilo_Vida(1, :cursbv); end;
+	3	2		2000		1	
+################0################
+10/Oct/15 begin GET_Aspecto_Fisico(1, :cursbv); end;
+140	50	1	1	1	1	
+################0################
+10/Oct/15 begin GET_INTERES_GUSTO(1, :cursbv); end;
+18	40	2	
+################0################
+10/Oct/15 begin GET_GENERO(2, :cursbv); end;
+2	Femenino	
+################0################
+10/Oct/15 begin GET_GENERO(1, :cursbv); end;
+1	Masculino	
+################0################
+10/Oct/15 begin GET_Winks(0, :cursbv); end;
+27/09/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Usuario(0, :cursbv); end;
+Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Ciudad(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Estado(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Pais(1, :cursbv); end;
+1	Costa Rica	
+################0################
+10/Oct/15 begin GET_Estilo_Vida(1, :cursbv); end;
+	3	2		2000		1	
+################0################
+10/Oct/15 begin GET_Aspecto_Fisico(1, :cursbv); end;
+140	50	1	1	1	1	
+################0################
+10/Oct/15 begin GET_INTERES_GUSTO(1, :cursbv); end;
+18	40	2	
+################0################
+10/Oct/15 begin GET_GENERO(2, :cursbv); end;
+2	Femenino	
+################0################
+10/Oct/15 begin GET_GENERO(1, :cursbv); end;
+1	Masculino	
+################0################
+10/Oct/15 begin GET_Winks(0, :cursbv); end;
+27/09/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Usuario(0, :cursbv); end;
+Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Ciudad(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Estado(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Pais(1, :cursbv); end;
+1	Costa Rica	
+################0################
+10/Oct/15 begin GET_Estilo_Vida(1, :cursbv); end;
+	3	2		2000		1	
+################0################
+10/Oct/15 begin GET_Aspecto_Fisico(1, :cursbv); end;
+140	50	1	1	1	1	
+################0################
+10/Oct/15 begin GET_INTERES_GUSTO(1, :cursbv); end;
+18	40	2	
+################0################
+10/Oct/15 begin GET_GENERO(2, :cursbv); end;
+2	Femenino	
+################0################
+10/Oct/15 begin GET_GENERO(1, :cursbv); end;
+1	Masculino	
+################0################
+10/Oct/15 begin GET_Winks(0, :cursbv); end;
+27/09/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Usuario(29, :cursbv); end;
+Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################0################
+10/Oct/15 begin GET_Religion(1, :cursbv); end;
+1	Pastafari	
+################0################
+10/Oct/15 begin GET_estado_Civil(1, :cursbv); end;
+1	Solo	
+################0################
+10/Oct/15 begin GET_Educacion(1, :cursbv); end;
+1	Bachiller	
+################0################
+10/Oct/15 begin GET_Ciudad(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Estado(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Pais(1, :cursbv); end;
+1	Costa Rica	
+################0################
+10/Oct/15 begin GET_Aspecto_Fisico(6, :cursbv); end;
+164	61	1	2	1	1	
+################0################
+10/Oct/15 begin GET_Color_Ojos(1, :cursbv); end;
+1	Azul	
+################0################
+10/Oct/15 begin GET_Color_Piel(2, :cursbv); end;
+2	Blanca	
+################0################
+10/Oct/15 begin GET_Color_Pelo(1, :cursbv); end;
+1	Cafe	
+################0################
+10/Oct/15 begin GET_Contextura(1, :cursbv); end;
+1	Delgado	
+################0################
+10/Oct/15 begin GET_Estilo_Vida(7, :cursbv); end;
+si	0	0	si	3500	soy de poco dormir	1	
+################0################
+10/Oct/15 begin GET_Tipo_Bebedor(1, :cursbv); end;
+1	Social	
+################0################
+10/Oct/15 begin GET_Signo_Zodiacal(3, :cursbv); end;
+3		21/05/15	20/06/15	
+################0################
+10/Oct/15 begin GET_GENERO(1, :cursbv); end;
+1	Masculino	
+################0################
+10/Oct/15 begin GET_INTERES_GUSTO(7, :cursbv); end;
+18	25	2	
+################0################
+10/Oct/15 begin GET_GENERO(2, :cursbv); end;
+2	Femenino	
+################0################
+10/Oct/15 begin GET_UsuarioXIdioma(29, :cursbv); end;
+################0################
+10/Oct/15 begin GET_ActividadXUsuario(29, :cursbv); end;
+################0################
+10/Oct/15 begin GET_HobbyXUsuario(29, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Winks(29, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Bitacora_visita(29, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Bitacora_visita(29, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Usuario(29, :cursbv); end;
+Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################0################
+10/Oct/15 begin GET_Religion(1, :cursbv); end;
+1	Pastafari	
+################0################
+10/Oct/15 begin GET_estado_Civil(1, :cursbv); end;
+1	Solo	
+################0################
+10/Oct/15 begin GET_Educacion(1, :cursbv); end;
+1	Bachiller	
+################0################
+10/Oct/15 begin GET_Ciudad(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Estado(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Pais(1, :cursbv); end;
+1	Costa Rica	
+################0################
+10/Oct/15 begin GET_Aspecto_Fisico(6, :cursbv); end;
+164	61	1	2	1	1	
+################0################
+10/Oct/15 begin GET_Color_Ojos(1, :cursbv); end;
+1	Azul	
+################0################
+10/Oct/15 begin GET_Color_Piel(2, :cursbv); end;
+2	Blanca	
+################0################
+10/Oct/15 begin GET_Color_Pelo(1, :cursbv); end;
+1	Cafe	
+################0################
+10/Oct/15 begin GET_Contextura(1, :cursbv); end;
+1	Delgado	
+################0################
+10/Oct/15 begin GET_Estilo_Vida(7, :cursbv); end;
+si	0	0	si	3500	soy de poco dormir	1	
+################0################
+10/Oct/15 begin GET_Tipo_Bebedor(1, :cursbv); end;
+1	Social	
+################0################
+10/Oct/15 begin GET_Signo_Zodiacal(3, :cursbv); end;
+3		21/05/15	20/06/15	
+################0################
+10/Oct/15 begin GET_GENERO(1, :cursbv); end;
+1	Masculino	
+################0################
+10/Oct/15 begin GET_INTERES_GUSTO(7, :cursbv); end;
+18	25	2	
+################0################
+10/Oct/15 begin GET_GENERO(2, :cursbv); end;
+2	Femenino	
+################0################
+10/Oct/15 begin GET_UsuarioXIdioma(29, :cursbv); end;
+################0################
+10/Oct/15 begin GET_ActividadXUsuario(29, :cursbv); end;
+################0################
+10/Oct/15 begin GET_HobbyXUsuario(29, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Winks(29, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Bitacora_visita(29, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Bitacora_visita(29, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Usuario(29, :cursbv); end;
+Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################0################
+10/Oct/15 begin GET_Religion(1, :cursbv); end;
+1	Pastafari	
+################0################
+10/Oct/15 begin GET_estado_Civil(1, :cursbv); end;
+1	Solo	
+################0################
+10/Oct/15 begin GET_Educacion(1, :cursbv); end;
+1	Bachiller	
+################0################
+10/Oct/15 begin GET_Ciudad(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Estado(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Pais(1, :cursbv); end;
+1	Costa Rica	
+################0################
+10/Oct/15 begin GET_Aspecto_Fisico(6, :cursbv); end;
+164	61	1	2	1	1	
+################0################
+10/Oct/15 begin GET_Color_Ojos(1, :cursbv); end;
+1	Azul	
+################0################
+10/Oct/15 begin GET_Color_Piel(2, :cursbv); end;
+2	Blanca	
+################0################
+10/Oct/15 begin GET_Color_Pelo(1, :cursbv); end;
+1	Cafe	
+################0################
+10/Oct/15 begin GET_Contextura(1, :cursbv); end;
+1	Delgado	
+################0################
+10/Oct/15 begin GET_Estilo_Vida(7, :cursbv); end;
+si	0	0	si	3500	soy de poco dormir	1	
+################0################
+10/Oct/15 begin GET_Tipo_Bebedor(1, :cursbv); end;
+1	Social	
+################0################
+10/Oct/15 begin GET_Signo_Zodiacal(3, :cursbv); end;
+3		21/05/15	20/06/15	
+################0################
+10/Oct/15 begin GET_GENERO(1, :cursbv); end;
+1	Masculino	
+################0################
+10/Oct/15 begin GET_INTERES_GUSTO(7, :cursbv); end;
+18	25	2	
+################0################
+10/Oct/15 begin GET_GENERO(2, :cursbv); end;
+2	Femenino	
+################0################
+10/Oct/15 begin GET_UsuarioXIdioma(29, :cursbv); end;
+################0################
+10/Oct/15 begin GET_ActividadXUsuario(29, :cursbv); end;
+################0################
+10/Oct/15 begin GET_HobbyXUsuario(29, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Winks(29, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Bitacora_visita(29, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Bitacora_visita(29, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Usuario(0, :cursbv); end;
+Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Ciudad(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Estado(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Pais(1, :cursbv); end;
+1	Costa Rica	
+################0################
+10/Oct/15 begin GET_Estilo_Vida(1, :cursbv); end;
+	3	2		2000		1	
+################0################
+10/Oct/15 begin GET_Aspecto_Fisico(1, :cursbv); end;
+140	50	1	1	1	1	
+################0################
+10/Oct/15 begin GET_INTERES_GUSTO(1, :cursbv); end;
+18	40	2	
+################0################
+10/Oct/15 begin GET_GENERO(2, :cursbv); end;
+2	Femenino	
+################0################
+10/Oct/15 begin GET_GENERO(1, :cursbv); end;
+1	Masculino	
+################0################
+10/Oct/15 begin GET_Winks(0, :cursbv); end;
+27/09/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Usuario(29, :cursbv); end;
+Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################0################
+10/Oct/15 begin GET_Religion(1, :cursbv); end;
+1	Pastafari	
+################0################
+10/Oct/15 begin GET_estado_Civil(1, :cursbv); end;
+1	Solo	
+################0################
+10/Oct/15 begin GET_Educacion(1, :cursbv); end;
+1	Bachiller	
+################0################
+10/Oct/15 begin GET_Ciudad(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Estado(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Pais(1, :cursbv); end;
+1	Costa Rica	
+################0################
+10/Oct/15 begin GET_Aspecto_Fisico(6, :cursbv); end;
+164	61	1	2	1	1	
+################0################
+10/Oct/15 begin GET_Color_Ojos(1, :cursbv); end;
+1	Azul	
+################0################
+10/Oct/15 begin GET_Color_Piel(2, :cursbv); end;
+2	Blanca	
+################0################
+10/Oct/15 begin GET_Color_Pelo(1, :cursbv); end;
+1	Cafe	
+################0################
+10/Oct/15 begin GET_Contextura(1, :cursbv); end;
+1	Delgado	
+################0################
+10/Oct/15 begin GET_Estilo_Vida(7, :cursbv); end;
+si	0	0	si	3500	soy de poco dormir	1	
+################0################
+10/Oct/15 begin GET_Tipo_Bebedor(1, :cursbv); end;
+1	Social	
+################0################
+10/Oct/15 begin GET_Signo_Zodiacal(3, :cursbv); end;
+3		21/05/15	20/06/15	
+################0################
+10/Oct/15 begin GET_GENERO(1, :cursbv); end;
+1	Masculino	
+################0################
+10/Oct/15 begin GET_INTERES_GUSTO(7, :cursbv); end;
+18	25	2	
+################0################
+10/Oct/15 begin GET_GENERO(2, :cursbv); end;
+2	Femenino	
+################0################
+10/Oct/15 begin GET_UsuarioXIdioma(29, :cursbv); end;
+################0################
+10/Oct/15 begin GET_ActividadXUsuario(29, :cursbv); end;
+################0################
+10/Oct/15 begin GET_HobbyXUsuario(29, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Winks(29, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Bitacora_visita(29, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Bitacora_visita(29, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Usuario(29, :cursbv); end;
+Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################0################
+10/Oct/15 begin GET_Religion(1, :cursbv); end;
+1	Pastafari	
+################0################
+10/Oct/15 begin GET_estado_Civil(1, :cursbv); end;
+1	Solo	
+################0################
+10/Oct/15 begin GET_Educacion(1, :cursbv); end;
+1	Bachiller	
+################0################
+10/Oct/15 begin GET_Ciudad(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Estado(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Pais(1, :cursbv); end;
+1	Costa Rica	
+################0################
+10/Oct/15 begin GET_Aspecto_Fisico(6, :cursbv); end;
+164	61	1	2	1	1	
+################0################
+10/Oct/15 begin GET_Color_Ojos(1, :cursbv); end;
+1	Azul	
+################0################
+10/Oct/15 begin GET_Color_Piel(2, :cursbv); end;
+2	Blanca	
+################0################
+10/Oct/15 begin GET_Color_Pelo(1, :cursbv); end;
+1	Cafe	
+################0################
+10/Oct/15 begin GET_Contextura(1, :cursbv); end;
+1	Delgado	
+################0################
+10/Oct/15 begin GET_Estilo_Vida(7, :cursbv); end;
+si	0	0	si	3500	soy de poco dormir	1	
+################0################
+10/Oct/15 begin GET_Tipo_Bebedor(1, :cursbv); end;
+1	Social	
+################0################
+10/Oct/15 begin GET_Signo_Zodiacal(3, :cursbv); end;
+3		21/05/15	20/06/15	
+################0################
+10/Oct/15 begin GET_GENERO(1, :cursbv); end;
+1	Masculino	
+################0################
+10/Oct/15 begin GET_INTERES_GUSTO(7, :cursbv); end;
+18	25	2	
+################0################
+10/Oct/15 begin GET_GENERO(2, :cursbv); end;
+2	Femenino	
+################0################
+10/Oct/15 begin GET_UsuarioXIdioma(29, :cursbv); end;
+################0################
+10/Oct/15 begin GET_ActividadXUsuario(29, :cursbv); end;
+################0################
+10/Oct/15 begin GET_HobbyXUsuario(29, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Winks(29, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Bitacora_visita(29, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Bitacora_visita(29, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Usuario(29, :cursbv); end;
+Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################0################
+10/Oct/15 begin GET_Religion(1, :cursbv); end;
+1	Pastafari	
+################0################
+10/Oct/15 begin GET_estado_Civil(1, :cursbv); end;
+1	Solo	
+################0################
+10/Oct/15 begin GET_Educacion(1, :cursbv); end;
+1	Bachiller	
+################0################
+10/Oct/15 begin GET_Ciudad(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Estado(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Pais(1, :cursbv); end;
+1	Costa Rica	
+################0################
+10/Oct/15 begin GET_Aspecto_Fisico(6, :cursbv); end;
+164	61	1	2	1	1	
+################0################
+10/Oct/15 begin GET_Color_Ojos(1, :cursbv); end;
+1	Azul	
+################0################
+10/Oct/15 begin GET_Color_Piel(2, :cursbv); end;
+2	Blanca	
+################0################
+10/Oct/15 begin GET_Color_Pelo(1, :cursbv); end;
+1	Cafe	
+################0################
+10/Oct/15 begin GET_Contextura(1, :cursbv); end;
+1	Delgado	
+################0################
+10/Oct/15 begin GET_Estilo_Vida(7, :cursbv); end;
+si	0	0	si	3500	soy de poco dormir	1	
+################0################
+10/Oct/15 begin GET_Tipo_Bebedor(1, :cursbv); end;
+1	Social	
+################0################
+10/Oct/15 begin GET_Signo_Zodiacal(3, :cursbv); end;
+3		21/05/15	20/06/15	
+################0################
+10/Oct/15 begin GET_GENERO(1, :cursbv); end;
+1	Masculino	
+################0################
+10/Oct/15 begin GET_INTERES_GUSTO(7, :cursbv); end;
+18	25	2	
+################0################
+10/Oct/15 begin GET_GENERO(2, :cursbv); end;
+2	Femenino	
+################0################
+10/Oct/15 begin GET_UsuarioXIdioma(29, :cursbv); end;
+################0################
+10/Oct/15 begin GET_ActividadXUsuario(29, :cursbv); end;
+################0################
+10/Oct/15 begin GET_HobbyXUsuario(29, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Winks(29, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Bitacora_visita(29, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Bitacora_visita(29, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Usuario(29, :cursbv); end;
+Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################0################
+10/Oct/15 begin GET_Religion(1, :cursbv); end;
+1	Pastafari	
+################0################
+10/Oct/15 begin GET_estado_Civil(1, :cursbv); end;
+1	Solo	
+################0################
+10/Oct/15 begin GET_Educacion(1, :cursbv); end;
+1	Bachiller	
+################0################
+10/Oct/15 begin GET_Ciudad(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Estado(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Pais(1, :cursbv); end;
+1	Costa Rica	
+################0################
+10/Oct/15 begin GET_Aspecto_Fisico(6, :cursbv); end;
+164	61	1	2	1	1	
+################0################
+10/Oct/15 begin GET_Color_Ojos(1, :cursbv); end;
+1	Azul	
+################0################
+10/Oct/15 begin GET_Color_Piel(2, :cursbv); end;
+2	Blanca	
+################0################
+10/Oct/15 begin GET_Color_Pelo(1, :cursbv); end;
+1	Cafe	
+################0################
+10/Oct/15 begin GET_Contextura(1, :cursbv); end;
+1	Delgado	
+################0################
+10/Oct/15 begin GET_Estilo_Vida(7, :cursbv); end;
+si	0	0	si	3500	soy de poco dormir	1	
+################0################
+10/Oct/15 begin GET_Tipo_Bebedor(1, :cursbv); end;
+1	Social	
+################0################
+10/Oct/15 begin GET_Signo_Zodiacal(3, :cursbv); end;
+3		21/05/15	20/06/15	
+################0################
+10/Oct/15 begin GET_GENERO(1, :cursbv); end;
+1	Masculino	
+################0################
+10/Oct/15 begin GET_INTERES_GUSTO(7, :cursbv); end;
+18	25	2	
+################0################
+10/Oct/15 begin GET_GENERO(2, :cursbv); end;
+2	Femenino	
+################0################
+10/Oct/15 begin GET_UsuarioXIdioma(29, :cursbv); end;
+################0################
+10/Oct/15 begin GET_ActividadXUsuario(29, :cursbv); end;
+################0################
+10/Oct/15 begin GET_HobbyXUsuario(29, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Winks(29, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Bitacora_visita(29, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Bitacora_visita(29, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Usuario(29, :cursbv); end;
+Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################0################
+10/Oct/15 begin GET_Religion(1, :cursbv); end;
+1	Pastafari	
+################0################
+10/Oct/15 begin GET_estado_Civil(1, :cursbv); end;
+1	Solo	
+################0################
+10/Oct/15 begin GET_Educacion(1, :cursbv); end;
+1	Bachiller	
+################0################
+10/Oct/15 begin GET_Ciudad(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Estado(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Pais(1, :cursbv); end;
+1	Costa Rica	
+################0################
+10/Oct/15 begin GET_Aspecto_Fisico(6, :cursbv); end;
+164	61	1	2	1	1	
+################0################
+10/Oct/15 begin GET_Color_Ojos(1, :cursbv); end;
+1	Azul	
+################0################
+10/Oct/15 begin GET_Color_Piel(2, :cursbv); end;
+2	Blanca	
+################0################
+10/Oct/15 begin GET_Color_Pelo(1, :cursbv); end;
+1	Cafe	
+################0################
+10/Oct/15 begin GET_Contextura(1, :cursbv); end;
+1	Delgado	
+################0################
+10/Oct/15 begin GET_Estilo_Vida(7, :cursbv); end;
+si	0	0	si	3500	soy de poco dormir	1	
+################0################
+10/Oct/15 begin GET_Tipo_Bebedor(1, :cursbv); end;
+1	Social	
+################0################
+10/Oct/15 begin GET_Signo_Zodiacal(3, :cursbv); end;
+3		21/05/15	20/06/15	
+################0################
+10/Oct/15 begin GET_GENERO(1, :cursbv); end;
+1	Masculino	
+################0################
+10/Oct/15 begin GET_INTERES_GUSTO(7, :cursbv); end;
+18	25	2	
+################0################
+10/Oct/15 begin GET_GENERO(2, :cursbv); end;
+2	Femenino	
+################0################
+10/Oct/15 begin GET_UsuarioXIdioma(29, :cursbv); end;
+################0################
+10/Oct/15 begin GET_ActividadXUsuario(29, :cursbv); end;
+################0################
+10/Oct/15 begin GET_HobbyXUsuario(29, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Winks(29, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Bitacora_visita(29, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Bitacora_visita(29, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Usuario(29, :cursbv); end;
+Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################0################
+10/Oct/15 begin GET_Religion(1, :cursbv); end;
+1	Pastafari	
+################0################
+10/Oct/15 begin GET_estado_Civil(1, :cursbv); end;
+1	Solo	
+################0################
+10/Oct/15 begin GET_Educacion(1, :cursbv); end;
+1	Bachiller	
+################0################
+10/Oct/15 begin GET_Ciudad(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Estado(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Pais(1, :cursbv); end;
+1	Costa Rica	
+################0################
+10/Oct/15 begin GET_Aspecto_Fisico(6, :cursbv); end;
+164	61	1	2	1	1	
+################0################
+10/Oct/15 begin GET_Color_Ojos(1, :cursbv); end;
+1	Azul	
+################0################
+10/Oct/15 begin GET_Color_Piel(2, :cursbv); end;
+2	Blanca	
+################0################
+10/Oct/15 begin GET_Color_Pelo(1, :cursbv); end;
+1	Cafe	
+################0################
+10/Oct/15 begin GET_Contextura(1, :cursbv); end;
+1	Delgado	
+################0################
+10/Oct/15 begin GET_Estilo_Vida(7, :cursbv); end;
+si	0	0	si	3500	soy de poco dormir	1	
+################0################
+10/Oct/15 begin GET_Tipo_Bebedor(1, :cursbv); end;
+1	Social	
+################0################
+10/Oct/15 begin GET_Signo_Zodiacal(3, :cursbv); end;
+3		21/05/15	20/06/15	
+################0################
+10/Oct/15 begin GET_GENERO(1, :cursbv); end;
+1	Masculino	
+################0################
+10/Oct/15 begin GET_INTERES_GUSTO(7, :cursbv); end;
+18	25	2	
+################0################
+10/Oct/15 begin GET_GENERO(2, :cursbv); end;
+2	Femenino	
+################0################
+10/Oct/15 begin GET_UsuarioXIdioma(29, :cursbv); end;
+################0################
+10/Oct/15 begin GET_ActividadXUsuario(29, :cursbv); end;
+################0################
+10/Oct/15 begin GET_HobbyXUsuario(29, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Winks(29, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Bitacora_visita(29, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Bitacora_visita(29, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Usuario(29, :cursbv); end;
+Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################0################
+10/Oct/15 begin GET_Religion(1, :cursbv); end;
+1	Pastafari	
+################0################
+10/Oct/15 begin GET_estado_Civil(1, :cursbv); end;
+1	Solo	
+################0################
+10/Oct/15 begin GET_Educacion(1, :cursbv); end;
+1	Bachiller	
+################0################
+10/Oct/15 begin GET_Ciudad(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Estado(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Pais(1, :cursbv); end;
+1	Costa Rica	
+################0################
+10/Oct/15 begin GET_Aspecto_Fisico(6, :cursbv); end;
+164	61	1	2	1	1	
+################0################
+10/Oct/15 begin GET_Color_Ojos(1, :cursbv); end;
+1	Azul	
+################0################
+10/Oct/15 begin GET_Color_Piel(2, :cursbv); end;
+2	Blanca	
+################0################
+10/Oct/15 begin GET_Color_Pelo(1, :cursbv); end;
+1	Cafe	
+################0################
+10/Oct/15 begin GET_Contextura(1, :cursbv); end;
+1	Delgado	
+################0################
+10/Oct/15 begin GET_Estilo_Vida(7, :cursbv); end;
+si	0	0	si	3500	soy de poco dormir	1	
+################0################
+10/Oct/15 begin GET_Tipo_Bebedor(1, :cursbv); end;
+1	Social	
+################0################
+10/Oct/15 begin GET_Signo_Zodiacal(3, :cursbv); end;
+3		21/05/15	20/06/15	
+################0################
+10/Oct/15 begin GET_GENERO(1, :cursbv); end;
+1	Masculino	
+################0################
+10/Oct/15 begin GET_INTERES_GUSTO(7, :cursbv); end;
+18	25	2	
+################0################
+10/Oct/15 begin GET_GENERO(2, :cursbv); end;
+2	Femenino	
+################0################
+10/Oct/15 begin GET_UsuarioXIdioma(29, :cursbv); end;
+################0################
+10/Oct/15 begin GET_ActividadXUsuario(29, :cursbv); end;
+################0################
+10/Oct/15 begin GET_HobbyXUsuario(29, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Winks(29, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Bitacora_visita(29, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Bitacora_visita(29, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Usuario(29, :cursbv); end;
+Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################0################
+10/Oct/15 begin GET_Religion(1, :cursbv); end;
+1	Pastafari	
+################0################
+10/Oct/15 begin GET_estado_Civil(1, :cursbv); end;
+1	Solo	
+################0################
+10/Oct/15 begin GET_Educacion(1, :cursbv); end;
+1	Bachiller	
+################0################
+10/Oct/15 begin GET_Ciudad(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Estado(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Pais(1, :cursbv); end;
+1	Costa Rica	
+################0################
+10/Oct/15 begin GET_Aspecto_Fisico(6, :cursbv); end;
+164	61	1	2	1	1	
+################0################
+10/Oct/15 begin GET_Color_Ojos(1, :cursbv); end;
+1	Azul	
+################0################
+10/Oct/15 begin GET_Color_Piel(2, :cursbv); end;
+2	Blanca	
+################0################
+10/Oct/15 begin GET_Color_Pelo(1, :cursbv); end;
+1	Cafe	
+################0################
+10/Oct/15 begin GET_Contextura(1, :cursbv); end;
+1	Delgado	
+################0################
+10/Oct/15 begin GET_Estilo_Vida(7, :cursbv); end;
+si	0	0	si	3500	soy de poco dormir	1	
+################0################
+10/Oct/15 begin GET_Tipo_Bebedor(1, :cursbv); end;
+1	Social	
+################0################
+10/Oct/15 begin GET_Signo_Zodiacal(3, :cursbv); end;
+3		21/05/15	20/06/15	
+################0################
+10/Oct/15 begin GET_GENERO(1, :cursbv); end;
+1	Masculino	
+################0################
+10/Oct/15 begin GET_INTERES_GUSTO(7, :cursbv); end;
+18	25	2	
+################0################
+10/Oct/15 begin GET_GENERO(2, :cursbv); end;
+2	Femenino	
+################0################
+10/Oct/15 begin GET_UsuarioXIdioma(29, :cursbv); end;
+################0################
+10/Oct/15 begin GET_ActividadXUsuario(29, :cursbv); end;
+################0################
+10/Oct/15 begin GET_HobbyXUsuario(29, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Winks(29, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Bitacora_visita(29, :cursbv); end;
+################0################
+10/Oct/15 begin GET_Bitacora_visita(29, :cursbv); end;
+################0################
