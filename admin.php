@@ -366,7 +366,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						</option>
 					<?php } ?>
 				</select>
-				<div class="col-md-4"><input class="col-md-6" type="text" name="contextura_input" placeholder="Nuevo" /></div>
+				<div class="col-md-3"><input class="col-md-6" type="text" name="contextura_input" placeholder="Nuevo" /></div>
 				<div class="col-md-1">
 					<button name= "contextura_button" class= "eliminar" >X</button>
 				</div>
