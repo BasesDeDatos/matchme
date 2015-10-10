@@ -213,6 +213,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		queryFunction($conexion, "begin :value := {$_POST["procedure"]}('{$_POST["value"]}', {$_POST["id_pais"]}); end;");
 	}
 	
+	
+	if (!empty($_POST) && $_POST["mode"] == "borrar_catalogo"){
+		queryProcedure($conexion, "begin {$_POST["procedure"]}({$_POST["row_id"]}); end;");
+	}
+	
 	//*** REGISTRAR UN PERFIL *///
 	if (!empty($_POST) && $_POST["mode"] == "registrar_usuario"){
 		

@@ -10,9 +10,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		include ("funcionesOracle.php");
 	?>
 	
-	<pre id= "debug">
-	</pre>
-	
 	<div class="row">
 		<div class="col-md-12 register-form">
 		<!-- multistep form -->
@@ -142,8 +139,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						</option>
 					<?php } ?>
 				</select>
-				<div class="col-md-4"><input class="col-md-6" type="text" name="signo_zodiacal_input" placeholder="Nuevo" /></div>
-
+				<div class="col-md-3"><input class="col-md-6" type="text" name="signo_zodiacal_input" placeholder="Nuevo" /></div>
+					<div class="col-md-1">
+					<button name= "signo_zodiacal_button" class= "eliminar" >X</button>
+					</div>
 
 				<label class="col-md-4" for="rol">Rol</label>
 				<select class="col-md-4" name="rol" id="rol">
@@ -154,7 +153,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						</option>
 					<?php } ?>
 				</select>
-				<div class="col-md-4"><input class="col-md-6" type="text" name="rol_input" placeholder="Nuevo" /></div>
+				<div class="col-md-3"><input class="col-md-6" type="text" name="rol_input" placeholder="Nuevo" /></div>
+				<div class="col-md-1">
+					<button name= "rol_button" class= "eliminar" >X</button>
+					</div>
 
 
 				<label class="col-md-4" for="pais">Pais</label>
@@ -167,8 +169,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						</option>
 					<?php } ?>
 				</select>
-				<div class="col-md-4"><input class="col-md-6" type="text" name="pais_input" placeholder="Nuevo" /></div>
-
+				<div class="col-md-3"><input class="col-md-6" type="text" name="pais_input" placeholder="Nuevo" /></div>
+					<div class="col-md-1">
+					<button name= "pais_button" class= "eliminar" >X</button>
+					</div>
 
 				<label class="col-md-4" for="estado">Estado</label>
 				<select class="col-md-4" name="estado" id="estado">
@@ -180,8 +184,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						</option>
 					<?php } ?>
 				</select>
-				<div class="col-md-4"><input class="col-md-6" type="text" name="estado_input" placeholder="Nuevo" /></div>
-
+				<div class="col-md-3"><input class="col-md-6" type="text" name="estado_input" placeholder="Nuevo" /></div>
+					<div class="col-md-1">
+					<button name= "estado_button" class= "eliminar" >X</button>
+					</div>
 
 				<label class="col-md-4" for="ciudad">Ciudad</label>
 				<select class="col-md-4" name="ciudad" id="ciudad">
@@ -193,8 +199,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						</option>
 					<?php } ?>
 				</select>
-				<div class="col-md-4"><input class="col-md-6" type="text" name="ciudad_input" placeholder="Nuevo" /></div>
-
+				<div class="col-md-3"><input class="col-md-6" type="text" name="ciudad_input" placeholder="Nuevo" /></div>
+					<div class="col-md-1">
+					<button name= "ciudad_button" class= "eliminar" >X</button>
+					</div>
 
 				<label class="col-md-4" for="religion">Religion</label>
 				<select class="col-md-4" name="religion" id="religion">
@@ -205,8 +213,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						</option>
 					<?php } ?>
 				</select>
-				<div class="col-md-4"><input class="col-md-6" type="text" name="religion_input" placeholder="Nuevo" /></div>
-
+				<div class="col-md-3"><input class="col-md-6" type="text" name="religion_input" placeholder="Nuevo" /></div>
+				<div class="col-md-1">
+					<button name= "religion_button" class= "eliminar" >X</button>
+				</div>
+				
 				<label class="col-md-4" for="idioma">Idioma</label>
 				<select class="col-md-4" name="idioma" id="idioma">
 					<option value="">Agregar nuevo</option>
@@ -216,8 +227,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						</option>
 					<?php } ?>
 				</select>
-				<div class="col-md-4"><input class="col-md-6" type="text" name="idioma_input" placeholder="Nuevo" /></div>
-
+				<div class="col-md-3"><input class="col-md-6" type="text" name="idioma_input" placeholder="Nuevo" /></div>
+				<div class="col-md-1">
+					<button name= "idioma_button" class= "eliminar" >X</button>
+				</div>
+				
 				<label class="col-md-4" for="educacion">Educacion</label>
 				<select class="col-md-4" name="educacion" id="educacion">
 					<option value="">Agregar nuevo</option>
@@ -227,8 +241,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						</option>
 					<?php } ?>
 				</select>
-				<div class="col-md-4"><input class="col-md-6" type="text" name="educacion_input" placeholder="Nuevo" /></div>
-
+				<div class="col-md-3"><input class="col-md-6" type="text" name="educacion_input" placeholder="Nuevo" /></div>
+				<div class="col-md-1">
+					<button name= "educacion_button" class= "eliminar" >X</button>
+				</div>
 				
 				<input type="button" name="previous" class="previous action-button" value="Anterior" />
 				<input type="button" name="next" class="next action-button" value="Siguiente" />
@@ -248,8 +264,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						</option>
 					<?php } ?>
 				</select>
-				<div class="col-md-4"><input class="col-md-6" type="text" name="hobby_input" placeholder="Nuevo" /></div>
-
+				<div class="col-md-3"><input class="col-md-6" type="text" name="hobby_input" placeholder="Nuevo" /></div>
+				<div class="col-md-1">
+					<button name= "hobby_button" class= "eliminar" >X</button>
+				</div>
+				
+				
 				<label class="col-md-4" for="actividadal">Actividades al aire libre</label>
 				<select class="col-md-4" name="actividadal" id="actividadal">
 					<option value="">Agregar nuevo</option>
@@ -259,7 +279,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						</option>
 					<?php } ?>
 				</select>
-				<div class="col-md-4"><input class="col-md-6" type="text" name="actividadal_input" placeholder="Nuevo" /></div>
+				<div class="col-md-3"><input class="col-md-6" type="text" name="actividadal_input" placeholder="Nuevo" /></div>
+				<div class="col-md-1">
+					<button name= "actividadal_button" class= "eliminar" >X</button>
+				</div>
+				
 				
 				<label class="col-md-4" for="tipo_bebedor">Tipo de bebedor</label>
 				<select class="col-md-4" name="tipo_bebedor" id="tipo_bebedor">
@@ -270,8 +294,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						</option>
 					<?php } ?>
 				</select>
-				<div class="col-md-4"><input class="col-md-6" type="text" name="tipo_bebedor_input" placeholder="Nuevo" /></div>
-
+				<div class="col-md-3"><input class="col-md-6" type="text" name="tipo_bebedor_input" placeholder="Nuevo" /></div>
+				<div class="col-md-1">
+					<button name= "tipo_bebedor_button" class= "eliminar" >X</button>
+				</div>
+				
+				
 				<label class="col-md-4" for="ocupacion">Ocupación</label>
 				<select class="col-md-4" name="ocupacion" id="ocupacion">
 					<option value="">Agregar nuevo</option>
@@ -281,8 +309,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						</option>
 					<?php } ?>
 				</select>
-				<div class="col-md-4"><input class="col-md-6" type="text" name="ocupacion_input" placeholder="Nuevo" /></div>
-
+				<div class="col-md-3"><input class="col-md-6" type="text" name="ocupacion_input" placeholder="Nuevo" /></div>
+				<div class="col-md-1">
+					<button name= "ocupacion_button" class= "eliminar" >X</button>
+				</div>
+				
+				
 				<label class="col-md-4" for="color_ojos">Color Ojos</label>
 				<select class="col-md-4" name="color_ojos" id="color_ojos">
 					<option value="">Agregar nuevo</option>
@@ -291,8 +323,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							<?php echo $arrayQuery["COLOR_OJOS"]["NOMBRE"][$i] ?>
 						</option>
 					<?php } ?>				</select>
-				<div class="col-md-4"><input class="col-md-6" type="text" name="color_ojos_input" placeholder="Nuevo" /></div>
-
+				<div class="col-md-3"><input class="col-md-6" type="text" name="color_ojos_input" placeholder="Nuevo" /></div>
+				<div class="col-md-1">
+					<button name= "color_ojos_button" class= "eliminar" >X</button>
+				</div>
+				
+				
 				<label class="col-md-4" for="color_piel">Color piel</label>
 				<select class="col-md-4" name="color_piel" id="color_piel">
 					<option value="">Agregar nuevo</option>
@@ -302,8 +338,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						</option>
 					<?php } ?>
 				</select>
-				<div class="col-md-4"><input class="col-md-6" type="text" name="color_piel_input" placeholder="Nuevo" /></div>
-
+				<div class="col-md-3"><input class="col-md-6" type="text" name="color_piel_input" placeholder="Nuevo" /></div>
+				<div class="col-md-1">
+					<button name= "color_piel_button" class= "eliminar" >X</button>
+				</div>
+				
+				
 				<label class="col-md-4" for="color_pelo">Color Pelo</label>
 				<select class="col-md-4" name="color_pelo" id="color_pelo">
 					<option value="">Agregar nuevo</option>
@@ -313,8 +353,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						</option>
 					<?php } ?>
 				</select>
-				<div class="col-md-4"><input class="col-md-6" type="text" name="color_pelo_input" placeholder="Nuevo" /></div>
-
+				<div class="col-md-3"><input class="col-md-6" type="text" name="color_pelo_input" placeholder="Nuevo" /></div>
+				<div class="col-md-1">
+					<button name= "color_pelo_button" class= "eliminar" >X</button>
+				</div>
 				<label class="col-md-4" for="contextura">Contextura</label>
 				<select class="col-md-4" name="contextura" id="contextura">
 					<option value="">Agregar nuevo</option>
@@ -325,7 +367,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<?php } ?>
 				</select>
 				<div class="col-md-4"><input class="col-md-6" type="text" name="contextura_input" placeholder="Nuevo" /></div>
-				
+				<div class="col-md-1">
+					<button name= "contextura_button" class= "eliminar" >X</button>
+				</div>
 				
 				<input type="button" name="previous" class="previous action-button" value="Anterior" />
 				<input type="button" name="next" class="next action-button" value="Siguiente" />
@@ -345,8 +389,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						</option>
 					<?php } ?>
 				</select>
-				<div class="col-md-4"><input class="col-md-6" type="text" name="estado_match_input" placeholder="Nuevo" /></div>
-				
+				<div class="col-md-3"><input class="col-md-6" type="text" name="estado_match_input" placeholder="Nuevo" /></div>
+				<div class="col-md-1">
+					<button name= "estado_match_button" class= "eliminar" >X</button>
+				</div>
 				<label class="col-md-4" for="estado_civil">Estado Civil</label>
 				<select class="col-md-4" name="estado_civil" id="estado_civil">
 					<option value="">Agregar nuevo</option>
@@ -357,8 +403,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						</option>
 					<?php } ?>
 				</select>
-				<div class="col-md-4"><input class="col-md-6" type="text" name="estado_civil_input" placeholder="Nuevo" /></div>
-				
+				<div class="col-md-3"><input class="col-md-6" type="text" name="estado_civil_input" placeholder="Nuevo" /></div>
+				<div class="col-md-1">
+					<button name= "estado_civil_button" class= "eliminar" >X</button>
+				</div>
 				<label class="col-md-4" for="genero">Genero</label>
 				<select class="col-md-4" name="genero" id="genero">
 					<option value="">Agregar nuevo</option>
@@ -368,8 +416,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						</option>
 					<?php } ?>
 				</select>
-				<div class="col-md-4"><input class="col-md-6" type="text" name="genero_input" placeholder="Nuevo" /></div>
-				
+				<div class="col-md-3"><input class="col-md-6" type="text" name="genero_input" placeholder="Nuevo" /></div>
+				<div class="col-md-1">
+					<button name= "genero_button" class= "eliminar" >X</button>
+				</div>
 				<input type="button" name="previous" class="previous action-button" value="Anterior" />
 				<!--input type="submit" name="submit" class="submit action-button" value="Aplicar" /-->
 
@@ -564,6 +614,27 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			if ($(this).val() == ""){ input.val(""); } 
 			else { input.val( $(this).find("option:selected").text().trim());}
 		})
+		
+		
+		
+		
+		$(".eliminar").click(function(){
+			var input = $(this).attr("name");
+			var nameSelect = input.substring(0, input.length-7) //se borra la palabra "_bootton" ;
+			var row_id = $("select[name='"+nameSelect+"'] option:selected").val();
+			var data = "mode=borrar_catalogo&procedure=BORRAR_"+nameSelect+ "&row_id="+row_id;
+				$.ajax({  
+					type: "POST",
+					url: "funcionesOracle.php",
+					data: data,
+					success: function(data){
+						$("#debug").html(data);
+					}
+				});
+				$("select[name='"+nameSelect+"'] option:selected").remove();
+		})
+		
+		
 		
 		function registrar_evento(){
 //			alert($("#Ciudad0").val());
