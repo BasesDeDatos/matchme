@@ -24,7 +24,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<li>Intereses</li>
 				<li>Hobbies</li>
 				<li>Actividades al aire libre</li>
-				<!--li>¿Qué Busco?</li-->
+				<li>Ocupaciones</li>
+				<li>Idiomas</li>
 
 			</ul>
 			<!-- fieldsets -->
@@ -342,7 +343,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				</div>
 				
 				<input type="button" name="previous" class="previous action-button" value="Anterior" />
-				<input type="hidden" name= "mode" value ="registrar_usuario" >
+				<input type="button" name="next" class="next action-button" value="Siguente" />
 			</fieldset>
 			
 			<fieldset>
@@ -362,7 +363,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				</div>
 				
 				<input type="button" name="previous" class="previous action-button" value="Anterior" />
-				<input type="hidden" name= "mode" value ="registrar_usuario" >
+				<input type="button" name="next" class="next action-button" value="Siguente" />
 			</fieldset>
 			
 			<fieldset>
