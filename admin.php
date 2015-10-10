@@ -4,7 +4,7 @@ Template name: admin
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 -->
-	<?php require_once("header2.php");
+	<?php require_once("header.php");
 		$arrayQuery = array(); 
 		$_POST["mode"] = "get_catalogos"; 
 		include ("funcionesOracle.php");
