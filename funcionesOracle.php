@@ -67,6 +67,19 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	
 	if (!empty($_POST) && $_POST["mode"] == "get_home"){
 		$arrayQuery = queryCursor($conexion, "begin GET_Usuario({$_SESSION["active_user_id"] }, :cursbv); end;");
+		
+		$arrayQuery["ID_CIUDAD"] = queryCursor($conexion, "begin GET_Ciudad({$arrayQuery["ID_CIUDAD"][0]}, :cursbv); end;");
+		$arrayQuery["ID_CIUDAD"]["ID_ESTADO"] = 
+			queryCursor($conexion, 
+				"begin GET_Estado({$arrayQuery["ID_CIUDAD"]["ID_ESTADO"][0]}, :cursbv); end;");
+		$arrayQuery["ID_CIUDAD"]["ID_ESTADO"]["ID_PAIS"] =
+			queryCursor($conexion, 
+				"begin GET_Pais({$arrayQuery["ID_CIUDAD"]["ID_ESTADO"]["ID_PAIS"][0]}, :cursbv); end;");
+		$arrayQuery["ID_ESTILOVIDA"] = queryCursor($conexion, "begin GET_Estilo_Vida({$arrayQuery["ID_ESTILOVIDA"][0]}, :cursbv); end;");
+		$arrayQuery["ID_ASPECTOF"] = queryCursor($conexion, "begin GET_Aspecto_Fisico({$arrayQuery["ID_ASPECTOF"][0]}, :cursbv); end;");
+		$arrayQuery["ID_INTERES_GUSTO"] = queryCursor($conexion, "begin GET_INTERES_GUSTO({$arrayQuery["ID_INTERES_GUSTO"][0]}, :cursbv); end;");
+		$arrayQuery["ID_INTERES_GUSTO"]["ID_GENERO"] = queryCursor($conexion, "begin GET_GENERO({$arrayQuery["ID_INTERES_GUSTO"]["ID_GENERO"][0]}, :cursbv); end;");
+		$arrayQuery["ID_GENERO"] = queryCursor($conexion, "begin GET_GENERO({$arrayQuery["ID_GENERO"][0]}, :cursbv); end;");
 	}
 	
 		
@@ -104,9 +117,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			queryCursor($conexion, "begin GET_Tipo_Bebedor({$arrayQuery["ID_ESTILOVIDA"]["ID_TIPOBEBEDOR"][0]}, :cursbv); end;");
 
 		$arrayQuery["ID_SIGNO_ZODIACAL"] = queryCursor($conexion, "begin GET_Signo_Zodiacal({$arrayQuery["ID_SIGNO_ZODIACAL"][0]}, :cursbv); end;");
-
-		$arrayQuery["ID_INTERES_GUSTO"] = queryCursor($conexion, "begin GET_INTERES_GUSTO({$arrayQuery["ID_INTERES_GUSTO"][0]}, :cursbv); end;");
+		$arrayQuery["ID_GENERO"] = queryCursor($conexion, "begin GET_GENERO({$arrayQuery["ID_GENERO"][0]}, :cursbv); end;");
 		
+		$arrayQuery["ID_INTERES_GUSTO"] = queryCursor($conexion, "begin GET_INTERES_GUSTO({$arrayQuery["ID_INTERES_GUSTO"][0]}, :cursbv); end;");
+		$arrayQuery["ID_INTERES_GUSTO"]["ID_GENERO"] = queryCursor($conexion, "begin GET_GENERO({$arrayQuery["ID_INTERES_GUSTO"]["ID_GENERO"][0]}, :cursbv); end;");
+		
+		//$arrayQuery["ID_INTERES_GUSTO"]["ID_GENERO"]["NOMBRE"] = 
+		//	queryCursor($conexion, "begin GET_GENERO{$arrayQuery["ID_INTERES_GUSTO"]["ID_GENERO"][0]}, :cursbv); end;");
+			
 		$arrayQuery["IDIOMAS"] = queryCursor($conexion, "begin GET_UsuarioXIdioma({$user_id}, :cursbv); end;");
 		$arrayQuery["ACTIVIDADES"] = queryCursor($conexion, "begin GET_ActividadXUsuario({$user_id}, :cursbv); end;");
 		$arrayQuery["HOBBIES"] = queryCursor($conexion, "begin GET_HobbyXUsuario({$user_id}, :cursbv); end;");

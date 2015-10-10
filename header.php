@@ -59,11 +59,5 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 					</ul>				
 				</div>
-				<div class="search">
-					<form>
-						<input type="search" value="Buscar" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Buscar';}" required="">
-						<input type="submit" value=" ">
-					</form>
-				</div>
 				<div class="clearfix"></div>
 			</div>

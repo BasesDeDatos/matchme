@@ -23,36 +23,73 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<ul class="effct1" style="display: none;">
 							<li><a href="profile.php?edit=1.php">Editar Perfil</a></li>  
 							<li><a href="login.php" onclick = <?php $user_id = -1 ?> >Cerrar Sesion</a></li>  
+							<?php if ($arrayQuery ["ID_ROL"][0] == 1 ){?>
+								<li><a href="admin.php">Opciones de administrador</a></li>  
+							<?php }	?>
 						</ul>
 					</div>
 					<!-- FICHA PERFIL -->
 					<div class="content-right">
+				<div class="content-right">
 						<div class="cntnt-img">
 						</div>
 						<div class="bnr-img">
 							<img src= <?php echo "profile_pics/".$arrayQuery["FOTO"][0] ?> alt=""/>
 						</div>
 						<div class="bnr-text">
-							<h1><?php echo $arrayQuery["NOMBRE" ][0]." ".$arrayQuery["PRIMER_APELLIDO"][0]." ".$arrayQuery["SEGUNDO_APELLIDO"][0] ?></h1>
-							<h5><?php echo $arrayQuery["EMAIL"][0] ?></h5>
-							<p><?php echo $arrayQuery["SLOGAN"][0] ?></p>
+							<h1>
+								<?php echo $arrayQuery["NOMBRE"][0]." ".$arrayQuery["PRIMER_APELLIDO"][0]." ".$arrayQuery["SEGUNDO_APELLIDO"][0] ?>	
+							</h1>
+							
+							<h5>
+									<?php echo $arrayQuery["EMAIL"][0] ?>
+
+							</h5>
+							
+							<p>
+								 
+									<?php echo $arrayQuery["ID_ESTILOVIDA"]["SLOGAN"][0] ?>
+							</p>
+							
+							<hr/>
+							<div class="resumen">
+								<p>
+									Genero: <?php echo $arrayQuery["ID_GENERO"]["NOMBRE"][0]?>
+
+								</p>
+
+								
+								<p>
+									Edad: <?php echo $arrayQuery["EDAD"][0] ?>
+								</p>
+								
+								<p>
+									Ubicación: <?php echo $arrayQuery["ID_CIUDAD"]["NOMBRE"][0].", ".$arrayQuery["ID_CIUDAD"]["ID_ESTADO"]["NOMBRE"][0].", ".$arrayQuery["ID_CIUDAD"]["ID_ESTADO"]["ID_PAIS"]["NOMBRE"][0]?>
+								</p>
+								<p>Altura: <?php echo $arrayQuery["ID_ASPECTOF"]["ALTURA"][0] ?> </p>
+								<p>Peso: <?php echo $arrayQuery["ID_ASPECTOF"]["PESO"][0] ?> </p>
+								<p>Busco: <?php echo $arrayQuery["ID_INTERES_GUSTO"]["ID_GENERO"]["NOMBRE"][0]."s"?> </p>
+								<p>Entre: <?php echo $arrayQuery["ID_INTERES_GUSTO"]["RANGO_EDADI"][0]." y ".$arrayQuery["ID_INTERES_GUSTO"]["RANGO_EDADF"][0] ?></p>
+							</div>
 						</div>
 						<div class="btm-num">
 							<ul>
 								<li>
-									<h4>420</h4>
-									<h5>Seguidores</h5>
-								</li>
-								<li>
-									<h4>100</h4>
+									<h4><?php echo count($arrayQuery["WINK"]["ID_ENVIADO"])?></h4>
 									<h5>Winks</h5>
 								</li>
 								<li>
+									<h4><?php echo count($arrayQuery["VISITAS"]["ID_VISITANTE"])?></h4>
+									<h5>Visitas</h5>
+								</li>
+								<li>
 									<h4>60</h4>
-									<h5>Matches nuevos</h5>
+									<h5>Matches</h5>
 								</li>
 							</ul>
-						</div>				
+						</div>
+						<input type="button" name="wink" class="next action-button" value="Dar un wink"/>
+				</div>				
 					</div>				
 				</div>
 				<div class="col-md-4 content-grids">

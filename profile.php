@@ -104,7 +104,7 @@ if ($edit){ ?>
 										</option>
 									</select>
 									<?php } else { ?> 
-										<?php echo $arrayQuery["GENERO"][0] ?>
+										<?php echo $arrayQuery["ID_GENERO"]["NOMBRE"][0]?>
 									<?php }	?>
 								</p>
 
@@ -130,7 +130,7 @@ if ($edit){ ?>
 								</p>
 								<p>Altura: <?php echo $arrayQuery["ID_ASPECTOF"]["ALTURA"][0] ?> </p>
 								<p>Peso: <?php echo $arrayQuery["ID_ASPECTOF"]["PESO"][0] ?> </p>
-								<p>Busco: <?php echo $arrayQuery["ID_INTERES_GUSTO"]["TIPO_PAREJA"][0]."s"?> </p>
+								<p>Busco: <?php echo $arrayQuery["ID_INTERES_GUSTO"]["ID_GENERO"]["NOMBRE"][0]."s"?> </p>
 								<p>Entre: <?php echo $arrayQuery["ID_INTERES_GUSTO"]["RANGO_EDADI"][0]." y ".$arrayQuery["ID_INTERES_GUSTO"]["RANGO_EDADF"][0] ?></p>
 							</div>
 						</div>
@@ -151,7 +151,7 @@ if ($edit){ ?>
 							</ul>
 						</div>
 						<input type="button" name="wink" class="next action-button" value="Dar un wink"/>
-					</div>
+				</div>
 			</div>
 
 			<div class= "col-md-8">
@@ -165,8 +165,8 @@ if ($edit){ ?>
 					<input id="tab-4" type="radio" name="radio-set" class="tab-selector-4" />
 					<label for="tab-4" class="tab-label-4">Intereses y gustos</label>
 					
-					<input id="tab-5" type="radio" name="radio-set" class="tab-selector-5" />
-					<label for="tab-5" class="tab-label-5">Que busco</label>
+					<!--input id="tab-5" type="radio" name="radio-set" class="tab-selector-5" />
+					<label for="tab-5" class="tab-label-5">Que busco</label -->
 					
 					<input id="tab-6" type="radio" name="radio-set" class="tab-selector-6" />
 					<label for="tab-6" class="tab-label-6">Winks</label>
@@ -178,7 +178,8 @@ if ($edit){ ?>
 						<div class="content-1">
 							<!--div class = "Background"-->
 								<label class ="texto">Nivel de educacion: <?php echo $arrayQuery["ID_EDUCACION"]["NOMBRE"][0] ?></label>
-								<label class ="texto">Idiomas: <?php echo implode(", ", $arrayQuery["IDIOMAS"]["NOMBRE"] ) ?></label>
+								<?php var_dump( $arrayQuery["IDIOMAS"]) ?>
+								<label class ="texto">Idiomas: <?php echo implode(", ", $arrayQuery["IDIOMAS"]["NOMBRE"] ) ?> </label>
 								
 								<label class ="texto">Estado civil: <?php echo $arrayQuery["ID_ESTADOCI"]["NOMBRE"][0] ?> </label>
 								<label class ="texto">Religion: <?php echo $arrayQuery["ID_RELIGION"]["NOMBRE"][0] ?></label>
@@ -211,7 +212,7 @@ if ($edit){ ?>
 						</div>
 						<div class="content-5">
 							<!--div class = "sobre la persona que busca"-->
-								<label class ="texto">Busco: <?php echo $arrayQuery["ID_INTERES_GUSTO"]["TIPO_PAREJA"][0]."s"?> </label>
+								<label class ="texto">Busco: <?php echo $arrayQuery["ID_INTERES_GUSTO"]["ID_GENERO"]["NOMBRE"][0]."s"?> </label>
 								<label class ="texto">Entre: <?php echo $arrayQuery["ID_INTERES_GUSTO"]["RANGO_EDADI"][0]." y ".$arrayQuery["ID_INTERES_GUSTO"]["RANGO_EDADF"][0] ?></label>
 							<!--/div-->
 						</div>

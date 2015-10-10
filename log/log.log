@@ -13379,3 +13379,3985 @@ si	0	0	si	3500	soy de poco dormir	1
 ################29################
 10/Oct/15 begin GET_Bitacora_visita(29, :cursbv); end;
 ################29################
+10/Oct/15 begin GET_Usuario(29, :cursbv); end;
+Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################29################
+10/Oct/15 begin GET_Religion(1, :cursbv); end;
+1	Pastafari	
+################29################
+10/Oct/15 begin GET_estado_Civil(1, :cursbv); end;
+1	Solo	
+################29################
+10/Oct/15 begin GET_Educacion(1, :cursbv); end;
+1	Bachiller	
+################29################
+10/Oct/15 begin GET_Ciudad(1, :cursbv); end;
+1	San Jose	1	
+################29################
+10/Oct/15 begin GET_Estado(1, :cursbv); end;
+1	San Jose	1	
+################29################
+10/Oct/15 begin GET_Pais(1, :cursbv); end;
+1	Costa Rica	
+################29################
+10/Oct/15 begin GET_Aspecto_Fisico(6, :cursbv); end;
+164	61	1	2	1	1	
+################29################
+10/Oct/15 begin GET_Color_Ojos(1, :cursbv); end;
+1	Azul	
+################29################
+10/Oct/15 begin GET_Color_Piel(2, :cursbv); end;
+2	Blanca	
+################29################
+10/Oct/15 begin GET_Color_Pelo(1, :cursbv); end;
+1	Cafe	
+################29################
+10/Oct/15 begin GET_Contextura(1, :cursbv); end;
+1	Delgado	
+################29################
+10/Oct/15 begin GET_Estilo_Vida(7, :cursbv); end;
+si	0	0	si	3500	soy de poco dormir	1	
+################29################
+10/Oct/15 begin GET_Tipo_Bebedor(1, :cursbv); end;
+1	Social	
+################29################
+10/Oct/15 begin GET_Signo_Zodiacal(3, :cursbv); end;
+3		21/05/15	20/06/15	
+################29################
+10/Oct/15 begin GET_INTERES_GUSTO(7, :cursbv); end;
+18	25	2	
+################29################
+10/Oct/15 begin GET_UsuarioXIdioma(29, :cursbv); end;
+################29################
+10/Oct/15 begin GET_ActividadXUsuario(29, :cursbv); end;
+################29################
+10/Oct/15 begin GET_HobbyXUsuario(29, :cursbv); end;
+################29################
+10/Oct/15 begin GET_Winks(29, :cursbv); end;
+################29################
+10/Oct/15 begin GET_Bitacora_visita(29, :cursbv); end;
+################29################
+10/Oct/15 begin GET_Bitacora_visita(29, :cursbv); end;
+################29################
+10/Oct/15 begin :value := get_userID('1234','rgvillalobosr@gmail.com'); end; -1
+################29################
+10/Oct/15 begin :value := get_userID('12345','rgvillalobosr@gmail.com'); end; 1
+################-1################
+10/Oct/15 begin GET_Usuario(1, :cursbv); end;
+Rolland	Payne	Elliot	10/09/95	20	rgvillalobosr@gmail.com	 	2	12345	no	no	no	1	1	1	1	1	1	1	1	1	
+################1################
+10/Oct/15 begin GET_Winks(1, :cursbv); end;
+13/09/15	0	
+27/09/15	0	
+################1################
+10/Oct/15 begin GET_Bitacora_visita(1, :cursbv); end;
+13/09/15	0	
+################1################
+10/Oct/15 begin GET_Bitacora_visita(1, :cursbv); end;
+13/09/15	0	
+################1################
+10/Oct/15 begin :value := get_userID('1234','jefalva10296@gmail.com'); end; 0
+################1################
+10/Oct/15 begin GET_Usuario(0, :cursbv); end;
+Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Winks(0, :cursbv); end;
+27/09/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Usuario(0, :cursbv); end;
+Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Winks(0, :cursbv); end;
+27/09/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Usuario(0, :cursbv); end;
+Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Winks(0, :cursbv); end;
+27/09/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Usuario(0, :cursbv); end;
+Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Winks(0, :cursbv); end;
+27/09/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Usuario(0, :cursbv); end;
+Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Winks(0, :cursbv); end;
+27/09/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Usuario(0, :cursbv); end;
+Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Religion(1, :cursbv); end;
+1	Pastafari	
+################0################
+10/Oct/15 begin GET_estado_Civil(1, :cursbv); end;
+1	Solo	
+################0################
+10/Oct/15 begin GET_Educacion(1, :cursbv); end;
+1	Bachiller	
+################0################
+10/Oct/15 begin GET_Ciudad(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Estado(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Pais(1, :cursbv); end;
+1	Costa Rica	
+################0################
+10/Oct/15 begin GET_Aspecto_Fisico(1, :cursbv); end;
+140	50	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Color_Ojos(1, :cursbv); end;
+1	Azul	
+################0################
+10/Oct/15 begin GET_Color_Piel(1, :cursbv); end;
+1	Amarillo	
+################0################
+10/Oct/15 begin GET_Color_Pelo(1, :cursbv); end;
+1	Cafe	
+################0################
+10/Oct/15 begin GET_Contextura(1, :cursbv); end;
+1	Delgado	
+################0################
+10/Oct/15 begin GET_Estilo_Vida(1, :cursbv); end;
+	3	2		2000		1	
+################0################
+10/Oct/15 begin GET_Tipo_Bebedor(1, :cursbv); end;
+1	Social	
+################0################
+10/Oct/15 begin GET_Signo_Zodiacal(1, :cursbv); end;
+1	Aries	20/03/15	19/04/15	
+################0################
+10/Oct/15 begin GET_INTERES_GUSTO(1, :cursbv); end;
+18	40	2	
+################0################
+10/Oct/15 begin GET_UsuarioXIdioma(0, :cursbv); end;
+################0################
+10/Oct/15 begin GET_ActividadXUsuario(0, :cursbv); end;
+Escalar	
+################0################
+10/Oct/15 begin GET_HobbyXUsuario(0, :cursbv); end;
+VideoGames	
+################0################
+10/Oct/15 begin GET_Winks(0, :cursbv); end;
+27/09/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Usuario(0, :cursbv); end;
+Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Religion(1, :cursbv); end;
+1	Pastafari	
+################0################
+10/Oct/15 begin GET_estado_Civil(1, :cursbv); end;
+1	Solo	
+################0################
+10/Oct/15 begin GET_Educacion(1, :cursbv); end;
+1	Bachiller	
+################0################
+10/Oct/15 begin GET_Ciudad(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Estado(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Pais(1, :cursbv); end;
+1	Costa Rica	
+################0################
+10/Oct/15 begin GET_Aspecto_Fisico(1, :cursbv); end;
+140	50	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Color_Ojos(1, :cursbv); end;
+1	Azul	
+################0################
+10/Oct/15 begin GET_Color_Piel(1, :cursbv); end;
+1	Amarillo	
+################0################
+10/Oct/15 begin GET_Color_Pelo(1, :cursbv); end;
+1	Cafe	
+################0################
+10/Oct/15 begin GET_Contextura(1, :cursbv); end;
+1	Delgado	
+################0################
+10/Oct/15 begin GET_Estilo_Vida(1, :cursbv); end;
+	3	2		2000		1	
+################0################
+10/Oct/15 begin GET_Tipo_Bebedor(1, :cursbv); end;
+1	Social	
+################0################
+10/Oct/15 begin GET_Signo_Zodiacal(1, :cursbv); end;
+1	Aries	20/03/15	19/04/15	
+################0################
+10/Oct/15 begin GET_GENERO(1, :cursbv); end;
+1	Masculino	
+################0################
+10/Oct/15 begin GET_INTERES_GUSTO(1, :cursbv); end;
+18	40	2	
+################0################
+10/Oct/15 begin GET_UsuarioXIdioma(0, :cursbv); end;
+################0################
+10/Oct/15 begin GET_ActividadXUsuario(0, :cursbv); end;
+Escalar	
+################0################
+10/Oct/15 begin GET_HobbyXUsuario(0, :cursbv); end;
+VideoGames	
+################0################
+10/Oct/15 begin GET_Winks(0, :cursbv); end;
+27/09/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Usuario(0, :cursbv); end;
+Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Religion(1, :cursbv); end;
+1	Pastafari	
+################0################
+10/Oct/15 begin GET_estado_Civil(1, :cursbv); end;
+1	Solo	
+################0################
+10/Oct/15 begin GET_Educacion(1, :cursbv); end;
+1	Bachiller	
+################0################
+10/Oct/15 begin GET_Ciudad(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Estado(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Pais(1, :cursbv); end;
+1	Costa Rica	
+################0################
+10/Oct/15 begin GET_Aspecto_Fisico(1, :cursbv); end;
+140	50	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Color_Ojos(1, :cursbv); end;
+1	Azul	
+################0################
+10/Oct/15 begin GET_Color_Piel(1, :cursbv); end;
+1	Amarillo	
+################0################
+10/Oct/15 begin GET_Color_Pelo(1, :cursbv); end;
+1	Cafe	
+################0################
+10/Oct/15 begin GET_Contextura(1, :cursbv); end;
+1	Delgado	
+################0################
+10/Oct/15 begin GET_Estilo_Vida(1, :cursbv); end;
+	3	2		2000		1	
+################0################
+10/Oct/15 begin GET_Tipo_Bebedor(1, :cursbv); end;
+1	Social	
+################0################
+10/Oct/15 begin GET_Signo_Zodiacal(1, :cursbv); end;
+1	Aries	20/03/15	19/04/15	
+################0################
+10/Oct/15 begin GET_GENERO(1, :cursbv); end;
+1	Masculino	
+################0################
+10/Oct/15 begin GET_INTERES_GUSTO(1, :cursbv); end;
+18	40	2	
+################0################
+10/Oct/15 begin GET_UsuarioXIdioma(0, :cursbv); end;
+################0################
+10/Oct/15 begin GET_ActividadXUsuario(0, :cursbv); end;
+Escalar	
+################0################
+10/Oct/15 begin GET_HobbyXUsuario(0, :cursbv); end;
+VideoGames	
+################0################
+10/Oct/15 begin GET_Winks(0, :cursbv); end;
+27/09/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Usuario(0, :cursbv); end;
+Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Religion(1, :cursbv); end;
+1	Pastafari	
+################0################
+10/Oct/15 begin GET_estado_Civil(1, :cursbv); end;
+1	Solo	
+################0################
+10/Oct/15 begin GET_Educacion(1, :cursbv); end;
+1	Bachiller	
+################0################
+10/Oct/15 begin GET_Ciudad(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Estado(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Pais(1, :cursbv); end;
+1	Costa Rica	
+################0################
+10/Oct/15 begin GET_Aspecto_Fisico(1, :cursbv); end;
+140	50	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Color_Ojos(1, :cursbv); end;
+1	Azul	
+################0################
+10/Oct/15 begin GET_Color_Piel(1, :cursbv); end;
+1	Amarillo	
+################0################
+10/Oct/15 begin GET_Color_Pelo(1, :cursbv); end;
+1	Cafe	
+################0################
+10/Oct/15 begin GET_Contextura(1, :cursbv); end;
+1	Delgado	
+################0################
+10/Oct/15 begin GET_Estilo_Vida(1, :cursbv); end;
+	3	2		2000		1	
+################0################
+10/Oct/15 begin GET_Tipo_Bebedor(1, :cursbv); end;
+1	Social	
+################0################
+10/Oct/15 begin GET_Signo_Zodiacal(1, :cursbv); end;
+1	Aries	20/03/15	19/04/15	
+################0################
+10/Oct/15 begin GET_GENERO(1, :cursbv); end;
+1	Masculino	
+################0################
+10/Oct/15 begin GET_INTERES_GUSTO(1, :cursbv); end;
+18	40	2	
+################0################
+10/Oct/15 begin GET_UsuarioXIdioma(0, :cursbv); end;
+################0################
+10/Oct/15 begin GET_ActividadXUsuario(0, :cursbv); end;
+Escalar	
+################0################
+10/Oct/15 begin GET_HobbyXUsuario(0, :cursbv); end;
+VideoGames	
+################0################
+10/Oct/15 begin GET_Winks(0, :cursbv); end;
+27/09/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Usuario(0, :cursbv); end;
+Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Religion(1, :cursbv); end;
+1	Pastafari	
+################0################
+10/Oct/15 begin GET_estado_Civil(1, :cursbv); end;
+1	Solo	
+################0################
+10/Oct/15 begin GET_Educacion(1, :cursbv); end;
+1	Bachiller	
+################0################
+10/Oct/15 begin GET_Ciudad(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Estado(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Pais(1, :cursbv); end;
+1	Costa Rica	
+################0################
+10/Oct/15 begin GET_Aspecto_Fisico(1, :cursbv); end;
+140	50	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Color_Ojos(1, :cursbv); end;
+1	Azul	
+################0################
+10/Oct/15 begin GET_Color_Piel(1, :cursbv); end;
+1	Amarillo	
+################0################
+10/Oct/15 begin GET_Color_Pelo(1, :cursbv); end;
+1	Cafe	
+################0################
+10/Oct/15 begin GET_Contextura(1, :cursbv); end;
+1	Delgado	
+################0################
+10/Oct/15 begin GET_Estilo_Vida(1, :cursbv); end;
+	3	2		2000		1	
+################0################
+10/Oct/15 begin GET_Tipo_Bebedor(1, :cursbv); end;
+1	Social	
+################0################
+10/Oct/15 begin GET_Signo_Zodiacal(1, :cursbv); end;
+1	Aries	20/03/15	19/04/15	
+################0################
+10/Oct/15 begin GET_GENERO(1, :cursbv); end;
+1	Masculino	
+################0################
+10/Oct/15 begin GET_INTERES_GUSTO(1, :cursbv); end;
+18	40	2	
+################0################
+10/Oct/15 begin GET_GENERO, :cursbv); end;
+################0################
+10/Oct/15 begin GET_UsuarioXIdioma(0, :cursbv); end;
+################0################
+10/Oct/15 begin GET_ActividadXUsuario(0, :cursbv); end;
+Escalar	
+################0################
+10/Oct/15 begin GET_HobbyXUsuario(0, :cursbv); end;
+VideoGames	
+################0################
+10/Oct/15 begin GET_Winks(0, :cursbv); end;
+27/09/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Usuario(0, :cursbv); end;
+Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Religion(1, :cursbv); end;
+1	Pastafari	
+################0################
+10/Oct/15 begin GET_estado_Civil(1, :cursbv); end;
+1	Solo	
+################0################
+10/Oct/15 begin GET_Educacion(1, :cursbv); end;
+1	Bachiller	
+################0################
+10/Oct/15 begin GET_Ciudad(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Estado(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Pais(1, :cursbv); end;
+1	Costa Rica	
+################0################
+10/Oct/15 begin GET_Aspecto_Fisico(1, :cursbv); end;
+140	50	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Color_Ojos(1, :cursbv); end;
+1	Azul	
+################0################
+10/Oct/15 begin GET_Color_Piel(1, :cursbv); end;
+1	Amarillo	
+################0################
+10/Oct/15 begin GET_Color_Pelo(1, :cursbv); end;
+1	Cafe	
+################0################
+10/Oct/15 begin GET_Contextura(1, :cursbv); end;
+1	Delgado	
+################0################
+10/Oct/15 begin GET_Estilo_Vida(1, :cursbv); end;
+	3	2		2000		1	
+################0################
+10/Oct/15 begin GET_Tipo_Bebedor(1, :cursbv); end;
+1	Social	
+################0################
+10/Oct/15 begin GET_Signo_Zodiacal(1, :cursbv); end;
+1	Aries	20/03/15	19/04/15	
+################0################
+10/Oct/15 begin GET_GENERO(1, :cursbv); end;
+1	Masculino	
+################0################
+10/Oct/15 begin GET_INTERES_GUSTO(1, :cursbv); end;
+18	40	2	
+################0################
+10/Oct/15 begin GET_GENERO, :cursbv); end;
+################0################
+10/Oct/15 begin GET_UsuarioXIdioma(0, :cursbv); end;
+################0################
+10/Oct/15 begin GET_ActividadXUsuario(0, :cursbv); end;
+Escalar	
+################0################
+10/Oct/15 begin GET_HobbyXUsuario(0, :cursbv); end;
+VideoGames	
+################0################
+10/Oct/15 begin GET_Winks(0, :cursbv); end;
+27/09/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Usuario(0, :cursbv); end;
+Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Religion(1, :cursbv); end;
+1	Pastafari	
+################0################
+10/Oct/15 begin GET_estado_Civil(1, :cursbv); end;
+1	Solo	
+################0################
+10/Oct/15 begin GET_Educacion(1, :cursbv); end;
+1	Bachiller	
+################0################
+10/Oct/15 begin GET_Ciudad(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Estado(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Pais(1, :cursbv); end;
+1	Costa Rica	
+################0################
+10/Oct/15 begin GET_Aspecto_Fisico(1, :cursbv); end;
+140	50	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Color_Ojos(1, :cursbv); end;
+1	Azul	
+################0################
+10/Oct/15 begin GET_Color_Piel(1, :cursbv); end;
+1	Amarillo	
+################0################
+10/Oct/15 begin GET_Color_Pelo(1, :cursbv); end;
+1	Cafe	
+################0################
+10/Oct/15 begin GET_Contextura(1, :cursbv); end;
+1	Delgado	
+################0################
+10/Oct/15 begin GET_Estilo_Vida(1, :cursbv); end;
+	3	2		2000		1	
+################0################
+10/Oct/15 begin GET_Tipo_Bebedor(1, :cursbv); end;
+1	Social	
+################0################
+10/Oct/15 begin GET_Signo_Zodiacal(1, :cursbv); end;
+1	Aries	20/03/15	19/04/15	
+################0################
+10/Oct/15 begin GET_GENERO(1, :cursbv); end;
+1	Masculino	
+################0################
+10/Oct/15 begin GET_INTERES_GUSTO(1, :cursbv); end;
+18	40	2	
+################0################
+10/Oct/15 begin GET_GENERO, :cursbv); end;
+################0################
+10/Oct/15 begin GET_UsuarioXIdioma(0, :cursbv); end;
+################0################
+10/Oct/15 begin GET_ActividadXUsuario(0, :cursbv); end;
+Escalar	
+################0################
+10/Oct/15 begin GET_HobbyXUsuario(0, :cursbv); end;
+VideoGames	
+################0################
+10/Oct/15 begin GET_Winks(0, :cursbv); end;
+27/09/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Usuario(0, :cursbv); end;
+Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Religion(1, :cursbv); end;
+1	Pastafari	
+################0################
+10/Oct/15 begin GET_estado_Civil(1, :cursbv); end;
+1	Solo	
+################0################
+10/Oct/15 begin GET_Educacion(1, :cursbv); end;
+1	Bachiller	
+################0################
+10/Oct/15 begin GET_Ciudad(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Estado(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Pais(1, :cursbv); end;
+1	Costa Rica	
+################0################
+10/Oct/15 begin GET_Aspecto_Fisico(1, :cursbv); end;
+140	50	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Color_Ojos(1, :cursbv); end;
+1	Azul	
+################0################
+10/Oct/15 begin GET_Color_Piel(1, :cursbv); end;
+1	Amarillo	
+################0################
+10/Oct/15 begin GET_Color_Pelo(1, :cursbv); end;
+1	Cafe	
+################0################
+10/Oct/15 begin GET_Contextura(1, :cursbv); end;
+1	Delgado	
+################0################
+10/Oct/15 begin GET_Estilo_Vida(1, :cursbv); end;
+	3	2		2000		1	
+################0################
+10/Oct/15 begin GET_Tipo_Bebedor(1, :cursbv); end;
+1	Social	
+################0################
+10/Oct/15 begin GET_Signo_Zodiacal(1, :cursbv); end;
+1	Aries	20/03/15	19/04/15	
+################0################
+10/Oct/15 begin GET_GENERO(1, :cursbv); end;
+1	Masculino	
+################0################
+10/Oct/15 begin GET_INTERES_GUSTO(1, :cursbv); end;
+18	40	2	
+################0################
+10/Oct/15 begin GET_GENERO2, :cursbv); end;
+################0################
+10/Oct/15 begin GET_UsuarioXIdioma(0, :cursbv); end;
+################0################
+10/Oct/15 begin GET_ActividadXUsuario(0, :cursbv); end;
+Escalar	
+################0################
+10/Oct/15 begin GET_HobbyXUsuario(0, :cursbv); end;
+VideoGames	
+################0################
+10/Oct/15 begin GET_Winks(0, :cursbv); end;
+27/09/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Usuario(0, :cursbv); end;
+Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Religion(1, :cursbv); end;
+1	Pastafari	
+################0################
+10/Oct/15 begin GET_estado_Civil(1, :cursbv); end;
+1	Solo	
+################0################
+10/Oct/15 begin GET_Educacion(1, :cursbv); end;
+1	Bachiller	
+################0################
+10/Oct/15 begin GET_Ciudad(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Estado(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Pais(1, :cursbv); end;
+1	Costa Rica	
+################0################
+10/Oct/15 begin GET_Aspecto_Fisico(1, :cursbv); end;
+140	50	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Color_Ojos(1, :cursbv); end;
+1	Azul	
+################0################
+10/Oct/15 begin GET_Color_Piel(1, :cursbv); end;
+1	Amarillo	
+################0################
+10/Oct/15 begin GET_Color_Pelo(1, :cursbv); end;
+1	Cafe	
+################0################
+10/Oct/15 begin GET_Contextura(1, :cursbv); end;
+1	Delgado	
+################0################
+10/Oct/15 begin GET_Estilo_Vida(1, :cursbv); end;
+	3	2		2000		1	
+################0################
+10/Oct/15 begin GET_Tipo_Bebedor(1, :cursbv); end;
+1	Social	
+################0################
+10/Oct/15 begin GET_Signo_Zodiacal(1, :cursbv); end;
+1	Aries	20/03/15	19/04/15	
+################0################
+10/Oct/15 begin GET_GENERO(1, :cursbv); end;
+1	Masculino	
+################0################
+10/Oct/15 begin GET_INTERES_GUSTO(1, :cursbv); end;
+18	40	2	
+################0################
+10/Oct/15 begin GET_GENERO2, :cursbv); end;
+################0################
+10/Oct/15 begin GET_UsuarioXIdioma(0, :cursbv); end;
+################0################
+10/Oct/15 begin GET_ActividadXUsuario(0, :cursbv); end;
+Escalar	
+################0################
+10/Oct/15 begin GET_HobbyXUsuario(0, :cursbv); end;
+VideoGames	
+################0################
+10/Oct/15 begin GET_Winks(0, :cursbv); end;
+27/09/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Usuario(0, :cursbv); end;
+Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Religion(1, :cursbv); end;
+1	Pastafari	
+################0################
+10/Oct/15 begin GET_estado_Civil(1, :cursbv); end;
+1	Solo	
+################0################
+10/Oct/15 begin GET_Educacion(1, :cursbv); end;
+1	Bachiller	
+################0################
+10/Oct/15 begin GET_Ciudad(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Estado(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Pais(1, :cursbv); end;
+1	Costa Rica	
+################0################
+10/Oct/15 begin GET_Aspecto_Fisico(1, :cursbv); end;
+140	50	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Color_Ojos(1, :cursbv); end;
+1	Azul	
+################0################
+10/Oct/15 begin GET_Color_Piel(1, :cursbv); end;
+1	Amarillo	
+################0################
+10/Oct/15 begin GET_Color_Pelo(1, :cursbv); end;
+1	Cafe	
+################0################
+10/Oct/15 begin GET_Contextura(1, :cursbv); end;
+1	Delgado	
+################0################
+10/Oct/15 begin GET_Estilo_Vida(1, :cursbv); end;
+	3	2		2000		1	
+################0################
+10/Oct/15 begin GET_Tipo_Bebedor(1, :cursbv); end;
+1	Social	
+################0################
+10/Oct/15 begin GET_Signo_Zodiacal(1, :cursbv); end;
+1	Aries	20/03/15	19/04/15	
+################0################
+10/Oct/15 begin GET_GENERO(1, :cursbv); end;
+1	Masculino	
+################0################
+10/Oct/15 begin GET_INTERES_GUSTO(1, :cursbv); end;
+18	40	2	
+################0################
+10/Oct/15 begin GET_GENERO, :cursbv); end;
+################0################
+10/Oct/15 begin GET_UsuarioXIdioma(0, :cursbv); end;
+################0################
+10/Oct/15 begin GET_ActividadXUsuario(0, :cursbv); end;
+Escalar	
+################0################
+10/Oct/15 begin GET_HobbyXUsuario(0, :cursbv); end;
+VideoGames	
+################0################
+10/Oct/15 begin GET_Winks(0, :cursbv); end;
+27/09/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Usuario(0, :cursbv); end;
+Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Religion(1, :cursbv); end;
+1	Pastafari	
+################0################
+10/Oct/15 begin GET_estado_Civil(1, :cursbv); end;
+1	Solo	
+################0################
+10/Oct/15 begin GET_Educacion(1, :cursbv); end;
+1	Bachiller	
+################0################
+10/Oct/15 begin GET_Ciudad(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Estado(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Pais(1, :cursbv); end;
+1	Costa Rica	
+################0################
+10/Oct/15 begin GET_Aspecto_Fisico(1, :cursbv); end;
+140	50	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Color_Ojos(1, :cursbv); end;
+1	Azul	
+################0################
+10/Oct/15 begin GET_Color_Piel(1, :cursbv); end;
+1	Amarillo	
+################0################
+10/Oct/15 begin GET_Color_Pelo(1, :cursbv); end;
+1	Cafe	
+################0################
+10/Oct/15 begin GET_Contextura(1, :cursbv); end;
+1	Delgado	
+################0################
+10/Oct/15 begin GET_Estilo_Vida(1, :cursbv); end;
+	3	2		2000		1	
+################0################
+10/Oct/15 begin GET_Tipo_Bebedor(1, :cursbv); end;
+1	Social	
+################0################
+10/Oct/15 begin GET_Signo_Zodiacal(1, :cursbv); end;
+1	Aries	20/03/15	19/04/15	
+################0################
+10/Oct/15 begin GET_GENERO(1, :cursbv); end;
+1	Masculino	
+################0################
+10/Oct/15 begin GET_INTERES_GUSTO(1, :cursbv); end;
+18	40	2	
+################0################
+10/Oct/15 begin GET_UsuarioXIdioma(0, :cursbv); end;
+################0################
+10/Oct/15 begin GET_ActividadXUsuario(0, :cursbv); end;
+Escalar	
+################0################
+10/Oct/15 begin GET_HobbyXUsuario(0, :cursbv); end;
+VideoGames	
+################0################
+10/Oct/15 begin GET_Winks(0, :cursbv); end;
+27/09/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Usuario(0, :cursbv); end;
+Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Religion(1, :cursbv); end;
+1	Pastafari	
+################0################
+10/Oct/15 begin GET_estado_Civil(1, :cursbv); end;
+1	Solo	
+################0################
+10/Oct/15 begin GET_Educacion(1, :cursbv); end;
+1	Bachiller	
+################0################
+10/Oct/15 begin GET_Ciudad(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Estado(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Pais(1, :cursbv); end;
+1	Costa Rica	
+################0################
+10/Oct/15 begin GET_Aspecto_Fisico(1, :cursbv); end;
+140	50	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Color_Ojos(1, :cursbv); end;
+1	Azul	
+################0################
+10/Oct/15 begin GET_Color_Piel(1, :cursbv); end;
+1	Amarillo	
+################0################
+10/Oct/15 begin GET_Color_Pelo(1, :cursbv); end;
+1	Cafe	
+################0################
+10/Oct/15 begin GET_Contextura(1, :cursbv); end;
+1	Delgado	
+################0################
+10/Oct/15 begin GET_Estilo_Vida(1, :cursbv); end;
+	3	2		2000		1	
+################0################
+10/Oct/15 begin GET_Tipo_Bebedor(1, :cursbv); end;
+1	Social	
+################0################
+10/Oct/15 begin GET_Signo_Zodiacal(1, :cursbv); end;
+1	Aries	20/03/15	19/04/15	
+################0################
+10/Oct/15 begin GET_GENERO(1, :cursbv); end;
+1	Masculino	
+################0################
+10/Oct/15 begin GET_INTERES_GUSTO(1, :cursbv); end;
+18	40	2	
+################0################
+10/Oct/15 begin GET_UsuarioXIdioma(0, :cursbv); end;
+################0################
+10/Oct/15 begin GET_ActividadXUsuario(0, :cursbv); end;
+Escalar	
+################0################
+10/Oct/15 begin GET_HobbyXUsuario(0, :cursbv); end;
+VideoGames	
+################0################
+10/Oct/15 begin GET_Winks(0, :cursbv); end;
+27/09/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Usuario(0, :cursbv); end;
+Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Religion(1, :cursbv); end;
+1	Pastafari	
+################0################
+10/Oct/15 begin GET_estado_Civil(1, :cursbv); end;
+1	Solo	
+################0################
+10/Oct/15 begin GET_Educacion(1, :cursbv); end;
+1	Bachiller	
+################0################
+10/Oct/15 begin GET_Ciudad(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Estado(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Pais(1, :cursbv); end;
+1	Costa Rica	
+################0################
+10/Oct/15 begin GET_Aspecto_Fisico(1, :cursbv); end;
+140	50	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Color_Ojos(1, :cursbv); end;
+1	Azul	
+################0################
+10/Oct/15 begin GET_Color_Piel(1, :cursbv); end;
+1	Amarillo	
+################0################
+10/Oct/15 begin GET_Color_Pelo(1, :cursbv); end;
+1	Cafe	
+################0################
+10/Oct/15 begin GET_Contextura(1, :cursbv); end;
+1	Delgado	
+################0################
+10/Oct/15 begin GET_Estilo_Vida(1, :cursbv); end;
+	3	2		2000		1	
+################0################
+10/Oct/15 begin GET_Tipo_Bebedor(1, :cursbv); end;
+1	Social	
+################0################
+10/Oct/15 begin GET_Signo_Zodiacal(1, :cursbv); end;
+1	Aries	20/03/15	19/04/15	
+################0################
+10/Oct/15 begin GET_GENERO(1, :cursbv); end;
+1	Masculino	
+################0################
+10/Oct/15 begin GET_INTERES_GUSTO(1, :cursbv); end;
+18	40	2	
+################0################
+10/Oct/15 begin GET_UsuarioXIdioma(0, :cursbv); end;
+################0################
+10/Oct/15 begin GET_ActividadXUsuario(0, :cursbv); end;
+Escalar	
+################0################
+10/Oct/15 begin GET_HobbyXUsuario(0, :cursbv); end;
+VideoGames	
+################0################
+10/Oct/15 begin GET_Winks(0, :cursbv); end;
+27/09/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Usuario(0, :cursbv); end;
+Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Religion(1, :cursbv); end;
+1	Pastafari	
+################0################
+10/Oct/15 begin GET_estado_Civil(1, :cursbv); end;
+1	Solo	
+################0################
+10/Oct/15 begin GET_Educacion(1, :cursbv); end;
+1	Bachiller	
+################0################
+10/Oct/15 begin GET_Ciudad(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Estado(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Pais(1, :cursbv); end;
+1	Costa Rica	
+################0################
+10/Oct/15 begin GET_Aspecto_Fisico(1, :cursbv); end;
+140	50	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Color_Ojos(1, :cursbv); end;
+1	Azul	
+################0################
+10/Oct/15 begin GET_Color_Piel(1, :cursbv); end;
+1	Amarillo	
+################0################
+10/Oct/15 begin GET_Color_Pelo(1, :cursbv); end;
+1	Cafe	
+################0################
+10/Oct/15 begin GET_Contextura(1, :cursbv); end;
+1	Delgado	
+################0################
+10/Oct/15 begin GET_Estilo_Vida(1, :cursbv); end;
+	3	2		2000		1	
+################0################
+10/Oct/15 begin GET_Tipo_Bebedor(1, :cursbv); end;
+1	Social	
+################0################
+10/Oct/15 begin GET_Signo_Zodiacal(1, :cursbv); end;
+1	Aries	20/03/15	19/04/15	
+################0################
+10/Oct/15 begin GET_GENERO(1, :cursbv); end;
+1	Masculino	
+################0################
+10/Oct/15 begin GET_INTERES_GUSTO(1, :cursbv); end;
+18	40	2	
+################0################
+10/Oct/15 begin GET_GENERO2, :cursbv); end;
+################0################
+10/Oct/15 begin GET_UsuarioXIdioma(0, :cursbv); end;
+################0################
+10/Oct/15 begin GET_ActividadXUsuario(0, :cursbv); end;
+Escalar	
+################0################
+10/Oct/15 begin GET_HobbyXUsuario(0, :cursbv); end;
+VideoGames	
+################0################
+10/Oct/15 begin GET_Winks(0, :cursbv); end;
+27/09/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Usuario(0, :cursbv); end;
+Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Religion(1, :cursbv); end;
+1	Pastafari	
+################0################
+10/Oct/15 begin GET_estado_Civil(1, :cursbv); end;
+1	Solo	
+################0################
+10/Oct/15 begin GET_Educacion(1, :cursbv); end;
+1	Bachiller	
+################0################
+10/Oct/15 begin GET_Ciudad(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Estado(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Pais(1, :cursbv); end;
+1	Costa Rica	
+################0################
+10/Oct/15 begin GET_Aspecto_Fisico(1, :cursbv); end;
+140	50	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Color_Ojos(1, :cursbv); end;
+1	Azul	
+################0################
+10/Oct/15 begin GET_Color_Piel(1, :cursbv); end;
+1	Amarillo	
+################0################
+10/Oct/15 begin GET_Color_Pelo(1, :cursbv); end;
+1	Cafe	
+################0################
+10/Oct/15 begin GET_Contextura(1, :cursbv); end;
+1	Delgado	
+################0################
+10/Oct/15 begin GET_Estilo_Vida(1, :cursbv); end;
+	3	2		2000		1	
+################0################
+10/Oct/15 begin GET_Tipo_Bebedor(1, :cursbv); end;
+1	Social	
+################0################
+10/Oct/15 begin GET_Signo_Zodiacal(1, :cursbv); end;
+1	Aries	20/03/15	19/04/15	
+################0################
+10/Oct/15 begin GET_GENERO(1, :cursbv); end;
+1	Masculino	
+################0################
+10/Oct/15 begin GET_INTERES_GUSTO(1, :cursbv); end;
+18	40	2	
+################0################
+10/Oct/15 begin GET_GENERO2, :cursbv); end;
+################0################
+10/Oct/15 begin GET_UsuarioXIdioma(0, :cursbv); end;
+################0################
+10/Oct/15 begin GET_ActividadXUsuario(0, :cursbv); end;
+Escalar	
+################0################
+10/Oct/15 begin GET_HobbyXUsuario(0, :cursbv); end;
+VideoGames	
+################0################
+10/Oct/15 begin GET_Winks(0, :cursbv); end;
+27/09/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Usuario(0, :cursbv); end;
+Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Religion(1, :cursbv); end;
+1	Pastafari	
+################0################
+10/Oct/15 begin GET_estado_Civil(1, :cursbv); end;
+1	Solo	
+################0################
+10/Oct/15 begin GET_Educacion(1, :cursbv); end;
+1	Bachiller	
+################0################
+10/Oct/15 begin GET_Ciudad(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Estado(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Pais(1, :cursbv); end;
+1	Costa Rica	
+################0################
+10/Oct/15 begin GET_Aspecto_Fisico(1, :cursbv); end;
+140	50	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Color_Ojos(1, :cursbv); end;
+1	Azul	
+################0################
+10/Oct/15 begin GET_Color_Piel(1, :cursbv); end;
+1	Amarillo	
+################0################
+10/Oct/15 begin GET_Color_Pelo(1, :cursbv); end;
+1	Cafe	
+################0################
+10/Oct/15 begin GET_Contextura(1, :cursbv); end;
+1	Delgado	
+################0################
+10/Oct/15 begin GET_Estilo_Vida(1, :cursbv); end;
+	3	2		2000		1	
+################0################
+10/Oct/15 begin GET_Tipo_Bebedor(1, :cursbv); end;
+1	Social	
+################0################
+10/Oct/15 begin GET_Signo_Zodiacal(1, :cursbv); end;
+1	Aries	20/03/15	19/04/15	
+################0################
+10/Oct/15 begin GET_GENERO(1, :cursbv); end;
+1	Masculino	
+################0################
+10/Oct/15 begin GET_INTERES_GUSTO(1, :cursbv); end;
+18	40	2	
+################0################
+10/Oct/15 begin GET_GENERO2, :cursbv); end;
+################0################
+10/Oct/15 begin GET_UsuarioXIdioma(0, :cursbv); end;
+################0################
+10/Oct/15 begin GET_ActividadXUsuario(0, :cursbv); end;
+Escalar	
+################0################
+10/Oct/15 begin GET_HobbyXUsuario(0, :cursbv); end;
+VideoGames	
+################0################
+10/Oct/15 begin GET_Winks(0, :cursbv); end;
+27/09/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Usuario(0, :cursbv); end;
+Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Religion(1, :cursbv); end;
+1	Pastafari	
+################0################
+10/Oct/15 begin GET_estado_Civil(1, :cursbv); end;
+1	Solo	
+################0################
+10/Oct/15 begin GET_Educacion(1, :cursbv); end;
+1	Bachiller	
+################0################
+10/Oct/15 begin GET_Ciudad(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Estado(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Pais(1, :cursbv); end;
+1	Costa Rica	
+################0################
+10/Oct/15 begin GET_Aspecto_Fisico(1, :cursbv); end;
+140	50	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Color_Ojos(1, :cursbv); end;
+1	Azul	
+################0################
+10/Oct/15 begin GET_Color_Piel(1, :cursbv); end;
+1	Amarillo	
+################0################
+10/Oct/15 begin GET_Color_Pelo(1, :cursbv); end;
+1	Cafe	
+################0################
+10/Oct/15 begin GET_Contextura(1, :cursbv); end;
+1	Delgado	
+################0################
+10/Oct/15 begin GET_Estilo_Vida(1, :cursbv); end;
+	3	2		2000		1	
+################0################
+10/Oct/15 begin GET_Tipo_Bebedor(1, :cursbv); end;
+1	Social	
+################0################
+10/Oct/15 begin GET_Signo_Zodiacal(1, :cursbv); end;
+1	Aries	20/03/15	19/04/15	
+################0################
+10/Oct/15 begin GET_GENERO(1, :cursbv); end;
+1	Masculino	
+################0################
+10/Oct/15 begin GET_INTERES_GUSTO(1, :cursbv); end;
+18	40	2	
+################0################
+10/Oct/15 begin GET_GENERO(2,:cursbv); end;
+2	Femenino	
+################0################
+10/Oct/15 begin GET_UsuarioXIdioma(0, :cursbv); end;
+################0################
+10/Oct/15 begin GET_ActividadXUsuario(0, :cursbv); end;
+Escalar	
+################0################
+10/Oct/15 begin GET_HobbyXUsuario(0, :cursbv); end;
+VideoGames	
+################0################
+10/Oct/15 begin GET_Winks(0, :cursbv); end;
+27/09/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Usuario(0, :cursbv); end;
+Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Religion(1, :cursbv); end;
+1	Pastafari	
+################0################
+10/Oct/15 begin GET_estado_Civil(1, :cursbv); end;
+1	Solo	
+################0################
+10/Oct/15 begin GET_Educacion(1, :cursbv); end;
+1	Bachiller	
+################0################
+10/Oct/15 begin GET_Ciudad(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Estado(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Pais(1, :cursbv); end;
+1	Costa Rica	
+################0################
+10/Oct/15 begin GET_Aspecto_Fisico(1, :cursbv); end;
+140	50	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Color_Ojos(1, :cursbv); end;
+1	Azul	
+################0################
+10/Oct/15 begin GET_Color_Piel(1, :cursbv); end;
+1	Amarillo	
+################0################
+10/Oct/15 begin GET_Color_Pelo(1, :cursbv); end;
+1	Cafe	
+################0################
+10/Oct/15 begin GET_Contextura(1, :cursbv); end;
+1	Delgado	
+################0################
+10/Oct/15 begin GET_Estilo_Vida(1, :cursbv); end;
+	3	2		2000		1	
+################0################
+10/Oct/15 begin GET_Tipo_Bebedor(1, :cursbv); end;
+1	Social	
+################0################
+10/Oct/15 begin GET_Signo_Zodiacal(1, :cursbv); end;
+1	Aries	20/03/15	19/04/15	
+################0################
+10/Oct/15 begin GET_GENERO(1, :cursbv); end;
+1	Masculino	
+################0################
+10/Oct/15 begin GET_INTERES_GUSTO(1, :cursbv); end;
+18	40	2	
+################0################
+10/Oct/15 begin GET_GENERO2, :cursbv); end;
+################0################
+10/Oct/15 begin GET_UsuarioXIdioma(0, :cursbv); end;
+################0################
+10/Oct/15 begin GET_ActividadXUsuario(0, :cursbv); end;
+Escalar	
+################0################
+10/Oct/15 begin GET_HobbyXUsuario(0, :cursbv); end;
+VideoGames	
+################0################
+10/Oct/15 begin GET_Winks(0, :cursbv); end;
+27/09/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Usuario(0, :cursbv); end;
+Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Religion(1, :cursbv); end;
+1	Pastafari	
+################0################
+10/Oct/15 begin GET_estado_Civil(1, :cursbv); end;
+1	Solo	
+################0################
+10/Oct/15 begin GET_Educacion(1, :cursbv); end;
+1	Bachiller	
+################0################
+10/Oct/15 begin GET_Ciudad(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Estado(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Pais(1, :cursbv); end;
+1	Costa Rica	
+################0################
+10/Oct/15 begin GET_Aspecto_Fisico(1, :cursbv); end;
+140	50	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Color_Ojos(1, :cursbv); end;
+1	Azul	
+################0################
+10/Oct/15 begin GET_Color_Piel(1, :cursbv); end;
+1	Amarillo	
+################0################
+10/Oct/15 begin GET_Color_Pelo(1, :cursbv); end;
+1	Cafe	
+################0################
+10/Oct/15 begin GET_Contextura(1, :cursbv); end;
+1	Delgado	
+################0################
+10/Oct/15 begin GET_Estilo_Vida(1, :cursbv); end;
+	3	2		2000		1	
+################0################
+10/Oct/15 begin GET_Tipo_Bebedor(1, :cursbv); end;
+1	Social	
+################0################
+10/Oct/15 begin GET_Signo_Zodiacal(1, :cursbv); end;
+1	Aries	20/03/15	19/04/15	
+################0################
+10/Oct/15 begin GET_GENERO(1, :cursbv); end;
+1	Masculino	
+################0################
+10/Oct/15 begin GET_INTERES_GUSTO(1, :cursbv); end;
+18	40	2	
+################0################
+10/Oct/15 begin GET_GENERO2, :cursbv); end;
+################0################
+10/Oct/15 begin GET_UsuarioXIdioma(0, :cursbv); end;
+################0################
+10/Oct/15 begin GET_ActividadXUsuario(0, :cursbv); end;
+Escalar	
+################0################
+10/Oct/15 begin GET_HobbyXUsuario(0, :cursbv); end;
+VideoGames	
+################0################
+10/Oct/15 begin GET_Winks(0, :cursbv); end;
+27/09/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Usuario(0, :cursbv); end;
+Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Religion(1, :cursbv); end;
+1	Pastafari	
+################0################
+10/Oct/15 begin GET_estado_Civil(1, :cursbv); end;
+1	Solo	
+################0################
+10/Oct/15 begin GET_Educacion(1, :cursbv); end;
+1	Bachiller	
+################0################
+10/Oct/15 begin GET_Ciudad(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Estado(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Pais(1, :cursbv); end;
+1	Costa Rica	
+################0################
+10/Oct/15 begin GET_Aspecto_Fisico(1, :cursbv); end;
+140	50	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Color_Ojos(1, :cursbv); end;
+1	Azul	
+################0################
+10/Oct/15 begin GET_Color_Piel(1, :cursbv); end;
+1	Amarillo	
+################0################
+10/Oct/15 begin GET_Color_Pelo(1, :cursbv); end;
+1	Cafe	
+################0################
+10/Oct/15 begin GET_Contextura(1, :cursbv); end;
+1	Delgado	
+################0################
+10/Oct/15 begin GET_Estilo_Vida(1, :cursbv); end;
+	3	2		2000		1	
+################0################
+10/Oct/15 begin GET_Tipo_Bebedor(1, :cursbv); end;
+1	Social	
+################0################
+10/Oct/15 begin GET_Signo_Zodiacal(1, :cursbv); end;
+1	Aries	20/03/15	19/04/15	
+################0################
+10/Oct/15 begin GET_GENERO(1, :cursbv); end;
+1	Masculino	
+################0################
+10/Oct/15 begin GET_INTERES_GUSTO(1, :cursbv); end;
+18	40	2	
+################0################
+10/Oct/15 begin GET_GENERO2, :cursbv); end;
+################0################
+10/Oct/15 begin GET_UsuarioXIdioma(0, :cursbv); end;
+################0################
+10/Oct/15 begin GET_ActividadXUsuario(0, :cursbv); end;
+Escalar	
+################0################
+10/Oct/15 begin GET_HobbyXUsuario(0, :cursbv); end;
+VideoGames	
+################0################
+10/Oct/15 begin GET_Winks(0, :cursbv); end;
+27/09/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Usuario(0, :cursbv); end;
+Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Religion(1, :cursbv); end;
+1	Pastafari	
+################0################
+10/Oct/15 begin GET_estado_Civil(1, :cursbv); end;
+1	Solo	
+################0################
+10/Oct/15 begin GET_Educacion(1, :cursbv); end;
+1	Bachiller	
+################0################
+10/Oct/15 begin GET_Ciudad(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Estado(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Pais(1, :cursbv); end;
+1	Costa Rica	
+################0################
+10/Oct/15 begin GET_Aspecto_Fisico(1, :cursbv); end;
+140	50	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Color_Ojos(1, :cursbv); end;
+1	Azul	
+################0################
+10/Oct/15 begin GET_Color_Piel(1, :cursbv); end;
+1	Amarillo	
+################0################
+10/Oct/15 begin GET_Color_Pelo(1, :cursbv); end;
+1	Cafe	
+################0################
+10/Oct/15 begin GET_Contextura(1, :cursbv); end;
+1	Delgado	
+################0################
+10/Oct/15 begin GET_Estilo_Vida(1, :cursbv); end;
+	3	2		2000		1	
+################0################
+10/Oct/15 begin GET_Tipo_Bebedor(1, :cursbv); end;
+1	Social	
+################0################
+10/Oct/15 begin GET_Signo_Zodiacal(1, :cursbv); end;
+1	Aries	20/03/15	19/04/15	
+################0################
+10/Oct/15 begin GET_GENERO(1, :cursbv); end;
+1	Masculino	
+################0################
+10/Oct/15 begin GET_INTERES_GUSTO(1, :cursbv); end;
+18	40	2	
+################0################
+10/Oct/15 begin GET_GENERO2, :cursbv); end;
+################0################
+10/Oct/15 begin GET_UsuarioXIdioma(0, :cursbv); end;
+################0################
+10/Oct/15 begin GET_ActividadXUsuario(0, :cursbv); end;
+Escalar	
+################0################
+10/Oct/15 begin GET_HobbyXUsuario(0, :cursbv); end;
+VideoGames	
+################0################
+10/Oct/15 begin GET_Winks(0, :cursbv); end;
+27/09/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Usuario(0, :cursbv); end;
+Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Religion(1, :cursbv); end;
+1	Pastafari	
+################0################
+10/Oct/15 begin GET_estado_Civil(1, :cursbv); end;
+1	Solo	
+################0################
+10/Oct/15 begin GET_Educacion(1, :cursbv); end;
+1	Bachiller	
+################0################
+10/Oct/15 begin GET_Ciudad(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Estado(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Pais(1, :cursbv); end;
+1	Costa Rica	
+################0################
+10/Oct/15 begin GET_Aspecto_Fisico(1, :cursbv); end;
+140	50	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Color_Ojos(1, :cursbv); end;
+1	Azul	
+################0################
+10/Oct/15 begin GET_Color_Piel(1, :cursbv); end;
+1	Amarillo	
+################0################
+10/Oct/15 begin GET_Color_Pelo(1, :cursbv); end;
+1	Cafe	
+################0################
+10/Oct/15 begin GET_Contextura(1, :cursbv); end;
+1	Delgado	
+################0################
+10/Oct/15 begin GET_Estilo_Vida(1, :cursbv); end;
+	3	2		2000		1	
+################0################
+10/Oct/15 begin GET_Tipo_Bebedor(1, :cursbv); end;
+1	Social	
+################0################
+10/Oct/15 begin GET_Signo_Zodiacal(1, :cursbv); end;
+1	Aries	20/03/15	19/04/15	
+################0################
+10/Oct/15 begin GET_GENERO(1, :cursbv); end;
+1	Masculino	
+################0################
+10/Oct/15 begin GET_INTERES_GUSTO(1, :cursbv); end;
+18	40	2	
+################0################
+10/Oct/15 begin GET_GENERO(2, :cursbv); end;
+2	Femenino	
+################0################
+10/Oct/15 begin GET_UsuarioXIdioma(0, :cursbv); end;
+################0################
+10/Oct/15 begin GET_ActividadXUsuario(0, :cursbv); end;
+Escalar	
+################0################
+10/Oct/15 begin GET_HobbyXUsuario(0, :cursbv); end;
+VideoGames	
+################0################
+10/Oct/15 begin GET_Winks(0, :cursbv); end;
+27/09/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Usuario(0, :cursbv); end;
+Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Winks(0, :cursbv); end;
+27/09/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Usuario(0, :cursbv); end;
+Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Religion(1, :cursbv); end;
+1	Pastafari	
+################0################
+10/Oct/15 begin GET_estado_Civil(1, :cursbv); end;
+1	Solo	
+################0################
+10/Oct/15 begin GET_Educacion(1, :cursbv); end;
+1	Bachiller	
+################0################
+10/Oct/15 begin GET_Ciudad(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Estado(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Pais(1, :cursbv); end;
+1	Costa Rica	
+################0################
+10/Oct/15 begin GET_Aspecto_Fisico(1, :cursbv); end;
+140	50	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Color_Ojos(1, :cursbv); end;
+1	Azul	
+################0################
+10/Oct/15 begin GET_Color_Piel(1, :cursbv); end;
+1	Amarillo	
+################0################
+10/Oct/15 begin GET_Color_Pelo(1, :cursbv); end;
+1	Cafe	
+################0################
+10/Oct/15 begin GET_Contextura(1, :cursbv); end;
+1	Delgado	
+################0################
+10/Oct/15 begin GET_Estilo_Vida(1, :cursbv); end;
+	3	2		2000		1	
+################0################
+10/Oct/15 begin GET_Tipo_Bebedor(1, :cursbv); end;
+1	Social	
+################0################
+10/Oct/15 begin GET_Signo_Zodiacal(1, :cursbv); end;
+1	Aries	20/03/15	19/04/15	
+################0################
+10/Oct/15 begin GET_GENERO(1, :cursbv); end;
+1	Masculino	
+################0################
+10/Oct/15 begin GET_INTERES_GUSTO(1, :cursbv); end;
+18	40	2	
+################0################
+10/Oct/15 begin GET_GENERO(2, :cursbv); end;
+2	Femenino	
+################0################
+10/Oct/15 begin GET_UsuarioXIdioma(0, :cursbv); end;
+################0################
+10/Oct/15 begin GET_ActividadXUsuario(0, :cursbv); end;
+Escalar	
+################0################
+10/Oct/15 begin GET_HobbyXUsuario(0, :cursbv); end;
+VideoGames	
+################0################
+10/Oct/15 begin GET_Winks(0, :cursbv); end;
+27/09/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Usuario(0, :cursbv); end;
+Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Religion(1, :cursbv); end;
+1	Pastafari	
+################0################
+10/Oct/15 begin GET_estado_Civil(1, :cursbv); end;
+1	Solo	
+################0################
+10/Oct/15 begin GET_Educacion(1, :cursbv); end;
+1	Bachiller	
+################0################
+10/Oct/15 begin GET_Ciudad(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Estado(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Pais(1, :cursbv); end;
+1	Costa Rica	
+################0################
+10/Oct/15 begin GET_Aspecto_Fisico(1, :cursbv); end;
+140	50	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Color_Ojos(1, :cursbv); end;
+1	Azul	
+################0################
+10/Oct/15 begin GET_Color_Piel(1, :cursbv); end;
+1	Amarillo	
+################0################
+10/Oct/15 begin GET_Color_Pelo(1, :cursbv); end;
+1	Cafe	
+################0################
+10/Oct/15 begin GET_Contextura(1, :cursbv); end;
+1	Delgado	
+################0################
+10/Oct/15 begin GET_Estilo_Vida(1, :cursbv); end;
+	3	2		2000		1	
+################0################
+10/Oct/15 begin GET_Tipo_Bebedor(1, :cursbv); end;
+1	Social	
+################0################
+10/Oct/15 begin GET_Signo_Zodiacal(1, :cursbv); end;
+1	Aries	20/03/15	19/04/15	
+################0################
+10/Oct/15 begin GET_GENERO(1, :cursbv); end;
+1	Masculino	
+################0################
+10/Oct/15 begin GET_INTERES_GUSTO(1, :cursbv); end;
+18	40	2	
+################0################
+10/Oct/15 begin GET_GENERO(2, :cursbv); end;
+2	Femenino	
+################0################
+10/Oct/15 begin GET_UsuarioXIdioma(0, :cursbv); end;
+################0################
+10/Oct/15 begin GET_ActividadXUsuario(0, :cursbv); end;
+Escalar	
+################0################
+10/Oct/15 begin GET_HobbyXUsuario(0, :cursbv); end;
+VideoGames	
+################0################
+10/Oct/15 begin GET_Winks(0, :cursbv); end;
+27/09/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Usuario(0, :cursbv); end;
+Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Religion(1, :cursbv); end;
+1	Pastafari	
+################0################
+10/Oct/15 begin GET_estado_Civil(1, :cursbv); end;
+1	Solo	
+################0################
+10/Oct/15 begin GET_Educacion(1, :cursbv); end;
+1	Bachiller	
+################0################
+10/Oct/15 begin GET_Ciudad(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Estado(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Pais(1, :cursbv); end;
+1	Costa Rica	
+################0################
+10/Oct/15 begin GET_Aspecto_Fisico(1, :cursbv); end;
+140	50	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Color_Ojos(1, :cursbv); end;
+1	Azul	
+################0################
+10/Oct/15 begin GET_Color_Piel(1, :cursbv); end;
+1	Amarillo	
+################0################
+10/Oct/15 begin GET_Color_Pelo(1, :cursbv); end;
+1	Cafe	
+################0################
+10/Oct/15 begin GET_Contextura(1, :cursbv); end;
+1	Delgado	
+################0################
+10/Oct/15 begin GET_Estilo_Vida(1, :cursbv); end;
+	3	2		2000		1	
+################0################
+10/Oct/15 begin GET_Tipo_Bebedor(1, :cursbv); end;
+1	Social	
+################0################
+10/Oct/15 begin GET_Signo_Zodiacal(1, :cursbv); end;
+1	Aries	20/03/15	19/04/15	
+################0################
+10/Oct/15 begin GET_GENERO(1, :cursbv); end;
+1	Masculino	
+################0################
+10/Oct/15 begin GET_INTERES_GUSTO(1, :cursbv); end;
+18	40	2	
+################0################
+10/Oct/15 begin GET_GENERO(2, :cursbv); end;
+2	Femenino	
+################0################
+10/Oct/15 begin GET_UsuarioXIdioma(0, :cursbv); end;
+################0################
+10/Oct/15 begin GET_ActividadXUsuario(0, :cursbv); end;
+Escalar	
+################0################
+10/Oct/15 begin GET_HobbyXUsuario(0, :cursbv); end;
+VideoGames	
+################0################
+10/Oct/15 begin GET_Winks(0, :cursbv); end;
+27/09/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Usuario(0, :cursbv); end;
+Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Religion(1, :cursbv); end;
+1	Pastafari	
+################0################
+10/Oct/15 begin GET_estado_Civil(1, :cursbv); end;
+1	Solo	
+################0################
+10/Oct/15 begin GET_Educacion(1, :cursbv); end;
+1	Bachiller	
+################0################
+10/Oct/15 begin GET_Ciudad(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Estado(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Pais(1, :cursbv); end;
+1	Costa Rica	
+################0################
+10/Oct/15 begin GET_Aspecto_Fisico(1, :cursbv); end;
+140	50	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Color_Ojos(1, :cursbv); end;
+1	Azul	
+################0################
+10/Oct/15 begin GET_Color_Piel(1, :cursbv); end;
+1	Amarillo	
+################0################
+10/Oct/15 begin GET_Color_Pelo(1, :cursbv); end;
+1	Cafe	
+################0################
+10/Oct/15 begin GET_Contextura(1, :cursbv); end;
+1	Delgado	
+################0################
+10/Oct/15 begin GET_Estilo_Vida(1, :cursbv); end;
+	3	2		2000		1	
+################0################
+10/Oct/15 begin GET_Tipo_Bebedor(1, :cursbv); end;
+1	Social	
+################0################
+10/Oct/15 begin GET_Signo_Zodiacal(1, :cursbv); end;
+1	Aries	20/03/15	19/04/15	
+################0################
+10/Oct/15 begin GET_GENERO(1, :cursbv); end;
+1	Masculino	
+################0################
+10/Oct/15 begin GET_INTERES_GUSTO(1, :cursbv); end;
+18	40	2	
+################0################
+10/Oct/15 begin GET_GENERO(2, :cursbv); end;
+2	Femenino	
+################0################
+10/Oct/15 begin GET_UsuarioXIdioma(0, :cursbv); end;
+################0################
+10/Oct/15 begin GET_ActividadXUsuario(0, :cursbv); end;
+Escalar	
+################0################
+10/Oct/15 begin GET_HobbyXUsuario(0, :cursbv); end;
+VideoGames	
+################0################
+10/Oct/15 begin GET_Winks(0, :cursbv); end;
+27/09/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Usuario(0, :cursbv); end;
+Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Religion(1, :cursbv); end;
+1	Pastafari	
+################0################
+10/Oct/15 begin GET_estado_Civil(1, :cursbv); end;
+1	Solo	
+################0################
+10/Oct/15 begin GET_Educacion(1, :cursbv); end;
+1	Bachiller	
+################0################
+10/Oct/15 begin GET_Ciudad(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Estado(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Pais(1, :cursbv); end;
+1	Costa Rica	
+################0################
+10/Oct/15 begin GET_Aspecto_Fisico(1, :cursbv); end;
+140	50	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Color_Ojos(1, :cursbv); end;
+1	Azul	
+################0################
+10/Oct/15 begin GET_Color_Piel(1, :cursbv); end;
+1	Amarillo	
+################0################
+10/Oct/15 begin GET_Color_Pelo(1, :cursbv); end;
+1	Cafe	
+################0################
+10/Oct/15 begin GET_Contextura(1, :cursbv); end;
+1	Delgado	
+################0################
+10/Oct/15 begin GET_Estilo_Vida(1, :cursbv); end;
+	3	2		2000		1	
+################0################
+10/Oct/15 begin GET_Tipo_Bebedor(1, :cursbv); end;
+1	Social	
+################0################
+10/Oct/15 begin GET_Signo_Zodiacal(1, :cursbv); end;
+1	Aries	20/03/15	19/04/15	
+################0################
+10/Oct/15 begin GET_GENERO(1, :cursbv); end;
+1	Masculino	
+################0################
+10/Oct/15 begin GET_INTERES_GUSTO(1, :cursbv); end;
+18	40	2	
+################0################
+10/Oct/15 begin GET_GENERO(2, :cursbv); end;
+2	Femenino	
+################0################
+10/Oct/15 begin GET_UsuarioXIdioma(0, :cursbv); end;
+################0################
+10/Oct/15 begin GET_ActividadXUsuario(0, :cursbv); end;
+Escalar	
+################0################
+10/Oct/15 begin GET_HobbyXUsuario(0, :cursbv); end;
+VideoGames	
+################0################
+10/Oct/15 begin GET_Winks(0, :cursbv); end;
+27/09/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Usuario(0, :cursbv); end;
+Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Religion(1, :cursbv); end;
+1	Pastafari	
+################0################
+10/Oct/15 begin GET_estado_Civil(1, :cursbv); end;
+1	Solo	
+################0################
+10/Oct/15 begin GET_Educacion(1, :cursbv); end;
+1	Bachiller	
+################0################
+10/Oct/15 begin GET_Ciudad(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Estado(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Pais(1, :cursbv); end;
+1	Costa Rica	
+################0################
+10/Oct/15 begin GET_Aspecto_Fisico(1, :cursbv); end;
+140	50	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Color_Ojos(1, :cursbv); end;
+1	Azul	
+################0################
+10/Oct/15 begin GET_Color_Piel(1, :cursbv); end;
+1	Amarillo	
+################0################
+10/Oct/15 begin GET_Color_Pelo(1, :cursbv); end;
+1	Cafe	
+################0################
+10/Oct/15 begin GET_Contextura(1, :cursbv); end;
+1	Delgado	
+################0################
+10/Oct/15 begin GET_Estilo_Vida(1, :cursbv); end;
+	3	2		2000		1	
+################0################
+10/Oct/15 begin GET_Tipo_Bebedor(1, :cursbv); end;
+1	Social	
+################0################
+10/Oct/15 begin GET_Signo_Zodiacal(1, :cursbv); end;
+1	Aries	20/03/15	19/04/15	
+################0################
+10/Oct/15 begin GET_GENERO(1, :cursbv); end;
+1	Masculino	
+################0################
+10/Oct/15 begin GET_INTERES_GUSTO(1, :cursbv); end;
+18	40	2	
+################0################
+10/Oct/15 begin GET_GENERO(2, :cursbv); end;
+2	Femenino	
+################0################
+10/Oct/15 begin GET_UsuarioXIdioma(0, :cursbv); end;
+################0################
+10/Oct/15 begin GET_ActividadXUsuario(0, :cursbv); end;
+Escalar	
+################0################
+10/Oct/15 begin GET_HobbyXUsuario(0, :cursbv); end;
+VideoGames	
+################0################
+10/Oct/15 begin GET_Winks(0, :cursbv); end;
+27/09/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Usuario(0, :cursbv); end;
+Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Religion(1, :cursbv); end;
+1	Pastafari	
+################0################
+10/Oct/15 begin GET_estado_Civil(1, :cursbv); end;
+1	Solo	
+################0################
+10/Oct/15 begin GET_Educacion(1, :cursbv); end;
+1	Bachiller	
+################0################
+10/Oct/15 begin GET_Ciudad(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Estado(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Pais(1, :cursbv); end;
+1	Costa Rica	
+################0################
+10/Oct/15 begin GET_Aspecto_Fisico(1, :cursbv); end;
+140	50	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Color_Ojos(1, :cursbv); end;
+1	Azul	
+################0################
+10/Oct/15 begin GET_Color_Piel(1, :cursbv); end;
+1	Amarillo	
+################0################
+10/Oct/15 begin GET_Color_Pelo(1, :cursbv); end;
+1	Cafe	
+################0################
+10/Oct/15 begin GET_Contextura(1, :cursbv); end;
+1	Delgado	
+################0################
+10/Oct/15 begin GET_Estilo_Vida(1, :cursbv); end;
+	3	2		2000		1	
+################0################
+10/Oct/15 begin GET_Tipo_Bebedor(1, :cursbv); end;
+1	Social	
+################0################
+10/Oct/15 begin GET_Signo_Zodiacal(1, :cursbv); end;
+1	Aries	20/03/15	19/04/15	
+################0################
+10/Oct/15 begin GET_GENERO(1, :cursbv); end;
+1	Masculino	
+################0################
+10/Oct/15 begin GET_INTERES_GUSTO(1, :cursbv); end;
+18	40	2	
+################0################
+10/Oct/15 begin GET_GENERO(2, :cursbv); end;
+2	Femenino	
+################0################
+10/Oct/15 begin GET_UsuarioXIdioma(0, :cursbv); end;
+################0################
+10/Oct/15 begin GET_ActividadXUsuario(0, :cursbv); end;
+Escalar	
+################0################
+10/Oct/15 begin GET_HobbyXUsuario(0, :cursbv); end;
+VideoGames	
+################0################
+10/Oct/15 begin GET_Winks(0, :cursbv); end;
+27/09/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Usuario(0, :cursbv); end;
+Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Religion(1, :cursbv); end;
+1	Pastafari	
+################0################
+10/Oct/15 begin GET_estado_Civil(1, :cursbv); end;
+1	Solo	
+################0################
+10/Oct/15 begin GET_Educacion(1, :cursbv); end;
+1	Bachiller	
+################0################
+10/Oct/15 begin GET_Ciudad(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Estado(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Pais(1, :cursbv); end;
+1	Costa Rica	
+################0################
+10/Oct/15 begin GET_Aspecto_Fisico(1, :cursbv); end;
+140	50	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Color_Ojos(1, :cursbv); end;
+1	Azul	
+################0################
+10/Oct/15 begin GET_Color_Piel(1, :cursbv); end;
+1	Amarillo	
+################0################
+10/Oct/15 begin GET_Color_Pelo(1, :cursbv); end;
+1	Cafe	
+################0################
+10/Oct/15 begin GET_Contextura(1, :cursbv); end;
+1	Delgado	
+################0################
+10/Oct/15 begin GET_Estilo_Vida(1, :cursbv); end;
+	3	2		2000		1	
+################0################
+10/Oct/15 begin GET_Tipo_Bebedor(1, :cursbv); end;
+1	Social	
+################0################
+10/Oct/15 begin GET_Signo_Zodiacal(1, :cursbv); end;
+1	Aries	20/03/15	19/04/15	
+################0################
+10/Oct/15 begin GET_GENERO(1, :cursbv); end;
+1	Masculino	
+################0################
+10/Oct/15 begin GET_INTERES_GUSTO(1, :cursbv); end;
+18	40	2	
+################0################
+10/Oct/15 begin GET_GENERO(2, :cursbv); end;
+2	Femenino	
+################0################
+10/Oct/15 begin GET_UsuarioXIdioma(0, :cursbv); end;
+################0################
+10/Oct/15 begin GET_ActividadXUsuario(0, :cursbv); end;
+Escalar	
+################0################
+10/Oct/15 begin GET_HobbyXUsuario(0, :cursbv); end;
+VideoGames	
+################0################
+10/Oct/15 begin GET_Winks(0, :cursbv); end;
+27/09/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Usuario(0, :cursbv); end;
+Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Religion(1, :cursbv); end;
+1	Pastafari	
+################0################
+10/Oct/15 begin GET_estado_Civil(1, :cursbv); end;
+1	Solo	
+################0################
+10/Oct/15 begin GET_Educacion(1, :cursbv); end;
+1	Bachiller	
+################0################
+10/Oct/15 begin GET_Ciudad(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Estado(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Pais(1, :cursbv); end;
+1	Costa Rica	
+################0################
+10/Oct/15 begin GET_Aspecto_Fisico(1, :cursbv); end;
+140	50	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Color_Ojos(1, :cursbv); end;
+1	Azul	
+################0################
+10/Oct/15 begin GET_Color_Piel(1, :cursbv); end;
+1	Amarillo	
+################0################
+10/Oct/15 begin GET_Color_Pelo(1, :cursbv); end;
+1	Cafe	
+################0################
+10/Oct/15 begin GET_Contextura(1, :cursbv); end;
+1	Delgado	
+################0################
+10/Oct/15 begin GET_Estilo_Vida(1, :cursbv); end;
+	3	2		2000		1	
+################0################
+10/Oct/15 begin GET_Tipo_Bebedor(1, :cursbv); end;
+1	Social	
+################0################
+10/Oct/15 begin GET_Signo_Zodiacal(1, :cursbv); end;
+1	Aries	20/03/15	19/04/15	
+################0################
+10/Oct/15 begin GET_GENERO(1, :cursbv); end;
+1	Masculino	
+################0################
+10/Oct/15 begin GET_INTERES_GUSTO(1, :cursbv); end;
+18	40	2	
+################0################
+10/Oct/15 begin GET_GENERO(2, :cursbv); end;
+2	Femenino	
+################0################
+10/Oct/15 begin GET_UsuarioXIdioma(0, :cursbv); end;
+################0################
+10/Oct/15 begin GET_ActividadXUsuario(0, :cursbv); end;
+Escalar	
+################0################
+10/Oct/15 begin GET_HobbyXUsuario(0, :cursbv); end;
+VideoGames	
+################0################
+10/Oct/15 begin GET_Winks(0, :cursbv); end;
+27/09/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Usuario(0, :cursbv); end;
+Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Religion(1, :cursbv); end;
+1	Pastafari	
+################0################
+10/Oct/15 begin GET_estado_Civil(1, :cursbv); end;
+1	Solo	
+################0################
+10/Oct/15 begin GET_Educacion(1, :cursbv); end;
+1	Bachiller	
+################0################
+10/Oct/15 begin GET_Ciudad(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Estado(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Pais(1, :cursbv); end;
+1	Costa Rica	
+################0################
+10/Oct/15 begin GET_Aspecto_Fisico(1, :cursbv); end;
+140	50	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Color_Ojos(1, :cursbv); end;
+1	Azul	
+################0################
+10/Oct/15 begin GET_Color_Piel(1, :cursbv); end;
+1	Amarillo	
+################0################
+10/Oct/15 begin GET_Color_Pelo(1, :cursbv); end;
+1	Cafe	
+################0################
+10/Oct/15 begin GET_Contextura(1, :cursbv); end;
+1	Delgado	
+################0################
+10/Oct/15 begin GET_Estilo_Vida(1, :cursbv); end;
+	3	2		2000		1	
+################0################
+10/Oct/15 begin GET_Tipo_Bebedor(1, :cursbv); end;
+1	Social	
+################0################
+10/Oct/15 begin GET_Signo_Zodiacal(1, :cursbv); end;
+1	Aries	20/03/15	19/04/15	
+################0################
+10/Oct/15 begin GET_GENERO(1, :cursbv); end;
+1	Masculino	
+################0################
+10/Oct/15 begin GET_INTERES_GUSTO(1, :cursbv); end;
+18	40	2	
+################0################
+10/Oct/15 begin GET_GENERO(2, :cursbv); end;
+2	Femenino	
+################0################
+10/Oct/15 begin GET_UsuarioXIdioma(0, :cursbv); end;
+################0################
+10/Oct/15 begin GET_ActividadXUsuario(0, :cursbv); end;
+Escalar	
+################0################
+10/Oct/15 begin GET_HobbyXUsuario(0, :cursbv); end;
+VideoGames	
+################0################
+10/Oct/15 begin GET_Winks(0, :cursbv); end;
+27/09/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Usuario(0, :cursbv); end;
+Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Religion(1, :cursbv); end;
+1	Pastafari	
+################0################
+10/Oct/15 begin GET_estado_Civil(1, :cursbv); end;
+1	Solo	
+################0################
+10/Oct/15 begin GET_Educacion(1, :cursbv); end;
+1	Bachiller	
+################0################
+10/Oct/15 begin GET_Ciudad(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Estado(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Pais(1, :cursbv); end;
+1	Costa Rica	
+################0################
+10/Oct/15 begin GET_Aspecto_Fisico(1, :cursbv); end;
+140	50	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Color_Ojos(1, :cursbv); end;
+1	Azul	
+################0################
+10/Oct/15 begin GET_Color_Piel(1, :cursbv); end;
+1	Amarillo	
+################0################
+10/Oct/15 begin GET_Color_Pelo(1, :cursbv); end;
+1	Cafe	
+################0################
+10/Oct/15 begin GET_Contextura(1, :cursbv); end;
+1	Delgado	
+################0################
+10/Oct/15 begin GET_Estilo_Vida(1, :cursbv); end;
+	3	2		2000		1	
+################0################
+10/Oct/15 begin GET_Tipo_Bebedor(1, :cursbv); end;
+1	Social	
+################0################
+10/Oct/15 begin GET_Signo_Zodiacal(1, :cursbv); end;
+1	Aries	20/03/15	19/04/15	
+################0################
+10/Oct/15 begin GET_GENERO(1, :cursbv); end;
+1	Masculino	
+################0################
+10/Oct/15 begin GET_INTERES_GUSTO(1, :cursbv); end;
+18	40	2	
+################0################
+10/Oct/15 begin GET_GENERO(2, :cursbv); end;
+2	Femenino	
+################0################
+10/Oct/15 begin GET_UsuarioXIdioma(0, :cursbv); end;
+################0################
+10/Oct/15 begin GET_ActividadXUsuario(0, :cursbv); end;
+Escalar	
+################0################
+10/Oct/15 begin GET_HobbyXUsuario(0, :cursbv); end;
+VideoGames	
+################0################
+10/Oct/15 begin GET_Winks(0, :cursbv); end;
+27/09/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Usuario(0, :cursbv); end;
+Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Religion(1, :cursbv); end;
+1	Pastafari	
+################0################
+10/Oct/15 begin GET_estado_Civil(1, :cursbv); end;
+1	Solo	
+################0################
+10/Oct/15 begin GET_Educacion(1, :cursbv); end;
+1	Bachiller	
+################0################
+10/Oct/15 begin GET_Ciudad(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Estado(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Pais(1, :cursbv); end;
+1	Costa Rica	
+################0################
+10/Oct/15 begin GET_Aspecto_Fisico(1, :cursbv); end;
+140	50	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Color_Ojos(1, :cursbv); end;
+1	Azul	
+################0################
+10/Oct/15 begin GET_Color_Piel(1, :cursbv); end;
+1	Amarillo	
+################0################
+10/Oct/15 begin GET_Color_Pelo(1, :cursbv); end;
+1	Cafe	
+################0################
+10/Oct/15 begin GET_Contextura(1, :cursbv); end;
+1	Delgado	
+################0################
+10/Oct/15 begin GET_Estilo_Vida(1, :cursbv); end;
+	3	2		2000		1	
+################0################
+10/Oct/15 begin GET_Tipo_Bebedor(1, :cursbv); end;
+1	Social	
+################0################
+10/Oct/15 begin GET_Signo_Zodiacal(1, :cursbv); end;
+1	Aries	20/03/15	19/04/15	
+################0################
+10/Oct/15 begin GET_GENERO(1, :cursbv); end;
+1	Masculino	
+################0################
+10/Oct/15 begin GET_INTERES_GUSTO(1, :cursbv); end;
+18	40	2	
+################0################
+10/Oct/15 begin GET_GENERO(2, :cursbv); end;
+2	Femenino	
+################0################
+10/Oct/15 begin GET_UsuarioXIdioma(0, :cursbv); end;
+################0################
+10/Oct/15 begin GET_ActividadXUsuario(0, :cursbv); end;
+Escalar	
+################0################
+10/Oct/15 begin GET_HobbyXUsuario(0, :cursbv); end;
+VideoGames	
+################0################
+10/Oct/15 begin GET_Winks(0, :cursbv); end;
+27/09/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Usuario(0, :cursbv); end;
+Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Religion(1, :cursbv); end;
+1	Pastafari	
+################0################
+10/Oct/15 begin GET_estado_Civil(1, :cursbv); end;
+1	Solo	
+################0################
+10/Oct/15 begin GET_Educacion(1, :cursbv); end;
+1	Bachiller	
+################0################
+10/Oct/15 begin GET_Ciudad(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Estado(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Pais(1, :cursbv); end;
+1	Costa Rica	
+################0################
+10/Oct/15 begin GET_Aspecto_Fisico(1, :cursbv); end;
+140	50	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Color_Ojos(1, :cursbv); end;
+1	Azul	
+################0################
+10/Oct/15 begin GET_Color_Piel(1, :cursbv); end;
+1	Amarillo	
+################0################
+10/Oct/15 begin GET_Color_Pelo(1, :cursbv); end;
+1	Cafe	
+################0################
+10/Oct/15 begin GET_Contextura(1, :cursbv); end;
+1	Delgado	
+################0################
+10/Oct/15 begin GET_Estilo_Vida(1, :cursbv); end;
+	3	2		2000		1	
+################0################
+10/Oct/15 begin GET_Tipo_Bebedor(1, :cursbv); end;
+1	Social	
+################0################
+10/Oct/15 begin GET_Signo_Zodiacal(1, :cursbv); end;
+1	Aries	20/03/15	19/04/15	
+################0################
+10/Oct/15 begin GET_GENERO(1, :cursbv); end;
+1	Masculino	
+################0################
+10/Oct/15 begin GET_INTERES_GUSTO(1, :cursbv); end;
+18	40	2	
+################0################
+10/Oct/15 begin GET_GENERO(2, :cursbv); end;
+2	Femenino	
+################0################
+10/Oct/15 begin GET_UsuarioXIdioma(0, :cursbv); end;
+################0################
+10/Oct/15 begin GET_ActividadXUsuario(0, :cursbv); end;
+Escalar	
+################0################
+10/Oct/15 begin GET_HobbyXUsuario(0, :cursbv); end;
+VideoGames	
+################0################
+10/Oct/15 begin GET_Winks(0, :cursbv); end;
+27/09/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Usuario(0, :cursbv); end;
+Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Religion(1, :cursbv); end;
+1	Pastafari	
+################0################
+10/Oct/15 begin GET_estado_Civil(1, :cursbv); end;
+1	Solo	
+################0################
+10/Oct/15 begin GET_Educacion(1, :cursbv); end;
+1	Bachiller	
+################0################
+10/Oct/15 begin GET_Ciudad(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Estado(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Pais(1, :cursbv); end;
+1	Costa Rica	
+################0################
+10/Oct/15 begin GET_Aspecto_Fisico(1, :cursbv); end;
+140	50	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Color_Ojos(1, :cursbv); end;
+1	Azul	
+################0################
+10/Oct/15 begin GET_Color_Piel(1, :cursbv); end;
+1	Amarillo	
+################0################
+10/Oct/15 begin GET_Color_Pelo(1, :cursbv); end;
+1	Cafe	
+################0################
+10/Oct/15 begin GET_Contextura(1, :cursbv); end;
+1	Delgado	
+################0################
+10/Oct/15 begin GET_Estilo_Vida(1, :cursbv); end;
+	3	2		2000		1	
+################0################
+10/Oct/15 begin GET_Tipo_Bebedor(1, :cursbv); end;
+1	Social	
+################0################
+10/Oct/15 begin GET_Signo_Zodiacal(1, :cursbv); end;
+1	Aries	20/03/15	19/04/15	
+################0################
+10/Oct/15 begin GET_GENERO(1, :cursbv); end;
+1	Masculino	
+################0################
+10/Oct/15 begin GET_INTERES_GUSTO(1, :cursbv); end;
+18	40	2	
+################0################
+10/Oct/15 begin GET_GENERO(2, :cursbv); end;
+2	Femenino	
+################0################
+10/Oct/15 begin GET_UsuarioXIdioma(0, :cursbv); end;
+################0################
+10/Oct/15 begin GET_ActividadXUsuario(0, :cursbv); end;
+Escalar	
+################0################
+10/Oct/15 begin GET_HobbyXUsuario(0, :cursbv); end;
+VideoGames	
+################0################
+10/Oct/15 begin GET_Winks(0, :cursbv); end;
+27/09/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Usuario(0, :cursbv); end;
+Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Religion(1, :cursbv); end;
+1	Pastafari	
+################0################
+10/Oct/15 begin GET_estado_Civil(1, :cursbv); end;
+1	Solo	
+################0################
+10/Oct/15 begin GET_Educacion(1, :cursbv); end;
+1	Bachiller	
+################0################
+10/Oct/15 begin GET_Ciudad(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Estado(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Pais(1, :cursbv); end;
+1	Costa Rica	
+################0################
+10/Oct/15 begin GET_Aspecto_Fisico(1, :cursbv); end;
+140	50	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Color_Ojos(1, :cursbv); end;
+1	Azul	
+################0################
+10/Oct/15 begin GET_Color_Piel(1, :cursbv); end;
+1	Amarillo	
+################0################
+10/Oct/15 begin GET_Color_Pelo(1, :cursbv); end;
+1	Cafe	
+################0################
+10/Oct/15 begin GET_Contextura(1, :cursbv); end;
+1	Delgado	
+################0################
+10/Oct/15 begin GET_Estilo_Vida(1, :cursbv); end;
+	3	2		2000		1	
+################0################
+10/Oct/15 begin GET_Tipo_Bebedor(1, :cursbv); end;
+1	Social	
+################0################
+10/Oct/15 begin GET_Signo_Zodiacal(1, :cursbv); end;
+1	Aries	20/03/15	19/04/15	
+################0################
+10/Oct/15 begin GET_GENERO(1, :cursbv); end;
+1	Masculino	
+################0################
+10/Oct/15 begin GET_INTERES_GUSTO(1, :cursbv); end;
+18	40	2	
+################0################
+10/Oct/15 begin GET_GENERO(2, :cursbv); end;
+2	Femenino	
+################0################
+10/Oct/15 begin GET_UsuarioXIdioma(0, :cursbv); end;
+################0################
+10/Oct/15 begin GET_ActividadXUsuario(0, :cursbv); end;
+Escalar	
+################0################
+10/Oct/15 begin GET_HobbyXUsuario(0, :cursbv); end;
+VideoGames	
+################0################
+10/Oct/15 begin GET_Winks(0, :cursbv); end;
+27/09/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Usuario(0, :cursbv); end;
+Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Religion(1, :cursbv); end;
+1	Pastafari	
+################0################
+10/Oct/15 begin GET_estado_Civil(1, :cursbv); end;
+1	Solo	
+################0################
+10/Oct/15 begin GET_Educacion(1, :cursbv); end;
+1	Bachiller	
+################0################
+10/Oct/15 begin GET_Ciudad(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Estado(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Pais(1, :cursbv); end;
+1	Costa Rica	
+################0################
+10/Oct/15 begin GET_Aspecto_Fisico(1, :cursbv); end;
+140	50	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Color_Ojos(1, :cursbv); end;
+1	Azul	
+################0################
+10/Oct/15 begin GET_Color_Piel(1, :cursbv); end;
+1	Amarillo	
+################0################
+10/Oct/15 begin GET_Color_Pelo(1, :cursbv); end;
+1	Cafe	
+################0################
+10/Oct/15 begin GET_Contextura(1, :cursbv); end;
+1	Delgado	
+################0################
+10/Oct/15 begin GET_Estilo_Vida(1, :cursbv); end;
+	3	2		2000		1	
+################0################
+10/Oct/15 begin GET_Tipo_Bebedor(1, :cursbv); end;
+1	Social	
+################0################
+10/Oct/15 begin GET_Signo_Zodiacal(1, :cursbv); end;
+1	Aries	20/03/15	19/04/15	
+################0################
+10/Oct/15 begin GET_GENERO(1, :cursbv); end;
+1	Masculino	
+################0################
+10/Oct/15 begin GET_INTERES_GUSTO(1, :cursbv); end;
+18	40	2	
+################0################
+10/Oct/15 begin GET_GENERO(2, :cursbv); end;
+2	Femenino	
+################0################
+10/Oct/15 begin GET_UsuarioXIdioma(0, :cursbv); end;
+################0################
+10/Oct/15 begin GET_ActividadXUsuario(0, :cursbv); end;
+Escalar	
+################0################
+10/Oct/15 begin GET_HobbyXUsuario(0, :cursbv); end;
+VideoGames	
+################0################
+10/Oct/15 begin GET_Winks(0, :cursbv); end;
+27/09/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Usuario(0, :cursbv); end;
+Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Religion(1, :cursbv); end;
+1	Pastafari	
+################0################
+10/Oct/15 begin GET_estado_Civil(1, :cursbv); end;
+1	Solo	
+################0################
+10/Oct/15 begin GET_Educacion(1, :cursbv); end;
+1	Bachiller	
+################0################
+10/Oct/15 begin GET_Ciudad(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Estado(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Pais(1, :cursbv); end;
+1	Costa Rica	
+################0################
+10/Oct/15 begin GET_Aspecto_Fisico(1, :cursbv); end;
+140	50	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Color_Ojos(1, :cursbv); end;
+1	Azul	
+################0################
+10/Oct/15 begin GET_Color_Piel(1, :cursbv); end;
+1	Amarillo	
+################0################
+10/Oct/15 begin GET_Color_Pelo(1, :cursbv); end;
+1	Cafe	
+################0################
+10/Oct/15 begin GET_Contextura(1, :cursbv); end;
+1	Delgado	
+################0################
+10/Oct/15 begin GET_Estilo_Vida(1, :cursbv); end;
+	3	2		2000		1	
+################0################
+10/Oct/15 begin GET_Tipo_Bebedor(1, :cursbv); end;
+1	Social	
+################0################
+10/Oct/15 begin GET_Signo_Zodiacal(1, :cursbv); end;
+1	Aries	20/03/15	19/04/15	
+################0################
+10/Oct/15 begin GET_GENERO(1, :cursbv); end;
+1	Masculino	
+################0################
+10/Oct/15 begin GET_INTERES_GUSTO(1, :cursbv); end;
+18	40	2	
+################0################
+10/Oct/15 begin GET_GENERO(2, :cursbv); end;
+2	Femenino	
+################0################
+10/Oct/15 begin GET_UsuarioXIdioma(0, :cursbv); end;
+################0################
+10/Oct/15 begin GET_ActividadXUsuario(0, :cursbv); end;
+Escalar	
+################0################
+10/Oct/15 begin GET_HobbyXUsuario(0, :cursbv); end;
+VideoGames	
+################0################
+10/Oct/15 begin GET_Winks(0, :cursbv); end;
+27/09/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Usuario(0, :cursbv); end;
+Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Religion(1, :cursbv); end;
+1	Pastafari	
+################0################
+10/Oct/15 begin GET_estado_Civil(1, :cursbv); end;
+1	Solo	
+################0################
+10/Oct/15 begin GET_Educacion(1, :cursbv); end;
+1	Bachiller	
+################0################
+10/Oct/15 begin GET_Ciudad(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Estado(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Pais(1, :cursbv); end;
+1	Costa Rica	
+################0################
+10/Oct/15 begin GET_Aspecto_Fisico(1, :cursbv); end;
+140	50	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Color_Ojos(1, :cursbv); end;
+1	Azul	
+################0################
+10/Oct/15 begin GET_Color_Piel(1, :cursbv); end;
+1	Amarillo	
+################0################
+10/Oct/15 begin GET_Color_Pelo(1, :cursbv); end;
+1	Cafe	
+################0################
+10/Oct/15 begin GET_Contextura(1, :cursbv); end;
+1	Delgado	
+################0################
+10/Oct/15 begin GET_Estilo_Vida(1, :cursbv); end;
+	3	2		2000		1	
+################0################
+10/Oct/15 begin GET_Tipo_Bebedor(1, :cursbv); end;
+1	Social	
+################0################
+10/Oct/15 begin GET_Signo_Zodiacal(1, :cursbv); end;
+1	Aries	20/03/15	19/04/15	
+################0################
+10/Oct/15 begin GET_GENERO(1, :cursbv); end;
+1	Masculino	
+################0################
+10/Oct/15 begin GET_INTERES_GUSTO(1, :cursbv); end;
+18	40	2	
+################0################
+10/Oct/15 begin GET_GENERO(2, :cursbv); end;
+2	Femenino	
+################0################
+10/Oct/15 begin GET_UsuarioXIdioma(0, :cursbv); end;
+################0################
+10/Oct/15 begin GET_ActividadXUsuario(0, :cursbv); end;
+Escalar	
+################0################
+10/Oct/15 begin GET_HobbyXUsuario(0, :cursbv); end;
+VideoGames	
+################0################
+10/Oct/15 begin GET_Winks(0, :cursbv); end;
+27/09/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Usuario(0, :cursbv); end;
+Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Religion(1, :cursbv); end;
+1	Pastafari	
+################0################
+10/Oct/15 begin GET_estado_Civil(1, :cursbv); end;
+1	Solo	
+################0################
+10/Oct/15 begin GET_Educacion(1, :cursbv); end;
+1	Bachiller	
+################0################
+10/Oct/15 begin GET_Ciudad(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Estado(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Pais(1, :cursbv); end;
+1	Costa Rica	
+################0################
+10/Oct/15 begin GET_Aspecto_Fisico(1, :cursbv); end;
+140	50	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Color_Ojos(1, :cursbv); end;
+1	Azul	
+################0################
+10/Oct/15 begin GET_Color_Piel(1, :cursbv); end;
+1	Amarillo	
+################0################
+10/Oct/15 begin GET_Color_Pelo(1, :cursbv); end;
+1	Cafe	
+################0################
+10/Oct/15 begin GET_Contextura(1, :cursbv); end;
+1	Delgado	
+################0################
+10/Oct/15 begin GET_Estilo_Vida(1, :cursbv); end;
+	3	2		2000		1	
+################0################
+10/Oct/15 begin GET_Tipo_Bebedor(1, :cursbv); end;
+1	Social	
+################0################
+10/Oct/15 begin GET_Signo_Zodiacal(1, :cursbv); end;
+1	Aries	20/03/15	19/04/15	
+################0################
+10/Oct/15 begin GET_GENERO(1, :cursbv); end;
+1	Masculino	
+################0################
+10/Oct/15 begin GET_INTERES_GUSTO(1, :cursbv); end;
+18	40	2	
+################0################
+10/Oct/15 begin GET_GENERO(2, :cursbv); end;
+2	Femenino	
+################0################
+10/Oct/15 begin GET_UsuarioXIdioma(0, :cursbv); end;
+################0################
+10/Oct/15 begin GET_ActividadXUsuario(0, :cursbv); end;
+Escalar	
+################0################
+10/Oct/15 begin GET_HobbyXUsuario(0, :cursbv); end;
+VideoGames	
+################0################
+10/Oct/15 begin GET_Winks(0, :cursbv); end;
+27/09/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Usuario(0, :cursbv); end;
+Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Religion(1, :cursbv); end;
+1	Pastafari	
+################0################
+10/Oct/15 begin GET_estado_Civil(1, :cursbv); end;
+1	Solo	
+################0################
+10/Oct/15 begin GET_Educacion(1, :cursbv); end;
+1	Bachiller	
+################0################
+10/Oct/15 begin GET_Ciudad(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Estado(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Pais(1, :cursbv); end;
+1	Costa Rica	
+################0################
+10/Oct/15 begin GET_Aspecto_Fisico(1, :cursbv); end;
+140	50	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Color_Ojos(1, :cursbv); end;
+1	Azul	
+################0################
+10/Oct/15 begin GET_Color_Piel(1, :cursbv); end;
+1	Amarillo	
+################0################
+10/Oct/15 begin GET_Color_Pelo(1, :cursbv); end;
+1	Cafe	
+################0################
+10/Oct/15 begin GET_Contextura(1, :cursbv); end;
+1	Delgado	
+################0################
+10/Oct/15 begin GET_Estilo_Vida(1, :cursbv); end;
+	3	2		2000		1	
+################0################
+10/Oct/15 begin GET_Tipo_Bebedor(1, :cursbv); end;
+1	Social	
+################0################
+10/Oct/15 begin GET_Signo_Zodiacal(1, :cursbv); end;
+1	Aries	20/03/15	19/04/15	
+################0################
+10/Oct/15 begin GET_GENERO(1, :cursbv); end;
+1	Masculino	
+################0################
+10/Oct/15 begin GET_INTERES_GUSTO(1, :cursbv); end;
+18	40	2	
+################0################
+10/Oct/15 begin GET_GENERO(2, :cursbv); end;
+2	Femenino	
+################0################
+10/Oct/15 begin GET_UsuarioXIdioma(0, :cursbv); end;
+################0################
+10/Oct/15 begin GET_ActividadXUsuario(0, :cursbv); end;
+Escalar	
+################0################
+10/Oct/15 begin GET_HobbyXUsuario(0, :cursbv); end;
+VideoGames	
+################0################
+10/Oct/15 begin GET_Winks(0, :cursbv); end;
+27/09/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Usuario(0, :cursbv); end;
+Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Religion(1, :cursbv); end;
+1	Pastafari	
+################0################
+10/Oct/15 begin GET_estado_Civil(1, :cursbv); end;
+1	Solo	
+################0################
+10/Oct/15 begin GET_Educacion(1, :cursbv); end;
+1	Bachiller	
+################0################
+10/Oct/15 begin GET_Ciudad(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Estado(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Pais(1, :cursbv); end;
+1	Costa Rica	
+################0################
+10/Oct/15 begin GET_Aspecto_Fisico(1, :cursbv); end;
+140	50	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Color_Ojos(1, :cursbv); end;
+1	Azul	
+################0################
+10/Oct/15 begin GET_Color_Piel(1, :cursbv); end;
+1	Amarillo	
+################0################
+10/Oct/15 begin GET_Color_Pelo(1, :cursbv); end;
+1	Cafe	
+################0################
+10/Oct/15 begin GET_Contextura(1, :cursbv); end;
+1	Delgado	
+################0################
+10/Oct/15 begin GET_Estilo_Vida(1, :cursbv); end;
+	3	2		2000		1	
+################0################
+10/Oct/15 begin GET_Tipo_Bebedor(1, :cursbv); end;
+1	Social	
+################0################
+10/Oct/15 begin GET_Signo_Zodiacal(1, :cursbv); end;
+1	Aries	20/03/15	19/04/15	
+################0################
+10/Oct/15 begin GET_GENERO(1, :cursbv); end;
+1	Masculino	
+################0################
+10/Oct/15 begin GET_INTERES_GUSTO(1, :cursbv); end;
+18	40	2	
+################0################
+10/Oct/15 begin GET_GENERO(2, :cursbv); end;
+2	Femenino	
+################0################
+10/Oct/15 begin GET_UsuarioXIdioma(0, :cursbv); end;
+################0################
+10/Oct/15 begin GET_ActividadXUsuario(0, :cursbv); end;
+Escalar	
+################0################
+10/Oct/15 begin GET_HobbyXUsuario(0, :cursbv); end;
+VideoGames	
+################0################
+10/Oct/15 begin GET_Winks(0, :cursbv); end;
+27/09/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Usuario(0, :cursbv); end;
+Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Religion(1, :cursbv); end;
+1	Pastafari	
+################0################
+10/Oct/15 begin GET_estado_Civil(1, :cursbv); end;
+1	Solo	
+################0################
+10/Oct/15 begin GET_Educacion(1, :cursbv); end;
+1	Bachiller	
+################0################
+10/Oct/15 begin GET_Ciudad(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Estado(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Pais(1, :cursbv); end;
+1	Costa Rica	
+################0################
+10/Oct/15 begin GET_Aspecto_Fisico(1, :cursbv); end;
+140	50	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Color_Ojos(1, :cursbv); end;
+1	Azul	
+################0################
+10/Oct/15 begin GET_Color_Piel(1, :cursbv); end;
+1	Amarillo	
+################0################
+10/Oct/15 begin GET_Color_Pelo(1, :cursbv); end;
+1	Cafe	
+################0################
+10/Oct/15 begin GET_Contextura(1, :cursbv); end;
+1	Delgado	
+################0################
+10/Oct/15 begin GET_Estilo_Vida(1, :cursbv); end;
+	3	2		2000		1	
+################0################
+10/Oct/15 begin GET_Tipo_Bebedor(1, :cursbv); end;
+1	Social	
+################0################
+10/Oct/15 begin GET_Signo_Zodiacal(1, :cursbv); end;
+1	Aries	20/03/15	19/04/15	
+################0################
+10/Oct/15 begin GET_GENERO(1, :cursbv); end;
+1	Masculino	
+################0################
+10/Oct/15 begin GET_INTERES_GUSTO(1, :cursbv); end;
+18	40	2	
+################0################
+10/Oct/15 begin GET_GENERO(2, :cursbv); end;
+2	Femenino	
+################0################
+10/Oct/15 begin GET_UsuarioXIdioma(0, :cursbv); end;
+################0################
+10/Oct/15 begin GET_ActividadXUsuario(0, :cursbv); end;
+Escalar	
+################0################
+10/Oct/15 begin GET_HobbyXUsuario(0, :cursbv); end;
+VideoGames	
+################0################
+10/Oct/15 begin GET_Winks(0, :cursbv); end;
+27/09/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Usuario(0, :cursbv); end;
+Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Religion(1, :cursbv); end;
+1	Pastafari	
+################0################
+10/Oct/15 begin GET_estado_Civil(1, :cursbv); end;
+1	Solo	
+################0################
+10/Oct/15 begin GET_Educacion(1, :cursbv); end;
+1	Bachiller	
+################0################
+10/Oct/15 begin GET_Ciudad(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Estado(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Pais(1, :cursbv); end;
+1	Costa Rica	
+################0################
+10/Oct/15 begin GET_Aspecto_Fisico(1, :cursbv); end;
+140	50	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Color_Ojos(1, :cursbv); end;
+1	Azul	
+################0################
+10/Oct/15 begin GET_Color_Piel(1, :cursbv); end;
+1	Amarillo	
+################0################
+10/Oct/15 begin GET_Color_Pelo(1, :cursbv); end;
+1	Cafe	
+################0################
+10/Oct/15 begin GET_Contextura(1, :cursbv); end;
+1	Delgado	
+################0################
+10/Oct/15 begin GET_Estilo_Vida(1, :cursbv); end;
+	3	2		2000		1	
+################0################
+10/Oct/15 begin GET_Tipo_Bebedor(1, :cursbv); end;
+1	Social	
+################0################
+10/Oct/15 begin GET_Signo_Zodiacal(1, :cursbv); end;
+1	Aries	20/03/15	19/04/15	
+################0################
+10/Oct/15 begin GET_GENERO(1, :cursbv); end;
+1	Masculino	
+################0################
+10/Oct/15 begin GET_INTERES_GUSTO(1, :cursbv); end;
+18	40	2	
+################0################
+10/Oct/15 begin GET_GENERO(2, :cursbv); end;
+2	Femenino	
+################0################
+10/Oct/15 begin GET_UsuarioXIdioma(0, :cursbv); end;
+################0################
+10/Oct/15 begin GET_ActividadXUsuario(0, :cursbv); end;
+Escalar	
+################0################
+10/Oct/15 begin GET_HobbyXUsuario(0, :cursbv); end;
+VideoGames	
+################0################
+10/Oct/15 begin GET_Winks(0, :cursbv); end;
+27/09/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Usuario(0, :cursbv); end;
+Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Religion(1, :cursbv); end;
+1	Pastafari	
+################0################
+10/Oct/15 begin GET_estado_Civil(1, :cursbv); end;
+1	Solo	
+################0################
+10/Oct/15 begin GET_Educacion(1, :cursbv); end;
+1	Bachiller	
+################0################
+10/Oct/15 begin GET_Ciudad(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Estado(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Pais(1, :cursbv); end;
+1	Costa Rica	
+################0################
+10/Oct/15 begin GET_Aspecto_Fisico(1, :cursbv); end;
+140	50	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Color_Ojos(1, :cursbv); end;
+1	Azul	
+################0################
+10/Oct/15 begin GET_Color_Piel(1, :cursbv); end;
+1	Amarillo	
+################0################
+10/Oct/15 begin GET_Color_Pelo(1, :cursbv); end;
+1	Cafe	
+################0################
+10/Oct/15 begin GET_Contextura(1, :cursbv); end;
+1	Delgado	
+################0################
+10/Oct/15 begin GET_Estilo_Vida(1, :cursbv); end;
+	3	2		2000		1	
+################0################
+10/Oct/15 begin GET_Tipo_Bebedor(1, :cursbv); end;
+1	Social	
+################0################
+10/Oct/15 begin GET_Signo_Zodiacal(1, :cursbv); end;
+1	Aries	20/03/15	19/04/15	
+################0################
+10/Oct/15 begin GET_GENERO(1, :cursbv); end;
+1	Masculino	
+################0################
+10/Oct/15 begin GET_INTERES_GUSTO(1, :cursbv); end;
+18	40	2	
+################0################
+10/Oct/15 begin GET_GENERO(2, :cursbv); end;
+2	Femenino	
+################0################
+10/Oct/15 begin GET_UsuarioXIdioma(0, :cursbv); end;
+################0################
+10/Oct/15 begin GET_ActividadXUsuario(0, :cursbv); end;
+Escalar	
+################0################
+10/Oct/15 begin GET_HobbyXUsuario(0, :cursbv); end;
+VideoGames	
+################0################
+10/Oct/15 begin GET_Winks(0, :cursbv); end;
+27/09/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Usuario(0, :cursbv); end;
+Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Religion(1, :cursbv); end;
+1	Pastafari	
+################0################
+10/Oct/15 begin GET_estado_Civil(1, :cursbv); end;
+1	Solo	
+################0################
+10/Oct/15 begin GET_Educacion(1, :cursbv); end;
+1	Bachiller	
+################0################
+10/Oct/15 begin GET_Ciudad(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Estado(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Pais(1, :cursbv); end;
+1	Costa Rica	
+################0################
+10/Oct/15 begin GET_Aspecto_Fisico(1, :cursbv); end;
+140	50	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Color_Ojos(1, :cursbv); end;
+1	Azul	
+################0################
+10/Oct/15 begin GET_Color_Piel(1, :cursbv); end;
+1	Amarillo	
+################0################
+10/Oct/15 begin GET_Color_Pelo(1, :cursbv); end;
+1	Cafe	
+################0################
+10/Oct/15 begin GET_Contextura(1, :cursbv); end;
+1	Delgado	
+################0################
+10/Oct/15 begin GET_Estilo_Vida(1, :cursbv); end;
+	3	2		2000		1	
+################0################
+10/Oct/15 begin GET_Tipo_Bebedor(1, :cursbv); end;
+1	Social	
+################0################
+10/Oct/15 begin GET_Signo_Zodiacal(1, :cursbv); end;
+1	Aries	20/03/15	19/04/15	
+################0################
+10/Oct/15 begin GET_GENERO(1, :cursbv); end;
+1	Masculino	
+################0################
+10/Oct/15 begin GET_INTERES_GUSTO(1, :cursbv); end;
+18	40	2	
+################0################
+10/Oct/15 begin GET_GENERO(2, :cursbv); end;
+2	Femenino	
+################0################
+10/Oct/15 begin GET_UsuarioXIdioma(0, :cursbv); end;
+################0################
+10/Oct/15 begin GET_ActividadXUsuario(0, :cursbv); end;
+Escalar	
+################0################
+10/Oct/15 begin GET_HobbyXUsuario(0, :cursbv); end;
+VideoGames	
+################0################
+10/Oct/15 begin GET_Winks(0, :cursbv); end;
+27/09/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Usuario(0, :cursbv); end;
+Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Religion(1, :cursbv); end;
+1	Pastafari	
+################0################
+10/Oct/15 begin GET_estado_Civil(1, :cursbv); end;
+1	Solo	
+################0################
+10/Oct/15 begin GET_Educacion(1, :cursbv); end;
+1	Bachiller	
+################0################
+10/Oct/15 begin GET_Ciudad(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Estado(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Pais(1, :cursbv); end;
+1	Costa Rica	
+################0################
+10/Oct/15 begin GET_Aspecto_Fisico(1, :cursbv); end;
+140	50	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Color_Ojos(1, :cursbv); end;
+1	Azul	
+################0################
+10/Oct/15 begin GET_Color_Piel(1, :cursbv); end;
+1	Amarillo	
+################0################
+10/Oct/15 begin GET_Color_Pelo(1, :cursbv); end;
+1	Cafe	
+################0################
+10/Oct/15 begin GET_Contextura(1, :cursbv); end;
+1	Delgado	
+################0################
+10/Oct/15 begin GET_Estilo_Vida(1, :cursbv); end;
+	3	2		2000		1	
+################0################
+10/Oct/15 begin GET_Tipo_Bebedor(1, :cursbv); end;
+1	Social	
+################0################
+10/Oct/15 begin GET_Signo_Zodiacal(1, :cursbv); end;
+1	Aries	20/03/15	19/04/15	
+################0################
+10/Oct/15 begin GET_GENERO(1, :cursbv); end;
+1	Masculino	
+################0################
+10/Oct/15 begin GET_INTERES_GUSTO(1, :cursbv); end;
+18	40	2	
+################0################
+10/Oct/15 begin GET_GENERO(2, :cursbv); end;
+2	Femenino	
+################0################
+10/Oct/15 begin GET_UsuarioXIdioma(0, :cursbv); end;
+################0################
+10/Oct/15 begin GET_ActividadXUsuario(0, :cursbv); end;
+Escalar	
+################0################
+10/Oct/15 begin GET_HobbyXUsuario(0, :cursbv); end;
+VideoGames	
+################0################
+10/Oct/15 begin GET_Winks(0, :cursbv); end;
+27/09/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Usuario(0, :cursbv); end;
+Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Winks(0, :cursbv); end;
+27/09/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Usuario(0, :cursbv); end;
+Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Winks(0, :cursbv); end;
+27/09/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Usuario(0, :cursbv); end;
+Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Ciudad(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Estado(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Pais(1, :cursbv); end;
+1	Costa Rica	
+################0################
+10/Oct/15 begin GET_Estilo_Vida(1, :cursbv); end;
+	3	2		2000		1	
+################0################
+10/Oct/15 begin GET_Winks(0, :cursbv); end;
+27/09/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Usuario(0, :cursbv); end;
+Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Ciudad(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Estado(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Pais(1, :cursbv); end;
+1	Costa Rica	
+################0################
+10/Oct/15 begin GET_Estilo_Vida(1, :cursbv); end;
+	3	2		2000		1	
+################0################
+10/Oct/15 begin GET_Winks(0, :cursbv); end;
+27/09/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Usuario(0, :cursbv); end;
+Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Ciudad(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Estado(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Pais(1, :cursbv); end;
+1	Costa Rica	
+################0################
+10/Oct/15 begin GET_Estilo_Vida(1, :cursbv); end;
+	3	2		2000		1	
+################0################
+10/Oct/15 begin GET_Aspecto_Fisico(1, :cursbv); end;
+140	50	1	1	1	1	
+################0################
+10/Oct/15 begin GET_INTERES_GUSTO(1, :cursbv); end;
+18	40	2	
+################0################
+10/Oct/15 begin GET_GENERO(2, :cursbv); end;
+2	Femenino	
+################0################
+10/Oct/15 begin GET_Winks(0, :cursbv); end;
+27/09/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Usuario(0, :cursbv); end;
+Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Ciudad(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Estado(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Pais(1, :cursbv); end;
+1	Costa Rica	
+################0################
+10/Oct/15 begin GET_Estilo_Vida(1, :cursbv); end;
+	3	2		2000		1	
+################0################
+10/Oct/15 begin GET_Aspecto_Fisico(1, :cursbv); end;
+140	50	1	1	1	1	
+################0################
+10/Oct/15 begin GET_INTERES_GUSTO(1, :cursbv); end;
+18	40	2	
+################0################
+10/Oct/15 begin GET_GENERO(2, :cursbv); end;
+2	Femenino	
+################0################
+10/Oct/15 begin GET_GENERO(1, :cursbv); end;
+1	Masculino	
+################0################
+10/Oct/15 begin GET_Winks(0, :cursbv); end;
+27/09/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Usuario(0, :cursbv); end;
+Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Ciudad(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Estado(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Pais(1, :cursbv); end;
+1	Costa Rica	
+################0################
+10/Oct/15 begin GET_Estilo_Vida(1, :cursbv); end;
+	3	2		2000		1	
+################0################
+10/Oct/15 begin GET_Aspecto_Fisico(1, :cursbv); end;
+140	50	1	1	1	1	
+################0################
+10/Oct/15 begin GET_INTERES_GUSTO(1, :cursbv); end;
+18	40	2	
+################0################
+10/Oct/15 begin GET_GENERO(2, :cursbv); end;
+2	Femenino	
+################0################
+10/Oct/15 begin GET_GENERO(1, :cursbv); end;
+1	Masculino	
+################0################
+10/Oct/15 begin GET_Winks(0, :cursbv); end;
+27/09/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Pais(null, :cursbv); end;
+1	Costa Rica	
+2	Mongolia	
+################0################
+10/Oct/15 begin GET_Estado(null, :cursbv); end;
+2	Alajuela	1	
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_CIUDAD(null, :cursbv); end;
+3	Aserri	1	
+2	San Carlos	2	
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_UsuariosXMatch(null, :cursbv); end;
+26/09/15	1	
+26/09/15	0	
+################0################
+10/Oct/15 begin GET_EVENTO(null, :cursbv); end;
+Cumpleanos de Roger		20/03/15	1	
+jeffrey	casa loca	26/05/15	1	
+################0################
+10/Oct/15 begin GET_Signo_Zodiacal(null, :cursbv); end;
+11	Acuario	20/01/15	17/02/15	
+1	Aries	20/03/15	19/04/15	
+4		21/06/15	22/07/15	
+10	Capricornio	22/12/15	19/01/15	
+8	Escorpio	23/10/15	21/11/15	
+3		21/05/15	20/06/15	
+5	Leo	23/07/15	22/08/15	
+7	Libra	23/09/15	22/10/15	
+12	Piscis	18/02/15	19/03/15	
+9	Sagitario	22/11/15	21/12/15	
+2	Tauro	20/04/15	20/05/15	
+6	Virgo	23/08/15	22/09/15	
+################0################
+10/Oct/15 begin GET_Rol(null, :cursbv); end;
+1	Administrador	
+2	Usuario general	
+################0################
+10/Oct/15 begin GET_Religion(null, :cursbv); end;
+2	Catolica	
+1	Pastafari	
+################0################
+10/Oct/15 begin GET_Idioma(null, :cursbv); end;
+2	arabe	
+1		
+################0################
+10/Oct/15 begin GET_Educacion(null, :cursbv); end;
+1	Bachiller	
+################0################
+10/Oct/15 begin GET_Hobby(null, :cursbv); end;
+1	VideoGames	
+################0################
+10/Oct/15 begin GET_ActividadAL(null, :cursbv); end;
+Correr	
+Escalar	
+################0################
+10/Oct/15 begin GET_Tipo_Bebedor(null, :cursbv); end;
+1	Social	
+################0################
+10/Oct/15 begin GET_Ocupacion(null, :cursbv); end;
+Programador	
+################0################
+10/Oct/15 begin GET_Color_Ojos(null, :cursbv); end;
+1	Azul	
+2	Verdes	
+################0################
+10/Oct/15 begin GET_Color_Piel(null, :cursbv); end;
+1	Amarillo	
+2	Blanca	
+################0################
+10/Oct/15 begin GET_Color_Pelo(null, :cursbv); end;
+1	Cafe	
+################0################
+10/Oct/15 begin GET_Contextura(null, :cursbv); end;
+1	Delgado	
+2	Gruesa	
+################0################
+10/Oct/15 begin GET_Estado_Match(null, :cursbv); end;
+Encontro pareja	
+################0################
+10/Oct/15 begin GET_Estado_Civil(null, :cursbv); end;
+1	Solo	
+################0################
+10/Oct/15 begin GET_Genero(null, :cursbv); end;
+2	Femenino	
+1	Masculino	
+################0################
+10/Oct/15 begin GET_Usuario(0, :cursbv); end;
+Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Ciudad(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Estado(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Pais(1, :cursbv); end;
+1	Costa Rica	
+################0################
+10/Oct/15 begin GET_Estilo_Vida(1, :cursbv); end;
+	3	2		2000		1	
+################0################
+10/Oct/15 begin GET_Aspecto_Fisico(1, :cursbv); end;
+140	50	1	1	1	1	
+################0################
+10/Oct/15 begin GET_INTERES_GUSTO(1, :cursbv); end;
+18	40	2	
+################0################
+10/Oct/15 begin GET_GENERO(2, :cursbv); end;
+2	Femenino	
+################0################
+10/Oct/15 begin GET_GENERO(1, :cursbv); end;
+1	Masculino	
+################0################
+10/Oct/15 begin GET_Winks(0, :cursbv); end;
+27/09/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Usuario(0, :cursbv); end;
+Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Religion(1, :cursbv); end;
+1	Pastafari	
+################0################
+10/Oct/15 begin GET_estado_Civil(1, :cursbv); end;
+1	Solo	
+################0################
+10/Oct/15 begin GET_Educacion(1, :cursbv); end;
+1	Bachiller	
+################0################
+10/Oct/15 begin GET_Ciudad(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Estado(1, :cursbv); end;
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_Pais(1, :cursbv); end;
+1	Costa Rica	
+################0################
+10/Oct/15 begin GET_Aspecto_Fisico(1, :cursbv); end;
+140	50	1	1	1	1	
+################0################
+10/Oct/15 begin GET_Color_Ojos(1, :cursbv); end;
+1	Azul	
+################0################
+10/Oct/15 begin GET_Color_Piel(1, :cursbv); end;
+1	Amarillo	
+################0################
+10/Oct/15 begin GET_Color_Pelo(1, :cursbv); end;
+1	Cafe	
+################0################
+10/Oct/15 begin GET_Contextura(1, :cursbv); end;
+1	Delgado	
+################0################
+10/Oct/15 begin GET_Estilo_Vida(1, :cursbv); end;
+	3	2		2000		1	
+################0################
+10/Oct/15 begin GET_Tipo_Bebedor(1, :cursbv); end;
+1	Social	
+################0################
+10/Oct/15 begin GET_Signo_Zodiacal(1, :cursbv); end;
+1	Aries	20/03/15	19/04/15	
+################0################
+10/Oct/15 begin GET_GENERO(1, :cursbv); end;
+1	Masculino	
+################0################
+10/Oct/15 begin GET_INTERES_GUSTO(1, :cursbv); end;
+18	40	2	
+################0################
+10/Oct/15 begin GET_GENERO(2, :cursbv); end;
+2	Femenino	
+################0################
+10/Oct/15 begin GET_UsuarioXIdioma(0, :cursbv); end;
+################0################
+10/Oct/15 begin GET_ActividadXUsuario(0, :cursbv); end;
+Escalar	
+################0################
+10/Oct/15 begin GET_HobbyXUsuario(0, :cursbv); end;
+VideoGames	
+################0################
+10/Oct/15 begin GET_Winks(0, :cursbv); end;
+27/09/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Bitacora_visita(0, :cursbv); end;
+14/10/15	1	
+################0################
+10/Oct/15 begin GET_Pais(null, :cursbv); end;
+1	Costa Rica	
+2	Mongolia	
+################0################
+10/Oct/15 begin GET_Estado(null, :cursbv); end;
+2	Alajuela	1	
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_CIUDAD(null, :cursbv); end;
+3	Aserri	1	
+2	San Carlos	2	
+1	San Jose	1	
+################0################
+10/Oct/15 begin GET_UsuariosXMatch(null, :cursbv); end;
+26/09/15	1	
+26/09/15	0	
+################0################
+10/Oct/15 begin GET_EVENTO(null, :cursbv); end;
+Cumpleanos de Roger		20/03/15	1	
+jeffrey	casa loca	26/05/15	1	
+################0################
+10/Oct/15 begin GET_Signo_Zodiacal(null, :cursbv); end;
+11	Acuario	20/01/15	17/02/15	
+1	Aries	20/03/15	19/04/15	
+4		21/06/15	22/07/15	
+10	Capricornio	22/12/15	19/01/15	
+8	Escorpio	23/10/15	21/11/15	
+3		21/05/15	20/06/15	
+5	Leo	23/07/15	22/08/15	
+7	Libra	23/09/15	22/10/15	
+12	Piscis	18/02/15	19/03/15	
+9	Sagitario	22/11/15	21/12/15	
+2	Tauro	20/04/15	20/05/15	
+6	Virgo	23/08/15	22/09/15	
+################0################
+10/Oct/15 begin GET_Rol(null, :cursbv); end;
+1	Administrador	
+2	Usuario general	
+################0################
+10/Oct/15 begin GET_Religion(null, :cursbv); end;
+2	Catolica	
+1	Pastafari	
+################0################
+10/Oct/15 begin GET_Idioma(null, :cursbv); end;
+2	arabe	
+1		
+################0################
+10/Oct/15 begin GET_Educacion(null, :cursbv); end;
+1	Bachiller	
+################0################
+10/Oct/15 begin GET_Hobby(null, :cursbv); end;
+1	VideoGames	
+################0################
+10/Oct/15 begin GET_ActividadAL(null, :cursbv); end;
+Correr	
+Escalar	
+################0################
+10/Oct/15 begin GET_Tipo_Bebedor(null, :cursbv); end;
+1	Social	
+################0################
+10/Oct/15 begin GET_Ocupacion(null, :cursbv); end;
+Programador	
+################0################
+10/Oct/15 begin GET_Color_Ojos(null, :cursbv); end;
+1	Azul	
+2	Verdes	
+################0################
+10/Oct/15 begin GET_Color_Piel(null, :cursbv); end;
+1	Amarillo	
+2	Blanca	
+################0################
+10/Oct/15 begin GET_Color_Pelo(null, :cursbv); end;
+1	Cafe	
+################0################
+10/Oct/15 begin GET_Contextura(null, :cursbv); end;
+1	Delgado	
+2	Gruesa	
+################0################
+10/Oct/15 begin GET_Estado_Match(null, :cursbv); end;
+Encontro pareja	
+################0################
+10/Oct/15 begin GET_Estado_Civil(null, :cursbv); end;
+1	Solo	
+################0################
+10/Oct/15 begin GET_Genero(null, :cursbv); end;
+2	Femenino	
+1	Masculino	
+################0################
