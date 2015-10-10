@@ -68,13 +68,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				
 				<label class="col-md-6" for="Evento">Evento</label>
 				<select class="col-md-6 selector" name="Evento" id="Evento">
-					<option value="">Seleccione un evento</option>
+					<option value="">Seleccione un evento</option>			
+					
 					<?php for($i = 0; $i < count($arrayQuery["EVENTO"]["NOMBRE"]); $i++){ ?>
-						<option class="<?php echo $arrayQuery["EVENTO"]["ID_CIUDAD"][$i] ?>"
-								value="<?php echo $arrayQuery["EVENTO"]["ID_CIUDAD"][$i] ?>">
+						<option value="<?php echo $arrayQuery["EVENTO"]["ID_CIUDAD"][$i] ?>">
 							<?php echo $arrayQuery["EVENTO"]["NOMBRE"][$i] ?>
 						</option>
 					<?php } ?>
+					
+					
 				</select>
 				
 				<input type="button" name="send" class="submit action-button" value="Enviar" onclick="enviar_mensaje()"/>

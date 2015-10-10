@@ -22,7 +22,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<span class="menu2"><img src="images/menu.png" alt=""> <lable> MENU</lable></span>
 						<ul class="effct1" style="display: none;">
 							<li><a href="profile.php?edit=1.php">Editar Perfil</a></li>  
-							<li><a href="login.php" onclick = $user_id = -1 >Cerrar Sesion</a></li>  
+							<li><a href="login.php" onclick = <?php $user_id = -1 ?> >Cerrar Sesion</a></li>  
 						</ul>
 					</div>
 					<!-- FICHA PERFIL -->
@@ -69,7 +69,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 											</form>
 										</-->
 										<div class="search-btm">
-											<div class="temp">
+											<!--div  class="temp">
 												<div class="temp-right">
 													<p class="date">
 														<?php echo date("D, m/y"); ?>
@@ -90,7 +90,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 												<div class="temp-left">
 													<img src="images/cloud.png" alt="">
 												</div>															
-											</div>
+											</div -->
 											<div class="jobs">
 												<ul>
 													<li><a href="#">Jobs</a></li>

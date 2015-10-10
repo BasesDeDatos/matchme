@@ -127,7 +127,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		$arrayQuery["ESTADO"] 	= queryCursor($conexion, "begin GET_Estado(null, :cursbv); end;");
 		$arrayQuery["CIUDAD"] 	= queryCursor($conexion, "begin GET_CIUDAD(null, :cursbv); end;");
 		$arrayQuery["MATCH"] 	= queryCursor($conexion, "begin GET_UsuariosXMatch(null, :cursbv); end;");
-		
+		$arrayQuery["EVENTO"] 	= queryCursor($conexion, "begin GET_EVENTO(null, :cursbv); end;");
 		$arrayQuery["SIGNO_ZODIACAL"] = queryCursor($conexion, "begin GET_Signo_Zodiacal(null, :cursbv); end;");
 		
 		$arrayQuery["ROL"] = queryCursor($conexion, "begin GET_Rol(null, :cursbv); end;");
@@ -175,9 +175,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		$evento =
     	queryFunction($conexion, 
     		"begin :value := REGISTRAR_Evento(
-					{$_POST["nombre_eventos"]},
-					{$_POST["descripcion_eventos"]},
-					to_date('{$_POST["fecha_nacimiento"]}', 'yyyy-mm-dd'),
+					'{$_POST["nombre_eventos"]}',
+					'{$_POST["descripcion_eventos"]}',
+					to_date('{$_POST["fecha_eventos"]}', 'yyyy-mm-dd'),
     				{$_POST["ciudad_eventos"]}
     			);
     		end;");
@@ -309,7 +309,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					'{$_POST["nombre"]}',
 					'{$_POST["primer_apellido"]}',
     				'{$_POST["segundo_apellido"]}',
-    				to_date(''{$_POST["fecha_nacimiento"]}'', 'yyyy-mm-dd'),
+    				to_date('{$_POST["fecha_nacimiento"]}', 'yyyy-mm-dd'),
     				'{$_POST["email"]}',
     				'{$_POST["Foto"]}',
     				{$_POST["genero"]},
