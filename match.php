@@ -140,7 +140,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								<h5>
 										<?php echo $recomendacion["EMAIL"][0] ?>	
 								</h5>								
-								<p>									 
+								<!--p>									 
 										<?php echo $recomendacion["ID_ESTILOVIDA"]["SLOGAN"][0] ?>
 								</p>								
 								<hr/>
@@ -180,7 +180,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 									</li>
 								</ul>
 							</div>
-							<input type="button" name="wink" class="next action-button" value="Dar un wink"/>
+							<input type="button" name="wink" class="next action-button" value="Dar un wink"/-->
 					</div>	
 				</div>
 			</div>
