@@ -75,6 +75,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				</div>	
 			</div>
 		</div>
+		<!--PORCENTAJES-->
 		<div class="col-md-4">
 			<div class="circles">
 					<h3>Recomendaciones</h3>
@@ -115,69 +116,73 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					</script>
 			</div>
 		</div>
-		<div class="col-md-4">
-			<div class="content-right">
+		<!--MATCHES-->
+		<?php foreach($arrayQuery["MATCH"]["ID_RECOMENDACION"] as $recomendacion){ ?>
+			<div class="col-md-4">
 				<div class="content-right">
-						<div class="cntnt-img">
-						</div>
-						<div class="bnr-img">
-							<img src= <?php echo "profile_pics/".$arrayQuery["FOTO"][0] ?> alt=""/>
-						</div>
-						<div class="bnr-text">
-							
-							<a href = "profile.php?user_id=29"><h1>
-								<?php echo $arrayQuery["NOMBRE"][0]." ".$arrayQuery["PRIMER_APELLIDO"][0]." ".$arrayQuery["SEGUNDO_APELLIDO"][0] ?>	
-							</h1></a>
-							
-							<h5>
-									<?php echo $arrayQuery["EMAIL"][0] ?>
-
-							</h5>
-							
-							<p>
-								 
-									<?php echo $arrayQuery["ID_ESTILOVIDA"]["SLOGAN"][0] ?>
-							</p>
-							
-							<hr/>
-							<div class="resumen">
-								<p>
-									Genero: <?php echo $arrayQuery["ID_GENERO"]["NOMBRE"][0]?>
-
-								</p>
-
-								
-								<p>
-									Edad: <?php echo $arrayQuery["EDAD"][0] ?>
-								</p>
-								
-								<p>
-									Ubicación: <?php echo $arrayQuery["ID_CIUDAD"]["NOMBRE"][0].", ".$arrayQuery["ID_CIUDAD"]["ID_ESTADO"]["NOMBRE"][0].", ".$arrayQuery["ID_CIUDAD"]["ID_ESTADO"]["ID_PAIS"]["NOMBRE"][0]?>
-								</p>
-								<p>Altura: <?php echo $arrayQuery["ID_ASPECTOF"]["ALTURA"][0] ?> </p>
-								<p>Peso: <?php echo $arrayQuery["ID_ASPECTOF"]["PESO"][0] ?> </p>
-								<p>Busco: <?php echo $arrayQuery["ID_INTERES_GUSTO"]["ID_GENERO"]["NOMBRE"][0]."s"?> </p>
-								<p>Entre: <?php echo $arrayQuery["ID_INTERES_GUSTO"]["RANGO_EDADI"][0]." y ".$arrayQuery["ID_INTERES_GUSTO"]["RANGO_EDADF"][0] ?></p>
+					<div class="content-right">
+							<div class="cntnt-img">
 							</div>
-						</div>
-						<div class="btm-num">
-							<ul>
-								<li>
-									<h4><?php echo count($arrayQuery["WINK"]["ID_ENVIADO"])?></h4>
-									<h5>Winks</h5>
-								</li>
-								<li>
-									<h4><?php echo count($arrayQuery["VISITAS"]["ID_VISITANTE"])?></h4>
-									<h5>Visitas</h5>
-								</li>
-								<li>
-									<h4>60</h4>
-									<h5>Matches</h5>
-								</li>
-							</ul>
-						</div>
-						<input type="button" name="wink" class="next action-button" value="Dar un wink"/>
-				</div>	
+							<div class="bnr-img">
+								<img src= <?php echo "profile_pics/".$recomendacion["FOTO"][0] ?> alt=""/>
+							</div>
+							<div class="bnr-text">
+								
+								<a href = "profile.php?user_id=29"><h1>
+									<?php echo $recomendacion["NOMBRE"][0]." ".$recomendacion["PRIMER_APELLIDO"][0]." ".$recomendacion["SEGUNDO_APELLIDO"][0] ?>	
+								</h1></a>
+								
+								<h5>
+										<?php echo $recomendacion["EMAIL"][0] ?>
+	
+								</h5>
+								
+								<p>
+									 
+										<?php echo $recomendacion["ID_ESTILOVIDA"]["SLOGAN"][0] ?>
+								</p>
+								
+								<hr/>
+								<div class="resumen">
+									<p>
+										Genero: <?php echo $recomendacion["ID_GENERO"]["NOMBRE"][0]?>
+	
+									</p>
+	
+									
+									<p>
+										Edad: <?php echo $recomendacion["EDAD"][0] ?>
+									</p>
+									
+									<p>
+										Ubicación: <?php echo $recomendacion["ID_CIUDAD"]["NOMBRE"][0].", ".$recomendacion["ID_CIUDAD"]["ID_ESTADO"]["NOMBRE"][0].", ".$recomendacion["ID_CIUDAD"]["ID_ESTADO"]["ID_PAIS"]["NOMBRE"][0]?>
+									</p>
+									<p>Altura: <?php echo $recomendacion["ID_ASPECTOF"]["ALTURA"][0] ?> </p>
+									<p>Peso: <?php echo $recomendacion["ID_ASPECTOF"]["PESO"][0] ?> </p>
+									<p>Busco: <?php echo $recomendacion["ID_INTERES_GUSTO"]["ID_GENERO"]["NOMBRE"][0]."s"?> </p>
+									<p>Entre: <?php echo $recomendacion["ID_INTERES_GUSTO"]["RANGO_EDADI"][0]." y ".$recomendacion["ID_INTERES_GUSTO"]["RANGO_EDADF"][0] ?></p>
+								</div>
+							</div>
+							<div class="btm-num">
+								<ul>
+									<li>
+										<h4><?php echo count($recomendacion["WINK"]["ID_ENVIADO"])?></h4>
+										<h5>Winks</h5>
+									</li>
+									<li>
+										<h4><?php echo count($recomendacion["VISITAS"]["ID_VISITANTE"])?></h4>
+										<h5>Visitas</h5>
+									</li>
+									<li>
+										<h4>60</h4>
+										<h5>Matches</h5>
+									</li>
+								</ul>
+							</div>
+							<input type="button" name="wink" class="next action-button" value="Dar un wink"/>
+					</div>	
+				</div>
 			</div>
-		</div>
+		<?php } ?>
+		
 	<?php require_once("footer.php") ?>
