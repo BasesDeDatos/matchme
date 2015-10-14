@@ -22,7 +22,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<span class="menu2"><img src="images/menu.png" alt=""> <lable> MENU</lable></span>
 						<ul class="effct1" style="display: none;">
 							<li><a href="profile.php?edit=1.php">Editar Perfil</a></li>  
-							<li><a href="login.php" onclick = <?php $user_id = -1 ?> >Cerrar Sesion</a></li>  
+							<li><a href="login.php" onclick = <?php $_SESSION["active_user_id"] = "" ?> >Cerrar Sesion</a></li>  
 							<?php if ($arrayQuery ["ID_ROL"][0] == 1 ){?>
 								<li><a href="admin.php">Opciones de administrador</a></li>  
 							<?php }	?>

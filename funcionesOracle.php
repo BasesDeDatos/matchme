@@ -190,6 +190,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	}
 	
 	if (!empty($_POST) && $_POST["mode"] == "registrar_evento"){
+		
 		$evento =
     	queryFunction($conexion, 
     		"begin :value := REGISTRAR_Evento(
@@ -199,6 +200,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     				{$_POST["ciudad_eventos"]}
     			);
     		end;");
+    	/*for($i = 0; $i < count($arrayQuery["ESTADO"]["NOMBRE"]); $i++){
+	    	queryFunction($conexion, 
+	    		"begin :value := REGISTRAR_USUARIOXEVENTO(
+						{$_POST["secu_evento.CurrVal"]},
+						{$_POST["ID_usuario"]}
+	    			);
+	    		end;");
+    	}*/
 	}
 	
 	if (!empty($_POST) && $_POST["mode"] == "editar_catalogo"){

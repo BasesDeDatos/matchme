@@ -30,39 +30,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<input class="col-md-6" type="text" name="subject" id="subject" placeholder="Asunto" />
 				<input class="col-md-6" type="textarea" name="mensaje" id="mensaje" placeholder="Nuevo mensaje de invitación" />
 
-				<!--label class="col-md-6" for="Pais0">País</label>
-				<select class="col-md-6 selector" name="Pais" id="Pais0" >
-					<option value="">Seleccione un país</option>
-					<?php for($i = 0; $i < count($arrayQuery["PAIS"]["NOMBRE"]); $i++){ ?>
-						<option class="<?php echo $arrayQuery["PAIS"]["ID_PAIS"][$i] ?>"
-								value="<?php echo $arrayQuery["PAIS"]["ID_PAIS"][$i] ?>">
-							<?php echo $arrayQuery["PAIS"]["NOMBRE"][$i] ?>
-						</option>
-					<?php } ?>
-				</select>
-				
-				<label class="col-md-6" for="Estado0">Estado</label>
-				<select class="col-md-6 selector" name="Estado" id="Estado0">
-					<option value="">Seleccione un estado</option>
-					<?php for($i = 0; $i < count($arrayQuery["ESTADO"]["NOMBRE"]); $i++){ ?>
-						<option class="<?php echo $arrayQuery["ESTADO"]["ID_PAIS"][$i] ?>"
-								value="<?php echo $arrayQuery["ESTADO"]["ID_ESTADO"][$i] ?>">
-							<?php echo $arrayQuery["ESTADO"]["NOMBRE"][$i] ?>
-						</option>
-					<?php } ?>
-				</select>
-				
-				<label class="col-md-6" for="Ciudad0">Ciudad</label>
-				<select class="col-md-6 selector" name="Ciudad" id="Ciudad0">
-					<option value="">Seleccione una ciudad</option>
-					<?php for($i = 0; $i < count($arrayQuery["CIUDAD"]["NOMBRE"]); $i++){ ?>
-						<option class="<?php echo $arrayQuery["CIUDAD"]["ID_ESTADO"][$i] ?>"
-								value="<?php echo $arrayQuery["CIUDAD"]["ID_CIUDAD"][$i] ?>">
-							<?php echo $arrayQuery["CIUDAD"]["NOMBRE"][$i] ?>
-						</option>
-					<?php } ?>
-				</select-->
-				
 				<label class="col-md-6" for="Evento">Evento</label>
 				<select class="col-md-6 selector" name="Evento" id="Evento">
 					<option value="">Seleccione un evento</option>			
