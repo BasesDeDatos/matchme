@@ -11,6 +11,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		$user_id = $_SESSION["active_user_id"];
 		include ("funcionesOracle.php");
 		?>
+		
+		<pre id= "debug">
+		<?php var_dump ($arrayQuery["MATCH"]); ?>
+		</pre>
+		
 		<div class="col-md-4">
 			<div class="content-right">
 				<div class="content-right">
@@ -127,21 +132,17 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								<img src= <?php echo "profile_pics/".$recomendacion["FOTO"][0] ?> alt=""/>
 							</div>
 							<div class="bnr-text">
-								
-								<a href = "profile.php?user_id=29"><h1>
-									<?php echo $recomendacion["NOMBRE"][0]." ".$recomendacion["PRIMER_APELLIDO"][0]." ".$recomendacion["SEGUNDO_APELLIDO"][0] ?>	
-								</h1></a>
-								
+								<a href = "profile.php?user_id=<?php echo $recomendacion["ID_USUARIO"][0] ?> "> 
+									<h1> 
+										<?php echo $recomendacion["NOMBRE"][0]." ".$recomendacion["PRIMER_APELLIDO"][0]." ".$recomendacion["SEGUNDO_APELLIDO"][0] ?>	
+									</h1>
+								</a>								
 								<h5>
-										<?php echo $recomendacion["EMAIL"][0] ?>
-	
-								</h5>
-								
-								<p>
-									 
+										<?php echo $recomendacion["EMAIL"][0] ?>	
+								</h5>								
+								<p>									 
 										<?php echo $recomendacion["ID_ESTILOVIDA"]["SLOGAN"][0] ?>
-								</p>
-								
+								</p>								
 								<hr/>
 								<div class="resumen">
 									<p>

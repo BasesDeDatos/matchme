@@ -87,7 +87,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		
 		/// REGISTRAR LA VISITA ///
 		if($user_id != $_SESSION["active_user_id"]){
-			$queryFunction($conexion, "begin REGISTRAR_bitacora_visita({$_SESSION["active_user_id"]}, {$user_id}); end;");
+			queryFunction($conexion, "begin :value :=  REGISTRAR_bitacora_visita({$_SESSION["active_user_id"]}, {$user_id}); end;");
 		}
 		
 		
