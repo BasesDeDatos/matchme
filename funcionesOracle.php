@@ -145,6 +145,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			$arrayQuery["MATCH"]["ID_RECOMENDACION"][$i] = 
 				queryCursor($conexion, "begin GET_Usuario({$arrayQuery["MATCH"]["ID_RECOMENDACION"][$i]}, :cursbv); end;");
 		}
+		$arrayQuery["RECOMENDACION"] =  queryCursor($conexion, "begin GET_MATCH({$user_id}, :cursbv); end;");
+		for($i = 0; $i < count($arrayQuery["RECOMENDACION"]["ID_USUARIO"]); $i++){
+			$arrayQuery["RECOMENDACION"]["ID_USUARIO"][$i] = 
+				queryCursor($conexion, "begin GET_Usuario({$arrayQuery["RECOMENDACION"]["ID_USUARIO"][$i]}, :cursbv); end;");
+		}
 		$arrayQuery["USUARIOXGENERO"] = queryCursor($conexion, "begin get_UsuarioXGenero(null, :cursbv); end;");
 		$arrayQuery["USUARIOXEDAD"] = queryCursor($conexion, "begin get_UsuarioXEdad(null, :cursbv); end;");
 		$arrayQuery["CANTIDADUSUARIOS"] = queryCursor($conexion, "begin GET_CantidadUsuarios(); end;");
@@ -241,6 +246,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	
 	if (!empty($_POST) && $_POST["mode"] == "borrar_catalogo"){
 		queryProcedure($conexion, "begin {$_POST["procedure"]}({$_POST["row_id"]}); end;");
+	}
+	if (!empty($_POST) && $_POST["mode"] == "registrar_wink"){
+		queryFunction($conexion, "begin :value := REGISTRAR_UsuariosXWink('{$_POST["envia"]}', '{$_POST["recibe"]}'); end;");
 	}
 	
 	//*** REGISTRAR UN PERFIL *///

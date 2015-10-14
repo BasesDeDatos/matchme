@@ -22,7 +22,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<span class="menu2"><img src="images/menu.png" alt=""> <lable> MENU</lable></span>
 						<ul class="effct1" style="display: none;">
 							<li><a href="profile.php?edit=1.php">Editar Perfil</a></li>  
-							<li><a href="login.php" onclick = <?php $_SESSION["active_user_id"] = "" ?> >Cerrar Sesion</a></li>  
+							<li><a href="login.php">Cerrar Sesion</a></li>  
 							<?php if ($arrayQuery ["ID_ROL"][0] == 1 ){?>
 								<li><a href="admin.php">Opciones de administrador</a></li>  
 							<?php }	?>
@@ -75,20 +75,26 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<div class="btm-num">
 							<ul>
 								<li>
-									<h4><?php echo count($arrayQuery["WINK"]["ID_ENVIADO"])?></h4>
+									<h4><?php echo array_key_exists('ID_ENVIADO', $arrayQuery["WINK"]) ? count($arrayQuery["WINK"]["ID_ENVIADO"]): 0;
+										?></h4>
 									<h5>Winks</h5>
 								</li>
 								<li>
-									<h4><?php echo count($arrayQuery["VISITAS"]["ID_VISITANTE"])?></h4>
+									<h4><?php echo array_key_exists('ID_VISITANTE', $arrayQuery["VISITAS"]) ?count($arrayQuery["VISITAS"]["ID_VISITANTE"]): 0
+										?></h4>
 									<h5>Visitas</h5>
 								</li>
 								<li>
-									<h4>60</h4>
+									<h4><?php echo array_key_exists('ID_RECOMENDACION', $arrayQuery["MATCH"]) ? count($arrayQuery["MATCH"]["ID_RECOMENDACION"]) :0
+									?></h4>
 									<h5>Matches</h5>
 								</li>
 							</ul>
 						</div>
-						<input type="button" name="wink" class="next action-button" value="Dar un wink"/>
+						<?php if($user_id != $_SESSION["active_user_id"]){?>
+							<input type="button" name="wink" class="submit action-button" value="Dar un wink"/>
+							<hr/>
+						<?php }?>
 				</div>				
 					</div>				
 				</div>
@@ -106,34 +112,27 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 											</form>
 										</-->
 										<div class="search-btm">
-											<!--div  class="temp">
+											<div  class="temp">
 												<div class="temp-right">
 													<p class="date">
 														<?php echo date("D, m/y"); ?>
 													</p>
 													<h5>
 														<?php
-															$jsonurl = "http://api.openweathermap.org/data/2.5/weather?id=3621841"; // 3621841 = SJ, CR
+															$jsonurl = "http://api.openweathermap.org/data/2.5/weather?id=3621841&appid=bd82977b86bf27fb59a04b61b657fb6f"; // 3621841 = SJ, CR
 															$json = file_get_contents($jsonurl);
 															
 															$weather = json_decode($json);
 															$kelvin = $weather->main->temp;
 															$celcius = $kelvin - 273.15;
 															
-															echo round($celcius)."°C";
+															echo round($celcius)."C";
 														?>
 													</h5>
 												</div>
 												<div class="temp-left">
 													<img src="images/cloud.png" alt="">
 												</div>															
-											</div -->
-											<div class="jobs">
-												<ul>
-													<li><a href="#">Jobs</a></li>
-													<li><a href="#" class="cmny">Company</a></li>
-													<li><a href="#" class="usr">User</a></li>
-												</ul>
 											</div>
 											<div class="clearfix"> </div>
 										</div>

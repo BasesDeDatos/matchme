@@ -18,7 +18,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	$arrayQuery = array(); 
 	$_POST["mode"] = "get_profile"; 
 	include ("funcionesOracle.php");
-	
 if ($edit){ ?>
 	<form id="form_data">
 		<input type="hidden" name="edit" value="1"/>
@@ -137,20 +136,27 @@ if ($edit){ ?>
 						<div class="btm-num">
 							<ul>
 								<li>
-									<h4><?php echo count($arrayQuery["WINK"]["ID_ENVIADO"])?></h4>
+									<h4 id= "num_winks"><?php echo array_key_exists('ID_ENVIADO', $arrayQuery["WINK"]) ? count($arrayQuery["WINK"]["ID_ENVIADO"]): 0;
+										?></h4>
 									<h5>Winks</h5>
 								</li>
 								<li>
-									<h4><?php echo count($arrayQuery["VISITAS"]["ID_VISITANTE"])?></h4>
+									<h4><?php echo array_key_exists('ID_VISITANTE', $arrayQuery["VISITAS"]) ?count($arrayQuery["VISITAS"]["ID_VISITANTE"]): 0
+										?></h4>
 									<h5>Visitas</h5>
 								</li>
 								<li>
-									<h4>60</h4>
+									<h4><?php echo array_key_exists('ID_RECOMENDACION', $arrayQuery["MATCH"]) ? count($arrayQuery["MATCH"]["ID_RECOMENDACION"]) :0
+									?></h4>
 									<h5>Matches</h5>
 								</li>
 							</ul>
 						</div>
-						<input type="button" name="wink" class="next action-button" value="Dar un wink"/>
+						<?php if($user_id != $_SESSION["active_user_id"]){?>
+							<input type="button" id="wink" class="submit action-button" value="Dar un wink"/>
+							<hr/>
+						<?php }?>
+						
 				</div>
 			</div>
 
@@ -396,5 +402,19 @@ if ($edit){ ?>
 			}); 
 		}
 		
+	});
+	
+	$("#wink").click(function(){
+		var data = "mode=registrar_wink&envia="+ "<?php echo $_SESSION["active_user_id"] ?>"+"&recibe=" + "<?php echo $user_id?>" ;
+		$.ajax({  
+			type: "POST",
+			data: data,
+			url: "funcionesOracle.php",
+			success: function(data){
+				$("#debug").html(data);
+				$("#num_winks").html(parseInt($("#num_winks").text(),10)+1 );
+				
+			},
+		});
 	});
 </script>

@@ -8,6 +8,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		$arrayQuery = array(); 
 		$_POST["mode"] = "get_catalogos"; 
 		include ("funcionesOracle.php");
+		if ($arrayQuery ["ID_ROL"][0] == 1 ){
+			header('Location: index.php');
+		}
 	?>
 	
 	<div class="row">

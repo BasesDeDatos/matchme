@@ -5,6 +5,7 @@ License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 -->	
 	<?php require_once("header2.php") ?>
+	<?php $_SESSION["active_user_id"] = "" ?> 
 			<div class="row">
 				<div class="col-md-4 col-md-push-4 login-form" >
 					<div class="login-pad">
