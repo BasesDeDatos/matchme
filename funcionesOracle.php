@@ -145,6 +145,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			$arrayQuery["MATCH"]["ID_RECOMENDACION"][$i] = 
 				queryCursor($conexion, "begin GET_Usuario({$arrayQuery["MATCH"]["ID_RECOMENDACION"][$i]}, :cursbv); end;");
 		}
+		$arrayQuery["USUARIOXGENERO"] = queryCursor($conexion, "begin get_UsuarioXGenero(null, :cursbv); end;");
+		$arrayQuery["USUARIOXEDAD"] = queryCursor($conexion, "begin get_UsuarioXEdad(null, :cursbv); end;");
+		$arrayQuery["CANTIDADUSUARIOS"] = queryCursor($conexion, "begin GET_CantidadUsuarios(); end;");
+		$arrayQuery["USUARIOXESTADOCIVIL"] = queryCursor($conexion, "begin get_UsuarioXEstadoCivil(null, :cursbv); end;");
+		$arrayQuery["USUARIOXCIUDAD"] = queryCursor($conexion, "begin get_UsuarioXCiudad(null, :cursbv); end;");
+		$arrayQuery["USUARIOXESTADOMATCH"] = queryCursor($conexion, "begin get_UsuarioXEstadoMatch(null, :cursbv); end;");
+		$arrayQuery["USUARIOXPAIS"] = queryCursor($conexion, "begin get_UsuarioXPais(null, :cursbv); end;");
+		$arrayQuery["TOPEDADESBUSCADAS"] = queryCursor($conexion, "begin get_Top_EdadesBuscadas(:cursbv); end;");
+		$arrayQuery["TOPWINKS"] = queryCursor($conexion, "begin get_TopusuarIosxwink(:cursbv); end;");
 	}
 	
 	if (!empty($_POST) && $_POST["mode"] == "get_catalogos"){
