@@ -24,8 +24,12 @@ if ($edit){ ?>
 	<?php 
 } ?>
 
-<div id="debug"></div>
 
+	<pre id= "debug">
+		<?php var_dump ($arrayQuery["WINK"]); ?>	
+	</pre>
+	
+	
 <div class ="container-fluid" id = "contenedor" >
 	<!--div class="row">
 		<div class="col-md-12" > 
@@ -243,7 +247,6 @@ if ($edit){ ?>
 										} ?>
 									</div> <?php 
 								} ?>
-								
 							</div>
 							
 						</div>

@@ -384,7 +384,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				
 				<input type="button" name="previous" class="previous action-button" value="Anterior" />
 				<input type="hidden" name= "mode" value ="registrar_usuario" >
-				<input type="submit" name="submit" class="submit action-button" value="Registro" />
+				<input type="submit" name="submit" class="submit action-button" value="Registro" href="login.php"; />
 			</fieldset>
 		</form>
 		</div>
