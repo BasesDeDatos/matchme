@@ -225,7 +225,29 @@ if ($edit){ ?>
 						
 						<div class="content-7">
 							<div class = "acordion">
-								<h1 class ="texto">2/4/15</h1>
+								<?php while(count($arrayQuery["WINK"]["FECHA"])>0){
+									$fechaActual = $arrayQuery["WINK"]["FECHA"][0]; 
+									unset($usedKeys);
+									$usedKeys = array(0); ?>
+									<h1 class ="texto"><?php echo $fechaActual ?></h1> <?php 
+									for($i = 1; $i < $arrayQuery["WINK"]["FECHA"]; $i++ ){
+										if ($fechaActual == $arrayQuery["WINK"]["FECHA"][$i]){ 
+											$usedKeys[] = $i; ?>
+											<div class="bnr-img">
+												<a href="profile.php?user_id=<?php echo $arrayQuery["WINK"]["ID_VISITANTE"][$i]["ID_USUARIO"][0] ?>">
+													<img src="profile_pics/<?php echo $arrayQuery["WINK"]["ID_VISITANTE"][$i]["FOTO"][0] ?>" alt="">
+												</a>
+											</div>
+										<?php }
+									}
+									foreach ($usedKeys as $key){ 
+										unset(
+											$arrayQuery["WINK"]["ID_VISITANTE"][$key],
+											$arrayQuery["WINK"]["FECHA"][$key]
+										);
+									}
+								} ?>
+								
 								<div>
 									<div class="bnr-img">
 										<img src="images/img1.jpg" alt="">
