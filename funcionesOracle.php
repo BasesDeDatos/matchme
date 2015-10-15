@@ -138,7 +138,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	
 	if (!empty($_POST) && ($_POST["mode"] == "get_home" || $_POST["mode"] == "get_profile") ){
 		$arrayQuery["WINK"] = queryCursor($conexion, "begin GET_Winks({$user_id}, :cursbv); end;");
+		for($i = 0; $i < count($arrayQuery["WINK"]["ID_ENVIADO"]); $i++){
+			$arrayQuery["WINK"]["ID_ENVIADO"][$i] = 
+				queryCursor($conexion, "begin GET_Usuario({$arrayQuery["WINK"]["ID_ENVIADO"][$i]}, :cursbv); end;");
+		}
 		$arrayQuery["VISITAS"] =  queryCursor($conexion, "begin GET_Bitacora_visita({$user_id}, :cursbv); end;");
+		for($i = 0; $i < count($arrayQuery["VISITAS"]["ID_VISITANTE"]); $i++){
+			$arrayQuery["VISITAS"]["ID_VISITANTE"][$i] = 
+				queryCursor($conexion, "begin GET_Usuario({$arrayQuery["VISITAS"]["ID_VISITANTE"][$i]}, :cursbv); end;");
+		}
 		$arrayQuery["MATCH"] =  queryCursor($conexion, "begin GET_UsuariosXmatch({$user_id}, :cursbv); end;");
 		for($i = 0; $i < count($arrayQuery["MATCH"]["ID_RECOMENDACION"]); $i++){
 			$arrayQuery["MATCH"]["ID_RECOMENDACION"][$i] = 
