@@ -225,25 +225,23 @@ if ($edit){ ?>
 						
 						<div class="content-7">
 							<div class = "acordion">
-								<?php while(count($arrayQuery["WINK"]["FECHA"])>0){
-									foreach ($arrayQuery["WINK"]["FECHA"] as $fecha){
-										$fechaActual = $fecha; ?>
-										<h1 class ="texto"><?php echo $fechaActual ?></h1> <?php 
-										foreach ($arrayQuery["WINK"]["FECHA"] as $key => $fecha){
-											if ($fechaActual == $fecha){ 
-												$usedKeys[] = $key; ?>
+								<?php foreach ($arrayQuery["WINK"]["FECHA"] as $fechai){
+									$fechaActual = $fechai; ?>
+									<h1 class ="texto"><?php echo $fechaActual ?></h1> 
+									<div><?php 
+										foreach ($arrayQuery["WINK"]["FECHA"] as $key => $fechaj){
+											if ($fechaActual == $fechaj){ ?>
 												<div class="bnr-img">
 													<a href="profile.php?user_id=<?php echo $arrayQuery["WINK"]["ID_VISITANTE"][$key]["ID_USUARIO"][0] ?>">
 														<img src="profile_pics/<?php echo $arrayQuery["WINK"]["ID_VISITANTE"][$key]["FOTO"][0] ?>" alt="">
 													</a>
 												</div> <?php 
 												unset(
-													$arrayQuery["WINK"]["ID_VISITANTE"][$key],
 													$arrayQuery["WINK"]["FECHA"][$key]
 												);
 											}
-										}
-									}
+										} ?>
+									</div> <?php 
 								} ?>
 								
 								<div>
