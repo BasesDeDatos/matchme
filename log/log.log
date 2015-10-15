@@ -28597,3 +28597,1771 @@ Costa Rica	4
 15/Oct/15 begin get_TopusuarIosxwink(:cursbv); end;
 1	Rolland	10	
 ################1################
+15/Oct/15 begin GET_Usuario(1, :cursbv); end;
+1	Rolland	Payne	Elliot	10/09/95	20	rgvillalobosr@gmail.com	 	2	12345	no	no	no	1	1	1	1	1	1	1	1	1	
+################1################
+15/Oct/15 begin GET_Religion(1, :cursbv); end;
+1	Pastafari	
+################1################
+15/Oct/15 begin GET_estado_Civil(1, :cursbv); end;
+1	Solo	
+################1################
+15/Oct/15 begin GET_Educacion(1, :cursbv); end;
+1	Bachiller	
+################1################
+15/Oct/15 begin GET_Ciudad(1, :cursbv); end;
+1	San Jose	1	
+################1################
+15/Oct/15 begin GET_Estado(1, :cursbv); end;
+1	San Jose	1	
+################1################
+15/Oct/15 begin GET_Pais(1, :cursbv); end;
+1	Costa Rica	
+################1################
+15/Oct/15 begin GET_Aspecto_Fisico(1, :cursbv); end;
+140	50	1	1	1	1	
+################1################
+15/Oct/15 begin GET_Color_Ojos(1, :cursbv); end;
+1	Azul	
+################1################
+15/Oct/15 begin GET_Color_Piel(1, :cursbv); end;
+1	Amarillo	
+################1################
+15/Oct/15 begin GET_Color_Pelo(1, :cursbv); end;
+1	Cafe	
+################1################
+15/Oct/15 begin GET_Contextura(1, :cursbv); end;
+1	Delgado	
+################1################
+15/Oct/15 begin GET_Estilo_Vida(1, :cursbv); end;
+	3	2		2000		1	
+################1################
+15/Oct/15 begin GET_Tipo_Bebedor(1, :cursbv); end;
+1	Social	
+################1################
+15/Oct/15 begin GET_Signo_Zodiacal(1, :cursbv); end;
+1	Aries	20/03/15	19/04/15	
+################1################
+15/Oct/15 begin GET_GENERO(2, :cursbv); end;
+2	Femenino	
+################1################
+15/Oct/15 begin GET_INTERES_GUSTO(1, :cursbv); end;
+18	40	1	
+################1################
+15/Oct/15 begin GET_GENERO(1, :cursbv); end;
+1	Masculino	
+################1################
+15/Oct/15 begin GET_UsuarioXIdioma(1, :cursbv); end;
+Annabella	0	
+Rolland	1	
+################1################
+15/Oct/15 begin GET_ActividadXUsuario(1, :cursbv); end;
+################1################
+15/Oct/15 begin GET_HobbyXUsuario(1, :cursbv); end;
+VideoGames	
+################1################
+15/Oct/15 begin GET_Winks(1, :cursbv); end;
+13/09/15	0	
+27/09/15	0	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+################1################
+15/Oct/15 begin GET_Usuario(0, :cursbv); end;
+0	Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################1################
+15/Oct/15 begin GET_Usuario(0, :cursbv); end;
+0	Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Bitacora_visita(1, :cursbv); end;
+13/09/15	0	
+13/10/15	0	
+13/10/15	0	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+################1################
+15/Oct/15 begin GET_Usuario(0, :cursbv); end;
+0	Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################1################
+15/Oct/15 begin GET_Usuario(0, :cursbv); end;
+0	Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################1################
+15/Oct/15 begin GET_Usuario(0, :cursbv); end;
+0	Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_UsuariosXmatch(1, :cursbv); end;
+26/09/15	0	
+################1################
+15/Oct/15 begin GET_Usuario(0, :cursbv); end;
+0	Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################1################
+15/Oct/15 begin GET_MATCH(1, :cursbv); end;
+29	Isaac	
+5	pNombre	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(5, :cursbv); end;
+5	pNombre	pPrimer_apellido	pSegundo_apellido	26/05/90	25	pEmail	pFoto	1	pClave	si	si	si	1	1	1	1	1	1	1	4	5	
+################1################
+15/Oct/15 begin get_UsuarioXGenero(null, :cursbv); end;
+Masculino	3	
+Femenino	1	
+################1################
+15/Oct/15 begin get_UsuarioXEdad(null, :cursbv); end;
+20	1	
+25	1	
+25	1	
+19	1	
+################1################
+15/Oct/15 begin GET_CantidadUsuarios(); end;
+################1################
+15/Oct/15 begin get_UsuarioXEstadoCivil(null, :cursbv); end;
+Solo	4	
+################1################
+15/Oct/15 begin get_UsuarioXCiudad(null, :cursbv); end;
+San Jose	4	
+################1################
+15/Oct/15 begin get_UsuarioXEstadoMatch(null, :cursbv); end;
+Encontro pareja	3	
+################1################
+15/Oct/15 begin get_UsuarioXPais(null, :cursbv); end;
+Costa Rica	4	
+################1################
+15/Oct/15 begin get_Top_EdadesBuscadas(:cursbv); end;
+18	27	
+################1################
+15/Oct/15 begin get_TopusuarIosxwink(:cursbv); end;
+1	Rolland	10	
+################1################
+15/Oct/15 begin GET_Usuario(1, :cursbv); end;
+1	Rolland	Payne	Elliot	10/09/95	20	rgvillalobosr@gmail.com	 	2	12345	no	no	no	1	1	1	1	1	1	1	1	1	
+################1################
+15/Oct/15 begin GET_Religion(1, :cursbv); end;
+1	Pastafari	
+################1################
+15/Oct/15 begin GET_estado_Civil(1, :cursbv); end;
+1	Solo	
+################1################
+15/Oct/15 begin GET_Educacion(1, :cursbv); end;
+1	Bachiller	
+################1################
+15/Oct/15 begin GET_Ciudad(1, :cursbv); end;
+1	San Jose	1	
+################1################
+15/Oct/15 begin GET_Estado(1, :cursbv); end;
+1	San Jose	1	
+################1################
+15/Oct/15 begin GET_Pais(1, :cursbv); end;
+1	Costa Rica	
+################1################
+15/Oct/15 begin GET_Aspecto_Fisico(1, :cursbv); end;
+140	50	1	1	1	1	
+################1################
+15/Oct/15 begin GET_Color_Ojos(1, :cursbv); end;
+1	Azul	
+################1################
+15/Oct/15 begin GET_Color_Piel(1, :cursbv); end;
+1	Amarillo	
+################1################
+15/Oct/15 begin GET_Color_Pelo(1, :cursbv); end;
+1	Cafe	
+################1################
+15/Oct/15 begin GET_Contextura(1, :cursbv); end;
+1	Delgado	
+################1################
+15/Oct/15 begin GET_Estilo_Vida(1, :cursbv); end;
+	3	2		2000		1	
+################1################
+15/Oct/15 begin GET_Tipo_Bebedor(1, :cursbv); end;
+1	Social	
+################1################
+15/Oct/15 begin GET_Signo_Zodiacal(1, :cursbv); end;
+1	Aries	20/03/15	19/04/15	
+################1################
+15/Oct/15 begin GET_GENERO(2, :cursbv); end;
+2	Femenino	
+################1################
+15/Oct/15 begin GET_INTERES_GUSTO(1, :cursbv); end;
+18	40	1	
+################1################
+15/Oct/15 begin GET_GENERO(1, :cursbv); end;
+1	Masculino	
+################1################
+15/Oct/15 begin GET_UsuarioXIdioma(1, :cursbv); end;
+Annabella	0	
+Rolland	1	
+################1################
+15/Oct/15 begin GET_ActividadXUsuario(1, :cursbv); end;
+################1################
+15/Oct/15 begin GET_HobbyXUsuario(1, :cursbv); end;
+VideoGames	
+################1################
+15/Oct/15 begin GET_Winks(1, :cursbv); end;
+13/09/15	0	
+27/09/15	0	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+################1################
+15/Oct/15 begin GET_Usuario(0, :cursbv); end;
+0	Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################1################
+15/Oct/15 begin GET_Usuario(0, :cursbv); end;
+0	Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Bitacora_visita(1, :cursbv); end;
+13/09/15	0	
+13/10/15	0	
+13/10/15	0	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+################1################
+15/Oct/15 begin GET_Usuario(0, :cursbv); end;
+0	Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################1################
+15/Oct/15 begin GET_Usuario(0, :cursbv); end;
+0	Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################1################
+15/Oct/15 begin GET_Usuario(0, :cursbv); end;
+0	Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_UsuariosXmatch(1, :cursbv); end;
+26/09/15	0	
+################1################
+15/Oct/15 begin GET_Usuario(0, :cursbv); end;
+0	Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################1################
+15/Oct/15 begin GET_MATCH(1, :cursbv); end;
+29	Isaac	
+5	pNombre	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(5, :cursbv); end;
+5	pNombre	pPrimer_apellido	pSegundo_apellido	26/05/90	25	pEmail	pFoto	1	pClave	si	si	si	1	1	1	1	1	1	1	4	5	
+################1################
+15/Oct/15 begin get_UsuarioXGenero(null, :cursbv); end;
+Masculino	3	
+Femenino	1	
+################1################
+15/Oct/15 begin get_UsuarioXEdad(null, :cursbv); end;
+20	1	
+25	1	
+25	1	
+19	1	
+################1################
+15/Oct/15 begin GET_CantidadUsuarios(); end;
+################1################
+15/Oct/15 begin get_UsuarioXEstadoCivil(null, :cursbv); end;
+Solo	4	
+################1################
+15/Oct/15 begin get_UsuarioXCiudad(null, :cursbv); end;
+San Jose	4	
+################1################
+15/Oct/15 begin get_UsuarioXEstadoMatch(null, :cursbv); end;
+Encontro pareja	3	
+################1################
+15/Oct/15 begin get_UsuarioXPais(null, :cursbv); end;
+Costa Rica	4	
+################1################
+15/Oct/15 begin get_Top_EdadesBuscadas(:cursbv); end;
+18	27	
+################1################
+15/Oct/15 begin get_TopusuarIosxwink(:cursbv); end;
+1	Rolland	10	
+################1################
+15/Oct/15 begin GET_Usuario(1, :cursbv); end;
+1	Rolland	Payne	Elliot	10/09/95	20	rgvillalobosr@gmail.com	 	2	12345	no	no	no	1	1	1	1	1	1	1	1	1	
+################1################
+15/Oct/15 begin GET_Religion(1, :cursbv); end;
+1	Pastafari	
+################1################
+15/Oct/15 begin GET_estado_Civil(1, :cursbv); end;
+1	Solo	
+################1################
+15/Oct/15 begin GET_Educacion(1, :cursbv); end;
+1	Bachiller	
+################1################
+15/Oct/15 begin GET_Ciudad(1, :cursbv); end;
+1	San Jose	1	
+################1################
+15/Oct/15 begin GET_Estado(1, :cursbv); end;
+1	San Jose	1	
+################1################
+15/Oct/15 begin GET_Pais(1, :cursbv); end;
+1	Costa Rica	
+################1################
+15/Oct/15 begin GET_Aspecto_Fisico(1, :cursbv); end;
+140	50	1	1	1	1	
+################1################
+15/Oct/15 begin GET_Color_Ojos(1, :cursbv); end;
+1	Azul	
+################1################
+15/Oct/15 begin GET_Color_Piel(1, :cursbv); end;
+1	Amarillo	
+################1################
+15/Oct/15 begin GET_Color_Pelo(1, :cursbv); end;
+1	Cafe	
+################1################
+15/Oct/15 begin GET_Contextura(1, :cursbv); end;
+1	Delgado	
+################1################
+15/Oct/15 begin GET_Estilo_Vida(1, :cursbv); end;
+	3	2		2000		1	
+################1################
+15/Oct/15 begin GET_Tipo_Bebedor(1, :cursbv); end;
+1	Social	
+################1################
+15/Oct/15 begin GET_Signo_Zodiacal(1, :cursbv); end;
+1	Aries	20/03/15	19/04/15	
+################1################
+15/Oct/15 begin GET_GENERO(2, :cursbv); end;
+2	Femenino	
+################1################
+15/Oct/15 begin GET_INTERES_GUSTO(1, :cursbv); end;
+18	40	1	
+################1################
+15/Oct/15 begin GET_GENERO(1, :cursbv); end;
+1	Masculino	
+################1################
+15/Oct/15 begin GET_UsuarioXIdioma(1, :cursbv); end;
+Annabella	0	
+Rolland	1	
+################1################
+15/Oct/15 begin GET_ActividadXUsuario(1, :cursbv); end;
+################1################
+15/Oct/15 begin GET_HobbyXUsuario(1, :cursbv); end;
+VideoGames	
+################1################
+15/Oct/15 begin GET_Winks(1, :cursbv); end;
+13/09/15	0	
+27/09/15	0	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+################1################
+15/Oct/15 begin GET_Usuario(0, :cursbv); end;
+0	Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################1################
+15/Oct/15 begin GET_Usuario(0, :cursbv); end;
+0	Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Bitacora_visita(1, :cursbv); end;
+13/09/15	0	
+13/10/15	0	
+13/10/15	0	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+################1################
+15/Oct/15 begin GET_Usuario(0, :cursbv); end;
+0	Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################1################
+15/Oct/15 begin GET_Usuario(0, :cursbv); end;
+0	Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################1################
+15/Oct/15 begin GET_Usuario(0, :cursbv); end;
+0	Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_UsuariosXmatch(1, :cursbv); end;
+26/09/15	0	
+################1################
+15/Oct/15 begin GET_Usuario(0, :cursbv); end;
+0	Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################1################
+15/Oct/15 begin GET_MATCH(1, :cursbv); end;
+29	Isaac	
+5	pNombre	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(5, :cursbv); end;
+5	pNombre	pPrimer_apellido	pSegundo_apellido	26/05/90	25	pEmail	pFoto	1	pClave	si	si	si	1	1	1	1	1	1	1	4	5	
+################1################
+15/Oct/15 begin get_UsuarioXGenero(null, :cursbv); end;
+Masculino	3	
+Femenino	1	
+################1################
+15/Oct/15 begin get_UsuarioXEdad(null, :cursbv); end;
+20	1	
+25	1	
+25	1	
+19	1	
+################1################
+15/Oct/15 begin GET_CantidadUsuarios(); end;
+################1################
+15/Oct/15 begin get_UsuarioXEstadoCivil(null, :cursbv); end;
+Solo	4	
+################1################
+15/Oct/15 begin get_UsuarioXCiudad(null, :cursbv); end;
+San Jose	4	
+################1################
+15/Oct/15 begin get_UsuarioXEstadoMatch(null, :cursbv); end;
+Encontro pareja	3	
+################1################
+15/Oct/15 begin get_UsuarioXPais(null, :cursbv); end;
+Costa Rica	4	
+################1################
+15/Oct/15 begin get_Top_EdadesBuscadas(:cursbv); end;
+18	27	
+################1################
+15/Oct/15 begin get_TopusuarIosxwink(:cursbv); end;
+1	Rolland	10	
+################1################
+15/Oct/15 begin GET_Usuario(1, :cursbv); end;
+1	Rolland	Payne	Elliot	10/09/95	20	rgvillalobosr@gmail.com	 	2	12345	no	no	no	1	1	1	1	1	1	1	1	1	
+################1################
+15/Oct/15 begin GET_Religion(1, :cursbv); end;
+1	Pastafari	
+################1################
+15/Oct/15 begin GET_estado_Civil(1, :cursbv); end;
+1	Solo	
+################1################
+15/Oct/15 begin GET_Educacion(1, :cursbv); end;
+1	Bachiller	
+################1################
+15/Oct/15 begin GET_Ciudad(1, :cursbv); end;
+1	San Jose	1	
+################1################
+15/Oct/15 begin GET_Estado(1, :cursbv); end;
+1	San Jose	1	
+################1################
+15/Oct/15 begin GET_Pais(1, :cursbv); end;
+1	Costa Rica	
+################1################
+15/Oct/15 begin GET_Aspecto_Fisico(1, :cursbv); end;
+140	50	1	1	1	1	
+################1################
+15/Oct/15 begin GET_Color_Ojos(1, :cursbv); end;
+1	Azul	
+################1################
+15/Oct/15 begin GET_Color_Piel(1, :cursbv); end;
+1	Amarillo	
+################1################
+15/Oct/15 begin GET_Color_Pelo(1, :cursbv); end;
+1	Cafe	
+################1################
+15/Oct/15 begin GET_Contextura(1, :cursbv); end;
+1	Delgado	
+################1################
+15/Oct/15 begin GET_Estilo_Vida(1, :cursbv); end;
+	3	2		2000		1	
+################1################
+15/Oct/15 begin GET_Tipo_Bebedor(1, :cursbv); end;
+1	Social	
+################1################
+15/Oct/15 begin GET_Signo_Zodiacal(1, :cursbv); end;
+1	Aries	20/03/15	19/04/15	
+################1################
+15/Oct/15 begin GET_GENERO(2, :cursbv); end;
+2	Femenino	
+################1################
+15/Oct/15 begin GET_INTERES_GUSTO(1, :cursbv); end;
+18	40	1	
+################1################
+15/Oct/15 begin GET_GENERO(1, :cursbv); end;
+1	Masculino	
+################1################
+15/Oct/15 begin GET_UsuarioXIdioma(1, :cursbv); end;
+Annabella	0	
+Rolland	1	
+################1################
+15/Oct/15 begin GET_ActividadXUsuario(1, :cursbv); end;
+################1################
+15/Oct/15 begin GET_HobbyXUsuario(1, :cursbv); end;
+VideoGames	
+################1################
+15/Oct/15 begin GET_Winks(1, :cursbv); end;
+13/09/15	0	
+27/09/15	0	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+################1################
+15/Oct/15 begin GET_Usuario(0, :cursbv); end;
+0	Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################1################
+15/Oct/15 begin GET_Usuario(0, :cursbv); end;
+0	Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Bitacora_visita(1, :cursbv); end;
+13/09/15	0	
+13/10/15	0	
+13/10/15	0	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+################1################
+15/Oct/15 begin GET_Usuario(0, :cursbv); end;
+0	Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################1################
+15/Oct/15 begin GET_Usuario(0, :cursbv); end;
+0	Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################1################
+15/Oct/15 begin GET_Usuario(0, :cursbv); end;
+0	Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_UsuariosXmatch(1, :cursbv); end;
+26/09/15	0	
+################1################
+15/Oct/15 begin GET_Usuario(0, :cursbv); end;
+0	Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################1################
+15/Oct/15 begin GET_MATCH(1, :cursbv); end;
+29	Isaac	
+5	pNombre	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(5, :cursbv); end;
+5	pNombre	pPrimer_apellido	pSegundo_apellido	26/05/90	25	pEmail	pFoto	1	pClave	si	si	si	1	1	1	1	1	1	1	4	5	
+################1################
+15/Oct/15 begin get_UsuarioXGenero(null, :cursbv); end;
+Masculino	3	
+Femenino	1	
+################1################
+15/Oct/15 begin get_UsuarioXEdad(null, :cursbv); end;
+20	1	
+25	1	
+25	1	
+19	1	
+################1################
+15/Oct/15 begin GET_CantidadUsuarios(); end;
+################1################
+15/Oct/15 begin get_UsuarioXEstadoCivil(null, :cursbv); end;
+Solo	4	
+################1################
+15/Oct/15 begin get_UsuarioXCiudad(null, :cursbv); end;
+San Jose	4	
+################1################
+15/Oct/15 begin get_UsuarioXEstadoMatch(null, :cursbv); end;
+Encontro pareja	3	
+################1################
+15/Oct/15 begin get_UsuarioXPais(null, :cursbv); end;
+Costa Rica	4	
+################1################
+15/Oct/15 begin get_Top_EdadesBuscadas(:cursbv); end;
+18	27	
+################1################
+15/Oct/15 begin get_TopusuarIosxwink(:cursbv); end;
+1	Rolland	10	
+################1################
+15/Oct/15 begin GET_Usuario(1, :cursbv); end;
+1	Rolland	Payne	Elliot	10/09/95	20	rgvillalobosr@gmail.com	 	2	12345	no	no	no	1	1	1	1	1	1	1	1	1	
+################1################
+15/Oct/15 begin GET_Religion(1, :cursbv); end;
+1	Pastafari	
+################1################
+15/Oct/15 begin GET_estado_Civil(1, :cursbv); end;
+1	Solo	
+################1################
+15/Oct/15 begin GET_Educacion(1, :cursbv); end;
+1	Bachiller	
+################1################
+15/Oct/15 begin GET_Ciudad(1, :cursbv); end;
+1	San Jose	1	
+################1################
+15/Oct/15 begin GET_Estado(1, :cursbv); end;
+1	San Jose	1	
+################1################
+15/Oct/15 begin GET_Pais(1, :cursbv); end;
+1	Costa Rica	
+################1################
+15/Oct/15 begin GET_Aspecto_Fisico(1, :cursbv); end;
+140	50	1	1	1	1	
+################1################
+15/Oct/15 begin GET_Color_Ojos(1, :cursbv); end;
+1	Azul	
+################1################
+15/Oct/15 begin GET_Color_Piel(1, :cursbv); end;
+1	Amarillo	
+################1################
+15/Oct/15 begin GET_Color_Pelo(1, :cursbv); end;
+1	Cafe	
+################1################
+15/Oct/15 begin GET_Contextura(1, :cursbv); end;
+1	Delgado	
+################1################
+15/Oct/15 begin GET_Estilo_Vida(1, :cursbv); end;
+	3	2		2000		1	
+################1################
+15/Oct/15 begin GET_Tipo_Bebedor(1, :cursbv); end;
+1	Social	
+################1################
+15/Oct/15 begin GET_Signo_Zodiacal(1, :cursbv); end;
+1	Aries	20/03/15	19/04/15	
+################1################
+15/Oct/15 begin GET_GENERO(2, :cursbv); end;
+2	Femenino	
+################1################
+15/Oct/15 begin GET_INTERES_GUSTO(1, :cursbv); end;
+18	40	1	
+################1################
+15/Oct/15 begin GET_GENERO(1, :cursbv); end;
+1	Masculino	
+################1################
+15/Oct/15 begin GET_UsuarioXIdioma(1, :cursbv); end;
+Annabella	0	
+Rolland	1	
+################1################
+15/Oct/15 begin GET_ActividadXUsuario(1, :cursbv); end;
+################1################
+15/Oct/15 begin GET_HobbyXUsuario(1, :cursbv); end;
+VideoGames	
+################1################
+15/Oct/15 begin GET_Winks(1, :cursbv); end;
+13/09/15	0	
+27/09/15	0	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+################1################
+15/Oct/15 begin GET_Usuario(0, :cursbv); end;
+0	Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################1################
+15/Oct/15 begin GET_Usuario(0, :cursbv); end;
+0	Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Bitacora_visita(1, :cursbv); end;
+13/09/15	0	
+13/10/15	0	
+13/10/15	0	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+################1################
+15/Oct/15 begin GET_Usuario(0, :cursbv); end;
+0	Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################1################
+15/Oct/15 begin GET_Usuario(0, :cursbv); end;
+0	Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################1################
+15/Oct/15 begin GET_Usuario(0, :cursbv); end;
+0	Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_UsuariosXmatch(1, :cursbv); end;
+26/09/15	0	
+################1################
+15/Oct/15 begin GET_Usuario(0, :cursbv); end;
+0	Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################1################
+15/Oct/15 begin GET_MATCH(1, :cursbv); end;
+29	Isaac	
+5	pNombre	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(5, :cursbv); end;
+5	pNombre	pPrimer_apellido	pSegundo_apellido	26/05/90	25	pEmail	pFoto	1	pClave	si	si	si	1	1	1	1	1	1	1	4	5	
+################1################
+15/Oct/15 begin get_UsuarioXGenero(null, :cursbv); end;
+Masculino	3	
+Femenino	1	
+################1################
+15/Oct/15 begin get_UsuarioXEdad(null, :cursbv); end;
+20	1	
+25	1	
+25	1	
+19	1	
+################1################
+15/Oct/15 begin GET_CantidadUsuarios(); end;
+################1################
+15/Oct/15 begin get_UsuarioXEstadoCivil(null, :cursbv); end;
+Solo	4	
+################1################
+15/Oct/15 begin get_UsuarioXCiudad(null, :cursbv); end;
+San Jose	4	
+################1################
+15/Oct/15 begin get_UsuarioXEstadoMatch(null, :cursbv); end;
+Encontro pareja	3	
+################1################
+15/Oct/15 begin get_UsuarioXPais(null, :cursbv); end;
+Costa Rica	4	
+################1################
+15/Oct/15 begin get_Top_EdadesBuscadas(:cursbv); end;
+18	27	
+################1################
+15/Oct/15 begin get_TopusuarIosxwink(:cursbv); end;
+1	Rolland	10	
+################1################
+15/Oct/15 begin GET_Usuario(1, :cursbv); end;
+1	Rolland	Payne	Elliot	10/09/95	20	rgvillalobosr@gmail.com	 	2	12345	no	no	no	1	1	1	1	1	1	1	1	1	
+################1################
+15/Oct/15 begin GET_Religion(1, :cursbv); end;
+1	Pastafari	
+################1################
+15/Oct/15 begin GET_estado_Civil(1, :cursbv); end;
+1	Solo	
+################1################
+15/Oct/15 begin GET_Educacion(1, :cursbv); end;
+1	Bachiller	
+################1################
+15/Oct/15 begin GET_Ciudad(1, :cursbv); end;
+1	San Jose	1	
+################1################
+15/Oct/15 begin GET_Estado(1, :cursbv); end;
+1	San Jose	1	
+################1################
+15/Oct/15 begin GET_Pais(1, :cursbv); end;
+1	Costa Rica	
+################1################
+15/Oct/15 begin GET_Aspecto_Fisico(1, :cursbv); end;
+140	50	1	1	1	1	
+################1################
+15/Oct/15 begin GET_Color_Ojos(1, :cursbv); end;
+1	Azul	
+################1################
+15/Oct/15 begin GET_Color_Piel(1, :cursbv); end;
+1	Amarillo	
+################1################
+15/Oct/15 begin GET_Color_Pelo(1, :cursbv); end;
+1	Cafe	
+################1################
+15/Oct/15 begin GET_Contextura(1, :cursbv); end;
+1	Delgado	
+################1################
+15/Oct/15 begin GET_Estilo_Vida(1, :cursbv); end;
+	3	2		2000		1	
+################1################
+15/Oct/15 begin GET_Tipo_Bebedor(1, :cursbv); end;
+1	Social	
+################1################
+15/Oct/15 begin GET_Signo_Zodiacal(1, :cursbv); end;
+1	Aries	20/03/15	19/04/15	
+################1################
+15/Oct/15 begin GET_GENERO(2, :cursbv); end;
+2	Femenino	
+################1################
+15/Oct/15 begin GET_INTERES_GUSTO(1, :cursbv); end;
+18	40	1	
+################1################
+15/Oct/15 begin GET_GENERO(1, :cursbv); end;
+1	Masculino	
+################1################
+15/Oct/15 begin GET_UsuarioXIdioma(1, :cursbv); end;
+Annabella	0	
+Rolland	1	
+################1################
+15/Oct/15 begin GET_ActividadXUsuario(1, :cursbv); end;
+################1################
+15/Oct/15 begin GET_HobbyXUsuario(1, :cursbv); end;
+VideoGames	
+################1################
+15/Oct/15 begin GET_Winks(1, :cursbv); end;
+13/09/15	0	
+27/09/15	0	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+################1################
+15/Oct/15 begin GET_Usuario(0, :cursbv); end;
+0	Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################1################
+15/Oct/15 begin GET_Usuario(0, :cursbv); end;
+0	Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Bitacora_visita(1, :cursbv); end;
+13/09/15	0	
+13/10/15	0	
+13/10/15	0	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+################1################
+15/Oct/15 begin GET_Usuario(0, :cursbv); end;
+0	Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################1################
+15/Oct/15 begin GET_Usuario(0, :cursbv); end;
+0	Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################1################
+15/Oct/15 begin GET_Usuario(0, :cursbv); end;
+0	Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_UsuariosXmatch(1, :cursbv); end;
+26/09/15	0	
+################1################
+15/Oct/15 begin GET_Usuario(0, :cursbv); end;
+0	Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################1################
+15/Oct/15 begin GET_MATCH(1, :cursbv); end;
+29	Isaac	
+5	pNombre	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(5, :cursbv); end;
+5	pNombre	pPrimer_apellido	pSegundo_apellido	26/05/90	25	pEmail	pFoto	1	pClave	si	si	si	1	1	1	1	1	1	1	4	5	
+################1################
+15/Oct/15 begin get_UsuarioXGenero(null, :cursbv); end;
+Masculino	3	
+Femenino	1	
+################1################
+15/Oct/15 begin get_UsuarioXEdad(null, :cursbv); end;
+20	1	
+25	1	
+25	1	
+19	1	
+################1################
+15/Oct/15 begin GET_CantidadUsuarios(); end;
+################1################
+15/Oct/15 begin get_UsuarioXEstadoCivil(null, :cursbv); end;
+Solo	4	
+################1################
+15/Oct/15 begin get_UsuarioXCiudad(null, :cursbv); end;
+San Jose	4	
+################1################
+15/Oct/15 begin get_UsuarioXEstadoMatch(null, :cursbv); end;
+Encontro pareja	3	
+################1################
+15/Oct/15 begin get_UsuarioXPais(null, :cursbv); end;
+Costa Rica	4	
+################1################
+15/Oct/15 begin get_Top_EdadesBuscadas(:cursbv); end;
+18	27	
+################1################
+15/Oct/15 begin get_TopusuarIosxwink(:cursbv); end;
+1	Rolland	10	
+################1################
+15/Oct/15 begin GET_Usuario(1, :cursbv); end;
+1	Rolland	Payne	Elliot	10/09/95	20	rgvillalobosr@gmail.com	 	2	12345	no	no	no	1	1	1	1	1	1	1	1	1	
+################1################
+15/Oct/15 begin GET_Religion(1, :cursbv); end;
+1	Pastafari	
+################1################
+15/Oct/15 begin GET_estado_Civil(1, :cursbv); end;
+1	Solo	
+################1################
+15/Oct/15 begin GET_Educacion(1, :cursbv); end;
+1	Bachiller	
+################1################
+15/Oct/15 begin GET_Ciudad(1, :cursbv); end;
+1	San Jose	1	
+################1################
+15/Oct/15 begin GET_Estado(1, :cursbv); end;
+1	San Jose	1	
+################1################
+15/Oct/15 begin GET_Pais(1, :cursbv); end;
+1	Costa Rica	
+################1################
+15/Oct/15 begin GET_Aspecto_Fisico(1, :cursbv); end;
+140	50	1	1	1	1	
+################1################
+15/Oct/15 begin GET_Color_Ojos(1, :cursbv); end;
+1	Azul	
+################1################
+15/Oct/15 begin GET_Color_Piel(1, :cursbv); end;
+1	Amarillo	
+################1################
+15/Oct/15 begin GET_Color_Pelo(1, :cursbv); end;
+1	Cafe	
+################1################
+15/Oct/15 begin GET_Contextura(1, :cursbv); end;
+1	Delgado	
+################1################
+15/Oct/15 begin GET_Estilo_Vida(1, :cursbv); end;
+	3	2		2000		1	
+################1################
+15/Oct/15 begin GET_Tipo_Bebedor(1, :cursbv); end;
+1	Social	
+################1################
+15/Oct/15 begin GET_Signo_Zodiacal(1, :cursbv); end;
+1	Aries	20/03/15	19/04/15	
+################1################
+15/Oct/15 begin GET_GENERO(2, :cursbv); end;
+2	Femenino	
+################1################
+15/Oct/15 begin GET_INTERES_GUSTO(1, :cursbv); end;
+18	40	1	
+################1################
+15/Oct/15 begin GET_GENERO(1, :cursbv); end;
+1	Masculino	
+################1################
+15/Oct/15 begin GET_UsuarioXIdioma(1, :cursbv); end;
+Annabella	0	
+Rolland	1	
+################1################
+15/Oct/15 begin GET_ActividadXUsuario(1, :cursbv); end;
+################1################
+15/Oct/15 begin GET_HobbyXUsuario(1, :cursbv); end;
+VideoGames	
+################1################
+15/Oct/15 begin GET_Winks(1, :cursbv); end;
+13/09/15	0	
+27/09/15	0	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+################1################
+15/Oct/15 begin GET_Usuario(0, :cursbv); end;
+0	Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################1################
+15/Oct/15 begin GET_Usuario(0, :cursbv); end;
+0	Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Bitacora_visita(1, :cursbv); end;
+13/09/15	0	
+13/10/15	0	
+13/10/15	0	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+################1################
+15/Oct/15 begin GET_Usuario(0, :cursbv); end;
+0	Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################1################
+15/Oct/15 begin GET_Usuario(0, :cursbv); end;
+0	Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################1################
+15/Oct/15 begin GET_Usuario(0, :cursbv); end;
+0	Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_UsuariosXmatch(1, :cursbv); end;
+26/09/15	0	
+################1################
+15/Oct/15 begin GET_Usuario(0, :cursbv); end;
+0	Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################1################
+15/Oct/15 begin GET_MATCH(1, :cursbv); end;
+29	Isaac	
+5	pNombre	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(5, :cursbv); end;
+5	pNombre	pPrimer_apellido	pSegundo_apellido	26/05/90	25	pEmail	pFoto	1	pClave	si	si	si	1	1	1	1	1	1	1	4	5	
+################1################
+15/Oct/15 begin get_UsuarioXGenero(null, :cursbv); end;
+Masculino	3	
+Femenino	1	
+################1################
+15/Oct/15 begin get_UsuarioXEdad(null, :cursbv); end;
+20	1	
+25	1	
+25	1	
+19	1	
+################1################
+15/Oct/15 begin GET_CantidadUsuarios(); end;
+################1################
+15/Oct/15 begin get_UsuarioXEstadoCivil(null, :cursbv); end;
+Solo	4	
+################1################
+15/Oct/15 begin get_UsuarioXCiudad(null, :cursbv); end;
+San Jose	4	
+################1################
+15/Oct/15 begin get_UsuarioXEstadoMatch(null, :cursbv); end;
+Encontro pareja	3	
+################1################
+15/Oct/15 begin get_UsuarioXPais(null, :cursbv); end;
+Costa Rica	4	
+################1################
+15/Oct/15 begin get_Top_EdadesBuscadas(:cursbv); end;
+18	27	
+################1################
+15/Oct/15 begin get_TopusuarIosxwink(:cursbv); end;
+1	Rolland	10	
+################1################
+15/Oct/15 begin GET_Usuario(1, :cursbv); end;
+1	Rolland	Payne	Elliot	10/09/95	20	rgvillalobosr@gmail.com	 	2	12345	no	no	no	1	1	1	1	1	1	1	1	1	
+################1################
+15/Oct/15 begin GET_Religion(1, :cursbv); end;
+1	Pastafari	
+################1################
+15/Oct/15 begin GET_estado_Civil(1, :cursbv); end;
+1	Solo	
+################1################
+15/Oct/15 begin GET_Educacion(1, :cursbv); end;
+1	Bachiller	
+################1################
+15/Oct/15 begin GET_Ciudad(1, :cursbv); end;
+1	San Jose	1	
+################1################
+15/Oct/15 begin GET_Estado(1, :cursbv); end;
+1	San Jose	1	
+################1################
+15/Oct/15 begin GET_Pais(1, :cursbv); end;
+1	Costa Rica	
+################1################
+15/Oct/15 begin GET_Aspecto_Fisico(1, :cursbv); end;
+140	50	1	1	1	1	
+################1################
+15/Oct/15 begin GET_Color_Ojos(1, :cursbv); end;
+1	Azul	
+################1################
+15/Oct/15 begin GET_Color_Piel(1, :cursbv); end;
+1	Amarillo	
+################1################
+15/Oct/15 begin GET_Color_Pelo(1, :cursbv); end;
+1	Cafe	
+################1################
+15/Oct/15 begin GET_Contextura(1, :cursbv); end;
+1	Delgado	
+################1################
+15/Oct/15 begin GET_Estilo_Vida(1, :cursbv); end;
+	3	2		2000		1	
+################1################
+15/Oct/15 begin GET_Tipo_Bebedor(1, :cursbv); end;
+1	Social	
+################1################
+15/Oct/15 begin GET_Signo_Zodiacal(1, :cursbv); end;
+1	Aries	20/03/15	19/04/15	
+################1################
+15/Oct/15 begin GET_GENERO(2, :cursbv); end;
+2	Femenino	
+################1################
+15/Oct/15 begin GET_INTERES_GUSTO(1, :cursbv); end;
+18	40	1	
+################1################
+15/Oct/15 begin GET_GENERO(1, :cursbv); end;
+1	Masculino	
+################1################
+15/Oct/15 begin GET_UsuarioXIdioma(1, :cursbv); end;
+Annabella	0	
+Rolland	1	
+################1################
+15/Oct/15 begin GET_ActividadXUsuario(1, :cursbv); end;
+################1################
+15/Oct/15 begin GET_HobbyXUsuario(1, :cursbv); end;
+VideoGames	
+################1################
+15/Oct/15 begin GET_Winks(1, :cursbv); end;
+13/09/15	0	
+27/09/15	0	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+################1################
+15/Oct/15 begin GET_Usuario(0, :cursbv); end;
+0	Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################1################
+15/Oct/15 begin GET_Usuario(0, :cursbv); end;
+0	Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Bitacora_visita(1, :cursbv); end;
+13/09/15	0	
+13/10/15	0	
+13/10/15	0	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+14/10/15	29	
+################1################
+15/Oct/15 begin GET_Usuario(0, :cursbv); end;
+0	Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################1################
+15/Oct/15 begin GET_Usuario(0, :cursbv); end;
+0	Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################1################
+15/Oct/15 begin GET_Usuario(0, :cursbv); end;
+0	Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_UsuariosXmatch(1, :cursbv); end;
+26/09/15	0	
+################1################
+15/Oct/15 begin GET_Usuario(0, :cursbv); end;
+0	Annabella	Harper	 	20/03/90	25	jefalva10296@gmail.com	img2.jpg	1	1234	si	si	si	1	1	1	1	1	1	1	1	1	
+################1################
+15/Oct/15 begin GET_MATCH(1, :cursbv); end;
+29	Isaac	
+5	pNombre	
+################1################
+15/Oct/15 begin GET_Usuario(29, :cursbv); end;
+29	Isaac	Campos	Mesen	26/05/96	19	kakoo26i@gmail.com	IMG-20150825-WA0104.jpg	1	12345	si	si	si	1	1	1	1	6	7	2	3	7	
+################1################
+15/Oct/15 begin GET_Usuario(5, :cursbv); end;
+5	pNombre	pPrimer_apellido	pSegundo_apellido	26/05/90	25	pEmail	pFoto	1	pClave	si	si	si	1	1	1	1	1	1	1	4	5	
+################1################
+15/Oct/15 begin get_UsuarioXGenero(null, :cursbv); end;
+Masculino	3	
+Femenino	1	
+################1################
+15/Oct/15 begin get_UsuarioXEdad(null, :cursbv); end;
+20	1	
+25	1	
+25	1	
+19	1	
+################1################
+15/Oct/15 begin GET_CantidadUsuarios(); end;
+################1################
+15/Oct/15 begin get_UsuarioXEstadoCivil(null, :cursbv); end;
+Solo	4	
+################1################
+15/Oct/15 begin get_UsuarioXCiudad(null, :cursbv); end;
+San Jose	4	
+################1################
+15/Oct/15 begin get_UsuarioXEstadoMatch(null, :cursbv); end;
+Encontro pareja	3	
+################1################
+15/Oct/15 begin get_UsuarioXPais(null, :cursbv); end;
+Costa Rica	4	
+################1################
+15/Oct/15 begin get_Top_EdadesBuscadas(:cursbv); end;
+18	27	
+################1################
+15/Oct/15 begin get_TopusuarIosxwink(:cursbv); end;
+1	Rolland	10	
+################1################

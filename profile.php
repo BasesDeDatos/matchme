@@ -24,8 +24,12 @@ if ($edit){ ?>
 	<?php 
 } ?>
 
-<div id="debug"></div>
 
+	<pre id= "debug">
+		<?php var_dump ($arrayQuery["WINK"]); ?>	
+	</pre>
+	
+	
 <div class ="container-fluid" id = "contenedor" >
 	<!--div class="row">
 		<div class="col-md-12" > 
@@ -226,11 +230,11 @@ if ($edit){ ?>
 						<div class="content-7">
 							<div class = "acordion">
 								<?php while(count($arrayQuery["WINK"]["FECHA"])>0){
-									$fechaActual = $arrayQuery["WINK"]["FECHA"][0]; 
+									echo count($arrayQuery["WINK"]["FECHA"]); $fechaActual = $arrayQuery["WINK"]["FECHA"][0]; 
 									unset($usedKeys);
-									$usedKeys = array(0); ?>
+									$usedKeys[] = 0; ?>
 									<h1 class ="texto"><?php echo $fechaActual ?></h1> <?php 
-									for($i = 1; $i < $arrayQuery["WINK"]["FECHA"]; $i++ ){
+									for($i = 1; $i < count($arrayQuery["WINK"]["FECHA"]); $i++ ){
 										if ($fechaActual == $arrayQuery["WINK"]["FECHA"][$i]){ 
 											$usedKeys[] = $i; ?>
 											<div class="bnr-img">
@@ -247,77 +251,11 @@ if ($edit){ ?>
 										);
 									}
 								} ?>
-								
-								<div>
-									<div class="bnr-img">
-										<img src="images/img1.jpg" alt="">
-									</div>
-									<div class="bnr-img">
-										<img src="images/img2.jpg" alt="">
-									</div>
-									<div class="bnr-img">
-										<img src="images/img3.jpg" alt="">
-									</div>
-								</div>	
-								
-								<h1 class ="texto">3/8/15</h1>
-								<div>
-									<div class="bnr-img">
-										<img src="images/img1.jpg" alt="">
-									</div>
-									<div class="bnr-img">
-										<img src="images/img2.jpg" alt="">
-									</div>
-									<div class="bnr-img">
-										<img src="images/img3.jpg" alt="">
-									</div>
-								</div>
-								
-								<h1 class ="texto">3/6/15</h1>
-								<div>
-									<div class="bnr-img">
-										<img src="images/img1.jpg" alt="">
-									</div>
-									<div class="bnr-img">
-										<img src="images/img2.jpg" alt="">
-									</div>
-									<div class="bnr-img">
-										<img src="images/img3.jpg" alt="">
-									</div>
-								</div>	
-								
-								<h1 class ="texto">9/1/14</h1>
-								<div>
-									<div class="bnr-img">
-										<img src="images/img1.jpg" alt="">
-									</div>
-									<div class="bnr-img">
-										<img src="images/img2.jpg" alt="">
-									</div>
-									<div class="bnr-img">
-										<img src="images/img3.jpg" alt="">
-									</div>
-								</div>	
-								
-								<h1 class ="texto">2/1/14</h1>
-								<div>
-									<div class="bnr-img">
-										<img src="images/img1.jpg" alt="">
-									</div>
-									<div class="bnr-img">
-										<img src="images/img2.jpg" alt="">
-									</div>
-									<div class="bnr-img">
-										<img src="images/img3.jpg" alt="">
-									</div>
-								</div>	
 							</div>
-							
-							
 							
 						</div>
 						
-							<div class="content-6">
+						<div class="content-6">
 							<div class = "acordion">
 								<h1 class ="texto">2/4/15</h1>
 								<div>

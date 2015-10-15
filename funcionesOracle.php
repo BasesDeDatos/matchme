@@ -297,7 +297,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     			);
     		end;");
 
-    	queryFunction($conexion, 
+    	$id = queryFunction($conexion, 
     		"begin
     			:value := REGISTRAR_USUARIO(
 					'{$_POST["nombre"]}',
@@ -322,6 +322,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     				{$interes_gusto}
     			);
     		end;");
+			if ($id != -1 ){?>
+				<script>window.location="login.php";</script>	
+			<?php }
+			else{?>
+				<script>alert("Error al registrar");</script>
+			<?php }
+			
 	}
 
 	//*** EDITAR UN PERFIL *///
