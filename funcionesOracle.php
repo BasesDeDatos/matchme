@@ -89,8 +89,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		if($user_id != $_SESSION["active_user_id"]){
 			queryFunction($conexion, "begin :value :=  REGISTRAR_bitacora_visita({$_SESSION["active_user_id"]}, {$user_id}); end;");
 		}
-		
-		
+
 		$arrayQuery = queryCursor($conexion, "begin GET_Usuario({$user_id}, :cursbv); end;");
 
 		$arrayQuery["ID_RELIGION"] = queryCursor($conexion, "begin GET_Religion({$arrayQuery["ID_RELIGION"][0]}, :cursbv); end;");
