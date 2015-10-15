@@ -13,7 +13,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		?>
 		
 		<pre id= "debug">
-		<?php var_dump ($arrayQuery["RECOMENDACION"]); ?>
+		<?php var_dump ($arrayQuery["WINK"]); ?>
 		
 		</pre>
 		
@@ -131,7 +131,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		</div>
 		<!--MATCHES-->
 		<?php foreach($arrayQuery["RECOMENDACION"]["ID_USUARIO"] as $recomendacion){ ?>
-			<div class="col-md-4">
+			<div class="col-md-4 pull-right">
 				<a href = "profile.php?user_id=<?php echo $recomendacion["ID_USUARIO"][0] ?> "> 
 					<div class="content-right">
 						<div class="cntnt-img">
