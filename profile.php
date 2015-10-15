@@ -225,6 +225,31 @@ if ($edit){ ?>
 						
 						<div class="content-7">
 							<div class = "acordion">
+								<?php foreach ($arrayQuery["VISITA"]["FECHA"] as $fechai){
+									$fechaActual = $fechai; ?>
+									<h1 class ="texto"><?php echo $fechaActual ?></h1> 
+									<div><?php 
+										foreach ($arrayQuery["VISITA"]["FECHA"] as $key => $fechaj){
+											if ($fechaActual == $fechaj){ ?>
+												<div class="bnr-img">
+													<a href="profile.php?user_id=<?php echo $arrayQuery["VISITA"]["ID_RECOMENDACION"][$key]["ID_USUARIO"][0] ?>">
+														<img src="profile_pics/<?php echo $arrayQuery["VISITA"]["ID_RECOMENDACION"][$key]["FOTO"][0] ?>" alt="">
+													</a>
+												</div> <?php 
+												unset(
+													$arrayQuery["VISITA"]["FECHA"][$key]
+												);
+											}
+										} ?>
+									</div> <?php 
+								} ?>
+								
+							</div>
+							
+						</div>
+						
+						<div class="content-6">
+							<div class = "acordion">
 								<?php foreach ($arrayQuery["WINK"]["FECHA"] as $fechai){
 									$fechaActual = $fechai; ?>
 									<h1 class ="texto"><?php echo $fechaActual ?></h1> 
@@ -243,142 +268,6 @@ if ($edit){ ?>
 										} ?>
 									</div> <?php 
 								} ?>
-								
-								<div>
-									<div class="bnr-img">
-										<img src="images/img1.jpg" alt="">
-									</div>
-									<div class="bnr-img">
-										<img src="images/img2.jpg" alt="">
-									</div>
-									<div class="bnr-img">
-										<img src="images/img3.jpg" alt="">
-									</div>
-								</div>	
-								
-								<h1 class ="texto">3/8/15</h1>
-								<div>
-									<div class="bnr-img">
-										<img src="images/img1.jpg" alt="">
-									</div>
-									<div class="bnr-img">
-										<img src="images/img2.jpg" alt="">
-									</div>
-									<div class="bnr-img">
-										<img src="images/img3.jpg" alt="">
-									</div>
-								</div>
-								
-								<h1 class ="texto">3/6/15</h1>
-								<div>
-									<div class="bnr-img">
-										<img src="images/img1.jpg" alt="">
-									</div>
-									<div class="bnr-img">
-										<img src="images/img2.jpg" alt="">
-									</div>
-									<div class="bnr-img">
-										<img src="images/img3.jpg" alt="">
-									</div>
-								</div>	
-								
-								<h1 class ="texto">9/1/14</h1>
-								<div>
-									<div class="bnr-img">
-										<img src="images/img1.jpg" alt="">
-									</div>
-									<div class="bnr-img">
-										<img src="images/img2.jpg" alt="">
-									</div>
-									<div class="bnr-img">
-										<img src="images/img3.jpg" alt="">
-									</div>
-								</div>	
-								
-								<h1 class ="texto">2/1/14</h1>
-								<div>
-									<div class="bnr-img">
-										<img src="images/img1.jpg" alt="">
-									</div>
-									<div class="bnr-img">
-										<img src="images/img2.jpg" alt="">
-									</div>
-									<div class="bnr-img">
-										<img src="images/img3.jpg" alt="">
-									</div>
-								</div>	
-							</div>
-							
-							
-							
-						</div>
-						
-							<div class="content-6">
-							<div class = "acordion">
-								<h1 class ="texto">2/4/15</h1>
-								<div>
-									<div class="bnr-img">
-										<img src="images/img1.jpg" alt="">
-									</div>
-									<div class="bnr-img">
-										<img src="images/img2.jpg" alt="">
-									</div>
-									<div class="bnr-img">
-										<img src="images/img3.jpg" alt="">
-									</div>
-								</div>	
-								
-								<h1 class ="texto">3/8/15</h1>
-								<div>
-									<div class="bnr-img">
-										<img src="images/img1.jpg" alt="">
-									</div>
-									<div class="bnr-img">
-										<img src="images/img2.jpg" alt="">
-									</div>
-									<div class="bnr-img">
-										<img src="images/img3.jpg" alt="">
-									</div>
-								</div>
-								
-								<h1 class ="texto">3/6/15</h1>
-								<div>
-									<div class="bnr-img">
-										<img src="images/img1.jpg" alt="">
-									</div>
-									<div class="bnr-img">
-										<img src="images/img2.jpg" alt="">
-									</div>
-									<div class="bnr-img">
-										<img src="images/img3.jpg" alt="">
-									</div>
-								</div>	
-								
-								<h1 class ="texto">9/1/14</h1>
-								<div>
-									<div class="bnr-img">
-										<img src="images/img1.jpg" alt="">
-									</div>
-									<div class="bnr-img">
-										<img src="images/img2.jpg" alt="">
-									</div>
-									<div class="bnr-img">
-										<img src="images/img3.jpg" alt="">
-									</div>
-								</div>	
-								
-								<h1 class ="texto">2/1/14</h1>
-								<div>
-									<div class="bnr-img">
-										<img src="images/img1.jpg" alt="">
-									</div>
-									<div class="bnr-img">
-										<img src="images/img2.jpg" alt="">
-									</div>
-									<div class="bnr-img">
-										<img src="images/img3.jpg" alt="">
-									</div>
-								</div>	
 							</div>
 						</div>
 
