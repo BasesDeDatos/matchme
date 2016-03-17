@@ -5,8 +5,8 @@ License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 -->
 <?php 
-session_start();
-$_SESSION["active_user_id"] = array_key_exists('active_user_id', $_SESSION) ? $_SESSION["active_user_id"] : -1;
+// session_start();
+// $_SESSION["active_user_id"] = array_key_exists('active_user_id', $_SESSION) ? $_SESSION["active_user_id"] : -1;
 ?>
 
 <!DOCTYPE html>
